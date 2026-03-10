@@ -2,7 +2,7 @@
   "CVE-2026-1731": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/beyondtrust_pra_rs_command_injection",
+      "file": "exploit_linux/http/beyondtrust_pra_rs_command_injection",
       "name": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) unauthenticated Remote Code Execution",
       "description": "This exploit achieves unauthenticated remote code execution against BeyondTrust Privileged Remote\n          Access (PRA) and Remote Support (RS). It leverages three different vulnerabilities depending on the\n          user-selected target.\n\n          The default target leverages CVE-2026-1731, a direct command injection affecting RS versions 25.3.1\n          and prior, and PRA versions 24.3.4 and prior.\n\n          Alternatively, the module can leverage a chain of CVE-2025-1094 (SQL injection in PostgreSQL)\n          and CVE-2024-12356 (argument injection), affecting RS and PRA versions 24.3.1 and prior.\n\n          Exploitation occurs with the privileges of the site user of the targeted BeyondTrust product site."
     },
@@ -22,7 +22,7 @@
   "CVE-2026-2329": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/grandstream_gxp1600_unauth_rce",
+      "file": "exploit_linux/http/grandstream_gxp1600_unauth_rce",
       "name": "GrandStream GXP1600 Unauthenticated Remote Code Execution",
       "description": "An unauthenticated stack-based buffer overflow vulnerability exists in the HTTP API endpoint\n          /cgi-bin/api.values.get. A remote attacker can leverage this vulnerability to achieve unauthenticated remote\n          code execution (RCE) with root privileges on a target device. The vulnerability affects all six device models\n          in the series: GXP1610, GXP1615, GXP1620, GXP1625, GXP1628, and GXP1630. The vulnerability affects all\n          firmware versions below version 1.0.7.81."
     }
@@ -30,7 +30,7 @@
   "CVE-2026-1281": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_epmm_rce",
+      "file": "exploit_linux/http/ivanti_epmm_rce",
       "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
       "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device."
     }
@@ -38,7 +38,7 @@
   "CVE-2026-1340": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_epmm_rce",
+      "file": "exploit_linux/http/ivanti_epmm_rce",
       "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
       "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device."
     }
@@ -46,7 +46,7 @@
   "CVE-2026-24061": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/telnet/gnu_inetutils_auth_bypass",
+      "file": "exploit_linux/telnet/gnu_inetutils_auth_bypass",
       "name": "GNU Inetutils Telnet Authentication Bypass Exploit CVE-2026-24061",
       "description": "The telnetd service from GNU InetUtils is vulnerable to authentication-bypass, tracked as CVE-2026-24061, in\n          versions up to version 2.7. During Telnet authentication the SB byte can be sent to indicate sub-negotiation which\n          allows for the exchange of sub-option parameters after both parties have agreed to enable a specific functional option.\n          Environment variables can be sent as sub-options and it's the USER environment variable which introduces the\n          authentication bypass in this scenario. When the USER environment variable gets sent to the GNU inetutils telnetd\n          service during authentication, the variable gets appended without proper sanitization to an execv call to the\n          /usr/bin/login binary. The login binary has a -f flag which skips authentication for a specific user. So the exploit\n          sets the `USER` environment variable to -f root and the telnetd service responds with a root shell."
     }
@@ -54,7 +54,7 @@
   "CVE-2026-27175": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/majordomo_cmd_injection_rce",
+      "file": "exploit_multi/http/majordomo_cmd_injection_rce",
       "name": "MajorDoMo Remote Command Injection via cycle_execs Race Condition",
       "description": "This module exploits an unauthenticated command injection vulnerability in MajorDoMo's\n          remote command handler (rc/index.php). The param parameter is interpolated into double\n          quotes without escapeshellarg(), and the resulting string is passed to safe_exec() which\n          inserts it into the safe_execs database table with no sanitization.\n\n          The cycle_execs.php worker script is web-accessible without authentication. On startup it\n          purges the safe_execs queue, then enters an infinite loop polling the table every second\n          and passing each command to exec(). A race condition is required: the worker must be\n          started first (which purges existing entries), then the injection is performed while the\n          worker is polling. The next iteration picks up and executes the attacker's payload.\n\n          The command parameter must reference a valid .bat file in rc/commands/. The default\n          MajorDoMo installation ships with shutdown.bat, displayon.bat, and displayoff.bat.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
     }
@@ -62,7 +62,7 @@
   "CVE-2026-27174": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/majordomo_console_eval_rce",
+      "file": "exploit_multi/http/majordomo_console_eval_rce",
       "name": "MajorDoMo Console Eval Unauthenticated RCE",
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo, an open-source home automation platform. The admin panel's PHP console\n          is accessible without authentication due to a missing exit after redirect in\n          modules/panel.class.php. The redirect(\"/\") call intended to block unauthenticated\n          users lacks an exit statement, so execution continues into the ajax panel handler\n          which includes inc_panel_ajax.php unconditionally. Inside, the console handler\n          passes the user-supplied command parameter directly to eval() via the evalConsole()\n          function. The command, ajax_panel, and op parameters are all controllable via GET\n          request through MajorDoMo's register_globals-style gr() function.\n\n          This results in unauthenticated PHP code evaluation via a single GET request\n          to /admin.php.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
     }
@@ -70,7 +70,7 @@
   "CVE-2026-27180": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/majordomo_supply_chain_rce",
+      "file": "exploit_multi/http/majordomo_supply_chain_rce",
       "name": "MajorDoMo Supply Chain RCE via Update Poisoning",
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
     }

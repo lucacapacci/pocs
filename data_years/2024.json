@@ -2,7 +2,7 @@
   "CVE-2024-20419": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/http/cisco_ssm_onprem_account",
+      "file": "auxiliary_admin/http/cisco_ssm_onprem_account",
       "name": "Cisco Smart Software Manager (SSM) On-Prem Account Takeover (CVE-2024-20419)",
       "description": "This module exploits an improper access control vulnerability in Cisco Smart Software Manager (SSM) On-Prem <= 8-202206. An unauthenticated remote attacker\n          can change the password of any existing user, including administrative users."
     },
@@ -42,7 +42,7 @@
   "CVE-2024-5276": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/http/fortra_filecatalyst_workflow_sqli",
+      "file": "auxiliary_admin/http/fortra_filecatalyst_workflow_sqli",
       "name": "Fortra FileCatalyst Workflow SQL Injection (CVE-2024-5276)",
       "description": "This module exploits a SQL injection vulnerability in Fortra FileCatalyst Workflow <= v5.1.6 Build 135, by adding a new\n          administrative user to the web interface of the application."
     },
@@ -62,7 +62,7 @@
   "CVE-2024-7593": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/http/ivanti_vtm_admin",
+      "file": "auxiliary_admin/http/ivanti_vtm_admin",
       "name": "Ivanti Virtual Traffic Manager Authentication Bypass (CVE-2024-7593)",
       "description": "This module exploits an access control issue in Ivanti Virtual Traffic Manager (vTM), by adding a new\n          administrative user to the web interface of the application.\n\n          Affected versions include 22.7R1, 22.6R1, 22.5R1, 22.3R2, 22.3, 22.2."
     },
@@ -82,7 +82,7 @@
   "CVE-2024-6670": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/http/whatsup_gold_sqli",
+      "file": "auxiliary_admin/http/whatsup_gold_sqli",
       "name": "WhatsUp Gold SQL Injection (CVE-2024-6670)",
       "description": "This module exploits a SQL injection vulnerability in WhatsUp Gold, by changing the password of an existing user (such as of the default admin account)\n          to an attacker-controlled one.\n\n          WhatsUp Gold versions < v24.0.0 are affected."
     },
@@ -102,7 +102,7 @@
   "CVE-2024-51977": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/misc/brother_default_admin_auth_bypass_cve_2024_51978",
+      "file": "auxiliary_admin/misc/brother_default_admin_auth_bypass_cve_2024_51978",
       "name": "Multiple Brother devices authentication bypass via default administrator password generation",
       "description": "By leaking a target devices serial number, a remote attacker can generate the target devices default\n          administrator password. The target device may leak its serial number via unauthenticated HTTP, HTTPS, IPP,\n          SNMP, or PJL requests."
     },
@@ -122,7 +122,7 @@
   "CVE-2024-51978": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterauxiliary_admin/misc/brother_default_admin_auth_bypass_cve_2024_51978",
+      "file": "auxiliary_admin/misc/brother_default_admin_auth_bypass_cve_2024_51978",
       "name": "Multiple Brother devices authentication bypass via default administrator password generation",
       "description": "By leaking a target devices serial number, a remote attacker can generate the target devices default\n          administrator password. The target device may leak its serial number via unauthenticated HTTP, HTTPS, IPP,\n          SNMP, or PJL requests."
     },
@@ -142,7 +142,7 @@
   "CVE-2024-24919": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/checkpoint_gateway_fileread_cve_2024_24919",
+      "file": "auxiliary_gather/checkpoint_gateway_fileread_cve_2024_24919",
       "name": "Check Point Security Gateway Arbitrary File Read",
       "description": "This module leverages an unauthenticated arbitrary root file read vulnerability for\n          Check Point Security Gateway appliances. When the IPSec VPN or Mobile Access blades\n          are enabled on affected devices, traversal payloads can be used to read any files on\n          the local file system. Password hashes read from disk may be cracked, potentially\n          resulting in administrator-level access to the target device. This vulnerability is\n          tracked as CVE-2024-24919."
     },
@@ -162,7 +162,7 @@
   "CVE-2024-20767": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/coldfusion_pms_servlet_file_read",
+      "file": "auxiliary_gather/coldfusion_pms_servlet_file_read",
       "name": "CVE-2024-20767 - Adobe Coldfusion Arbitrary File Read",
       "description": "This module exploits an Improper Access Vulnerability in Adobe Coldfusion versions prior to version\n          '2023 Update 6' and '2021 Update 12'. The vulnerability allows unauthenticated attackers to request authentication\n          token in the form of a UUID from the /CFIDE/adminapi/_servermanager/servermanager.cfc endpoint. Using that\n          UUID attackers can hit the /pms endpoint in order to exploit the Arbitrary File Read Vulnerability."
     },
@@ -202,7 +202,7 @@
   "CVE-2024-4040": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/crushftp_fileread_cve_2024_4040",
+      "file": "auxiliary_gather/crushftp_fileread_cve_2024_4040",
       "name": "CrushFTP Unauthenticated Arbitrary File Read",
       "description": "This module leverages an unauthenticated server-side template injection vulnerability in CrushFTP < 10.7.1 and\n          < 11.1.0 (as well as legacy 9.x versions). Attackers can submit template injection payloads to the web API without\n          authentication. When attacker payloads are reflected in the server's responses, the payloads are evaluated. The\n          primary impact of the injection is arbitrary file read as root, which can result in authentication bypass, remote\n          code execution, and NetNTLMv2 theft (when the host OS is Windows and SMB egress traffic is permitted)."
     },
@@ -222,7 +222,7 @@
   "CVE-2024-30851": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/jasmin_ransomware_dir_traversal",
+      "file": "auxiliary_gather/jasmin_ransomware_dir_traversal",
       "name": "Jasmin Ransomware Web Server Unauthenticated Directory Traversal",
       "description": "The Jasmin Ransomware web server contains an unauthenticated directory traversal vulnerability\n          within the download functionality. As of April 15, 2024 this was still unpatched, so all\n          versions are vulnerable. The last patch was in 2021, so it will likely not ever be patched."
     }
@@ -230,7 +230,7 @@
   "CVE-2024-23897": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/jenkins_cli_ampersand_arbitrary_file_read",
+      "file": "auxiliary_gather/jenkins_cli_ampersand_arbitrary_file_read",
       "name": "Jenkins cli Ampersand Replacement Arbitrary File Read",
       "description": "This module utilizes the Jenkins cli protocol to run the `help` command.\n          The cli is accessible with read-only permissions by default, which are\n          all thats required.\n\n          Jenkins cli utilizes `args4j's` `parseArgument`, which calls `expandAtFiles` to\n          replace any `@<filename>` with the contents of a file. We are then able to retrieve\n          the error message to read up to the first two lines of a file.\n\n          Exploitation by hand can be done with the cli, see markdown documents for additional\n          instructions.\n\n          There are a few exploitation oddities:\n          1. The injection point for the `help` command requires 2 input arguments.\n          When the `expandAtFiles` is called, each line of the `FILE_PATH` becomes an input argument.\n          If a file only contains one line, it will throw an error: `ERROR: You must authenticate to access this Jenkins.`\n          However, we can pad out the content by supplying a first argument.\n          2. There is a strange timing requirement where the `download` (or first) request must get\n          to the server first, but the `upload` (or second) request must be very close behind it.\n          From testing against the docker image, it was found values between `.01` and `1.9` were\n          viable. Due to the round trip time of the first request and response happening before\n          request 2 would be received, it is necessary to use threading to ensure the requests\n          happen within rapid succession.\n\n          Files of value:\n          * /var/jenkins_home/secret.key\n          * /var/jenkins_home/secrets/master.key\n          * /var/jenkins_home/secrets/initialAdminPassword\n          * /etc/passwd\n          * /etc/shadow\n          * Project secrets and credentials\n          * Source code, build artifacts"
     },
@@ -270,13 +270,13 @@
   "CVE-2024-34102": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/magento_xxe_cve_2024_34102",
+      "file": "auxiliary_gather/magento_xxe_cve_2024_34102",
       "name": "Magento XXE Unserialize Arbitrary File Read",
       "description": "This module exploits a XXE vulnerability in Magento 2.4.7-p1 and below which allows an attacker to read any file on the system."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/magento_xxe_to_glibc_buf_overflow",
+      "file": "exploit_linux/http/magento_xxe_to_glibc_buf_overflow",
       "name": "CosmicSting: Magento Arbitrary File Read (CVE-2024-34102) + PHP Buffer Overflow in the iconv() function of glibc (CVE-2024-2961)",
       "description": "This combination of an Arbitrary File Read (CVE-2024-34102) and a Buffer Overflow in glibc (CVE-2024-2961)\n          allows for unauthenticated Remote Code Execution on the following versions of Magento and Adobe Commerce and\n          earlier if the PHP and glibc versions are also vulnerable:\n          - 2.4.7 and earlier\n          - 2.4.6-p5 and earlier\n          - 2.4.5-p7 and earlier\n          - 2.4.4-p8 and earlier\n\n          Vulnerable PHP versions:\n          - From PHP 7.0.0 (2015) to 8.3.7 (2024)\n\n          Vulnerable iconv() function in the GNU C Library:\n          - 2.39 and earlier\n\n          The exploit chain is quite interesting and for more detailed information check out the references. The tl;dr being:\n          CVE-2024-34102 is an XML External Entity vulnerability leveraging  PHP filters to read arbitrary files from the target\n          system. The exploit chain uses this to read /proc/self/maps, providing the address of PHP's heap and the libc's filename.\n          The libc is then downloaded, and the offsets of libc_malloc, libc_system and libc_realloc are extracted, and made use\n          of later in the chain.\n\n          With this information and expert knowledge of PHP's heap (chunks, free lists, buckets, bucket brigades), CVE-2024-2961\n          can be exploited. A long chain of PHP filters is constructed and sent in the same way the XXE is exploited, building a\n          payload in memory and using the buffer overflow to execute it, resulting in an unauthenticated RCE."
     },
@@ -296,7 +296,7 @@
   "CVE-2024-45309": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/onedev_arbitrary_file_read",
+      "file": "auxiliary_gather/onedev_arbitrary_file_read",
       "name": "OneDev Unauthenticated Arbitrary File Read",
       "description": "This module exploits an unauthenticated arbitrary file read vulnerability (CVE-2024-45309), which affects OneDev versions <= 11.0.8.\n          To exploit this vulnerability, a valid OneDev project name is required. If anonymous access is enabled on the OneDev server, any visitor\n          can view existing projects without authentication.\n          However, when anonymous access is disabled, an attacker who lacks prior knowledge of existing project names can use a brute-force approach.\n          By providing a user-supplied wordlist, the module may be able to guess a valid project name and subsequently exploit the vulnerability."
     },
@@ -316,7 +316,7 @@
   "CVE-2024-5806": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/progress_moveit_sftp_fileread_cve_2024_5806",
+      "file": "auxiliary_gather/progress_moveit_sftp_fileread_cve_2024_5806",
       "name": "Progress MOVEit SFTP Authentication Bypass for Arbitrary File Read",
       "description": "This module exploits CVE-2024-5806, an authentication bypass vulnerability in the MOVEit Transfer SFTP service. The\n          following version are affected:\n\n          * MOVEit Transfer 2023.0.x (Fixed in 2023.0.11)\n          * MOVEit Transfer 2023.1.x (Fixed in 2023.1.6)\n          * MOVEit Transfer 2024.0.x (Fixed in 2024.0.2)\n\n          The module can establish an authenticated SFTP session for a MOVEit Transfer user. The module allows for both listing\n          the contents of a directory, and the reading of an arbitrary file."
     }
@@ -324,7 +324,7 @@
   "CVE-2024-28995": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/solarwinds_servu_fileread_cve_2024_28995",
+      "file": "auxiliary_gather/solarwinds_servu_fileread_cve_2024_28995",
       "name": "SolarWinds Serv-U Unauthenticated Arbitrary File Read",
       "description": "This module exploits an unauthenticated file read vulnerability, due to directory traversal, affecting\n          SolarWinds Serv-U FTP Server 15.4, Serv-U Gateway 15.4, and Serv-U MFT Server 15.4. All versions prior to\n          the vendor supplied hotfix \"15.4.2 Hotfix 2\" (version 15.4.2.157) are affected."
     },
@@ -364,7 +364,7 @@
   "CVE-2024-28987": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_gather/solarwinds_webhelpdesk_backdoor",
+      "file": "auxiliary_gather/solarwinds_webhelpdesk_backdoor",
       "name": "SolarWinds Web Help Desk Backdoor (CVE-2024-28987)",
       "description": "This module exploits a backdoor in SolarWinds Web Help Desk <= v12.8.3 to retrieve all tickets from the system."
     },
@@ -384,7 +384,7 @@
   "CVE-2024-48766": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/netalertx_file_read",
+      "file": "auxiliary_scanner/http/netalertx_file_read",
       "name": " NetAlertX File Read Vulnerability",
       "description": "This module exploits improper authentication in logs.php endpoint. An unathenticated attacker can request log file and read any file due path traversal vulnerability."
     },
@@ -404,7 +404,7 @@
   "CVE-2024-57727": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/simplehelp_toolbox_path_traversal",
+      "file": "auxiliary_scanner/http/simplehelp_toolbox_path_traversal",
       "name": "SimpleHelp Path Traversal Vulnerability CVE-2024-57727",
       "description": "There exists a path traversal vulnerability in the /toolbox-resource endpoint that enables unauthenticated\n          remote attackers to download arbitrary files from the SimpleHelp server via crafted HTTP requests"
     },
@@ -424,13 +424,13 @@
   "CVE-2024-4358": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/telerik_report_server_auth_bypass",
+      "file": "auxiliary_scanner/http/telerik_report_server_auth_bypass",
       "name": "Telerik Report Server Auth Bypass",
       "description": "This module exploits an authentication bypass vulnerability in Telerik Report Server versions 10.0.24.305 and\n          prior which allows an unauthenticated attacker to create a new account with administrative privileges. The\n          vulnerability leverages the initial setup page which is still accessible once the setup process has completed.\n\n          If either USERNAME or PASSWORD are not specified, then a random value will be selected. The module will fail if\n          the specified USERNAME already exists."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/telerik_report_server_deserialization",
+      "file": "exploit_windows/http/telerik_report_server_deserialization",
       "name": "Telerik Report Server Auth Bypass and Deserialization RCE",
       "description": "This module chains an authentication bypass vulnerability (CVE-2024-4358) with a deserialization vulnerability\n          (CVE-2024-1800) to obtain remote code execution against Telerik Report Server version 10.0.24.130 and prior.\n          The authentication bypass flaw allows an unauthenticated user to create a new user with administrative privileges.\n          The USERNAME datastore option can be used to authenticate with an existing account to prevent the creation of a\n          new one. The deserialization flaw works by uploading a specially crafted report that when loaded will execute an\n          OS command as NT AUTHORITY\\SYSTEM. The module will automatically delete the created report but not the account\n          because users are unable to delete themselves."
     },
@@ -470,7 +470,7 @@
   "CVE-2024-8503": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/vicidial_sql_enum_users_pass",
+      "file": "auxiliary_scanner/http/vicidial_sql_enum_users_pass",
       "name": "Vicidial SQL Injection Time-based Admin Credentials Enumeration",
       "description": "This module exploits a time-based SQL injection vulnerability in VICIdial, allowing attackers\n          to dump admin credentials (usernames and passwords) via SQL injection."
     },
@@ -490,7 +490,7 @@
   "CVE-2024-8522": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/wp_learnpress_c_fields_sqli",
+      "file": "auxiliary_scanner/http/wp_learnpress_c_fields_sqli",
       "name": "WordPress LearnPress Unauthenticated SQLi (CVE-2024-8522, CVE-2024-8529)",
       "description": "The LearnPress WordPress LMS Plugin up to version 4.2.7 is vulnerable to SQL injection via\n          the 'c_only_fields' and 'c_fields' parameters. This allows unauthenticated attackers to exploit blind SQL injections\n          and extract sensitive information."
     },
@@ -530,7 +530,7 @@
   "CVE-2024-8529": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/wp_learnpress_c_fields_sqli",
+      "file": "auxiliary_scanner/http/wp_learnpress_c_fields_sqli",
       "name": "WordPress LearnPress Unauthenticated SQLi (CVE-2024-8522, CVE-2024-8529)",
       "description": "The LearnPress WordPress LMS Plugin up to version 4.2.7 is vulnerable to SQL injection via\n          the 'c_only_fields' and 'c_fields' parameters. This allows unauthenticated attackers to exploit blind SQL injections\n          and extract sensitive information."
     },
@@ -550,7 +550,7 @@
   "CVE-2024-43917": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/wp_ti_woocommerce_wishlist_sqli",
+      "file": "auxiliary_scanner/http/wp_ti_woocommerce_wishlist_sqli",
       "name": "WordPress TI WooCommerce Wishlist SQL Injection (CVE-2024-43917)",
       "description": "The TI WooCommerce Wishlist plugin <= 2.8.2 is vulnerable to an unauthenticated SQL injection, allowing attackers to retrieve sensitive information."
     },
@@ -570,7 +570,7 @@
   "CVE-2024-1071": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/wp_ultimate_member_sorting_sqli",
+      "file": "auxiliary_scanner/http/wp_ultimate_member_sorting_sqli",
       "name": "WordPress Ultimate Member SQL Injection (CVE-2024-1071)",
       "description": "The Ultimate Member plugin for WordPress up to version 2.8.2 is vulnerable to SQL injection via\n          the 'sorting' parameter. This allows unauthenticated attackers to exploit blind SQL injections and\n          extract sensitive information from the database."
     },
@@ -590,13 +590,13 @@
   "CVE-2024-47176": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/misc/cups_browsed_info_disclosure",
+      "file": "auxiliary_scanner/misc/cups_browsed_info_disclosure",
       "name": "cups-browsed Information Disclosure",
       "description": "Retrieve CUPS version and kernel version information from cups-browsed services."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/cups_ipp_remote_code_execution",
+      "file": "exploit_multi/misc/cups_ipp_remote_code_execution",
       "name": "CUPS IPP Attributes LAN Remote Code Execution",
       "description": "This module exploits vulnerabilities in OpenPrinting CUPS, which is running by\n          default on most Linux distributions. The vulnerabilities allow an attacker on\n          the LAN to advertise a malicious printer that triggers remote code execution\n          when a victim sends a print job to the malicious printer. Successful exploitation\n          requires user interaction, but no CUPS services need to be reachable via accessible\n          ports. Code execution occurs in the context of the lp user. Affected versions\n          are cups-browsed <= 2.0.1, libcupsfilters <= 2.1b1, libppd <= 2.1b1, and\n          cups-filters <= 2.0.1."
     },
@@ -616,7 +616,7 @@
   "CVE-2024-27348": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/apache_hugegraph_gremlin_rce",
+      "file": "exploit_linux/http/apache_hugegraph_gremlin_rce",
       "name": "Apache HugeGraph Gremlin RCE",
       "description": "This module exploits CVE-2024-27348 which is a Remote Code Execution (RCE) vulnerability that exists in\n          Apache HugeGraph Server in versions before 1.3.0. An attacker can bypass the sandbox restrictions and achieve\n          RCE through Gremlin, resulting in complete control over the server"
     },
@@ -656,7 +656,7 @@
   "CVE-2024-55964": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/appsmith_rce_cve_2024_55964",
+      "file": "exploit_linux/http/appsmith_rce_cve_2024_55964",
       "name": "Appsmith RCE",
       "description": "An incorrectly configured PostgreSQL instance in the Appsmith image leads to remote command execution inside the Appsmith Docker container."
     }
@@ -664,7 +664,7 @@
   "CVE-2024-2054": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/artica_proxy_unauth_rce_cve_2024_2054",
+      "file": "exploit_linux/http/artica_proxy_unauth_rce_cve_2024_2054",
       "name": "Artica Proxy Unauthenticated PHP Deserialization Vulnerability",
       "description": "A Command Injection vulnerability in Artica Proxy appliance version 4.50 and 4.40\n          allows remote attackers to run arbitrary commands via unauthenticated HTTP request.\n          The Artica Proxy administrative web application will deserialize arbitrary PHP objects\n          supplied by unauthenticated users and subsequently enable code execution as the \"www-data\" user."
     },
@@ -692,7 +692,7 @@
   "CVE-2024-12356": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/beyondtrust_pra_rs_unauth_rce",
+      "file": "exploit_linux/http/beyondtrust_pra_rs_unauth_rce",
       "name": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) unauthenticated Remote Code Execution",
       "description": "This exploit achieves unauthenticated remote code execution against BeyondTrust Privileged Remote\n          Access (PRA) and Remote Support (RS), with the privileges of the site user of the targeted BeyondTrust\n          product site. This exploit targets PRA and RS versions 24.3.1 and below."
     }
@@ -700,7 +700,7 @@
   "CVE-2024-31839": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/chaos_rat_xss_to_rce",
+      "file": "exploit_linux/http/chaos_rat_xss_to_rce",
       "name": "Chaos RAT XSS to RCE",
       "description": "CHAOS v5.0.8 is a free and open-source Remote Administration Tool that\n          allows generated binaries to control remote operating systems. The\n          webapp contains a remote command execution vulnerability which\n          can be triggered by an authenticated user when generating a new\n          executable. The webapp also contains an XSS vulnerability within\n          the view of a returned command being executed on an agent.\n\n          Execution can happen through one of three routes:\n\n          1. Provided credentials can be used to execute the RCE directly\n\n          2. A JWT token from an agent can be provided to emulate a compromised\n          host. If a logged in user attempts to execute a command on the host\n          the returned value contains an xss payload.\n\n          3. Similar to technique 2, an agent executable can be provided and the\n          JWT token can be extracted.\n\n          Verified against CHAOS 7d5b20ad7e58e5b525abdcb3a12514b88e87cef2 running\n          in a docker container."
     },
@@ -720,7 +720,7 @@
   "CVE-2024-30850": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/chaos_rat_xss_to_rce",
+      "file": "exploit_linux/http/chaos_rat_xss_to_rce",
       "name": "Chaos RAT XSS to RCE",
       "description": "CHAOS v5.0.8 is a free and open-source Remote Administration Tool that\n          allows generated binaries to control remote operating systems. The\n          webapp contains a remote command execution vulnerability which\n          can be triggered by an authenticated user when generating a new\n          executable. The webapp also contains an XSS vulnerability within\n          the view of a returned command being executed on an agent.\n\n          Execution can happen through one of three routes:\n\n          1. Provided credentials can be used to execute the RCE directly\n\n          2. A JWT token from an agent can be provided to emulate a compromised\n          host. If a logged in user attempts to execute a command on the host\n          the returned value contains an xss payload.\n\n          3. Similar to technique 2, an agent executable can be provided and the\n          JWT token can be extracted.\n\n          Verified against CHAOS 7d5b20ad7e58e5b525abdcb3a12514b88e87cef2 running\n          in a docker container."
     }
@@ -728,7 +728,7 @@
   "CVE-2024-56145": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/craftcms_ftp_template",
+      "file": "exploit_linux/http/craftcms_ftp_template",
       "name": "Craft CMS Twig Template Injection RCE via FTP Templates Path",
       "description": "This module exploits a Twig template injection vulnerability in Craft CMS by abusing the --templatesPath argument.\n          The vulnerability allows arbitrary template loading via FTP, leading to Remote Code Execution (RCE)."
     },
@@ -748,7 +748,7 @@
   "CVE-2024-3408": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/dtale_rce_cve_2025_0655",
+      "file": "exploit_linux/http/dtale_rce_cve_2025_0655",
       "name": "D-Tale RCE",
       "description": "This exploit effectively serves as a bypass for CVE-2024-3408.\n          An attacker can override global state to enable custom filters, which then facilitates remote code execution.\n          Specifically, this vulnerability leverages the ability to manipulate global application settings to activate the enable_custom_filters feature, typically restricted to trusted environments.\n          Once enabled, the /test-filter endpoint of the Custom Filters functionality can be exploited to execute arbitrary system commands."
     },
@@ -768,7 +768,7 @@
   "CVE-2024-6127": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/empire_skywalker",
+      "file": "exploit_linux/http/empire_skywalker",
       "name": "PowerShellEmpire Arbitrary File Upload (Skywalker)",
       "description": "A vulnerability existed in the new Empire (maintained by BC Security)\n          prior to commit e73e883 (<v5.9.3) or the original PowerShellEmpire\n          server prior to commit f030cf62 which would allow an arbitrary file\n          to be written to an attacker controlled location with the permissions\n          of the Empire server.\n\n          This exploit will write the payload to /tmp/ directory followed by a\n          cron.d file to execute the payload."
     }
@@ -776,7 +776,7 @@
   "CVE-2024-55555": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/invoiceninja_unauth_rce_cve_2024_55555",
+      "file": "exploit_linux/http/invoiceninja_unauth_rce_cve_2024_55555",
       "name": "Invoice Ninja unauthenticated PHP Deserialization Vulnerability",
       "description": "Invoice Ninja is a free invoicing software for small businesses, based on the PHP framework Laravel.\n          A Remote Code Execution vulnerability in Invoice Ninja (>= 5.8.22 <= 5.10.10) allows remote unauthenticated\n          attackers to conduct PHP deserialization attacks via endpoint `/route/<hash>` which accepts a Laravel\n          ciphered value which is unsafe unserialized, if an attacker has access to the APP_KEY.\n          As it allows remote code execution, adversaries could exploit this flaw to execute arbitrary commands,\n          potentially resulting in complete system compromise, data exfiltration, or unauthorized access\n          to sensitive information."
     }
@@ -784,7 +784,7 @@
   "CVE-2024-55556": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/invoiceshelf_unauth_rce_cve_2024_55556",
+      "file": "exploit_linux/http/invoiceshelf_unauth_rce_cve_2024_55556",
       "name": "InvoiceShelf unauthenticated PHP Deserialization Vulnerability",
       "description": "InvoiceShelf is an open-source web & mobile app that helps you track expenses, payments, create professional\n          invoices & estimates and is based on the PHP framework Laravel.\n          InvoiceShelf has a Remote Code Execution vulnerability that allows remote unauthenticated attackers to conduct\n          PHP deserialization attacks. This is possible when the `SESSION_DRIVER=cookie` option is set on the default\n          InvoiceShelf .env file meaning that any session will be stored as a ciphered value inside a cookie.\n          These sessions are made from a specially crafted JSON containing serialized data which is then ciphered using\n          Laravel's encrypt() function.\n          An attacker in possession of the `APP_KEY` would therefore be able to retrieve the cookie, uncipher it and modify\n          the serialized data in order to get arbitrary deserialization on the affected server, allowing them to achieve\n          remote command execution. InvoiceShelf version `1.3.0` and lower is vulnerable.\n          As it allows remote code execution, adversaries could exploit this flaw to execute arbitrary commands,\n          potentially resulting in complete system compromise, data exfiltration, or unauthorized access\n          to sensitive information."
     }
@@ -792,7 +792,7 @@
   "CVE-2024-12029": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/invokeai_rce_cve_2024_12029",
+      "file": "exploit_linux/http/invokeai_rce_cve_2024_12029",
       "name": "InvokeAI RCE",
       "description": "InvokeAI has a critical vulnerability leading to remote code execution in the /api/v2/models/install API through unsafe model deserialization.\n          The API allows users to specify a model URL, which is downloaded and loaded server-side using torch.load without proper validation.\n          This functionality allows attackers to embed malicious code in model files that execute upon loading."
     }
@@ -800,13 +800,13 @@
   "CVE-2024-21887": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_connect_secure_rce_cve_2023_46805",
+      "file": "exploit_linux/http/ivanti_connect_secure_rce_cve_2023_46805",
       "name": "Ivanti Connect Secure Unauthenticated Remote Code Execution",
       "description": "This module chains an authentication bypass vulnerability (CVE-2023-46805) and a command injection\n          vulnerability (CVE-2024-21887) to exploit vulnerable instances of either Ivanti Connect Secure or Ivanti\n          Policy Secure, to achieve unauthenticated remote code execution. All currently supported versions 9.x and\n          22.x prior to the vendor mitigation are vulnerable. It is unknown if unsupported versions 8.x and below are\n          also vulnerable."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_connect_secure_rce_cve_2024_21893",
+      "file": "exploit_linux/http/ivanti_connect_secure_rce_cve_2024_21893",
       "name": "Ivanti Connect Secure Unauthenticated Remote Code Execution",
       "description": "This module chains a server side request forgery (SSRF) vulnerability (CVE-2024-21893) and a command injection\n          vulnerability (CVE-2024-21887) to exploit vulnerable instances of either Ivanti Connect Secure or Ivanti\n          Policy Secure, to achieve unauthenticated remote code execution. All currently supported versions 9.x and\n          22.x are vulnerable, prior to the vendor patch released on Feb 1, 2024. It is unknown if unsupported versions\n          8.x and below are also vulnerable."
     },
@@ -826,7 +826,7 @@
   "CVE-2024-21893": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_connect_secure_rce_cve_2024_21893",
+      "file": "exploit_linux/http/ivanti_connect_secure_rce_cve_2024_21893",
       "name": "Ivanti Connect Secure Unauthenticated Remote Code Execution",
       "description": "This module chains a server side request forgery (SSRF) vulnerability (CVE-2024-21893) and a command injection\n          vulnerability (CVE-2024-21887) to exploit vulnerable instances of either Ivanti Connect Secure or Ivanti\n          Policy Secure, to achieve unauthenticated remote code execution. All currently supported versions 9.x and\n          22.x are vulnerable, prior to the vendor patch released on Feb 1, 2024. It is unknown if unsupported versions\n          8.x and below are also vulnerable."
     },
@@ -846,7 +846,7 @@
   "CVE-2024-37404": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ivanti_connect_secure_rce_cve_2024_37404",
+      "file": "exploit_linux/http/ivanti_connect_secure_rce_cve_2024_37404",
       "name": "Ivanti Connect Secure Authenticated Remote Code Execution via OpenSSL CRLF Injection",
       "description": "This module exploits a CRLF injection vulnerability in Ivanti Connect\n          Secure to achieve remote code execution (CVE-2024-37404). Versions\n          prior to 22.7R2.1 are vulnerable. Note that Ivanti Policy Secure\n          versions prior to 22.7R1.1 are also vulnerable but this module\n          doesn't support this software.\n\n          Valid administrative credentials are required. A non-administrative\n          user is also required and can be created using the administrative\n          account, if needed."
     }
@@ -854,7 +854,7 @@
   "CVE-2024-28185": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/judge0_sandbox_escape_cve_2024_28189",
+      "file": "exploit_linux/http/judge0_sandbox_escape_cve_2024_28189",
       "name": "Judge0 sandbox escape",
       "description": "Judge0 does not account for symlinks placed inside the sandbox directory,\n          which can be leveraged by an attacker to write to arbitrary files and gain code execution outside of the sandbox."
     }
@@ -862,7 +862,7 @@
   "CVE-2024-28189": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/judge0_sandbox_escape_cve_2024_28189",
+      "file": "exploit_linux/http/judge0_sandbox_escape_cve_2024_28189",
       "name": "Judge0 sandbox escape",
       "description": "Judge0 does not account for symlinks placed inside the sandbox directory,\n          which can be leveraged by an attacker to write to arbitrary files and gain code execution outside of the sandbox."
     }
@@ -870,7 +870,7 @@
   "CVE-2024-51092": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/librenms_authenticated_rce_cve_2024_51092",
+      "file": "exploit_linux/http/librenms_authenticated_rce_cve_2024_51092",
       "name": "LibreNMS Authenticated RCE (CVE-2024-51092)",
       "description": "An authenticated attacker can create dangerous directory names on the system and\n          alter sensitive configuration parameters through the web portal.\n          Those two defects combined then allows to inject arbitrary OS commands inside shell_exec() calls,\n          thus achieving arbitrary code execution."
     }
@@ -878,7 +878,7 @@
   "CVE-2024-5721": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/logsign_exec",
+      "file": "exploit_linux/http/logsign_exec",
       "name": "Logsign Remote Command Injection",
       "description": "This module exploits a command injection vulnerability in Logsign.\n          By exploiting this vulnerability, unauthenticated users can execute\n          arbitrary code under the root user.\n\n          Logsign has a publicly accessible endpoint. That endpoint takes a user\n          input and then use it during operating system command execution without\n          proper validation.\n\n          This module was tested against 4.4.2 and 4.4.137 versions."
     }
@@ -886,7 +886,7 @@
   "CVE-2024-2961": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/magento_xxe_to_glibc_buf_overflow",
+      "file": "exploit_linux/http/magento_xxe_to_glibc_buf_overflow",
       "name": "CosmicSting: Magento Arbitrary File Read (CVE-2024-34102) + PHP Buffer Overflow in the iconv() function of glibc (CVE-2024-2961)",
       "description": "This combination of an Arbitrary File Read (CVE-2024-34102) and a Buffer Overflow in glibc (CVE-2024-2961)\n          allows for unauthenticated Remote Code Execution on the following versions of Magento and Adobe Commerce and\n          earlier if the PHP and glibc versions are also vulnerable:\n          - 2.4.7 and earlier\n          - 2.4.6-p5 and earlier\n          - 2.4.5-p7 and earlier\n          - 2.4.4-p8 and earlier\n\n          Vulnerable PHP versions:\n          - From PHP 7.0.0 (2015) to 8.3.7 (2024)\n\n          Vulnerable iconv() function in the GNU C Library:\n          - 2.39 and earlier\n\n          The exploit chain is quite interesting and for more detailed information check out the references. The tl;dr being:\n          CVE-2024-34102 is an XML External Entity vulnerability leveraging  PHP filters to read arbitrary files from the target\n          system. The exploit chain uses this to read /proc/self/maps, providing the address of PHP's heap and the libc's filename.\n          The libc is then downloaded, and the offsets of libc_malloc, libc_system and libc_realloc are extracted, and made use\n          of later in the chain.\n\n          With this information and expert knowledge of PHP's heap (chunks, free lists, buckets, bucket brigades), CVE-2024-2961\n          can be exploited. A long chain of PHP filters is constructed and sent in the same way the XXE is exploited, building a\n          payload in memory and using the buffer overflow to execute it, resulting in an unauthenticated RCE."
     }
@@ -894,7 +894,7 @@
   "CVE-2024-43425": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/moodle_rce",
+      "file": "exploit_linux/http/moodle_rce",
       "name": "Moodle Remote Code Execution (CVE-2024-43425)",
       "description": "This module exploits a command injection vulnerability in Moodle (CVE-2024-43425) to obtain remote code execution.\n          Affected versions include 4.4 to 4.4.1, 4.3 to 4.3.5, 4.2 to 4.2.8, 4.1 to 4.1.11, and earlier unsupported versions."
     },
@@ -934,7 +934,7 @@
   "CVE-2024-46506": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netalertx_rce_cve_2024_46506",
+      "file": "exploit_linux/http/netalertx_rce_cve_2024_46506",
       "name": "Unauthenticated RCE in NetAlertX",
       "description": "An attacker can update NetAlertX settings with no authentication, which results in RCE."
     },
@@ -954,7 +954,7 @@
   "CVE-2024-12847": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netgear_dgn1000_setup_unauth_exec",
+      "file": "exploit_linux/http/netgear_dgn1000_setup_unauth_exec",
       "name": "Netgear DGN1000 Setup.cgi Unauthenticated RCE",
       "description": "This module exploits an unauthenticated OS command execution vulneralbility\n          in the setup.cgi file in Netgear DGN1000 firmware versions up to 1.1.00.48, and\n          DGN2000v1 models."
     }
@@ -962,7 +962,7 @@
   "CVE-2024-22729": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netis_unauth_rce_cve_2024_22729",
+      "file": "exploit_linux/http/netis_unauth_rce_cve_2024_22729",
       "name": "Netis router MW5360 unauthenticated RCE.",
       "description": "Netis router MW5360 has a command injection vulnerability via the password parameter on the login page.\n          The vulnerability stems from improper handling of the \"password\" parameter within the router's web interface.\n          The router's login page authorization can be bypassed by simply deleting the authorization header,\n          leading to the vulnerability. All router firmware versions up to `V1.0.1.3442` are vulnerable.\n          Attackers can inject a command in the 'password' parameter, encoded in base64, to exploit the command injection\n          vulnerability. When exploited, this can lead to unauthorized command execution, potentially allowing the attacker\n          to take control of the router."
     },
@@ -982,7 +982,7 @@
   "CVE-2024-48455": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
+      "file": "exploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
       "name": "Netis Router Exploit Chain Reactor (CVE-2024-48455, CVE-2024-48456 and CVE-2024-48457).",
       "description": "Several Netis Routers including rebranded routers from GLCtec and Stonet suffer from a command injection\n          vulnerability at the change admin password page of the router web interface (see CVE-2024-48456 for more details).\n          The vulnerability stems from improper handling of the 'password' and 'new password' parameter within the\n          router's web interface. Attackers can inject a command in the 'password' or 'new password' parameter,\n          encoded in base64, to exploit the command injection vulnerability. When exploited, this can lead to\n          command execution, potentially allowing the attacker to take full control of the router.\n          An attacker needs to be authenticated to initiate this RCE, however CVE-2024-48457 allows an unauthenticated\n          attacker to reset the Wifi and router password, hence gaining full root access to the router to execute the RCE.\n\n          Last but not least, CVE-2024-48455 allows for unauthenticated information disclosure revealing sensitive configuration\n          information of the router which can be used by the attacker to determine if the router is running specific vulnerable\n          firmware.\n\n          The following router firmware versions are vulnerable:\n          * netis_MW5360_V1.0.1.3031_fw.bin\n          * Netis_MW5360-1.0.1.3442.bin\n          * Netis_MW5360_RUSSIA_844.bin\n          * netis_NC21_V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=40)\n          * netis_NC63_V3.0.0.3327.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * netis_NC63_v4_Bangladesh-V3.0.0.3889.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * Netis_NC63-V3.0.0.3833.bin (https://www.netisru.com/support/downinfo.html?id=35)\n          * netis_app_BeeWiFi_NC63_v4_Bangladesh-V3.0.0.3503.bin\n          * netis_NC65_V3.0.0.3749.bin\n          * Netis_NC65_Bangladesh-V3.0.0.3508.bin (https://www.netis-systems.com/support/downinfo.html?id=34)\n          * Netis_NC65v2-V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=34)\n          * netis_NX10_V2.0.1.3582_fw.bin\n          * netis_NX10_V2.0.1.3643.bin\n          * Netis_NX10_v1_Bangladesh-V3.0.0.4142.bin (https://www.netis-systems.com/support/downinfo.html?id=33)\n          * netis_NX10-V3.0.1.4205.bin (https://www.netisru.com/support/downinfo.html?id=33)\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3329.bin\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3500.bin\n          * Netis_NC21_v2_Bangladesh-V3.0.0.3854.bin (https://www.netis-systems.com/support/downinfo.html?id=40)\n          * GLC_ALPHA_AC3-V3.0.2.115.bin (https://drive.google.com/drive/folders/1P69yUfzeZeR6oABmIdcJ6fG57-Xjrzx6)\n          * potentially others..."
     },
@@ -1002,7 +1002,7 @@
   "CVE-2024-48456": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
+      "file": "exploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
       "name": "Netis Router Exploit Chain Reactor (CVE-2024-48455, CVE-2024-48456 and CVE-2024-48457).",
       "description": "Several Netis Routers including rebranded routers from GLCtec and Stonet suffer from a command injection\n          vulnerability at the change admin password page of the router web interface (see CVE-2024-48456 for more details).\n          The vulnerability stems from improper handling of the 'password' and 'new password' parameter within the\n          router's web interface. Attackers can inject a command in the 'password' or 'new password' parameter,\n          encoded in base64, to exploit the command injection vulnerability. When exploited, this can lead to\n          command execution, potentially allowing the attacker to take full control of the router.\n          An attacker needs to be authenticated to initiate this RCE, however CVE-2024-48457 allows an unauthenticated\n          attacker to reset the Wifi and router password, hence gaining full root access to the router to execute the RCE.\n\n          Last but not least, CVE-2024-48455 allows for unauthenticated information disclosure revealing sensitive configuration\n          information of the router which can be used by the attacker to determine if the router is running specific vulnerable\n          firmware.\n\n          The following router firmware versions are vulnerable:\n          * netis_MW5360_V1.0.1.3031_fw.bin\n          * Netis_MW5360-1.0.1.3442.bin\n          * Netis_MW5360_RUSSIA_844.bin\n          * netis_NC21_V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=40)\n          * netis_NC63_V3.0.0.3327.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * netis_NC63_v4_Bangladesh-V3.0.0.3889.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * Netis_NC63-V3.0.0.3833.bin (https://www.netisru.com/support/downinfo.html?id=35)\n          * netis_app_BeeWiFi_NC63_v4_Bangladesh-V3.0.0.3503.bin\n          * netis_NC65_V3.0.0.3749.bin\n          * Netis_NC65_Bangladesh-V3.0.0.3508.bin (https://www.netis-systems.com/support/downinfo.html?id=34)\n          * Netis_NC65v2-V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=34)\n          * netis_NX10_V2.0.1.3582_fw.bin\n          * netis_NX10_V2.0.1.3643.bin\n          * Netis_NX10_v1_Bangladesh-V3.0.0.4142.bin (https://www.netis-systems.com/support/downinfo.html?id=33)\n          * netis_NX10-V3.0.1.4205.bin (https://www.netisru.com/support/downinfo.html?id=33)\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3329.bin\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3500.bin\n          * Netis_NC21_v2_Bangladesh-V3.0.0.3854.bin (https://www.netis-systems.com/support/downinfo.html?id=40)\n          * GLC_ALPHA_AC3-V3.0.2.115.bin (https://drive.google.com/drive/folders/1P69yUfzeZeR6oABmIdcJ6fG57-Xjrzx6)\n          * potentially others..."
     }
@@ -1010,7 +1010,7 @@
   "CVE-2024-48457": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
+      "file": "exploit_linux/http/netis_unauth_rce_cve_2024_48456_and_48457",
       "name": "Netis Router Exploit Chain Reactor (CVE-2024-48455, CVE-2024-48456 and CVE-2024-48457).",
       "description": "Several Netis Routers including rebranded routers from GLCtec and Stonet suffer from a command injection\n          vulnerability at the change admin password page of the router web interface (see CVE-2024-48456 for more details).\n          The vulnerability stems from improper handling of the 'password' and 'new password' parameter within the\n          router's web interface. Attackers can inject a command in the 'password' or 'new password' parameter,\n          encoded in base64, to exploit the command injection vulnerability. When exploited, this can lead to\n          command execution, potentially allowing the attacker to take full control of the router.\n          An attacker needs to be authenticated to initiate this RCE, however CVE-2024-48457 allows an unauthenticated\n          attacker to reset the Wifi and router password, hence gaining full root access to the router to execute the RCE.\n\n          Last but not least, CVE-2024-48455 allows for unauthenticated information disclosure revealing sensitive configuration\n          information of the router which can be used by the attacker to determine if the router is running specific vulnerable\n          firmware.\n\n          The following router firmware versions are vulnerable:\n          * netis_MW5360_V1.0.1.3031_fw.bin\n          * Netis_MW5360-1.0.1.3442.bin\n          * Netis_MW5360_RUSSIA_844.bin\n          * netis_NC21_V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=40)\n          * netis_NC63_V3.0.0.3327.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * netis_NC63_v4_Bangladesh-V3.0.0.3889.bin (https://www.netis-systems.com/support/downinfo.html?id=35)\n          * Netis_NC63-V3.0.0.3833.bin (https://www.netisru.com/support/downinfo.html?id=35)\n          * netis_app_BeeWiFi_NC63_v4_Bangladesh-V3.0.0.3503.bin\n          * netis_NC65_V3.0.0.3749.bin\n          * Netis_NC65_Bangladesh-V3.0.0.3508.bin (https://www.netis-systems.com/support/downinfo.html?id=34)\n          * Netis_NC65v2-V3.0.0.3800.bin (https://www.netisru.com/support/downinfo.html?id=34)\n          * netis_NX10_V2.0.1.3582_fw.bin\n          * netis_NX10_V2.0.1.3643.bin\n          * Netis_NX10_v1_Bangladesh-V3.0.0.4142.bin (https://www.netis-systems.com/support/downinfo.html?id=33)\n          * netis_NX10-V3.0.1.4205.bin (https://www.netisru.com/support/downinfo.html?id=33)\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3329.bin\n          * netis_app_BeeWiFi_NC21_v4_Bangladesh-V3.0.0.3500.bin\n          * Netis_NC21_v2_Bangladesh-V3.0.0.3854.bin (https://www.netis-systems.com/support/downinfo.html?id=40)\n          * GLC_ALPHA_AC3-V3.0.2.115.bin (https://drive.google.com/drive/folders/1P69yUfzeZeR6oABmIdcJ6fG57-Xjrzx6)\n          * potentially others..."
     }
@@ -1018,7 +1018,7 @@
   "CVE-2024-37032": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/ollama_rce_cve_2024_37032",
+      "file": "exploit_linux/http/ollama_rce_cve_2024_37032",
       "name": "Ollama Model Registry Path Traversal RCE",
       "description": "Ollama before 0.1.34 is vulnerable to a path traversal attack via the\n          model pull mechanism (CVE-2024-37032). When pulling a model, the digest\n          field in OCI manifests is not validated, allowing an attacker to inject\n          path traversal sequences to write arbitrary files on the server.\n\n          This module starts a rogue OCI registry that serves two models. The first\n          pull writes a malicious shared library and /etc/ld.so.preload via path\n          traversal (a sacrificial first layer absorbs the digest verification\n          failure so the remaining files persist). The second pull registers a valid\n          model so /api/chat can spawn the llama.cpp runner process, which triggers\n          the dynamic linker to load the malicious library via ld.so.preload. The\n          library constructor forks, cleans up ld.so.preload, and executes the\n          payload in the child process.\n\n          The default Ollama Docker image runs as root with the API bound to\n          0.0.0.0:11434, making this a direct unauthenticated RCE."
     },
@@ -1038,7 +1038,7 @@
   "CVE-2024-28255": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/openmetadata_auth_bypass_rce",
+      "file": "exploit_linux/http/openmetadata_auth_bypass_rce",
       "name": "OpenMetadata authentication bypass and SpEL injection exploit chain",
       "description": "OpenMetadata is a unified platform for discovery, observability, and governance powered\n          by a central metadata repository, in-depth lineage, and seamless team collaboration.\n          This module chains two vulnerabilities that exist in the OpenMetadata aplication.\n          The first vulnerability, CVE-2024-28255, bypasses the API authentication using JWT tokens.\n          It misuses the `JwtFilter` that checks the path of the url endpoint against a list of excluded\n          endpoints that does not require authentication. Unfortunately, an attacker may use Path Parameters\n          to make any path contain any arbitrary strings that will match the excluded endpoint condition\n          and therefore will be processed with no JWT validation allowing an attacker to bypass the\n          authentication mechanism and reach any arbitrary endpoint.\n          By chaining this vulnerability with CVE-2024-28254, that allows for arbitrary SpEL injection\n          at endpoint `/api/v1/events/subscriptions/validation/condition/<expression>`, attackers\n          are able to run arbitrary commands using Java classes such as `java.lang.Runtime` without any\n          authentication.\n          OpenMetadata versions `1.2.3` and below are vulnerable."
     },
@@ -1058,7 +1058,7 @@
   "CVE-2024-28254": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/openmetadata_auth_bypass_rce",
+      "file": "exploit_linux/http/openmetadata_auth_bypass_rce",
       "name": "OpenMetadata authentication bypass and SpEL injection exploit chain",
       "description": "OpenMetadata is a unified platform for discovery, observability, and governance powered\n          by a central metadata repository, in-depth lineage, and seamless team collaboration.\n          This module chains two vulnerabilities that exist in the OpenMetadata aplication.\n          The first vulnerability, CVE-2024-28255, bypasses the API authentication using JWT tokens.\n          It misuses the `JwtFilter` that checks the path of the url endpoint against a list of excluded\n          endpoints that does not require authentication. Unfortunately, an attacker may use Path Parameters\n          to make any path contain any arbitrary strings that will match the excluded endpoint condition\n          and therefore will be processed with no JWT validation allowing an attacker to bypass the\n          authentication mechanism and reach any arbitrary endpoint.\n          By chaining this vulnerability with CVE-2024-28254, that allows for arbitrary SpEL injection\n          at endpoint `/api/v1/events/subscriptions/validation/condition/<expression>`, attackers\n          are able to run arbitrary commands using Java classes such as `java.lang.Runtime` without any\n          authentication.\n          OpenMetadata versions `1.2.3` and below are vulnerable."
     }
@@ -1066,7 +1066,7 @@
   "CVE-2024-5910": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/paloalto_expedition_rce",
+      "file": "exploit_linux/http/paloalto_expedition_rce",
       "name": "Palo Alto Expedition Remote Code Execution (CVE-2024-5910 and CVE-2024-9464)",
       "description": "Obtain remote code execution in Palo Alto Expedition version 1.2.91 and below.\n          The first vulnerability, CVE-2024-5910, allows to reset the password of the admin user, and the second vulnerability, CVE-2024-9464, is an authenticated OS command injection. In a default installation, commands will get executed in the context of www-data.\n          When credentials are provided, this module will only exploit the second vulnerability. If no credentials are provided, the module will first try to reset the admin password and then perform the OS command injection."
     },
@@ -1106,13 +1106,13 @@
   "CVE-2024-24809": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/paloalto_expedition_rce",
+      "file": "exploit_linux/http/paloalto_expedition_rce",
       "name": "Palo Alto Expedition Remote Code Execution (CVE-2024-5910 and CVE-2024-9464)",
       "description": "Obtain remote code execution in Palo Alto Expedition version 1.2.91 and below.\n          The first vulnerability, CVE-2024-5910, allows to reset the password of the admin user, and the second vulnerability, CVE-2024-9464, is an authenticated OS command injection. In a default installation, commands will get executed in the context of www-data.\n          When credentials are provided, this module will only exploit the second vulnerability. If no credentials are provided, the module will first try to reset the admin password and then perform the OS command injection."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/traccar_rce_upload",
+      "file": "exploit_linux/http/traccar_rce_upload",
       "name": "Traccar v5 Remote Code Execution (CVE-2024-31214 and CVE-2024-24809)",
       "description": "Remote Code Execution in Traccar v5.1 - v5.12.\n          Remote code execution can be obtained by combining two vulnerabilities: A path traversal vulnerability (CVE-2024-24809) and an unrestricted file upload vulnerability (CVE-2024-31214).\n          By default, the application allows self-registration, enabling any user to register an account and exploit the issues. Moreover, the application runs by default with root privileges, potentially resulting in a complete system compromise.\n          This module, which should work on any Red Hat-based Linux system, exploits these issues by adding a new cronjob file that executes the specified payload."
     },
@@ -1132,7 +1132,7 @@
   "CVE-2024-11320": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/pandora_fms_auth_rce_cve_2024_11320",
+      "file": "exploit_linux/http/pandora_fms_auth_rce_cve_2024_11320",
       "name": "Pandora FMS authenticated command injection leading to RCE via LDAP using default DB password",
       "description": "Pandora FMS is a monitoring solution that provides full observability for your organization's\n          technology. This module exploits an command injection vulnerability in the LDAP authentication\n          mechanism of Pandora FMS.\n          You need have admin access at the Pandora FMS Web application in order to execute this RCE.\n          This access can be achieved leveraging a default password vulnerability in Pandora FMS that\n          allows an attacker to access the Pandora FMS MySQL database, create a new admin user and gain\n          administrative access to the Pandora FMS Web application. This attack can be remotely executed\n          over the WAN as long as the MySQL services are exposed to the outside world.\n          This issue affects Community, Free and Enterprise editions: from v7.0NG.718 through <= v7.0NG.777.4"
     },
@@ -1152,7 +1152,7 @@
   "CVE-2024-12971": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/pandora_fms_auth_rce_cve_2024_12971",
+      "file": "exploit_linux/http/pandora_fms_auth_rce_cve_2024_12971",
       "name": "Pandora FMS authenticated command injection leading to RCE via chromium_path or phantomjs_bin",
       "description": "Pandora FMS is a monitoring solution that provides full observability for your organization's\n          technology. This module exploits an command injection vulnerability in the `chromium-path` or\n          `phantomjs-bin` directory setting at the application settings page of Pandora FMS.\n          You need have admin access at the Pandora FMS Web application in order to execute this RCE.\n          This access can be achieved by knowing the admin credentials to access the web application or\n          leveraging a default password vulnerability in Pandora FMS that allows an attacker to access\n          the Pandora FMS MySQL database, create a new admin user and gain administrative access to the\n          Pandora FMS Web application. This attack can be remotely executed over the WAN as long as the\n          MySQL services are exposed to the outside world.\n          This issue affects Community, Free and Enterprise editions:\n          - chromium-path: from v7.0NG.768 through <= v7.0NG.780\n          - phantomjs-bin: from v7.0NG.724 through <= v7.0NG.767\n\n          Note: use target setting 2 \"Tiny Reverse Netcat Command\" for versions <= v7.0NG.738"
     }
@@ -1160,7 +1160,7 @@
   "CVE-2024-0012": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/panos_management_unauth_rce",
+      "file": "exploit_linux/http/panos_management_unauth_rce",
       "name": "Palo Alto Networks PAN-OS Management Interface Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability (CVE-2024-0012) and a command injection\n          vulnerability (CVE-2024-9474) in the PAN-OS management web interface. An unauthenticated attacker can\n          execute arbitrary code with root privileges.\n\n          The following versions are affected:\n          * PAN-OS 11.2 (up to and including 11.2.4-h1)\n          * PAN-OS 11.1 (up to and including 11.1.5-h1)\n          * PAN-OS 11.0 (up to and including 11.0.6-h1)\n          * PAN-OS 10.2 (up to and including 10.2.12-h2)"
     },
@@ -1180,7 +1180,7 @@
   "CVE-2024-9474": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/panos_management_unauth_rce",
+      "file": "exploit_linux/http/panos_management_unauth_rce",
       "name": "Palo Alto Networks PAN-OS Management Interface Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability (CVE-2024-0012) and a command injection\n          vulnerability (CVE-2024-9474) in the PAN-OS management web interface. An unauthenticated attacker can\n          execute arbitrary code with root privileges.\n\n          The following versions are affected:\n          * PAN-OS 11.2 (up to and including 11.2.4-h1)\n          * PAN-OS 11.1 (up to and including 11.1.5-h1)\n          * PAN-OS 11.0 (up to and including 11.0.6-h1)\n          * PAN-OS 10.2 (up to and including 10.2.12-h2)"
     },
@@ -1200,7 +1200,7 @@
   "CVE-2024-3400": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/panos_telemetry_cmd_exec",
+      "file": "exploit_linux/http/panos_telemetry_cmd_exec",
       "name": "Palo Alto Networks PAN-OS Unauthenticated Remote Code Execution",
       "description": "This module exploits two vulnerabilities in Palo Alto Networks PAN-OS that\n          allow an unauthenticated attacker to create arbitrarily named files and execute\n          shell commands. Configuration requirements are PAN-OS with GlobalProtect Gateway or\n          GlobalProtect Portal enabled and telemetry collection on (default). Affected versions\n          include < 11.1.0-h3, < 11.1.1-h1, < 11.1.2-h3, < 11.0.2-h4, < 11.0.3-h10, < 11.0.4-h1,\n          < 10.2.5-h6, < 10.2.6-h3, < 10.2.8-h3, and < 10.2.9-h1. Payloads may take up to\n          one hour to execute, depending on how often the telemetry service is set to run."
     },
@@ -1240,7 +1240,7 @@
   "CVE-2024-48594": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/prison_management_rce",
+      "file": "exploit_linux/http/prison_management_rce",
       "name": "Prison Management System 1.0 Authenticated RCE via Unrestricted File Upload",
       "description": "This module exploits an unrestricted file upload vulnerability in Prison Management System 1.0.\n          An authenticated user can upload a PHP file with arbitrary content by abusing the avatar upload\n          functionality in the add-admin.php endpoint. The application fails to properly validate the\n          uploaded file type, allowing an attacker to upload a PHP webshell."
     }
@@ -1248,13 +1248,13 @@
   "CVE-2024-2389": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/progress_flowmon_unauth_cmd_injection",
+      "file": "exploit_linux/http/progress_flowmon_unauth_cmd_injection",
       "name": "Flowmon Unauthenticated Command Injection",
       "description": "This module exploits an unauthenticated command injection vulnerability in Progress Flowmon\n          versions before v12.03.02."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/progress_flowmon_sudo_privesc_2024",
+      "file": "exploit_linux/local/progress_flowmon_sudo_privesc_2024",
       "name": "Progress Flowmon Local sudo privilege escalation",
       "description": "This module abuses a feature of the sudo command on Progress Flowmon.\n          Certain binary files are allowed to automatically elevate\n          with the sudo command.  This is based off of the file name.  This\n          includes executing a PHP command with a specific file name. If the\n          file is overwritten with PHP code it can be used to elevate privileges\n          to root. Progress Flowmon up to at least version 12.3.5 is vulnerable."
     },
@@ -1274,13 +1274,13 @@
   "CVE-2024-1212": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/progress_kemp_loadmaster_unauth_cmd_injection",
+      "file": "exploit_linux/http/progress_kemp_loadmaster_unauth_cmd_injection",
       "name": "Kemp LoadMaster Unauthenticated Command Injection",
       "description": "This module exploits an unauthenticated command injection vulnerability in\n          Progress Kemp LoadMaster in the authorization header after vversion 7.2.48.1.\n          The following versions are patched: 7.2.59.2 (GA), 7.2.54.8 (LTSF) and\n          7.2.48.10 (LTS)."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/progress_kemp_loadmaster_sudo_privesc_2024",
+      "file": "exploit_linux/local/progress_kemp_loadmaster_sudo_privesc_2024",
       "name": "Kemp LoadMaster Local sudo privilege escalation",
       "description": "This module abuses a feature of the sudo command on Progress Kemp\n          LoadMaster.  Certain binary files are allowed to automatically elevate\n          with the sudo command.  This is based off of the file name.  Some files\n          have this permission are not write-protected from the default 'bal' user.\n          As such, if the file is overwritten with an arbitrary file, it will still\n          auto-elevate.  This module overwrites the /bin/loadkeys file with another\n          executable."
     },
@@ -1300,7 +1300,7 @@
   "CVE-2024-11680": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/projectsend_unauth_rce",
+      "file": "exploit_linux/http/projectsend_unauth_rce",
       "name": "ProjectSend r1295 - r1605 Unauthenticated Remote Code Execution",
       "description": "This module exploits an improper authorization vulnerability in ProjectSend versions r1295 through r1605.\n          The vulnerability allows an unauthenticated attacker to obtain remote code execution by enabling user registration,\n          disabling the whitelist of allowed file extensions, and uploading a malicious PHP file to the server."
     },
@@ -1320,7 +1320,7 @@
   "CVE-2024-39205": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/pyload_js2py_cve_2024_39205",
+      "file": "exploit_linux/http/pyload_js2py_cve_2024_39205",
       "name": "Pyload RCE (CVE-2024-39205) with js2py sandbox escape (CVE-2024-28397)",
       "description": "CVE-2024-28397 is sandbox escape in js2py (<=0.74) which is a popular python package that can evaluate\n          javascript code inside a python interpreter. The vulnerability allows for an attacker to obtain a reference\n          to a python object in the js2py environment enabling them to escape the sandbox, bypass pyimport restrictions\n          and execute arbitrary commands on the host. At the time of writing no patch has been released, version 0.74\n          is the latest version of js2py which was released Nov 6, 2022.\n\n          CVE-2024-39205 is an remote code execution vulnerability in Pyload (<=0.5.0b3.dev85) which is an open-source\n          download manager designed to automate file downloads from various online sources. Pyload is vulnerable because\n          it exposes the vulnerable js2py functionality mentioned above on the /flash/addcrypted2 API endpoint.\n          This endpoint was designed to only accept connections from localhost but by manipulating the HOST header we\n          can bypass this restriction in order to access the API to achieve unauth RCE."
     }
@@ -1328,7 +1328,7 @@
   "CVE-2024-28397": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/pyload_js2py_cve_2024_39205",
+      "file": "exploit_linux/http/pyload_js2py_cve_2024_39205",
       "name": "Pyload RCE (CVE-2024-39205) with js2py sandbox escape (CVE-2024-28397)",
       "description": "CVE-2024-28397 is sandbox escape in js2py (<=0.74) which is a popular python package that can evaluate\n          javascript code inside a python interpreter. The vulnerability allows for an attacker to obtain a reference\n          to a python object in the js2py environment enabling them to escape the sandbox, bypass pyimport restrictions\n          and execute arbitrary commands on the host. At the time of writing no patch has been released, version 0.74\n          is the latest version of js2py which was released Nov 6, 2022.\n\n          CVE-2024-39205 is an remote code execution vulnerability in Pyload (<=0.5.0b3.dev85) which is an open-source\n          download manager designed to automate file downloads from various online sources. Pyload is vulnerable because\n          it exposes the vulnerable js2py functionality mentioned above on the /flash/addcrypted2 API endpoint.\n          This endpoint was designed to only accept connections from localhost but by manipulating the HOST header we\n          can bypass this restriction in order to access the API to achieve unauth RCE."
     },
@@ -1348,7 +1348,7 @@
   "CVE-2024-24578": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/raspberrymatic_unauth_rce_cve_2024_24578",
+      "file": "exploit_linux/http/raspberrymatic_unauth_rce_cve_2024_24578",
       "name": "RaspberryMatic unauthenticated Remote Code Execution vulnerability through HMServer File Upload.",
       "description": "RaspberryMatic / OCCU contains a unauthenticated remote code execution (RCE) vulnerability, caused by multiple\n          issues within the Java based HMIPServer.jar component. The webui allows for Firmware uploads which can be reached\n          through the URL `/pages/jpages/system/DeviceFirmware/addFirmware`.\n          This allows an unauthenticated attacker to upload a malicious .tgz archive to the server, which will be\n          automatically extracted without any further checks. As this entry can contain ../sequences, it is possible to\n          break out of the predefined temp directory and write files to other locations outside this path.\n\n          This vulnerability is commonly known as the Zip Slip vulnerability and can be used to overwrite arbitrary files\n          on the main filesystem. It is therefore possible to overwrite the watchdog script with a malicious payload in\n          `/usr/local/addons/mediola/bin/`, which will be executed every five minutes through a cron job where attackers\n          can gain remote code execution as root user, allowing a full system compromise.\n\n          RaspberryMatic versions <= `3.73.9.20240130` are vulnerable."
     }
@@ -1356,7 +1356,7 @@
   "CVE-2024-36985": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/splunk_auth_rce_cve_2024_36985",
+      "file": "exploit_linux/http/splunk_auth_rce_cve_2024_36985",
       "name": "Authenticated RCE in Splunk (splunk_archiver app)",
       "description": "This Metasploit module exploits a Remote Code Execution (RCE) vulnerability in Splunk Enterprise (splunk_archiver application).\n\n          The flaw is rooted in the unsafe use of a Splunk lookup function, specifically | copybuckets, within the splunk_archiver application,\n          which ultimately leads to the execution of the helper script sudobash with attacker-controlled arguments.\n\n          The affected versions include any release prior to 9.0.10, as well as versions 9.1.2 through 9.1.5 and 9.2.0 through 9.2.2."
     }
@@ -1364,7 +1364,7 @@
   "CVE-2024-31214": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/traccar_rce_upload",
+      "file": "exploit_linux/http/traccar_rce_upload",
       "name": "Traccar v5 Remote Code Execution (CVE-2024-31214 and CVE-2024-24809)",
       "description": "Remote Code Execution in Traccar v5.1 - v5.12.\n          Remote code execution can be obtained by combining two vulnerabilities: A path traversal vulnerability (CVE-2024-24809) and an unrestricted file upload vulnerability (CVE-2024-31214).\n          By default, the application allows self-registration, enabling any user to register an account and exploit the issues. Moreover, the application runs by default with root privileges, potentially resulting in a complete system compromise.\n          This module, which should work on any Red Hat-based Linux system, exploits these issues by adding a new cronjob file that executes the specified payload."
     }
@@ -1372,7 +1372,7 @@
   "CVE-2024-32019": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/ndsudo_cve_2024_32019",
+      "file": "exploit_linux/local/ndsudo_cve_2024_32019",
       "name": "Netdata ndsudo privilege escalation",
       "description": "The `ndsudo` is a tool shipped with Netdata Agent. The version v1.45.0 and below contain vulnerability, which allows an attacker to gain privilege escalation using `ndsudo` binary. The vulnerability is untrusted search path, when searching for additional binary files, such as `nvme`. An attacker can create malicious binary with same name and add the directory of this binary into `$PATH` variable. The `ndsudo` will trust the first occurence of this binary and execute it."
     }
@@ -1380,7 +1380,7 @@
   "CVE-2024-21626": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/runc_cwd_priv_esc",
+      "file": "exploit_linux/local/runc_cwd_priv_esc",
       "name": "runc (docker) File Descriptor Leak Privilege Escalation",
       "description": "All versions of runc <=1.1.11, as used by containerization technologies such as Docker engine,\n          and Kubernetes are vulnerable to an arbitrary file write.\n          Due to a file descriptor leak it is possible to mount the host file system\n          with the permissions of runc (typically root).\n\n          Successfully tested on Ubuntu 22.04 with runc 1.1.7-0ubuntu1~22.04.1 and runc 1.1.11 using Docker build.\n          Successfully tested on Debian 12.4.0 with runc 1.1.11 using Docker build.\n          Successfully tested on Arch Linux 12/1/2024 with runc 1.1.10-1 using Docker build."
     }
@@ -1388,7 +1388,7 @@
   "CVE-2024-48990": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/ubuntu_needrestart_lpe",
+      "file": "exploit_linux/local/ubuntu_needrestart_lpe",
       "name": "Ubuntu needrestart Privilege Escalation",
       "description": "Local attackers can execute arbitrary code as root by\n          tricking needrestart into running the Python interpreter with an\n          attacker-controlled PYTHONPATH environment variable.\n\n          Verified against Ubuntu 22.04 with needrestart 3.5-5ubuntu2.1\n          Attempted exploitation against Debian 12, expliotation failed"
     }
@@ -1396,7 +1396,7 @@
   "CVE-2024-37081": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/local/vcenter_sudo_lpe",
+      "file": "exploit_linux/local/vcenter_sudo_lpe",
       "name": "vCenter Sudo Privilege Escalation",
       "description": "VMware vCenter Server < 7.0.3 update R and < 8.0.2 update D\n          contains multiple local privilege escalation vulnerabilities\n          due to misconfiguration of sudo. An authenticated local user\n          with non-administrative privileges may exploit these issues\n          to elevate privileges to root on vCenter Server Appliance.\n\n          Tested against VMware vCenter Server Appliance 8.0.0.10000 20519528"
     }
@@ -1404,7 +1404,7 @@
   "CVE-2024-42365": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/misc/asterisk_ami_originate_auth_rce",
+      "file": "exploit_linux/misc/asterisk_ami_originate_auth_rce",
       "name": "Asterisk AMI Originate Authenticated RCE",
       "description": "On Asterisk, prior to versions 18.24.2, 20.9.2, and 21.4.2 and certified-asterisk\n          versions 18.9-cert11 and 20.7-cert2, an AMI user with 'write=originate' may change\n          all configuration files in the '/etc/asterisk/' directory. Writing a new extension\n          can be created which performs a system command to achieve RCE as the asterisk service\n          user (typically asterisk).\n          Default parking lot in FreePBX is called \"Default lot\" on the website interface,\n          however its actually 'parkedcalls'.\n          Tested against Asterisk 19.8.0 and 18.16.0 on Freepbx SNG7-PBX16-64bit-2302-1."
     }
@@ -1412,7 +1412,7 @@
   "CVE-2024-47575": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/misc/fortimanager_rce_cve_2024_47575",
+      "file": "exploit_linux/misc/fortimanager_rce_cve_2024_47575",
       "name": "Fortinet FortiManager Unauthenticated RCE",
       "description": "This module exploits a missing authentication vulnerability affecting FortiManager and FortiManager\n          Cloud devices to achieve unauthenticated RCE with root privileges.\n\n          The vulnerable FortiManager versions are:\n          * 7.6.0\n          * 7.4.0 through 7.4.4\n          * 7.2.0 through 7.2.7\n          * 7.0.0 through 7.0.12\n          * 6.4.0 through 6.4.14\n          * 6.2.0 through 6.2.12\n\n          The vulnerable FortiManager Cloud versions are:\n          * 7.4.1 through 7.4.4\n          * 7.2.1 through 7.2.7\n          * 7.0.1 through 7.0.12\n          * 6.4 (all versions)."
     }
@@ -1420,7 +1420,7 @@
   "CVE-2024-29510": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/fileformat/ghostscript_format_string_cve_2024_29510",
+      "file": "exploit_multi/fileformat/ghostscript_format_string_cve_2024_29510",
       "name": "Ghostscript Command Execution via Format String",
       "description": "This module exploits a format string vulnerability in Ghostscript\n          versions before 10.03.1 to achieve a SAFER sandbox bypass and execute\n          arbitrary commands. This vulnerability is reachable via libraries such as\n          ImageMagick.\n\n          This exploit only works against Ghostscript versions 10.03.0 and\n          10.01.2. Some offsets adjustement will probably be needed to make it\n          work with other versions."
     }
@@ -1428,7 +1428,7 @@
   "CVE-2024-32113": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/apache_ofbiz_forgot_password_directory_traversal",
+      "file": "exploit_multi/http/apache_ofbiz_forgot_password_directory_traversal",
       "name": "Apache OFBiz forgotPassword/ProgramExport RCE",
       "description": "Apache OFBiz versions prior to 18.12.13 are vulnerable to a path traversal vulnerability (CVE-2024-32113). The\n          vulnerable endpoint /webtools/control/forgotPassword allows an attacker to access the ProgramExport endpoint\n          which in turn allows for remote code execution in the context of the user running the application. This was\n          patched in 18.12.14.\n\n          It was then discovered that the use of the path traversal vulnerability is not required in order to access\n          the vulnerable endpoint ProgramExport. CVE-2024-38856 was given for this Incorrect Authorization vulnerability\n          and was patched in 18.12.15.\n\n          This module was originally written the exploit CVE-2024-32113, but upon the discovery of CVE-2024-38856 the\n          module updated to not exploit the path traversal vulnerability allowing for exploitation on 18.12.14 as well."
     },
@@ -1468,7 +1468,7 @@
   "CVE-2024-38856": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/apache_ofbiz_forgot_password_directory_traversal",
+      "file": "exploit_multi/http/apache_ofbiz_forgot_password_directory_traversal",
       "name": "Apache OFBiz forgotPassword/ProgramExport RCE",
       "description": "Apache OFBiz versions prior to 18.12.13 are vulnerable to a path traversal vulnerability (CVE-2024-32113). The\n          vulnerable endpoint /webtools/control/forgotPassword allows an attacker to access the ProgramExport endpoint\n          which in turn allows for remote code execution in the context of the user running the application. This was\n          patched in 18.12.14.\n\n          It was then discovered that the use of the path traversal vulnerability is not required in order to access\n          the vulnerable endpoint ProgramExport. CVE-2024-38856 was given for this Incorrect Authorization vulnerability\n          and was patched in 18.12.15.\n\n          This module was originally written the exploit CVE-2024-32113, but upon the discovery of CVE-2024-38856 the\n          module updated to not exploit the path traversal vulnerability allowing for exploitation on 18.12.14 as well."
     },
@@ -1488,7 +1488,7 @@
   "CVE-2024-21683": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/atlassian_confluence_rce_cve_2024_21683",
+      "file": "exploit_multi/http/atlassian_confluence_rce_cve_2024_21683",
       "name": "Atlassian Confluence Administrator Code Macro Remote Code Execution",
       "description": "This module exploits an authenticated administrator-level vulnerability in Atlassian Confluence,\n          tracked as CVE-2024-21683. The vulnerability exists due to the Rhino script engine parser evaluating\n          tainted data from uploaded text files. This facilitates arbitrary code execution. This exploit will\n          authenticate, validate user privileges, extract the underlying host OS information, then trigger\n          remote code execution. All versions of Confluence prior to 7.17 are affected, as are many versions\n          up to 8.9.0."
     },
@@ -1508,7 +1508,7 @@
   "CVE-2024-31819": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/avideo_wwbnindex_unauth_rce",
+      "file": "exploit_multi/http/avideo_wwbnindex_unauth_rce",
       "name": "AVideo WWBNIndex Plugin Unauthenticated RCE",
       "description": "This module exploits an unauthenticated remote code execution (RCE) vulnerability\n          in the WWBNIndex plugin of the AVideo platform. The vulnerability exists within the\n          `submitIndex.php` file, where user-supplied input is passed directly to the `require()`\n          function without proper sanitization. By exploiting this, an attacker can leverage the\n          PHP filter chaining technique to execute arbitrary PHP code on the server. This allows\n          for the execution of commands and control over the affected system. The exploit is\n          particularly dangerous because it does not require authentication, making it possible\n          for any remote attacker to exploit this vulnerability."
     }
@@ -1516,7 +1516,7 @@
   "CVE-2024-25641": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/cacti_package_import_rce",
+      "file": "exploit_multi/http/cacti_package_import_rce",
       "name": "Cacti Import Packages RCE",
       "description": "This exploit module leverages an arbitrary file write vulnerability\n          (CVE-2024-25641) in Cacti versions prior to 1.2.27 to achieve RCE. It\n          abuses the `Import Packages` feature to upload a specially crafted\n          package that embeds a PHP file. Cacti will extract this file to an\n          accessible location. The module finally triggers the payload to execute\n          arbitrary PHP code in the context of the user running the web server.\n\n          Authentication is needed and the account must have access to the\n          `Import Packages` feature. This is granted by setting the `Import\n          Templates` permission in the `Template Editor` section."
     },
@@ -1544,7 +1544,7 @@
   "CVE-2024-57487": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/carrental_fileupload_rce",
+      "file": "exploit_multi/http/carrental_fileupload_rce",
       "name": "Car Rental System 1.0 File Upload RCE (Authenticated)",
       "description": "This module exploits an authenticated remote code execution vulnerability in the\n          Online Car Rental System 1.0 via the `changeimage1.php` endpoint. An authenticated\n          attacker can upload malicious PHP scripts without proper validation, enabling\n          arbitrary code execution on the server."
     }
@@ -1552,7 +1552,7 @@
   "CVE-2024-55956": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/cleo_rce_cve_2024_55956",
+      "file": "exploit_multi/http/cleo_rce_cve_2024_55956",
       "name": "Cleo LexiCom, VLTrader, and Harmony Unauthenticated Remote Code Execution",
       "description": "This module exploits an unauthenticated file write vulnerability in Cleo LexiCom, VLTrader, and Harmony\n          versions 5.8.0.23 and below."
     },
@@ -1572,7 +1572,7 @@
   "CVE-2024-1708": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/connectwise_screenconnect_rce_cve_2024_1709",
+      "file": "exploit_multi/http/connectwise_screenconnect_rce_cve_2024_1709",
       "name": "ConnectWise ScreenConnect Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability that allows an unauthenticated attacker to create\n          a new administrator user account on a vulnerable ConnectWise ScreenConnect server. The attacker can leverage\n          this to achieve RCE by uploading a malicious extension module. All versions of ScreenConnect version 23.9.7\n          and below are affected."
     }
@@ -1580,7 +1580,7 @@
   "CVE-2024-1709": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/connectwise_screenconnect_rce_cve_2024_1709",
+      "file": "exploit_multi/http/connectwise_screenconnect_rce_cve_2024_1709",
       "name": "ConnectWise ScreenConnect Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability that allows an unauthenticated attacker to create\n          a new administrator user account on a vulnerable ConnectWise ScreenConnect server. The attacker can leverage\n          this to achieve RCE by uploading a malicious extension module. All versions of ScreenConnect version 23.9.7\n          and below are affected."
     },
@@ -1600,7 +1600,7 @@
   "CVE-2024-0204": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/fortra_goanywhere_mft_rce_cve_2024_0204",
+      "file": "exploit_multi/http/fortra_goanywhere_mft_rce_cve_2024_0204",
       "name": "Fortra GoAnywhere MFT Unauthenticated Remote Code Execution",
       "description": "This module exploits a vulnerability in Fortra GoAnywhere MFT that allows an unauthenticated attacker to\n          create a new administrator account. This can be leveraged to upload a JSP payload and achieve RCE. GoAnywhere\n          MFT versions 6.x from 6.0.1, and 7.x before 7.4.1 are vulnerable."
     },
@@ -1640,7 +1640,7 @@
   "CVE-2024-23759": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/gambio_unauth_rce_cve_2024_23759",
+      "file": "exploit_multi/http/gambio_unauth_rce_cve_2024_23759",
       "name": "Gambio Online Webshop unauthenticated PHP Deserialization Vulnerability",
       "description": "A Remote Code Execution vulnerability in Gambio online webshop version 4.9.2.0 and lower\n          allows remote attackers to run arbitrary commands via unauthenticated HTTP POST request.\n          The identified vulnerability within Gambio pertains to an insecure deserialization flaw,\n          which ultimately allows an attacker to execute remote code on affected systems.\n          The insecure deserialization vulnerability in Gambio poses a significant risk to affected systems.\n          As it allows remote code execution, adversaries could exploit this flaw to execute arbitrary commands,\n          potentially resulting in complete system compromise, data exfiltration, or unauthorized access\n          to sensitive information."
     }
@@ -1648,7 +1648,7 @@
   "CVE-2024-36401": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/geoserver_unauth_rce_cve_2024_36401",
+      "file": "exploit_multi/http/geoserver_unauth_rce_cve_2024_36401",
       "name": "Geoserver unauthenticated Remote Code Execution",
       "description": "GeoServer is an open-source software server written in Java that provides\n          the ability to view, edit, and share geospatial data.\n          It is designed to be a flexible, efficient solution for distributing geospatial data\n          from a variety of sources such as Geographic Information System (GIS) databases,\n          web-based data, and personal datasets.\n          In the GeoServer versions < 2.23.6, >= 2.24.0, < 2.24.4 and >= 2.25.0, < 2.25.1,\n          multiple OGC request parameters allow Remote Code Execution (RCE) by unauthenticated users\n          through specially crafted input against a default GeoServer installation due to unsafely\n          evaluating property names as XPath expressions.\n          An attacker can abuse this by sending a POST request with a malicious xpath expression\n          to execute arbitrary commands as root on the system."
     },
@@ -1668,7 +1668,7 @@
   "CVE-2024-24725": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/gibbon_auth_rce_cve_2024_24725",
+      "file": "exploit_multi/http/gibbon_auth_rce_cve_2024_24725",
       "name": "Gibbon School Platform Authenticated PHP Deserialization Vulnerability",
       "description": "A Remote Code Execution vulnerability in Gibbon online school platform version 26.0.00 and lower\n          allows remote authenticated users to conduct PHP deserialization attacks via columnOrder in a\n          POST request to the endpoint `/modules/System%20Admin/import_run.php&type=externalAssessment&step=4`.\n          As it allows remote code execution, adversaries could exploit this flaw to execute arbitrary commands,\n          potentially resulting in complete system compromise, data exfiltration, or unauthorized access\n          to sensitive information."
     }
@@ -1676,7 +1676,7 @@
   "CVE-2024-27198": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/jetbrains_teamcity_rce_cve_2024_27198",
+      "file": "exploit_multi/http/jetbrains_teamcity_rce_cve_2024_27198",
       "name": "JetBrains TeamCity Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability in JetBrains TeamCity. An unauthenticated\n          attacker can leverage this to access the REST API and create a new administrator access token. This token\n          can be used to upload a plugin which contains a Metasploit payload, allowing the attacker to achieve\n          unauthenticated RCE on the target TeamCity server. On older versions of TeamCity, access tokens do not exist\n          so the exploit will instead create a new administrator account before uploading a plugin. Older version of\n          TeamCity have a debug endpoint (/app/rest/debug/process) that allows for arbitrary commands to be executed,\n          however recent version of TeamCity no longer ship this endpoint, hence why a plugin is leveraged for code\n          execution instead, as this is supported on all versions tested."
     },
@@ -1716,7 +1716,7 @@
   "CVE-2024-2044": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/pgadmin_session_deserialization",
+      "file": "exploit_multi/http/pgadmin_session_deserialization",
       "name": "pgAdmin Session Deserialization RCE",
       "description": "pgAdmin versions <= 8.3 have a path traversal vulnerability within their session management logic that can allow\n          a pickled file to be loaded from an arbitrary location. This can be used to load a malicious, serialized Python\n          object to execute code within the context of the target application.\n\n          This exploit supports two techniques by which the payload can be loaded, depending on whether or not credentials\n          are specified. If valid credentials are provided, Metasploit will login to pgAdmin and upload a payload object\n          using pgAdmin's file management plugin. Once uploaded, this payload is executed via the path traversal before\n          being deleted using the file management plugin. This technique works for both Linux and Windows targets. If no\n          credentials are provided, Metasploit will start an SMB server and attempt to trigger loading the payload via a\n          UNC path. This technique only works for Windows targets. For Windows 10 v1709 (Redstone 3) and later, it also\n          requires that insecure outbound guest access be enabled.\n\n          Tested on pgAdmin 8.3 on Linux, 7.7 on Linux, 7.0 on Linux, and 8.3 on Windows. The file management plugin\n          underwent changes in the 6.x versions and therefor, pgAdmin versions < 7.0 can not utilize the authenticated\n          technique whereby a payload is uploaded."
     }
@@ -1724,7 +1724,7 @@
   "CVE-2024-8517": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/spip_bigup_unauth_rce",
+      "file": "exploit_multi/http/spip_bigup_unauth_rce",
       "name": "SPIP BigUp Plugin Unauthenticated RCE",
       "description": "This module exploits a Remote Code Execution vulnerability in the BigUp plugin of SPIP.\n          The vulnerability lies in the `lister_fichiers_par_champs` function, which is triggered\n          when the `bigup_retrouver_fichiers` parameter is set to any value. By exploiting the improper\n          handling of multipart form data in file uploads, an attacker can inject and execute\n          arbitrary PHP code on the target server.\n\n          This critical vulnerability affects all versions of SPIP from 4.0 up to and including\n          4.3.1, 4.2.15, and 4.1.17. It allows unauthenticated users to execute arbitrary code\n          remotely via the public interface. The vulnerability has been patched in versions\n          4.3.2, 4.2.16, and 4.1.18."
     },
@@ -1744,7 +1744,7 @@
   "CVE-2024-7954": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/spip_porte_plume_previsu_rce",
+      "file": "exploit_multi/http/spip_porte_plume_previsu_rce",
       "name": "SPIP Unauthenticated RCE via porte_plume Plugin",
       "description": "This module exploits a Remote Code Execution vulnerability in SPIP versions up to and including 4.2.12.\n          The vulnerability occurs in SPIP's templating system where it incorrectly handles user-supplied input,\n          allowing an attacker to inject and execute arbitrary PHP code. This can be achieved by crafting a\n          payload manipulating the templating data processed by the `echappe_retour()` function, invoking\n          `traitements_previsu_php_modeles_eval()`, which contains an `eval()` call."
     },
@@ -1764,7 +1764,7 @@
   "CVE-2024-34069": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/werkzeug_debug_rce",
+      "file": "exploit_multi/http/werkzeug_debug_rce",
       "name": "Pallete Projects Werkzeug Debugger Remote Code Execution",
       "description": "This module will exploit the Werkzeug debug console to put down a Python shell. Werkzeug is included with Flask, but not enabled by default. It is also included in other projects, for example the RunServerPlus extension for Django. It may also be used alone.\n\n          The documentation states the following: \"The debugger must never be used on production machines. We cannot stress this enough. Do not enable the debugger in production.\" Of course this doesn't prevent developers from mistakenly enabling it in production!\n\n          Tested against the following Werkzeug versions:\n          - 3.0.3  on Debian 12, Windows 11 and macOS 14.6\n          - 1.1.4  on Debian 12\n          - 1.0.1  on Debian 12\n          - 0.11.5 on Debian 12\n          - 0.10   on Debian 12"
     }
@@ -1772,7 +1772,7 @@
   "CVE-2024-27956": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_automatic_sqli_to_rce",
+      "file": "exploit_multi/http/wp_automatic_sqli_to_rce",
       "name": "WordPress wp-automatic Plugin SQLi Admin Creation",
       "description": "This module exploits an unauthenticated SQL injection vulnerability in the WordPress wp-automatic plugin (versions < 3.92.1)\n          to achieve remote code execution (RCE). The vulnerability allows the attacker to inject and execute arbitrary SQL commands,\n          which can be used to create a malicious administrator account. The password for the new account is hashed using MD5.\n          Once the administrator account is created, the attacker can upload and execute a malicious plugin, leading to full control\n          over the WordPress site."
     },
@@ -1792,7 +1792,7 @@
   "CVE-2024-25600": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_bricks_builder_rce",
+      "file": "exploit_multi/http/wp_bricks_builder_rce",
       "name": "Unauthenticated RCE in Bricks Builder Theme",
       "description": "This module exploits an unauthenticated remote code execution vulnerability in the\n          Bricks Builder Theme versions <= 1.9.6 for WordPress. The vulnerability allows attackers\n          to execute arbitrary PHP code by leveraging a nonce leakage to bypass authentication and\n          exploit the eval() function usage within the theme. Successful exploitation allows for full\n          control of the affected WordPress site. It is recommended to upgrade to version 1.9.6.1 or higher."
     },
@@ -1812,7 +1812,7 @@
   "CVE-2024-5932": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_givewp_rce",
+      "file": "exploit_multi/http/wp_givewp_rce",
       "name": "GiveWP Unauthenticated Donation Process Exploit",
       "description": "The GiveWP Donation Plugin and Fundraising Platform for WordPress, in all versions up to and including 3.16.1,\n          is vulnerable to a PHP Object Injection (POI) attack that allows unauthenticated arbitrary code execution.\n          Although a patch was introduced in version 3.14.2, it was incorrect and can be bypassed.\n          This means the vulnerability remains exploitable in subsequent versions due to the ineffective patch."
     },
@@ -1832,7 +1832,7 @@
   "CVE-2024-8353": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_givewp_rce",
+      "file": "exploit_multi/http/wp_givewp_rce",
       "name": "GiveWP Unauthenticated Donation Process Exploit",
       "description": "The GiveWP Donation Plugin and Fundraising Platform for WordPress, in all versions up to and including 3.16.1,\n          is vulnerable to a PHP Object Injection (POI) attack that allows unauthenticated arbitrary code execution.\n          Although a patch was introduced in version 3.14.2, it was incorrect and can be bypassed.\n          This means the vulnerability remains exploitable in subsequent versions due to the ineffective patch."
     },
@@ -1852,7 +1852,7 @@
   "CVE-2024-5084": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_hash_form_rce",
+      "file": "exploit_multi/http/wp_hash_form_rce",
       "name": "WordPress Hash Form Plugin RCE",
       "description": "The Hash Form - Drag & Drop Form Builder plugin for WordPress suffers from a critical vulnerability\n          due to missing file type validation in the file_upload_action function. This vulnerability exists\n          in all versions up to and including 1.1.0. Unauthenticated attackers can exploit this flaw to upload arbitrary\n          files, including PHP scripts, to the server, potentially allowing for remote code execution on the affected\n          WordPress site. This module targets multiple platforms by adapting payload delivery and execution based on the\n          server environment."
     },
@@ -1872,7 +1872,7 @@
   "CVE-2024-44000": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_litespeed_cookie_theft",
+      "file": "exploit_multi/http/wp_litespeed_cookie_theft",
       "name": "Wordpress LiteSpeed Cache plugin cookie theft",
       "description": "This module exploits an unauthenticated account takeover vulnerability in LiteSpeed Cache, a Wordpress plugin\n          that currently has around 6 million active installations. In LiteSpeed Cache versions prior to 6.5.0.1, when\n          the Debug Logging feature is enabled, the plugin will log admin cookies to the /wp-content/debug.log endpoint\n          which is accessible without authentication. The Debug Logging feature in the plugin is not enabled by default.\n          The admin cookies found in the debug.log can be used to upload and execute a malicious plugin containing a payload."
     },
@@ -1912,7 +1912,7 @@
   "CVE-2024-10924": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_reallysimplessl_2fa_bypass_rce",
+      "file": "exploit_multi/http/wp_reallysimplessl_2fa_bypass_rce",
       "name": "WordPress Really Simple SSL Plugin Authentication Bypass to RCE",
       "description": "This module exploits an authentication bypass vulnerability in the WordPress Really Simple SSL plugin\n          (versions 9.0.0 to 9.1.1.1). The vulnerability allows bypassing two-factor authentication (2FA) and\n          uploading a plugin to achieve remote code execution (RCE). Note: For the system to be vulnerable,\n          2FA must be enabled on the target site; otherwise, the exploit will not work."
     },
@@ -1952,7 +1952,7 @@
   "CVE-2024-8856": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/http/wp_time_capsule_file_upload_rce",
+      "file": "exploit_multi/http/wp_time_capsule_file_upload_rce",
       "name": "WordPress WP Time Capsule Arbitrary File Upload to RCE",
       "description": "This module exploits an arbitrary file upload vulnerability in the WordPress WP Time Capsule plugin\n          (versions <= 1.22.21). The vulnerability allows uploading a malicious PHP file to achieve remote\n          code execution (RCE).\n\n          The validation logic in the vulnerable function improperly checks for allowed extensions.\n          If no valid extension is found, the check can be bypassed by using a filename of specific length\n          (e.g., \"00.php\") matching the length of allowed extensions like \".crypt\"."
     },
@@ -1992,7 +1992,7 @@
   "CVE-2024-6782": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/calibre_exec",
+      "file": "exploit_multi/misc/calibre_exec",
       "name": "Calibre Python Code Injection (CVE-2024-6782)",
       "description": "This module exploits a Python code injection vulnerability in the Content Server component of Calibre v6.9.0 - v7.15.0. Once enabled (disabled by default), it will listen in its default configuration on all network interfaces on TCP port 8080 for incoming traffic, and does not require any authentication. The injected payload will get executed in the same context under which Calibre is being executed."
     },
@@ -2012,7 +2012,7 @@
   "CVE-2024-47076": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/cups_ipp_remote_code_execution",
+      "file": "exploit_multi/misc/cups_ipp_remote_code_execution",
       "name": "CUPS IPP Attributes LAN Remote Code Execution",
       "description": "This module exploits vulnerabilities in OpenPrinting CUPS, which is running by\n          default on most Linux distributions. The vulnerabilities allow an attacker on\n          the LAN to advertise a malicious printer that triggers remote code execution\n          when a victim sends a print job to the malicious printer. Successful exploitation\n          requires user interaction, but no CUPS services need to be reachable via accessible\n          ports. Code execution occurs in the context of the lp user. Affected versions\n          are cups-browsed <= 2.0.1, libcupsfilters <= 2.1b1, libppd <= 2.1b1, and\n          cups-filters <= 2.0.1."
     }
@@ -2020,7 +2020,7 @@
   "CVE-2024-47175": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/cups_ipp_remote_code_execution",
+      "file": "exploit_multi/misc/cups_ipp_remote_code_execution",
       "name": "CUPS IPP Attributes LAN Remote Code Execution",
       "description": "This module exploits vulnerabilities in OpenPrinting CUPS, which is running by\n          default on most Linux distributions. The vulnerabilities allow an attacker on\n          the LAN to advertise a malicious printer that triggers remote code execution\n          when a victim sends a print job to the malicious printer. Successful exploitation\n          requires user interaction, but no CUPS services need to be reachable via accessible\n          ports. Code execution occurs in the context of the lp user. Affected versions\n          are cups-browsed <= 2.0.1, libcupsfilters <= 2.1b1, libppd <= 2.1b1, and\n          cups-filters <= 2.0.1."
     }
@@ -2028,7 +2028,7 @@
   "CVE-2024-47177": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/cups_ipp_remote_code_execution",
+      "file": "exploit_multi/misc/cups_ipp_remote_code_execution",
       "name": "CUPS IPP Attributes LAN Remote Code Execution",
       "description": "This module exploits vulnerabilities in OpenPrinting CUPS, which is running by\n          default on most Linux distributions. The vulnerabilities allow an attacker on\n          the LAN to advertise a malicious printer that triggers remote code execution\n          when a victim sends a print job to the malicious printer. Successful exploitation\n          requires user interaction, but no CUPS services need to be reachable via accessible\n          ports. Code execution occurs in the context of the lp user. Affected versions\n          are cups-browsed <= 2.0.1, libcupsfilters <= 2.1b1, libppd <= 2.1b1, and\n          cups-filters <= 2.0.1."
     }
@@ -2036,7 +2036,7 @@
   "CVE-2024-45256": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/byob_unauth_rce",
+      "file": "exploit_unix/webapp/byob_unauth_rce",
       "name": "BYOB Unauthenticated RCE via Arbitrary File Write and Command Injection (CVE-2024-45256, CVE-2024-45257)",
       "description": "This module exploits two vulnerabilities in the BYOB (Build Your Own Botnet) web GUI:\n          1. CVE-2024-45256: Unauthenticated arbitrary file write that allows modification of the SQLite database, adding a new admin user.\n          2. CVE-2024-45257: Authenticated command injection in the payload generation page.\n\n          These vulnerabilities remain unpatched."
     }
@@ -2044,7 +2044,7 @@
   "CVE-2024-45257": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/byob_unauth_rce",
+      "file": "exploit_unix/webapp/byob_unauth_rce",
       "name": "BYOB Unauthenticated RCE via Arbitrary File Write and Command Injection (CVE-2024-45256, CVE-2024-45257)",
       "description": "This module exploits two vulnerabilities in the BYOB (Build Your Own Botnet) web GUI:\n          1. CVE-2024-45256: Unauthenticated arbitrary file write that allows modification of the SQLite database, adding a new admin user.\n          2. CVE-2024-45257: Authenticated command injection in the payload generation page.\n\n          These vulnerabilities remain unpatched."
     }
@@ -2052,7 +2052,7 @@
   "CVE-2024-51567": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
+      "file": "exploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
       "name": "CyberPanel Multi CVE Pre-auth RCE",
       "description": "This module exploits three separate unauthenticated Remote Code Execution vulnerabilities in CyberPanel:\n\n          - CVE-2024-51567: Command injection vulnerability in the \"upgrademysqlstatus\" endpoint.\n          - CVE-2024-51568: Command Injection via the \"completePath\" parameter in the \"outputExecutioner\" sink.\n          - CVE-2024-51378: Unauthenticated RCE in \"/ftp/getresetstatus\" and \"/dns/getresetstatus\".\n\n          These vulnerabilities were exploited in ransomware campaigns affecting over 22,000 CyberPanel instances, with the PSAUX ransomware being the primary actor in these attacks."
     },
@@ -2072,7 +2072,7 @@
   "CVE-2024-51568": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
+      "file": "exploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
       "name": "CyberPanel Multi CVE Pre-auth RCE",
       "description": "This module exploits three separate unauthenticated Remote Code Execution vulnerabilities in CyberPanel:\n\n          - CVE-2024-51567: Command injection vulnerability in the \"upgrademysqlstatus\" endpoint.\n          - CVE-2024-51568: Command Injection via the \"completePath\" parameter in the \"outputExecutioner\" sink.\n          - CVE-2024-51378: Unauthenticated RCE in \"/ftp/getresetstatus\" and \"/dns/getresetstatus\".\n\n          These vulnerabilities were exploited in ransomware campaigns affecting over 22,000 CyberPanel instances, with the PSAUX ransomware being the primary actor in these attacks."
     },
@@ -2092,7 +2092,7 @@
   "CVE-2024-51378": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
+      "file": "exploit_unix/webapp/cyberpanel_preauth_rce_multi_cve",
       "name": "CyberPanel Multi CVE Pre-auth RCE",
       "description": "This module exploits three separate unauthenticated Remote Code Execution vulnerabilities in CyberPanel:\n\n          - CVE-2024-51567: Command injection vulnerability in the \"upgrademysqlstatus\" endpoint.\n          - CVE-2024-51568: Command Injection via the \"completePath\" parameter in the \"outputExecutioner\" sink.\n          - CVE-2024-51378: Unauthenticated RCE in \"/ftp/getresetstatus\" and \"/dns/getresetstatus\".\n\n          These vulnerabilities were exploited in ransomware campaigns affecting over 22,000 CyberPanel instances, with the PSAUX ransomware being the primary actor in these attacks."
     },
@@ -2132,7 +2132,7 @@
   "CVE-2024-8504": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_unix/webapp/vicidial_agent_authenticated_rce",
+      "file": "exploit_unix/webapp/vicidial_agent_authenticated_rce",
       "name": "VICIdial Authenticated Remote Code Execution",
       "description": "An attacker with authenticated access to VICIdial as an \"agent\"\n          can execute arbitrary shell commands as the \"root\" user. This\n          attack can be chained with CVE-2024-8503 to execute arbitrary\n          shell commands starting from an unauthenticated perspective."
     }
@@ -2140,7 +2140,7 @@
   "CVE-2024-0546": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/ftp/easyftp_list_fixret",
+      "file": "exploit_windows/ftp/easyftp_list_fixret",
       "name": "EasyFTP Server LIST Command Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in EasyFTP Server 1.7.0.11.\n          credit goes to Karn Ganeshan.\n\n          NOTE: Although, this is likely to exploit the same vulnerability as the\n          'easyftp_cwd_fixret' exploit, it uses a slightly different vector."
     }
@@ -2148,7 +2148,7 @@
   "CVE-2024-23985": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/ezserver_http",
+      "file": "exploit_windows/http/ezserver_http",
       "name": "EZHomeTech EzServer Stack Buffer Overflow Vulnerability",
       "description": "This module exploits a stack buffer overflow in the EZHomeTech EZServer\n          for versions 6.4.017 and earlier. If a malicious user sends packets\n          containing an overly long string, it may be possible to execute a\n          payload remotely. Due to size constraints, this module uses the\n          Egghunter technique."
     }
@@ -2156,7 +2156,7 @@
   "CVE-2024-29824": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/ivanti_epm_recordgoodapp_sqli_rce",
+      "file": "exploit_windows/http/ivanti_epm_recordgoodapp_sqli_rce",
       "name": "Ivanti EPM RecordGoodApp SQLi RCE",
       "description": "Ivanti Endpoint Manager (EPM) 2022 SU5 and prior are vulnerable to unauthenticated SQL injection which can be leveraged to achieve unauthenticated remote code execution."
     },
@@ -2176,7 +2176,7 @@
   "CVE-2024-7399": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/magicinfo_traversal",
+      "file": "exploit_windows/http/magicinfo_traversal",
       "name": "Samsung MagicINFO 9 Server Remote Code Execution (CVE-2024-7399)",
       "description": "Remote Code Execution in Samsung MagicINFO 9 Server <= 21.1050.0.\n          Remote code execution can be obtained by exploiting the path traversal vulnerability (CVE-2024-7399) in the SWUpdateFileUploader servlet,\n          which can be queried by an unauthenticated user to upload a JSP shell.\n          By default, the application listens on TCP ports 7001 (HTTP) and 7002 (HTTPS) on all network interfaces and runs in the context of NT AUTHORITY\\SYSTEM."
     },
@@ -2196,7 +2196,7 @@
   "CVE-2024-28741": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/northstar_c2_xss_to_agent_rce",
+      "file": "exploit_windows/http/northstar_c2_xss_to_agent_rce",
       "name": "NorthStar C2 XSS to Agent RCE",
       "description": "NorthStar C2, prior to commit 7674a44 on March 11 2024, contains a vulnerability where the logs page is\n          vulnerable to a stored xss.\n          An unauthenticated user can simulate an agent registration to cause the XSS and take over a users session.\n          With this access, it is then possible to run a new payload on all of the NorthStar C2 compromised hosts\n          (agents), and kill the original agent.\n\n          Successfully tested against NorthStar C2 commit e7fdce148b6a81516e8aa5e5e037acd082611f73 running on\n          Ubuntu 22.04. The agent was running on Windows 10 19045."
     }
@@ -2204,7 +2204,7 @@
   "CVE-2024-3116": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/pgadmin_binary_path_api",
+      "file": "exploit_windows/http/pgadmin_binary_path_api",
       "name": "pgAdmin Binary Path API RCE",
       "description": "pgAdmin <= 8.4 is affected by a Remote Code Execution (RCE)\n          vulnerability through the validate binary path API. This vulnerability\n          allows attackers to execute arbitrary code on the server hosting PGAdmin,\n          posing a severe risk to the database management system's integrity and the security of the underlying data.\n\n          Tested on pgAdmin 8.4 on Windows 10 both authenticated and unauthenticated."
     }
@@ -2212,7 +2212,7 @@
   "CVE-2024-4577": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/php_cgi_arg_injection_rce_cve_2024_4577",
+      "file": "exploit_windows/http/php_cgi_arg_injection_rce_cve_2024_4577",
       "name": "PHP CGI Argument Injection Remote Code Execution",
       "description": "This module exploits a PHP CGI argument injection vulnerability affecting PHP in certain configurations\n          on a Windows target. A vulnerable configuration is locale dependant (such as Chinese or Japanese), such that\n          the Unicode best-fit conversion scheme will unexpectedly convert a soft hyphen (0xAD) into a dash (0x2D)\n          character. Additionally a target web server must be configured to run PHP under CGI mode, or directly expose\n          the PHP binary. This issue has been fixed in PHP 8.3.8 (for the 8.3.x branch), 8.2.20 (for the 8.2.x branch),\n          and 8.1.29 (for the 8.1.x branch). PHP 8.0.x and below are end of life and have note received patches.\n\n          XAMPP is vulnerable in a default configuration, and we can target the /php-cgi/php-cgi.exe endpoint. To target\n          an explicit .php endpoint (e.g. /index.php), the server must be configured to run PHP scripts in CGI mode."
     },
@@ -2252,7 +2252,7 @@
   "CVE-2024-23692": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/rejetto_hfs_rce_cve_2024_23692",
+      "file": "exploit_windows/http/rejetto_hfs_rce_cve_2024_23692",
       "name": "Rejetto HTTP File Server (HFS) Unauthenticated Remote Code Execution",
       "description": "The Rejetto HTTP File Server (HFS) version 2.x is vulnerable to an unauthenticated server side template\n          injection (SSTI) vulnerability. A remote unauthenticated attacker can execute code with the privileges\n          of the user account running the HFS.exe server process. This exploit has been tested to work against version\n          2.4.0 RC7 and 2.3m. The Rejetto HTTP File Server (HFS) version 2.x is no longer supported by the maintainers\n          and no patch is available. Users are recommended to upgrade to newer supported versions."
     },
@@ -2292,7 +2292,7 @@
   "CVE-2024-1800": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/telerik_report_server_deserialization",
+      "file": "exploit_windows/http/telerik_report_server_deserialization",
       "name": "Telerik Report Server Auth Bypass and Deserialization RCE",
       "description": "This module chains an authentication bypass vulnerability (CVE-2024-4358) with a deserialization vulnerability\n          (CVE-2024-1800) to obtain remote code execution against Telerik Report Server version 10.0.24.130 and prior.\n          The authentication bypass flaw allows an unauthenticated user to create a new user with administrative privileges.\n          The USERNAME datastore option can be used to authenticate with an existing account to prevent the creation of a\n          new one. The deserialization flaw works by uploading a specially crafted report that when loaded will execute an\n          OS command as NT AUTHORITY\\SYSTEM. The module will automatically delete the created report but not the account\n          because users are unable to delete themselves."
     }
@@ -2300,7 +2300,7 @@
   "CVE-2024-30085": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/local/cve_2024_30085_cloud_files",
+      "file": "exploit_windows/local/cve_2024_30085_cloud_files",
       "name": "Windows Cloud File Mini Filer Driver Heap Overflow",
       "description": "This module exploits the Windows Cloud Files Mini FIlter Driver cldflt.sys on Windows workstation versions\n          10_1809 through 11_23H2 and Windows server versions 2022 to 22_23H2."
     }
@@ -2308,7 +2308,7 @@
   "CVE-2024-30038": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/local/cve_2024_30088_authz_basep",
+      "file": "exploit_windows/local/cve_2024_30088_authz_basep",
       "name": "Windows Kernel Time of Check Time of Use LPE in AuthzBasepCopyoutInternalSecurityAttributes",
       "description": "CVE-2024-30088 is a Windows Kernel Elevation of Privilege Vulnerability which affects many recent versions of Windows 10,\n          Windows 11 and Windows Server 2022.\n\n          The vulnerability exists inside the function called `AuthzBasepCopyoutInternalSecurityAttributes` specifically when\n          the kernel copies the `_AUTHZBASEP_SECURITY_ATTRIBUTES_INFORMATION` of the current token object to user mode. When the\n          kernel preforms the copy of the `SecurityAttributesList`, it sets up the list of the SecurityAttribute's structure\n          directly to the user supplied pointed. It then calls `RtlCopyUnicodeString` and\n          `AuthzBasepCopyoutInternalSecurityAttributeValues` to copy out the names and values of the `SecurityAttribute` leading\n          to multiple Time Of Check Time Of Use (TOCTOU) vulnerabilities in the function."
     }
@@ -2316,7 +2316,7 @@
   "CVE-2024-35250": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/local/cve_2024_35250_ks_driver",
+      "file": "exploit_windows/local/cve_2024_35250_ks_driver",
       "name": "Windows Access Mode Mismatch LPE in ks.sys",
       "description": "The ks.sys driver on Windows is one of the core components of Kernel Streaming and is installed by default.\n          There exists a LPE in this driver which can be exploited on many recent versions of Windows 10,\n          Windows 11, Windows Server 2022."
     }
@@ -2324,7 +2324,7 @@
   "CVE-2024-53326": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/persistence/linqpad_deserialization",
+      "file": "exploit_windows/persistence/linqpad_deserialization",
       "name": "LINQPad Deserialization",
       "description": "This module exploits a bug in LIQPad up to version 5.48.00. The bug is only exploitable in paid version of software. The core of a bug is cache file containing deserialized data, which attacker can overwrite with malicious payload. The data gets deserialized every time the app restarts."
     }
@@ -2332,7 +2332,7 @@
   "CVE-2024-4548": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/scada/diaenergie_sqli",
+      "file": "exploit_windows/scada/diaenergie_sqli",
       "name": "DIAEnergie SQL Injection (CVE-2024-4548)",
       "description": "SQL injection vulnerability in DIAEnergie <= v1.10 from Delta Electronics.\n          This vulnerability can be exploited by an unauthenticated remote attacker to gain arbitrary code execution through a SQL injection vulnerability in the CEBC service. The commands will get executed in the context of NT AUTHORITY\\SYSTEM."
     }
@@ -2340,7 +2340,7 @@
   "CVE-2024-47407": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/scada/mypro_mgr_cmd",
+      "file": "exploit_windows/scada/mypro_mgr_cmd",
       "name": "mySCADA myPRO Manager Unauthenticated Command Injection (CVE-2024-47407)",
       "description": "Unauthenticated Command Injection in MyPRO Manager <= v1.2 from mySCADA.\n          The vulnerability can be exploited by a remote attacker to inject arbitrary operating system commands which will get executed in the context of the myscada9 administrative user that is automatically added by the product."
     }

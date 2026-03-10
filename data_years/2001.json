@@ -2,7 +2,7 @@
   "CVE-2001-1013": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/apache_userdir_enum",
+      "file": "auxiliary_scanner/http/apache_userdir_enum",
       "name": "Apache \"mod_userdir\" User Enumeration",
       "description": "Apache with the UserDir directive enabled generates different error\n      codes when a username exists and there is no public_html directory and when the username\n      does not exist, which could allow remote attackers to determine valid usernames on the\n      server."
     },
@@ -30,7 +30,7 @@
   "CVE-2001-0537": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/cisco_ios_auth_bypass",
+      "file": "auxiliary_scanner/http/cisco_ios_auth_bypass",
       "name": "Cisco IOS HTTP Unauthorized Administrative Access",
       "description": "This module exploits a vulnerability in the Cisco IOS HTTP Server.\n          By sending a GET request for \"/level/num/exec/..\", where num is between\n          16 and 99, it is possible to bypass authentication and obtain full system\n          control. IOS 11.3 -> 12.2 are reportedly vulnerable. This module\n          tested successfully against a Cisco 1600 Router IOS v11.3(11d)."
     },
@@ -130,7 +130,7 @@
   "CVE-2001-0800": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_irix/lpd/tagprinter_exec",
+      "file": "exploit_irix/lpd/tagprinter_exec",
       "name": "Irix LPD tagprinter Command Execution",
       "description": "This module exploits an arbitrary command execution flaw in\n          the in.lpd service shipped with all versions of Irix."
     },
@@ -158,7 +158,7 @@
   "CVE-2001-0311": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/misc/openview_omniback_exec",
+      "file": "exploit_multi/misc/openview_omniback_exec",
       "name": "HP OpenView OmniBack II Command Execution",
       "description": "This module uses a vulnerability in the OpenView Omniback II\n          service to execute arbitrary commands. This vulnerability was\n          discovered by DiGiT and his code was used as the basis for this\n          module.\n\n          For Microsoft Windows targets, due to module limitations, use the\n          \"unix/cmd/generic\" payload and set CMD to your command. You can only\n          pass a small amount of characters (4) to the command line on Windows."
     },
@@ -226,7 +226,7 @@
   "CVE-2001-0414": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/ntp/ntp_overflow",
+      "file": "exploit_multi/ntp/ntp_overflow",
       "name": "NTP Daemon readvar Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow in the\n          ntpd and xntpd service. By sending an overly long 'readvar'\n          request it is possible to execute code remotely. As the stack\n          is corrupted, this module uses the Egghunter technique."
     },
@@ -294,13 +294,13 @@
   "CVE-2001-0797": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_solaris/dialup/manyargs",
+      "file": "exploit_solaris/dialup/manyargs",
       "name": "System V Derived /bin/login Extraneous Arguments Buffer Overflow",
       "description": "This exploit connects to a system's modem over dialup and exploits\n          a buffer overflow vulnerability in it's System V derived /bin/login.\n          The vulnerability is triggered by providing a large number of arguments."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_solaris/telnet/ttyprompt",
+      "file": "exploit_solaris/telnet/ttyprompt",
       "name": "Solaris in.telnetd TTYPROMPT Buffer Overflow",
       "description": "This module uses a buffer overflow in the Solaris 'login'\n          application to bypass authentication in the telnet daemon."
     },
@@ -468,7 +468,7 @@
   "CVE-2001-0803": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_solaris/dtspcd/heap_noir",
+      "file": "exploit_solaris/dtspcd/heap_noir",
       "name": "Solaris dtspcd Heap Overflow",
       "description": "This is a port of noir's dtspcd exploit. This module should\n          work against any vulnerable version of Solaris 8 (sparc).\n          The original exploit code was published in the book\n          Shellcoder's Handbook."
     },
@@ -516,7 +516,7 @@
   "CVE-2001-1583": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_solaris/lpd/sendmail_exec",
+      "file": "exploit_solaris/lpd/sendmail_exec",
       "name": "Solaris LPD Command Execution",
       "description": "This module exploits an arbitrary command execution flaw in\n          the in.lpd service shipped with all versions of Sun Solaris\n          up to and including 8.0. This module uses a technique\n          discovered by Dino Dai Zovi to exploit the flaw without\n          needing to know the resolved name of the attacking system."
     },
@@ -604,7 +604,7 @@
   "CVE-2001-0241": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/iis/ms01_023_printer",
+      "file": "exploit_windows/iis/ms01_023_printer",
       "name": "MS01-023 Microsoft IIS 5.0 Printer Host Header Overflow",
       "description": "This exploits a buffer overflow in the request processor of the\n          Internet Printing Protocol ISAPI module in IIS. This module\n          works against Windows 2000 Server and Professional SP0-SP1.\n\n          If the service stops responding after a successful compromise,\n          run the exploit a couple more times to completely kill the\n          hung process."
     },
@@ -752,7 +752,7 @@
   "CVE-2001-0333": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/iis/ms01_026_dbldecode",
+      "file": "exploit_windows/iis/ms01_026_dbldecode",
       "name": "MS01-026 Microsoft IIS/PWS CGI Filename Double Decode Command Execution",
       "description": "This module will execute an arbitrary payload on a Microsoft IIS installation\n          that is vulnerable to the CGI double-decode vulnerability of 2001.\n\n          This module has been tested successfully on:\n\n          Windows 2000 Professional (SP0) (EN);\n          Windows 2000 Professional (SP1) (AR);\n          Windows 2000 Professional (SP1) (CZ);\n          Windows 2000 Server (SP0) (FR);\n          Windows 2000 Server (SP1) (EN); and\n          Windows 2000 Server (SP1) (SE).\n\n          Note: This module will leave a Metasploit payload exe in the IIS scripts directory."
     },
@@ -940,7 +940,7 @@
   "CVE-2001-0500": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/iis/ms01_033_idq",
+      "file": "exploit_windows/iis/ms01_033_idq",
       "name": "MS01-033 Microsoft IIS 5.0 IDQ Path Overflow",
       "description": "This module exploits a stack buffer overflow in the IDQ ISAPI handler for\n          Microsoft Index Server."
     },
@@ -1048,7 +1048,7 @@
   "CVE-2001-1320": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/ldap/pgp_keyserver7",
+      "file": "exploit_windows/ldap/pgp_keyserver7",
       "name": "Network Associates PGP KeyServer 7 LDAP Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in the LDAP service that is\n          part of the NAI PGP Enterprise product suite. This module was tested\n          against PGP KeyServer v7.0. Due to space restrictions, egghunter is\n          used to find our payload - therefore you may wish to adjust WfsDelay."
     },
@@ -1076,7 +1076,7 @@
   "CVE-2001-0499": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/oracle/tns_arguments",
+      "file": "exploit_windows/oracle/tns_arguments",
       "name": "Oracle 8i TNS Listener (ARGUMENTS) Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Oracle 8i. When\n          sending a specially crafted packet containing an overly long\n          ARGUMENTS string to the TNS service, an attacker may be able\n          to execute arbitrary code."
     },
@@ -1124,7 +1124,7 @@
   "CVE-2001-0167": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/vnc/realvnc_client",
+      "file": "exploit_windows/vnc/realvnc_client",
       "name": "RealVNC 3.3.7 Client Buffer Overflow",
       "description": "This module exploits a buffer overflow in RealVNC 3.3.7 (vncviewer.exe)."
     },
@@ -1152,7 +1152,7 @@
   "CVE-2001-0168": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/vnc/winvnc_http_get",
+      "file": "exploit_windows/vnc/winvnc_http_get",
       "name": "WinVNC Web Server GET Overflow",
       "description": "This module exploits a buffer overflow in the AT&T WinVNC version\n          <= v3.3.3r7 web server. When debugging mode with logging is\n          enabled (non-default), an overly long GET request can overwrite\n          the stack. This exploit does not work well with VNC payloads!"
     },
@@ -1180,7 +1180,7 @@
   "CVE-2001-0152": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterpost_windows/gather/credentials/dynazip_log",
+      "file": "post_windows/gather/credentials/dynazip_log",
       "name": "Windows Gather DynaZIP Saved Password Extraction",
       "description": "This module extracts clear text credentials from dynazip.log.\n          The log file contains passwords used to encrypt compressed zip\n          files in Microsoft Plus! 98 and Windows Me."
     }

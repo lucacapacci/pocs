@@ -2,7 +2,7 @@
   "CVE-2002-1214": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_dos/pptp/ms02_063_pptp_dos",
+      "file": "auxiliary_dos/pptp/ms02_063_pptp_dos",
       "name": "MS02-063 PPTP Malformed Control Data Kernel Denial of Service",
       "description": "This module exploits a kernel based overflow when sending abnormal PPTP Control Data\n          packets\tto Microsoft Windows 2000 SP0-3 and XP SP0-1 based PPTP RAS servers\n          (Remote Access Services). Kernel memory is overwritten resulting in a BSOD.\n          Code execution may be possible however this module is only a DoS."
     }
@@ -10,13 +10,13 @@
   "CVE-2002-0422": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/iis_internal_ip",
+      "file": "auxiliary_scanner/http/iis_internal_ip",
       "name": "Microsoft IIS HTTP Internal IP Disclosure",
       "description": "Collect any leaked internal IPs by requesting commonly redirected locations from IIS.\n          CVE-2000-0649 references IIS 5.1 (win2k, XP) and older.  However, in newer servers\n          such as IIS 7+, this occurs when the alternateHostName is not set or misconfigured. Also\n          collects internal IPs leaked from the PROPFIND method in certain IIS versions."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/webdav_internal_ip",
+      "file": "auxiliary_scanner/http/webdav_internal_ip",
       "name": "HTTP WebDAV Internal IP Scanner",
       "description": "Detect webservers internal IPs though WebDAV"
     }
@@ -24,7 +24,7 @@
   "CVE-2002-1864": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/simple_webserver_traversal",
+      "file": "auxiliary_scanner/http/simple_webserver_traversal",
       "name": "Simple Web Server 2.3-RC1 Directory Traversal",
       "description": "This module exploits a directory traversal vulnerability found in\n          Simple Web Server 2.3-RC1."
     }
@@ -32,7 +32,7 @@
   "CVE-2002-1473": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_hpux/lpd/cleanup_exec",
+      "file": "exploit_hpux/lpd/cleanup_exec",
       "name": "HP-UX LPD Command Execution",
       "description": "This exploit abuses an unpublished vulnerability in the\n          HP-UX LPD service. This flaw allows an unauthenticated\n          attacker to execute arbitrary commands with the privileges\n          of the root user. The LPD service is only exploitable when\n          the address of the attacking system can be resolved by the\n          target. This vulnerability was silently patched with the\n          buffer overflow flaws addressed in HP Security Bulletin\n          HPSBUX0208-213."
     },
@@ -80,7 +80,7 @@
   "CVE-2002-1643": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/realserver/describe",
+      "file": "exploit_multi/realserver/describe",
       "name": "RealServer Describe Buffer Overflow",
       "description": "This module exploits a buffer overflow in RealServer 7/8/9\n          and was based on Johnny Cyberpunk's THCrealbad exploit. This\n          code should reliably exploit Linux, BSD, and Windows-based\n          servers."
     },
@@ -148,7 +148,7 @@
   "CVE-2002-1318": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/samba/nttrans",
+      "file": "exploit_multi/samba/nttrans",
       "name": "Samba 2.2.2 - 2.2.6 nttrans Buffer Overflow",
       "description": "This module attempts to exploit a buffer overflow vulnerability present in\n          versions 2.2.2 through 2.2.6 of Samba.\n\n          The Samba developers report this as:\n          \"Bug in the length checking for encrypted password change requests from clients.\"\n\n          The bug was discovered and reported by the Debian Samba Maintainers."
     }
@@ -156,7 +156,7 @@
   "CVE-2002-0392": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/apache_chunked",
+      "file": "exploit_windows/http/apache_chunked",
       "name": "Apache Win32 Chunked Encoding",
       "description": "This module exploits the chunked transfer integer wrap\n          vulnerability in Apache version 1.2.x to 1.3.24. This\n          particular module has been tested with all versions of the\n          official Win32 build between 1.3.9 and 1.3.24. Additionally,\n          it should work against most co-branded and bundled versions\n          of Apache (Oracle 8i, 9i, IBM HTTPD, etc).\n\n          You will need to use the Check() functionality to determine\n          the exact target version prior to launching the exploit. The\n          version of Apache bundled with Oracle 8.1.7 will not\n          automatically restart, so if you use the wrong target value,\n          the server will crash."
     },
@@ -224,13 +224,13 @@
   "CVE-2002-2268": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/kolibri_http",
+      "file": "exploit_windows/http/kolibri_http",
       "name": "Kolibri HTTP Server HEAD Buffer Overflow",
       "description": "This exploits a stack buffer overflow in version 2 of the Kolibri HTTP server."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/webster_http",
+      "file": "exploit_windows/http/webster_http",
       "name": "Webster HTTP Server GET Buffer Overflow",
       "description": "This exploits a stack buffer overflow in the Webster HTTP server.\n          The server and source code was released within an article from\n          the Microsoft Systems Journal in February 1996 titled \"Write a\n          Simple HTTP-based Server Using MFC and Windows Sockets\"."
     },
@@ -278,7 +278,7 @@
   "CVE-2002-1120": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/http/savant_31_overflow",
+      "file": "exploit_windows/http/savant_31_overflow",
       "name": "Savant 3.1 Web Server Overflow",
       "description": "This module exploits a stack buffer overflow in Savant 3.1 Web Server. The service\n          supports a maximum of 10 threads (for a default install). Each exploit attempt\n          generally causes a thread to die whether successful or not. Therefore, in a default\n          configuration, you only have 10 chances.\n\n          Due to the limited space available for the payload in this exploit module, use of the\n          \"ord\" payloads is recommended."
     },
@@ -366,7 +366,7 @@
   "CVE-2002-1142": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/iis/ms02_065_msadc",
+      "file": "exploit_windows/iis/ms02_065_msadc",
       "name": "MS02-065 Microsoft IIS MDAC msadcs.dll RDS DataStub Content-Type Overflow",
       "description": "This module can be used to execute arbitrary code on IIS servers\n          that expose the /msadc/msadcs.dll Microsoft Data Access Components\n          (MDAC) Remote Data Service (RDS) DataFactory service. The service is\n          exploitable even when RDS is configured to deny remote connections\n          (handsafe.reg). The service is vulnerable to a heap overflow where\n          the RDS DataStub 'Content-Type' string is overly long. Microsoft Data\n          Access Components (MDAC) 2.1 through 2.6 are known to be vulnerable."
     },
@@ -394,7 +394,7 @@
   "CVE-2002-0649": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/ms02_039_slammer",
+      "file": "exploit_windows/mssql/ms02_039_slammer",
       "name": "MS02-039 Microsoft SQL Server Resolution Overflow",
       "description": "This is an exploit for the SQL Server 2000 resolution\n          service buffer overflow. This overflow is triggered by\n          sending a udp packet to port 1434 which starts with 0x04 and\n          is followed by long string terminating with a colon and a\n          number. This module should work against any vulnerable SQL\n          Server 2000 or MSDE install (pre-SP3)."
     },
@@ -442,7 +442,7 @@
   "CVE-2002-1123": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/ms02_056_hello",
+      "file": "exploit_windows/mssql/ms02_056_hello",
       "name": "MS02-056 Microsoft SQL Server Hello Overflow",
       "description": "By sending malformed data to TCP port 1433, an\n          unauthenticated remote attacker could overflow a buffer and\n          possibly execute code on the server with SYSTEM level\n          privileges. This module should work against any vulnerable\n          SQL Server 2000 or MSDE install (< SP3)."
     },
@@ -490,7 +490,7 @@
   "CVE-2002-0965": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/oracle/tns_service_name",
+      "file": "exploit_windows/oracle/tns_service_name",
       "name": "Oracle 8i TNS Listener SERVICE_NAME Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Oracle. When\n          sending a specially crafted packet containing a long SERVICE_NAME\n          to the TNS service, an attacker may be able to execute arbitrary code."
     },
@@ -518,7 +518,7 @@
   "CVE-2002-1359": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/ssh/putty_msg_debug",
+      "file": "exploit_windows/ssh/putty_msg_debug",
       "name": "PuTTY Buffer Overflow",
       "description": "This module exploits a buffer overflow in the PuTTY SSH client that is\n          triggered through a validation error in SSH.c. This vulnerability\n          affects versions 0.53 and earlier."
     },
@@ -566,7 +566,7 @@
   "CVE-2002-1059": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/ssh/securecrt_ssh1",
+      "file": "exploit_windows/ssh/securecrt_ssh1",
       "name": "SecureCRT SSH1 Buffer Overflow",
       "description": "This module exploits a buffer overflow in SecureCRT <= 4.0\n          Beta 2. By sending a vulnerable client an overly long\n          SSH1 protocol identifier string, it is possible to execute\n          arbitrary code.\n\n          This module has only been tested on SecureCRT 3.4.4."
     },
@@ -634,7 +634,7 @@
   "CVE-2002-2226": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/tftp/tftpd32_long_filename",
+      "file": "exploit_windows/tftp/tftpd32_long_filename",
       "name": "TFTPD32 Long Filename Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in TFTPD32 version 2.21\n          and prior. By sending a request for an overly long file name\n          to the tftpd32 server, a remote attacker could overflow a buffer and\n          execute arbitrary code on the system."
     },

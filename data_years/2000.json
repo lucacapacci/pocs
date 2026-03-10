@@ -2,7 +2,7 @@
   "CVE-2000-0380": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_dos/cisco/ios_http_percentpercent",
+      "file": "auxiliary_dos/cisco/ios_http_percentpercent",
       "name": "Cisco IOS HTTP GET /%% Request Denial of Service",
       "description": "This module triggers a Denial of Service condition in the Cisco IOS\n          HTTP server. By sending a GET request for \"/%%\", the device becomes\n          unresponsive. IOS 11.1 -> 12.1 are reportedly vulnerable. This module\n          tested successfully against a Cisco 1600 Router IOS v11.2(18)P."
     },
@@ -30,7 +30,7 @@
   "CVE-2000-0945": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/cisco_device_manager",
+      "file": "auxiliary_scanner/http/cisco_device_manager",
       "name": "Cisco Device HTTP Device Manager Access",
       "description": "This module gathers data from a Cisco device (router or switch) with the device manager\n          web interface exposed. The HttpUsername and HttpPassword options can be used to specify\n          authentication."
     },
@@ -58,7 +58,7 @@
   "CVE-2000-0649": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterauxiliary_scanner/http/iis_internal_ip",
+      "file": "auxiliary_scanner/http/iis_internal_ip",
       "name": "Microsoft IIS HTTP Internal IP Disclosure",
       "description": "Collect any leaked internal IPs by requesting commonly redirected locations from IIS.\n          CVE-2000-0649 references IIS 5.1 (win2k, XP) and older.  However, in newer servers\n          such as IIS 7+, this occurs when the alternateHostName is not set or misconfigured. Also\n          collects internal IPs leaked from the PROPFIND method in certain IIS versions."
     },
@@ -86,7 +86,7 @@
   "CVE-2000-0248": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/piranha_passwd_exec",
+      "file": "exploit_linux/http/piranha_passwd_exec",
       "name": "RedHat Piranha Virtual Server Package passwd.php3 Arbitrary Command Execution",
       "description": "This module abuses two flaws - a metacharacter injection vulnerability in the\n          HTTP management server of RedHat 6.2 systems running the Piranha\n          LVS cluster service and GUI (rpm packages: piranha and piranha-gui).\n          The vulnerability allows an authenticated attacker to execute arbitrary\n          commands as the Apache user account (nobody) within the\n          /piranha/secure/passwd.php3 script. The package installs with a default\n          user and password of piranha:q which was exploited in the wild."
     },
@@ -134,7 +134,7 @@
   "CVE-2000-0322": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/http/piranha_passwd_exec",
+      "file": "exploit_linux/http/piranha_passwd_exec",
       "name": "RedHat Piranha Virtual Server Package passwd.php3 Arbitrary Command Execution",
       "description": "This module abuses two flaws - a metacharacter injection vulnerability in the\n          HTTP management server of RedHat 6.2 systems running the Piranha\n          LVS cluster service and GUI (rpm packages: piranha and piranha-gui).\n          The vulnerability allows an authenticated attacker to execute arbitrary\n          commands as the Apache user account (nobody) within the\n          /piranha/secure/passwd.php3 script. The package installs with a default\n          user and password of piranha:q which was exploited in the wild."
     },
@@ -162,7 +162,7 @@
   "CVE-2000-0284": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/imap/imap_uw_lsub",
+      "file": "exploit_linux/imap/imap_uw_lsub",
       "name": "UoW IMAP Server LSUB Buffer Overflow",
       "description": "This module exploits a buffer overflow in the 'LSUB'\n          command of the University of Washington IMAP service.\n          This vulnerability can only be exploited with a valid username\n          and password."
     },
@@ -330,7 +330,7 @@
   "CVE-2000-0917": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_linux/misc/lprng_format_string",
+      "file": "exploit_linux/misc/lprng_format_string",
       "name": "LPRng use_syslog Remote Format String Vulnerability",
       "description": "This module exploits a format string vulnerability in the LPRng print server.\n          This vulnerability was discovered by Chris Evans. There was a publicly\n          circulating worm targeting this vulnerability, which prompted RedHat to pull\n          their 7.0 release. They consequently re-released it as \"7.0-respin\"."
     },
@@ -418,7 +418,7 @@
   "CVE-2000-0573": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_multi/ftp/wuftpd_site_exec_format",
+      "file": "exploit_multi/ftp/wuftpd_site_exec_format",
       "name": "WU-FTPD SITE EXEC/INDEX Format String Vulnerability",
       "description": "This module exploits a format string vulnerability in versions of the\n          Washington University FTP server older than 2.6.1. By executing\n          specially crafted SITE EXEC or SITE INDEX commands containing format\n          specifiers, an attacker can corrupt memory and execute arbitrary code."
     },
@@ -566,7 +566,7 @@
   "CVE-2000-1089": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/isapi/ms00_094_pbserver",
+      "file": "exploit_windows/isapi/ms00_094_pbserver",
       "name": "MS00-094 Microsoft IIS Phone Book Service Overflow",
       "description": "This is an exploit for the Phone Book Service /pbserver/pbserver.dll\n          described in MS00-094. By sending an overly long URL argument\n          for phone book updates, it is possible to overwrite the stack. This\n          module has only been tested against Windows 2000 SP1."
     },
@@ -614,13 +614,13 @@
   "CVE-2000-0402": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/mssql_payload",
+      "file": "exploit_windows/mssql/mssql_payload",
       "name": "Microsoft SQL Server Payload Execution",
       "description": "This module executes an arbitrary payload on a Microsoft SQL Server by using\n          the \"xp_cmdshell\" stored procedure. Currently, three delivery methods are supported.\n\n          First, the original method uses Windows 'debug.com'. File size restrictions are\n          avoided by incorporating the debug bypass method presented by SecureStat at\n          Defcon 17. Since this method invokes ntvdm, it is not available on x64 systems.\n\n          A second method takes advantage of the Command Stager subsystem. This allows using\n          various techniques, such as using a TFTP server, to send the executable. By default\n          the Command Stager uses 'wcsript.exe' to generate the executable on the target.\n\n          Finally, ReL1K's latest method utilizes PowerShell to transmit and recreate the\n          payload on the target.\n\n          NOTE: This module will leave a payload executable on the target system when the\n          attack is finished."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/mssql_payload_sqli",
+      "file": "exploit_windows/mssql/mssql_payload_sqli",
       "name": "Microsoft SQL Server Payload Execution via SQL Injection",
       "description": "This module will execute an arbitrary payload on a Microsoft SQL\n          Server, using a SQL injection vulnerability.\n\n          Once a vulnerability is identified this module\n          will use xp_cmdshell to upload and execute Metasploit payloads.\n          It is necessary to specify the exact point where the SQL injection\n          vulnerability happens. For example, given the following injection:\n\n          http://www.example.com/show.asp?id=1;exec xp_cmdshell 'dir';--&cat=electrical\n\n          you would need to set the following path:\n          set GET_PATH /showproduct.asp?id=1;[SQLi];--&cat=foobar\n\n          In regard to the payload, unless there is a closed port in the web server,\n          you dont want to use any \"bind\" payload, specially on port 80, as you will\n          stop reaching the vulnerable web server host. You want a \"reverse\" payload, probably to\n          your port 80 or to any other outbound port allowed on the firewall.\n          For privileged ports execute Metasploit msfconsole as root.\n\n          Currently, three delivery methods are supported.\n\n          First, the original method uses Windows 'debug.com'. File size restrictions are\n          avoided by incorporating the debug bypass method presented by SecureStat at\n          Defcon 17. Since this method invokes ntvdm, it is not available on x64 systems.\n\n          A second method takes advantage of the Command Stager subsystem. This allows using\n          various techniques, such as using a TFTP server, to send the executable. By default\n          the Command Stager uses 'wcsript.exe' to generate the executable on the target.\n\n          Finally, ReL1K's latest method utilizes PowerShell to transmit and recreate the\n          payload on the target.\n\n          NOTE: This module will leave a payload executable on the target system when the\n          attack is finished."
     },
@@ -668,13 +668,13 @@
   "CVE-2000-1209": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/mssql_payload",
+      "file": "exploit_windows/mssql/mssql_payload",
       "name": "Microsoft SQL Server Payload Execution",
       "description": "This module executes an arbitrary payload on a Microsoft SQL Server by using\n          the \"xp_cmdshell\" stored procedure. Currently, three delivery methods are supported.\n\n          First, the original method uses Windows 'debug.com'. File size restrictions are\n          avoided by incorporating the debug bypass method presented by SecureStat at\n          Defcon 17. Since this method invokes ntvdm, it is not available on x64 systems.\n\n          A second method takes advantage of the Command Stager subsystem. This allows using\n          various techniques, such as using a TFTP server, to send the executable. By default\n          the Command Stager uses 'wcsript.exe' to generate the executable on the target.\n\n          Finally, ReL1K's latest method utilizes PowerShell to transmit and recreate the\n          payload on the target.\n\n          NOTE: This module will leave a payload executable on the target system when the\n          attack is finished."
     },
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterhttps://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/mssql/mssql_payload_sqli",
+      "file": "exploit_windows/mssql/mssql_payload_sqli",
       "name": "Microsoft SQL Server Payload Execution via SQL Injection",
       "description": "This module will execute an arbitrary payload on a Microsoft SQL\n          Server, using a SQL injection vulnerability.\n\n          Once a vulnerability is identified this module\n          will use xp_cmdshell to upload and execute Metasploit payloads.\n          It is necessary to specify the exact point where the SQL injection\n          vulnerability happens. For example, given the following injection:\n\n          http://www.example.com/show.asp?id=1;exec xp_cmdshell 'dir';--&cat=electrical\n\n          you would need to set the following path:\n          set GET_PATH /showproduct.asp?id=1;[SQLi];--&cat=foobar\n\n          In regard to the payload, unless there is a closed port in the web server,\n          you dont want to use any \"bind\" payload, specially on port 80, as you will\n          stop reaching the vulnerable web server host. You want a \"reverse\" payload, probably to\n          your port 80 or to any other outbound port allowed on the firewall.\n          For privileged ports execute Metasploit msfconsole as root.\n\n          Currently, three delivery methods are supported.\n\n          First, the original method uses Windows 'debug.com'. File size restrictions are\n          avoided by incorporating the debug bypass method presented by SecureStat at\n          Defcon 17. Since this method invokes ntvdm, it is not available on x64 systems.\n\n          A second method takes advantage of the Command Stager subsystem. This allows using\n          various techniques, such as using a TFTP server, to send the executable. By default\n          the Command Stager uses 'wcsript.exe' to generate the executable on the target.\n\n          Finally, ReL1K's latest method utilizes PowerShell to transmit and recreate the\n          payload on the target.\n\n          NOTE: This module will leave a payload executable on the target system when the\n          attack is finished."
     },
@@ -722,7 +722,7 @@
   "CVE-2000-0665": [
     {
       "source": "metasploit",
-      "file": "https://github.com/rapid7/metasploit-framework/blob/masterexploit_windows/telnet/gamsoft_telsrv_username",
+      "file": "exploit_windows/telnet/gamsoft_telsrv_username",
       "name": "GAMSoft TelSrv 1.5 Username Buffer Overflow",
       "description": "This module exploits a username sprintf stack buffer overflow in GAMSoft TelSrv 1.5.\n          Other versions may also be affected. The service terminates after exploitation,\n          so you only get one chance!"
     },
