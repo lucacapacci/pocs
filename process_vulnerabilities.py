@@ -20,7 +20,7 @@ def process_data():
                 if 'references' in info:
                     for ref in info['references']:
                         if ref.startswith('CVE-'):
-                            mod_path = f"https://github.com/rapid7/metasploit-framework/blob/master{mod_path}"
+                            file_path = f'https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules{info.get("name")}'
                             cve_map[ref].append({
                                 "source": "metasploit",
                                 "file": mod_path,
