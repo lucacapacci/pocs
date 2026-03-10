@@ -2,13 +2,13 @@
   "CVE-2011-0923": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/hp/hp_data_protector_cmd.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/hp/hp_data_protector_cmd.rb",
       "name": "HP Data Protector 6.1 EXEC_CMD Command Execution",
       "description": "This module exploits HP Data Protector's omniinet process, specifically\n          against a Windows setup.\n\n          When an EXEC_CMD packet is sent, omniinet.exe will attempt to look\n          for that user-supplied filename with kernel32!FindFirstFileW().  If the file\n          is found, the process will then go ahead execute it with CreateProcess()\n          under a new thread.  If the filename isn't found, FindFirstFileW() will throw\n          an error (0x03), and then bails early without triggering CreateProcess().\n\n          Because of these behaviors, if you try to supply an argument, FindFirstFileW()\n          will look at that as part of the filename, and then bail.\n\n          Please note that when you specify the 'CMD' option, the base path begins\n          under C:\\."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/misc/hp_data_protector_cmd_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/misc/hp_data_protector_cmd_exec.rb",
       "name": "HP Data Protector 6 EXEC_CMD Remote Code Execution",
       "description": "This exploit abuses a vulnerability in the HP Data Protector service. This\n          flaw allows an unauthenticated attacker to take advantage of the EXEC_CMD\n          command and traverse back to /bin/sh, this allows arbitrary remote code\n          execution under the context of root."
     },
@@ -116,7 +116,7 @@
   "CVE-2011-2750": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/novell_file_reporter_filedelete.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/novell_file_reporter_filedelete.rb",
       "name": "Novell File Reporter Agent Arbitrary File Delete",
       "description": "NFRAgent.exe in Novell File Reporter allows remote attackers to delete\n          arbitrary files via a full pathname in an SRS request with OPERATION set to 4 and\n          CMD set to 5 against /FSF/CMD. This module has been tested successfully on NFR\n          Agent 1.0.4.3 (File Reporter 1.0.2) and NFR Agent 1.0.3.22 (File Reporter 1.0.1) on\n          Windows platforms."
     }
@@ -124,7 +124,7 @@
   "CVE-2011-0951": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/networking/cisco_secure_acs_bypass.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/networking/cisco_secure_acs_bypass.rb",
       "name": "Cisco Secure ACS Unauthorized Password Change",
       "description": "This module exploits an authentication bypass issue which allows arbitrary\n          password change requests to be issued for any user in the local store.\n          Instances of Secure ACS running version 5.1 with patches 3, 4, or 5 as well\n          as version 5.2 with either no patches or patches 1 and 2 are vulnerable."
     }
@@ -132,7 +132,7 @@
   "CVE-2011-0762": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/ftp/vsftpd_232.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/ftp/vsftpd_232.rb",
       "name": "VSFTPD 2.3.2 Denial of Service",
       "description": "This module triggers a Denial of Service condition in the VSFTPD server in\n          versions before 2.3.3. So far, it has been tested on 2.3.0, 2.3.1, and 2.3.2."
     },
@@ -172,7 +172,7 @@
   "CVE-2011-0514": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/hp/data_protector_rds.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/hp/data_protector_rds.rb",
       "name": "HP Data Protector Manager RDS DOS",
       "description": "This module causes a remote DOS on HP Data Protector's RDS service.  By sending\n          a malformed packet to port 1530, _rm32.dll causes RDS to crash due to an enormous\n          size for malloc()."
     },
@@ -200,7 +200,7 @@
   "CVE-2011-3192": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/apache_range_dos.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/http/apache_range_dos.rb",
       "name": "Apache Range Header DoS (Apache Killer)",
       "description": "The byterange filter in the Apache HTTP Server 2.0.x through 2.0.64, and 2.2.x\n          through 2.2.19 allows remote attackers to cause a denial of service (memory and\n          CPU consumption) via a Range header that expresses multiple overlapping ranges,\n          exploit called \"Apache Killer\"."
     },
@@ -248,7 +248,7 @@
   "CVE-2011-5034": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/hashcollision_dos.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/http/hashcollision_dos.rb",
       "name": "Hashtable Collisions",
       "description": "This module uses a denial-of-service (DoS) condition appearing in a variety of\n          programming languages. This vulnerability occurs when storing multiple values\n          in a hash table and all values have the same hash value. This can cause a web server\n          parsing the POST parameters issued with a request into a hash table to consume\n          hours of CPU with a single HTTP request.\n\n          Currently, only the hash functions for PHP and Java are implemented.\n          This module was tested with PHP + httpd, Tomcat, Glassfish and Geronimo.\n          It also generates a random payload to bypass some IDS signatures."
     },
@@ -276,7 +276,7 @@
   "CVE-2011-5035": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/hashcollision_dos.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/http/hashcollision_dos.rb",
       "name": "Hashtable Collisions",
       "description": "This module uses a denial-of-service (DoS) condition appearing in a variety of\n          programming languages. This vulnerability occurs when storing multiple values\n          in a hash table and all values have the same hash value. This can cause a web server\n          parsing the POST parameters issued with a request into a hash table to consume\n          hours of CPU with a single HTTP request.\n\n          Currently, only the hash functions for PHP and Java are implemented.\n          This module was tested with PHP + httpd, Tomcat, Glassfish and Geronimo.\n          It also generates a random payload to bypass some IDS signatures."
     },
@@ -304,7 +304,7 @@
   "CVE-2011-4885": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/hashcollision_dos.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/http/hashcollision_dos.rb",
       "name": "Hashtable Collisions",
       "description": "This module uses a denial-of-service (DoS) condition appearing in a variety of\n          programming languages. This vulnerability occurs when storing multiple values\n          in a hash table and all values have the same hash value. This can cause a web server\n          parsing the POST parameters issued with a request into a hash table to consume\n          hours of CPU with a single HTTP request.\n\n          Currently, only the hash functions for PHP and Java are implemented.\n          This module was tested with PHP + httpd, Tomcat, Glassfish and Geronimo.\n          It also generates a random payload to bypass some IDS signatures."
     },
@@ -372,7 +372,7 @@
   "CVE-2011-4858": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/hashcollision_dos.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/http/hashcollision_dos.rb",
       "name": "Hashtable Collisions",
       "description": "This module uses a denial-of-service (DoS) condition appearing in a variety of\n          programming languages. This vulnerability occurs when storing multiple values\n          in a hash table and all values have the same hash value. This can cause a web server\n          parsing the POST parameters issued with a request into a hash table to consume\n          hours of CPU with a single HTTP request.\n\n          Currently, only the hash functions for PHP and Java are implemented.\n          This module was tested with PHP + httpd, Tomcat, Glassfish and Geronimo.\n          It also generates a random payload to bypass some IDS signatures."
     },
@@ -400,7 +400,7 @@
   "CVE-2011-4971": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/misc/memcached.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/misc/memcached.rb",
       "name": "Memcached Remote Denial of Service",
       "description": "This module sends a specially-crafted packet to cause a\n          segmentation fault in memcached v1.4.15 or earlier versions."
     }
@@ -408,7 +408,7 @@
   "CVE-2011-3486": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/scada/beckhoff_twincat.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/scada/beckhoff_twincat.rb",
       "name": "Beckhoff TwinCAT SCADA PLC 2.11.0.2004 DoS",
       "description": "The Beckhoff TwinCAT version <= 2.11.0.2004 can be brought down by sending\n          a crafted UDP packet to port 48899 (TCATSysSrv.exe)."
     },
@@ -436,7 +436,7 @@
   "CVE-2011-4050": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/scada/igss9_dataserver.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/scada/igss9_dataserver.rb",
       "name": "7-Technologies IGSS 9 IGSSdataServer.exe DoS",
       "description": "The 7-Technologies SCADA IGSS Data Server (IGSSdataServer.exe) <= 9.0.0.10306 can be\n          brought down by sending a crafted TCP packet to port 12401.  This should also work\n          for version <= 9.0.0.1120, but that version hasn't been tested."
     }
@@ -444,7 +444,7 @@
   "CVE-2011-3200": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/syslog/rsyslog_long_tag.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/syslog/rsyslog_long_tag.rb",
       "name": "rsyslog Long Tag Off-By-Two DoS",
       "description": "This module triggers an off-by-two overflow in the\n        rsyslog daemon. This flaw is unlikely to yield code execution\n        but is effective at shutting down a remote log daemon. This bug\n        was introduced in version 4.6.0 and corrected in 4.6.8/5.8.5.\n        Compiler differences may prevent this bug from causing any\n        noticeable result on many systems (RHEL6 is affected)."
     }
@@ -452,7 +452,7 @@
   "CVE-2011-10029": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/windows/ftp/solarftp_user.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/ftp/solarftp_user.rb",
       "name": "Solar FTP Server Malformed USER Denial of Service",
       "description": "This module will send a format string as USER to Solar FTP, causing a\n          READ violation in function \"__output_1()\" found in \"sfsservice.exe\"\n          while trying to calculate the length of the string. This vulnerability\n          affects versions 2.1.1 and earlier."
     }
@@ -460,7 +460,7 @@
   "CVE-2011-10020": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/windows/games/kaillera.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/games/kaillera.rb",
       "name": "Kaillera 0.86 Server Denial of Service",
       "description": "The Kaillera 0.86 server can be shut down by sending any malformed packet\n          after the initial \"hello\" packet."
     }
@@ -468,7 +468,7 @@
   "CVE-2011-0657": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/windows/llmnr/ms11_030_dnsapi.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/llmnr/ms11_030_dnsapi.rb",
       "name": "Microsoft Windows DNSAPI.dll LLMNR Buffer Underrun DoS",
       "description": "This module exploits a buffer underrun vulnerability in Microsoft's DNSAPI.dll\n        as distributed with Windows Vista and later without KB2509553. By sending a\n        specially crafted LLMNR query, containing a leading '.' character, an attacker\n        can trigger stack exhaustion or potentially cause stack memory corruption.\n\n        Although this vulnerability may lead to code execution, it has not been proven\n        to be possible at the time of this writing.\n\n        NOTE: In some circumstances, a '.' may be found before the top of the stack is\n        reached. In these cases, this module may not be able to cause a crash."
     }
@@ -476,7 +476,7 @@
   "CVE-2011-0654": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/windows/smb/ms11_019_electbowser.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/smb/ms11_019_electbowser.rb",
       "name": "Microsoft Windows Browser Pool DoS",
       "description": "This module exploits a denial of service flaw in the Microsoft\n          Windows SMB service on versions of Windows Server 2003 that have been\n          configured as a domain controller. By sending a specially crafted election\n          request, an attacker can cause a pool overflow.\n\n          The vulnerability appears to be due to an error handling a length value\n          while calculating the amount of memory to copy to a buffer. When there are\n          zero bytes left in the buffer, the length value is improperly decremented\n          and an integer underflow occurs. The resulting value is used in several\n          calculations and is then passed as the length value to an inline memcpy\n          operation.\n\n          Unfortunately, the length value appears to be fixed at -2 (0xfffffffe) and\n          causes considerable damage to kernel heap memory. While theoretically possible,\n          it does not appear to be trivial to turn this vulnerability into remote (or\n          even local) code execution."
     },
@@ -504,7 +504,7 @@
   "CVE-2011-1140": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/wireshark/cldap.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/wireshark/cldap.rb",
       "name": "Wireshark CLDAP Dissector DOS",
       "description": "This module causes infinite recursion to occur within the\n          CLDAP dissector by sending a specially crafted UDP packet."
     }
@@ -512,7 +512,7 @@
   "CVE-2011-3305": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/cisco_nac_manager_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/cisco_nac_manager_traversal.rb",
       "name": "Cisco Network Access Manager Directory Traversal Vulnerability",
       "description": "This module tests whether a directory traversal vulnerability is present\n        in versions of Cisco Network Access Manager 4.8.x You may wish to change\n        FILE (e.g. passwd or hosts), MAXDIRS and RPORT depending on your environment."
     }
@@ -520,13 +520,13 @@
   "CVE-2011-0807": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/glassfish_login.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/glassfish_login.rb",
       "name": "GlassFish Brute Force Utility",
       "description": "This module attempts to login to GlassFish instance using username and password\n        combinations indicated by the USER_FILE, PASS_FILE, and USERPASS_FILE options.\n        It will also try to do an authentication bypass against older versions of GlassFish.\n        Note: by default, GlassFish 4.0 requires HTTPS, which means you must set the SSL option\n        to true, and SSLVersion to TLS1. It also needs Secure Admin to access the DAS remotely."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/glassfish_deployer.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/glassfish_deployer.rb",
       "name": "Sun/Oracle GlassFish Server Authenticated Code Execution",
       "description": "This module logs in to a GlassFish Server (Open Source or Commercial) using various\n          methods (such as authentication bypass, default credentials, or user-supplied login),\n          and deploys a malicious war file in order to get remote code execution. It has been\n          tested on Glassfish 2.x, 3.0, 4.0 and Sun Java System Application Server 9.x. Newer\n          GlassFish versions do not allow remote access (Secure Admin) by default, but is required\n          for exploitation."
     },
@@ -554,7 +554,7 @@
   "CVE-2011-0049": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/majordomo2_directory_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/majordomo2_directory_traversal.rb",
       "name": "Majordomo2 _list_file_get() Directory Traversal",
       "description": "This module exploits a directory traversal vulnerability present in\n        the _list_file_get() function of Majordomo2 (help function). By default, this\n        module will attempt to download the Majordomo config.pl file."
     },
@@ -594,7 +594,7 @@
   "CVE-2011-0063": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/majordomo2_directory_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/majordomo2_directory_traversal.rb",
       "name": "Majordomo2 _list_file_get() Directory Traversal",
       "description": "This module exploits a directory traversal vulnerability present in\n        the _list_file_get() function of Majordomo2 (help function). By default, this\n        module will attempt to download the Majordomo config.pl file."
     },
@@ -622,7 +622,7 @@
   "CVE-2011-3368": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/rewrite_proxy_bypass.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/rewrite_proxy_bypass.rb",
       "name": "Apache Reverse Proxy Bypass Vulnerability Scanner",
       "description": "Scan for poorly configured reverse proxy servers.\n        By default, this module attempts to force the server to make\n        a request with an invalid domain name. Then, if the bypass\n        is successful, the server will look it up and of course fail,\n        then responding with a status code 502. A baseline status code\n        is always established and if that baseline matches your test\n        status code, the injection attempt does not occur.\n        \"set VERBOSE true\" if you are paranoid and want to catch potential\n        false negatives. Works best against Apache and mod_rewrite"
     },
@@ -650,7 +650,7 @@
   "CVE-2011-10009": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/s40_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/s40_traversal.rb",
       "name": "S40 0.4.2 CMS Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability found in S40 CMS.\n          The flaw is due to the 'page' function not properly handling the $pid parameter,\n          which allows a malicious user to load an arbitrary file path."
     }
@@ -658,7 +658,7 @@
   "CVE-2011-2757": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/servicedesk_plus_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/servicedesk_plus_traversal.rb",
       "name": "ManageEngine ServiceDesk Plus Path Traversal",
       "description": "This module exploits an unauthenticated path traversal vulnerability found in ManageEngine\n          ServiceDesk Plus build 9110 and lower. The module will retrieve any file on the filesystem\n          with the same privileges as Support Center Plus is running. On Windows, files can be retrieved\n          with SYSTEM privileges. The issue has been resolved in ServiceDesk Plus build 91111 (issue SD-60283)."
     },
@@ -726,7 +726,7 @@
   "CVE-2011-2474": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/sybase_easerver_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/sybase_easerver_traversal.rb",
       "name": "Sybase Easerver 6.3 Directory Traversal",
       "description": "This module exploits a directory traversal vulnerability found in Sybase\n          EAserver's Jetty webserver on port 8000. Code execution seems unlikely with\n          EAserver's default configuration unless the web server allows WRITE permission."
     }
@@ -734,7 +734,7 @@
   "CVE-2011-4350": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/yaws_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/yaws_traversal.rb",
       "name": "Yaws Web Server Directory Traversal",
       "description": "This module exploits a directory traversal bug in Yaws v1.9.1 or less.\n          The module can only be used to retrieve files. However, code execution might\n          be possible. Because when the malicious user sends a PUT request, a file is\n          actually created, except no content is written."
     }
@@ -742,13 +742,13 @@
   "CVE-2011-3556": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/misc/java_rmi_server.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/misc/java_rmi_server.rb",
       "name": "Java RMI Server Insecure Endpoint Code Execution Scanner",
       "description": "Detect Java RMI endpoints"
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/misc/java_rmi_server.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/misc/java_rmi_server.rb",
       "name": "Java RMI Server Insecure Default Configuration Java Code Execution",
       "description": "This module takes advantage of the default configuration of the RMI Registry and\n          RMI Activation services, which allow loading classes from any remote (HTTP) URL. As it\n          invokes a method in the RMI Distributed Garbage Collector which is available via every\n          RMI endpoint, it can be used against both rmiregistry and rmid,  and against most other\n          (custom) RMI endpoints as well.\n\n          Note that it does not work against Java Management Extension (JMX) ports since those do\n          not support remote class loading, unless another RMI endpoint is active in the same\n          Java process.\n\n          RMI method calls do not support or require any sort of authentication."
     },
@@ -776,7 +776,7 @@
   "CVE-2011-1900": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/scada/indusoft_ntwebserver_fileaccess.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/scada/indusoft_ntwebserver_fileaccess.rb",
       "name": "Indusoft WebStudio NTWebServer Remote File Access",
       "description": "This module exploits a directory traversal vulnerability in Indusoft WebStudio.\n        The vulnerability exists in the NTWebServer component and allows to read arbitrary\n        remote files with the privileges of the NTWebServer process. The module has been\n        tested successfully on Indusoft WebStudio 6.1 SP6."
     }
@@ -784,7 +784,7 @@
   "CVE-2011-3389": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ssl/ssl_version.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/ssl/ssl_version.rb",
       "name": "SSL/TLS Version Detection",
       "description": "Check if a server supports a given version of SSL/TLS and cipher suites.\n\n        The certificate is stored in loot, and any known vulnerabilities against that\n        SSL version and cipher suite combination are checked. These checks include\n        POODLE, deprecated protocols, expired/not valid certs, low key strength, null cipher suites,\n        certificates signed with MD5, DROWN, RC4 ciphers, exportable ciphers, LOGJAM, and BEAST."
     }
@@ -792,19 +792,19 @@
   "CVE-2011-4862": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/telnet/telnet_encrypt_overflow.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/telnet/telnet_encrypt_overflow.rb",
       "name": "Telnet Service Encryption Key ID Overflow Detection",
       "description": "Detect telnet services vulnerable to the encrypt option Key ID overflow (BSD-derived telnetd)"
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/freebsd/telnet/telnet_encrypt_keyid.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/freebsd/telnet/telnet_encrypt_keyid.rb",
       "name": "FreeBSD Telnet Service Encryption Key ID Buffer Overflow",
       "description": "This module exploits a buffer overflow in the encryption option handler of the\n          FreeBSD telnet service."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/telnet/telnet_encrypt_keyid.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/telnet/telnet_encrypt_keyid.rb",
       "name": "Linux BSD-derived Telnet Service Encryption Key ID Buffer Overflow",
       "description": "This module exploits a buffer overflow in the encryption option handler of the\n          Linux BSD-derived telnet service (inetutils or krb5-telnet). Most Linux distributions\n          use NetKit-derived telnet daemons, so this flaw only applies to a small subset of\n          Linux systems running telnetd."
     },
@@ -872,7 +872,7 @@
   "CVE-2011-4722": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/tftp/ipswitch_whatsupgold_tftp.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/tftp/ipswitch_whatsupgold_tftp.rb",
       "name": "IpSwitch WhatsUp Gold TFTP Directory Traversal",
       "description": "This modules exploits a directory traversal vulnerability in IpSwitch WhatsUp\n          Gold's TFTP service."
     },
@@ -900,7 +900,7 @@
   "CVE-2011-4404": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/vmware/vmware_update_manager_traversal.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/vmware/vmware_update_manager_traversal.rb",
       "name": "VMware Update Manager 4 Directory Traversal",
       "description": "This modules exploits a directory traversal vulnerability in VMware Update Manager\n          on port 9084.  Versions affected by this vulnerability: vCenter Update Manager\n          4.1 prior to Update 2, vCenter Update Manager 4 Update 4."
     },
@@ -928,13 +928,13 @@
   "CVE-2011-1774": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/server/webkit_xslt_dropper.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/server/webkit_xslt_dropper.rb",
       "name": "Cross Platform Webkit File Dropper",
       "description": "This module exploits a XSLT vulnerability in Webkit to drop ASCII or UTF-8\n          files to the target file-system.  By default, the file will be dropped in\n          C:\\Program Files\\"
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/safari_xslt_output.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/safari_xslt_output.rb",
       "name": "Apple Safari Webkit libxslt Arbitrary File Creation",
       "description": "This module exploits a file creation vulnerability in the Webkit\n          rendering engine. It is possible to redirect the output of a XSLT\n          transformation to an arbitrary file. The content of the created file must be\n          ASCII or UTF-8. The destination path can be relative or absolute. This module\n          has been tested on Safari and Maxthon. Code execution can be achieved by first\n          uploading the payload to the remote machine in VBS format, and then upload a MOF\n          file, which enables Windows Management Instrumentation service to execute the VBS."
     },
@@ -962,7 +962,7 @@
   "CVE-2011-4828": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/vcms_upload.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/vcms_upload.rb",
       "name": "V-CMS PHP File Upload and Execute",
       "description": "This module exploits a vulnerability found on V-CMS's inline image upload feature.\n          The problem is due to the inline_image_upload.php file not checking the file type\n          before saving it on the web server. This allows any malicious user to upload a\n          script (such as PHP) without authentication, and then execute it with a GET request.\n\n          The issue is fixed in 1.1 by checking the extension name.  By default, 1.1 only\n          allows jpg, jpeg, png, gif, bmp, but it is still possible to upload a PHP file as\n          one of those extension names, which may still be leveraged in an attack."
     },
@@ -990,7 +990,7 @@
   "CVE-2011-10011": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/webid_converter.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/webid_converter.rb",
       "name": "WeBid converter.php Remote PHP Code Injection",
       "description": "This module exploits a vulnerability found in WeBid version 1.0.2.\n          By abusing the converter.php file, a malicious user can inject PHP code\n          in the includes/currencies.php script without any authentication, which\n          results in arbitrary code execution."
     }
@@ -998,7 +998,7 @@
   "CVE-2011-2921": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/ktsuss_suid_priv_esc.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/ktsuss_suid_priv_esc.rb",
       "name": "ktsuss suid Privilege Escalation",
       "description": "This module attempts to gain root privileges by exploiting\n          a vulnerability in ktsuss versions 1.4 and prior.\n\n          The ktsuss executable is setuid root and does not drop\n          privileges prior to executing user specified commands,\n          resulting in command execution with root privileges.\n\n          This module has been tested successfully on:\n\n          ktsuss 1.3 on SparkyLinux 6 (2019.08) (LXQT) (x64); and\n          ktsuss 1.3 on SparkyLinux 5.8 (LXQT) (x64)."
     },
@@ -1046,7 +1046,7 @@
   "CVE-2011-1485": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/pkexec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/pkexec.rb",
       "name": "Linux PolicyKit Race Condition Privilege Escalation",
       "description": "A race condition flaw was found in the PolicyKit pkexec utility and polkitd\n          daemon. A local user could use this flaw to appear as a privileged user to\n          pkexec, allowing them to execute arbitrary commands as root by running\n          those commands with pkexec.\n\n          Those vulnerable include RHEL6 prior to polkit-0.96-2.el6_0.1 and Ubuntu\n          libpolkit-backend-1 prior to 0.96-2ubuntu1.1 (10.10) 0.96-2ubuntu0.1\n          (10.04 LTS) and 0.94-1ubuntu1.1 (9.10)"
     },
@@ -1114,7 +1114,7 @@
   "CVE-2011-0404": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/misc/netsupport_manager_agent.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/misc/netsupport_manager_agent.rb",
       "name": "NetSupport Manager Agent Remote Buffer Overflow",
       "description": "This module exploits a buffer overflow in NetSupport Manager Agent. It\n          uses a similar ROP to the proftpd_iac exploit in order to avoid non executable stack."
     },
@@ -1162,7 +1162,7 @@
   "CVE-2011-3544": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/java_rhino.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/browser/java_rhino.rb",
       "name": "Java Applet Rhino Script Engine Remote Code Execution",
       "description": "This module exploits a vulnerability in the Rhino Script Engine that\n          can be used by a Java Applet to run arbitrary Java code outside of\n          the sandbox.  The vulnerability affects version 7 and version 6 update\n          27 and earlier, and should work on any browser that supports Java\n          (for example: IE, Firefox, Google Chrome, etc)"
     },
@@ -1190,7 +1190,7 @@
   "CVE-2011-5130": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/familycms_less_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/familycms_less_exec.rb",
       "name": "Family Connections less.php Remote Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          Family Connections 2.7.1. It's in the dev/less.php script and is due\n          to an insecure use of system().  Authentication isn't required to exploit\n          the vulnerability but register_globals must be set to On."
     },
@@ -1238,7 +1238,7 @@
   "CVE-2011-0518": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/lcms_php_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/lcms_php_exec.rb",
       "name": "LotusCMS 3.0 eval() Remote Command Execution",
       "description": "This module exploits a vulnerability found in Lotus CMS 3.0's Router()\n          function.  This is done by embedding PHP code in the 'page' parameter,\n          which will be passed to a eval call, therefore allowing remote code execution.\n\n          The module can either automatically pick up a 'page' parameter from the\n          default page, or manually specify one in the URI option.  To use the automatic\n          method, please supply the URI with just a directory path, for example: \"/lcms/\".\n          To manually configure one, you may do: \"/lcms/somepath/index.php?page=index\""
     },
@@ -1278,7 +1278,7 @@
   "CVE-2011-4825": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/log1cms_ajax_create_folder.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/log1cms_ajax_create_folder.rb",
       "name": "Log1 CMS writeInfo() PHP Code Injection",
       "description": "This module exploits the \"Ajax File and Image Manager\" component that can be\n          found in log1 CMS.  In function.base.php of this component, the 'data' parameter\n          in writeInfo() allows any malicious user to have direct control of writing data\n          to file data.php, which results in arbitrary remote code execution."
     },
@@ -1406,7 +1406,7 @@
   "CVE-2011-4075": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/phpldapadmin_query_engine.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/phpldapadmin_query_engine.rb",
       "name": "phpLDAPadmin query_engine Remote PHP Code Injection",
       "description": "This module exploits a vulnerability in the lib/functions.php for\n          phpLDAPadmin versions 1.2.1.1 and earlier that allows attackers input\n          parsed directly to the create_function() php function. A patch was\n          issued that uses a whitelist regex expression to check the user supplied\n          input before being parsed to the create_function() call."
     },
@@ -1454,7 +1454,7 @@
   "CVE-2011-3587": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/plone_popen2.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/plone_popen2.rb",
       "name": "Plone and Zope XMLTools Remote Command Execution",
       "description": "Unspecified vulnerability in Zope 2.12.x and 2.13.x, as used in Plone 4.0.x\n          through 4.0.9, 4.1, and 4.2 through 4.2a2, allows remote attackers to execute\n          arbitrary commands via vectors related to the p_ class in OFS/misc_.py and\n          the use of Python modules."
     },
@@ -1482,7 +1482,7 @@
   "CVE-2011-4453": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/pmwiki_pagelist.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/pmwiki_pagelist.rb",
       "name": "PmWiki pagelist.php Remote PHP Code Injection Exploit",
       "description": "This module exploits an arbitrary command execution vulnerability\n          in PmWiki from 2.0.0 to 2.2.34. The vulnerable function is\n          inside /scripts/pagelist.php."
     },
@@ -1530,7 +1530,7 @@
   "CVE-2011-3829": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/sit_file_upload.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/sit_file_upload.rb",
       "name": "Support Incident Tracker Remote Command Execution",
       "description": "This module combines two separate issues within Support Incident Tracker (<= 3.65)\n          application to upload arbitrary data and thus execute a shell. The two issues exist\n          in ftp_upload_file.php.\n          The first vulnerability exposes the upload dir used to store attachments.\n          The second vulnerability allows arbitrary file upload since there is no\n          validation function to prevent from uploading any file type.\n          Authentication is required to exploit both vulnerabilities."
     },
@@ -1558,7 +1558,7 @@
   "CVE-2011-3833": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/sit_file_upload.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/sit_file_upload.rb",
       "name": "Support Incident Tracker Remote Command Execution",
       "description": "This module combines two separate issues within Support Incident Tracker (<= 3.65)\n          application to upload arbitrary data and thus execute a shell. The two issues exist\n          in ftp_upload_file.php.\n          The first vulnerability exposes the upload dir used to store attachments.\n          The second vulnerability allows arbitrary file upload since there is no\n          validation function to prevent from uploading any file type.\n          Authentication is required to exploit both vulnerabilities."
     },
@@ -1586,7 +1586,7 @@
   "CVE-2011-10017": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/snortreport_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/snortreport_exec.rb",
       "name": "Snortreport nmap.php/nbtscan.php Remote Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          nmap.php and nbtscan.php scripts."
     }
@@ -1594,7 +1594,7 @@
   "CVE-2011-4642": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/splunk_mappy_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/splunk_mappy_exec.rb",
       "name": "Splunk Search Remote Code Execution",
       "description": "This module abuses a command execution vulnerability in the\n          web based interface of Splunk 4.2 to 4.2.4. The vulnerability exists\n          in the 'mappy' search command which allows attackers to run Python code.\n          To exploit this vulnerability, a valid Splunk user with the admin\n          role is required. By default, this module uses the credential of \"admin:changeme\",\n          the default Administrator credential for Splunk. Note that the Splunk web interface\n          runs as SYSTEM on Windows and as root on Linux by default."
     },
@@ -1622,7 +1622,7 @@
   "CVE-2011-10019": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/spree_search_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spree_search_exec.rb",
       "name": "Spreecommerce 0.60.1 Arbitrary Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in the\n          Spreecommerce search. Unvalidated input is called via the\n          Ruby send method allowing command execution."
     }
@@ -1630,7 +1630,7 @@
   "CVE-2011-10026": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/spree_searchlogic_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spree_searchlogic_exec.rb",
       "name": "Spreecommerce Arbitrary Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          the Spreecommerce API searchlogic for versions 0.50.0 and earlier.\n          Unvalidated input is called via the Ruby send method allowing command\n          execution."
     }
@@ -1638,7 +1638,7 @@
   "CVE-2011-3923": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/struts_code_exec_parameters.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/struts_code_exec_parameters.rb",
       "name": "Apache Struts ParametersInterceptor Remote Code Execution",
       "description": "This module exploits a remote command execution vulnerability in Apache Struts\n          versions < 2.3.1.2. This issue is caused because the ParametersInterceptor allows\n          for the use of parentheses which in turn allows it to interpret parameter values as\n          OGNL expressions during certain exception handling for mismatched data types of\n          properties which allows remote attackers to execute arbitrary Java code via a\n          crafted parameter."
     },
@@ -1666,7 +1666,7 @@
   "CVE-2011-10013": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/traq_plugin_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/traq_plugin_exec.rb",
       "name": "Traq admincp/common.php Remote Code Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          Traq 2.0 to 2.3. It's in the admincp/common.php script.\n\n          This function is called in each script located in the /admicp/ directory to\n          make sure the user has admin rights. This is a broken authorization schema\n          because the header() function doesn't stop the execution flow.\n          This can be exploited by malicious users to execute admin functionality,\n          e.g. execution of arbitrary PHP code leveraging of plugins.php functionality."
     }
@@ -1674,7 +1674,7 @@
   "CVE-2011-4451": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/wikka_spam_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wikka_spam_exec.rb",
       "name": "WikkaWiki 1.3.2 Spam Logging PHP Injection",
       "description": "This module exploits a vulnerability found in WikkaWiki.  When the spam logging\n          feature is enabled, it is possible to inject PHP code into the spam log file via the\n          UserAgent header, and then request it to execute our payload.  There are at least\n          three different ways to trigger spam protection, this module does so by generating\n          10 fake URLs in a comment (by default, the max_new_comment_urls parameter is 6).\n\n          Please note that in order to use the injection, you must manually pick a page\n          first that allows you to add a comment, and then set it as 'PAGE'."
     },
@@ -1702,13 +1702,13 @@
   "CVE-2011-0065": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/browser/mozilla_mchannel.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/osx/browser/mozilla_mchannel.rb",
       "name": "Mozilla Firefox 3.6.16 mChannel Use-After-Free",
       "description": "This module exploits a use-after-free vulnerability in Mozilla\n          Firefox 3.6.16. An OBJECT element, mChannel, can be freed via the\n          OnChannelRedirect method of the nsIChannelEventSink Interface. mChannel\n          becomes a dangling pointer and can be reused when setting the OBJECTs\n          data attribute. This module has been tested on Mac OS X 10.6.6, 10.6.7,\n          10.6.8, 10.7.2 and 10.7.3."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mozilla_mchannel.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/mozilla_mchannel.rb",
       "name": "Mozilla Firefox 3.6.16 mChannel Use-After-Free Vulnerability",
       "description": "This module exploits a use after free vulnerability in Mozilla\n          Firefox 3.6.16. An OBJECT Element mChannel can be freed via the\n          OnChannelRedirect method of the nsIChannelEventSink Interface. mChannel\n          becomes a dangling pointer and can be reused when setting the OBJECTs\n          data attribute. (Discovered by regenrecht). This module uses heapspray\n          with a minimal ROP chain to bypass DEP on Windows XP SP3. Additionlay,\n          a windows 7 target was provided using JAVA 6 and below to avoid aslr."
     },
@@ -1796,7 +1796,7 @@
   "CVE-2011-3230": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/browser/safari_file_policy.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/osx/browser/safari_file_policy.rb",
       "name": "Apple Safari file:// Arbitrary Code Execution",
       "description": "This module exploits a vulnerability found in Apple Safari on OS X platform.\n          A policy issue in the handling of file:// URLs may allow arbitrary remote code\n          execution under the context of the user.\n\n          In order to trigger arbitrary remote code execution, the best way seems to\n          be opening a share on the victim machine first (this can be SMB/WebDav/FTP, or\n          a file format that OS X might automount), and then execute it in /Volumes/[share].\n          If there's some kind of bug that leaks the victim machine's current username,\n          then it's also possible to execute the payload in /Users/[username]/Downloads/,\n          or else bruteforce your way to getting that information.\n\n          Please note that non-java payloads (*.sh extension) might get launched by\n          Xcode instead of executing it, in that case please try the Java ones instead."
     },
@@ -1824,7 +1824,7 @@
   "CVE-2011-2523": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb",
       "name": "VSFTPD v2.3.4 Backdoor Command Execution",
       "description": "This module exploits a malicious backdoor that was added to the VSFTPD download\n          archive. This backdoor was introduced into the vsftpd-2.3.4.tar.gz archive between\n          June 30th 2011 and July 1st 2011 according to the most recent information\n          available. This backdoor was removed on July 3rd 2011."
     },
@@ -1884,7 +1884,7 @@
   "CVE-2011-5010": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/http/ctek_skyrouter.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/ctek_skyrouter.rb",
       "name": "CTEK SkyRouter 4200 and 4300 Command Execution",
       "description": "This module exploits an unauthenticated remote root exploit within ctek SkyRouter 4200 and 4300."
     },
@@ -1912,7 +1912,7 @@
   "CVE-2011-2763": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/http/lifesize_room.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/lifesize_room.rb",
       "name": "LifeSize Room Command Injection",
       "description": "This module exploits a vulnerable resource in LifeSize\n          Room versions 3.5.3 and 4.7.18 to inject OS commands.  LifeSize\n          Room is an appliance and thus the environment is limited\n          resulting in a small set of payload options."
     },
@@ -1940,7 +1940,7 @@
   "CVE-2011-4542": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/hastymail_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/hastymail_exec.rb",
       "name": "Hastymail 2.1.1 RC1 Command Injection",
       "description": "This module exploits a command injection vulnerability found in Hastymail\n          2.1.1 RC1 due to the insecure usage of the call_user_func_array() function on\n          the \"lib/ajax_functions.php\" script. Authentication is required on Hastymail\n          in order to exploit the vulnerability. The module has been successfully tested\n          on Hastymail 2.1.1 RC1 over Ubuntu 10.04."
     },
@@ -1968,7 +1968,7 @@
   "CVE-2011-4908": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/joomla_tinybrowser.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/joomla_tinybrowser.rb",
       "name": "Joomla 1.5.12 TinyBrowser File Upload Code Execution",
       "description": "This module exploits a vulnerability in the TinyMCE/tinybrowser plugin.\n          This plugin is not secured in version 1.5.12 of joomla and allows the upload\n          of files on the remote server.\n          By renaming the uploaded file this vulnerability can be used to upload/execute\n          code on the affected system."
     },
@@ -2016,7 +2016,7 @@
   "CVE-2011-10018": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/mybb_backdoor.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/mybb_backdoor.rb",
       "name": "myBB 1.6.4 Backdoor Arbitrary Command Execution",
       "description": "myBB is a popular open source PHP forum software. Version 1.6.4 contained an\n          unauthorized backdoor, distributed as part of the vendor's source package."
     }
@@ -2024,7 +2024,7 @@
   "CVE-2011-4929": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/redmine_scm_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/redmine_scm_exec.rb",
       "name": "Redmine SCM Repository Arbitrary Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in the\n          Redmine repository controller. The flaw is triggered when a rev parameter\n          is passed to the command line of the SCM tool without adequate filtering."
     },
@@ -2052,7 +2052,7 @@
   "CVE-2011-2140": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flash_sps.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/adobe_flash_sps.rb",
       "name": "Adobe Flash Player MP4 SequenceParameterSetNALUnit Buffer Overflow",
       "description": "This module exploits a vulnerability found in Adobe Flash Player's Flash10u.ocx\n          component.  When processing a MP4 file (specifically the Sequence Parameter Set),\n          Flash will see if pic_order_cnt_type is equal to 1, which sets the\n          num_ref_frames_in_pic_order_cnt_cycle field, and then blindly copies data in\n          offset_for_ref_frame on the stack, which allows arbitrary remote code execution\n          under the context of the user.  Numerous reports also indicate that this\n          vulnerability has been exploited in the wild."
     },
@@ -2100,7 +2100,7 @@
   "CVE-2011-2110": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flashplayer_arrayindexing.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/adobe_flashplayer_arrayindexing.rb",
       "name": "Adobe Flash Player AVM Verification Logic Array Indexing Code Execution",
       "description": "This module exploits a vulnerability in Adobe Flash Player versions 10.3.181.23\n          and earlier. This issue is caused by a failure in the ActionScript3 AVM2 verification\n          logic. This results in unsafe JIT(Just-In-Time) code being executed. This is the same\n          vulnerability that was used for attacks against Korean based organizations.\n\n          Specifically, this issue occurs when indexing an array using an arbitrary value,\n          memory can be referenced and later executed. Taking advantage of this issue does not rely\n          on heap spraying as the vulnerability can also be used for information leakage.\n\n          Currently this exploit works for IE6, IE7, IE8, Firefox 10.2 and likely several\n          other browsers under multiple Windows platforms. This exploit bypasses ASLR/DEP and\n          is very reliable."
     },
@@ -2128,7 +2128,7 @@
   "CVE-2011-0609": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flashplayer_avm.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/adobe_flashplayer_avm.rb",
       "name": "Adobe Flash Player AVM Bytecode Verification Vulnerability",
       "description": "This module exploits a vulnerability in Adobe Flash Player versions 10.2.152.33\n          and earlier. This issue is caused by a failure in the ActionScript3 AVM2 verification\n          logic. This results in unsafe JIT(Just-In-Time) code being executed.  This is the same\n          vulnerability that was used for the RSA attack in March 2011.\n\n          Specifically, this issue results in uninitialized memory being referenced and later\n          executed. Taking advantage of this issue relies on heap spraying and controlling the\n          uninitialized memory.\n\n          Currently this exploit works for IE6, IE7, and Firefox 3.6 and likely several\n          other browsers. DEP does catch the exploit and causes it to fail. Due to the nature\n          of the uninitialized memory its fairly difficult to get around this restriction."
     },
@@ -2156,7 +2156,7 @@
   "CVE-2011-0611": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flashplayer_flash10o.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/adobe_flashplayer_flash10o.rb",
       "name": "Adobe Flash Player 10.2.153.1 SWF Memory Corruption Vulnerability",
       "description": "This module exploits a vulnerability in Adobe Flash Player that was discovered,\n          and has been exploited actively in the wild.  By embedding a specially crafted .swf\n          file, Adobe Flash crashes due to an invalid use of an object type, which allows\n          attackers to overwrite a pointer in memory, and results arbitrary code execution.\n          Please note for IE 8 targets, Java Runtime Environment must be available on the\n          victim machine in order to work properly."
     },
@@ -2204,7 +2204,7 @@
   "CVE-2011-2039": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/cisco_anyconnect_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/cisco_anyconnect_exec.rb",
       "name": "Cisco AnyConnect VPN Client ActiveX URL Property Download and Execute",
       "description": "This module exploits a vulnerability in the Cisco AnyConnect VPN client\n          vpnweb.ocx ActiveX control. This control is typically used to install the\n          VPN client. An attacker can set the 'url' property which is where the control\n          tries to locate the files needed to install the client.\n\n          The control tries to download two files from the site specified within the\n          'url' property. One of these files it will be stored in a temporary directory and\n          executed."
     },
@@ -2232,7 +2232,7 @@
   "CVE-2011-2882": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/citrix_gateway_actx.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/citrix_gateway_actx.rb",
       "name": "Citrix Gateway ActiveX Control Stack Based Buffer Overflow Vulnerability",
       "description": "This module exploits a stack based buffer overflow in the Citrix Gateway\n          ActiveX control. Exploitation of this vulnerability requires user interaction.\n          The victim must click a button in a dialog to begin a scan. This is typical\n          interaction that users should be accustom to.\n\n          Exploitation results in code execution with the privileges of the user who\n          browsed to the exploit page."
     },
@@ -2260,7 +2260,7 @@
   "CVE-2011-4786": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/hp_easy_printer_care_xmlcachemgr.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/hp_easy_printer_care_xmlcachemgr.rb",
       "name": "HP Easy Printer Care XMLCacheMgr Class ActiveX Control Remote Code Execution",
       "description": "This module allows remote attackers to place arbitrary files on a users file\n          system by abusing the \"CacheDocumentXMLWithId\" method from the \"XMLCacheMgr\"\n          class in the HP Easy Printer HPTicketMgr.dll ActiveX Control (HPTicketMgr.dll\n          2.7.2.0).\n\n          Code execution can be achieved by first uploading the payload to the remote\n          machine embeddeding a vbs file, and then upload another mof file, which enables\n          Windows Management Instrumentation service to execute the vbs. Please note that\n          this module currently only works for Windows before Vista."
     },
@@ -2288,7 +2288,7 @@
   "CVE-2011-2404": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/hp_easy_printer_care_xmlsimpleaccessor.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/hp_easy_printer_care_xmlsimpleaccessor.rb",
       "name": "HP Easy Printer Care XMLSimpleAccessor Class ActiveX Control Remote Code Execution",
       "description": "This module allows remote attackers to place arbitrary files on a users file\n          system by abusing via Directory Traversal attack the \"saveXML\" method from the\n          \"XMLSimpleAccessor\" class in the HP Easy Printer HPTicketMgr.dll ActiveX Control\n          (HPTicketMgr.dll 2.7.2.0).\n\n          Code execution can be achieved by first uploading the payload to the remote\n          machine embeddeding a vbs file, and then upload another mof file, which enables Windows\n          Management Instrumentation service to execute the vbs. Please note that this\n          module currently only works for Windows before Vista."
     },
@@ -2316,7 +2316,7 @@
   "CVE-2011-0340": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/indusoft_issymbol_internationalseparator.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/indusoft_issymbol_internationalseparator.rb",
       "name": "InduSoft Web Studio ISSymbol.ocx InternationalSeparator() Heap Overflow",
       "description": "This module exploits a heap overflow found in InduSoft Web Studio <= 61.6.00.00\n          SP6. The overflow exists in the ISSymbol.ocx, and can be triggered with a long\n          string argument for the InternationalSeparator() method of the ISSymbol control.\n          This module uses the msvcr71.dll form the Java JRE6 to bypass ASLR."
     },
@@ -2344,7 +2344,7 @@
   "CVE-2011-3659": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mozilla_attribchildremoved.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/mozilla_attribchildremoved.rb",
       "name": "Firefox 8/9 AttributeChildRemoved() Use-After-Free",
       "description": "This module exploits a use-after-free vulnerability in Firefox 8/8.0.1 and 9/9.0.1.\n          Removal of child nodes from the nsDOMAttribute can allow for a child\n          to still be accessible after removal due to a premature notification\n          of AttributeChildRemoved. Since mFirstChild is not set to NULL until\n          after this call is made, this means the removed child will be accessible\n          after it has been removed. By carefully manipulating the memory layout,\n          this can lead to arbitrary code execution."
     },
@@ -2372,7 +2372,7 @@
   "CVE-2011-3658": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mozilla_nssvgvalue.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/mozilla_nssvgvalue.rb",
       "name": "Firefox nsSVGValue Out-of-Bounds Access Vulnerability",
       "description": "This module exploits an out-of-bounds access flaw in Firefox 7 and 8 (<= 8.0.1).\n          The notification of nsSVGValue observers via nsSVGValue::NotifyObservers(x,y)\n          uses a loop which can result in an out-of-bounds access to attacker-controlled memory.\n          The mObserver ElementAt() function (which picks up pointers), does not validate\n          if a given index is out of bound. If a custom observer of nsSVGValue is created,\n          which removes elements from the original observer,\n          and memory layout is manipulated properly, the ElementAt() function might pick up\n          an attacker provided pointer, which can be leveraged to gain remote arbitrary\n          code execution."
     },
@@ -2400,7 +2400,7 @@
   "CVE-2011-0073": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mozilla_nstreerange.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/mozilla_nstreerange.rb",
       "name": "Mozilla Firefox \"nsTreeRange\" Dangling Pointer Vulnerability",
       "description": "This module exploits a code execution vulnerability in Mozilla Firefox\n          3.6.x <= 3.6.16 and 3.5.x <= 3.5.17 found in nsTreeSelection.\n          By overwriting a subfunction of invalidateSelection it is possible to free the\n          nsTreeRange object that the function currently operates on.\n          Any further operations on the freed object can result in remote code execution.\n          Utilizing the call setup the function provides it's possible to bypass DEP\n          without the need for a ROP. Sadly this exploit is still either dependent\n          on Java or bound by ASLR because Firefox doesn't employ any ASLR-free\n          modules anymore."
     },
@@ -2448,7 +2448,7 @@
   "CVE-2011-2371": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mozilla_reduceright.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/mozilla_reduceright.rb",
       "name": "Mozilla Firefox Array.reduceRight() Integer Overflow",
       "description": "This module exploits a vulnerability found in Mozilla Firefox 3.6. When an\n          array object is configured with a large length value, the reduceRight() method\n          may cause an invalid index being used, allowing arbitrary remote code execution.\n          Please note that the exploit requires a longer amount of time (compare to a\n          typical browser exploit) in order to gain control of the machine."
     },
@@ -2516,7 +2516,7 @@
   "CVE-2011-1260": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/ms11_050_mshtml_cobjectelement.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/ms11_050_mshtml_cobjectelement.rb",
       "name": "MS11-050 IE mshtml!CObjectElement Use After Free",
       "description": "This module exploits a use-after-free vulnerability in Internet Explorer. The\n          vulnerability occurs when an invalid <object> tag exists and other elements\n          overlap/cover where the object tag should be when rendered (due to their\n          styles/positioning). The mshtml!CObjectElement is then freed from memory because\n          it is invalid. However, the mshtml!CDisplay object for the page continues to keep\n          a reference to the freed <object> and attempts to call a function on it, leading\n          to the use-after-free.\n\n          Please note that for IE 8 targets, JRE (Java Runtime Environment) is required\n          to bypass DEP (Data Execution Prevention)."
     },
@@ -2544,7 +2544,7 @@
   "CVE-2011-1996": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/ms11_081_option.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/ms11_081_option.rb",
       "name": "MS11-081 Microsoft Internet Explorer Option Element Use-After-Free",
       "description": "This module exploits a vulnerability in Microsoft Internet Explorer.  A memory\n          corruption may occur when the Option cache isn't updated properly, which allows\n          other JavaScript methods to access a deleted Option element, and results in code\n          execution under the context of the user."
     },
@@ -2572,7 +2572,7 @@
   "CVE-2011-3400": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/ms11_093_ole32.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/ms11_093_ole32.rb",
       "name": "MS11-093 Microsoft Windows OLE Object File Handling Remote Code Execution",
       "description": "This module exploits a type confusion vulnerability in the OLE32 component of\n          Windows XP SP3. The vulnerability exists in the CPropertyStorage::ReadMultiple\n          function.\n\n          A Visio document with a specially crafted Summary Information Stream embedded allows\n          to get remote code execution through Internet Explorer, on systems with Visio Viewer\n          installed."
     },
@@ -2600,7 +2600,7 @@
   "CVE-2011-4044": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/pcvue_func.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/pcvue_func.rb",
       "name": "PcVue 10.0 SV.UIGrdCtrl.1 'LoadObject()/SaveObject()' Trusted DWORD Vulnerability",
       "description": "This module exploits a function pointer control within SVUIGrd.ocx of PcVue 10.0.\n          By setting a dword value for the SaveObject() or LoadObject(), an attacker can\n          overwrite a function pointer and execute arbitrary code."
     },
@@ -2648,7 +2648,7 @@
   "CVE-2011-10028": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/real_arcade_installerdlg.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/real_arcade_installerdlg.rb",
       "name": "Real Networks Arcade Games StubbyUtil.ProcessMgr ActiveX Arbitrary Code Execution",
       "description": "This module exploits a vulnerability in Real Networks Arcade Game's ActiveX control. The \"exec\"\n          function found in InstallerDlg.dll (v2.6.0.445) allows remote attackers to run arbitrary commands\n          on the victim machine."
     }
@@ -2656,7 +2656,7 @@
   "CVE-2011-2950": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/realplayer_qcp.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/realplayer_qcp.rb",
       "name": "RealNetworks Realplayer QCP Parsing Heap Overflow",
       "description": "This module exploits a heap overflow in Realplayer when handling a .QCP file.\n          The specific flaw exists within qcpfformat.dll. A static 256 byte buffer is\n          allocated on the heap and user-supplied data from the file is copied within a\n          memory copy loop.\n\n          This allows a remote attacker to execute arbitrary code running in the context\n          of the web browser via a .QCP file with a specially crafted \"fmt\" chunk.\n          At this moment this module exploits the flaw on Windows XP IE6, IE7."
     },
@@ -2684,7 +2684,7 @@
   "CVE-2011-4034": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/teechart_pro.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/teechart_pro.rb",
       "name": "TeeChart Professional ActiveX Control Trusted Integer Dereference",
       "description": "This module exploits an integer overflow in TeeChart Pro ActiveX control. When\n          sending an overly large/negative integer value to the AddSeries() property of\n          TeeChart2010.ocx, the code will perform an arithmetic operation that wraps the\n          value and is later directly trusted and called upon.\n\n          This module has been designed to bypass DEP only under IE8 with Java support. Multiple\n          versions (including the latest version) are affected by this vulnerability that date\n          back to as far as 2001.\n\n          The following controls are vulnerable:\n\n          TeeChart5.ocx Version 5.0.1.0 (clsid: B6C10489-FB89-11D4-93C9-006008A7EED4);\n          TeeChart6.ocx Version 6.0.0.5 (clsid: 536600D3-70FE-4C50-92FB-640F6BFC49AD);\n          TeeChart7.ocx Version 7.0.1.4 (clsid: FAB9B41C-87D6-474D-AB7E-F07D78F2422E);\n          TeeChart8.ocx Version 8.0.0.8 (clsid: BDEB0088-66F9-4A55-ABD2-0BF8DEEC1196);\n          TeeChart2010.ocx Version 2010.0.0.3 (clsid: FCB4B50A-E3F1-4174-BD18-54C3B3287258).\n\n          The controls are deployed under several SCADA based systems including:\n\n          Unitronics OPC server v1.3;\n          BACnet Operator Workstation Version 1.0.76"
     }
@@ -2692,7 +2692,7 @@
   "CVE-2011-2217": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/tom_sawyer_tsgetx71ex552.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/tom_sawyer_tsgetx71ex552.rb",
       "name": "Tom Sawyer Software GET Extension Factory Remote Code Execution",
       "description": "This module exploits a remote code execution vulnerability in the tsgetx71ex553.dll\n          ActiveX control installed with Tom Sawyer GET Extension Factory due to an incorrect\n          initialization under Internet Explorer.\n\n          While the Tom Sawyer GET Extension Factory is installed with some versions of VMware\n          Infrastructure Client, this module has been tested only with the versions installed\n          with Embarcadero Technologies ER/Studio XE2 / Embarcadero Studio Portal 1.6. The ActiveX\n          control tested is tsgetx71ex553.dll, version 5.5.3.238.\n\n          This module achieves DEP and ASLR bypass using the well known msvcr71.dll rop chain. The\n          dll is installed by default with the Embarcadero software, and loaded by the targeted\n          ActiveX."
     },
@@ -2720,7 +2720,7 @@
   "CVE-2011-2657": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/zenworks_helplauncher_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/zenworks_helplauncher_exec.rb",
       "name": "AdminStudio LaunchHelp.dll ActiveX Arbitrary Code Execution",
       "description": "This module exploits a vulnerability in AdminStudio LaunchHelp.dll ActiveX control. The\n          LaunchProcess function found in LaunchHelp.HelpLauncher.1 allows remote attackers to run\n          arbitrary commands on the victim machine. This module has been successfully tested with the\n          ActiveX installed with AdminStudio 9.5, which also comes with Novell ZENworks Configuration\n          Management 10 SP2, on IE 6 and IE 8 over Windows XP SP 3."
     },
@@ -2748,7 +2748,7 @@
   "CVE-2011-0647": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/emc/replication_manager_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/emc/replication_manager_exec.rb",
       "name": "EMC Replication Manager Command Execution",
       "description": "This module exploits a remote command-injection vulnerability in EMC Replication Manager\n          client (irccd.exe). By sending a specially crafted message invoking RunProgram function an\n          attacker may be able to execute arbitrary commands with SYSTEM privileges. Affected\n          products are EMC Replication Manager < 5.3. This module has been successfully tested\n          against EMC Replication Manager 5.2.1 on XP/W2003. EMC Networker Module for Microsoft\n          Applications 2.1 and 2.2 may be vulnerable too although this module have not been tested\n          against these products."
     },
@@ -2776,7 +2776,7 @@
   "CVE-2011-2595": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/acdsee_fotoslate_string.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/acdsee_fotoslate_string.rb",
       "name": "ACDSee FotoSlate PLP File id Parameter Overflow",
       "description": "This module exploits a buffer overflow in ACDSee FotoSlate 4.0 Build 146 via\n          a specially crafted id parameter in a String element.  When viewing a malicious\n          PLP file with the ACDSee FotoSlate product, a remote attacker could overflow a\n          buffer and execute arbitrary code. This exploit has been tested on systems such as\n          Windows XP SP3, Windows Vista, and Windows 7."
     },
@@ -2804,7 +2804,7 @@
   "CVE-2011-2462": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/adobe_reader_u3d.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/adobe_reader_u3d.rb",
       "name": "Adobe Reader U3D Memory Corruption Vulnerability",
       "description": "This module exploits a vulnerability in the U3D handling within\n          versions 9.x through 9.4.6 and 10 through to 10.1.1 of Adobe Reader.\n          The vulnerability is due to the use of uninitialized memory.\n\n          Arbitrary code execution is achieved by embedding specially crafted U3D\n          data into a PDF document. A heap spray via JavaScript is used in order to\n          ensure that the memory used by the invalid pointer issue is controlled."
     },
@@ -2832,7 +2832,7 @@
   "CVE-2011-10027": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/aol_desktop_linktag.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/aol_desktop_linktag.rb",
       "name": "AOL Desktop 9.6 RTX Buffer Overflow",
       "description": "This module exploits a vulnerability found in AOL Desktop 9.6's Tool\\rich.rct\n          component. By supplying a long string of data in the hyperlink tag, rich.rct copies\n          this data into a buffer using a strcpy function, which causes an overflow, and\n          results arbitrary code execution."
     }
@@ -2840,7 +2840,7 @@
   "CVE-2011-0257": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/apple_quicktime_pnsize.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/apple_quicktime_pnsize.rb",
       "name": "Apple QuickTime PICT PnSize Buffer Overflow",
       "description": "This module exploits a vulnerability in Apple QuickTime Player 7.60.92.0.\n          When opening a .mov file containing a specially crafted PnSize value, an attacker\n          may be able to execute arbitrary code."
     },
@@ -2868,7 +2868,7 @@
   "CVE-2011-4496": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/aviosoft_plf_buf.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/aviosoft_plf_buf.rb",
       "name": "Aviosoft Digital TV Player Professional 1.0 Stack Buffer Overflow",
       "description": "This module exploits a vulnerability found in Aviosoft Digital TV Player\n          Pro version 1.x.  An overflow occurs when the process copies the content of a\n          playlist file on to the stack, which may result arbitrary code execution under\n          the context of the user."
     }
@@ -2876,7 +2876,7 @@
   "CVE-2011-5170": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/ccmplayer_m3u_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/ccmplayer_m3u_bof.rb",
       "name": "CCMPlayer 1.5 m3u Playlist Stack Based Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow in CCMPlayer 1.5. Opening\n          a m3u playlist with a long track name, a SEH exception record can be overwritten\n          with parts of the controllable buffer. SEH execution is triggered after an\n          invalid read of an injectable address, thus allowing arbitrary code execution.\n          This module works on multiple Windows platforms including: Windows XP SP3,\n          Windows Vista, and Windows 7."
     },
@@ -2924,7 +2924,7 @@
   "CVE-2011-5171": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/cyberlink_p2g_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/cyberlink_p2g_bof.rb",
       "name": "CyberLink Power2Go name Attribute (p2g) Stack Buffer Overflow Exploit",
       "description": "This module exploits a stack buffer overflow in CyberLink Power2Go version 8.x\n          The vulnerability is triggered when opening a malformed p2g file containing an overly\n          long string in the 'name' attribute of the file element. This results in overwriting a\n          structured exception handler record."
     },
@@ -2972,7 +2972,7 @@
   "CVE-2011-10015": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/cytel_studio_cy3.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/cytel_studio_cy3.rb",
       "name": "Cytel Studio 9.0 (CY3 File) Stack Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow found\n          in Cytel Studio <= 9.0. The overflow is triggered during the\n          copying of strings to a stack buffer of 256 bytes."
     }
@@ -2980,7 +2980,7 @@
   "CVE-2011-3494": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/esignal_styletemplate_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/esignal_styletemplate_bof.rb",
       "name": "eSignal and eSignal Pro File Parsing Buffer Overflow in QUO",
       "description": "The software is unable to handle the \"<StyleTemplate>\" files (even those\n          original included in the program) like those with the registered\n          extensions QUO, SUM and POR. Successful exploitation of this\n          vulnerability may take up to several seconds due to the use of\n          egghunter. Also, DEP bypass is unlikely due to the limited space for\n          payload. This vulnerability affects versions 10.6.2425.1208 and earlier."
     },
@@ -3028,7 +3028,7 @@
   "CVE-2011-10030": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/foxit_reader_filewrite.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/foxit_reader_filewrite.rb",
       "name": "Foxit PDF Reader 4.2 Javascript File Write",
       "description": "This module exploits an unsafe Javascript API implemented in Foxit PDF Reader\n          version 4.2. The createDataObject() Javascript API function allows for writing\n          arbitrary files to the file system. This issue was fixed in version 4.3.1.0218.\n\n          Note: This exploit uses the All Users directory currently, which required\n          administrator privileges to write to. This means an administrative user has to\n          open the file to be successful. Kind of lame but thats how it goes sometimes in\n          the world of file write bugs."
     }
@@ -3036,7 +3036,7 @@
   "CVE-2011-5165": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/free_mp3_ripper_wav.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/free_mp3_ripper_wav.rb",
       "name": "Free MP3 CD Ripper 1.1 WAV File Stack Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow found in Free MP3 CD\n          Ripper 1.1.  The overflow is triggered when an unsuspecting user opens a malicious\n          WAV file."
     },
@@ -3204,7 +3204,7 @@
   "CVE-2011-10014": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/gta_samp.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/gta_samp.rb",
       "name": "GTA SA-MP server.cfg Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in GTA SA-MP Server.\n          This buffer overflow occurs when the application attempts to open a malformed\n          server.cfg file.  To exploit this vulnerability, an attacker must send the\n          victim a server.cfg file and have them run samp-server.exe."
     }
@@ -3212,13 +3212,13 @@
   "CVE-2011-1213": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/lotusnotes_lzh.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/lotusnotes_lzh.rb",
       "name": "Lotus Notes 8.0.x - 8.5.2 FP2 - Autonomy Keyview (.lzh Attachment)",
       "description": "This module exploits a stack buffer overflow in Lotus Notes 8.5.2 when\n          parsing a malformed, specially crafted LZH file. This vulnerability was\n          discovered binaryhouse.net"
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/lotus/lotusnotes_lzh.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/lotus/lotusnotes_lzh.rb",
       "name": "Lotus Notes 8.0.x - 8.5.2 FP2 - Autonomy Keyview (.lzh Attachment)",
       "description": "This module exploits a stack buffer overflow in Lotus Notes 8.5.2 when\n          parsing a malformed, specially crafted LZH file. This vulnerability was\n          discovered binaryhouse.net"
     },
@@ -3246,7 +3246,7 @@
   "CVE-2011-10021": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/magix_musikmaker_16_mmm.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/magix_musikmaker_16_mmm.rb",
       "name": "Magix Musik Maker 16 .mmm Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Magix Musik Maker 16.\n          When opening a specially crafted arrangement file (.mmm) in the application, an\n          unsafe strcpy() will allow you to overwrite a SEH handler.  This exploit\n          bypasses DEP & ASLR, and works on XP, Vista & Windows 7.  Egghunter is used, and\n          might require up to several seconds to receive a shell."
     }
@@ -3254,7 +3254,7 @@
   "CVE-2011-10024": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/mjm_coreplayer2011_s3m.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mjm_coreplayer2011_s3m.rb",
       "name": "MJM Core Player 2011 .s3m Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in MJM Core Player 2011\n          When opening a malicious s3m file in this application, a stack buffer overflow can be\n          triggered, resulting in arbitrary code execution.\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7."
     }
@@ -3262,7 +3262,7 @@
   "CVE-2011-10023": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/mjm_quickplayer_s3m.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mjm_quickplayer_s3m.rb",
       "name": "MJM QuickPlayer 1.00 Beta 60a / QuickPlayer 2010 .s3m Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in MJM QuickPlayer 1.00 beta 60a\n          and QuickPlayer 2010 (Multi-target exploit).  When opening a malicious s3m file in\n          one of these 2 applications, a stack buffer overflow can be triggered, resulting in\n          arbitrary code execution.\n\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7."
     }
@@ -3270,7 +3270,7 @@
   "CVE-2011-10008": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/mplayer_m3u_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mplayer_m3u_bof.rb",
       "name": "MPlayer Lite M3U Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          MPlayer Lite r33064, caused by improper bounds checking of an URL entry.\n\n          By persuading the victim to open a specially-crafted .M3U file, specifically by\n          drag-and-dropping it to the player, a remote attacker can execute arbitrary\n          code on the system."
     }
@@ -3278,7 +3278,7 @@
   "CVE-2011-3625": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/mplayer_sami_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mplayer_sami_bof.rb",
       "name": "MPlayer SAMI Subtitle File Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow found in the handling\n          of SAMI subtitles files in MPlayer SVN Versions before 33471. It currently\n          targets SMPlayer 0.6.8, which is distributed with a vulnerable version of MPlayer.\n\n          The overflow is triggered when an unsuspecting victim opens a movie file first,\n          followed by loading the malicious SAMI subtitles file from the GUI. Or, it can also\n          be done from the console with the MPlayer \"-sub\" option."
     },
@@ -3306,7 +3306,7 @@
   "CVE-2011-0105": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/ms11_021_xlb_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/ms11_021_xlb_bof.rb",
       "name": "MS11-021 Microsoft Office 2007 Excel .xlb Buffer Overflow",
       "description": "This module exploits a vulnerability found in Excel of Microsoft Office 2007.\n          By supplying a malformed .xlb file, an attacker can control the content (source)\n          of a memcpy routine, and the number of bytes to copy, therefore causing a stack-\n          based buffer overflow.  This results in arbitrary code execution under the context of\n          the user."
     },
@@ -3334,7 +3334,7 @@
   "CVE-2011-10012": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/netop.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/netop.rb",
       "name": "NetOp Remote Control Client 9.5 Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in NetOp Remote Control 9.5.\n          When opening a .dws file containing a specially crafted string longer then 520\n          characters will allow an attacker to execute arbitrary code."
     }
@@ -3342,7 +3342,7 @@
   "CVE-2011-10016": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/real_networks_netzip_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/real_networks_netzip_bof.rb",
       "name": "Real Networks Netzip Classic 7.5.1 86 File Parsing Buffer Overflow Vulnerability",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          version 7.5.1 86 of Real Networks Netzip Classic.\n          In order for the command to be executed, an attacker must convince someone to\n          load a specially crafted zip file with NetZip Classic.\n          By doing so, an attacker can execute arbitrary code as the victim user."
     }
@@ -3350,7 +3350,7 @@
   "CVE-2011-4535": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/scadaphone_zip.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/scadaphone_zip.rb",
       "name": "ScadaTEC ScadaPhone Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          version 5.3.11.1230 of scadaTEC's ScadaPhone.\n\n          In order for the command to be executed, an attacker must convince someone to\n          load a specially crafted project zip file with ScadaPhone.\n          By doing so, an attacker can execute arbitrary code as the victim user."
     },
@@ -3398,7 +3398,7 @@
   "CVE-2011-10025": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/subtitle_processor_m3u_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/subtitle_processor_m3u_bof.rb",
       "name": "Subtitle Processor 7.7.1 .M3U SEH Unicode Buffer Overflow",
       "description": "This module exploits a vulnerability found in Subtitle Processor 7.  By\n          supplying a long string of data as a .m3u file, Subtitle Processor first converts\n          this input in Unicode, which expands the string size, and then attempts to copy it\n          inline on the stack.  This results a buffer overflow with SEH overwritten, allowing\n          arbitrary code execution."
     }
@@ -3406,7 +3406,7 @@
   "CVE-2011-0499": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/videospirit_visprj.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/videospirit_visprj.rb",
       "name": "VeryTools Video Spirit Pro",
       "description": "This module exploits a stack buffer overflow in Video Spirit <= 1.70.\n          When opening a malicious project file (.visprj), a stack buffer overflow occurs,\n          resulting in arbitrary code execution.\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7."
     },
@@ -3454,7 +3454,7 @@
   "CVE-2011-0500": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/videospirit_visprj.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/videospirit_visprj.rb",
       "name": "VeryTools Video Spirit Pro",
       "description": "This module exploits a stack buffer overflow in Video Spirit <= 1.70.\n          When opening a malicious project file (.visprj), a stack buffer overflow occurs,\n          resulting in arbitrary code execution.\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7."
     },
@@ -3502,7 +3502,7 @@
   "CVE-2011-2386": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/visiwave_vwr_type.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/visiwave_vwr_type.rb",
       "name": "VisiWave VWR File Parsing Vulnerability",
       "description": "This module exploits a vulnerability found in VisiWave's Site Survey Report application.\n          When processing .VWR files, VisiWaveReport.exe attempts to match a valid pointer based on the 'Type'\n          property (valid ones include 'Properties', 'TitlePage', 'Details', 'Graph', 'Table', 'Text',\n          'Image'), but if a match isn't found, the function that's supposed to handle this routine\n          ends up returning the input as a pointer, and later used in a CALL DWORD PTR [EDX+10]\n          instruction.  This allows attackers to overwrite it with any arbitrary value, and results code\n          execution.  A patch is available at visiwave.com; the fix is done by XORing the return value as\n          null if no match is found, and then it is validated before use.\n\n          NOTE: During installation, the application will register two file handles, VWS and VWR, which allows a\n          victim user to 'double click' the malicious VWR file and execute code.  This module was also built\n          to bypass ASLR and DEP."
     },
@@ -3530,7 +3530,7 @@
   "CVE-2011-1574": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/vlc_modplug_s3m.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/vlc_modplug_s3m.rb",
       "name": "VideoLAN VLC ModPlug ReadS3M Stack Buffer Overflow",
       "description": "This module exploits an input validation error in libmod_plugin as\n          included with VideoLAN VLC 1.1.8. All versions prior to version 1.1.9\n          are affected. By creating a malicious S3M file, a remote attacker\n          could execute arbitrary code.\n\n          Although other products that bundle libmodplug may be vulnerable, this\n          module was only tested against VLC.\n\n          NOTE: As of July 1st, 2010, VLC now calls SetProcessDEPPoly to\n          permanently enable NX support on machines that support it. As such,\n          this module is capable of bypassing DEP, but not ASLR."
     },
@@ -3558,7 +3558,7 @@
   "CVE-2011-0531": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/vlc_webm.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/vlc_webm.rb",
       "name": "VideoLAN VLC MKV Memory Corruption",
       "description": "This module exploits an input validation error in VideoLAN VLC\n          < 1.1.7.  By creating a malicious MKV or WebM file, a remote attacker\n          could execute arbitrary code.\n\n          NOTE: As of July 1st, 2010, VLC now calls SetProcessDEPPoly to\n          permanently enable NX support on machines that support it."
     },
@@ -3586,13 +3586,13 @@
   "CVE-2011-1591": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/wireshark_packet_dect.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/wireshark_packet_dect.rb",
       "name": "Wireshark packet-dect.c Stack Buffer Overflow (local)",
       "description": "This module exploits a stack buffer overflow in Wireshark <= 1.4.4\n          When opening a malicious .pcap file in Wireshark, a stack buffer occurs,\n          resulting in arbitrary code execution.\n\n          Note: To exploit the vulnerability remotely with Scapy: sendp(rdpcap(\"file\"))."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/wireshark_packet_dect.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/wireshark_packet_dect.rb",
       "name": "Wireshark packet-dect.c Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Wireshark <= 1.4.4\n          by sending a malicious packet."
     },
@@ -3680,7 +3680,7 @@
   "CVE-2011-5164": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/absolute_ftp_list_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/absolute_ftp_list_bof.rb",
       "name": "AbsoluteFTP 1.9.6 - 2.2.10 LIST Command Remote Buffer Overflow",
       "description": "This module exploits VanDyke Software AbsoluteFTP by overflowing\n          a filename buffer related to the LIST command."
     },
@@ -3708,7 +3708,7 @@
   "CVE-2011-10005": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/easyftp_mkd_fixret.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/easyftp_mkd_fixret.rb",
       "name": "EasyFTP Server MKD Command Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in EasyFTP Server 1.7.0.11\n          and earlier. EasyFTP fails to check input size when parsing 'MKD' commands, which\n          leads to a stack based buffer overflow.\n\n          NOTE: EasyFTP allows anonymous access by default. However, in order to access the\n          'MKD' command, you must have access to an account that can create directories.\n\n          After version 1.7.0.12, this package was renamed \"UplusFtp\".\n\n          This exploit utilizes a small piece of code that I\\'ve referred to as 'fixRet'.\n          This code allows us to inject of payload of ~500 bytes into a 264 byte buffer by\n          'fixing' the return address post-exploitation.  See references for more information."
     }
@@ -3716,7 +3716,7 @@
   "CVE-2011-10010": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/quickshare_traversal_write.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/quickshare_traversal_write.rb",
       "name": "QuickShare File Server 1.2.1 Directory Traversal Vulnerability",
       "description": "This module exploits a vulnerability found in QuickShare File Server's FTP\n          service.  By supplying \"../\" in the file path, it is possible to trigger a\n          directory traversal flaw, allowing the attacker to read a file outside the\n          virtual directory.  By default, the \"Writable\" option is enabled during account\n          creation, therefore this makes it possible to create a file at an arbitrary\n          location, which leads to remote code execution."
     }
@@ -3724,7 +3724,7 @@
   "CVE-2011-3976": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/scriptftp_list.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/scriptftp_list.rb",
       "name": "ScriptFTP LIST Remote Buffer Overflow",
       "description": "AmmSoft's ScriptFTP client is susceptible to a remote buffer overflow\n          vulnerability that is triggered when processing a sufficiently long\n          filename during a FTP LIST command resulting in overwriting the\n          exception handler. Social engineering of executing a specially crafted\n          ftp file by double click will result in connecting to our malicious\n          server and perform arbitrary code execution which allows the attacker to\n          gain the same rights as the user running ScriptFTP. This vulnerability\n          affects versions 3.3 and earlier."
     },
@@ -3792,7 +3792,7 @@
   "CVE-2011-3011": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/ca_arcserve_rpc_authbypass.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/ca_arcserve_rpc_authbypass.rb",
       "name": "CA Arcserve D2D GWT RPC Credential Information Disclosure",
       "description": "This module exploits an information disclosure vulnerability in the CA Arcserve\n          D2D r15 web server. The information disclosure can be triggered by sending a\n          specially crafted RPC request to the homepage servlet. This causes CA Arcserve to\n          disclosure the username and password in cleartext used for authentication. This\n          username and password pair are Windows credentials with Administrator access."
     },
@@ -3820,7 +3820,7 @@
   "CVE-2011-1653": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/ca_totaldefense_regeneratereports.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/ca_totaldefense_regeneratereports.rb",
       "name": "CA Total Defense Suite reGenerateReports Stored Procedure SQL Injection",
       "description": "This module exploits a SQL injection flaw in CA Total Defense Suite R12.\n          When supplying a specially crafted soap request to '/UNCWS/Management.asmx', an\n          attacker can abuse the reGenerateReports stored procedure by injecting arbitrary sql\n          statements into the ReportIDs element."
     },
@@ -3848,7 +3848,7 @@
   "CVE-2011-4166": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/hp_mpa_job_acct.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/hp_mpa_job_acct.rb",
       "name": "HP Managed Printing Administration jobAcct Remote Command Execution",
       "description": "This module exploits an arbitrary file upload vulnerability on HP Managed Printing\n        Administration 2.6.3 and prior versions. The vulnerability exists in the UploadFiles()\n        function from the MPAUploader.Uploader.1 control, loaded and used by the server.\n        The function can be abused via directory traversal and null byte injection in order\n        to achieve arbitrary file upload. In order to exploit successfully, a few conditions\n        must be met. First, a writable location under the context of Internet Guest Account\n        (IUSR_*) or Everyone is required. By default, this module will attempt to write to\n        /hpmpa/userfiles/, but the WRITEWEBFOLDER option can be used to provide\n        another writable path. Second, the writable path must also be readable by a browser,\n        so this typically means a location under wwwroot. Finally, you cannot overwrite\n        a file with the same name as the payload."
     },
@@ -3876,7 +3876,7 @@
   "CVE-2011-0266": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/hp_nnm_nnmrptconfig_nameparams.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/hp_nnm_nnmrptconfig_nameparams.rb",
       "name": "HP OpenView NNM nnmRptConfig nameParams Buffer Overflow",
       "description": "This module exploits a vulnerability in HP NNM's nnmRptConfig.exe.\n          A remote user can send a long string data to the nameParams parameter via\n          a POST request, which causes an overflow on the stack when function\n          ov.sprintf_new() is used, and gain arbitrary code execution.'"
     },
@@ -3904,7 +3904,7 @@
   "CVE-2011-0267": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/hp_nnm_nnmrptconfig_schdparams.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/hp_nnm_nnmrptconfig_schdparams.rb",
       "name": "HP OpenView NNM nnmRptConfig.exe schdParams Buffer Overflow",
       "description": "This module exploits NNM's nnmRptConfig.exe. Similar to other NNM CGI bugs,\n          the overflow occurs during a ov.sprintf_new() call, which allows an attacker to\n          overwrite data on the stack, and gain arbitrary code execution."
     },
@@ -3932,7 +3932,7 @@
   "CVE-2011-3167": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/hp_nnm_ovbuildpath_textfile.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/hp_nnm_ovbuildpath_textfile.rb",
       "name": "HP OpenView Network Node Manager ov.dll _OVBuildPath Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in HP OpenView Network Node\n          Manager 7.53 prior to NNM_01213 without the SSRT100649 hotfix. By specifying a long\n          'textFile' argument when calling the 'webappmon.exe' CGI program, an attacker can\n          cause a stack-based buffer overflow and execute arbitrary code.\n\n          The vulnerable code is within the \"_OVBuildPath\" function within \"ov.dll\". There\n          are no stack cookies, so exploitation is achieved by overwriting the saved return\n          address.\n\n          The vulnerability is due to the use of the function \"_OVConcatPath\" which finally\n          uses \"strcat\" in an insecure way. User controlled data is concatenated to a string\n          which contains the OpenView installation path.\n\n          To achieve reliable exploitation a directory traversal in OpenView5.exe\n          (OSVDB 44359) is being used to retrieve OpenView logs and disclose the installation\n          path. If the installation path cannot be guessed the default installation path\n          is used."
     },
@@ -3960,7 +3960,7 @@
   "CVE-2011-0276": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/hp_openview_insight_backdoor.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/hp_openview_insight_backdoor.rb",
       "name": "HP OpenView Performance Insight Server Backdoor Account Code Execution",
       "description": "This module exploits a hidden account in the com.trinagy.security.XMLUserManager Java\n          class. When using this account, an attacker can abuse the\n          com.trinagy.servlet.HelpManagerServlet class and write arbitrary files to the system\n          allowing the execution of arbitrary code.\n\n          NOTE: This module has only been tested against HP OpenView Performance Insight Server 5.41.0"
     },
@@ -3988,7 +3988,7 @@
   "CVE-2011-1220": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/ibm_tivoli_endpoint_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/ibm_tivoli_endpoint_bof.rb",
       "name": "IBM Tivoli Endpoint Manager POST Query Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow in the way IBM Tivoli\n          Endpoint Manager versions 3.7.1, 4.1, 4.1.1, 4.3.1 handles long POST query\n          arguments.\n\n          This issue can be triggered by sending a specially crafted HTTP POST request to\n          the service (lcfd.exe) listening on TCP port 9495. To trigger this issue authorization\n          is required. This exploit makes use of a second vulnerability, a hardcoded account\n          (tivoli/boss) is used to bypass the authorization restriction."
     },
@@ -4016,7 +4016,7 @@
   "CVE-2011-2653": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/zenworks_assetmgmt_uploadservlet.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/zenworks_assetmgmt_uploadservlet.rb",
       "name": "Novell ZENworks Asset Management Remote Execution",
       "description": "This module exploits a path traversal flaw in Novell ZENworks Asset Management\n          7.5. By exploiting the CatchFileServlet, an attacker can upload a malicious file\n          outside of the MalibuUploadDirectory and then make a secondary request that allows\n          for arbitrary code execution."
     },
@@ -4044,7 +4044,7 @@
   "CVE-2011-4135": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/license/flexnet_lmgrd_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/license/flexnet_lmgrd_bof.rb",
       "name": "FlexNet License Server Manager lmgrd Buffer Overflow",
       "description": "This module exploits a vulnerability in the FlexNet\n          License Server Manager.\n\n          The vulnerability is due to the insecure usage of memcpy\n          in the lmgrd service when handling network packets, which\n          results in a stack buffer overflow.\n\n          In order to improve reliability, this module will make lots of\n          connections to lmgrd during each attempt to maximize its success."
     }
@@ -4052,7 +4052,7 @@
   "CVE-2011-2005": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ms11_080_afdjoinleaf.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/local/ms11_080_afdjoinleaf.rb",
       "name": "MS11-080 AfdJoinLeaf Privilege Escalation",
       "description": "This module exploits a flaw in the AfdJoinLeaf function of the\n            afd.sys driver to overwrite data in kernel space.  An address\n            within the HalDispatchTable is overwritten and when triggered\n            with a call to NtQueryIntervalProfile will execute shellcode.\n\n            This module will elevate itself to SYSTEM, then inject the payload\n            into another SYSTEM process before restoring its own token to\n            avoid causing system instability."
     },
@@ -4100,7 +4100,7 @@
   "CVE-2011-5003": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/avidphoneticindexer.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/avidphoneticindexer.rb",
       "name": "Avid Media Composer 5.5 - Avid Phonetic Indexer Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in process\n          AvidPhoneticIndexer.exe (port 4659), which comes as part of the Avid Media Composer\n          5.5 Editing Suite. This daemon sometimes starts on a different port; if you start\n          it standalone it will run on port 4660."
     },
@@ -4128,7 +4128,7 @@
   "CVE-2011-5124": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/bcaaa_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/bcaaa_bof.rb",
       "name": "Blue Coat Authentication and Authorization Agent (BCAAA) 5 Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in process bcaaa-130.exe (port 16102),\n          which comes as part of the Blue Coat Authentication proxy.  Please note that by default,\n          this exploit will attempt up to three times in order to successfully gain remote code\n          execution (in some cases, it takes as many as five times).  This can cause your activity\n          to look even more suspicious.  To modify the number of exploit attempts, set the\n          ATTEMPTS option."
     },
@@ -4156,7 +4156,7 @@
   "CVE-2011-5227": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/enterasys_netsight_syslog_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/enterasys_netsight_syslog_bof.rb",
       "name": "Enterasys NetSight nssyslogd.exe Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Enterasys NetSight. The\n          vulnerability exists in the Syslog service (nssylogd.exe) when parsing a specially\n          crafted PRIO from a syslog message. The module has been tested successfully on\n          Enterasys NetSight 4.0.1.34 over Windows XP SP3 and Windows 2003 SP2."
     },
@@ -4184,7 +4184,7 @@
   "CVE-2011-0922": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/hp_dataprotector_install_service.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/hp_dataprotector_install_service.rb",
       "name": "HP Data Protector 6.10/6.11/6.20 Install Service",
       "description": "This module exploits HP Data Protector OmniInet process on Windows only.\n          This exploit invokes the install service function which allows an attacker to create a\n          custom payload in the format of an executable.\n\n          To ensure this works, the SMB server created in MSF must have a share called Omniback\n          which has a subfolder i386, i.e. \\192.168.1.1\\Omniback\\i386\\"
     },
@@ -4252,7 +4252,7 @@
   "CVE-2011-4789": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/hp_magentservice.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/hp_magentservice.rb",
       "name": "HP Diagnostics Server magentservice.exe Overflow",
       "description": "This module exploits a stack buffer overflow in HP Diagnostics Server\n          magentservice.exe service. By sending a specially crafted packet, an attacker\n          may be able to execute arbitrary code. Originally found and posted by\n          AbdulAziz Harir via ZDI."
     },
@@ -4280,13 +4280,13 @@
   "CVE-2011-1865": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/hp_omniinet_3.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/hp_omniinet_3.rb",
       "name": "HP OmniInet.exe Opcode 27 Buffer Overflow",
       "description": "This module exploits a buffer overflow in the Hewlett-Packard\n          OmniInet NT Service. By sending a specially crafted opcode 27 packet,\n          a remote attacker may be able to execute arbitrary code."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/hp_omniinet_4.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/hp_omniinet_4.rb",
       "name": "HP OmniInet.exe Opcode 20 Buffer Overflow",
       "description": "This module exploits a vulnerability found in HP Data Protector's OmniInet\n          process.  By supplying a long string of data as the file path with opcode '20',\n          a buffer overflow can occur when this data is being written on the stack where\n          no proper bounds checking is done beforehand, which results arbitrary code\n          execution under the context of SYSTEM.  This module is also made against systems\n          such as Windows Server 2003 or Windows Server 2008 that have DEP and/or ASLR\n          enabled by default."
     },
@@ -4374,7 +4374,7 @@
   "CVE-2011-10022": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/splayer_content_type.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/splayer_content_type.rb",
       "name": "SPlayer 3.7 Content-Type Buffer Overflow",
       "description": "This module exploits a vulnerability in SPlayer v3.7 or prior.  When SPlayer\n          requests the URL of a media file (video or audio), it is possible to gain arbitrary\n          remote code execution due to a buffer overflow caused by an exceeding length of data\n          as the 'Content-Type' parameter."
     }
@@ -4382,7 +4382,7 @@
   "CVE-2011-5052": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/stream_down_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/stream_down_bof.rb",
       "name": "CoCSoft StreamDown 6.8.0 Buffer Overflow",
       "description": "Stream Down 6.8.0 seh based buffer overflow triggered when processing\n          the server response packet. During the overflow a structured exception\n          handler is overwritten."
     },
@@ -4410,7 +4410,7 @@
   "CVE-2011-5001": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/trendmicro_cmdprocessor_addtask.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/trendmicro_cmdprocessor_addtask.rb",
       "name": "TrendMicro Control Manger CmdProcessor.exe Stack Buffer Overflow",
       "description": "This module exploits a vulnerability in the CmdProcessor.exe component of Trend\n          Micro Control Manger up to version 5.5.\n\n          The specific flaw exists within CmdProcessor.exe service running on TCP port\n          20101. The vulnerable function is the CGenericScheduler::AddTask function of\n          cmdHandlerRedAlertController.dll. When processing a specially crafted IPC packet,\n          controlled data is copied into a 256-byte stack buffer. This can be exploited\n          to execute remote code under the context of the user."
     },
@@ -4438,7 +4438,7 @@
   "CVE-2011-3360": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/wireshark_lua.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/wireshark_lua.rb",
       "name": "Wireshark console.lua Pre-Loading Script Execution",
       "description": "This module exploits a vulnerability in Wireshark 1.6 or less. When opening a\n          pcap file, Wireshark will actually check if there's a 'console.lua' file in the same\n          directory, and then parse/execute the script if found.  Versions affected by this\n          vulnerability: 1.6.0 to 1.6.1, 1.4.0 to 1.4.8"
     },
@@ -4466,7 +4466,7 @@
   "CVE-2011-3176": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/novell/zenworks_preboot_op4c_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/novell/zenworks_preboot_op4c_bof.rb",
       "name": "Novell ZENworks Configuration Management Preboot Service 0x4c Buffer Overflow",
       "description": "This module exploits a remote buffer overflow in the ZENworks Configuration\n          Management. The vulnerability exists in the Preboot service and can be triggered\n          by sending a specially crafted packet with the opcode 0x4c\n          (PROXY_CMD_PREBOOT_TASK_INFO2) to port 998/TCP. The module has been successfully\n          tested on Novell ZENworks Configuration Management 10 SP2 / SP3 and Windows Server\n          2003 SP2 (DEP bypass)."
     },
@@ -4514,7 +4514,7 @@
   "CVE-2011-3175": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/novell/zenworks_preboot_op6c_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/novell/zenworks_preboot_op6c_bof.rb",
       "name": "Novell ZENworks Configuration Management Preboot Service 0x6c Buffer Overflow",
       "description": "This module exploits a remote buffer overflow in the ZENworks Configuration\n          Management. The vulnerability exists in the Preboot service and can be triggered by\n          sending a specially crafted packet with the opcode 0x6c (PROXY_CMD_GET_NEXT_STEP)\n          to port 998/TCP. The module has been successfully tested on Novell ZENworks\n          Configuration Management 10 SP2 / SP3 and Windows Server 2003 SP2 (DEP bypass)."
     },
@@ -4562,7 +4562,7 @@
   "CVE-2011-5007": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/codesys_web_server.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/codesys_web_server.rb",
       "name": "SCADA 3S CoDeSys CmpWebServer Stack Buffer Overflow",
       "description": "This module exploits a remote stack buffer overflow vulnerability in\n          3S-Smart Software Solutions product CoDeSys Scada Web Server Version\n          1.1.9.9. This vulnerability affects versions 3.4 SP4 Patch 2 and\n          earlier."
     },
@@ -4610,7 +4610,7 @@
   "CVE-2011-3492": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/daq_factory_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/daq_factory_bof.rb",
       "name": "DaqFactory HMI NETB Request Overflow",
       "description": "This module exploits a stack buffer overflow in Azeotech's DaqFactory\n          product. The specific vulnerability is triggered when sending a specially crafted\n          'NETB' request to port 20034. Exploitation of this vulnerability may take a few\n          seconds due to the use of egghunter.  This vulnerability was one of the 14\n          releases discovered by researcher Luigi Auriemma."
     },
@@ -4658,7 +4658,7 @@
   "CVE-2011-2089": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/iconics_webhmi_setactivexguid.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/iconics_webhmi_setactivexguid.rb",
       "name": "ICONICS WebHMI ActiveX Buffer Overflow",
       "description": "This module exploits a vulnerability found in ICONICS WebHMI's ActiveX control.\n          By supplying a long string of data to the 'SetActiveXGUID' parameter, GenVersion.dll\n          fails to do any proper bounds checking before this input is copied onto the stack,\n          which causes a buffer overflow, and results arbitrary code execution under the context\n          of the user."
     },
@@ -4706,13 +4706,13 @@
   "CVE-2011-1567": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/igss9_igssdataserver_listall.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/igss9_igssdataserver_listall.rb",
       "name": "7-Technologies IGSS IGSSdataServer.exe Stack Buffer Overflow",
       "description": "This module exploits a vulnerability in the igssdataserver.exe component of 7-Technologies\n          IGSS up to version 9.00.00 b11063. While processing a ListAll command, the application\n          fails to do proper bounds checking before copying data into a small buffer on the stack.\n          This causes a buffer overflow and allows to overwrite a structured exception handling record\n          on the stack, allowing for unauthenticated remote code execution.  Also, after the payload\n          exits, IGSSdataServer.exe should automatically recover."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/igss9_igssdataserver_rename.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/igss9_igssdataserver_rename.rb",
       "name": "7-Technologies IGSS 9 IGSSdataServer .RMS Rename Buffer Overflow",
       "description": "This module exploits a vulnerability found on 7-Technologies IGSS 9. By supplying\n          a long string of data to the 'Rename' (0x02), 'Delete' (0x03), or 'Add' (0x04) command,\n          a buffer overflow condition occurs in IGSSdataServer.exe while handing an RMS report,\n          which results arbitrary code execution under the context of the user.\n\n          The attack is carried out in three stages.  The first stage sends the final payload to\n          IGSSdataServer.exe, which will remain in memory.  The second stage sends the Add command\n          so the process can find a valid ID for the Rename command.  The last stage then triggers\n          the vulnerability with the Rename command, and uses an egghunter to search for the\n          shellcode that we sent in stage 1.  The use of egghunter appears to be necessary due to\n          the small buffer size, which cannot even contain our ROP chain and the final payload."
     },
@@ -4780,7 +4780,7 @@
   "CVE-2011-1565": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/igss9_misc.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/igss9_misc.rb",
       "name": "7-Technologies IGSS 9 Data Server/Collector Packet Handling Vulnerabilities",
       "description": "This module exploits multiple vulnerabilities found on IGSS 9's Data Server and\n          Data Collector services.  The initial approach is first by transferring our binary\n          with Write packets (opcode 0x0D) via port 12401 (igssdataserver.exe), and then send\n          an EXE packet (opcode 0x0A) to port 12397 (dc.exe), which will cause dc.exe to run\n          that payload with a CreateProcessA() function as a new thread."
     },
@@ -4808,13 +4808,13 @@
   "CVE-2011-1566": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/igss9_misc.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/igss9_misc.rb",
       "name": "7-Technologies IGSS 9 Data Server/Collector Packet Handling Vulnerabilities",
       "description": "This module exploits multiple vulnerabilities found on IGSS 9's Data Server and\n          Data Collector services.  The initial approach is first by transferring our binary\n          with Write packets (opcode 0x0D) via port 12401 (igssdataserver.exe), and then send\n          an EXE packet (opcode 0x0A) to port 12397 (dc.exe), which will cause dc.exe to run\n          that payload with a CreateProcessA() function as a new thread."
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/igss_exec_17.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/igss_exec_17.rb",
       "name": "Interactive Graphical SCADA System Remote Command Injection",
       "description": "This module abuses a directory traversal flaw in Interactive\n          Graphical SCADA System v9.00. In conjunction with the traversal\n          flaw, if opcode 0x17 is sent to the dc.exe process, an attacker\n          may be able to execute arbitrary system commands."
     },
@@ -4862,7 +4862,7 @@
   "CVE-2011-4051": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/indusoft_webstudio_exec.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/indusoft_webstudio_exec.rb",
       "name": "InduSoft Web Studio Arbitrary Upload Remote Code Execution",
       "description": "This module exploits a lack of authentication and authorization on the InduSoft\n          Web Studio Remote Agent, that allows a remote attacker to write arbitrary files to\n          the filesystem, by abusing the functions provided by the software.\n\n          The module uses the Windows Management Instrumentation service to execute an\n          arbitrary payload on vulnerable installations of InduSoft Web Studio on Windows pre\n          Vista. It has been successfully tested on InduSoft Web Studio 6.1 SP6 over Windows\n          XP SP3 and Windows 2003 SP2."
     },
@@ -4890,7 +4890,7 @@
   "CVE-2011-3322": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/procyon_core_server.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/procyon_core_server.rb",
       "name": "Procyon Core Server HMI Coreservice.exe Stack Buffer Overflow",
       "description": "This module exploits a vulnerability in the coreservice.exe component of Proycon\n          Core Server <= v1.13. While processing a password, the application\n          fails to do proper bounds checking before copying data into a small buffer on the stack.\n          This causes a buffer overflow and allows to overwrite a structured exception handling\n          record on the stack, allowing for unauthenticated remote code execution.  Also, after the\n          payload exits, Coreservice.exe should automatically recover."
     },
@@ -4918,13 +4918,13 @@
   "CVE-2011-1563": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/realwin_on_fc_binfile_a.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/realwin_on_fc_binfile_a.rb",
       "name": "DATAC RealWin SCADA Server 2 On_FC_CONNECT_FCS_a_FILE Buffer Overflow",
       "description": "This module exploits a vulnerability found in DATAC Control International RealWin\n          SCADA Server 2.1 and below. By supplying a specially crafted On_FC_BINFILE_FCS_*FILE\n          packet via port 910, RealWin will try to create a file (which would be saved to\n          C:\\Program Files\\DATAC\\Real Win\\RW-version\\filename) by first copying the user-\n          supplied filename with an inline memcpy routine without proper bounds checking, which\n          results a stack-based buffer overflow, allowing arbitrary remote code execution.\n\n          Tested version: 2.0 (Build 6.1.8.10)"
     },
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/realwin_on_fcs_login.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/realwin_on_fcs_login.rb",
       "name": "RealWin SCADA Server DATAC Login Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in DATAC Control\n          International RealWin SCADA Server 2.1 (Build 6.0.10.10) or\n          earlier.  By sending a specially crafted On_FC_CONNECT_FCS_LOGIN\n          packet containing a long username, an attacker may be able to\n          execute arbitrary code."
     },
@@ -4952,7 +4952,7 @@
   "CVE-2011-3497": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/scadapro_cmdexe.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/scadapro_cmdexe.rb",
       "name": "Measuresoft ScadaPro Remote Command Execution",
       "description": "This module allows remote attackers to execute arbitrary commands on the\n          affected system by abusing via Directory Traversal attack when using the\n          'xf' command (execute function). An attacker can execute system() from\n          msvcrt.dll to upload a backdoor and gain remote code execution. This\n          vulnerability affects version 4.0.0 and earlier."
     },
@@ -4980,7 +4980,7 @@
   "CVE-2011-10032": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/sunway_force_control_netdbsrv.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/sunway_force_control_netdbsrv.rb",
       "name": "Sunway Forcecontrol SNMP NetDBServer.exe Opcode 0x57",
       "description": "This module exploits a stack based buffer overflow found in the SNMP\n          NetDBServer service of Sunway Forcecontrol <= 6.1 sp3. The overflow is\n          triggered when sending an overly long string to the listening service\n          on port 2001."
     }
@@ -4988,7 +4988,7 @@
   "CVE-2011-0517": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/scada/winlog_runtime.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/winlog_runtime.rb",
       "name": "Sielco Sistemi Winlog Buffer Overflow",
       "description": "This module exploits a buffer overflow in Sielco\n          Sistem Winlog <= 2.07.00. When sending a specially formatted\n          packet to the Runtime.exe service, an attacker may be able to\n          execute arbitrary code."
     },
@@ -5036,7 +5036,7 @@
   "CVE-2011-4040": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smtp/njstar_smtp_bof.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/smtp/njstar_smtp_bof.rb",
       "name": "NJStar Communicator 3.00 MiniSMTP Buffer Overflow",
       "description": "This module exploits a stack buffer overflow vulnerability in NJStar Communicator\n          Version 3.00 MiniSMTP server.  The MiniSMTP application can be seen in multiple\n          NJStar products, and will continue to run in the background even if the\n          software is already shutdown.  According to the vendor's testimonials,\n          NJStar software is also used by well known companies such as Siemens, NEC,\n          Google, Yahoo, eBay; government agencies such as the FBI, Department of\n          Justice (HK); as well as a long list of universities such as Yale, Harvard,\n          University of Tokyo, etc."
     },
@@ -5084,7 +5084,7 @@
   "CVE-2011-3402": [
     {
       "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/post/windows/gather/forensics/duqu_check.rb",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/post/windows/gather/forensics/duqu_check.rb",
       "name": "Windows Gather Forensics Duqu Registry Check",
       "description": "This module searches for CVE-2011-3402 (Duqu) related registry artifacts."
     }
