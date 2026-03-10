@@ -10,8 +10,7 @@ def process_data():
         if not os.path.exists(folder):
             os.makedirs(folder)
 
-    # Dictionary structure: cve_map["CVE-XXXX-XXXX"]["source_name"] = [items]
-    cve_map = defaultdict(lambda: {"metasploit": [], "exploitdb": [], "nuclei": []})
+    cve_map = defaultdict(list)
 
     # 2. Parse Metasploit JSON
     if os.path.exists('msf_metadata.json'):
@@ -21,7 +20,8 @@ def process_data():
                 if 'references' in info:
                     for ref in info['references']:
                         if ref.startswith('CVE-'):
-                            cve_map[ref]["metasploit"].append({
+                            cve_map[ref].append({
+                                "Source": "metasploit",
                                 "path": mod_path,
                                 "name": info.get("name"),
                                 "description": info.get("description")
@@ -35,7 +35,9 @@ def process_data():
                 codes = row.get('codes', '')
                 found_cves = re.findall(r'CVE-\d{4}-\d{3,10}', codes)
                 for cve in found_cves:
-                    cve_map[cve]["exploitdb"].append(row)
+                    # Add Source tag to the CSV row data
+                    row["Source"] = "exploitdb"
+                    cve_map[cve].append(row)
 
     # 4. Parse Nuclei JSONL
     if os.path.exists('nuclei_cves.json'):
@@ -45,15 +47,19 @@ def process_data():
                     entry = json.loads(line)
                     cve_id = entry.get("ID")
                     if cve_id and cve_id.startswith("CVE-"):
-                        cve_map[cve_id]["nuclei"].append({
-                            "info": entry.get("Info"),
+                        # Inject Source into the 'Info' block as per your example
+                        info_block = entry.get("Info", {})
+                        info_block["Source"] = "nuclei"
+                        
+                        cve_map[cve_id].append({
+                            "info": info_block,
                             "file_path": entry.get("file_path")
                         })
 
     # 5. Generate Organized Files
     years_data = defaultdict(dict)
 
-    for cve, data in cve_map.items():
+    for cve, data_list in cve_map.items():
         parts = cve.split('-')
         if len(parts) < 3: continue
         year = parts[1]
@@ -63,10 +69,10 @@ def process_data():
         os.makedirs(year_dir, exist_ok=True)
         
         with open(os.path.join(year_dir, f"{cve}.json"), 'w') as f:
-            json.dump({cve: data}, f, indent=2)
+            json.dump({cve: data_list}, f, indent=2)
         
         # Add to yearly aggregation
-        years_data[year][cve] = data
+        years_data[year][cve] = data_list
 
     # Save aggregated Year JSONs
     for year, data in years_data.items():
