@@ -1,0 +1,45 @@
+name: Update CVE PoCs
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Download Sources
+        run: |
+          # Metasploit (JSON)
+          curl -L -o msf_metadata.json https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/db/modules_metadata_base.json
+          # Exploit-DB (CSV)
+          curl -L -o edb_exploits.csv "https://gitlab.com/exploit-database/exploitdb/-/raw/main/files_exploits.csv"
+          # Nuclei (JSONL)
+          curl -L -o nuclei_cves.json https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/cves.json
+
+      - name: Process and Merge Data
+        run: python process_vulnerabilities.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data_years/ data_single/ msf_metadata.json edb_exploits.csv nuclei_cves.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CVE Data (MSF/EDB/Nuclei): $(date -u)"
+            git push
+          fi
