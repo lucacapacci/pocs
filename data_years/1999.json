@@ -2,7 +2,7 @@
   "CVE-1999-0920": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/pop2/uw_fileretrieval",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/pop2/uw_fileretrieval.rb",
       "name": "UoW pop2d Remote File Retrieval Vulnerability",
       "description": "This module exploits a vulnerability in the FOLD command of the\n          University of Washington ipop2d service. By specifying an arbitrary\n          folder name it is possible to retrieve any file which is world or group\n          readable by the user ID of the POP account. This vulnerability can only\n          be exploited with a valid username and password. The From address is\n          the file owner."
     },
@@ -30,7 +30,7 @@
   "CVE-1999-0532": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/enum_dns",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/enum_dns.rb",
       "name": "DNS Record Scanner and Enumerator",
       "description": "This module can be used to gather information about a domain from a\n          given DNS server by performing various DNS queries such as zone\n          transfers, reverse lookups, SRV record brute forcing, and other techniques."
     }
@@ -38,19 +38,19 @@
   "CVE-1999-0526": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/x11_keyboard_spy",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/x11_keyboard_spy.rb",
       "name": "X11 Keylogger",
       "description": "This module binds to an open X11 host to log keystrokes. This is a fairly\n          close copy of the old xspy c program which has been on Kali for a long time.\n          The module works by connecting to the X11 session, creating a background\n          window, binding a keyboard to it and creating a notification alert when a key\n          is pressed.\n\n          One of the major limitations of xspy, and thus this module, is that it polls\n          at a very fast rate, faster than a key being pressed is released (especially before\n          the repeat delay is hit). To combat printing multiple characters for a single key\n          press, repeat characters arent printed when typed in a very fast manor. This is also\n          an imperfect keylogger in that keystrokes arent stored and forwarded but status\n          displayed at poll time. Keys may be repeated or missing."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/x11/open_x11",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/x11/open_x11.rb",
       "name": "X11 No-Auth Scanner",
       "description": "This module scans for X11 servers that allow anyone\n        to connect without authentication."
     },
     {
       "source": "metasploit",
-      "file": "exploit_unix/x11/x11_keyboard_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/x11/x11_keyboard_exec.rb",
       "name": "X11 Keyboard Command Injection",
       "description": "This module exploits open X11 servers by connecting and registering a\n          virtual keyboard. The virtual keyboard is used to open an xterm or gnome\n          terminal and type and execute the specified payload."
     }
@@ -58,7 +58,7 @@
   "CVE-1999-0103": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/chargen/chargen_probe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/chargen/chargen_probe.rb",
       "name": "Chargen Probe Utility",
       "description": "Chargen is a debugging and measurement tool and a character\n        generator service. A character generator service simply sends\n        data without regard to the input.\n        Chargen is susceptible to spoofing the source of transmissions\n        as well as use in a reflection attack vector. The misuse of the\n        testing features of the Chargen service may allow attackers to\n        craft malicious network payloads and reflect them by spoofing\n        the transmission source to effectively direct it to a target.\n        This can result in traffic loops and service degradation with\n        large amounts of network traffic."
     }
@@ -66,151 +66,151 @@
   "CVE-1999-0502": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/db2/db2_auth",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/db2/db2_auth.rb",
       "name": "DB2 Authentication Brute Force Utility",
       "description": "This module attempts to authenticate against a DB2 instance\n        using username and password combinations indicated by the\n        USER_FILE, PASS_FILE, and USERPASS_FILE options."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ftp/ftp_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ftp/ftp_login.rb",
       "name": "FTP Authentication Scanner",
       "description": "This module will test FTP logins on a range of machines and\n        report successful logins.  If you have loaded a database plugin\n        and connected to a database this module will record successful\n        logins and hosts so you can track your access."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/dell_idrac",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/dell_idrac.rb",
       "name": "Dell iDRAC Default Login",
       "description": "This module attempts to login to a iDRAC webserver instance using\n        default username and password.  Tested against Dell Remote Access\n        Controller 6 - Express version 1.50 and 1.85,\n        Controller 7 - Enterprise 2.63.60.62\n        Controller 8 - Enterprise 2.83.05\n        Controller 9 - Enterprise 4.40.00.00"
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/dlink_dir_300_615_http_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/dlink_dir_300_615_http_login.rb",
       "name": "D-Link DIR-300A / DIR-320 / DIR-615D HTTP Login Utility",
       "description": "This module attempts to authenticate to different D-Link HTTP management\n        services. It has been tested on D-Link DIR-300 Hardware revision A, D-Link DIR-615\n        Hardware revision D and D-Link DIR-320 devices. It is possible that this module\n        also works with other models."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/dlink_dir_615h_http_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/dlink_dir_615h_http_login.rb",
       "name": "D-Link DIR-615H HTTP Login Utility",
       "description": "This module attempts to authenticate to different D-Link HTTP management\n        services. It has been tested successfully on D-Link DIR-615 Hardware revision H\n        devices. It is possible that this module also works with other models."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/dlink_dir_session_cgi_http_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/dlink_dir_session_cgi_http_login.rb",
       "name": "D-Link DIR-300B / DIR-600B / DIR-815 / DIR-645 HTTP Login Utility",
       "description": "This module attempts to authenticate to different D-Link HTTP management\n        services. It has been tested successfully on D-Link DIR-300 Hardware revision B,\n        D-Link DIR-600 Hardware revision B, D-Link DIR-815 Hardware revision A and DIR-645\n        Hardware revision A devices. It is possible that this module also works with other\n        models."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/http_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/http_login.rb",
       "name": "HTTP Login Utility",
       "description": "This module attempts to authenticate to an HTTP service."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/joomla_bruteforce_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/joomla_bruteforce_login.rb",
       "name": "Joomla Bruteforce Login Utility",
       "description": "This module attempts to authenticate to Joomla 2.5. or 3.0 through bruteforce attacks"
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/tomcat_mgr_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/tomcat_mgr_login.rb",
       "name": "Tomcat Application Manager Login Utility",
       "description": "This module simply attempts to login to a Tomcat Application Manager instance using a specific user/pass."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wordpress_xmlrpc_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wordpress_xmlrpc_login.rb",
       "name": "Wordpress XML-RPC Username/Password Login Scanner",
       "description": "This module attempts to authenticate against a Wordpress-site\n          (via XMLRPC) using username and password combinations indicated\n          by the USER_FILE, PASS_FILE, and USERPASS_FILE options."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/mysql/mysql_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/mysql/mysql_login.rb",
       "name": "MySQL Login Utility",
       "description": "This module simply queries the MySQL instance for a specific user/pass (default is root with blank)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/nntp/nntp_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/nntp/nntp_login.rb",
       "name": "NNTP Login Utility",
       "description": "This module attempts to authenticate to NNTP services\n          which support the AUTHINFO authentication extension.\n\n          This module supports AUTHINFO USER/PASS authentication,\n          but does not support AUTHINFO GENERIC or AUTHINFO SASL\n          authentication methods."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/oracle/oracle_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/oracle/oracle_login.rb",
       "name": "Oracle RDBMS Login Utility",
       "description": "This module attempts to authenticate against an Oracle RDBMS\n          instance using username and password combinations indicated\n          by the USER_FILE, PASS_FILE, and USERPASS_FILE options.\n\n          Due to a bug in nmap versions 6.50-7.80 may not work."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/pcanywhere/pcanywhere_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/pcanywhere/pcanywhere_login.rb",
       "name": "PcAnywhere Login Scanner",
       "description": "This module will test pcAnywhere logins on a range of machines and\n        report successful logins."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/postgres/postgres_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/postgres/postgres_login.rb",
       "name": "PostgreSQL Login Utility",
       "description": "This module attempts to authenticate against a PostgreSQL\n          instance using username and password combinations indicated\n          by the USER_FILE, PASS_FILE, and USERPASS_FILE options. Note that\n          passwords may be either plaintext or MD5 formatted hashes."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rexec_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rexec_login.rb",
       "name": "rexec Authentication Scanner",
       "description": "This module will test an rexec service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rlogin_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rlogin_login.rb",
       "name": "rlogin Authentication Scanner",
       "description": "This module will test an rlogin service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rsh_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rsh_login.rb",
       "name": "rsh Authentication Scanner",
       "description": "This module will test a shell (rsh) service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ssh/ssh_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ssh/ssh_login.rb",
       "name": "SSH Login Check Scanner",
       "description": "This module will test ssh logins on a range of machines and\n        report successful logins.  If you have loaded a database plugin\n        and connected to a database this module will record successful\n        logins and hosts so you can track your access."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/telnet/brocade_enable_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/telnet/brocade_enable_login.rb",
       "name": "Brocade Enable Login Check Scanner",
       "description": "This module will test a range of Brocade network devices for a\n        privileged logins and report successes. The device authentication mode\n        must be set as 'aaa authentication enable default local'.\n        Telnet authentication, e.g. 'enable telnet authentication', should not\n        be enabled in the device configuration.\n\n        This module has been tested against the following devices:\n              ICX6450-24 SWver 07.4.00bT311,\n              FastIron WS 624 SWver 07.2.02fT7e1"
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/telnet/telnet_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/telnet/telnet_login.rb",
       "name": "Telnet Login Check Scanner",
       "description": "This module will test a telnet login on a range of machines and\n        report successful logins.  If you have loaded a database plugin\n        and connected to a database this module will record successful\n        logins and hosts so you can track your access."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/vmware/vmauthd_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/vmware/vmauthd_login.rb",
       "name": "VMware Authentication Daemon Login Scanner",
       "description": "This module will test vmauthd logins on a range of machines and\n        report successful logins."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/vmware/vmware_http_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/vmware/vmware_http_login.rb",
       "name": "VMware Web Login Scanner",
       "description": "This module attempts to authenticate to the VMware\n        HTTP service for VMware Server, ESX, and ESXI."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/winrm/winrm_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/winrm/winrm_login.rb",
       "name": "WinRM Login Utility",
       "description": "This module attempts to authenticate to a WinRM service. It currently\n        works only if the remote end allows Negotiate(NTLM) authentication.\n        Kerberos is not currently supported.  Please note: in order to use this\n        module without SSL, the 'AllowUnencrypted' winrm option must be set.\n        Otherwise adjust the port and set the SSL options in the module as appropriate."
     },
     {
       "source": "metasploit",
-      "file": "exploit_multi/ssh/sshexec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/ssh/sshexec.rb",
       "name": "SSH User Code Execution",
       "description": "This module connects to the target system and executes the necessary\n        commands to run the specified payload via SSH. If a native payload is\n        specified, an appropriate stager will be used."
     },
@@ -238,19 +238,19 @@
   "CVE-1999-0506": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/mssql/mssql_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/mssql/mssql_login.rb",
       "name": "MSSQL Login Utility",
       "description": "This module simply queries the MSSQL instance for a specific user/pass (default is sa with blank)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/smb/smb_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/smb/smb_login.rb",
       "name": "SMB Login Check Scanner",
       "description": "This module will test a SMB login on a range of machines and\n        report successful logins.  If you have loaded a database plugin\n        and connected to a database this module will record successful\n        logins and hosts so you can track your access."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/vnc/vnc_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/vnc/vnc_login.rb",
       "name": "VNC Authentication Scanner",
       "description": "This module will test a VNC server on a range of machines and\n        report successful logins. Currently it supports RFB protocol\n        version 3.3, 3.7, 3.8 and 4.001 using the VNC challenge response\n        authentication method."
     }
@@ -258,7 +258,7 @@
   "CVE-1999-0170": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/nfs/nfsmount",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/nfs/nfsmount.rb",
       "name": "NFS Mount Scanner",
       "description": "This module scans NFS mounts and their permissions."
     }
@@ -266,7 +266,7 @@
   "CVE-1999-0554": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/nfs/nfsmount",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/nfs/nfsmount.rb",
       "name": "NFS Mount Scanner",
       "description": "This module scans NFS mounts and their permissions."
     }
@@ -274,19 +274,19 @@
   "CVE-1999-0651": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rexec_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rexec_login.rb",
       "name": "rexec Authentication Scanner",
       "description": "This module will test an rexec service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rlogin_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rlogin_login.rb",
       "name": "rlogin Authentication Scanner",
       "description": "This module will test an rlogin service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/rservices/rsh_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/rservices/rsh_login.rb",
       "name": "rsh Authentication Scanner",
       "description": "This module will test a shell (rsh) service on a range of machines and\n        report successful logins.\n\n        NOTE: This module requires access to bind to privileged ports (below 1024)."
     }
@@ -294,31 +294,31 @@
   "CVE-1999-0504": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/smb/psexec_loggedin_users",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/smb/psexec_loggedin_users.rb",
       "name": "Microsoft Windows Authenticated Logged In Users Enumeration",
       "description": "This module uses a valid administrator username and password to enumerate users\n        currently logged in, using a similar technique than the \"psexec\" utility provided\n        by SysInternals. It uses reg.exe to query the HKU base registry key."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/current_user_psexec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/current_user_psexec.rb",
       "name": "PsExec via Current User Token",
       "description": "This module uploads an executable file to the victim system, creates\n          a share containing that executable, creates a remote service on each\n          target system using a UNC path to that file, and finally starts the\n          service(s).\n\n          The result is similar to psexec but with the added benefit of using\n          the session's current authentication token instead of having to know\n          a password or hash."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/powershell_remoting",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/powershell_remoting.rb",
       "name": "Powershell Remoting Remote Command Execution",
       "description": "This module uses Powershell Remoting (TCP 47001) to inject payloads on target machines.\n          If RHOSTS are specified, it will try to resolve the IPs to hostnames, otherwise\n          use a HOSTFILE to supply a list of known hostnames."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/wmi",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/wmi.rb",
       "name": "Windows Management Instrumentation (WMI) Remote Command Execution",
       "description": "This module executes powershell on the remote host using the current\n          user credentials or those supplied. Instead of using PSEXEC over TCP\n          port 445 we use the WMIC command to start a Remote Procedure Call on\n          TCP port 135 and an ephemeral port. Set ReverseListenerComm to tunnel\n          traffic through that session.\n\n          The result is similar to psexec but with the added benefit of using\n          the session's current authentication token instead of having to know\n          a password or hash.\n\n          The remote host must be configured to allow remote Windows Management\n          Instrumentation."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/psexec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/psexec.rb",
       "name": "Microsoft Windows Authenticated User Code Execution",
       "description": "This module uses a valid administrator username and password (or\n          password hash) to execute an arbitrary payload. This module is similar\n          to the \"psexec\" utility provided by SysInternals. This module is now able\n          to clean up after itself. The service created by this tool uses a randomly\n          chosen name and description."
     },
@@ -346,7 +346,7 @@
   "CVE-1999-0531": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/smtp/smtp_enum",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/smtp/smtp_enum.rb",
       "name": "SMTP User Enumeration Utility",
       "description": "The SMTP service has two internal commands that allow the enumeration\n        of users: VRFY (confirming the names of valid users) and EXPN (which\n        reveals the actual address of users aliases and lists of e-mail\n        (mailing lists)). Through the implementation of these SMTP commands can\n        reveal a list of valid users."
     }
@@ -354,13 +354,13 @@
   "CVE-1999-0508": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_enum",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_enum.rb",
       "name": "SNMP Enumeration Module",
       "description": "This module allows enumeration of any devices with SNMP\n          protocol support. It supports hardware, software, and network information.\n          The default community used is \"public\"."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_login.rb",
       "name": "SNMP Community Login Scanner",
       "description": "This module logs in to SNMP devices using common community names."
     }
@@ -368,13 +368,13 @@
   "CVE-1999-0517": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_enum",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_enum.rb",
       "name": "SNMP Enumeration Module",
       "description": "This module allows enumeration of any devices with SNMP\n          protocol support. It supports hardware, software, and network information.\n          The default community used is \"public\"."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_login.rb",
       "name": "SNMP Community Login Scanner",
       "description": "This module logs in to SNMP devices using common community names."
     }
@@ -382,13 +382,13 @@
   "CVE-1999-0516": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_enum",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_enum.rb",
       "name": "SNMP Enumeration Module",
       "description": "This module allows enumeration of any devices with SNMP\n          protocol support. It supports hardware, software, and network information.\n          The default community used is \"public\"."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/snmp/snmp_login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/snmp/snmp_login.rb",
       "name": "SNMP Community Login Scanner",
       "description": "This module logs in to SNMP devices using common community names."
     }
@@ -396,7 +396,7 @@
   "CVE-1999-0667": [
     {
       "source": "metasploit",
-      "file": "auxiliary_spoof/arp/arp_poisoning",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/spoof/arp/arp_poisoning.rb",
       "name": "ARP Spoof",
       "description": "Spoof ARP replies and poison remote ARP caches to conduct IP address spoofing or a denial of service."
     }
@@ -404,7 +404,7 @@
   "CVE-1999-0209": [
     {
       "source": "metasploit",
-      "file": "exploit_solaris/sunrpc/ypupdated_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/solaris/sunrpc/ypupdated_exec.rb",
       "name": "Solaris ypupdated Command Execution",
       "description": "This exploit targets a weakness in the way the ypupdated RPC\n          application uses the command shell when handling a MAP UPDATE\n          request.  Extra commands may be launched through this command\n          shell, which runs as root on the remote host, by passing\n          commands in the format '|<command>'.\n\n          Vulnerable systems include Solaris 2.7, 8, 9, and 10, when\n          ypupdated is started with the '-i' command-line option."
     },
@@ -472,7 +472,7 @@
   "CVE-1999-1053": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/guestbook_ssi_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/guestbook_ssi_exec.rb",
       "name": "Matt Wright guestbook.pl Arbitrary Command Execution",
       "description": "The Matt Wright guestbook.pl <= v2.3.1 CGI script contains\n          a flaw that may allow arbitrary command execution. The vulnerability\n          requires that HTML posting is enabled in the guestbook.pl script, and\n          that the web server must have the Server-Side Include (SSI) script\n          handler enabled for the '.html' file type. By combining the script\n          weakness with non-default server configuration, it is possible to exploit\n          this vulnerability successfully."
     },
@@ -520,7 +520,7 @@
   "CVE-1999-1510": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/bison_ftp_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/bison_ftp_bof.rb",
       "name": "BisonWare BisonFTP Server Buffer Overflow",
       "description": "BisonWare BisonFTP Server 3.5 is prone to an overflow condition.\n          This module exploits a buffer overflow vulnerability in the said\n          application."
     },
@@ -588,13 +588,13 @@
   "CVE-1999-0256": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/warftpd_165_pass",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/warftpd_165_pass.rb",
       "name": "War-FTPD 1.65 Password Overflow",
       "description": "This exploits the buffer overflow found in the PASS command\n          in War-FTPD 1.65. This particular module will only work\n          reliably against Windows 2000 targets. The server must be\n          configured to allow anonymous logins for this exploit to\n          succeed. A failed attempt will bring down the service\n          completely."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/warftpd_165_user",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/warftpd_165_user.rb",
       "name": "War-FTPD 1.65 Username Overflow",
       "description": "This module exploits a buffer overflow found in the USER command\n          of War-FTPD 1.65."
     },
@@ -642,7 +642,7 @@
   "CVE-1999-0874": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/iis/ms02_018_htr",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/iis/ms02_018_htr.rb",
       "name": "MS02-018 Microsoft IIS 4.0 .HTR Path Overflow",
       "description": "This exploits a buffer overflow in the ISAPI ISM.DLL used to\n          process HTR scripting in IIS 4.0. This module works against\n          Windows NT 4 Service Packs 3, 4, and 5. The server will\n          continue to process requests until the payload being\n          executed has exited. If you've set EXITFUNC to 'seh', the\n          server will continue processing requests, but you will have\n          trouble terminating a bind shell. If you set EXITFUNC to\n          thread, the server will crash upon exit of the bind shell.\n          The payload is alpha-numerically encoded without a NOP sled\n          because otherwise the data gets mangled by the filters."
     },
@@ -750,7 +750,7 @@
   "CVE-1999-1011": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/iis/msadc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/iis/msadc.rb",
       "name": "MS99-025 Microsoft IIS MDAC msadcs.dll RDS Arbitrary Remote Command Execution",
       "description": "This module can be used to execute arbitrary commands on IIS servers\n          that expose the /msadc/msadcs.dll Microsoft Data Access Components\n          (MDAC) Remote Data Service (RDS) DataFactory service using VbBusObj\n          or AdvancedDataFactory to inject shell commands into Microsoft Access\n          databases (MDBs), MSSQL databases and ODBC/JET Data Source Name (DSN).\n          Based on the msadcs.pl v2 exploit by Rain.Forest.Puppy, which was actively\n          used in the wild in the late Ninties. MDAC versions affected include MDAC\n          1.5, 2.0, 2.0 SDK, 2.1 and systems with the MDAC Sample Pages for RDS\n          installed, and NT4 Servers with the NT Option Pack installed or upgraded\n          2000 systems often running IIS3/4/5 however some vulnerable installations\n          can still be found on newer Windows operating systems. Note that newer\n          releases of msadcs.dll can still be abused however by default remote\n          connections to the RDS is denied. Consider using VERBOSE if you're unable\n          to successfully execute a command, as the error messages are detailed\n          and useful for debugging. Also set NAME to obtain the remote hostname,\n          and METHOD to use the alternative VbBusObj technique."
     },

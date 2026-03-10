@@ -2,7 +2,7 @@
   "CVE-2003-0027": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/sunrpc/solaris_kcms_readfile",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/sunrpc/solaris_kcms_readfile.rb",
       "name": "Solaris KCMS + TTDB Arbitrary File Read",
       "description": "This module targets a directory traversal vulnerability in the\n        kcms_server component from the Kodak Color Management System. By\n        utilizing the ToolTalk Database Server\\'s TT_ISBUILD procedure, an\n        attacker can bypass existing directory traversal validation and\n        read arbitrary files.\n\n        Vulnerable systems include Solaris 2.5 - 9 SPARC and x86. Both\n        kcms_server and rpc.ttdbserverd must be running on the target\n        host."
     }
@@ -10,7 +10,7 @@
   "CVE-2003-0694": [
     {
       "source": "metasploit",
-      "file": "auxiliary_dos/smtp/sendmail_prescan",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/smtp/sendmail_prescan.rb",
       "name": "Sendmail SMTP Address prescan Memory Corruption",
       "description": "This is a proof of concept denial of service module for Sendmail versions\n          8.12.8 and earlier. The vulnerability is within the prescan() method when\n          parsing SMTP headers. Due to the prescan function, only 0x5c and 0x00\n          bytes can be used, limiting the likelihood for arbitrary code execution."
     }
@@ -18,7 +18,7 @@
   "CVE-2003-0270": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/acpp/login",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/acpp/login.rb",
       "name": "Apple Airport ACPP Authentication Scanner",
       "description": "This module attempts to authenticate to an Apple Airport using its\n        proprietary and largely undocumented protocol known only as ACPP."
     }
@@ -26,7 +26,7 @@
   "CVE-2003-0190": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ssh/ssh_enumusers",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ssh/ssh_enumusers.rb",
       "name": "SSH Username Enumeration",
       "description": "This module uses a malformed packet or timing attack to enumerate users on\n          an OpenSSH server.\n\n          The default action sends a malformed (corrupted) SSH_MSG_USERAUTH_REQUEST\n          packet using public key authentication (must be enabled) to enumerate users.\n\n          On some versions of OpenSSH under some configurations, OpenSSH will return a\n          \"permission denied\" error for an invalid user faster than for a valid user,\n          creating an opportunity for a timing attack to enumerate users.\n\n          Testing note: invalid users were logged, while valid users were not. YMMV."
     },
@@ -94,25 +94,25 @@
   "CVE-2003-0201": [
     {
       "source": "metasploit",
-      "file": "exploit_freebsd/samba/trans2open",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/freebsd/samba/trans2open.rb",
       "name": "Samba trans2open Overflow (*BSD x86)",
       "description": "This exploits the buffer overflow found in Samba versions\n          2.2.0 to 2.2.8. This particular module is capable of\n          exploiting the flaw on x86 Linux systems that do not\n          have the noexec stack option set."
     },
     {
       "source": "metasploit",
-      "file": "exploit_linux/samba/trans2open",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/samba/trans2open.rb",
       "name": "Samba trans2open Overflow (Linux x86)",
       "description": "This exploits the buffer overflow found in Samba versions\n          2.2.0 to 2.2.8. This particular module is capable of\n          exploiting the flaw on x86 Linux systems that do not\n          have the noexec stack option set.\n\n          NOTE: Some older versions of RedHat do not seem to be vulnerable\n          since they apparently do not allow anonymous access to IPC."
     },
     {
       "source": "metasploit",
-      "file": "exploit_osx/samba/trans2open",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/samba/trans2open.rb",
       "name": "Samba trans2open Overflow (Mac OS X PPC)",
       "description": "This exploits the buffer overflow found in Samba versions\n          2.2.0 to 2.2.8. This particular module is capable of\n          exploiting the bug on Mac OS X PowerPC systems."
     },
     {
       "source": "metasploit",
-      "file": "exploit_solaris/samba/trans2open",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/solaris/samba/trans2open.rb",
       "name": "Samba trans2open Overflow (Solaris SPARC)",
       "description": "This exploits the buffer overflow found in Samba versions\n          2.2.0 to 2.2.8. This particular module is capable of\n          exploiting the flaw on Solaris SPARC systems that do not\n          have the noexec stack option set. Big thanks to MC and\n          valsmith for resolving a problem with the beta version of\n          this module."
     },
@@ -360,7 +360,7 @@
   "CVE-2003-0213": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/pptp/poptop_negative_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/pptp/poptop_negative_read.rb",
       "name": "Poptop Negative Read Overflow",
       "description": "This is an exploit for the Poptop negative read overflow.  This will\n          work against versions prior to 1.1.3-b3 and 1.1.3-20030409, but I\n          currently do not have a good way to detect Poptop versions.\n\n          The server will by default only allow 4 concurrent manager processes\n          (what we run our code in), so you could have a max of 4 shells at once.\n\n          Using the current method of exploitation, our socket will be closed\n          before we have the ability to run code, preventing the use of Findsock."
     },
@@ -468,7 +468,7 @@
   "CVE-2003-0722": [
     {
       "source": "metasploit",
-      "file": "exploit_solaris/sunrpc/sadmind_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/solaris/sunrpc/sadmind_exec.rb",
       "name": "Solaris sadmind Command Execution",
       "description": "This exploit targets a weakness in the default security settings of\n          the Sun Solstice AdminSuite distributed system administration daemon\n          (sadmind) RPC application. This server is installed and enabled by\n          default on most versions of the Solaris operating system.\n\n          Vulnerable systems include Solaris 2.7, 8, and 9."
     },
@@ -516,7 +516,7 @@
   "CVE-2003-0050": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/qtss_parse_xml_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/qtss_parse_xml_exec.rb",
       "name": "QuickTime Streaming Server parse_xml.cgi Remote Execution",
       "description": "The QuickTime Streaming Server contains a CGI script that is vulnerable\n          to metacharacter injection, allow arbitrary commands to be executed as root."
     },
@@ -544,7 +544,7 @@
   "CVE-2003-0990": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/squirrelmail_pgp_plugin",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/squirrelmail_pgp_plugin.rb",
       "name": "SquirrelMail PGP Plugin Command Execution (SMTP)",
       "description": "This module exploits a command execution vulnerability in the\n          PGP plugin of SquirrelMail. This flaw was found while quickly\n          grepping the code after release of some information at\n          http://www.wslabi.com/. Later, iDefense published an advisory ....\n\n          Reading an email in SquirrelMail with the PGP plugin activated\n          is enough to compromise the underlying server.\n\n          Only \"cmd/unix/generic\" payloads were tested."
     },
@@ -572,7 +572,7 @@
   "CVE-2003-1336": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/browser/mirc_irc_url",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/mirc_irc_url.rb",
       "name": "mIRC IRC URL Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in mIRC 6.1. By\n          submitting an overly long and specially crafted URL to\n          the 'irc' protocol, an attacker can overwrite the buffer\n          and control program execution."
     },
@@ -620,7 +620,7 @@
   "CVE-2003-0344": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/browser/ms03_020_ie_objecttype",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/ms03_020_ie_objecttype.rb",
       "name": "MS03-020 Microsoft Internet Explorer Object Type",
       "description": "This module exploits a vulnerability in Internet Explorer's\n          handling of the OBJECT type attribute."
     },
@@ -688,7 +688,7 @@
   "CVE-2003-0352": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/dcerpc/ms03_026_dcom",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/dcerpc/ms03_026_dcom.rb",
       "name": "MS03-026 Microsoft RPC DCOM Interface Overflow",
       "description": "This module exploits a stack buffer overflow in the RPCSS service, this vulnerability\n          was originally found by the Last Stage of Delirium research group and has been\n          widely exploited ever since. This module can exploit the English versions of\n          Windows NT 4.0 SP3-6a, Windows 2000, Windows XP, and Windows 2003 all in one request :)"
     },
@@ -756,7 +756,7 @@
   "CVE-2003-0220": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/firewall/kerio_auth",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/firewall/kerio_auth.rb",
       "name": "Kerio Firewall 2.1.4 Authentication Packet Overflow",
       "description": "This module exploits a stack buffer overflow in Kerio Personal Firewall\n          administration authentication process. This module has only been tested\n          against Kerio Personal Firewall 2 (2.1.4)."
     },
@@ -864,7 +864,7 @@
   "CVE-2003-0558": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/leapftp_pasv_reply",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/leapftp_pasv_reply.rb",
       "name": "LeapWare LeapFTP v2.7.3.600 PASV Reply Client Overflow",
       "description": "This module exploits a buffer overflow in the LeapWare LeapFTP v2.7.3.600\n          client that is triggered through an excessively long PASV reply command. This\n          module was ported from the original exploit by drG4njubas with minor improvements."
     },
@@ -912,19 +912,19 @@
   "CVE-2003-0727": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/oracle9i_xdb_ftp_pass",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/oracle9i_xdb_ftp_pass.rb",
       "name": "Oracle 9i XDB FTP PASS Overflow (win32)",
       "description": "By passing an overly long string to the PASS command, a\n          stack based buffer overflow occurs. David Litchfield, has\n          illustrated multiple vulnerabilities in the Oracle 9i XML\n          Database (XDB), during a seminar on \"Variations in exploit\n          methods between Linux and Windows\" presented at the Blackhat\n          conference."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/oracle9i_xdb_ftp_unlock",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/oracle9i_xdb_ftp_unlock.rb",
       "name": "Oracle 9i XDB FTP UNLOCK Overflow (win32)",
       "description": "By passing an overly long token to the UNLOCK command, a\n          stack based buffer overflow occurs. David Litchfield, has\n          illustrated multiple vulnerabilities in the Oracle 9i XML\n          Database (XDB), during a seminar on \"Variations in exploit\n          methods between Linux and Windows\" presented at the Blackhat\n          conference. Oracle9i includes a number of default accounts,\n          including dbsnmp:dbsmp, scott:tiger, system:manager, and\n          sys:change_on_install."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/oracle9i_xdb_pass",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/oracle9i_xdb_pass.rb",
       "name": "Oracle 9i XDB HTTP PASS Overflow (win32)",
       "description": "This module exploits a stack buffer overflow in the authorization\n          code of the Oracle 9i HTTP XDB service. David Litchfield,\n          has illustrated multiple vulnerabilities in the Oracle\n          9i XML Database (XDB), during a seminar on \"Variations\n          in exploit methods between Linux and Windows\" presented\n          at the Blackhat conference."
     },
@@ -1052,7 +1052,7 @@
   "CVE-2003-0471": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/altn_webadmin",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/altn_webadmin.rb",
       "name": "Alt-N WebAdmin USER Buffer Overflow",
       "description": "Alt-N WebAdmin is prone to a buffer overflow condition. This\n          is due to insufficient bounds checking on the USER\n          parameter. Successful exploitation could result in code\n          execution with SYSTEM level privileges."
     },
@@ -1140,7 +1140,7 @@
   "CVE-2003-1192": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/ia_webmail",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/ia_webmail.rb",
       "name": "IA WebMail 3.x Buffer Overflow",
       "description": "This exploits a stack buffer overflow in the IA WebMail server.\n          This exploit has not been tested against a live system at\n          this time."
     },
@@ -1208,7 +1208,7 @@
   "CVE-2003-1200": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/mdaemon_worldclient_form2raw",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/mdaemon_worldclient_form2raw.rb",
       "name": "MDaemon WorldClient form2raw.cgi Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Alt-N MDaemon SMTP server for\n          versions 6.8.5 and earlier. When WorldClient HTTP server is installed (default),\n          a CGI script is provided to accept html FORM based emails and deliver via MDaemon.exe,\n          by writing the CGI output to the Raw Queue. When X-FromCheck is enabled (also default),\n          the temporary form2raw.cgi data is copied by MDaemon.exe and a stack based\n          overflow occurs when an excessively long From field is specified.\n          The RawQueue is processed every 1 minute by default, to a maximum of 60 minutes.\n          Keep this in mind when choosing payloads or setting WfsDelay... You'll need to wait.\n\n          Furthermore, this exploit uses a direct memory jump into a nopsled (which isn't very\n          reliable). Once the payload is written into the Raw Queue by Form2Raw, MDaemon will\n          continue to crash/execute the payload until the CGI output is manually deleted\n          from the queue in C:\\MDaemon\\RawFiles\\*.raw."
     },
@@ -1276,7 +1276,7 @@
   "CVE-2003-0109": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/iis/ms03_007_ntdll_webdav",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/iis/ms03_007_ntdll_webdav.rb",
       "name": "MS03-007 Microsoft IIS 5.0 WebDAV ntdll.dll Path Overflow",
       "description": "This exploits a buffer overflow in NTDLL.dll on Windows 2000\n          through the SEARCH WebDAV method in IIS. This particular\n          module only works against Windows 2000. It should have a\n          reasonable chance of success against SP0 to SP3."
     },
@@ -1464,7 +1464,7 @@
   "CVE-2003-0349": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/isapi/ms03_022_nsiislog_post",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/isapi/ms03_022_nsiislog_post.rb",
       "name": "MS03-022 Microsoft IIS ISAPI nsiislog.dll ISAPI POST Overflow",
       "description": "This exploits a buffer overflow found in the nsiislog.dll\n          ISAPI filter that comes with Windows Media Server. This\n          module will also work against the 'patched' MS03-019\n          version. This vulnerability was addressed by MS03-022."
     },
@@ -1532,7 +1532,7 @@
   "CVE-2003-0822": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/isapi/ms03_051_fp30reg_chunked",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/isapi/ms03_051_fp30reg_chunked.rb",
       "name": "MS03-051 Microsoft IIS ISAPI FrontPage fp30reg.dll Chunked Overflow",
       "description": "This is an exploit for the chunked encoding buffer overflow\n          described in MS03-051 and originally reported by Brett\n          Moore. This particular modules works against versions of\n          Windows 2000 between SP0 and SP3. Service Pack 4 fixes the\n          issue."
     },
@@ -1580,7 +1580,7 @@
   "CVE-2003-1141": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/lpd/niprint",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/lpd/niprint.rb",
       "name": "NIPrint LPD Request Overflow",
       "description": "This module exploits a stack buffer overflow in the\n          Network Instrument NIPrint LPD service. Inspired by\n          Immunity's VisualSploit :-)"
     },
@@ -1608,7 +1608,7 @@
   "CVE-2003-0264": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/pop3/seattlelab_pass",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/pop3/seattlelab_pass.rb",
       "name": "Seattle Lab Mail 5.5 POP3 Buffer Overflow",
       "description": "There exists an unauthenticated buffer overflow vulnerability\n          in the POP3 server of Seattle Lab Mail 5.5 when sending a password\n          with excessive length.\n\n          Successful exploitation should not crash either the\n          service or the server; however, after initial use the\n          port cannot be reused for successive exploitation until\n          the service has been restarted. Consider using a command\n          execution payload following the bind shell to restart\n          the service if you need to reuse the same port.\n\n          The overflow appears to occur in the debugging/error reporting\n          section of the slmail.exe executable, and there are multiple\n          offsets that will lead to successful exploitation. This exploit\n          uses 2606, the offset that creates the smallest overall payload.\n          The other offset is 4654.\n\n          The return address is overwritten with a \"jmp esp\" call from the\n          application library SLMFC.DLL found in %SYSTEM%\\system32\\. This\n          return address works against all version of Windows and service packs.\n\n          The last modification date on the library is dated 06/02/99. Assuming\n          that the code where the overflow occurs has not changed in some time,\n          prior version of SLMail may also be vulnerable with this exploit. The\n          author has not been able to acquire older versions of SLMail for\n          testing purposes. Please let us know if you were able to get this\n          exploit working against other SLMail versions."
     },
@@ -1696,7 +1696,7 @@
   "CVE-2003-0812": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/ms03_049_netapi",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/ms03_049_netapi.rb",
       "name": "MS03-049 Microsoft Workstation Service NetAddAlternateComputerName Overflow",
       "description": "This module exploits a stack buffer overflow in the NetApi32 NetAddAlternateComputerName\n          function using the Workstation service in Windows XP."
     },
@@ -1784,7 +1784,7 @@
   "CVE-2003-0818": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/ms04_007_killbill",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/ms04_007_killbill.rb",
       "name": "MS04-007 Microsoft ASN.1 Library Bitstring Heap Overflow",
       "description": "This is an exploit for a previously undisclosed\n          vulnerability in the bit string decoding code in the\n          Microsoft ASN.1 library. This vulnerability is not related\n          to the bit string vulnerability described in eEye advisory\n          AD20040210-2. Both vulnerabilities were fixed in the\n          MS04-007 patch.  Windows 2000 SP4 Rollup 1 also patches this\n          vulnerability.\n\n          You are only allowed one attempt with this vulnerability. If\n          the payload fails to execute, the LSASS system service will\n          crash and the target system will automatically reboot itself\n          in 60 seconds. If the payload succeeds, the system will no\n          longer be able to process authentication requests, denying\n          all attempts to login through SMB or at the console. A\n          reboot is required to restore proper functioning of an\n          exploited system.\n\n          This exploit has been successfully tested with the win32/*/reverse_tcp\n          payloads, however a few problems were encountered when using the\n          equivalent bind payloads. Your mileage may vary."
     },
@@ -1852,7 +1852,7 @@
   "CVE-2003-0533": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/ms04_011_lsass",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/ms04_011_lsass.rb",
       "name": "MS04-011 Microsoft LSASS Service DsRolerUpgradeDownlevelServer Overflow",
       "description": "This module exploits a stack buffer overflow in the LSASS service, this vulnerability\n          was originally found by eEye. When re-exploiting a Windows XP system, you will need\n          need to run this module twice. DCERPC request fragmentation can be performed by setting\n          'FragSize' parameter."
     },
@@ -1920,7 +1920,7 @@
   "CVE-2003-0714": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/smtp/ms03_046_exchange2000_xexch50",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smtp/ms03_046_exchange2000_xexch50.rb",
       "name": "MS03-046 Exchange 2000 XEXCH50 Heap Overflow",
       "description": "This is an exploit for the Exchange 2000 heap overflow. Due\n          to the nature of the vulnerability, this exploit is not very\n          reliable. This module has been tested against Exchange 2000\n          SP0 and SP3 running a Windows 2000 system patched to SP4. It\n          normally takes between one and 100 connection attempts to\n          successfully obtain a shell. This exploit is *very* unreliable."
     },
@@ -1968,7 +1968,7 @@
   "CVE-2003-0719": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ssl/ms04_011_pct",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ssl/ms04_011_pct.rb",
       "name": "MS04-011 Microsoft Private Communications Transport Overflow",
       "description": "This module exploits a buffer overflow in the Microsoft\n          Windows SSL PCT protocol stack. This code is based on Johnny\n          Cyberpunk's THC release and has been tested against Windows\n          2000 and Windows XP. To use this module, specify the remote\n          port of any SSL service, or the port and protocol of an\n          application that uses SSL. The only application protocol\n          supported at this time is SMTP. You only have one chance to\n          select the correct target, if you are attacking IIS, you may\n          want to try one of the other exploits first (WebDAV). If\n          WebDAV does not work, this more than likely means that this\n          is either Windows 2000 SP4+ or Windows XP (IIS 5.0 vs IIS\n          5.1). Using the wrong target may not result in an immediate\n          crash of the remote system."
     },

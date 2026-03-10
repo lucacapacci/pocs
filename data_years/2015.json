@@ -2,7 +2,7 @@
   "CVE-2015-0964": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/arris_motorola_surfboard_backdoor_xss",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/arris_motorola_surfboard_backdoor_xss.rb",
       "name": "Arris / Motorola Surfboard SBG6580 Web Interface Takeover",
       "description": "The web interface for the Arris / Motorola Surfboard SBG6580 has\n          several vulnerabilities that, when combined, allow an arbitrary website to take\n          control of the modem, even if the user is not currently logged in. The attacker\n          must successfully know, or guess, the target's internal gateway IP address.\n          This is usually a default value of 192.168.0.1.\n\n          First, a hardcoded backdoor account was discovered in the source code\n          of one device with the credentials \"technician/yZgO8Bvj\". Due to lack of CSRF\n          in the device's login form, these credentials - along with the default\n          \"admin/motorola\" - can be sent to the device by an arbitrary website, thus\n          inadvertently logging the user into the router.\n\n          Once successfully logged in, a persistent XSS vulnerability is\n          exploited in the firewall configuration page. This allows injection of\n          Javascript that can perform any available action in the router interface.\n\n          The following firmware versions have been tested as vulnerable:\n\n          SBG6580-6.5.2.0-GA-06-077-NOSH, and\n          SBG6580-8.6.1.0-GA-04-098-NOSH"
     }
@@ -10,7 +10,7 @@
   "CVE-2015-0965": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/arris_motorola_surfboard_backdoor_xss",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/arris_motorola_surfboard_backdoor_xss.rb",
       "name": "Arris / Motorola Surfboard SBG6580 Web Interface Takeover",
       "description": "The web interface for the Arris / Motorola Surfboard SBG6580 has\n          several vulnerabilities that, when combined, allow an arbitrary website to take\n          control of the modem, even if the user is not currently logged in. The attacker\n          must successfully know, or guess, the target's internal gateway IP address.\n          This is usually a default value of 192.168.0.1.\n\n          First, a hardcoded backdoor account was discovered in the source code\n          of one device with the credentials \"technician/yZgO8Bvj\". Due to lack of CSRF\n          in the device's login form, these credentials - along with the default\n          \"admin/motorola\" - can be sent to the device by an arbitrary website, thus\n          inadvertently logging the user into the router.\n\n          Once successfully logged in, a persistent XSS vulnerability is\n          exploited in the firewall configuration page. This allows injection of\n          Javascript that can perform any available action in the router interface.\n\n          The following firmware versions have been tested as vulnerable:\n\n          SBG6580-6.5.2.0-GA-06-077-NOSH, and\n          SBG6580-8.6.1.0-GA-04-098-NOSH"
     }
@@ -18,7 +18,7 @@
   "CVE-2015-0966": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/arris_motorola_surfboard_backdoor_xss",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/arris_motorola_surfboard_backdoor_xss.rb",
       "name": "Arris / Motorola Surfboard SBG6580 Web Interface Takeover",
       "description": "The web interface for the Arris / Motorola Surfboard SBG6580 has\n          several vulnerabilities that, when combined, allow an arbitrary website to take\n          control of the modem, even if the user is not currently logged in. The attacker\n          must successfully know, or guess, the target's internal gateway IP address.\n          This is usually a default value of 192.168.0.1.\n\n          First, a hardcoded backdoor account was discovered in the source code\n          of one device with the credentials \"technician/yZgO8Bvj\". Due to lack of CSRF\n          in the device's login form, these credentials - along with the default\n          \"admin/motorola\" - can be sent to the device by an arbitrary website, thus\n          inadvertently logging the user into the router.\n\n          Once successfully logged in, a persistent XSS vulnerability is\n          exploited in the firewall configuration page. This allows injection of\n          Javascript that can perform any available action in the router interface.\n\n          The following firmware versions have been tested as vulnerable:\n\n          SBG6580-6.5.2.0-GA-06-077-NOSH, and\n          SBG6580-8.6.1.0-GA-04-098-NOSH"
     }
@@ -26,13 +26,13 @@
   "CVE-2015-6922": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/kaseya_master_admin",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/kaseya_master_admin.rb",
       "name": "Kaseya VSA Master Administrator Account Creation",
       "description": "This module abuses the setAccount page on Kaseya VSA between 7 and 9.1 to create a new\n          Master Administrator account. Normally this page is only accessible via the localhost\n          interface, but the application does nothing to prevent this apart from attempting to\n          force a redirect. This module has been tested with Kaseya VSA v7.0.0.17, v8.0.0.10 and\n          v9.0.0.3."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/kaseya_uploader",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/kaseya_uploader.rb",
       "name": "Kaseya VSA uploader.aspx Arbitrary File Upload",
       "description": "This module exploits an arbitrary file upload vulnerability found in Kaseya VSA versions\n          between 7 and 9.1. A malicious unauthenticated user can upload an ASP file to an arbitrary\n          directory leading to arbitrary code execution with IUSR privileges. This module has been\n          tested with Kaseya v7.0.0.17, v8.0.0.10 and v9.0.0.3."
     },
@@ -80,7 +80,7 @@
   "CVE-2015-2993": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/sysaid_admin_acct",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/sysaid_admin_acct.rb",
       "name": "SysAid Help Desk Administrator Account Creation",
       "description": "This module exploits a vulnerability in SysAid Help Desk that allows an unauthenticated\n          user to create an administrator account. Note that this exploit will only work once. Any\n          subsequent attempts will fail. On the other hand, the credentials must be verified\n          manually. This module has been tested on SysAid 14.4 in Windows and Linux."
     },
@@ -108,13 +108,13 @@
   "CVE-2015-2996": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/sysaid_file_download",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/sysaid_file_download.rb",
       "name": "SysAid Help Desk Arbitrary File Download",
       "description": "This module exploits two vulnerabilities in SysAid Help Desk that allows\n          an unauthenticated user to download arbitrary files from the system. First, an\n          information disclosure vulnerability (CVE-2015-2997) is used to obtain the file\n          system path, and then we abuse a directory traversal (CVE-2015-2996) to download\n          the file. Note that there are some limitations on Windows, in that the information\n          disclosure vulnerability doesn't work on a Windows platform, and we can only\n          traverse the current drive (if you enter C:\\afile.txt and the server is running\n          on D:\\ the file will not be downloaded).\n\n          This module has been tested with SysAid 14.4 on Windows and Linux."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/sysaid_sql_creds",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/sysaid_sql_creds.rb",
       "name": "SysAid Help Desk Database Credentials Disclosure",
       "description": "This module exploits a vulnerability in SysAid Help Desk that allows an unauthenticated\n          user to download arbitrary files from the system. This is used to download the server\n          configuration file that contains the database username and password, which is encrypted\n          with a fixed, known key. This module has been tested with SysAid 14.4 on Windows and Linux."
     },
@@ -154,7 +154,7 @@
   "CVE-2015-2997": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/sysaid_file_download",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/sysaid_file_download.rb",
       "name": "SysAid Help Desk Arbitrary File Download",
       "description": "This module exploits two vulnerabilities in SysAid Help Desk that allows\n          an unauthenticated user to download arbitrary files from the system. First, an\n          information disclosure vulnerability (CVE-2015-2997) is used to obtain the file\n          system path, and then we abuse a directory traversal (CVE-2015-2996) to download\n          the file. Note that there are some limitations on Windows, in that the information\n          disclosure vulnerability doesn't work on a Windows platform, and we can only\n          traverse the current drive (if you enter C:\\afile.txt and the server is running\n          on D:\\ the file will not be downloaded).\n\n          This module has been tested with SysAid 14.4 on Windows and Linux."
     },
@@ -182,7 +182,7 @@
   "CVE-2015-2998": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/sysaid_sql_creds",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/sysaid_sql_creds.rb",
       "name": "SysAid Help Desk Database Credentials Disclosure",
       "description": "This module exploits a vulnerability in SysAid Help Desk that allows an unauthenticated\n          user to download arbitrary files from the system. This is used to download the server\n          configuration file that contains the database username and password, which is encrypted\n          with a fixed, known key. This module has been tested with SysAid 14.4 on Windows and Linux."
     },
@@ -210,7 +210,7 @@
   "CVE-2015-2673": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/wp_easycart_privilege_escalation",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/wp_easycart_privilege_escalation.rb",
       "name": "WordPress WP EasyCart Plugin Privilege Escalation",
       "description": "The WordPress WP EasyCart plugin from version 1.1.30 to 3.0.20 allows authenticated\n          users of any user level to set any system option via a lack of validation in the\n          ec_ajax_update_option and ec_ajax_clear_all_taxrates functions located in\n          /inc/admin/admin_ajax_functions.php. The module first changes the admin e-mail address\n          to prevent any notifications being sent to the actual administrator during the attack,\n          re-enables user registration in case it has been disabled and sets the default role to\n          be administrator. This will allow for the user to create a new account with admin\n          privileges via the default registration page found at /wp-login.php?action=register."
     }
@@ -218,7 +218,7 @@
   "CVE-2015-6522": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/wp_symposium_sql_injection",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/wp_symposium_sql_injection.rb",
       "name": "WordPress Symposium Plugin SQL Injection",
       "description": "This module exploits a SQL injection vulnerability in the WP Symposium plugin\n          before 15.8 for WordPress, which allows remote attackers to extract credentials\n          via the size parameter to get_album_item.php."
     },
@@ -246,7 +246,7 @@
   "CVE-2015-10139": [
     {
       "source": "metasploit",
-      "file": "auxiliary_admin/http/wp_wplms_privilege_escalation",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/admin/http/wp_wplms_privilege_escalation.rb",
       "name": "WordPress WPLMS Theme Privilege Escalation",
       "description": "The WordPress WPLMS theme from version 1.5.2 to 1.8.4.1 allows an\n          authenticated user of any user level to set any system option due to a lack of\n          validation in the import_data function of /includes/func.php.\n\n          The module first changes the admin e-mail address to prevent any\n          notifications being sent to the actual administrator during the attack,\n          re-enables user registration in case it has been disabled and sets the default\n          role to be administrator.  This will allow for the user to create a new account\n          with admin privileges via the default registration page found at\n          /wp-login.php?action=register."
     }
@@ -254,7 +254,7 @@
   "CVE-2015-5477": [
     {
       "source": "metasploit",
-      "file": "auxiliary_dos/dns/bind_tkey",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/dns/bind_tkey.rb",
       "name": "BIND TKEY Query Denial of Service",
       "description": "This module sends a malformed TKEY query, which exploits an\n          error in handling TKEY queries on affected BIND9 'named' DNS servers.\n          As a result, a vulnerable named server will exit with a REQUIRE\n          assertion failure. This condition can be exploited in versions of BIND\n          between BIND 9.1.0 through 9.8.x, 9.9.0 through 9.9.7-P1 and 9.10.0\n          through 9.10.2-P2."
     },
@@ -302,13 +302,13 @@
   "CVE-2015-1635": [
     {
       "source": "metasploit",
-      "file": "auxiliary_dos/http/ms15_034_ulonglongadd",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/http/ms15_034_ulonglongadd.rb",
       "name": "MS15-034 HTTP Protocol Stack Request Handling Denial-of-Service",
       "description": "This module will check if scanned hosts are vulnerable to CVE-2015-1635 (MS15-034), a\n          vulnerability in the HTTP protocol stack (HTTP.sys) that could result in arbitrary code\n          execution. This module will try to cause a denial-of-service."
     },
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/ms15_034_http_sys_memory_dump",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/ms15_034_http_sys_memory_dump.rb",
       "name": "MS15-034 HTTP Protocol Stack Request Handling HTTP.SYS Memory Information Disclosure",
       "description": "This module dumps memory contents using a crafted Range header and affects only\n          Windows 8.1, Server 2012, and Server 2012R2. Note that if the target\n          is running in VMware Workstation, this module has a high likelihood\n          of resulting in BSOD; however, VMware ESX and non-virtualized hosts\n          seem stable. Using a larger target file should result in more memory\n          being dumped, and SSL seems to produce more data as well."
     },
@@ -368,7 +368,7 @@
   "CVE-2015-1930": [
     {
       "source": "metasploit",
-      "file": "auxiliary_dos/misc/ibm_tsm_dos",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/misc/ibm_tsm_dos.rb",
       "name": "IBM Tivoli Storage Manager FastBack Server Opcode 0x534 Denial of Service",
       "description": "This module exploits a denial of service condition present in IBM Tivoli Storage Manager\n          FastBack Server when dealing with packets triggering the opcode 0x534 handler."
     }
@@ -376,7 +376,7 @@
   "CVE-2015-5374": [
     {
       "source": "metasploit",
-      "file": "auxiliary_dos/scada/siemens_siprotec4",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/dos/scada/siemens_siprotec4.rb",
       "name": "Siemens SIPROTEC 4 and SIPROTEC Compact EN100 Ethernet Module - Denial of Service",
       "description": "This module sends a specially crafted packet to port 50000/UDP\n         causing a denial of service of the affected (Siemens SIPROTEC 4 and SIPROTEC Compact < V4.25) devices.\n         A manual reboot is required to return the device to service.\n         CVE-2015-5374 and a CVSS v2 base score of 7.8 have been assigned to this vulnerability."
     },
@@ -404,7 +404,7 @@
   "CVE-2015-1126": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/apple_safari_ftp_url_cookie_theft",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/apple_safari_ftp_url_cookie_theft.rb",
       "name": "Apple OSX/iOS/Windows Safari Non-HTTPOnly Cookie Theft",
       "description": "A vulnerability exists in versions of OSX, iOS, and Windows Safari released\n          before April 8, 2015 that allows the non-HTTPOnly cookies of any\n          domain to be stolen."
     }
@@ -412,7 +412,7 @@
   "CVE-2015-4495": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/firefox_pdfjs_file_theft",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/firefox_pdfjs_file_theft.rb",
       "name": "Firefox PDF.js Browser File Theft",
       "description": "This module abuses an XSS vulnerability in versions prior to Firefox 39.0.3, Firefox ESR\n          38.1.1, and Firefox OS 2.2 that allows arbitrary files to be stolen. The vulnerability\n          occurs in the PDF.js component, which uses Javascript to render a PDF inside a frame with\n          privileges to read local files. The in-the-wild malicious payloads searched for sensitive\n          files on Windows, Linux, and OSX. Android versions are reported to be unaffected, as they\n          do not use the Mozilla PDF viewer."
     },
@@ -440,7 +440,7 @@
   "CVE-2015-0072": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/ie_uxss_injection",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/ie_uxss_injection.rb",
       "name": "MS15-018 Microsoft Internet Explorer 10 and 11 Cross-Domain JavaScript Injection",
       "description": "This module exploits a universal cross-site scripting (UXSS) vulnerability found in Internet\n          Explorer 10 and 11. By default, you will steal the cookie from TARGET_URI (which cannot\n          have X-Frame-Options or it will fail). You can also have your own custom JavaScript\n          by setting the CUSTOMJS option. Lastly, you might need to configure the URIHOST option if\n          you are behind NAT."
     }
@@ -448,13 +448,13 @@
   "CVE-2015-7297": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/joomla_contenthistory_sqli",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/joomla_contenthistory_sqli.rb",
       "name": "Joomla com_contenthistory Error-Based SQL Injection",
       "description": "This module exploits a SQL injection vulnerability in Joomla versions 3.2\n          through 3.4.4 in order to either enumerate usernames and password hashes."
     },
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/joomla_contenthistory_sqli_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/joomla_contenthistory_sqli_rce.rb",
       "name": "Joomla Content History SQLi Remote Code Execution",
       "description": "This module exploits a SQL injection vulnerability found in Joomla versions\n          3.2 up to 3.4.4. The vulnerability exists in the Content History administrator\n          component in the core of Joomla. Triggering the SQL injection makes it possible\n          to retrieve active Super User sessions. The cookie can be used to login to the\n          Joomla administrator backend. By creating a new template file containing our\n          payload, remote code execution is made possible."
     },
@@ -494,7 +494,7 @@
   "CVE-2015-0921": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/mcafee_epo_xxe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/mcafee_epo_xxe.rb",
       "name": "McAfee ePolicy Orchestrator Authenticated XXE Credentials Exposure",
       "description": "This module will exploit an authenticated XXE vulnerability to read the keystore.properties\n          off of the filesystem. This properties file contains an encrypted password that is set during\n          installation. What is interesting about this password is that it is set as the same password\n          as the database 'sa' user and of the admin user created during installation. This password\n          is encrypted with a static key, and is encrypted using a weak cipher (ECB). By default,\n          if installed with a local SQL Server instance, the SQL Server is listening on all interfaces.\n\n          Recovering this password allows an attacker to potentially authenticate as the 'sa' SQL Server\n          user in order to achieve remote command execution with permissions of the database process. If\n          the administrator has not changed the password for the initially created account since installation,\n          the attacker will have the password for this account. By default, 'admin' is recommended.\n\n          Any user account can be used to exploit this, all that is needed is a valid credential.\n\n          The most data that can be successfully retrieved is 255 characters due to length restrictions\n          on the field used to perform the XXE attack."
     }
@@ -502,7 +502,7 @@
   "CVE-2015-0922": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/mcafee_epo_xxe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/mcafee_epo_xxe.rb",
       "name": "McAfee ePolicy Orchestrator Authenticated XXE Credentials Exposure",
       "description": "This module will exploit an authenticated XXE vulnerability to read the keystore.properties\n          off of the filesystem. This properties file contains an encrypted password that is set during\n          installation. What is interesting about this password is that it is set as the same password\n          as the database 'sa' user and of the admin user created during installation. This password\n          is encrypted with a static key, and is encrypted using a weak cipher (ECB). By default,\n          if installed with a local SQL Server instance, the SQL Server is listening on all interfaces.\n\n          Recovering this password allows an attacker to potentially authenticate as the 'sa' SQL Server\n          user in order to achieve remote command execution with permissions of the database process. If\n          the administrator has not changed the password for the initially created account since installation,\n          the attacker will have the password for this account. By default, 'admin' is recommended.\n\n          Any user account can be used to exploit this, all that is needed is a valid credential.\n\n          The most data that can be successfully retrieved is 255 characters due to length restrictions\n          on the field used to perform the XXE attack."
     }
@@ -510,7 +510,7 @@
   "CVE-2015-0975": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/opennms_xxe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/opennms_xxe.rb",
       "name": "OpenNMS Authenticated XXE",
       "description": "OpenNMS is vulnerable to XML External Entity Injection in the Real-Time Console interface.\n          Although this attack requires authentication, there are several factors that increase the\n          severity of this vulnerability.\n\n          1. OpenNMS runs with root privileges, taken from the OpenNMS FAQ: \"The difficulty with the\n          core of OpenNMS is that these components need to run as root to be able to bind to low-numbered\n          ports or generate network traffic that requires root\"\n\n          2. The user that you must authenticate as is the \"rtc\" user which has the default password of\n          \"rtc\". There is no mention of this user in the installation guides found here:\n          http://www.opennms.org/wiki/Tutorial_Installation, only mention that you should change the default\n          admin password of \"admin\" for security purposes."
     }
@@ -518,7 +518,7 @@
   "CVE-2015-1155": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/safari_file_url_navigation",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/safari_file_url_navigation.rb",
       "name": "Mac OS X Safari file:// Redirection Sandbox Escape",
       "description": "Versions of Safari before 8.0.6, 7.1.6, and 6.2.6 are vulnerable to a\n          \"state management issue\" that allows a browser window to be navigated\n          to a file:// URL. By dropping and loading a malicious .webarchive file,\n          an attacker can read arbitrary files, inject cross-domain Javascript, and\n          silently install Safari extensions."
     }
@@ -526,7 +526,7 @@
   "CVE-2015-3035": [
     {
       "source": "metasploit",
-      "file": "auxiliary_gather/tplink_archer_c7_traversal",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/gather/tplink_archer_c7_traversal.rb",
       "name": "Archer C7 Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability in the PATH_INFO found at /login/\n          on TP-Link Archer C5, C7, and C9 routers of varying versions."
     },
@@ -546,7 +546,7 @@
   "CVE-2015-7602": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ftp/bison_ftp_traversal",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ftp/bison_ftp_traversal.rb",
       "name": "BisonWare BisonFTP Server 3.5 Directory Traversal Information Disclosure",
       "description": "This module exploits a directory traversal vulnerability found in BisonWare BisonFTP server\n          version 3.5. This vulnerability allows an attacker to download arbitrary files from the server\n          by crafting a RETR command including file system traversal strings such as '..//.'"
     },
@@ -574,7 +574,7 @@
   "CVE-2015-7603": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ftp/konica_ftp_traversal",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ftp/konica_ftp_traversal.rb",
       "name": "Konica Minolta FTP Utility 1.00 Directory Traversal Information Disclosure",
       "description": "This module exploits a directory traversal vulnerability found in Konica Minolta FTP Utility 1.0.\n          This vulnerability allows an attacker to download arbitrary files from the server by crafting\n          a RETR command that includes file system traversal strings such as '..//'"
     },
@@ -602,7 +602,7 @@
   "CVE-2015-7601": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ftp/pcman_ftp_traversal",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ftp/pcman_ftp_traversal.rb",
       "name": "PCMan FTP Server 2.0.7 Directory Traversal Information Disclosure",
       "description": "This module exploits a directory traversal vulnerability found in PCMan FTP Server 2.0.7.\n          This vulnerability allows an attacker to download arbitrary files from the server by crafting\n          a RETR command that includes file system traversal strings such as '..//'"
     },
@@ -630,7 +630,7 @@
   "CVE-2015-2856": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/accellion_fta_statecode_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/accellion_fta_statecode_file_read.rb",
       "name": "Accellion FTA 'statecode' Cookie Arbitrary File Read",
       "description": "This module exploits a file disclosure vulnerability in the Accellion\n          File Transfer appliance. This vulnerability is triggered when a user-provided\n          'statecode' cookie parameter is appended to a file path that is processed as\n          a HTML template. By prepending this cookie with directory traversal sequence\n          and appending a NULL byte, any file readable by the web user can be exposed.\n          The web user has read access to a number of sensitive files, including the\n          system configuration and files uploaded to the appliance by users.\n          This issue was confirmed on version FTA_9_11_200, but may apply to previous\n          versions as well. This issue was fixed in software update FTA_9_11_210."
     }
@@ -638,7 +638,7 @@
   "CVE-2015-5531": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/elasticsearch_traversal",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/elasticsearch_traversal.rb",
       "name": "ElasticSearch Snapshot API Directory Traversal",
       "description": "'This module exploits a directory traversal vulnerability in\n          ElasticSearch, allowing an attacker to read arbitrary files\n          with JVM process privileges, through the Snapshot API.'"
     },
@@ -678,19 +678,19 @@
   "CVE-2015-8103": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/jenkins_command",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/jenkins_command.rb",
       "name": "Jenkins-CI Unauthenticated Script-Console Scanner",
       "description": "This module scans for unauthenticated Jenkins-CI script consoles and\n          executes the specified command."
     },
     {
       "source": "metasploit",
-      "file": "exploit_linux/misc/jenkins_java_deserialize",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/misc/jenkins_java_deserialize.rb",
       "name": "Jenkins CLI RMI Java Deserialization Vulnerability",
       "description": "This module exploits a vulnerability in Jenkins. An unsafe deserialization bug exists on\n          the Jenkins master, which allows remote arbitrary code execution. Authentication is not\n          required to exploit this vulnerability."
     },
     {
       "source": "metasploit",
-      "file": "exploit_linux/misc/opennms_java_serialize",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/misc/opennms_java_serialize.rb",
       "name": "OpenNMS Java Object Unserialization Remote Code Execution",
       "description": "This module exploits a vulnerability in the OpenNMS Java object which allows\n          an unauthenticated attacker to run arbitrary code against the system."
     },
@@ -718,7 +718,7 @@
   "CVE-2015-2562": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/joomla_ecommercewd_sqli_scanner",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/joomla_ecommercewd_sqli_scanner.rb",
       "name": "Web-Dorado ECommerce WD for Joomla! search_category_id SQL Injection Scanner",
       "description": "This module will scan for hosts vulnerable to an unauthenticated SQL injection within the\n          advanced search feature of the Web-Dorado ECommerce WD 1.2.5 and likely prior."
     },
@@ -746,13 +746,13 @@
   "CVE-2015-0235": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wordpress_ghost_scanner",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wordpress_ghost_scanner.rb",
       "name": "WordPress XMLRPC GHOST Vulnerability Scanner",
       "description": "This module can be used to determine hosts vulnerable to the GHOST vulnerability via\n          a call to the WordPress XMLRPC interface. If the target is vulnerable, the system\n          will segfault and return a server error. On patched systems, a normal XMLRPC error\n          is returned."
     },
     {
       "source": "metasploit",
-      "file": "exploit_linux/smtp/exim_gethostbyname_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/smtp/exim_gethostbyname_bof.rb",
       "name": "Exim GHOST (glibc gethostbyname) Buffer Overflow",
       "description": "This module remotely exploits CVE-2015-0235, aka GHOST, a heap-based\n          buffer overflow in the GNU C Library's gethostbyname functions on x86\n          and x86_64 GNU/Linux systems that run the Exim mail server."
     },
@@ -800,7 +800,7 @@
   "CVE-2015-2065": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_contus_video_gallery_sqli",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_contus_video_gallery_sqli.rb",
       "name": "WordPress Contus Video Gallery Unauthenticated SQL Injection Scanner",
       "description": "This module attempts to exploit a UNION-based SQL injection in Contus Video\n          Gallery for Wordpress version 2.7 and likely prior in order if the instance is\n          vulnerable."
     },
@@ -828,7 +828,7 @@
   "CVE-2015-10136": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_gimedia_library_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_gimedia_library_file_read.rb",
       "name": "WordPress GI-Media Library Plugin Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability in WordPress Plugin\n          GI-Media Library version 2.2.2, allowing to read arbitrary files from the\n          system with the web server privileges. This module has been tested successfully\n          on GI-Media Library version 2.2.2 with WordPress 4.1.3 on Ubuntu 12.04 Server."
     }
@@ -836,7 +836,7 @@
   "CVE-2015-9406": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_mobileedition_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_mobileedition_file_read.rb",
       "name": "WordPress Mobile Edition File Read Vulnerability",
       "description": "This module exploits a directory traversal vulnerability in WordPress Plugin\n          \"WP Mobile Edition\" version 2.2.7, allowing to read arbitrary files with the\n          web server privileges."
     },
@@ -856,7 +856,7 @@
   "CVE-2015-9538": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_nextgen_galley_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_nextgen_galley_file_read.rb",
       "name": "WordPress NextGEN Gallery Directory Read Vulnerability",
       "description": "This module exploits an authenticated directory traversal vulnerability\n          in WordPress Plugin \"NextGEN Gallery\" version 2.1.7, allowing\n          to read arbitrary directories with the web server privileges."
     }
@@ -864,7 +864,7 @@
   "CVE-2015-10134": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_simple_backup_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_simple_backup_file_read.rb",
       "name": "WordPress Simple Backup File Read Vulnerability",
       "description": "This module exploits a directory traversal vulnerability in WordPress Plugin\n          \"Simple Backup\" version 2.7.10, allowing to read arbitrary files with the\n          web server privileges."
     }
@@ -872,7 +872,7 @@
   "CVE-2015-10133": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/http/wp_subscribe_comments_file_read",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/http/wp_subscribe_comments_file_read.rb",
       "name": "WordPress Subscribe Comments File Read Vulnerability",
       "description": "This module exploits an authenticated directory traversal vulnerability\n          in WordPress Plugin \"Subscribe to Comments\" version 2.1.2, allowing\n          to read arbitrary files with the web server privileges."
     }
@@ -880,13 +880,13 @@
   "CVE-2015-2342": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/misc/java_jmx_server",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/misc/java_jmx_server.rb",
       "name": "Java JMX Server Insecure Endpoint Code Execution Scanner",
       "description": "Detect Java JMX endpoints"
     },
     {
       "source": "metasploit",
-      "file": "exploit_multi/misc/java_jmx_server",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/misc/java_jmx_server.rb",
       "name": "Java JMX Server Insecure Configuration Java Code Execution",
       "description": "This module takes advantage a Java JMX interface insecure configuration, which would\n          allow loading classes from any remote (HTTP) URL. JMX interfaces with authentication\n          disabled (com.sun.management.jmxremote.authenticate=false) should be vulnerable, while\n          interfaces with authentication enabled will be vulnerable only if a weak configuration\n          is deployed (allowing to use javax.management.loading.MLet, having a security manager\n          allowing to load a ClassLoader MBean, etc.)."
     },
@@ -914,7 +914,7 @@
   "CVE-2015-7871": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ntp/ntp_nak_to_the_future",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ntp/ntp_nak_to_the_future.rb",
       "name": "NTP \"NAK to the Future\"",
       "description": "Crypto-NAK packets can be used to cause ntpd to accept time from\n          unauthenticated ephemeral symmetric peers by bypassing the\n          authentication required to mobilize peer associations.  This module\n          sends these Crypto-NAK packets in order to establish an association\n          between the target ntpd instance and the attacking client.  The end goal\n          is to cause ntpd to declare the legitimate peers \"false tickers\" and\n          choose the attacking clients as the preferred peers, allowing\n          these peers to control time."
     }
@@ -922,7 +922,7 @@
   "CVE-2015-0240": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/smb/smb_uninit_cred",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/smb/smb_uninit_cred.rb",
       "name": "Samba _netr_ServerPasswordSet Uninitialized Credential State",
       "description": "This module checks if a Samba target is vulnerable to an uninitialized variable creds vulnerability."
     },
@@ -950,7 +950,7 @@
   "CVE-2015-7755": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ssh/juniper_backdoor",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ssh/juniper_backdoor.rb",
       "name": "Juniper SSH Backdoor Scanner",
       "description": "This module scans for the Juniper SSH backdoor (also valid on Telnet).\n          Any username is required, and the password is <<< %s(un='%s') = %u."
     }
@@ -958,7 +958,7 @@
   "CVE-2015-4000": [
     {
       "source": "metasploit",
-      "file": "auxiliary_scanner/ssl/ssl_version",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/scanner/ssl/ssl_version.rb",
       "name": "SSL/TLS Version Detection",
       "description": "Check if a server supports a given version of SSL/TLS and cipher suites.\n\n        The certificate is stored in loot, and any known vulnerabilities against that\n        SSL version and cipher suite combination are checked. These checks include\n        POODLE, deprecated protocols, expired/not valid certs, low key strength, null cipher suites,\n        certificates signed with MD5, DROWN, RC4 ciphers, exportable ciphers, LOGJAM, and BEAST."
     }
@@ -966,7 +966,7 @@
   "CVE-2015-6127": [
     {
       "source": "metasploit",
-      "file": "auxiliary_server/ms15_134_mcl_leak",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/server/ms15_134_mcl_leak.rb",
       "name": "MS15-134 Microsoft Windows Media Center MCL Information Disclosure",
       "description": "This module exploits a vulnerability found in Windows Media Center. It allows an MCL\n          file to render itself as an HTML document in the local machine zone by Internet Explorer,\n          which can be used to leak files on the target machine.\n\n          Please be aware that if this exploit is used against a patched Windows, it can cause the\n          computer to be very slow or unresponsive (100% CPU). It seems to be related to how the\n          exploit uses the URL attribute in order to render itself as an HTML file."
     },
@@ -994,7 +994,7 @@
   "CVE-2015-1793": [
     {
       "source": "metasploit",
-      "file": "auxiliary_server/openssl_altchainsforgery_mitm_proxy",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/auxiliary/server/openssl_altchainsforgery_mitm_proxy.rb",
       "name": "OpenSSL Alternative Chains Certificate Forgery MITM Proxy",
       "description": "This module exploits a logic error in OpenSSL by impersonating the server\n        and sending a specially-crafted chain of certificates, resulting in\n        certain checks on untrusted certificates to be bypassed on the client,\n        allowing it to use a valid leaf certificate as a CA certificate to sign a\n        fake certificate. The SSL/TLS session is then proxied to the server\n        allowing the session to continue normally and application data transmitted\n        between the peers to be saved.\n\n        The valid leaf certificate must not contain the keyUsage extension or it\n        must have at least the keyCertSign bit set (see X509_check_issued function\n        in crypto/x509v3/v3_purp.c); otherwise; X509_verify_cert fails with\n        X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY. This module requires an\n        active man-in-the-middle attack."
     },
@@ -1022,7 +1022,7 @@
   "CVE-2015-3864": [
     {
       "source": "metasploit",
-      "file": "exploit_android/browser/stagefright_mp4_tx3g_64bit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/android/browser/stagefright_mp4_tx3g_64bit.rb",
       "name": "Android Stagefright MP4 tx3g Integer Overflow",
       "description": "This module exploits an integer overflow vulnerability in the Stagefright\n          Library (libstagefright.so). The vulnerability occurs when parsing specially\n          crafted MP4 files. While a wide variety of remote attack vectors exist, this\n          particular exploit is designed to work within an HTML5 compliant browser.\n\n          Exploitation is done by supplying a specially crafted MP4 file with two\n          tx3g atoms that, when their sizes are summed, cause an integer overflow when\n          processing the second atom. As a result, a temporary buffer is allocated\n          with insufficient size and a memcpy call leads to a heap overflow.\n\n          This version of the exploit uses a two-stage information leak based on\n          corrupting the MetaData that the browser reads from mediaserver. This method\n          is based on a technique published in NorthBit's Metaphor paper. First,\n          we use a variant of their technique to read the address of a heap buffer\n          located adjacent to a SampleIterator object as the video HTML element's\n          videoHeight. Next, we read the vtable pointer from an empty Vector within\n          the SampleIterator object using the video element's duration. This gives\n          us a code address that we can use to determine the base address of\n          libstagefright and construct a ROP chain dynamically.\n\n          NOTE: the mediaserver process on many Android devices (Nexus, for example) is\n          constrained by SELinux and thus cannot use the execve system call. To avoid\n          this problem, the original exploit uses a kernel exploit payload that disables\n          SELinux and spawns a shell as root. Work is underway to make the framework\n          more amenable to these types of situations. Until that work is complete, this\n          exploit will only yield a shell on devices without SELinux or with SELinux in\n          permissive mode."
     },
@@ -1090,7 +1090,7 @@
   "CVE-2015-5453": [
     {
       "source": "metasploit",
-      "file": "exploit_freebsd/http/watchguard_cmd_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/freebsd/http/watchguard_cmd_exec.rb",
       "name": "Watchguard XCS Remote Command Execution",
       "description": "This module exploits two separate vulnerabilities found in the Watchguard XCS virtual\n          appliance to gain command execution. By exploiting an unauthenticated SQL injection, a\n          remote attacker may insert a valid web user into the appliance database, and get access\n          to the web interface. On the other hand, a vulnerability in the web interface allows the\n          attacker to inject operating system commands as the 'nobody' user."
     },
@@ -1118,7 +1118,7 @@
   "CVE-2015-2857": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/accellion_fta_getstatus_oauth",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/accellion_fta_getstatus_oauth.rb",
       "name": "Accellion FTA getStatus verify_oauth_token Command Execution",
       "description": "This module exploits a metacharacter shell injection vulnerability in the Accellion\n          File Transfer appliance. This vulnerability is triggered when a user-provided\n          'oauth_token' is passed into a system() call within a mod_perl handler. This\n          module exploits the '/tws/getStatus' endpoint. Other vulnerable handlers include\n          '/seos/find.api', '/seos/put.api', and /seos/mput.api'. This issue was confirmed on\n          version FTA_9_11_200, but may apply to previous versions as well. This issue was\n          fixed in software update FTA_9_11_210."
     },
@@ -1146,7 +1146,7 @@
   "CVE-2015-2797": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/airties_login_cgi_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/airties_login_cgi_bof.rb",
       "name": "Airties login-cgi Buffer Overflow",
       "description": "This module exploits a remote buffer overflow vulnerability on several Airties routers.\n          The vulnerability exists in the handling of HTTP queries to the login cgi with long\n          redirect parameters. The vulnerability doesn't require authentication. This module has\n          been tested successfully on the AirTies_Air5650v3TT_FW_1.0.2.0.bin firmware with emulation.\n          Other versions such as the Air6372, Air5760, Air5750, Air5650TT, Air5453, Air5444TT,\n          Air5443, Air5442, Air5343, Air5342, Air5341, Air5021 are also reported as vulnerable."
     },
@@ -1194,7 +1194,7 @@
   "CVE-2015-2049": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/dlink_dcs931l_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/dlink_dcs931l_upload.rb",
       "name": "D-Link DCS-931L File Upload",
       "description": "This module exploits a file upload vulnerability in D-Link DCS-931L\n          network cameras. The setFileUpload functionality allows authenticated\n          users to upload files to anywhere on the file system, allowing system\n          files to be overwritten, resulting in execution of arbitrary commands.\n          This module has been tested successfully on a D-Link DCS-931L with\n          firmware versions 1.01_B7 (2013-04-19) and 1.04_B1 (2014-04-21).\n          D-Link DCS-930L, DCS-932L, DCS-933L models are also reportedly\n          affected, but untested."
     },
@@ -1222,7 +1222,7 @@
   "CVE-2015-2051": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/dlink_hnap_header_exec_noauth",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/dlink_hnap_header_exec_noauth.rb",
       "name": "D-Link Devices HNAP SOAPAction-Header Command Execution",
       "description": "Different D-Link Routers are vulnerable to OS command injection in the HNAP SOAP\n          interface. Since it is a blind OS command injection vulnerability, there is no\n          output for the executed command. This module has been tested on a DIR-645 device.\n          The following devices are also reported as affected: DAP-1522 revB, DAP-1650 revB,\n          DIR-880L, DIR-865L, DIR-860L revA, DIR-860L revB DIR-815 revB, DIR-300 revB,\n          DIR-600 revB, DIR-645, TEW-751DR, TEW-733GR"
     },
@@ -1250,7 +1250,7 @@
   "CVE-2015-5082": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/efw_chpasswd_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/efw_chpasswd_exec.rb",
       "name": "Endian Firewall Proxy Password Change Command Injection",
       "description": "This module exploits an OS command injection vulnerability in a\n          web-accessible CGI script used to change passwords for locally-defined\n          proxy user accounts. Valid credentials for such an account are\n          required.\n\n          Command execution will be in the context of the \"nobody\" account, but\n          this account had broad sudo permissions, including to run the script\n          /usr/local/bin/chrootpasswd (which changes the password for the Linux\n          root account on the system to the value specified by console input\n          once it is executed).\n\n          The password for the proxy user account specified will *not* be\n          changed by the use of this module, as long as the target system is\n          vulnerable to the exploit.\n\n          Very early versions of Endian Firewall (e.g. 1.1 RC5) require\n          HTTP basic auth credentials as well to exploit this vulnerability.\n          Use the USERNAME and PASSWORD advanced options to specify these values\n          if required.\n\n          Versions >= 3.0.0 still contain the vulnerable code, but it appears to\n          never be executed due to a bug in the vulnerable CGI script which also\n          prevents normal use (http://jira.endian.com/browse/UTM-1002).\n\n          Versions 2.3.x and 2.4.0 are not vulnerable because of a similar bug\n          (http://bugs.endian.com/print_bug_page.php?bug_id=3083).\n\n          Tested successfully against the following versions of EFW Community:\n\n          1.1 RC5, 2.0, 2.1, 2.2, 2.5.1, 2.5.2.\n\n          Should function against any version from 1.1 RC5 to 2.2.x, as well as\n          2.4.1 and 2.5.x."
     },
@@ -1318,7 +1318,7 @@
   "CVE-2015-3628": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/f5_icall_cmd",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/f5_icall_cmd.rb",
       "name": "F5 iControl iCall::Script Root Command Execution",
       "description": "This module exploits an authenticated privilege escalation\n          vulnerability in the iControl API on the F5 BIG-IP LTM (and likely\n          other F5 devices). This requires valid credentials and the Resource\n          Administrator role. The exploit should work on BIG-IP 11.3.0\n          - 11.6.0, (11.5.x < 11.5.3 HF2 or 11.6.x < 11.6.0 HF6, see references\n          for more details)"
     },
@@ -1346,7 +1346,7 @@
   "CVE-2015-2843": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/goautodial_3_rce_command_injection",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/goautodial_3_rce_command_injection.rb",
       "name": "GoAutoDial 3.3 Authentication Bypass / Command Injection",
       "description": "This module exploits a SQL injection flaw in the login functionality for GoAutoDial version 3.3-1406088000 and below, and attempts to perform command injection. This also attempts to retrieve the admin user details, including the cleartext password stored in the underlying database. Command injection will be performed with root privileges.\n\n          This module has been tested successfully on GoAutoDial version 3.3-1406088000."
     },
@@ -1394,7 +1394,7 @@
   "CVE-2015-2845": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/goautodial_3_rce_command_injection",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/goautodial_3_rce_command_injection.rb",
       "name": "GoAutoDial 3.3 Authentication Bypass / Command Injection",
       "description": "This module exploits a SQL injection flaw in the login functionality for GoAutoDial version 3.3-1406088000 and below, and attempts to perform command injection. This also attempts to retrieve the admin user details, including the cleartext password stored in the underlying database. Command injection will be performed with root privileges.\n\n          This module has been tested successfully on GoAutoDial version 3.3-1406088000."
     },
@@ -1442,7 +1442,7 @@
   "CVE-2015-1187": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/multi_ncc_ping_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/multi_ncc_ping_exec.rb",
       "name": "D-Link/TRENDnet NCC Service Command Injection",
       "description": "This module exploits a remote command injection vulnerability on several routers. The\n          vulnerability exists in the ncc service, while handling ping commands. This module has\n          been tested on a DIR-626L emulated environment. Several D-Link and TRENDnet devices\n          are reported as affected, including: D-Link DIR-626L (Rev A) v1.04b04, D-Link DIR-636L\n          (Rev A) v1.04, D-Link DIR-808L (Rev A) v1.03b05, D-Link DIR-810L (Rev A) v1.01b04, D-Link\n          DIR-810L (Rev B) v2.02b01, D-Link DIR-820L (Rev A) v1.02B10, D-Link DIR-820L (Rev A)\n          v1.05B03, D-Link DIR-820L (Rev B) v2.01b02, D-Link DIR-826L (Rev A) v1.00b23, D-Link\n          DIR-830L (Rev A) v1.00b07, D-Link DIR-836L (Rev A) v1.01b03 and TRENDnet TEW-731BR (Rev 2)\n          v2.01b01"
     },
@@ -1470,13 +1470,13 @@
   "CVE-2015-4624": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/pineapple_bypass_cmdinject",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/pineapple_bypass_cmdinject.rb",
       "name": "Hak5 WiFi Pineapple Preconfiguration Command Injection",
       "description": "This module exploits a login/csrf check bypass vulnerability on WiFi Pineapples version 2.0 <= pineapple < 2.4.\n          These devices may typically be identified by their SSID beacons of 'Pineapple5_....';\n          Provided as part of the TospoVirus workshop at DEFCON23."
     },
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/pineapple_preconfig_cmdinject",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/pineapple_preconfig_cmdinject.rb",
       "name": "Hak5 WiFi Pineapple Preconfiguration Command Injection",
       "description": "This module exploits a command injection vulnerability on WiFi Pineapples version 2.0 <= pineapple < 2.4.\n          We use a combination of default credentials with a weakness in the anti-csrf generation to achieve\n          command injection on fresh pineapple devices prior to configuration. Additionally if default credentials fail,\n          you can enable a brute force solver for the proof-of-ownership challenge. This will reset the password to a\n          known password if successful and may interrupt the user experience. These devices may typically be identified\n          by their SSID beacons of 'Pineapple5_....'; details derived from the TospoVirus, a WiFi Pineapple infecting\n          worm."
     },
@@ -1504,7 +1504,7 @@
   "CVE-2015-8279": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/samsung_srv_1670d_upload_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/samsung_srv_1670d_upload_exec.rb",
       "name": "Samsung SRN-1670D Web Viewer Version 1.0.0.193 Arbitrary File Read and Upload",
       "description": "This module exploits an unrestricted file upload vulnerability in\n          Web Viewer 1.0.0.193 on Samsung SRN-1670D devices. The network_ssl_upload.php file\n          allows remote authenticated attackers to upload and execute arbitrary\n          PHP code via a filename with a .php extension, which is then accessed via a\n          direct request to the file in the upload/ directory.\n\n          To authenticate for this attack, one can obtain web-interface credentials\n          in cleartext by leveraging the existing local file read vulnerability\n          referenced by CVE-2015-8279, which allows remote attackers to read the\n          web interface credentials by sending a request to:\n          cslog_export.php?path=/root/php_modules/lighttpd/sbin/userpw URI."
     }
@@ -1512,7 +1512,7 @@
   "CVE-2015-9266": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/http/ubiquiti_airos_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/http/ubiquiti_airos_file_upload.rb",
       "name": "Ubiquiti airOS Arbitrary File Upload",
       "description": "This module exploits a pre-auth file upload to install a new root user\n          to /etc/passwd and an SSH key to /etc/dropbear/authorized_keys.\n\n          FYI, /etc/{passwd,dropbear/authorized_keys} will be overwritten.\n          /etc/persistent/rc.poststart will be overwritten if PERSIST_ETC is true.\n\n          This method is used by the \"mf\" malware infecting these devices."
     },
@@ -1540,7 +1540,7 @@
   "CVE-2015-3315": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/abrt_raceabrt_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/abrt_raceabrt_priv_esc.rb",
       "name": "ABRT raceabrt Privilege Escalation",
       "description": "This module attempts to gain root privileges on Linux systems with\n          a vulnerable version of Automatic Bug Reporting Tool (ABRT) configured\n          as the crash handler.\n\n          A race condition allows local users to change ownership of arbitrary\n          files (CVE-2015-3315). This module uses a symlink attack on\n          `/var/tmp/abrt/*/maps` to change the ownership of `/etc/passwd`,\n          then adds a new user with UID=0 GID=0 to gain root privileges.\n          Winning the race could take a few minutes.\n\n          This module has been tested successfully on:\n\n          abrt 2.1.11-12.el7 on RHEL 7.0 x86_64;\n          abrt 2.1.5-1.fc19 on Fedora Desktop 19 x86_64;\n          abrt 2.2.1-1.fc19 on Fedora Desktop 19 x86_64;\n          abrt 2.2.2-2.fc20 on Fedora Desktop 20 x86_64;\n          abrt 2.3.0-3.fc21 on Fedora Desktop 21 x86_64."
     },
@@ -1608,7 +1608,7 @@
   "CVE-2015-5287": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/abrt_sosreport_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/abrt_sosreport_priv_esc.rb",
       "name": "ABRT sosreport Privilege Escalation",
       "description": "This module attempts to gain root privileges on RHEL systems with\n          a vulnerable version of Automatic Bug Reporting Tool (ABRT) configured\n          as the crash handler.\n\n          `sosreport` uses an insecure temporary directory, allowing local users\n          to write to arbitrary files (CVE-2015-5287). This module uses a symlink\n          attack on `/var/tmp/abrt/cc-*$pid/` to overwrite the `modprobe` path\n          in `/proc/sys/kernel/modprobe`, resulting in root privileges.\n\n          Waiting for `sosreport` could take a few minutes.\n\n          This module has been tested successfully on:\n\n          abrt 2.1.11-12.el7 on RHEL 7.0 x86_64; and\n          abrt 2.1.11-19.el7 on RHEL 7.1 x86_64."
     },
@@ -1696,7 +1696,7 @@
   "CVE-2015-1318": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/apport_abrt_chroot_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/apport_abrt_chroot_priv_esc.rb",
       "name": "Apport / ABRT chroot Privilege Escalation",
       "description": "This module attempts to gain root privileges on Linux systems by\n          invoking the default coredump handler inside a namespace (\"container\").\n\n          Apport versions 2.13 through 2.17.x before 2.17.1 on Ubuntu are\n          vulnerable, due to a feature which allows forwarding reports to\n          a container's Apport by changing the root directory before loading\n          the crash report, causing `usr/share/apport/apport` within the crashed\n          task's directory to be executed.\n\n          Similarly, Fedora is vulnerable when the kernel crash handler is\n          configured to change root directory before executing ABRT, causing\n          `usr/libexec/abrt-hook-ccpp` within the crashed task's directory to be\n          executed.\n\n          In both instances, the crash handler does not drop privileges,\n          resulting in code execution as root.\n\n          This module has been tested successfully on Apport 2.14.1 on\n          Ubuntu 14.04.1 LTS x86 and x86_64 and ABRT on Fedora 19 and 20 x86_64."
     },
@@ -1784,7 +1784,7 @@
   "CVE-2015-8612": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/blueman_set_dhcp_handler_dbus_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/blueman_set_dhcp_handler_dbus_priv_esc.rb",
       "name": "blueman set_dhcp_handler D-Bus Privilege Escalation",
       "description": "This module attempts to gain root privileges by exploiting a Python\n          code injection vulnerability in blueman versions prior to 2.0.3.\n\n          The `org.blueman.Mechanism.EnableNetwork` D-Bus interface exposes the\n          `set_dhcp_handler` function which uses user input in a call to `eval`,\n          without sanitization, resulting in arbitrary code execution as root.\n\n          This module has been tested successfully with blueman version 1.23\n          on Debian 8 Jessie (x64)."
     },
@@ -1832,7 +1832,7 @@
   "CVE-2015-3245": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/libuser_roothelper_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/libuser_roothelper_priv_esc.rb",
       "name": "Libuser roothelper Privilege Escalation",
       "description": "This module attempts to gain root privileges on Red Hat based Linux\n          systems, including RHEL, Fedora and CentOS, by exploiting a newline\n          injection vulnerability in libuser and userhelper versions prior to\n          0.56.13-8 and version 0.60 before 0.60-7.\n\n          This module makes use of the roothelper.c exploit from Qualys to\n          insert a new user with UID=0 in /etc/passwd.\n\n          Note, the password for the current user is required by userhelper.\n\n          Note, on some systems, such as Fedora 11, the user entry for the\n          current user in /etc/passwd will become corrupted and exploitation\n          will fail.\n\n          This module has been tested successfully on libuser packaged versions\n          0.56.13-4.el6 on CentOS 6.0 (x86_64);\n          0.56.13-5.el6 on CentOS 6.5 (x86_64);\n          0.60-5.el7 on CentOS 7.1-1503 (x86_64);\n          0.56.16-1.fc13 on Fedora 13 (i686);\n          0.59-1.fc19 on Fedora Desktop 19 (x86_64);\n          0.60-3.fc20 on Fedora Desktop 20 (x86_64);\n          0.60-6.fc21 on Fedora Desktop 21 (x86_64);\n          0.60-6.fc22 on Fedora Desktop 22 (x86_64);\n          0.56.13-5.el6 on Red Hat 6.6 (x86_64); and\n          0.60-5.el7 on Red Hat 7.0 (x86_64).\n\n          RHEL 5 is vulnerable, however the installed version of glibc (2.5)\n          is missing various functions required by roothelper.c."
     },
@@ -1900,7 +1900,7 @@
   "CVE-2015-3246": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/libuser_roothelper_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/libuser_roothelper_priv_esc.rb",
       "name": "Libuser roothelper Privilege Escalation",
       "description": "This module attempts to gain root privileges on Red Hat based Linux\n          systems, including RHEL, Fedora and CentOS, by exploiting a newline\n          injection vulnerability in libuser and userhelper versions prior to\n          0.56.13-8 and version 0.60 before 0.60-7.\n\n          This module makes use of the roothelper.c exploit from Qualys to\n          insert a new user with UID=0 in /etc/passwd.\n\n          Note, the password for the current user is required by userhelper.\n\n          Note, on some systems, such as Fedora 11, the user entry for the\n          current user in /etc/passwd will become corrupted and exploitation\n          will fail.\n\n          This module has been tested successfully on libuser packaged versions\n          0.56.13-4.el6 on CentOS 6.0 (x86_64);\n          0.56.13-5.el6 on CentOS 6.5 (x86_64);\n          0.60-5.el7 on CentOS 7.1-1503 (x86_64);\n          0.56.16-1.fc13 on Fedora 13 (i686);\n          0.59-1.fc19 on Fedora Desktop 19 (x86_64);\n          0.60-3.fc20 on Fedora Desktop 20 (x86_64);\n          0.60-6.fc21 on Fedora Desktop 21 (x86_64);\n          0.60-6.fc22 on Fedora Desktop 22 (x86_64);\n          0.56.13-5.el6 on Red Hat 6.6 (x86_64); and\n          0.60-5.el7 on Red Hat 7.0 (x86_64).\n\n          RHEL 5 is vulnerable, however the installed version of glibc (2.5)\n          is missing various functions required by roothelper.c."
     },
@@ -1968,7 +1968,7 @@
   "CVE-2015-1328": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/overlayfs_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/overlayfs_priv_esc.rb",
       "name": "Overlayfs Privilege Escalation",
       "description": "This module attempts to exploit two different CVEs related to overlayfs.\n          CVE-2015-1328: Ubuntu specific -> 3.13.0-24 (14.04 default) < 3.13.0-55\n          3.16.0-25 (14.10 default) < 3.16.0-41\n          3.19.0-18 (15.04 default) < 3.19.0-21\n          CVE-2015-8660:\n          Ubuntu:\n          3.19.0-18 < 3.19.0-43\n          4.2.0-18 < 4.2.0-23 (14.04.1, 15.10)\n          Fedora:\n          < 4.2.8 (vulnerable, un-tested)\n          Red Hat:\n          < 3.10.0-327 (rhel 6, vulnerable, un-tested)"
     },
@@ -2036,7 +2036,7 @@
   "CVE-2015-8660": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/local/overlayfs_priv_esc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/local/overlayfs_priv_esc.rb",
       "name": "Overlayfs Privilege Escalation",
       "description": "This module attempts to exploit two different CVEs related to overlayfs.\n          CVE-2015-1328: Ubuntu specific -> 3.13.0-24 (14.04 default) < 3.13.0-55\n          3.16.0-25 (14.10 default) < 3.16.0-41\n          3.19.0-18 (15.04 default) < 3.19.0-21\n          CVE-2015-8660:\n          Ubuntu:\n          3.19.0-18 < 3.19.0-43\n          4.2.0-18 < 4.2.0-23 (14.04.1, 15.10)\n          Fedora:\n          < 4.2.8 (vulnerable, un-tested)\n          Red Hat:\n          < 3.10.0-327 (rhel 6, vulnerable, un-tested)"
     },
@@ -2104,7 +2104,7 @@
   "CVE-2015-7611": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/smtp/apache_james_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/smtp/apache_james_exec.rb",
       "name": "Apache James Server 2.3.2 Insecure User Creation Arbitrary File Write",
       "description": "This module exploits a vulnerability that exists due to a lack of input\n          validation when creating a user. Messages for a given user are stored\n          in a directory partially defined by the username. By creating a user\n          with a directory traversal payload as the username, commands can be\n          written to a given directory. To use this module with the cron\n          exploitation method, run the exploit using the given payload, host, and\n          port. After running the exploit, the payload will be executed within 60\n          seconds. Due to differences in how cron may run in certain Linux\n          operating systems such as Ubuntu, it may be preferable to set the\n          target to Bash Completion as the cron method may not work. If the target\n          is set to Bash completion, start a listener using the given payload,\n          host, and port before running the exploit. After running the exploit,\n          the payload will be executed when a user logs into the system. For this\n          exploitation method, bash completion must be enabled to gain code\n          execution. This exploitation method will leave an Apache James mail\n          object artifact in the /etc/bash_completion.d directory and the\n          malicious user account."
     },
@@ -2132,7 +2132,7 @@
   "CVE-2015-0936": [
     {
       "source": "metasploit",
-      "file": "exploit_linux/ssh/ceragon_fibeair_known_privkey",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/linux/ssh/ceragon_fibeair_known_privkey.rb",
       "name": "Ceragon FibeAir IP-10 SSH Private Key Exposure",
       "description": "Ceragon ships a public/private key pair on FibeAir IP-10 devices\n            that allows passwordless authentication to any other IP-10 device.\n            Since the key is easily retrievable, an attacker can use it to\n            gain unauthorized remote access as the \"mateidu\" user."
     },
@@ -2160,7 +2160,7 @@
   "CVE-2015-5119": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_hacking_team_uaf",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_hacking_team_uaf.rb",
       "name": "Adobe Flash Player ByteArray Use After Free",
       "description": "This module exploits an use after free on Adobe Flash Player. The vulnerability,\n          discovered by Hacking Team and made public as part of the July 2015 data leak, was\n          described as an Use After Free while handling ByteArray objects. This module has\n          been tested successfully on:\n\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 18.0.0.194,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 18.0.0.194,\n          Windows 8.1 (32-bit), IE11 and Adobe Flash 18.0.0.194,\n          Windows 8.1 (32-bit), Firefox and Adobe Flash 18.0.0.194, and\n          Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.468."
     },
@@ -2188,7 +2188,7 @@
   "CVE-2015-3043": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_nellymoser_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_nellymoser_bof.rb",
       "name": "Adobe Flash Player Nellymoser Audio Decoding Buffer Overflow",
       "description": "This module exploits a buffer overflow on Adobe Flash Player when handling nellymoser\n          encoded audio inside a FLV video, as exploited in the wild on June 2015. This module\n          has been tested successfully on:\n\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 18.0.0.160,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 18.0.0.160,\n          Windows 8.1, Firefox 38.0.5 and Adobe Flash 18.0.0.160,\n          Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.466, and\n          Ubuntu 14.04.2 LTS, Firefox 35.01, and Adobe Flash 11.2.202.466.\n\n          Note that this exploit is effective against both CVE-2015-3113 and the\n          earlier CVE-2015-3043, since CVE-2015-3113 is effectively a regression\n          to the same root cause as CVE-2015-3043."
     },
@@ -2216,7 +2216,7 @@
   "CVE-2015-3113": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_nellymoser_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_nellymoser_bof.rb",
       "name": "Adobe Flash Player Nellymoser Audio Decoding Buffer Overflow",
       "description": "This module exploits a buffer overflow on Adobe Flash Player when handling nellymoser\n          encoded audio inside a FLV video, as exploited in the wild on June 2015. This module\n          has been tested successfully on:\n\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 18.0.0.160,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 18.0.0.160,\n          Windows 8.1, Firefox 38.0.5 and Adobe Flash 18.0.0.160,\n          Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.466, and\n          Ubuntu 14.04.2 LTS, Firefox 35.01, and Adobe Flash 11.2.202.466.\n\n          Note that this exploit is effective against both CVE-2015-3113 and the\n          earlier CVE-2015-3043, since CVE-2015-3113 is effectively a regression\n          to the same root cause as CVE-2015-3043."
     },
@@ -2244,7 +2244,7 @@
   "CVE-2015-0336": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_net_connection_confusion",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_net_connection_confusion.rb",
       "name": "Adobe Flash Player NetConnection Type Confusion",
       "description": "This module exploits a type confusion vulnerability in the NetConnection class on\n          Adobe Flash Player. When using a correct memory layout this vulnerability allows\n          to corrupt arbitrary memory. It can be used to overwrite dangerous objects, like\n          vectors, and ultimately accomplish remote code execution. This module has been tested\n          successfully on:\n          * Windows 7 SP1 (32-bit), IE 8, IE11 and Adobe Flash 16.0.0.305.\n          * Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 16.0.0.305.\n          * Windows 8.1, Firefox 38.0.5 and Adobe Flash 16.0.0.305.\n          * Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.424.\n          * Ubuntu 14.04.2 LTS, Firefox 33.0 and Adobe Flash 11.2.202.442."
     },
@@ -2272,7 +2272,7 @@
   "CVE-2015-5122": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_opaque_background_uaf",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_opaque_background_uaf.rb",
       "name": "Adobe Flash opaqueBackground Use After Free",
       "description": "This module exploits an use after free on Adobe Flash Player. The vulnerability,\n          discovered by Hacking Team and made public as part of the July 2015 data leak, was\n          described as an Use After Free while handling the opaqueBackground property\n          7 setter of the flash.display.DisplayObject class. This module is an early release\n          tested on:\n\n          Windows XP SP3, IE8 and Flash 18.0.0.194,\n          Windows XP SP3, IE 8 and Flash 18.0.0.203,\n          Windows XP SP3, Firefox and Flash 18.0.0.203,\n          Windows Vista SP2 + IE 9 and Flash 18.0.0.203,\n          Windows Vista SP2 + Firefox 39.0 and Flash 18.0.0.203,\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 18.0.0.203,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 18.0.0.194,\n          Windows 7 SP1 (32-bit), IE9 and Adobe Flash 18.0.0.203,\n          Windows 7 SP1 (32-bit), Firefox and Adobe Flash 18.0.0.194,\n          Windows 8.1 (32-bit), IE11 and Adobe Flash 18.0.0.194,\n          windows 8.1 (32-bit), Firefox and Adobe Flash 18.0.0.203,\n          Windows 8.1 (32-bit), Firefox and Adobe Flash 18.0.0.160 and\n          Windows 8.1 (32-bit), Firefox and Adobe Flash 18.0.0.194\n          Windows 10 Build 10240 (32-bit) IE11, Firefox 39.0 and Adobe Flash 18.0.0.203"
     },
@@ -2300,7 +2300,7 @@
   "CVE-2015-3105": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_shader_drawing_fill",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_shader_drawing_fill.rb",
       "name": "Adobe Flash Player Drawing Fill Shader Memory Corruption",
       "description": "This module exploits a memory corruption happening when applying a Shader as a drawing fill\n          as exploited in the wild on June 2015. This module has been tested successfully on:\n\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 17.0.0.188,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 17.0.0.188,\n          Windows 8.1, Firefox 38.0.5 and Adobe Flash 17.0.0.188, and\n          Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.460."
     },
@@ -2328,7 +2328,7 @@
   "CVE-2015-3090": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_shader_job_overflow",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_shader_job_overflow.rb",
       "name": "Adobe Flash Player ShaderJob Buffer Overflow",
       "description": "This module exploits a buffer overflow vulnerability related to the ShaderJob workings on\n          Adobe Flash Player. The vulnerability happens when trying to apply a Shader setting up the\n          same Bitmap object as src and destination of the ShaderJob. Modifying the \"width\" attribute\n          of the ShaderJob after starting the job it's possible to create a buffer overflow condition\n          where the size of the destination buffer and the length of the copy are controlled. This\n          module has been tested successfully on:\n\n          Windows 7 SP1 (32-bit), IE11 and Adobe Flash 17.0.0.169,\n          Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 17.0.0.169,\n          Windows 8.1, Firefox 38.0.5 and Adobe Flash 17.0.0.169, and\n          Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Adobe Flash 11.2.202.457."
     },
@@ -2356,7 +2356,7 @@
   "CVE-2015-0311": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/adobe_flash_uncompress_zlib_uaf",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/adobe_flash_uncompress_zlib_uaf.rb",
       "name": "Adobe Flash Player ByteArray UncompressViaZlibVariant Use After Free",
       "description": "This module exploits a use after free vulnerability in Adobe Flash Player. The\n          vulnerability occurs in the ByteArray::UncompressViaZlibVariant method, when trying\n          to uncompress() a malformed byte stream. This module has been tested successfully\n          on:\n          * Windows 7 SP1 (32 bits), IE 8 to IE 11 and Flash 16.0.0.287, 16.0.0.257 and 16.0.0.235.\n          * Windows 7 SP1 (32-bit), Firefox 38.0.5 and Adobe Flash 16.0.0.287.\n          * Windows 8.1, Firefox 38.0.5 and Adobe Flash 16.0.0.305.\n          * Linux Mint \"Rebecca\" (32 bits), Firefox 33.0 and Flash 11.2.202.424."
     },
@@ -2384,7 +2384,7 @@
   "CVE-2015-0816": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/firefox_pdfjs_privilege_escalation",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/firefox_pdfjs_privilege_escalation.rb",
       "name": "Firefox PDF.js Privileged Javascript Injection",
       "description": "This module gains remote code execution on Firefox 35-36 by abusing a\n          privilege escalation bug in resource:// URIs. PDF.js is used to exploit\n          the bug. This exploit requires the user to click anywhere on the page to\n          trigger the vulnerability."
     },
@@ -2412,13 +2412,13 @@
   "CVE-2015-0802": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/firefox_pdfjs_privilege_escalation",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/firefox_pdfjs_privilege_escalation.rb",
       "name": "Firefox PDF.js Privileged Javascript Injection",
       "description": "This module gains remote code execution on Firefox 35-36 by abusing a\n          privilege escalation bug in resource:// URIs. PDF.js is used to exploit\n          the bug. This exploit requires the user to click anywhere on the page to\n          trigger the vulnerability."
     },
     {
       "source": "metasploit",
-      "file": "exploit_multi/browser/firefox_proxy_prototype",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/browser/firefox_proxy_prototype.rb",
       "name": "Firefox Proxy Prototype Privileged Javascript Injection",
       "description": "This exploit gains remote code execution on Firefox 31-34 by abusing a bug in the XPConnect\n          component and gaining a reference to the privileged chrome:// window. This exploit\n          requires the user to click anywhere on the page to trigger the vulnerability."
     },
@@ -2446,7 +2446,7 @@
   "CVE-2015-1427": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/elasticsearch/search_groovy_script",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/elasticsearch/search_groovy_script.rb",
       "name": "ElasticSearch Search Groovy Sandbox Bypass",
       "description": "This module exploits a remote command execution (RCE) vulnerability in ElasticSearch,\n          exploitable by default on ElasticSearch prior to 1.4.3. The bug is found in the\n          REST API, which does not require authentication, where the search function allows\n          groovy code execution and its sandbox can be bypassed using java.lang.Math.class.forName\n          to reference arbitrary classes. It can be used to execute arbitrary Java code. This\n          module has been tested successfully on ElasticSearch 1.4.2 on Ubuntu Server 12.04."
     },
@@ -2506,7 +2506,7 @@
   "CVE-2015-7309": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/bolt_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/bolt_file_upload.rb",
       "name": "CMS Bolt File Upload Vulnerability",
       "description": "Bolt CMS contains a flaw that allows an authenticated remote\n          attacker to execute arbitrary PHP code. This module was\n          tested on version 2.2.4."
     },
@@ -2534,7 +2534,7 @@
   "CVE-2015-5603": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/jira_hipchat_template",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/jira_hipchat_template.rb",
       "name": "Atlassian HipChat for Jira Plugin Velocity Template Injection",
       "description": "Atlassian Hipchat is a web service for internal instant messaging. A plugin is available\n          for Jira that allows team collaboration at real time. A message can be used to inject Java\n          code into a Velocity template, and gain code execution as Jira. Authentication is required\n          to exploit this vulnerability, and you must make sure the account you're using isn't\n          protected by captcha. By default, Java payload will be used because it is cross-platform,\n          but you can also specify which native payload you want (Linux or Windows).\n\n          HipChat for Jira plugin versions between 1.3.2 and 6.30.0 are affected. Jira versions\n          between 6.3.5 and 6.4.10 are also affected by default, because they were bundled with\n          a vulnerable copy of HipChat.\n\n          When using the check command, if you supply a valid username and password, the module\n          will be able to trigger the bug and check more accurately. If not, it falls back to\n          passive, which can only tell if the target is running on a Jira version that is bundled\n          with a vulnerable copy of Hipchat by default, which is less reliable.\n\n          This vulnerability was originally discovered internally by Atlassian."
     },
@@ -2582,7 +2582,7 @@
   "CVE-2015-8562": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/joomla_http_header_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/joomla_http_header_rce.rb",
       "name": "Joomla HTTP Header Unauthenticated Remote Code Execution",
       "description": "Joomla suffers from an unauthenticated remote code execution that affects all versions from 1.5.0 to 3.4.5.\n          By storing user supplied headers in the databases session table it's possible to truncate the input\n          by sending an UTF-8 character. The custom created payload is then executed once the session is read\n          from the database. You also need to have a PHP version before 5.4.45 (including 5.3.x), 5.5.29 or 5.6.13.\n          In later versions the deserialisation of invalid session data stops on the first error and the\n          exploit will not work. The PHP Patch was included in Ubuntu versions 5.5.9+dfsg-1ubuntu4.13 and\n          5.3.10-1ubuntu3.20 and in Debian in version 5.4.45-0+deb7u1."
     },
@@ -2642,7 +2642,7 @@
   "CVE-2015-6967": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/nibbleblog_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/nibbleblog_file_upload.rb",
       "name": "Nibbleblog File Upload Vulnerability",
       "description": "Nibbleblog contains a flaw that allows an authenticated remote\n          attacker to execute arbitrary PHP code. This module was\n          tested on version 4.0.3."
     },
@@ -2670,7 +2670,7 @@
   "CVE-2015-5958": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/phpfilemanager_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/phpfilemanager_rce.rb",
       "name": "phpFileManager 0.9.8 Remote Code Execution",
       "description": "This module exploits a remote code execution vulnerability in phpFileManager\n          0.9.8 which is a filesystem management tool on a single file."
     }
@@ -2678,7 +2678,7 @@
   "CVE-2015-2208": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/phpmoadmin_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/phpmoadmin_exec.rb",
       "name": "PHPMoAdmin 1.1.2 Remote Code Execution",
       "description": "This module exploits an arbitrary PHP command execution vulnerability due to a\n          dangerous use of eval() in PHPMoAdmin."
     },
@@ -2706,7 +2706,7 @@
   "CVE-2015-3884": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/qdpm_upload_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/qdpm_upload_exec.rb",
       "name": "qdPM v7 Arbitrary PHP File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in qdPM - a web-based project management\n          software. The user profile's photo upload feature can be abused to upload any\n          arbitrary file onto the victim server machine, which allows remote code execution.\n          Please note in order to use this module, you must have a valid credential to sign\n          in."
     }
@@ -2714,7 +2714,7 @@
   "CVE-2015-3224": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/rails_web_console_v2_code_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/rails_web_console_v2_code_exec.rb",
       "name": "Ruby on Rails Web Console (v2) Whitelist Bypass Code Execution",
       "description": "This module exploits an IP whitelist bypass vulnerability in the developer\n          web console included with Ruby on Rails 4.0.x and 4.1.x. This module will also\n          achieve code execution on Rails 4.2.x if the attack is launched from a\n          whitelisted IP range."
     },
@@ -2754,7 +2754,7 @@
   "CVE-2015-5371": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/solarwinds_store_manager_auth_filter",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/solarwinds_store_manager_auth_filter.rb",
       "name": "SolarWinds Storage Manager Authentication Bypass",
       "description": "This module exploits an authentication bypass vulnerability in Solarwinds Storage Manager.\n          The vulnerability exists in the AuthenticationFilter, which allows to bypass authentication\n          with specially crafted URLs. After bypassing authentication, is possible to use a file\n          upload function to achieve remote code execution. This module has been tested successfully\n          in Solarwinds Store Manager Server 5.1.0 and 5.7.1 on Windows 32 bits, Windows 64 bits and\n          Linux 64 bits operating systems."
     }
@@ -2762,7 +2762,7 @@
   "CVE-2015-2994": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/sysaid_auth_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/sysaid_auth_file_upload.rb",
       "name": "SysAid Help Desk Administrator Portal Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability in SysAid Help Desk.\n          The vulnerability exists in the ChangePhoto.jsp in the administrator portal,\n          which does not correctly handle directory traversal sequences and does not\n          enforce file extension restrictions. While an attacker needs an administrator\n          account in order to leverage this vulnerability, there is a related Metasploit\n          auxiliary module which can create this account under some circumstances.\n          This module has been tested in SysAid v14.4 in both Linux and Windows."
     },
@@ -2810,7 +2810,7 @@
   "CVE-2015-2995": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/sysaid_rdslogs_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/sysaid_rdslogs_file_upload.rb",
       "name": "SysAid Help Desk 'rdslogs' Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability in SysAid Help Desk v14.3 and v14.4.\n          The vulnerability exists in the RdsLogsEntry servlet which accepts unauthenticated\n          file uploads and handles zip file contents in an insecure way. By combining both weaknesses,\n          a remote attacker can accomplish remote code execution. Note that this will only work if the\n          target is running Java 6 or 7 up to 7u25, as Java 7u40 and above introduces a protection\n          against null byte injection in file names. This module has been tested successfully on version\n          v14.3.12 b22 and v14.4.32 b25 in Linux. In theory this module also works on Windows, but SysAid\n          seems to bundle Java 7u40 and above with the Windows package which prevents the vulnerability\n          from being exploited."
     },
@@ -2858,7 +2858,7 @@
   "CVE-2015-9263 ": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/uptime_file_upload_2",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/uptime_file_upload_2.rb",
       "name": "Idera Up.Time Monitoring Station 7.4 post2file.php Arbitrary File Upload",
       "description": "This module exploits a vulnerability found in Uptime version 7.4.0 and 7.5.0.\n\n          The vulnerability began as a classic arbitrary file upload vulnerability in post2file.php,\n          which can be exploited by exploits/multi/http/uptime_file_upload_1.rb, but it was mitigated\n          by the vendor.\n\n          Although the mitigation in place will prevent uptime_file_upload_1.rb from working, it\n          can still be bypassed and gain privilege escalation, and allows the attacker to upload file\n          again, and execute arbitrary commands."
     }
@@ -2866,7 +2866,7 @@
   "CVE-2015-7808": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/vbulletin_unserialize",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/vbulletin_unserialize.rb",
       "name": "vBulletin 5.1.2 Unserialize Code Execution",
       "description": "This module exploits a PHP object injection vulnerability in vBulletin 5.1.2 to 5.1.9"
     },
@@ -2934,7 +2934,7 @@
   "CVE-2015-6000": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/vtiger_logo_upload_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/vtiger_logo_upload_exec.rb",
       "name": "Vtiger CRM - Authenticated Logo Upload RCE",
       "description": "Vtiger 6.3.0 CRM's administration interface allows for the upload of a company logo.\n          Instead of uploading an image, an attacker may choose to upload a file containing PHP code and\n          run this code by accessing the resulting PHP file.\n\n          This module was tested against vTiger CRM v6.3.0."
     },
@@ -2962,7 +2962,7 @@
   "CVE-2015-0779": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/http/zenworks_configuration_management_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/http/zenworks_configuration_management_upload.rb",
       "name": "Novell ZENworks Configuration Management Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability in Novell ZENworks Configuration\n          Management (ZCM, which is part of the ZENworks Suite). The vulnerability exists in\n          the UploadServlet which accepts unauthenticated file uploads and does not check the\n          \"uid\" parameter for directory traversal characters. This allows an attacker to write\n          anywhere in the file system, and can be abused to deploy a WAR file in the Tomcat\n          webapps directory. ZCM up to (and including) 11.3.1 is vulnerable to this attack.\n          This module has been tested successfully with ZCM 11.3.1 on Windows and Linux. Note\n          that this is a similar vulnerability to ZDI-10-078 / OSVDB-63412 which also has a\n          Metasploit exploit, but it abuses a different parameter of the same servlet."
     },
@@ -3010,7 +3010,7 @@
   "CVE-2015-7709": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/misc/arkeia_agent_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/misc/arkeia_agent_exec.rb",
       "name": "Western Digital Arkeia Remote Code Execution",
       "description": "This module exploits a code execution flaw in Western Digital Arkeia version 11.0.12 and below.\n          The vulnerability exists in the 'arkeiad' daemon listening on TCP port 617. Because there are\n          insufficient checks on the authentication of all clients, this can be bypassed.\n          Using the ARKFS_EXEC_CMD operation it's possible to execute arbitrary commands with root or\n          SYSTEM privileges.\n          The daemon is installed on both the Arkeia server as well on all the backup clients. The module\n          has been successfully tested on Windows, Linux, OSX, FreeBSD and OpenBSD."
     },
@@ -3038,7 +3038,7 @@
   "CVE-2015-1497": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/misc/persistent_hpca_radexec_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/misc/persistent_hpca_radexec_exec.rb",
       "name": "HP Client Automation Command Injection",
       "description": "This module exploits a command injection vulnerability on HP Client Automation, distributed\n          actually as Persistent Systems Client Automation. The vulnerability exists in the Notify\n          Daemon (radexecd.exe), which doesn't authenticate execution requests by default.\n\n          This module has been tested successfully on HP Client Automation 9.00 on Windows 2003 SP2\n          and CentOS 5."
     },
@@ -3106,7 +3106,7 @@
   "CVE-2015-4852": [
     {
       "source": "metasploit",
-      "file": "exploit_multi/misc/weblogic_deserialize_rawobject",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/multi/misc/weblogic_deserialize_rawobject.rb",
       "name": "Oracle Weblogic Server Deserialization RCE - Raw Object",
       "description": "An unauthenticated attacker with network access to the Oracle Weblogic Server T3\n          interface can send a serialized object (weblogic.jms.common.StreamMessageImpl)\n          to the interface to execute code on vulnerable hosts."
     },
@@ -3174,7 +3174,7 @@
   "CVE-2015-7007": [
     {
       "source": "metasploit",
-      "file": "exploit_osx/browser/safari_user_assisted_applescript_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/browser/safari_user_assisted_applescript_exec.rb",
       "name": "Safari User-Assisted Applescript Exec Attack",
       "description": "In versions of Mac OS X before 10.11.1, the applescript:// URL\n          scheme is provided, which opens the provided script in the Applescript\n          Editor. Pressing cmd-R in the Editor executes the code without any\n          additional confirmation from the user. By getting the user to press\n          cmd-R in Safari, and by hooking the cmd-key keypress event, a user\n          can be tricked into running arbitrary Applescript code.\n\n          Gatekeeper should be disabled from Security & Privacy in order to\n          avoid the unidentified Developer prompt."
     },
@@ -3202,7 +3202,7 @@
   "CVE-2015-3760": [
     {
       "source": "metasploit",
-      "file": "exploit_osx/local/dyld_print_to_file_root",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/local/dyld_print_to_file_root.rb",
       "name": "Apple OS X DYLD_PRINT_TO_FILE Privilege Escalation",
       "description": "In Apple OS X 10.10.4 and prior, the DYLD_PRINT_TO_FILE environment\n          variable is used for redirecting logging data to a file instead of\n          stderr. Due to a design error, this feature can be abused by a local\n          attacker to write arbitrary files as root via restricted, SUID-root\n          binaries."
     }
@@ -3210,7 +3210,7 @@
   "CVE-2015-1130": [
     {
       "source": "metasploit",
-      "file": "exploit_osx/local/rootpipe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/local/rootpipe.rb",
       "name": "Apple OS X Rootpipe Privilege Escalation",
       "description": "This module exploits a hidden backdoor API in Apple's Admin framework on\n          Mac OS X to escalate privileges to root, dubbed \"Rootpipe.\"\n\n          This module was tested on Yosemite 10.10.2 and should work on previous versions.\n\n          The patch for this issue was not backported to older releases.\n\n          Note: you must run this exploit as an admin user to escalate to root."
     },
@@ -3258,7 +3258,7 @@
   "CVE-2015-3673": [
     {
       "source": "metasploit",
-      "file": "exploit_osx/local/rootpipe_entitlements",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/local/rootpipe_entitlements.rb",
       "name": "Apple OS X Entitlements Rootpipe Privilege Escalation",
       "description": "This module exploits the rootpipe vulnerability and bypasses Apple's initial\n          fix for the issue by injecting code into a process with the 'admin.writeconfig'\n          entitlement."
     },
@@ -3286,7 +3286,7 @@
   "CVE-2015-5889": [
     {
       "source": "metasploit",
-      "file": "exploit_osx/local/rsh_libmalloc",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/osx/local/rsh_libmalloc.rb",
       "name": "Mac OS X 10.9.5 / 10.10.5 - rsh/libmalloc Privilege Escalation",
       "description": "This module writes to the sudoers file without root access by exploiting rsh and malloc log files.\n          Makes sudo require no password, giving access to su even if root is disabled.\n          Works on OS X 10.9.5 to 10.10.5 (patched on 10.11)."
     },
@@ -3334,7 +3334,7 @@
   "CVE-2015-3306": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/ftp/proftpd_modcopy_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/ftp/proftpd_modcopy_exec.rb",
       "name": "ProFTPD 1.3.5 Mod_Copy Command Execution",
       "description": "This module exploits the SITE CPFR/CPTO mod_copy commands in ProFTPD version 1.3.5.\n          Any unauthenticated client can leverage these commands to copy files from any\n          part of the filesystem to a chosen destination. The copy commands are executed with\n          the rights of the ProFTPD service, which by default runs under the privileges of the\n          'nobody' user. By using /proc/self/cmdline to copy a PHP payload to the website\n          directory, PHP remote code execution is made possible."
     },
@@ -3434,7 +3434,7 @@
   "CVE-2015-10141": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/http/xdebug_unauth_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/http/xdebug_unauth_exec.rb",
       "name": "xdebug Unauthenticated OS Command Execution",
       "description": "Module exploits a vulnerability in the eval command present in Xdebug versions 2.5.5 and below.\n          This allows the attacker to execute arbitrary php code as the context of the web user."
     },
@@ -3454,7 +3454,7 @@
   "CVE-2015-7857": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/joomla_contenthistory_sqli_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/joomla_contenthistory_sqli_rce.rb",
       "name": "Joomla Content History SQLi Remote Code Execution",
       "description": "This module exploits a SQL injection vulnerability found in Joomla versions\n          3.2 up to 3.4.4. The vulnerability exists in the Content History administrator\n          component in the core of Joomla. Triggering the SQL injection makes it possible\n          to retrieve active Super User sessions. The cookie can be used to login to the\n          Joomla administrator backend. By creating a new template file containing our\n          payload, remote code execution is made possible."
     },
@@ -3482,7 +3482,7 @@
   "CVE-2015-7858": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/joomla_contenthistory_sqli_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/joomla_contenthistory_sqli_rce.rb",
       "name": "Joomla Content History SQLi Remote Code Execution",
       "description": "This module exploits a SQL injection vulnerability found in Joomla versions\n          3.2 up to 3.4.4. The vulnerability exists in the Content History administrator\n          component in the core of Joomla. Triggering the SQL injection makes it possible\n          to retrieve active Super User sessions. The cookie can be used to login to the\n          Joomla administrator backend. By creating a new template file containing our\n          payload, remote code execution is made possible."
     },
@@ -3510,7 +3510,7 @@
   "CVE-2015-1587": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/maarch_letterbox_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/maarch_letterbox_file_upload.rb",
       "name": "Maarch LetterBox Unrestricted File Upload",
       "description": "This module exploits a file upload vulnerability on Maarch LetterBox 2.8 due to a lack of\n          session and file validation in the file_to_index.php script. It allows unauthenticated\n          users to upload files of any type and subsequently execute PHP scripts in the context of\n          the web server."
     },
@@ -3538,7 +3538,7 @@
   "CVE-2015-1592": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/sixapart_movabletype_storable_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/sixapart_movabletype_storable_exec.rb",
       "name": "SixApart MovableType Storable Perl Code Execution",
       "description": "This module exploits a serialization flaw in MovableType before 5.2.12 to execute\n          arbitrary code. The default nondestructive mode depends on the target server having\n          the Object::MultiType and DateTime Perl modules installed in Perl's @INC paths.\n          The destructive mode of operation uses only required MovableType dependencies,\n          but it will noticeably corrupt the MovableType installation."
     },
@@ -3566,7 +3566,7 @@
   "CVE-2015-10140": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_ajax_load_more_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_ajax_load_more_file_upload.rb",
       "name": "Wordpress Ajax Load More PHP Upload Vulnerability",
       "description": "This module exploits an arbitrary file upload in the WordPress Ajax Load More\n          version 2.8.1.1. It allows to upload arbitrary php files and get remote code\n          execution. This module has been tested successfully on WordPress Ajax Load More\n          2.8.0 with Wordpress 4.1.3 on Ubuntu 12.04/14.04 Server."
     }
@@ -3574,7 +3574,7 @@
   "CVE-2015-1172": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_holding_pattern_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_holding_pattern_file_upload.rb",
       "name": "WordPress Holding Pattern Theme Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability in all versions of the\n          Holding Pattern theme found in the upload_file.php script which contains\n          no session or file validation. It allows unauthenticated users to upload\n          files of any type and subsequently execute PHP scripts in the context of\n          the web server."
     },
@@ -3602,7 +3602,7 @@
   "CVE-2015-10137": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_nmediawebsite_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_nmediawebsite_file_upload.rb",
       "name": "Wordpress N-Media Website Contact Form Upload Vulnerability",
       "description": "This module exploits an arbitrary PHP code upload in the WordPress N-Media Website Contact Form\n          plugin, version 1.3.4. The vulnerability allows for arbitrary file upload and remote code execution."
     }
@@ -3610,7 +3610,7 @@
   "CVE-2015-1376": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_pixabay_images_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_pixabay_images_upload.rb",
       "name": "WordPress Pixabay Images PHP Code Upload",
       "description": "This module exploits multiple vulnerabilities in the WordPress plugin Pixabay\n          Images 2.3.6. The plugin does not check the host of a provided download URL\n          which can be used to store and execute malicious PHP code on the system."
     },
@@ -3638,7 +3638,7 @@
   "CVE-2015-10143": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_platform_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_platform_exec.rb",
       "name": "WordPress Platform Theme File Upload Vulnerability",
       "description": "The WordPress Theme \"platform\" contains a remote code execution vulnerability\n          through an unchecked admin_init call. The theme includes the uploaded file\n          from its temp filename with php's include function."
     }
@@ -3646,7 +3646,7 @@
   "CVE-2015-4133": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_reflexgallery_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_reflexgallery_file_upload.rb",
       "name": "Wordpress Reflex Gallery Upload Vulnerability",
       "description": "This module exploits an arbitrary PHP code upload in the WordPress Reflex Gallery\n          version 3.1.3. The vulnerability allows for arbitrary file upload and remote code execution."
     },
@@ -3674,7 +3674,7 @@
   "CVE-2015-10138": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_worktheflow_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_worktheflow_upload.rb",
       "name": "Wordpress Work The Flow Upload Vulnerability",
       "description": "This module exploits an arbitrary PHP code upload in the WordPress Work The Flow plugin,\n          version 2.5.2. The vulnerability allows for arbitrary file upload and remote code execution."
     }
@@ -3682,7 +3682,7 @@
   "CVE-2015-10135": [
     {
       "source": "metasploit",
-      "file": "exploit_unix/webapp/wp_wpshop_ecommerce_file_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/unix/webapp/wp_wpshop_ecommerce_file_upload.rb",
       "name": "WordPress WPshop eCommerce Arbitrary File Upload Vulnerability",
       "description": "This module exploits an arbitrary file upload in the WordPress WPshop eCommerce plugin\n          from version 1.3.3.3 to 1.3.9.5. It allows to upload arbitrary PHP code and get remote\n          code execution. This module has been tested successfully on WordPress WPshop eCommerce\n          1.3.9.5 with WordPress 4.1.3 on Ubuntu 14.04 Server."
     }
@@ -3690,7 +3690,7 @@
   "CVE-2015-0359": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/browser/adobe_flash_domain_memory_uaf",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flash_domain_memory_uaf.rb",
       "name": "Adobe Flash Player domainMemory ByteArray Use After Free",
       "description": "This module exploits a use-after-free vulnerability in Adobe Flash Player. The\n          vulnerability occurs when the ByteArray assigned to the current ApplicationDomain\n          is freed from an ActionScript worker, when forcing a reallocation by copying more\n          contents than the original capacity, but Flash forgets to update the domainMemory\n          pointer, leading to a use-after-free situation when the main worker references the\n          domainMemory again. This module has been tested successfully on Windows 7 SP1\n          (32-bit), IE 8 and IE11 with Flash 17.0.0.134."
     },
@@ -3718,7 +3718,7 @@
   "CVE-2015-0318": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/browser/adobe_flash_pcre",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flash_pcre.rb",
       "name": "Adobe Flash Player PCRE Regex Vulnerability",
       "description": "This module exploits a vulnerability found in Adobe Flash Player. A compilation logic error\n          in the PCRE engine, specifically in the handling of the \\c escape sequence when followed by\n          a multi-byte UTF8 character, allows arbitrary execution of PCRE bytecode."
     },
@@ -3746,7 +3746,7 @@
   "CVE-2015-0313": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/browser/adobe_flash_worker_byte_array_uaf",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/browser/adobe_flash_worker_byte_array_uaf.rb",
       "name": "Adobe Flash Player ByteArray With Workers Use After Free",
       "description": "This module exploits a use-after-free vulnerability in Adobe Flash Player. The\n          vulnerability occurs when the ByteArray assigned to the current ApplicationDomain\n          is freed from an ActionScript worker, which can fill the memory and notify the main\n          thread to corrupt the new contents. This module has been tested successfully on\n          Windows 7 SP1 (32-bit), IE 8 to IE 11 and Flash 16.0.0.296."
     },
@@ -3794,7 +3794,7 @@
   "CVE-2015-7243": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/boxoft_wav_to_mp3",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/boxoft_wav_to_mp3.rb",
       "name": "Boxoft WAV to MP3 Converter v1.1 Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Boxoft WAV to MP3 Converter versions 1.0 and 1.1.\n          By constructing a specially crafted WAV file and attempting to convert it to an MP3 file in the\n          application, a buffer is overwritten, which allows for running shellcode."
     },
@@ -3882,7 +3882,7 @@
   "CVE-2015-1171": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/gsm_sim",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/gsm_sim.rb",
       "name": "GSM SIM Editor 5.15 Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in GSM SIM Editor 5.15.\n          When opening a specially crafted .sms file in GSM SIM Editor a stack-based buffer\n          overflow occurs which allows an attacker to execute arbitrary code."
     },
@@ -3910,13 +3910,13 @@
   "CVE-2015-0096": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/ms15_020_shortcut_icon_dllloader",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/ms15_020_shortcut_icon_dllloader.rb",
       "name": "Microsoft Windows Shell LNK Code Execution",
       "description": "This module exploits a vulnerability in the MS10-046 patch to abuse (again) the handling\n          of Windows Shortcut files (.LNK) that contain an icon resource pointing to a malicious\n          DLL. This module creates the required files to exploit the vulnerability. They must be\n          uploaded to an UNC path accessible by the target. This module has been tested successfully\n          on Windows 2003 SP2 with MS10-046 installed and Windows 2008 SP2 (32 bits) with MS14-027\n          installed."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/ms15_020_shortcut_icon_dllloader",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/ms15_020_shortcut_icon_dllloader.rb",
       "name": "Microsoft Windows Shell LNK Code Execution",
       "description": "This module exploits a vulnerability in the MS10-046 patch to abuse (again) the handling\n          of Windows Shortcut files (.LNK) that contain an icon resource pointing to a malicious\n          DLL. This creates an SMB resource to provide the payload and the trigger, and generates a\n          LNK file which must be sent to the target. This module has been tested successfully on\n          Windows 2003 SP2 with MS10-046 installed and Windows 2008 SP2 (32 bits) with MS14-027\n          installed."
     },
@@ -3944,7 +3944,7 @@
   "CVE-2015-2509": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/ms15_100_mcl_exe",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/ms15_100_mcl_exe.rb",
       "name": "MS15-100 Microsoft Windows Media Center MCL Vulnerability",
       "description": "This module exploits a vulnerability in Windows Media Center. By supplying\n          an UNC path in the *.mcl file, a remote file will be automatically downloaded,\n          which can result in arbitrary code execution."
     },
@@ -3992,7 +3992,7 @@
   "CVE-2015-6132": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/office_ole_multiple_dll_hijack",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/office_ole_multiple_dll_hijack.rb",
       "name": "Office OLE Multiple DLL Side Loading Vulnerabilities",
       "description": "Multiple DLL side loading vulnerabilities were found in various COM components.\n          These issues can be exploited by loading various these components as an embedded\n          OLE object. When instantiating a vulnerable object Windows will try to load one\n          or more DLLs from the current working directory. If an attacker convinces the\n          victim to open a specially crafted (Office) document from a directory also\n          containing the attacker's DLL file, it is possible to execute arbitrary code with\n          the privileges of the target user. This can potentially result in the attacker\n          taking complete control of the affected system."
     },
@@ -4040,7 +4040,7 @@
   "CVE-2015-6128": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/office_ole_multiple_dll_hijack",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/office_ole_multiple_dll_hijack.rb",
       "name": "Office OLE Multiple DLL Side Loading Vulnerabilities",
       "description": "Multiple DLL side loading vulnerabilities were found in various COM components.\n          These issues can be exploited by loading various these components as an embedded\n          OLE object. When instantiating a vulnerable object Windows will try to load one\n          or more DLLs from the current working directory. If an attacker convinces the\n          victim to open a specially crafted (Office) document from a directory also\n          containing the attacker's DLL file, it is possible to execute arbitrary code with\n          the privileges of the target user. This can potentially result in the attacker\n          taking complete control of the affected system."
     },
@@ -4088,7 +4088,7 @@
   "CVE-2015-6133": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/fileformat/office_ole_multiple_dll_hijack",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/fileformat/office_ole_multiple_dll_hijack.rb",
       "name": "Office OLE Multiple DLL Side Loading Vulnerabilities",
       "description": "Multiple DLL side loading vulnerabilities were found in various COM components.\n          These issues can be exploited by loading various these components as an embedded\n          OLE object. When instantiating a vulnerable object Windows will try to load one\n          or more DLLs from the current working directory. If an attacker convinces the\n          victim to open a specially crafted (Office) document from a directory also\n          containing the attacker's DLL file, it is possible to execute arbitrary code with\n          the privileges of the target user. This can potentially result in the attacker\n          taking complete control of the affected system."
     },
@@ -4116,7 +4116,7 @@
   "CVE-2015-7768": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/ftp/kmftp_utility_cwd",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/ftp/kmftp_utility_cwd.rb",
       "name": "Konica Minolta FTP Utility 1.00 Post Auth CWD Command SEH Overflow",
       "description": "This module exploits an SEH overflow in Konica Minolta FTP Server 1.00.\n          Konica Minolta FTP fails to check input size when parsing 'CWD' commands, which\n          leads to an SEH overflow.  Konica FTP allows anonymous access by default; valid\n          credentials are typically unnecessary to exploit this vulnerability."
     },
@@ -4164,7 +4164,7 @@
   "CVE-2015-1830": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/apache_activemq_traversal_upload",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/apache_activemq_traversal_upload.rb",
       "name": "Apache ActiveMQ 5.x-5.11.1 Directory Traversal Shell Upload",
       "description": "This module exploits a directory traversal vulnerability (CVE-2015-1830) in Apache\n          ActiveMQ 5.x before 5.11.2 for Windows.\n\n          The module tries to upload a JSP payload to the /admin directory via the traversal\n          path /fileserver/..\\admin\\ using an HTTP PUT request with the default ActiveMQ\n          credentials admin:admin (or other credentials provided by the user). It then issues\n          an HTTP GET request to /admin/<payload>.jsp on the target in order to trigger the\n          payload and obtain a shell."
     },
@@ -4212,7 +4212,7 @@
   "CVE-2015-0923": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/ektron_xslt_exec_ws",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/ektron_xslt_exec_ws.rb",
       "name": "Ektron 8.5, 8.7, 9.0 XSLT Transform Remote Code Execution",
       "description": "Ektron 8.5, 8.7 <= sp1, 9.0 < sp1 have\n          vulnerabilities in various operations within the ServerControlWS.asmx\n          web services. These vulnerabilities allow for RCE without authentication and\n          execute in the context of IIS on the remote system."
     }
@@ -4220,7 +4220,7 @@
   "CVE-2015-7765": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/manage_engine_opmanager_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/manage_engine_opmanager_rce.rb",
       "name": "ManageEngine OpManager Remote Code Execution",
       "description": "This module exploits a default credential vulnerability in ManageEngine OpManager, where a\n          default hidden account \"IntegrationUser\" with administrator privileges exists. The account\n          has a default password of \"plugin\" which cannot be reset through the user interface. By\n          log-in and abusing the default administrator's SQL query functionality, it's possible to\n          write a WAR payload to disk and trigger an automatic deployment of this payload. This\n          module has been tested successfully on OpManager v11.0 and v11.4-v11.6 for Windows."
     },
@@ -4248,7 +4248,7 @@
   "CVE-2015-7766": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/manage_engine_opmanager_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/manage_engine_opmanager_rce.rb",
       "name": "ManageEngine OpManager Remote Code Execution",
       "description": "This module exploits a default credential vulnerability in ManageEngine OpManager, where a\n          default hidden account \"IntegrationUser\" with administrator privileges exists. The account\n          has a default password of \"plugin\" which cannot be reset through the user interface. By\n          log-in and abusing the default administrator's SQL query functionality, it's possible to\n          write a WAR payload to disk and trigger an automatic deployment of this payload. This\n          module has been tested successfully on OpManager v11.0 and v11.4-v11.6 for Windows."
     },
@@ -4276,7 +4276,7 @@
   "CVE-2015-8249": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/manageengine_connectionid_write",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/manageengine_connectionid_write.rb",
       "name": "ManageEngine Desktop Central 9 FileUploadServlet ConnectionId Vulnerability",
       "description": "This module exploits a vulnerability found in ManageEngine Desktop Central 9. When\n          uploading a 7z file, the FileUploadServlet class does not check the user-controlled\n          ConnectionId parameter in the FileUploadServlet class. This allows a remote attacker to\n          inject a null bye at the end of the value to create a malicious file with an arbitrary\n          file type, and then place it under a directory that allows server-side scripts to run,\n          which results in remote code execution under the context of SYSTEM.\n\n          Please note that by default, some ManageEngine Desktop Central versions run on port 8020,\n          but older ones run on port 8040. Also, using this exploit will leave debugging information\n          produced by FileUploadServlet in file rdslog0.txt.\n\n          This exploit was successfully tested on version 9, build 90109 and build 91084."
     },
@@ -4304,7 +4304,7 @@
   "CVE-2015-1486": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/sepm_auth_bypass_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/sepm_auth_bypass_rce.rb",
       "name": "Symantec Endpoint Protection Manager Authentication Bypass and Code Execution",
       "description": "This module exploits three separate vulnerabilities in Symantec Endpoint Protection Manager\n          in order to achieve a remote shell on the box as NT AUTHORITY\\SYSTEM. The vulnerabilities\n          include an authentication bypass, a directory traversal and a privilege escalation to\n          get privileged code execution."
     },
@@ -4332,7 +4332,7 @@
   "CVE-2015-1487": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/sepm_auth_bypass_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/sepm_auth_bypass_rce.rb",
       "name": "Symantec Endpoint Protection Manager Authentication Bypass and Code Execution",
       "description": "This module exploits three separate vulnerabilities in Symantec Endpoint Protection Manager\n          in order to achieve a remote shell on the box as NT AUTHORITY\\SYSTEM. The vulnerabilities\n          include an authentication bypass, a directory traversal and a privilege escalation to\n          get privileged code execution."
     },
@@ -4360,7 +4360,7 @@
   "CVE-2015-1489": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/sepm_auth_bypass_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/sepm_auth_bypass_rce.rb",
       "name": "Symantec Endpoint Protection Manager Authentication Bypass and Code Execution",
       "description": "This module exploits three separate vulnerabilities in Symantec Endpoint Protection Manager\n          in order to achieve a remote shell on the box as NT AUTHORITY\\SYSTEM. The vulnerabilities\n          include an authentication bypass, a directory traversal and a privilege escalation to\n          get privileged code execution."
     },
@@ -4388,7 +4388,7 @@
   "CVE-2015-2284": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/http/solarwinds_fsm_userlogin",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/http/solarwinds_fsm_userlogin.rb",
       "name": "Solarwinds Firewall Security Manager 6.6.5 Client Session Handling Vulnerability",
       "description": "This module exploits multiple vulnerabilities found in Solarwinds Firewall Security Manager\n          6.6.5. The first vulnerability is an authentication bypass via the Change Advisor interface\n          due to a user-controlled session.putValue API in userlogin.jsp, allowing the attacker to set\n          the 'username' attribute before authentication. The second problem is that the settings-new.jsp\n          file will only check the 'username' attribute before authorizing the 'uploadFile' action,\n          which can be exploited and allows the attacker to upload a fake xls host list file to the\n          server, and results in arbitrary code execution under the context of SYSTEM.\n\n          Depending on the installation, by default the Change Advisor web server is listening on port\n          48080 for an express install. Otherwise, this service may appear on port 8080.\n\n          Solarwinds has released a fix for this vulnerability as FSM-v6.6.5-HotFix1.zip, noted in the\n          references for this module."
     },
@@ -4416,13 +4416,13 @@
   "CVE-2015-0925": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ipass_launch_app",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ipass_launch_app.rb",
       "name": "iPass Mobile Client Service Privilege Escalation",
       "description": "The named pipe, \\IPEFSYSPCPIPE, can be accessed by normal users to interact\n            with the iPass service. The service provides a LaunchAppSysMode command which\n            allows to execute arbitrary commands as SYSTEM."
     },
     {
       "source": "metasploit",
-      "file": "exploit_windows/smb/ipass_pipe_exec",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/smb/ipass_pipe_exec.rb",
       "name": "IPass Control Pipe Remote Command Execution",
       "description": "This module exploits a vulnerability in the IPass Client service. This service provides a\n          named pipe which can be accessed by the user group BUILTIN\\Users. This pipe can be abused\n          to force the service to load a DLL from a SMB share."
     },
@@ -4450,7 +4450,7 @@
   "CVE-2015-2219": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/lenovo_systemupdate",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/lenovo_systemupdate.rb",
       "name": "Lenovo System Update Privilege Escalation",
       "description": "The named pipe, \\SUPipeServer, can be accessed by normal users to interact with the\n            System update service. The service provides the possibility to execute arbitrary\n            commands as SYSTEM if a valid security token is provided. This token can be generated\n            by calling the GetSystemInfoData function in the DLL tvsutil.dll. Please, note that the\n            System Update is stopped by default but can be started/stopped calling the Executable\n            ConfigService.exe."
     },
@@ -4478,7 +4478,7 @@
   "CVE-2015-0016": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ms15_004_tswbproxy",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ms15_004_tswbproxy.rb",
       "name": "MS15-004 Microsoft Remote Desktop Services Web Proxy IE Sandbox Escape",
       "description": "This module abuses a process creation policy in Internet Explorer's\n            sandbox; specifically, Microsoft's RemoteApp and Desktop Connections runtime\n            proxy, TSWbPrxy.exe.  This vulnerability allows the attacker to escape the\n            Protected Mode and execute code with Medium Integrity. At the moment, this\n            module only bypass Protected Mode on Windows 7 SP1 and prior (32 bits). This\n            module has been tested successfully on Windows 7 SP1 (32 bits) with IE 8 and IE\n            11."
     },
@@ -4506,7 +4506,7 @@
   "CVE-2015-1701": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ms15_051_client_copy_image",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ms15_051_client_copy_image.rb",
       "name": "Windows ClientCopyImage Win32k Exploit",
       "description": "This module exploits improper object handling in the win32k.sys kernel mode driver.\n            This module has been tested on vulnerable builds of Windows 7 x64 and x86, and\n            Windows 2008 R2 SP1 x64."
     },
@@ -4554,7 +4554,7 @@
   "CVE-2015-2426": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ms15_078_atmfd_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ms15_078_atmfd_bof.rb",
       "name": "MS15-078 Microsoft Windows Font Driver Buffer Overflow",
       "description": "This module exploits a pool based buffer overflow in the atmfd.dll driver when parsing\n            a malformed font. The vulnerability was exploited by the hacking team and disclosed in\n            the July data leak. This module has been tested successfully on vulnerable builds of\n            Windows 8.1 x64."
     },
@@ -4582,7 +4582,7 @@
   "CVE-2015-2433": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ms15_078_atmfd_bof",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ms15_078_atmfd_bof.rb",
       "name": "MS15-078 Microsoft Windows Font Driver Buffer Overflow",
       "description": "This module exploits a pool based buffer overflow in the atmfd.dll driver when parsing\n            a malformed font. The vulnerability was exploited by the hacking team and disclosed in\n            the July data leak. This module has been tested successfully on vulnerable builds of\n            Windows 8.1 x64."
     },
@@ -4610,7 +4610,7 @@
   "CVE-2015-0002": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/local/ntapphelpcachecontrol",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/local/ntapphelpcachecontrol.rb",
       "name": "MS15-001 Microsoft Windows NtApphelpCacheControl Improper Authorization Check",
       "description": "On Windows, the system call NtApphelpCacheControl (the code is actually in ahcache.sys)\n            allows application compatibility data to be cached for quick reuse when new processes are\n            created. A normal user can query the cache but cannot add new cached entries as the\n            operation is restricted to administrators. This is checked in the function\n            AhcVerifyAdminContext.\n\n            This function has a vulnerability where it doesn't correctly check the impersonation token\n            of the caller to determine if the user is an administrator. It reads the caller's\n            impersonation token using PsReferenceImpersonationToken and then does a comparison between\n            the user SID in the token to LocalSystem's SID. It doesn't check the impersonation level\n            of the token so it's possible to get an identify token on your thread from a local system\n            process and bypass this check.\n\n            This module currently only affects Windows 8 and Windows 8.1, and requires access to\n            C:\\Windows\\System\\ComputerDefaults.exe (although this can be improved)."
     },
@@ -4638,7 +4638,7 @@
   "CVE-2015-7450": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/misc/ibm_websphere_java_deserialize",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/ibm_websphere_java_deserialize.rb",
       "name": "IBM WebSphere RCE Java Deserialization Vulnerability",
       "description": "This module exploits a vulnerability in IBM's WebSphere Application Server. An unsafe deserialization\n          call of unauthenticated Java objects exists to the Apache Commons Collections (ACC) library, which allows\n          remote arbitrary code execution. Authentication is not required in order to exploit this vulnerability."
     },
@@ -4678,7 +4678,7 @@
   "CVE-2015-7387": [
     {
       "source": "metasploit",
-      "file": "exploit_windows/misc/manageengine_eventlog_analyzer_rce",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/modules/exploits/windows/misc/manageengine_eventlog_analyzer_rce.rb",
       "name": "ManageEngine EventLog Analyzer Remote Code Execution",
       "description": "This module exploits a SQL query functionality in ManageEngine EventLog Analyzer v10.6\n          build 10060 and previous versions. Every authenticated user, including the default \"guest\"\n          account can execute SQL queries directly on the underlying Postgres database server. The\n          queries are executed as the \"postgres\" user which has full privileges and thus is able to\n          write files to disk. This way a JSP payload can be uploaded and executed with SYSTEM\n          privileges on the web server. This module has been tested successfully on ManageEngine\n          EventLog Analyzer 10.0 (build 10003) over Windows 7 SP1."
     },
