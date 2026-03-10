@@ -23,7 +23,7 @@ def process_data():
                             file_path = f'https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules{info.get("path")}'
                             cve_map[ref].append({
                                 "source": "metasploit",
-                                "file": mod_path,
+                                "file": file_path,
                                 "name": info.get("name"),
                                 "description": info.get("description")
                             })
