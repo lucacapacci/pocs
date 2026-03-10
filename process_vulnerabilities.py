@@ -20,9 +20,10 @@ def process_data():
                 if 'references' in info:
                     for ref in info['references']:
                         if ref.startswith('CVE-'):
+                            mod_path = f"https://github.com/rapid7/metasploit-framework/blob/master{mod_path}"
                             cve_map[ref].append({
-                                "Source": "metasploit",
-                                "path": mod_path,
+                                "source": "metasploit",
+                                "file": mod_path,
                                 "name": info.get("name"),
                                 "description": info.get("description")
                             })
@@ -36,7 +37,8 @@ def process_data():
                 found_cves = re.findall(r'CVE-\d{4}-\d{3,10}', codes)
                 for cve in found_cves:
                     # Add Source tag to the CSV row data
-                    row["Source"] = "exploitdb"
+                    row["source"] = "exploitdb"
+                    row["file"] = f"https://gitlab.com/exploit-database/exploitdb/-/raw/main/{row['file']}"
                     cve_map[cve].append(row)
 
     # 4. Parse Nuclei JSONL
@@ -49,11 +51,11 @@ def process_data():
                     if cve_id and cve_id.startswith("CVE-"):
                         # Inject Source into the 'Info' block as per your example
                         info_block = entry.get("Info", {})
-                        info_block["Source"] = "nuclei"
+                        info_block["source"] = "nuclei"
                         
                         cve_map[cve_id].append({
                             "info": info_block,
-                            "file_path": entry.get("file_path")
+                            "file": f'https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/{entry.get("file_path")}'
                         })
 
     # 5. Generate Organized Files
