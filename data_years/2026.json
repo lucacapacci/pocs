@@ -1,0 +1,408 @@
+{
+  "CVE-2026-1731": {
+    "metasploit": [
+      {
+        "path": "exploit_linux/http/beyondtrust_pra_rs_command_injection",
+        "name": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) unauthenticated Remote Code Execution",
+        "description": "This exploit achieves unauthenticated remote code execution against BeyondTrust Privileged Remote\n          Access (PRA) and Remote Support (RS). It leverages three different vulnerabilities depending on the\n          user-selected target.\n\n          The default target leverages CVE-2026-1731, a direct command injection affecting RS versions 25.3.1\n          and prior, and PRA versions 24.3.4 and prior.\n\n          Alternatively, the module can leverage a chain of CVE-2025-1094 (SQL injection in PostgreSQL)\n          and CVE-2024-12356 (argument injection), affecting RS and PRA versions 24.3.1 and prior.\n\n          Exploitation occurs with the privileges of the site user of the targeted BeyondTrust product site."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "BeyondTrust Remote Support - Unauthenticated WebSocket RCE",
+          "Severity": "critical",
+          "Description": "BeyondTrust Remote Support is vulnerable to unauthenticated remote code execution via the WebSocket endpoint /nw. An attacker can extract the company identifier from the /get_mech_list endpoint and use it to connect to the WebSocket service, then inject OS commands through the binary WebSocket payload that are executed on the server.\n",
+          "Classification": {
+            "CVSSScore": "N/A"
+          }
+        },
+        "file_path": "javascript/cves/2026/CVE-2026-1731.yaml"
+      }
+    ]
+  },
+  "CVE-2026-2329": {
+    "metasploit": [
+      {
+        "path": "exploit_linux/http/grandstream_gxp1600_unauth_rce",
+        "name": "GrandStream GXP1600 Unauthenticated Remote Code Execution",
+        "description": "An unauthenticated stack-based buffer overflow vulnerability exists in the HTTP API endpoint\n          /cgi-bin/api.values.get. A remote attacker can leverage this vulnerability to achieve unauthenticated remote\n          code execution (RCE) with root privileges on a target device. The vulnerability affects all six device models\n          in the series: GXP1610, GXP1615, GXP1620, GXP1625, GXP1628, and GXP1630. The vulnerability affects all\n          firmware versions below version 1.0.7.81."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-1281": {
+    "metasploit": [
+      {
+        "path": "exploit_linux/http/ivanti_epmm_rce",
+        "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
+        "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-1340": {
+    "metasploit": [
+      {
+        "path": "exploit_linux/http/ivanti_epmm_rce",
+        "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
+        "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-24061": {
+    "metasploit": [
+      {
+        "path": "exploit_linux/telnet/gnu_inetutils_auth_bypass",
+        "name": "GNU Inetutils Telnet Authentication Bypass Exploit CVE-2026-24061",
+        "description": "The telnetd service from GNU InetUtils is vulnerable to authentication-bypass, tracked as CVE-2026-24061, in\n          versions up to version 2.7. During Telnet authentication the SB byte can be sent to indicate sub-negotiation which\n          allows for the exchange of sub-option parameters after both parties have agreed to enable a specific functional option.\n          Environment variables can be sent as sub-options and it's the USER environment variable which introduces the\n          authentication bypass in this scenario. When the USER environment variable gets sent to the GNU inetutils telnetd\n          service during authentication, the variable gets appended without proper sanitization to an execv call to the\n          /usr/bin/login binary. The login binary has a -f flag which skips authentication for a specific user. So the exploit\n          sets the `USER` environment variable to -f root and the telnetd service responds with a root shell."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-27175": {
+    "metasploit": [
+      {
+        "path": "exploit_multi/http/majordomo_cmd_injection_rce",
+        "name": "MajorDoMo Remote Command Injection via cycle_execs Race Condition",
+        "description": "This module exploits an unauthenticated command injection vulnerability in MajorDoMo's\n          remote command handler (rc/index.php). The param parameter is interpolated into double\n          quotes without escapeshellarg(), and the resulting string is passed to safe_exec() which\n          inserts it into the safe_execs database table with no sanitization.\n\n          The cycle_execs.php worker script is web-accessible without authentication. On startup it\n          purges the safe_execs queue, then enters an infinite loop polling the table every second\n          and passing each command to exec(). A race condition is required: the worker must be\n          started first (which purges existing entries), then the injection is performed while the\n          worker is polling. The next iteration picks up and executes the attacker's payload.\n\n          The command parameter must reference a valid .bat file in rc/commands/. The default\n          MajorDoMo installation ships with shutdown.bat, displayon.bat, and displayoff.bat.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-27174": {
+    "metasploit": [
+      {
+        "path": "exploit_multi/http/majordomo_console_eval_rce",
+        "name": "MajorDoMo Console Eval Unauthenticated RCE",
+        "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo, an open-source home automation platform. The admin panel's PHP console\n          is accessible without authentication due to a missing exit after redirect in\n          modules/panel.class.php. The redirect(\"/\") call intended to block unauthenticated\n          users lacks an exit statement, so execution continues into the ajax panel handler\n          which includes inc_panel_ajax.php unconditionally. Inside, the console handler\n          passes the user-supplied command parameter directly to eval() via the evalConsole()\n          function. The command, ajax_panel, and op parameters are all controllable via GET\n          request through MajorDoMo's register_globals-style gr() function.\n\n          This results in unauthenticated PHP code evaluation via a single GET request\n          to /admin.php.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-27180": {
+    "metasploit": [
+      {
+        "path": "exploit_multi/http/majordomo_supply_chain_rce",
+        "name": "MajorDoMo Supply Chain RCE via Update Poisoning",
+        "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
+      }
+    ],
+    "exploitdb": [],
+    "nuclei": []
+  },
+  "CVE-2026-0594": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "WordPress List Site Contributors < 1.1.8 - Reflected XSS",
+          "Severity": "medium",
+          "Description": "WordPress List Site Contributors plugin < 1.1.8 contains a reflected XSS caused by insufficient sanitization and escaping of the 'alpha' parameter, letting unauthenticated attackers inject scripts, exploit requires user interaction.\n",
+          "Classification": {
+            "CVSSScore": "N/A"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-0594.yaml"
+      }
+    ]
+  },
+  "CVE-2026-0770": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
+          "Severity": "critical",
+          "Description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
+          "Classification": {
+            "CVSSScore": "9.8"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-0770.yaml"
+      }
+    ]
+  },
+  "CVE-2026-0829": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Frontend File Manager Plugin <= 23.5 - Unauthenticated Arbitrary Email Sending",
+          "Severity": "high",
+          "Description": "Frontend File Manager Plugin WordPress plugin through 23.5 contains an open relay and unauthorized file access vulnerability caused by lack of authentication and security checks, letting unauthenticated attackers send emails and access files, exploit requires no authentication.\n",
+          "Classification": {
+            "CVSSScore": "7.5"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-0829.yaml"
+      }
+    ]
+  },
+  "CVE-2026-1207": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Django RasterField - SQL Injection",
+          "Severity": "high",
+          "Description": "Django < 6.0.2, < 5.2.11, and < 4.2.28 contains a SQL injection caused by improper sanitization of the band index parameter in RasterField on PostGIS, letting remote attackers inject SQL, exploit requires crafted input.\n",
+          "Classification": {
+            "CVSSScore": "8.1"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-1207.yaml"
+      }
+    ]
+  },
+  "CVE-2026-1603": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Ivanti Endpoint Manager - Authentication Bypass",
+          "Severity": "high",
+          "Description": "Ivanti Endpoint Manager < 2024 SU5 contains an authentication bypass caused by improper access control, letting remote unauthenticated attackers leak stored credential data, exploit requires no special privileges.\n",
+          "Classification": {
+            "CVSSScore": "8.6"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-1603.yaml"
+      }
+    ]
+  },
+  "CVE-2026-21858": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "n8n Webhooks - Remote Code Execution",
+          "Severity": "critical",
+          "Description": "n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.\n",
+          "Classification": {
+            "CVSSScore": "10.0"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-21858.yaml"
+      }
+    ]
+  },
+  "CVE-2026-21859": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Mailpit < 1.28.3 - Server-Side Request Forgery",
+          "Severity": "high",
+          "Description": "Mailpit <= 1.28.0 contains a server-side request forgery caused by insufficient validation of internal IP addresses in the /proxy endpoint, letting attackers make requests to internal network resources, exploit requires crafted HTTP GET requests.\n",
+          "Classification": {
+            "CVSSScore": "8.6"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-21859.yaml"
+      }
+    ]
+  },
+  "CVE-2026-21877": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "n8n >= 0.123.0 and < 1.121.3 - Remote Code Execution",
+          "Severity": "critical",
+          "Description": "n8n versions >= 0.123.0 and < 1.121.3 contain a critical authenticated remote code execution vulnerability via arbitrary file write. An authenticated user can exploit the Git node to overwrite critical files and execute untrusted code on the n8n server, potentially leading to full system compromise. The vulnerability affects both self-hosted and n8n Cloud instances.\n",
+          "Classification": {
+            "CVSSScore": "9.9"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-21877.yaml"
+      }
+    ]
+  },
+  "CVE-2026-21891": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "ZimaOS - Authentication Bypass",
+          "Severity": "critical",
+          "Description": "ZimaOS <= 1.5.0 contains a broken authentication caused by improper password validation for known system service accounts in the login function, letting attackers authenticate with any password for these accounts, exploit requires knowledge of common usernames.\n",
+          "Classification": {
+            "CVSSScore": "9.4"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-21891.yaml"
+      }
+    ]
+  },
+  "CVE-2026-22200": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "osTicket - Arbitrary File Read",
+          "Severity": "high",
+          "Description": "Enhancesoft osTicket versions 1.18.x prior to 1.18.3 and 1.17.x prior to 1.17.7 contain an arbitrary file read vulnerability in the ticket PDF export functionality. A remote attacker can submit a ticket containing crafted rich-text HTML that includes PHP filter expressions which are insufficiently sanitized before being processed by the mPDF PDF generator during export. When the attacker exports the ticket to PDF, the generated PDF can embed the contents of attacker-selected files from the server filesystem as bitmap images, allowing disclosure of sensitive local files in the context of the osTicket application user. This issue is exploitable in default configurations where guests may create tickets and access ticket status, or where self-registration is enabled.\n",
+          "Classification": {
+            "CVSSScore": "N/A"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-22200.yaml"
+      }
+    ]
+  },
+  "CVE-2026-22812": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "OpenCode < 1.0.216 - Unauthenticated Remote Code Execution",
+          "Severity": "high",
+          "Description": "OpenCode versions prior to 1.0.216 contain an unauthenticated remote code execution vulnerability. The application exposes session and shell execution endpoints without proper authentication, allowing remote attackers to create sessions and execute arbitrary shell commands on the underlying server.\n",
+          "Classification": {
+            "CVSSScore": "8.8"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-22812.yaml"
+      }
+    ]
+  },
+  "CVE-2026-23550": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Modular DS - Broken Access Control",
+          "Severity": "high",
+          "Description": "Modular DS = 2.5.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
+          "Classification": {
+            "CVSSScore": "N/A"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-23550.yaml"
+      }
+    ]
+  },
+  "CVE-2026-23744": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "MCPJam Inspector - Remote Code Execution",
+          "Severity": "critical",
+          "Description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
+          "Classification": {
+            "CVSSScore": "9.8"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-23744.yaml"
+      }
+    ]
+  },
+  "CVE-2026-23760": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "SmarterTools SmarterMail - Admin Password Reset",
+          "Severity": "critical",
+          "Description": "Detected a SmartMail admin password reset vulnerability by sending a POST request to the `/api/v1/auth/force-reset-password` endpoint, indicating that administrative password resets could potentially be triggered without proper authorization.\n",
+          "Classification": {
+            "CVSSScore": "N/A"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-23760.yaml"
+      }
+    ]
+  },
+  "CVE-2026-24128": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "XWiki Platform Distribution Flavor Main - Cross-Site Scripting",
+          "Severity": "medium",
+          "Description": "XWiki Platform Distribution Flavor Main versions prior to 17.6.0 are vulnerable to reflected cross-site scripting (XSS) due to improper sanitization of user-supplied input in the extensionId parameter. An attacker can exploit this issue by injecting malicious JavaScript, which will be executed in the context of the victim's browser, potentially leading to session hijacking or other attacks.\n",
+          "Classification": {
+            "CVSSScore": "6.1"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-24128.yaml"
+      }
+    ]
+  },
+  "CVE-2026-25512": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Group-Office < 26.0.5 - Remote Code Execution",
+          "Severity": "critical",
+          "Description": "Group-Office before versions 6.8.150, 25.0.82, and 26.0.5 is vulnerable to remote code execution via OS command injection. The endpoint email/message/tnefAttachmentFromTempFile directly concatenates the user-controlled parameter tmp_file into an exec() call. By injecting shell metacharacters into tmp_file, an authenticated attacker can execute arbitrary system commands on the server.\n",
+          "Classification": {
+            "CVSSScore": "9.9"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-25512.yaml"
+      }
+    ]
+  },
+  "CVE-2026-25892": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Adminer 4.6.2 - 5.4.1 Unauthenticated Persistent DoS",
+          "Severity": "high",
+          "Description": "Adminer <= 5.4.1 contains a denial of service caused by lack of origin validation in version check endpoint, letting attackers trigger server errors via crafted POST requests, exploit requires no special privileges.\n",
+          "Classification": {
+            "CVSSScore": "7.5"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-25892.yaml"
+      }
+    ]
+  },
+  "CVE-2026-27971": {
+    "metasploit": [],
+    "exploitdb": [],
+    "nuclei": [
+      {
+        "info": {
+          "Name": "Qwik - Unauthenticated RCE via server$ Deserialization",
+          "Severity": "critical",
+          "Description": "Qwik <=1.19.0 contains an insecure deserialization vulnerability in the server$ RPC mechanism, letting unauthenticated attackers execute arbitrary code remotely, exploit requires require() availability at runtime.\n",
+          "Classification": {
+            "CVSSScore": "9.2"
+          }
+        },
+        "file_path": "http/cves/2026/CVE-2026-27971.yaml"
+      }
+    ]
+  }
+}
