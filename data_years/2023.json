@@ -12869,6 +12869,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-5561.yaml"
     }
   ],
+  "CVE-2023-5652": [
+    {
+      "info": {
+        "Name": "WP Hotel Booking <= 2.0.7 - SQL Injection",
+        "Severity": "critical",
+        "Description": "WP Hotel Booking WordPress plugin before 2.0.8 contains a SQL injection caused by lack of authorization, CSRF checks, and input escaping in a function hooked to admin_init, letting unauthenticated users perform SQL injections, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-5652.yaml"
+    }
+  ],
   "CVE-2023-5815": [
     {
       "info": {
@@ -13007,6 +13021,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6023.yaml"
+    }
+  ],
+  "CVE-2023-6030": [
+    {
+      "info": {
+        "Name": "LogDash Activity Log <= 1.1.3 - SQL Injection",
+        "Severity": "critical",
+        "Description": "The LogDash Activity Log plugin for WordPress is vulnerable to SQL Injection via the username parameter in all versions up to, and including, 1.1.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6030.yaml"
     }
   ],
   "CVE-2023-6038": [
