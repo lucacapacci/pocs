@@ -3671,6 +3671,18 @@
       "application_url": "",
       "source_url": "",
       "source": "exploitdb"
+    },
+    {
+      "info": {
+        "Name": "CAREL Boss Mini <= 1.4.0 - Local File Inclusion",
+        "Severity": "critical",
+        "Description": "Boss Mini 1.4.0 Build 6221 contains a file inclusion caused by manipulation of the 'path' argument in boss/servlet/document, letting remote attackers include arbitrary files, exploit requires remote access.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3643.yaml"
     }
   ],
   "CVE-2023-0493": [

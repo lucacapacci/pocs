@@ -1361,6 +1361,18 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spip_saisies_rce.rb",
       "name": "SPIP Saisies Plugin Unauthenticated RCE",
       "description": "This module exploits an unauthenticated PHP code injection in the SPIP\n          Saisies plugin (CVE-2025-71243). The _anciennes_valeurs form parameter is\n          interpolated unsanitized into a hidden field rendered with\n          interdire_scripts=false, allowing direct PHP code execution via template\n          eval.\n\n          Exploitation requires a publicly accessible page containing a\n          saisies-powered form, most commonly created with the Formidable plugin.\n          Use the FORM_PAGE option to specify a known form page, or set it to\n          'crawl' to automatically discover one by following internal links from\n          the SPIP sitemap.\n\n          Versions 5.4.0 through 5.11.0 of the saisies plugin are affected."
+    },
+    {
+      "info": {
+        "Name": "SPIP Saisies - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "SPIP Saisies plugin 5.4.0 through 5.11.0 contains a remote code execution caused by an unspecified flaw, letting attackers execute arbitrary code on the server, exploit requires no special conditions.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-71243.yaml"
     }
   ],
   "CVE-2025-62368": [
