@@ -313,6 +313,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
+  "CVE-2026-27944": [
+    {
+      "info": {
+        "Name": "Nginx UI < 2.3.3 - Information Disclosure",
+        "Severity": "critical",
+        "Description": "Nginx UI < 2.3.3 contains an information disclosure vulnerability caused by unauthenticated access to /api/backup endpoint exposing encryption keys in X-Backup-Security header, letting unauthenticated attackers download and decrypt full system backups.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27944.yaml"
+    }
+  ],
   "CVE-2026-27971": [
     {
       "info": {
