@@ -145,6 +145,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1357.yaml"
     }
   ],
+  "CVE-2026-1492": [
+    {
+      "info": {
+        "Name": "WordPress User Registration & Membership <= 5.1.2 - Unauthenticated Privilege Escalation",
+        "Severity": "critical",
+        "Description": "User Registration & Membership WordPress plugin <= 5.1.2 contains an improper privilege management vulnerability caused by accepting user-supplied roles without server-side allowlist enforcement, letting unauthenticated attackers create administrator accounts\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1492.yaml"
+    }
+  ],
   "CVE-2026-1603": [
     {
       "info": {
