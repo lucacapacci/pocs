@@ -6637,6 +6637,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-11921.yaml"
     }
   ],
+  "CVE-2024-12025": [
+    {
+      "info": {
+        "Name": "WordPress Collapsing Categories <= 3.0.8 - SQL Injection",
+        "Severity": "high",
+        "Description": "Collapsing Categories plugin for WordPress <= 3.0.8 contains a sql_injection caused by insufficient escaping of 'taxonomy' parameter in /wp-json/collapsing-categories/v1/get REST API, letting unauthenticated attackers execute arbitrary SQL queries, exploit requires sending crafted 'taxonomy' parameter.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-12025.yaml"
+    }
+  ],
   "CVE-2024-1208": [
     {
       "info": {
@@ -8721,6 +8735,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-30490.yaml"
+    }
+  ],
+  "CVE-2024-30498": [
+    {
+      "info": {
+        "Name": "CRM Perks Forms <= 1.1.4 - SQL Injection",
+        "Severity": "critical",
+        "Description": "CRM Perks CRM Perks Forms (affected versions 1.1.4 and earlier) contains a SQL injection caused by improper neutralization of special elements used in an SQL command, letting attackers execute arbitrary SQL commands, exploit requires user interaction.\n",
+        "Classification": {
+          "CVSSScore": "9.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-30498.yaml"
     }
   ],
   "CVE-2024-30568": [

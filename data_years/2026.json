@@ -131,6 +131,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1207.yaml"
     }
   ],
+  "CVE-2026-1357": [
+    {
+      "info": {
+        "Name": "WPvivid Backup & Migration <= 0.9.123 - Arbitrary File Upload",
+        "Severity": "critical",
+        "Description": "WPvivid Backup & Migration plugin for WordPress <= 0.9.123 contains an unauthenticated arbitrary file upload vulnerability caused by improper error handling in RSA decryption and lack of path sanitization, letting unauthenticated attackers upload arbitrary PHP files and achieve remote code execution via wpvivid_action=send_to_site parameter.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1357.yaml"
+    }
+  ],
   "CVE-2026-1603": [
     {
       "info": {
@@ -311,6 +325,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
+    }
+  ],
+  "CVE-2026-27645": [
+    {
+      "info": {
+        "Name": "Changedetection.io RSS Single Watch - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "changedetection.io < 0.54.1 contains a stored XSS caused by unescaped reflection of UUID path parameter in RSS single-watch endpoint, letting remote attackers execute JavaScript in victim's browser, exploit requires victim to visit crafted URL.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27645.yaml"
     }
   ],
   "CVE-2026-27944": [
