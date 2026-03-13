@@ -1757,6 +1757,26 @@
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          Remote for Mac versions up to and including 2025.7 via the /api/executeScript endpoint.\n          When authentication is disabled on the target system, it allows attackers to execute\n          arbitrary AppleScript commands, which can include shell commands via `do shell script`.\n          All versions up to 2025.7 (including patch versions) are vulnerable."
     }
   ],
+  "CVE-2025-64328": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/freepbx_filestore_cmd_injection.rb",
+      "name": "FreePBX filestore authenticated command injection",
+      "description": "This module exploits an authenticated command injection vulnerability (CVE-2025-64328) in the\n          FreePBX filestore module. The filestore module allows administrators to configure remote file\n          storage backends (SSH, FTP, etc.) for backup and file management purposes.\n\n          The vulnerability exists in the SSH driver's testconnection functionality, specifically in the\n          check_ssh_connect() function located at /admin/modules/filestore/drivers/SSH/testconnection.php.\n          The function accepts user-controlled input for the SSH key path parameter, which is then passed\n          unsanitized to exec() calls when generating SSH keys.\n\n          The vulnerable code executes commands such as:\n          exec(\"ssh-keygen -t ecdsa -b 521 -f $key -N \\\"\\\" && chown asterisk:asterisk $key && chmod 600 $key\");\n\n          By injecting shell command substitution syntax (e.g., $(command)) into the key parameter, an\n          authenticated user can execute arbitrary commands on the underlying system with the privileges of\n          the web server process (typically the asterisk user).\n\n          This vulnerability affects filestore module versions 17.0.2.36 through 17.0.2.44 (introduced in\n          17.0.2.36, patched in 17.0.3). The module requires valid FreePBX credentials for a user account that\n          has access to the filestore module. The user must be in the \"Filestore\" group (administrator or\n          low-privilege user).\n\n          Note: Due to the vulnerable code structure, the injected command may be executed multiple times,\n          potentially resulting in multiple Meterpreter sessions."
+    },
+    {
+      "info": {
+        "Name": "FreePBX  >= 17.0.2.36 && < 17.0.3 - Authenticated Command Injection",
+        "Severity": "critical",
+        "Description": "FreePBX Endpoint Manager 17.0.2.36 to < 17.0.3 contains a command injection caused by improper sanitization in filestore module's testconnection  check_ssh_connect() function, letting authenticated users execute commands as asterisk user.\n",
+        "Classification": {
+          "CVSSScore": "8.6"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-64328.yaml"
+    }
+  ],
   "CVE-2025-61678": [
     {
       "source": "metasploit",
@@ -8449,20 +8469,6 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-64095.yaml"
-    }
-  ],
-  "CVE-2025-64328": [
-    {
-      "info": {
-        "Name": "FreePBX  >= 17.0.2.36 && < 17.0.3 - Authenticated Command Injection",
-        "Severity": "critical",
-        "Description": "FreePBX Endpoint Manager 17.0.2.36 to < 17.0.3 contains a command injection caused by improper sanitization in filestore module's testconnection  check_ssh_connect() function, letting authenticated users execute commands as asterisk user.\n",
-        "Classification": {
-          "CVSSScore": "8.6"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-64328.yaml"
     }
   ],
   "CVE-2025-64525": [
