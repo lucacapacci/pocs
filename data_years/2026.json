@@ -159,6 +159,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1277.yaml"
     }
   ],
+  "CVE-2026-1296": [
+    {
+      "info": {
+        "Name": "Frontend Post Submission Manager Lite <= 1.2.7 - Open Redirect",
+        "Severity": "medium",
+        "Description": "The Frontend Post Submission Manager Lite plugin for WordPress is vulnerable to Open Redirection in all versions up to, and including, 1.2.7 due to insufficient validation on the 'requested_page' POST parameter in the verify_username_password function. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites if they can successfully trick them into performing an action such as clicking on a link.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1296.yaml"
+    }
+  ],
   "CVE-2026-1357": [
     {
       "info": {
@@ -381,6 +395,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2413.yaml"
+    }
+  ],
+  "CVE-2026-24477": [
+    {
+      "info": {
+        "Name": "AnythingLLM - Information Disclosure",
+        "Severity": "high",
+        "Description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24477.yaml"
     }
   ],
   "CVE-2026-25512": [
