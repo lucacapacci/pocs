@@ -516,5 +516,33 @@
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27971.yaml"
     }
+  ],
+  "CVE-2026-32583": [
+    {
+      "info": {
+        "Name": "Webnus Inc. Modern Events Calendar - Broken Access Control",
+        "Severity": "medium",
+        "Description": "Webnus Inc. Modern Events Calendar <= 7.29.0 contains a broken access control vulnerability caused by incorrectly configured access control security levels, letting attackers bypass authorization, exploit requires no special privileges.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32583.yaml"
+    }
+  ],
+  "CVE-2026-32596": [
+    {
+      "info": {
+        "Name": "Glances - Information Disclosure",
+        "Severity": "high",
+        "Description": "Glances < 4.5.2 contains an information disclosure vulnerability caused by the web server running without authentication by default, letting remote attackers access sensitive system information including credentials, exploit requires no special privileges.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
+    }
   ]
 }
