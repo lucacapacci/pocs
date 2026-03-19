@@ -1,4 +1,12 @@
 {
+  "CVE-2026-29058": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/avideo_encoder_getimage_cmd_injection.rb",
+      "name": "AVideo Encoder getImage.php Unauthenticated Command Injection",
+      "description": "This module exploits an unauthenticated OS command injection vulnerability\n          in AVideo Encoder's getImage.php endpoint (CVE-2026-29058).\n\n          The base64Url GET parameter is base64-decoded and injected directly into an\n          ffmpeg shell command within double quotes, without any sanitization or use of\n          escapeshellarg(). PHP's FILTER_VALIDATE_URL check does not block shell\n          metacharacters such as $() in the URL path, allowing command substitution.\n\n          A crafted URL like http://x/$(cmd) passes FILTER_VALIDATE_URL and is interpolated\n          into: ffmpeg -i \"{$url}\" ... resulting in arbitrary command execution as www-data.\n\n          The Encoder code is served by the main AVideo Apache container (mounted at\n          /Encoder), so exploitation gives access to the main application context including\n          database credentials and configuration.\n\n          Fixed in AVideo Encoder version 7.0 (commit 78178d1) which added escapeshellarg()\n          and shell metacharacter stripping."
+    }
+  ],
   "CVE-2026-1731": [
     {
       "source": "metasploit",
