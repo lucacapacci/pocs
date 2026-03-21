@@ -8423,6 +8423,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-1609.yaml"
     }
   ],
+  "CVE-2022-1692": [
+    {
+      "info": {
+        "Name": "CP Image Store with Slideshow <= 1.0.67 - SQL Injection",
+        "Severity": "critical",
+        "Description": "The CP Image Store with Slideshow WordPress plugin before 1.0.68 does not sanitise and escape the ordering_by query parameter before using it in a SQL statement in pages where the [codepeople-image-store] is embed, allowing unauthenticated users to perform an SQL injection attack.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-1692.yaml"
+    }
+  ],
   "CVE-2022-1711": [
     {
       "info": {
