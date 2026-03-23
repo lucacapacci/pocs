@@ -1383,6 +1383,14 @@
       "description": "This module exploits a buffer overflow in the zhttpd binary (/bin/zhttpd). It is present on more than 40 Zyxel routers and CPE devices.\n          The code execution vulnerability can only be exploited by an attacker if the zhttp webserver is reachable.\n          No authentication is required. After exploitation, an attacker will be able to execute any command\n          as root, including downloading and executing a binary from another host."
     }
   ],
+  "CVE-2023-2868": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/smtp/barracuda_esg_tarfile_rce.rb",
+      "name": "Barracuda ESG TAR Filename Command Injection",
+      "description": "This module exploits CVE-2023-2868, a command injection vulnerability in\n          Barracuda Email Security Gateway (ESG) appliances. The vulnerability exists\n          in how the ESG processes TAR file attachments - filenames containing shell\n          metacharacters (backticks) are passed directly to shell commands during\n          extraction, allowing remote command execution.\n\n          The exploit sends an email with a specially crafted TAR attachment where\n          the filename contains a backtick-wrapped command. When the ESG processes\n          this attachment, the command is executed as the mail processing user.\n\n          Note: Payload execution may take 30-90 seconds after email delivery.\n          Amavisd queues and processes attachments asynchronously.\n\n          Affected versions: Barracuda ESG firmware prior to May 2023 patch.\n\n          Payloads containing single quotes or backticks are incompatible with\n          the injection mechanism. Use cmd/unix/generic with a custom CMD for\n          specialized payload requirements."
+    }
+  ],
   "CVE-2023-34039": [
     {
       "source": "metasploit",
