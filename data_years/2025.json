@@ -8401,6 +8401,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-6205.yaml"
     }
   ],
+  "CVE-2025-62512": [
+    {
+      "info": {
+        "Name": "Piwigo - User Enumeration via Password Reset",
+        "Severity": "medium",
+        "Description": "Piwigo is an open source photo gallery application for the web. In version 15.5.0 and likely earlier 15.x releases, the password reset functionality in Piwigo allows an unauthenticated attacker to determine whether a given username or email address exists in the system. The endpoint at password.php?action=lost returns distinct messages for valid vs. invalid accounts, enabling user enumeration. As of time of publication, no known patches are available.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-62512.yaml"
+    }
+  ],
   "CVE-2025-62522": [
     {
       "info": {
@@ -8553,6 +8567,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-66744.yaml"
+    }
+  ],
+  "CVE-2025-68043": [
+    {
+      "info": {
+        "Name": "LottieFiles WordPress Plugin <= 3.0.0 - Missing Authorization",
+        "Severity": "high",
+        "Description": "LottieFiles LottieFiles <= 3.0.0 contains a broken access control vulnerability caused by incorrectly configured access control security levels, letting attackers exploit missing authorization, exploit requires no special privileges.\n",
+        "Classification": {
+          "CVSSScore": "7.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-68043.yaml"
     }
   ],
   "CVE-2025-68509": [
