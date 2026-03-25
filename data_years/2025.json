@@ -519,6 +519,14 @@
       "description": "This exploit effectively serves as a bypass for CVE-2024-3408.\n          An attacker can override global state to enable custom filters, which then facilitates remote code execution.\n          Specifically, this vulnerability leverages the ability to manipulate global application settings to activate the enable_custom_filters feature, typically restricted to trusted environments.\n          Once enabled, the /test-filter endpoint of the Custom Filters functionality can be exploited to execute arbitrary system commands."
     }
   ],
+  "CVE-2025-12548": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/eclipse_che_machine_exec_rce.rb",
+      "name": "Eclipse Che machine-exec Unauthenticated RCE",
+      "description": "This module exploits an unauthenticated remote code execution vulnerability\n          in the Eclipse Che machine-exec service (CVE-2025-12548). The machine-exec\n          service, exposed on port 3333 within Red Hat OpenShift DevSpaces developer\n          workspace containers, accepts WebSocket connections without authentication.\n\n          An attacker can connect to the machine-exec service and execute arbitrary\n          commands via JSON-RPC over WebSocket. This allows lateral movement between\n          workspaces and potential cluster compromise.\n\n          The vulnerability affects Red Hat OpenShift DevSpaces environments where\n          the machine-exec service is network-accessible."
+    }
+  ],
   "CVE-2025-58034": [
     {
       "source": "metasploit",
@@ -7909,6 +7917,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54782.yaml"
+    }
+  ],
+  "CVE-2025-54793": [
+    {
+      "info": {
+        "Name": "Astro SSR - Open Redirect",
+        "Severity": "medium",
+        "Description": "Astro 5.2.0 through 5.12.7 contains an open redirect caused by improper handling of paths with double slashes in trailing slash redirection logic, letting attackers redirect users to arbitrary external domains, exploit requires on-demand SSR with Node or Cloudflare adapters.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54793.yaml"
     }
   ],
   "CVE-2025-55161": [
