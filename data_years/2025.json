@@ -7233,6 +7233,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-44148.yaml"
     }
   ],
+  "CVE-2025-4576": [
+    {
+      "info": {
+        "Name": "Liferay Portal & DXP - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "Liferay Portal 7.4.0 through 7.4.3.133 and Liferay DXP 2024.Q1.1 through 2025.Q1.4 contain a reflected XSS caused by improper sanitization in entry_cover_image_caption.jsp, letting remote non-authenticated attackers inject JavaScript.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4576.yaml"
+    }
+  ],
   "CVE-2025-45854": [
     {
       "info": {
@@ -8477,6 +8491,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-6205.yaml"
+    }
+  ],
+  "CVE-2025-62126": [
+    {
+      "info": {
+        "Name": "WordPress Varnish/Nginx Proxy Caching <= 1.8.3 - Information Exposure",
+        "Severity": "medium",
+        "Description": "Razvan Stanga Varnish/Nginx Proxy Caching <= 1.8.3 contains an insertion of sensitive information into sent data vulnerability caused by improper handling of embedded sensitive data, letting attackers retrieve sensitive information, exploit requires crafted requests.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-62126.yaml"
     }
   ],
   "CVE-2025-62512": [
