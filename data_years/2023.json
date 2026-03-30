@@ -9993,6 +9993,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-34048.yaml"
     }
   ],
+  "CVE-2023-34092": [
+    {
+      "info": {
+        "Name": "Vite Dev Server - Information Exposure",
+        "Severity": "high",
+        "Description": "Vite dev server could allow reading files from the Vite project root by bypassing server.fs.deny with double forward-slash paths (//). This affects exposed dev servers only.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-34092.yaml"
+    }
+  ],
   "CVE-2023-34105": [
     {
       "info": {
