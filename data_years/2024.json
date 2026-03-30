@@ -11747,6 +11747,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-57050.yaml"
     }
   ],
+  "CVE-2024-57241": [
+    {
+      "info": {
+        "Name": "DedeCMS - Open Redirect via download.php",
+        "Severity": "medium",
+        "Description": "Dedecms 5.71sp1 and earlier contain a URL redirect caused by a logic error that does not properly validate GET request input, letting attackers redirect users to arbitrary URLs, exploit requires sending crafted GET requests.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-57241.yaml"
+    }
+  ],
   "CVE-2024-57514": [
     {
       "info": {
