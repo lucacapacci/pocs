@@ -8325,6 +8325,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59049.yaml"
     }
   ],
+  "CVE-2025-5947": [
+    {
+      "info": {
+        "Name": "Service Finder Bookings - Authentication Bypass",
+        "Severity": "critical",
+        "Description": "Service Finder Bookings WordPress plugin <= 6.0 contains a privilege escalation caused by improper validation of user cookie in service_finder_switch_back() function, letting unauthenticated attackers login as any user including admins.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5947.yaml"
+    }
+  ],
   "CVE-2025-59474": [
     {
       "info": {
