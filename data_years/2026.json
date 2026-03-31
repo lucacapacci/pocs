@@ -715,6 +715,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
     }
   ],
+  "CVE-2026-4257": [
+    {
+      "info": {
+        "Name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
+        "Severity": "critical",
+        "Description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
+    }
+  ],
   "CVE-2026-23829": [
     {
       "info": {
