@@ -931,6 +931,34 @@
       "source": "exploitdb"
     }
   ],
+  "CVE-2025-50286": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/grav_admin_direct_install_rce_cve_2025_50286.rb",
+      "name": "Grav CMS Admin Direct Install Authenticated Plugin Upload RCE",
+      "description": "Grav CMS version <=1.7.49.5 with Admin Plugin version <=1.10.49.3 is\n          vulnerable to authenticated remote code execution via the\n          \"Direct Install\" feature in the administrative interface.\n\n          An authenticated administrator can upload a crafted plugin\n          archive containing arbitrary PHP code. The uploaded plugin\n          is written to disk and executed by the application, allowing\n          command execution in the context of the web server user.\n\n          This module authenticates to the admin panel, uploads a\n          malicious plugin via /admin/tools/direct-install, and\n          triggers execution of the embedded payload."
+    },
+    {
+      "id": "52402",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52402.txt",
+      "description": "Grav CMS 1.7.48 - Remote Code Execution (RCE)",
+      "date_published": "2025-08-11",
+      "author": "/bin/neko",
+      "type": "webapps",
+      "platform": "php",
+      "port": "",
+      "date_added": "2025-08-11",
+      "date_updated": "2025-08-11",
+      "verified": "0",
+      "codes": "CVE-2025-50286",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2025-66294": [
     {
       "source": "metasploit",
@@ -4303,28 +4331,6 @@
       "date_updated": "2025-06-05",
       "verified": "0",
       "codes": "CVE-2025-45542",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-50286": [
-    {
-      "id": "52402",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52402.txt",
-      "description": "Grav CMS 1.7.48 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-11",
-      "author": "/bin/neko",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-50286",
       "tags": "",
       "aliases": "",
       "screenshot_url": "",
@@ -7931,6 +7937,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54251.yaml"
+    }
+  ],
+  "CVE-2025-54597": [
+    {
+      "info": {
+        "Name": "Heimdall Application Dashboard < 2.7.3 - Reflected XSS",
+        "Severity": "medium",
+        "Description": "LinuxServer.io Heimdall < 2.7.3 contains a stored XSS caused by improper sanitization of the \\\"q\\\" parameter, letting remote attackers execute scripts, exploit requires crafted input.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54597.yaml"
     }
   ],
   "CVE-2025-54726": [

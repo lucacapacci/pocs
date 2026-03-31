@@ -447,20 +447,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23760.yaml"
     }
   ],
-  "CVE-2026-23829": [
-    {
-      "info": {
-        "Name": "Mailpit < 1.28.2 - SMTP CRLF Injection",
-        "Severity": "medium",
-        "Description": "Mailpit < 1.28 contains a header injection caused by insufficient regex validation of `RCPT TO` and `MAIL FROM` addresses in the SMTP server, letting attackers inject arbitrary SMTP headers, exploit requires crafted email addresses\n",
-        "Classification": {
-          "CVSSScore": "5.3"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23829.yaml"
-    }
-  ],
   "CVE-2026-24128": [
     {
       "info": {
@@ -683,6 +669,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33868.yaml"
+    }
+  ],
+  "CVE-2026-23829": [
+    {
+      "info": {
+        "Name": "Mailpit < 1.28.2 - SMTP CRLF Injection",
+        "Severity": "medium",
+        "Description": "Mailpit < 1.28 contains a header injection caused by insufficient regex validation of `RCPT TO` and `MAIL FROM` addresses in the SMTP server, letting attackers inject arbitrary SMTP headers, exploit requires crafted email addresses\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
     }
   ]
 }
