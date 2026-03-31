@@ -587,6 +587,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28288.yaml"
     }
   ],
+  "CVE-2026-28414": [
+    {
+      "info": {
+        "Name": "Gradio - Absolute Path Traversal",
+        "Severity": "high",
+        "Description": "Gradio < 6.7 on Windows with Python 3.13+ contains an absolute path traversal caused by incorrect path validation in path joining logic, letting unauthenticated attackers read arbitrary files from the server.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28414.yaml"
+    }
+  ],
   "CVE-2026-3055": [
     {
       "info": {
@@ -669,6 +683,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33868.yaml"
+    }
+  ],
+  "CVE-2026-34156": [
+    {
+      "info": {
+        "Name": "NocoBase - VM Sandbox Escape to Remote Code Execution",
+        "Severity": "critical",
+        "Description": "NocoBase Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist controlled by WORKFLOW_SCRIPT_MODULES env var. The console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain (console._stdout.constructor.constructor to Function to process to child_process) to escape the sandbox and achieve Remote Code Execution as root.\n",
+        "Classification": {
+          "CVSSScore": "10.0"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
     }
   ],
   "CVE-2026-23829": [
