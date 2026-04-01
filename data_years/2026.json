@@ -617,6 +617,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28414.yaml"
     }
   ],
+  "CVE-2026-29183": [
+    {
+      "info": {
+        "Name": "SiYuan Note - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "Unauthenticated reflected cross-site scripting (XSS) vulnerability in all versions of SiYuan Note containing `/api/icon/getDynamicIcon` with unsafe `type=8` rendering logic. Attacker-controlled `content` is inserted directly into SVG output without proper sanitization. An attacker can execute arbitrary JavaScript in users' browsers when they visit a crafted malicious link.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
+    }
+  ],
   "CVE-2026-3055": [
     {
       "info": {
@@ -713,6 +727,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
+    }
+  ],
+  "CVE-2026-34605": [
+    {
+      "info": {
+        "Name": "SiYuan Note - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "SiYuan Note through version 3.6.1 is vulnerable to unauthenticated reflected Cross-Site Scripting (XSS) in the `/api/icon/getDynamicIcon` endpoint due to improper filtering of SVG elements with a namespace prefix (such as `<x:script>`). By using a namespaced script element, attackers can bypass the `SanitizeSVG` function and execute arbitrary JavaScript in the victim\u2019s browser upon visiting a crafted link.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34605.yaml"
+    }
+  ],
+  "CVE-2026-4020": [
+    {
+      "info": {
+        "Name": "Gravity SMTP WordPress Plugin - Sensitive Information Exposure",
+        "Severity": "high",
+        "Description": "Gravity SMTP WordPress plugin <= 2.1.4 contains a sensitive information exposure caused by an unrestricted REST API endpoint at /wp-json/gravitysmtp/v1/tests/mock-data, letting unauthenticated attackers retrieve detailed system configuration data, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4020.yaml"
     }
   ],
   "CVE-2026-4257": [
