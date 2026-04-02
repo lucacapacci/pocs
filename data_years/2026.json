@@ -1,4 +1,12 @@
 {
+  "CVE-2026-20127": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/networking/cisco_sdwan_auth_bypass.rb",
+      "name": "Cisco Catalyst SD-WAN Controller Authentication Bypass",
+      "description": "This module exploits an authentication bypass vulnerability (CVE-2026-20127)\n          in the Cisco Catalyst SD-WAN Controller (vSmart). The vdaemon DTLS control-plane\n          service fails to properly validate the verify_status byte in CHALLENGE_ACK_ACK\n          (msg_type=10) messages. The vbond_proc_challenge_ack_ack() handler reads an\n          attacker-controlled verify_status byte from the message body and, if non-zero,\n          sets the peer's authenticated flag to 1. Furthermore, the authentication gate in\n          vbond_proc_msg() exempts msg_type=10 from authentication checks, allowing an\n          unauthenticated peer to send this message.\n\n          An attacker can connect via DTLS 1.2 using a self-signed certificate (the server\n          performs no certificate validation at the handshake stage), skip the CHALLENGE_ACK\n          step, and send a forged CHALLENGE_ACK_ACK with verify_status=1 to become a trusted\n          peer without any legitimate credentials.\n\n          This module leverages the auth bypass to inject an SSH public key into the\n          vmanage-admin authorized_keys file via a VMANAGE_TO_PEER message, providing\n          persistent SSH access to the controller."
+    }
+  ],
   "CVE-2026-29058": [
     {
       "source": "metasploit",
@@ -741,6 +749,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
+    }
+  ],
+  "CVE-2026-34453": [
+    {
+      "info": {
+        "Name": "SiYuan <= v3.6.1 - Bookmark Data Disclosure",
+        "Severity": "high",
+        "Description": "SiYuan v3.6.2 contains an information disclosure vulnerability caused by improper authorization checks in the publish service's bookmark filtering, letting unauthenticated visitors access bookmarked blocks from password-protected documents, exploit requires access to the publish service.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34453.yaml"
     }
   ],
   "CVE-2026-34605": [
