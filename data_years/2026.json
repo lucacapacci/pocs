@@ -541,6 +541,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
+  "CVE-2026-26980": [
+    {
+      "info": {
+        "Name": "Ghost CMS Content API - SQL Injection",
+        "Severity": "critical",
+        "Description": "Ghost CMS before 6.19.1 is vulnerable to a blind SQL injection in the /ghost/api/content/tags/ endpoint via the filter parameter. This template checks for the vulnerability by sending a boolean-based payload.\n",
+        "Classification": {
+          "CVSSScore": "9.4"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26980.yaml"
+    }
+  ],
   "CVE-2026-27483": [
     {
       "info": {
@@ -639,6 +653,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28414.yaml"
     }
   ],
+  "CVE-2026-29014": [
+    {
+      "info": {
+        "Name": "MetInfo CMS <= 8.1 - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "MetInfo CMS 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability caused by insufficient input neutralization in the execution path, letting remote attackers execute arbitrary code remotely, exploit requires crafted requests.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29014.yaml"
+    }
+  ],
   "CVE-2026-29183": [
     {
       "info": {
@@ -693,6 +721,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31807.yaml"
+    }
+  ],
+  "CVE-2026-31809": [
+    {
+      "info": {
+        "Name": "SiYuan <= v3.5.9 - Cross Site Scripting",
+        "Severity": "medium",
+        "Description": "SiYuan v3.5.10 contains a reflected XSS caused by improper sanitization of javascript: href attributes allowing ASCII control characters to bypass prefix checks in SVG sanitizer, letting unauthenticated attackers execute JavaScript via /api/icon/getDynamicIcon.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31809.yaml"
     }
   ],
   "CVE-2026-31816": [
