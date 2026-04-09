@@ -13543,6 +13543,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-7164.yaml"
     }
   ],
+  "CVE-2023-7165": [
+    {
+      "info": {
+        "Name": "JetBackup <= 2.0.9.7 - Sensitive Information Exposure via Directory Listing",
+        "Severity": "high",
+        "Description": "JetBackup WordPress plugin <= 2.0.9.9 does not use index files to prevent directory listing in certain configurations, letting malicious actors leak backup files, exploit requires access to the web server.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-7165.yaml"
+    }
+  ],
   "CVE-2023-7246": [
     {
       "info": {
