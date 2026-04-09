@@ -351,6 +351,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21445.yaml"
     }
   ],
+  "CVE-2026-21643": [
+    {
+      "info": {
+        "Name": "Fortinet FortiClientEMS 7.4.4 - SQL Injection",
+        "Severity": "critical",
+        "Description": "Fortinet FortiClientEMS version 7.4.4 and earlier contains an unauthenticated SQL injection vulnerability in the /api/v1/init_consts endpoint. The 'Site' HTTP header value is passed directly into the PostgreSQL search_path without sanitization, allowing remote unauthenticated attackers to inject arbitrary SQL commands. This can lead to information disclosure, database manipulation, or OS command execution when chained with PostgreSQL functions.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21643.yaml"
+    }
+  ],
   "CVE-2026-21858": [
     {
       "info": {
@@ -531,6 +545,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25512.yaml"
+    }
+  ],
+  "CVE-2026-25616": [
+    {
+      "info": {
+        "Name": "Blesta <= 5.13.1 - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "Blesta 3.x through 5.x before 5.13.3 contains an input validation vulnerability caused by mishandling input, letting attackers potentially exploit the system, exploit requires unspecified conditions.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25616.yaml"
     }
   ],
   "CVE-2026-25892": [
@@ -909,6 +937,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34885.yaml"
+    }
+  ],
+  "CVE-2026-35616": [
+    {
+      "info": {
+        "Name": "FortiClient EMS - Authentication Bypass",
+        "Severity": "high",
+        "Description": "Detects whether Fortinet hotfix FG-IR-26-099 for CVE-2026-35616 is missing by comparing behavioral responses from a certificate-authenticated endpoint. The template sends X-SSL-CLIENT-VERIFY: SUCCESS without certificate material and checks whether this spoofed header changes server behavior.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35616.yaml"
+    }
+  ],
+  "CVE-2026-3584": [
+    {
+      "info": {
+        "Name": "WordPress Kali Forms <= 2.4.9 - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "Kali Forms WordPress plugin <= 2.4.9 contains a remote code execution caused by unsafe user input handling in 'form_process' and 'prepare_post_data' functions, letting unauthenticated attackers execute code on the server, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3584.yaml"
     }
   ],
   "CVE-2026-39364": [

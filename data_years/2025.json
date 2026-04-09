@@ -5925,6 +5925,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-14155.yaml"
     }
   ],
+  "CVE-2025-14340": [
+    {
+      "info": {
+        "Name": "Payara Server - Cross-Site Scripting",
+        "Severity": "high",
+        "Description": "Payara Server versions <4.1.2.191.54, <5.83.0, <6.34.0, and <7.2026.1 contain a stored XSS vulnerability caused by improper input sanitization in the REST Management Interface. This allows attackers to mislead administrators into changing the admin password via a URL payload; however, the exploit requires administrator interaction.\n",
+        "Classification": {
+          "CVSSScore": "9.0"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-14340.yaml"
+    }
+  ],
   "CVE-2025-14437": [
     {
       "info": {
@@ -6315,6 +6329,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25570.yaml"
+    }
+  ],
+  "CVE-2025-2558": [
+    {
+      "info": {
+        "Name": "WordPress The Wound Theme <= 0.0.1 - Local File Inclusion",
+        "Severity": "high",
+        "Description": "The-wound WordPress theme through 0.0.1 contains a local file inclusion caused by insufficient validation of parameters used to generate paths passed to include functions, letting unauthenticated users perform LFI attacks and download arbitrary files from the server.\n",
+        "Classification": {
+          "CVSSScore": "8.6"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2558.yaml"
     }
   ],
   "CVE-2025-2609": [
@@ -8303,6 +8331,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54793.yaml"
+    }
+  ],
+  "CVE-2025-55150": [
+    {
+      "info": {
+        "Name": "Stirling-PDF < 1.1.0 - Server-Side Request Forgery",
+        "Severity": "high",
+        "Description": "Stirling-PDF < 1.1.0 contains a server side request forgery caused by bypassing the sanitizer in the /api/v1/convert/html/pdf endpoint when processing HTML to PDF conversion, letting attackers perform SSRF, exploit requires local access.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-55150.yaml"
     }
   ],
   "CVE-2025-55161": [

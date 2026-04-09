@@ -13403,6 +13403,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6697.yaml"
     }
   ],
+  "CVE-2023-6750": [
+    {
+      "info": {
+        "Name": "WordPress WP Clone <= 2.4.2 - Database Backup Exposure",
+        "Severity": "critical",
+        "Description": "Clone WordPress plugin < 2.4.3 contains a buffer overflow caused by storing in-progress backup information in publicly accessible buffer files at a static file path, letting attackers access sensitive backup data, exploit requires no special privileges\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6750.yaml"
+    }
+  ],
   "CVE-2023-6786": [
     {
       "info": {
@@ -13415,6 +13429,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6786.yaml"
+    }
+  ],
+  "CVE-2023-6825": [
+    {
+      "info": {
+        "Name": "WordPress File Manager <= 7.2.1 - Directory Traversal",
+        "Severity": "critical",
+        "Description": "File Manager and File Manager Pro plugins for WordPress versions up to 7.2.1 and 8.3.4 contain a directory traversal caused by the 'target' parameter in mk_file_folder_manager_action_callback_shortcode, letting attackers read arbitrary files and upload files outside designated directories, exploit requires administrator privileges for free version and can be exploited by lower-level users in Pro version.\n",
+        "Classification": {
+          "CVSSScore": "9.9"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-6825.yaml"
     }
   ],
   "CVE-2023-6831": [
