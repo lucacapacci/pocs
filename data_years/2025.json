@@ -1323,6 +1323,26 @@
       "description": "A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in React Server\n          Components (RSC) Flight protocol. The vulnerability allows attackers to achieve prototype\n          pollution during deserialization of RSC payloads by sending specially crafted multipart\n          requests with \"__proto__\", \"constructor\", or \"prototype\" as module names.\n\n          This module supports multiple vulnerable frameworks including Next.js and Waku."
     },
     {
+      "id": "52506",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52506.py",
+      "description": "React Server 19.2.0 - Remote Code Execution",
+      "date_published": "2026-04-09",
+      "author": "danieljavanrad",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-09",
+      "date_updated": "2026-04-09",
+      "verified": "0",
+      "codes": "CVE-2025-55182",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    },
+    {
       "info": {
         "Name": "React Server Components - Remote Code Execution",
         "Severity": "critical",
@@ -4023,6 +4043,28 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49132.yaml"
+    }
+  ],
+  "CVE-2025-65027": [
+    {
+      "id": "52505",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52505.txt",
+      "description": "RomM  4.4.0 -  XSS_CSRF Chain",
+      "date_published": "2026-04-09",
+      "author": "mmohammedheshamm",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-09",
+      "date_updated": "2026-04-09",
+      "verified": "0",
+      "codes": "CVE-2025-65027",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     }
   ],
   "CVE-2025-10327": [
