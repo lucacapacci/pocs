@@ -10095,6 +10095,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-38816.yaml"
     }
   ],
+  "CVE-2024-38819": [
+    {
+      "info": {
+        "Name": "Spring Framework Path Traversal in Functional Web Frameworks",
+        "Severity": "high",
+        "Description": "Applications serving static resources through the functional web frameworks WebMvc.fn or WebFlux.fn are vulnerable to path traversal attacks. An attacker can craft malicious HTTP requests and obtain any file on the file system that is also accessible to the process in which the Spring application is running. The application is vulnerable when it uses RouterFunctions to serve static resources and resource handling is explicitly configured with a FileSystemResource location. This is similar to CVE-2024-38816, but with different input. Unlike CVE-2024-38816, applications deployed on Tomcat or Jetty are also vulnerable.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-38819.yaml"
+    }
+  ],
   "CVE-2024-3922": [
     {
       "info": {
