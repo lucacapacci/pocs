@@ -331,6 +331,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1603.yaml"
     }
   ],
+  "CVE-2026-20079": [
+    {
+      "info": {
+        "Name": "Cisco Secure Firewall Management Center - Authentication Bypass",
+        "Severity": "critical",
+        "Description": "Cisco Secure Firewall Management Center Software contains an authentication bypass caused by improper system process creation at boot, letting unauthenticated remote attackers execute scripts and gain root access, exploit requires crafted HTTP requests.\n",
+        "Classification": {
+          "CVSSScore": "10"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20079.yaml"
+    }
+  ],
   "CVE-2026-2025": [
     {
       "info": {
@@ -525,6 +539,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2413.yaml"
+    }
+  ],
+  "CVE-2026-2416": [
+    {
+      "info": {
+        "Name": "Geo Mashup <= 1.13.17 - SQL Injection",
+        "Severity": "high",
+        "Description": "Geo Mashup WordPress plugin <= 1.13.17 contains a SQL injection caused by insufficient escaping of the 'sort' parameter, letting unauthenticated attackers extract sensitive database information remotely.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2416.yaml"
     }
   ],
   "CVE-2026-24477": [
