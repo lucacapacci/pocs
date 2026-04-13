@@ -5947,6 +5947,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13418.yaml"
     }
   ],
+  "CVE-2025-13652": [
+    {
+      "info": {
+        "Name": "WordPress CBX Bookmark & Favorite Plugin <= 2.0.4 - SQL Injection",
+        "Severity": "critical",
+        "Description": "CBX Bookmark & Favorite WordPress plugin <= 2.0.4 contains a SQL injection caused by insufficient escaping of the 'orderby' parameter, letting authenticated attackers with Subscriber-level access extract sensitive database information\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13652.yaml"
+    }
+  ],
   "CVE-2025-13920": [
     {
       "info": {
@@ -7009,6 +7023,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32430.yaml"
+    }
+  ],
+  "CVE-2025-32614": [
+    {
+      "info": {
+        "Name": "EventON Lite <= 2.4 - Authenticated Local File Inclusion",
+        "Severity": "high",
+        "Description": "Ashan Perera EventON contains a PHP remote file inclusion caused by improper control of filename in include/require statements, letting attackers include local files, exploit requires attacker to control include filename.\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32614.yaml"
     }
   ],
   "CVE-2025-32813": [
@@ -8199,6 +8227,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-53364.yaml"
+    }
+  ],
+  "CVE-2025-5350": [
+    {
+      "info": {
+        "Name": "WSO2 - Server Side Request Forgery",
+        "Severity": "medium",
+        "Description": "WSO2 products contain SSRF and reflected XSS vulnerabilities in the deprecated Try-It feature accessible only to administrative users, caused by improper URL validation and direct content reflection, letting attackers trick admins into executing arbitrary JavaScript and querying internal services.\n",
+        "Classification": {
+          "CVSSScore": "5.9"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5350.yaml"
     }
   ],
   "CVE-2025-53533": [
