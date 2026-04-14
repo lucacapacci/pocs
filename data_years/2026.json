@@ -877,6 +877,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
+  "CVE-2026-33340": [
+    {
+      "info": {
+        "Name": "LoLLMs WEBUI - Server-Side Request Forgery",
+        "Severity": "critical",
+        "Description": "LoLLMs WEBUI contains a server-side request forgery caused by unauthenticated access to the /api/proxy endpoint, letting attackers force the server to make arbitrary GET requests, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33340.yaml"
+    }
+  ],
   "CVE-2026-33478": [
     {
       "info": {
@@ -1099,6 +1113,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
+    }
+  ],
+  "CVE-2026-6118": [
+    {
+      "info": {
+        "Name": "AstrBot <= 4.22.1 - Command Injection",
+        "Severity": "high",
+        "Description": "AstrBot versions up to and including 4.22.1 contain a command injection vulnerability in the MCP server configuration endpoint. The /api/tools/mcp/add endpoint accepts arbitrary command and args fields that are passed directly to subprocess execution during the connection test, without any validation or allowlist enforcement. An attacker with dashboard access can execute arbitrary system commands with AstrBot process privileges.\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6118.yaml"
     }
   ],
   "CVE-2026-6203": [
