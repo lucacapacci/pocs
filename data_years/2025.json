@@ -13,46 +13,6 @@
       "description": "This exploit module exploits an authentication bypass via path traversal vulnerability in the Fortinet\n          FortiWeb management interface to create a new local administrator user account. From there a command\n          injection vulnerability is leveraged to achieve RCE with root privileges.\n\n          The auth bypass CVE-2025-64446 affects the following versions:\n\n          * FortiWeb 8.0.0 through 8.0.1 (Patched in 8.0.2 and above)\n          * FortiWeb 7.6.0 through 7.6.4 (Patched in 7.6.5 and above)\n          * FortiWeb 7.4.0 through 7.4.9 (Patched in 7.4.10 and above)\n          * FortiWeb 7.2.0 through 7.2.11 (Patched in 7.2.12 and above)\n          * FortiWeb 7.0.0 through 7.0.11 (Patched in 7.0.12 and above)\n\n          The command injection CVE-2025-58034 affects the following versions (Note the 7.6 and 7.4 branches are very\n          slightly different when compared to the patch versions for CVE-2025-64446:\n\n          * FortiWeb 8.0.0 through 8.0.1 (Patched in 8.0.2 and above)\n          * FortiWeb 7.6.0 through 7.6.5 (Patched in 7.6.6 and above) <-- slight difference\n          * FortiWeb 7.4.0 through 7.4.10 (Patched in 7.4.11 and above) <-- slight difference\n          * FortiWeb 7.2.0 through 7.2.11 (Patched in 7.2.12 and above)\n          * FortiWeb 7.0.0 through 7.0.11 (Patched in 7.0.12 and above)\n\n          Note: Unsupported versions 6.* are also affected.\n\n          This exploit module has been confirmed to work against 8.0.1, 7.4.8, 6.4.3, and 6.3.9."
     },
     {
-      "id": "52495",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52495.txt",
-      "description": "Fortinet FortiWeb v8.0.1 - Auth Bypass",
-      "date_published": "2026-04-06",
-      "author": "nu11secur1ty",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-64446",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52502",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52502.py",
-      "description": "FortiWeb  8.0.2 - Remote Code Execution",
-      "date_published": "2026-04-08",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-08",
-      "date_updated": "2026-04-08",
-      "verified": "0",
-      "codes": "CVE-2025-64446",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "FortiWeb - Authentication Bypass",
         "Severity": "critical",
@@ -271,26 +231,6 @@
       "description": "The Slider & Popup Builder by Depicter plugin for WordPress <= 3.6.1\n          is vulnerable to unauthenticated SQL injection via the 's' parameter\n          in admin-ajax.php."
     },
     {
-      "id": "52285",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52285.py",
-      "description": "WordPress Depicter Plugin 3.6.1 - SQL Injection",
-      "date_published": "2025-05-09",
-      "author": "Andrew Long",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-09",
-      "date_updated": "2025-05-09",
-      "verified": "0",
-      "codes": "CVE-2025-2011",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/datagoboom/CVE-2025-2011",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Slider & Popup Builder by Depicter <= 3.6.1 - Unauthenticated SQL Injection",
         "Severity": "high",
@@ -433,26 +373,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/freebsd/misc/rtsold_dnssl_cmdinject.rb",
       "name": "FreeBSD rtsold/rtsol DNSSL Command Injection",
       "description": "This module exploits a command injection vulnerability (CVE-2025-14558)\n          in FreeBSD's rtsol(8) and rtsold(8) programs. These programs do not\n          validate the domain search list options provided in IPv6 Router\n          Advertisement messages; the option body is passed to resolvconf(8)\n          unmodified. resolvconf(8) is a shell script which does not validate\n          its input. A lack of quoting means that shell commands passed as input\n          to resolvconf(8) may be executed, enabling command injection via $()\n          substitution in the DNSSL domain name fields.\n\n          This exploit requires Layer 2 adjacency to the target (same network\n          segment) and root privileges to send raw packets. Router advertisement\n          messages are not routable and should be dropped by routers, so the\n          attack does not cross network boundaries."
-    },
-    {
-      "id": "52463",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52463.py",
-      "description": "FreeBSD rtsold 15.x - Remote Code Execution via DNSSL",
-      "date_published": "2025-12-25",
-      "author": "Lukas Johannes M\u00f6ller",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-25",
-      "date_updated": "2025-12-25",
-      "verified": "0",
-      "codes": "CVE-2025-14558",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-34152": [
@@ -645,26 +565,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/motioneye_auth_rce_cve_2025_60787.rb",
       "name": "Remote Code Execution Vulnerability in MotionEye Frontend (CVE-2025-60787)",
       "description": "This module exploits a template injection vulnerability in the MotionEye Frontend.\n\n          MotionEye Frontend versions 0.43.1b4 and prior are vulnerable to OS Command Injection in configuration parameters such as image_file_name.\n          Unsanitized user input is written to MotionEye Frontend configuration files, allowing remote authenticated attackers with admin access to achieve code execution.\n\n          Successful exploitation will result in the command executing as the user running\n          the web server, potentially exposing sensitive data or disrupting survey operations.\n\n          An attacker can execute arbitrary system commands in the context of the user running the web server."
-    },
-    {
-      "id": "52481",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52481.txt",
-      "description": "motionEye 0.43.1b4 - RCE",
-      "date_published": "2026-02-11",
-      "author": "prabhat",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-11",
-      "date_updated": "2026-02-11",
-      "verified": "0",
-      "codes": "CVE-2025-60787",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-34115": [
@@ -705,26 +605,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pivotx_index_php_overwrite.rb",
       "name": "PivotX Remote Code Execution",
       "description": "This module gains remote code execution in PivotX management system. The PivotX allows admin user to directly edit files on the webserver, including PHP files. The module exploits this by writing a malicious payload into `index.php` file, gaining remote code execution."
-    },
-    {
-      "id": "52361",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52361.txt",
-      "description": "PivotX 3.0.0 RC3 - Remote Code Execution (RCE)",
-      "date_published": "2025-07-16",
-      "author": "HayToN",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-52367",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-34112": [
@@ -741,26 +621,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/skyvern_ssti_cve_2025_49619.rb",
       "name": "Skyvern SSTI Remote Code Execution",
       "description": "This module exploits SSTI vulnerability in Skyvern<=0.1.84. The module requires API key to deliver requests and upload malicious workflow."
-    },
-    {
-      "id": "52335",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52335.py",
-      "description": "Skyvern 0.1.85 - Remote Code Execution (RCE) via SSTI",
-      "date_published": "2025-06-15",
-      "author": "Cristian Branet",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-49619",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-69516": [
@@ -821,26 +681,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/sudo_chroot_cve_2025_32463.rb",
       "name": "Sudo Chroot 1.9.17 Privilege Escalation",
       "description": "Sudo before version 1.19.17p1 allows user to use `chroot` option, when\n          executing command. The option is intended to run a command with\n          user-selected root directory (if sudoers file allow it). Change in version\n          1.9.14 allows resolving paths via `chroot` using user-specified root\n          directory when sudoers is still evaluating.\n          This allows the attacker to trick Sudo into loading arbitrary shared object,\n          thus resulting in a privilege escalation."
-    },
-    {
-      "id": "52352",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52352.txt",
-      "description": "Sudo chroot 1.9.17 - Local Privilege Escalation",
-      "date_published": "2025-07-08",
-      "author": "Stratascale",
-      "type": "local",
-      "platform": "linux",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-08",
-      "verified": "0",
-      "codes": "CVE-2025-32463",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-34082": [
@@ -951,26 +791,6 @@
       "description": "This module exploits a remote code execution vulnerability in Flowise versions >= 2.2.7-patch.1\n          and < 3.0.6. The vulnerability exists in the customMCP endpoint (/api/v1/node-load-method/customMCP)\n          located in packages/components/nodes/tools/MCP/CustomMCP/CustomMCP.ts, which allows users to execute\n          arbitrary commands via JavaScript code injection in the mcpServerConfig parameter using the\n          convertToValidJSONString function that uses Function('return ' + inputString)(). For versions < 3.0.1,\n          the exploit can work unauthenticated if FLOWISE_USERNAME and FLOWISE_PASSWORD environment variables\n          are not configured. For versions >= 3.0.1, authentication via FLOWISE_EMAIL and FLOWISE_PASSWORD is\n          required due to JWT token verification."
     },
     {
-      "id": "52440",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52440.py",
-      "description": "Flowise 3.0.4 - Remote Code Execution (RCE)",
-      "date_published": "2025-10-31",
-      "author": "nltt0",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-10-31",
-      "date_updated": "2025-10-31",
-      "verified": "0",
-      "codes": "CVE-2025-59528",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Flowise - Remote Code Execution",
         "Severity": "critical",
@@ -989,26 +809,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/grav_admin_direct_install_rce_cve_2025_50286.rb",
       "name": "Grav CMS Admin Direct Install Authenticated Plugin Upload RCE",
       "description": "Grav CMS version <=1.7.49.5 with Admin Plugin version <=1.10.49.3 is\n          vulnerable to authenticated remote code execution via the\n          \"Direct Install\" feature in the administrative interface.\n\n          An authenticated administrator can upload a crafted plugin\n          archive containing arbitrary PHP code. The uploaded plugin\n          is written to disk and executed by the application, allowing\n          command execution in the context of the web server user.\n\n          This module authenticates to the admin panel, uploads a\n          malicious plugin via /admin/tools/direct-install, and\n          triggers execution of the embedded payload."
-    },
-    {
-      "id": "52402",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52402.txt",
-      "description": "Grav CMS 1.7.48 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-11",
-      "author": "/bin/neko",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-50286",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-66294": [
@@ -1035,26 +835,6 @@
       "description": "Invision Community up to and including version 5.0.6 contains a remote code\n          execution vulnerability in the theme editor's customCss endpoint. By crafting\n          a specially formatted `content` parameter with a `{expression=\"...\"}`\n          construct, arbitrary PHP can be evaluated. This module leverages that flaw\n          to execute payloads or system commands as the webserver user."
     },
     {
-      "id": "52294",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52294.php",
-      "description": "Invision Community 5.0.6 - Remote Code Execution (RCE)",
-      "date_published": "2025-05-18",
-      "author": "Egidio Romano",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-18",
-      "date_updated": "2025-05-18",
-      "verified": "0",
-      "codes": "CVE-2025-47916",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://karmainsecurity.com/pocs/CVE-2025-47916.php",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Invision Community <=5.0.6 Unauthenticated RCE via Template Injection",
         "Severity": "critical",
@@ -1073,26 +853,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/ivanti_epmm_rce_cve_2025_4427_4428.rb",
       "name": "Ivanti EPMM Authentication Bypass for Expression Language Remote Code Execution",
       "description": "This module exploits an unauthenticated remote code execution exploit chain for Ivanti EPMM,\n          tracked as CVE-2025-4427 and CVE-2025-4428. An authentication flaw permits unauthenticated\n          access to an administrator web API endpoint, which allows for code execution via expression\n          language injection. This module executes in the context of the 'tomcat' user. This module\n          should also work on many versions of MobileIron Core (rebranded as Ivanti EPMM)."
-    },
-    {
-      "id": "52421",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52421.py",
-      "description": "Ivanti Endpoint Manager Mobile 12.5.0.0 - Authentication Bypass",
-      "date_published": "2025-08-26",
-      "author": "\u0130brahimsql",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-4427",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -1121,46 +881,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_unauth_rce_cve_2025_3248.rb",
       "name": "Langflow AI RCE",
       "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in the /api/v1/validate/code endpoint.\n          A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary code."
-    },
-    {
-      "id": "52262",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52262.txt",
-      "description": "Langflow 1.3.0 -  Remote Code Execution (RCE)",
-      "date_published": "2025-04-18",
-      "author": "VeryLazyTech",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-18",
-      "date_updated": "2025-04-18",
-      "verified": "0",
-      "codes": "CVE-2025-3248",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52364",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52364.py",
-      "description": "Langflow 1.2.x - Remote Code Execution (RCE)",
-      "date_published": "2025-07-16",
-      "author": "Raghad Abdallah Al-syouf",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-3248",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -1323,26 +1043,6 @@
       "description": "A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in React Server\n          Components (RSC) Flight protocol. The vulnerability allows attackers to achieve prototype\n          pollution during deserialization of RSC payloads by sending specially crafted multipart\n          requests with \"__proto__\", \"constructor\", or \"prototype\" as module names.\n\n          This module supports multiple vulnerable frameworks including Next.js and Waku."
     },
     {
-      "id": "52506",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52506.py",
-      "description": "React Server 19.2.0 - Remote Code Execution",
-      "date_published": "2026-04-09",
-      "author": "danieljavanrad",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-09",
-      "date_updated": "2026-04-09",
-      "verified": "0",
-      "codes": "CVE-2025-55182",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "React Server Components - Remote Code Execution",
         "Severity": "critical",
@@ -1369,26 +1069,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/roundcube_auth_rce_cve_2025_49113.rb",
       "name": "Roundcube Post-Auth RCE via PHP Object Deserialization",
       "description": "Roundcube Webmail before 1.5.10 and 1.6.x before 1.6.11 allows remote code execution\n          by authenticated users because the _from parameter in a URL is not validated\n          in program/actions/settings/upload.php, leading to PHP Object Deserialization.\n\n          An attacker can execute arbitrary system commands as the web server."
-    },
-    {
-      "id": "52324",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52324.NA",
-      "description": "Roundcube 1.6.10 - Remote Code Execution (RCE)",
-      "date_published": "2025-06-13",
-      "author": "Maksim Rogov",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-13",
-      "date_updated": "2025-06-13",
-      "verified": "0",
-      "codes": "CVE-2025-49113",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -1499,26 +1179,6 @@
       "description": "This module exploits a Java deserialization vulnerability in Apache\n          Tomcat's session restoration functionality that can be exploited with a partial HTTP PUT request to\n          place an attacker controlled deserialization payload in the <tomcat_root_dir>/webapps/ROOT/ directory.\n\n          For the exploit to succeed, writes must be enabled for the default servlet,\n          and org.apache.catalina.session.PersistentManager must be configured to use\n          org.apache.catalina.session.FileStore.\n\n          Verified working on 10.1.16-1"
     },
     {
-      "id": "52134",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52134.txt",
-      "description": "Apache Tomcat 11.0.3 - Remote Code Execution",
-      "date_published": "2025-04-07",
-      "author": "Al Baradi Joy",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-07",
-      "date_updated": "2025-04-07",
-      "verified": "0",
-      "codes": "CVE-2025-24813",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Apache Tomcat Path Equivalence - Remote Code Execution",
         "Severity": "critical",
@@ -1609,26 +1269,6 @@
       "description": "This module exploits the embedded Lua interpreter in the admin web interface for\n          versions 3.0.0 and above. When supplying a specially crafted HTTP POST request\n          an attacker can use os.execute() to execute arbitrary system commands on\n          the target with SYSTEM privileges."
     },
     {
-      "id": "52347",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52347.py",
-      "description": "Wing FTP Server 7.4.3 - Unauthenticated Remote Code Execution  (RCE)",
-      "date_published": "2025-07-02",
-      "author": "4m3rr0r",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-02",
-      "date_updated": "2025-07-02",
-      "verified": "0",
-      "codes": "CVE-2025-47812",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Wing FTP Server <= 7.4.3 - Remote Code Execution",
         "Severity": "critical",
@@ -1695,26 +1335,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_plugin_story_chef_file_upload.rb",
       "name": "WordPress StoryChief Plugin Unauthenticated RCE",
       "description": "This module exploits an unauthenticated arbitrary file upload\n          vulnerability in the StoryChief WordPress plugin <= 1.0.42.\n\n          The plugin exposes a webhook endpoint at\n          /wp-json/storychief/webhook which accepts a forged HMAC.\n          Because the plugin uses an empty secret for HMAC validation,\n          attackers can compute a valid MAC and force WordPress to\n          download and store attacker-controlled PHP content inside\n          the uploads directory, resulting in remote code execution."
-    },
-    {
-      "id": "52422",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52422.py",
-      "description": "StoryChief Wordpress Plugin 1.0.42 - Arbitrary File Upload",
-      "date_published": "2025-08-26",
-      "author": "xpl0dec",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-7441",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     }
   ],
   "CVE-2025-3102": [
@@ -1743,26 +1363,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_suretriggers_auth_bypass.rb",
       "name": "WordPress SureTriggers (aka OttoKit) Combined Auth Bypass (CVE-2025-3102, CVE-2025-27007)",
       "description": "Exploits two distinct authorization bypasses in SureTriggers/OttoKit plugin:\n          - CVE-2025-3102: admin creation via St-Authorization Bearer (empty)\n          - CVE-2025-27007: reset access key via connection endpoint & admin creation with Bearer header"
-    },
-    {
-      "id": "52286",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52286.txt",
-      "description": "SureTriggers OttoKit Plugin 1.0.82 - Privilege Escalation",
-      "date_published": "2025-05-09",
-      "author": "Abdualhadi khalifa",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-09",
-      "date_updated": "2025-05-09",
-      "verified": "0",
-      "codes": "CVE-2025-27007",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/absholi7ly/CVE-2025-27007-OttoKit-exploit/",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -1803,46 +1403,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xwiki_unauth_rce_cve_2025_24893.rb",
       "name": "Remote Code Execution Vulnerability in XWiki Platform (CVE-2025-24893)",
       "description": "This module exploits a template injection vulnerability in the the XWiki Platform.\n          XWiki includes a macro called SolrSearch (defined in Main.SolrSearchMacros) that enables full-text search through the embedded Solr engine.\n          The vulnerability stems from the way this macro evaluates search parameters in Groovy, failing to sanitize or restrict malicious input.\n\n          This vulnerability affects XWiki Platform versions >= 5.3-milestone-2 and < 15.10.11, and versions >= 16.0.0-rc-1 and < 16.4.1.\n          Successful exploitation may result in the remote code execution under the privileges\n          of the web server, potentially exposing sensitive data or disrupting survey operations.\n\n          An attacker can execute arbitrary system commands in the context of the user running the web server."
-    },
-    {
-      "id": "52429",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52429.txt",
-      "description": "XWiki Platform 15.10.10 - Metasploit Module for Remote Code Execution (RCE)",
-      "date_published": "2025-09-16",
-      "author": "Maksim Rogov",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-24893",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52136",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52136.txt",
-      "description": "XWiki Platform 15.10.10 - Remote Code Execution",
-      "date_published": "2025-04-07",
-      "author": "Al Baradi Joy",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-07",
-      "date_updated": "2025-04-07",
-      "verified": "0",
-      "codes": "CVE-2025-24893",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -2007,26 +1567,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/wp_pie_register_bypass_rce.rb",
       "name": "WordPress Plugin Pie Register Auth Bypass to RCE",
       "description": "This module uses an authentication bypass vulnerability in\n          Wordpress Plugin Pie Register <= 3.7.1.4 to generate a valid cookie.\n          With this cookie, hopefully of the admin, it will generate a plugin,\n          pack the payload into it and upload it to a server running WordPress."
-    },
-    {
-      "id": "52370",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52370.py",
-      "description": "Pie Register WordPress Plugin 3.7.1.4 - Authentication Bypass to RCE",
-      "date_published": "2025-07-22",
-      "author": "Md Amanat Ullah (xSwads)",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-34077",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -2221,26 +1761,6 @@
       "description": "This module exploits the authentication bypass vulnerabilities CVE-2025-49706 and CVE-2025-53771, and an unsafe\n          deserialization vulnerability CVE-2025-49704, to achieve unauthenticated RCE against a vulnerable Microsoft\n          SharePoint Server. The vulnerability CVE-2025-53770 was disclosed as being a patch bypass of CVE-2025-49704,\n          and as described by the finders, CVE-2025-53770 targets a different endpoint within the /_vti_bin/ URI path.\n          As this exploit module does not target the endpoint associated with CVE-2025-53770 (per the original finders),\n          we believe this module is best described as exploiting CVE-2025-49704 and not CVE-2025-53770."
     },
     {
-      "id": "52405",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52405.py",
-      "description": "Microsoft SharePoint Server 2019 (16.0.10383.20020) - Remote Code Execution (RCE)",
-      "date_published": "2025-08-11",
-      "author": "Agampreet Singh",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-53770",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
       "info": {
         "Name": "Microsoft SharePoint Server - Remote Code Execution (ToolShell)",
         "Severity": "critical",
@@ -2279,26 +1799,6 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/sitecore_xp_cve_2025_27218.rb",
       "name": "Sitecore CVE-2025-27218 BinaryFormatter Deserialization Exploit",
       "description": "This module exploits a .NET deserialization vulnerability in Sitecore Experience Manager (XM) and Experience\n          Platform (XP) 10.4 by injecting a malicious Base64-encoded BinaryFormatter payload into an HTTP header."
-    },
-    {
-      "id": "52344",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52344.py",
-      "description": "Sitecore 10.4 - Remote Code Execution (RCE)",
-      "date_published": "2025-06-26",
-      "author": "Yesith Alvarez",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-26",
-      "date_updated": "2025-06-26",
-      "verified": "0",
-      "codes": "CVE-2025-27218",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
     },
     {
       "info": {
@@ -2381,3166 +1881,6 @@
       "description": "This module exploits a Unicode SEH buffer overflow in Achat. By\n          sending a crafted message to the default port 9256/UDP, it's possible to overwrite the\n          SEH handler. Even when the exploit is reliable, it depends on timing since there are\n          two threads overflowing the stack in the same time. This module has been tested on\n          Achat v0.150 running on Windows XP SP3 and Windows 7."
     }
   ],
-  "CVE-2025-46822": [
-    {
-      "id": "52304",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/52304.py",
-      "description": "Java-springboot-codebase 1.1 - Arbitrary File Read",
-      "date_published": "2025-05-25",
-      "author": "d3sca",
-      "type": "webapps",
-      "platform": "java",
-      "port": "",
-      "date_added": "2025-05-25",
-      "date_updated": "2025-05-25",
-      "verified": "0",
-      "codes": "CVE-2025-46822",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Java-springboot-codebase 1.1 - Arbitrary File Read",
-        "Severity": "high",
-        "Description": "OsamaTaher/Java-springboot-codebase is a collection of Java and Spring Boot code snippets, applications, and projects. Prior to commit c835c6f7799eacada4c0fc77e0816f250af01ad2, insufficient path traversal mechanisms make absolute path traversal possible. This vulnerability allows unauthorized access to sensitive internal files. Commit c835c6f7799eacada4c0fc77e0816f250af01ad2 contains a patch for the issue.\n",
-        "Classification": {
-          "CVSSScore": "N/A"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-46822.yaml"
-    }
-  ],
-  "CVE-2025-6018": [
-    {
-      "id": "52386",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52386.py",
-      "description": "Linux PAM Environment - Variable Injection Local Privilege Escalation",
-      "date_published": "2025-07-28",
-      "author": "\u0130brahimsql",
-      "type": "local",
-      "platform": "linux",
-      "port": "",
-      "date_added": "2025-07-28",
-      "date_updated": "2025-07-28",
-      "verified": "0",
-      "codes": "CVE-2025-6018",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-32462": [
-    {
-      "id": "52354",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52354.txt",
-      "description": "Sudo 1.9.17 Host Option - Elevation of Privilege",
-      "date_published": "2025-07-08",
-      "author": "Rich Mirch",
-      "type": "local",
-      "platform": "linux",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-08",
-      "verified": "0",
-      "codes": "CVE-2025-32462",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-32023": [
-    {
-      "id": "52477",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52477.py",
-      "description": "Redis 8.0.2 - RCE",
-      "date_published": "2026-02-04",
-      "author": "Beatriz Fresno Naumova",
-      "type": "remote",
-      "platform": "linux",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-32023",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-24085": [
-    {
-      "id": "52316",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/macos/local/52316.py",
-      "description": "macOS LaunchDaemon iOS 17.2 - Privilege Escalation",
-      "date_published": "2025-06-05",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "macos",
-      "port": "",
-      "date_added": "2025-06-05",
-      "date_updated": "2025-06-05",
-      "verified": "0",
-      "codes": "CVE-2025-24085",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-10666": [
-    {
-      "id": "52469",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52469.py",
-      "description": "D-Link DIR-825 Rev.B 2.10 - Stack Buffer Overflow (DoS)",
-      "date_published": "2026-02-02",
-      "author": "Beatriz Fresno Naumova",
-      "type": "hardware",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-02",
-      "date_updated": "2026-02-02",
-      "verified": "0",
-      "codes": "CVE-2025-10666",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-52089": [
-    {
-      "id": "52363",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52363.txt",
-      "description": "TOTOLINK N300RB 8.54 - Command Execution",
-      "date_published": "2025-07-16",
-      "author": "Skander BELABED - Magellan S\u00e9curit\u00e9",
-      "type": "hardware",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-52089",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://0x09.dev/posts/toto_decouvre_une_interface_de_debug/",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-11001": [
-    {
-      "id": "52501",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52501.py",
-      "description": "7-Zip 24.00 - Directory Traversal",
-      "date_published": "2026-04-08",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-08",
-      "date_updated": "2026-04-08",
-      "verified": "0",
-      "codes": "CVE-2025-11001",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-9074": [
-    {
-      "id": "52472",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52472.txt",
-      "description": "Docker Desktop 4.44.3 - Unauthenticated  API Exposure",
-      "date_published": "2026-02-04",
-      "author": "aprillefou",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-9074",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47917": [
-    {
-      "id": "52427",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52427.c",
-      "description": "Mbed TLS 3.6.4 - Use-After-Free",
-      "date_published": "2025-09-16",
-      "author": "Byte Reaper",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-47917",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47161": [
-    {
-      "id": "52355",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52355.txt",
-      "description": "Microsoft Defender for Endpoint (MDE) - Elevation of Privilege",
-      "date_published": "2025-07-08",
-      "author": "Rich Mirch",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-08",
-      "verified": "0",
-      "codes": "CVE-2025-47161",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-14018": [
-    {
-      "id": "52509",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52509.txt",
-      "description": "NetBT e-Fatura - Privilege Escalation",
-      "date_published": "2026-04-10",
-      "author": "seccops",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-10",
-      "date_updated": "2026-04-10",
-      "verified": "0",
-      "codes": "CVE-2025-14018",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-37928": [
-    {
-      "id": "52329",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52329.py",
-      "description": "Parrot and DJI variants Drone OSes - Kernel Panic Exploit",
-      "date_published": "2025-06-15",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-37928",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-1731": [
-    {
-      "id": "52293",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52293.bash",
-      "description": "Zyxel USG FLEX H series uOS 1.31 - Privilege Escalation",
-      "date_published": "2025-05-18",
-      "author": "Marco Ivaldi",
-      "type": "local",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-18",
-      "date_updated": "2025-05-18",
-      "verified": "0",
-      "codes": "CVE-2025-1731",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-27533": [
-    {
-      "id": "52288",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52288.py",
-      "description": "Apache ActiveMQ 6.1.6 - Denial of Service (DOS)",
-      "date_published": "2025-05-09",
-      "author": "Abdualhadi khalifa",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-09",
-      "date_updated": "2025-05-09",
-      "verified": "0",
-      "codes": "CVE-2025-27533",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-31650": [
-    {
-      "id": "52318",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52318.py",
-      "description": "Apache Tomcat 10.1.39 - Denial of Service (DoS)",
-      "date_published": "2025-06-05",
-      "author": "Abdualhadi khalifa",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-05",
-      "date_updated": "2025-06-05",
-      "verified": "0",
-      "codes": "CVE-2025-31650",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-4971": [
-    {
-      "id": "52309",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52309.txt",
-      "description": "Automic Agent 24.3.0 HF4 - Privilege Escalation",
-      "date_published": "2025-05-29",
-      "author": "Flora Sch\u00e4fer",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-29",
-      "date_updated": "2025-05-29",
-      "verified": "0",
-      "codes": "CVE-2025-4971",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8730": [
-    {
-      "id": "52407",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52407.c",
-      "description": "Belkin F9K1009 F9K1010 2.00.04/2.00.09 - Hard Coded Credentials",
-      "date_published": "2025-08-11",
-      "author": "Byte Reaper",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-8730",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-20125": [
-    {
-      "id": "52397",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52397.py",
-      "description": "Cisco ISE 3.0 - Authorization Bypass",
-      "date_published": "2025-08-11",
-      "author": "\u0130brahimsql",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-20125",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-20124": [
-    {
-      "id": "52396",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52396.py",
-      "description": "Cisco ISE 3.0 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-11",
-      "author": "\u0130brahimsql",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-20124",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-5777": [
-    {
-      "id": "52401",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52401.py",
-      "description": "Citrix NetScaler ADC/Gateway 14.1 - Memory Disclosure",
-      "date_published": "2025-08-11",
-      "author": "Yesith Alvarez",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-5777",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Citrix NetScaler Memory Disclosure - CitrixBleed 2",
-        "Severity": "critical",
-        "Description": "Insufficient input validation leading to memory overread on the NetScaler Management Interface NetScaler ADC and NetScaler Gateway\n",
-        "Classification": {
-          "CVSSScore": "7.5"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5777.yaml"
-    }
-  ],
-  "CVE-2025-55912": [
-    {
-      "id": "52435",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52435.txt",
-      "description": "ClipBucket 5.5.0 - Arbitrary File Upload",
-      "date_published": "2025-09-16",
-      "author": "Mukundsinh Solanki (r00td3str0y3r)",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-55912",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-55911": [
-    {
-      "id": "52434",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52434.txt",
-      "description": "ClipBucket 5.5.2 Build #90 - Server-Side Request Forgery (SSRF)",
-      "date_published": "2025-09-16",
-      "author": "Mukundsinh Solanki (r00td3str0y3r)",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-55911",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-31161": [
-    {
-      "id": "52295",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52295.py",
-      "description": "CrushFTP 11.3.1 - Authentication Bypass",
-      "date_published": "2025-05-18",
-      "author": "\u0130brahimsql",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-18",
-      "date_updated": "2025-05-18",
-      "verified": "0",
-      "codes": "CVE-2025-31161",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "CrushFTP - Authentication Bypass",
-        "Severity": "critical",
-        "Description": "CrushFTP versions 10.0.0 through 10.8.3 and 11.0.0 through 11.3.0 are affected by a vulnerability that may result in unauthenticated access. Remote and unauthenticated HTTP requests to CrushFTP may allow attackers to gain unauthorized access.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-31161.yaml"
-    }
-  ],
-  "CVE-2025-5548": [
-    {
-      "id": "52323",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52323.txt",
-      "description": "Freefloat FTP Server 1.0 - Remote Buffer Overflow",
-      "date_published": "2025-06-13",
-      "author": "Fernando Mengali",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-13",
-      "date_updated": "2025-06-13",
-      "verified": "0",
-      "codes": "CVE-2025-5548",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-1974": [
-    {
-      "id": "52338",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52338.txt",
-      "description": "Ingress-NGINX 4.11.0 - Remote Code Execution (RCE)",
-      "date_published": "2025-06-20",
-      "author": "Likhith Appalaneni",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-20",
-      "date_updated": "2025-06-20",
-      "verified": "1",
-      "codes": "CVE-2025-1974",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52475",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "date_published": "2026-02-04",
-      "author": "Beatriz Fresno Naumova",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-24514;CVE-2025-1974;CVE-2025-1098;CVE-2025-1097",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Ingress-Nginx Controller - Remote Code Execution",
-        "Severity": "critical",
-        "Description": "A security issue was discovered in Kubernetes where under certain conditions, an unauthenticated attacker with access to the pod network can achieve arbitrary code execution in the context of the ingress-nginx controller. This can lead to disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1974.yaml"
-    }
-  ],
-  "CVE-2025-24514": [
-    {
-      "id": "52475",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "date_published": "2026-02-04",
-      "author": "Beatriz Fresno Naumova",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-24514;CVE-2025-1974;CVE-2025-1098;CVE-2025-1097",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized `auth-url` Annotation",
-        "Severity": "high",
-        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `auth-url` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
-        "Classification": {
-          "CVSSScore": "8.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-24514.yaml"
-    }
-  ],
-  "CVE-2025-1098": [
-    {
-      "id": "52475",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "date_published": "2026-02-04",
-      "author": "Beatriz Fresno Naumova",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-24514;CVE-2025-1974;CVE-2025-1098;CVE-2025-1097",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized Mirror Annotations",
-        "Severity": "high",
-        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `mirror-target` and `mirror-host` Ingress annotations can be used to inject arbitrary configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
-        "Classification": {
-          "CVSSScore": "8.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1098.yaml"
-    }
-  ],
-  "CVE-2025-1097": [
-    {
-      "id": "52475",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "date_published": "2026-02-04",
-      "author": "Beatriz Fresno Naumova",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-24514;CVE-2025-1974;CVE-2025-1098;CVE-2025-1097",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized `auth-tls-match-cn` Annotation",
-        "Severity": "high",
-        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `auth-tls-match-cn` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
-        "Classification": {
-          "CVSSScore": "8.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1097.yaml"
-    }
-  ],
-  "CVE-2025-0282": [
-    {
-      "id": "52213",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52213.py",
-      "description": "Ivanti Connect Secure 22.7R2.5 - Remote Code Execution (RCE)",
-      "date_published": "2025-04-15",
-      "author": "Abdualhadi khalifa",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-15",
-      "date_updated": "2025-04-15",
-      "verified": "0",
-      "codes": "CVE-2025-0282",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Ivanti Connect Secure - Stack-based Buffer Overflow",
-        "Severity": "critical",
-        "Description": "Ivanti Connect Secure < 22.7R2.5, Ivanti Policy Secure < 22.7R1.2, and Ivanti Neurons for ZTA gateways < 22.7R2.3 contain a stack-based buffer overflow in the clientCapabilities parameter handling. This vulnerability allows remote unauthenticated attackers to execute arbitrary code through IF-T TLS requests.\n",
-        "Classification": {
-          "CVSSScore": "9.0"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0282.yaml"
-    }
-  ],
-  "CVE-2025-6563": [
-    {
-      "id": "52366",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52366.txt",
-      "description": "MikroTik RouterOS 7.19.1 - Reflected XSS",
-      "date_published": "2025-07-16",
-      "author": "Prak Sokchea",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-6563",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-5640": [
-    {
-      "id": "52339",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52339.py",
-      "description": "PX4 Military UAV Autopilot 1.12.3 - Denial of Service (DoS)",
-      "date_published": "2025-06-26",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-26",
-      "date_updated": "2025-06-26",
-      "verified": "0",
-      "codes": "CVE-2025-5640",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47228": [
-    {
-      "id": "52353",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52353.py",
-      "description": "ScriptCase 9.12.006 (23) - Remote Command Execution (RCE)",
-      "date_published": "2025-07-08",
-      "author": "Alexandre ZANNI",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-08",
-      "verified": "0",
-      "codes": "CVE-2025-47228",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8191": [
-    {
-      "id": "52392",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52392.c",
-      "description": "Swagger UI 1.0.3 - Cross-Site Scripting (XSS)",
-      "date_published": "2025-08-03",
-      "author": "Byte Reaper",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-8191",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-9090": [
-    {
-      "id": "52418",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52418.c",
-      "description": "Tenda AC20 16.03.08.12 - Command Injection",
-      "date_published": "2025-08-18",
-      "author": "Byte Reaper",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-18",
-      "date_updated": "2025-08-18",
-      "verified": "0",
-      "codes": "CVE-2025-9090",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-7795": [
-    {
-      "id": "52374",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52374.c",
-      "description": "Tenda FH451 1.0.0.9 Router - Stack-based Buffer Overflow",
-      "date_published": "2025-07-22",
-      "author": "Byte Reaper",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-7795",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-7769": [
-    {
-      "id": "52404",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52404.c",
-      "description": "Tigo Energy Cloud Connect Advanced (CCA) 4.0.1 - Command Injection",
-      "date_published": "2025-08-11",
-      "author": "Byte Reaper",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-7769",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-30208": [
-    {
-      "id": "52111",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52111.py",
-      "description": "Vite 6.2.2 - Arbitrary File Read",
-      "date_published": "2025-04-03",
-      "author": "4m3rr0r",
-      "type": "remote",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-03",
-      "date_updated": "2025-04-03",
-      "verified": "0",
-      "codes": "CVE-2025-30208",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Vite - Arbitrary File Read",
-        "Severity": "medium",
-        "Description": "Vite, a provider of frontend development tooling, has a vulnerability in versions prior to 6.2.3, 6.1.2, 6.0.12, 5.4.15, and 4.5.10. `@fs` denies access to files outside of Vite serving allow list. Adding `?raw??` or `?import&raw??` to the URL bypasses this limitation and returns the file content if it exists. This bypass exists because trailing separators such as `?` are removed in several places, but are not accounted for in query string regexes. The contents of arbitrary files can be returned to the browser. Only apps explicitly exposing the Vite dev server to the network (using `--host` or `server.host` config option) are affected. Versions 6.2.3, 6.1.2, 6.0.12, 5.4.15, and 4.5.10 fix the issue.\n",
-        "Classification": {
-          "CVSSScore": "5.3"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-30208.yaml"
-    }
-  ],
-  "CVE-2025-55315": [
-    {
-      "id": "52492",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52492.py",
-      "description": "ASP.net  8.0.10 - Bypass",
-      "date_published": "2026-04-06",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-55315",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8550": [
-    {
-      "id": "52400",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52400.c",
-      "description": "atjiu pybbs 6.0.0 - Cross Site Scripting (XSS)",
-      "date_published": "2025-08-11",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-8550",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-6082": [
-    {
-      "id": "52419",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52419.c",
-      "description": "Birth Chart Compatibility WordPress Plugin 2.0 - Full Path Disclosure",
-      "date_published": "2025-08-26",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-6082",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-5298": [
-    {
-      "id": "52312",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52312.txt",
-      "description": "Campcodes Online Hospital Management System 1.0 - SQL Injection",
-      "date_published": "2025-05-29",
-      "author": "Carine Constantino",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-29",
-      "date_updated": "2025-05-29",
-      "verified": "0",
-      "codes": "CVE-2025-5298",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-10493": [
-    {
-      "id": "52464",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52464.txt",
-      "description": "Chained Quiz  1.3.5 - Unauthenticated Insecure Direct Object Reference via Cookie",
-      "date_published": "2025-12-25",
-      "author": "0xsabre",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-25",
-      "date_updated": "2025-12-25",
-      "verified": "0",
-      "codes": "CVE-2025-10493",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8573": [
-    {
-      "id": "52428",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52428.txt",
-      "description": "Concrete CMS 9.4.3 - Stored XSS",
-      "date_published": "2025-09-16",
-      "author": "Chokri Hammedi",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-8573",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-54589": [
-    {
-      "id": "52390",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52390.c",
-      "description": "Copyparty 1.18.6 - Reflected Cross-Site Scripting (XSS)",
-      "date_published": "2025-08-03",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-54589",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Copyparty <=1.18.6 - Cross-Site Scripting",
-        "Severity": "medium",
-        "Description": "Copyparty before 1.18.7 is vulnerable to reflected cross-site scripting (XSS) via the 'filter' parameter in the '/?ru' endpoint. Unsanitized user input is reflected in the HTML response, allowing attackers to execute arbitrary JavaScript in the context of the victim's browser.\n",
-        "Classification": {
-          "CVSSScore": "6.3"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54589.yaml"
-    }
-  ],
-  "CVE-2025-64459": [
-    {
-      "id": "52456",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52456.py",
-      "description": "Django 5.1.13 - SQL Injection",
-      "date_published": "2025-12-03",
-      "author": "Wafcontrol Security Team",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-03",
-      "date_updated": "2025-12-03",
-      "verified": "0",
-      "codes": "CVE-2025-64459",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8311": [
-    {
-      "id": "52431",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52431.py",
-      "description": "dotCMS 25.07.02-1 - Authenticated Blind SQL Injection",
-      "date_published": "2025-09-16",
-      "author": "Matan Sandori (OSCP_ OSEP_ OSWE)",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-8311",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-10046": [
-    {
-      "id": "52430",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52430.c",
-      "description": "ELEX WooCommerce WordPress Plugin 1.4.3 - SQL Injection",
-      "date_published": "2025-09-16",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-10046",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-59342": [
-    {
-      "id": "52461",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52461.c",
-      "description": "esm-dev 136 - Path Traversal",
-      "date_published": "2025-12-16",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-16",
-      "date_updated": "2025-12-16",
-      "verified": "0",
-      "codes": "CVE-2025-59342",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-25257": [
-    {
-      "id": "52473",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52473.txt",
-      "description": "FortiWeb Fabric Connector 7.6.x - SQL Injection to Remote Code Execution",
-      "date_published": "2026-02-04",
-      "author": "Milad Karimi (Ex3ptionaL)",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-25257",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Fortinet FortiWeb - SQL Injection",
-        "Severity": "critical",
-        "Description": "An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in FortiWeb may allow an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPS requests.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25257.yaml"
-    }
-  ],
-  "CVE-2025-29306": [
-    {
-      "id": "52267",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52267.bash",
-      "description": "FoxCMS 1.2.5 - Remote Code Execution  (RCE)",
-      "date_published": "2025-04-19",
-      "author": "VeryLazyTech",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-19",
-      "date_updated": "2025-04-19",
-      "verified": "0",
-      "codes": "CVE-2025-29306",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "FoxCMS v.1.2.5 - Remote Code Execution",
-        "Severity": "critical",
-        "Description": "An issue in FoxCMS v.1.2.5 allows a remote attacker to execute arbitrary code via the case display page in the index.html component.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29306.yaml"
-    }
-  ],
-  "CVE-2025-41373": [
-    {
-      "id": "52388",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52388.c",
-      "description": "Gandia Integra Total 4.4.2236.1 - SQL Injection",
-      "date_published": "2025-08-03",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-41373",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-4123": [
-    {
-      "id": "52491",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52491.txt",
-      "description": "Grafana 11.6.0 - SSRF",
-      "date_published": "2026-04-06",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-4123",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Grafana - XSS / Open Redirect / SSRF via Client Path Traversal",
-        "Severity": "high",
-        "Description": "An open redirect vulnerability in Grafana can be chained with other issues, such as XSS or SSRF, to increase impact. An attacker may exploit the redirect to target internal services or deliver malicious JavaScript, potentially leading to internal data exposure or account takeover.\n",
-        "Classification": {
-          "CVSSScore": "7.6"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4123.yaml"
-    }
-  ],
-  "CVE-2025-48868": [
-    {
-      "id": "52497",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52497.py",
-      "description": "Horilla v1.3 - RCE",
-      "date_published": "2026-04-08",
-      "author": "nakleh",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-08",
-      "date_updated": "2026-04-08",
-      "verified": "0",
-      "codes": "CVE-2025-48868",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-48932": [
-    {
-      "id": "52383",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52383.txt",
-      "description": "Invision Community 4.7.20 - (calendar/view.php) SQL Injection",
-      "date_published": "2025-07-28",
-      "author": "Egidio Romano",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-28",
-      "date_updated": "2025-07-28",
-      "verified": "1",
-      "codes": "CVE-2025-48932",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-32370": [
-    {
-      "id": "52290",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52290.py",
-      "description": "Kentico Xperience 13.0.178 - Cross Site Scripting (XSS)",
-      "date_published": "2025-05-13",
-      "author": "Alex Messham",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-13",
-      "date_updated": "2025-05-13",
-      "verified": "0",
-      "codes": "CVE-2025-32370",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-2294": [
-    {
-      "id": "52125",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52125.py",
-      "description": "Kubio AI Page Builder 2.5.1 - Local File Inclusion (LFI)",
-      "date_published": "2025-04-05",
-      "author": "4m3rr0r",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-05",
-      "date_updated": "2025-04-05",
-      "verified": "0",
-      "codes": "CVE-2025-2294",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Kubio AI Page Builder <= 2.5.1 - Local File Inclusion",
-        "Severity": "critical",
-        "Description": "The Kubio AI Page Builder plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.5.1 via thekubio_hybrid_theme_load_template function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2294.yaml"
-    }
-  ],
-  "CVE-2025-7766": [
-    {
-      "id": "52417",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52417.c",
-      "description": "Lantronix Provisioning Manager 7.10.3 - XML External Entity Injection (XXE)",
-      "date_published": "2025-08-18",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-18",
-      "date_updated": "2025-08-18",
-      "verified": "0",
-      "codes": "CVE-2025-7766",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-9140": [
-    {
-      "id": "52420",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52420.txt",
-      "description": "Lingdang CRM 8.6.4.7 - SQL Injection",
-      "date_published": "2025-08-26",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-9140",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-54769": [
-    {
-      "id": "52391",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52391.c",
-      "description": "LPAR2RRD 8.04 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-03",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-54769",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-25198": [
-    {
-      "id": "52485",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52485.txt",
-      "description": "mailcow 2025-01a - Host Header Password Reset Poisoning",
-      "date_published": "2026-03-03",
-      "author": "alvarez",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-03-03",
-      "date_updated": "2026-03-03",
-      "verified": "0",
-      "codes": "CVE-2025-25198",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-50481": [
-    {
-      "id": "52385",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52385.txt",
-      "description": "Mezzanine CMS 6.1.0 - Stored Cross Site Scripting (XSS)",
-      "date_published": "2025-07-28",
-      "author": "Kevin Dicks",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-28",
-      "date_updated": "2025-07-28",
-      "verified": "0",
-      "codes": "CVE-2025-50481",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-29471": [
-    {
-      "id": "52117",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52117.md",
-      "description": "Nagios Log Server 2024R1.3.1 - Stored XSS",
-      "date_published": "2025-04-03",
-      "author": "Seth Kraft",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-03",
-      "date_updated": "2025-04-16",
-      "verified": "0",
-      "codes": "CVE-2025-29471",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-29927": [
-    {
-      "id": "52124",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52124.txt",
-      "description": "Next.js Middleware 15.2.2 -  Authorization Bypass",
-      "date_published": "2025-04-05",
-      "author": "kOaDT",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-05",
-      "date_updated": "2025-04-05",
-      "verified": "0",
-      "codes": "CVE-2025-29927",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Next.js Middleware Bypass",
-        "Severity": "critical",
-        "Description": "Next.js contains a critical middleware bypass vulnerability affecting versions 11.1.4 through 15.2.2.\nThe vulnerability allows attackers to bypass middleware security controls by sending a specially crafted\n'x-middleware-subrequest' header, which can lead to authorization bypass and other security control circumvention.\n",
-        "Classification": {
-          "CVSSScore": "9.1"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29927.yaml"
-    }
-  ],
-  "CVE-2025-58180": [
-    {
-      "id": "52476",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52476.txt",
-      "description": "OctoPrint 1.11.2 - File Upload",
-      "date_published": "2026-02-04",
-      "author": "prabhat",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-58180",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-8471": [
-    {
-      "id": "52398",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52398.c",
-      "description": "projectworlds Online Admission System 1.0 - SQL Injection",
-      "date_published": "2025-08-11",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-8471",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49132": [
-    {
-      "id": "52341",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52341.py",
-      "description": "Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)",
-      "date_published": "2025-06-26",
-      "author": "Zen-kun04",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-06-26",
-      "date_updated": "2025-06-26",
-      "verified": "0",
-      "codes": "CVE-2025-49132",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Pterodactyl Panel - Remote Code Execution",
-        "Severity": "critical",
-        "Description": "Pterodactyl is a free, open-source game server management panel. Using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated.\n",
-        "Classification": {
-          "CVSSScore": "10"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49132.yaml"
-    }
-  ],
-  "CVE-2025-65027": [
-    {
-      "id": "52505",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52505.txt",
-      "description": "RomM  4.4.0 -  XSS_CSRF Chain",
-      "date_published": "2026-04-09",
-      "author": "mmohammedheshamm",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-09",
-      "date_updated": "2026-04-09",
-      "verified": "0",
-      "codes": "CVE-2025-65027",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-10327": [
-    {
-      "id": "52468",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52468.py",
-      "description": "RPi-Jukebox-RFID 2.8.0 - Remote Command Execution",
-      "date_published": "2026-01-17",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-01-17",
-      "date_updated": "2026-01-17",
-      "verified": "0",
-      "codes": "CVE-2025-10327",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-10370": [
-    {
-      "id": "52470",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52470.py",
-      "description": "RPi-Jukebox-RFID 2.8.0 - Stored Cross-Site Scripting (XSS)",
-      "date_published": "2026-02-02",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-02-02",
-      "date_updated": "2026-02-02",
-      "verified": "0",
-      "codes": "CVE-2025-10370",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-57176": [
-    {
-      "id": "52467",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52467.py",
-      "description": "Siklu EtherHaul Series EH-8010 - Arbitrary File Upload",
-      "date_published": "2026-01-17",
-      "author": "semaja2",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-01-17",
-      "date_updated": "2026-01-17",
-      "verified": "0",
-      "codes": "CVE-2025-57176",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-57174": [
-    {
-      "id": "52466",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52466.py",
-      "description": "Siklu EtherHaul Series EH-8010 - Remote Command Execution",
-      "date_published": "2026-01-17",
-      "author": "semaja2",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-01-17",
-      "date_updated": "2026-01-17",
-      "verified": "0",
-      "codes": "CVE-2025-57174",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-52392": [
-    {
-      "id": "52416",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52416.txt",
-      "description": "Soosyze CMS 2.0 - Brute Force Login",
-      "date_published": "2025-08-18",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-18",
-      "date_updated": "2025-08-18",
-      "verified": "0",
-      "codes": "CVE-2025-52392",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-40677": [
-    {
-      "id": "52462",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52462.txt",
-      "description": "Summar Employee Portal  3.98.0 - Authenticated SQL Injection",
-      "date_published": "2025-12-16",
-      "author": "Peter Gabaldon",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-16",
-      "date_updated": "2025-12-16",
-      "verified": "0",
-      "codes": "CVE-2025-40677",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-57642": [
-    {
-      "id": "52433",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52433.txt",
-      "description": "Tourism Management System 2.0 - Arbitrary Shell Upload",
-      "date_published": "2025-09-16",
-      "author": "Debug Security",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-57642",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-41228": [
-    {
-      "id": "52406",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52406.txt",
-      "description": "VMware vSphere Client 8.0.3.0 - Reflected Cross-Site Scripting (XSS)",
-      "date_published": "2025-08-11",
-      "author": "Imraan Khan (Lich-Sec)",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-41228",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-44177": [
-    {
-      "id": "52367",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52367.txt",
-      "description": "White Star Software Protop 4.4.2-2024-11-27 - Local File Inclusion (LFI)",
-      "date_published": "2025-07-16",
-      "author": "Imraan Khan (Lich-Sec)",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-44177",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "White Star Software ProTop - Directory Traversal",
-        "Severity": "high",
-        "Description": "A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.\n",
-        "Classification": {
-          "CVSSScore": "8.2"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-44177.yaml"
-    }
-  ],
-  "CVE-2025-4524": [
-    {
-      "id": "52487",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52487.txt",
-      "description": "WordPress  Madara - Local File Inclusion",
-      "date_published": "2026-04-06",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-4524",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-4094": [
-    {
-      "id": "52307",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52307.txt",
-      "description": "WordPress Digits Plugin 8.4.6.1 - Authentication Bypass via OTP Bruteforcing",
-      "date_published": "2025-05-29",
-      "author": "Saleh Tarawneh",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-29",
-      "date_updated": "2025-05-29",
-      "verified": "0",
-      "codes": "CVE-2025-4094",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-3605": [
-    {
-      "id": "52291",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52291.py",
-      "description": "WordPress Frontend Login and Registration Blocks Plugin 1.0.7 - Privilege Escalation",
-      "date_published": "2025-05-13",
-      "author": "Md Shoriful Islam",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-13",
-      "date_updated": "2025-05-13",
-      "verified": "0",
-      "codes": "CVE-2025-3605",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "WordPress Frontend Login and Registration Blocks Plugin 1.0.7 - Privilege Escalation",
-        "Severity": "critical",
-        "Description": "Privilege escalation vulnerability exists in the Frontend Login and Registration Blocks plugin for WordPress (versions <= 1.0.7). An unauthenticated attacker can exploit the AJAX endpoint flr_blocks_user_settings_handle_ajax_callback() to change the administrator's email address. Subsequently, the attacker can use the \"Forgot Password\" feature to reset the administrator's password, thereby gaining unauthorized access to the admin account.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-3605.yaml"
-    }
-  ],
-  "CVE-2025-10042": [
-    {
-      "id": "52465",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52465.py",
-      "description": "WordPress Quiz Maker 6.7.0.56 - SQL Injection",
-      "date_published": "2025-12-25",
-      "author": "Rahul Sreenivasan",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-12-25",
-      "date_updated": "2025-12-25",
-      "verified": "0",
-      "codes": "CVE-2025-10042",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-2594": [
-    {
-      "id": "52302",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52302.py",
-      "description": "WordPress User Registration & Membership Plugin 4.1.2 - Authentication Bypass",
-      "date_published": "2025-05-25",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-05-25",
-      "date_updated": "2025-05-25",
-      "verified": "0",
-      "codes": "CVE-2025-2594",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-32429": [
-    {
-      "id": "52384",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52384.c",
-      "description": "XWiki 14 - SQL Injection via getdeleteddocuments.vm",
-      "date_published": "2025-07-28",
-      "author": "Byte Reaper",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-07-28",
-      "date_updated": "2025-07-28",
-      "verified": "0",
-      "codes": "CVE-2025-32429",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "XWiki Platform - SQL Injection",
-        "Severity": "critical",
-        "Description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In versions 9.4-rc-1 through 16.10.5 and 17.0.0-rc-1 through 17.2.2, it's possible for anyone to inject SQL using the parameter sort of the getdeleteddocuments.vm. It's injected as is as an ORDER BY value.\n",
-        "Classification": {
-          "CVSSScore": "9.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32429.yaml"
-    }
-  ],
-  "CVE-2025-31131": [
-    {
-      "id": "52135",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52135.txt",
-      "description": "YesWiki 4.5.1 - Unauthenticated Path Traversal",
-      "date_published": "2025-04-07",
-      "author": "Al Baradi Joy",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2025-04-07",
-      "date_updated": "2025-04-07",
-      "verified": "0",
-      "codes": "CVE-2025-31131",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Yeswiki < 4.5.2 - Unauthenticated Path Traversal",
-        "Severity": "high",
-        "Description": "YesWiki is a wiki system written in PHP. The squelette parameter is vulnerable to path traversal attacks, enabling read access to arbitrary files on the server.\n",
-        "Classification": {
-          "CVSSScore": "8.6"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-31131.yaml"
-    }
-  ],
-  "CVE-2025-34040": [
-    {
-      "id": "52490",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52490.txt",
-      "description": "Zhiyuan OA - arbitrary file upload leading",
-      "date_published": "2026-04-06",
-      "author": "Beatriz Fresno Naumova",
-      "type": "webapps",
-      "platform": "multiple",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-34040",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "Zhiyuan OA Platform - Arbitrary File Upload",
-        "Severity": "critical",
-        "Description": "An arbitrary file upload vulnerability exists in the Zhiyuan OA platform 5.0, 5.1 - 5.6sp1, 6.0 - 6.1sp2, 7.0, 7.0sp1 - 7.1, 7.1sp1, and 8.0 - 8.0sp2 via the wpsAssistServlet interface. The realFileType and fileId parameters are improperly validated during multipart file uploads, allowing unauthenticated attackers to upload crafted JSP files outside of intended directories using path traversal. Successful exploitation enables remote code execution as the uploaded file can be accessed and executed through the web server.\n",
-        "Classification": {
-          "CVSSScore": "N/A"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34040.yaml"
-    }
-  ],
-  "CVE-2025-27210": [
-    {
-      "id": "52369",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/nodejs/remote/52369.py",
-      "description": "NodeJS 24.x - Path Traversal",
-      "date_published": "2025-07-16",
-      "author": "Abdualhadi khalifa",
-      "type": "remote",
-      "platform": "nodejs",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-27210",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-28121": [
-    {
-      "id": "52272",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/52272.txt",
-      "description": "code-projects Online Exam Mastering System 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "date_published": "2025-04-22",
-      "author": "Pruthu Raut",
-      "type": "remote",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-04-22",
-      "date_updated": "2025-04-22",
-      "verified": "0",
-      "codes": "CVE-2025-28121",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-46041": [
-    {
-      "id": "52327",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52327.txt",
-      "description": "Anchor CMS 0.12.7 - Stored Cross Site Scripting (XSS)",
-      "date_published": "2025-06-15",
-      "author": "/bin/neko",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-46041",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-45542": [
-    {
-      "id": "52314",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52314.txt",
-      "description": "CloudClassroom PHP Project 1.0 - SQL Injection",
-      "date_published": "2025-06-05",
-      "author": "Sanjay Singh",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-06-05",
-      "date_updated": "2025-06-05",
-      "verified": "0",
-      "codes": "CVE-2025-45542",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47226": [
-    {
-      "id": "52282",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52282.txt",
-      "description": "Grokability Snipe-IT 8.0.4 - Insecure Direct Object Reference (IDOR)",
-      "date_published": "2025-05-06",
-      "author": "Sn1p3r-H4ck3r",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-05-06",
-      "date_updated": "2025-05-06",
-      "verified": "0",
-      "codes": "CVE-2025-47226",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49484": [
-    {
-      "id": "52373",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52373.txt",
-      "description": "Joomla JS Jobs plugin 1.4.2 - SQL injection",
-      "date_published": "2025-07-22",
-      "author": "Adam Wallwork",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-49484",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-2126": [
-    {
-      "id": "52089",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52089.txt",
-      "description": "JUX Real Estate 3.4.0 - SQL Injection",
-      "date_published": "2025-03-20",
-      "author": "CraCkEr",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-03-20",
-      "date_updated": "2025-03-20",
-      "verified": "0",
-      "codes": "CVE-2025-2126",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51403": [
-    {
-      "id": "52381",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52381.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Department Assignment Alias Nick Field",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51403",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51398": [
-    {
-      "id": "52378",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52378.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Facebook Integration Page Name Field",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51398",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51397": [
-    {
-      "id": "52377",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52377.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Operator Surname",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51397",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51400": [
-    {
-      "id": "52379",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52379.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Personal Canned Messages",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51400",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51396": [
-    {
-      "id": "52376",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52376.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Telegram Bot Username",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51396",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-51401": [
-    {
-      "id": "52380",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52380.txt",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via the Chat Transfer Function",
-      "date_published": "2025-07-22",
-      "author": "Manojkumar J",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2025-07-22",
-      "date_updated": "2025-07-22",
-      "verified": "0",
-      "codes": "CVE-2025-51401",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-62360": [
-    {
-      "id": "52483",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52483.sh",
-      "description": "WeGIA 3.5.0 - SQL Injection",
-      "date_published": "2026-03-03",
-      "author": "onurdemir",
-      "type": "webapps",
-      "platform": "php",
-      "port": "",
-      "date_added": "2026-03-03",
-      "date_updated": "2026-03-03",
-      "verified": "0",
-      "codes": "CVE-2025-62360",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-1550": [
-    {
-      "id": "52359",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/52359.py",
-      "description": "Keras 2.15 - Remote Code Execution (RCE)",
-      "date_published": "2025-07-16",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "python",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-1550",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-0868": [
-    {
-      "id": "52145",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52145.py",
-      "description": "DocsGPT 0.12.0 - Remote Code Execution",
-      "date_published": "2025-04-09",
-      "author": "Shreyas Malhotra",
-      "type": "webapps",
-      "platform": "python",
-      "port": "",
-      "date_added": "2025-04-09",
-      "date_updated": "2025-04-09",
-      "verified": "1",
-      "codes": "CVE-2025-0868",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "info": {
-        "Name": "DocsGPT - Unauthenticated Remote Code Execution",
-        "Severity": "critical",
-        "Description": "A vulnerability, that could result in Remote Code Execution (RCE), has been found in DocsGPT. Due to improper parsing of JSON data using eval() an unauthorized attacker could send arbitrary Python code to be executed via /api/remote endpoint.This issue affects DocsGPT- from 0.8.1 through 0.12.0.\n",
-        "Classification": {
-          "CVSSScore": "N/A"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0868.yaml"
-    }
-  ],
-  "CVE-2025-28062": [
-    {
-      "id": "52283",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52283.txt",
-      "description": "ERPNext 14.82.1 - Account Takeover via Cross-Site Request Forgery (CSRF)",
-      "date_published": "2025-05-06",
-      "author": "Ahmed Thaiban",
-      "type": "webapps",
-      "platform": "python",
-      "port": "",
-      "date_added": "2025-05-06",
-      "date_updated": "2025-05-06",
-      "verified": "0",
-      "codes": "CVE-2025-28062",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-59254": [
-    {
-      "id": "52493",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52493.txt",
-      "description": "Desktop Window Manager Core Library 10.0.10240.0 - Privilege Escalation",
-      "date_published": "2026-04-06",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-59254",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-26263": [
-    {
-      "id": "52423",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52423.txt",
-      "description": "GeoVision ASManager Windows Application 6.1.2.0 - Credentials Disclosure",
-      "date_published": "2025-08-26",
-      "author": "Giorgi Dograshvili",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-26263",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/DRAGOWN/CVE-2025-26263",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-24054": [
-    {
-      "id": "52280",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52280.txt",
-      "description": "Microsoft - NTLM Hash Disclosure Spoofing (library-ms)",
-      "date_published": "2025-05-01",
-      "author": "hyp3rlinx",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-05-01",
-      "date_updated": "2025-05-01",
-      "verified": "0",
-      "codes": "CVE-2025-24054",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52480",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52480.py",
-      "description": "Windows 10.0.17763.7009 - spoofing vulnerability",
-      "date_published": "2026-02-11",
-      "author": "beatrizfn",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-02-11",
-      "date_updated": "2026-02-11",
-      "verified": "0",
-      "codes": "CVE-2025-24054",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52478",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52478.py",
-      "description": "windows 10/11 - NTLM Hash Disclosure Spoofing",
-      "date_published": "2026-02-04",
-      "author": "beatrizfn",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-02-04",
-      "date_updated": "2026-02-04",
-      "verified": "0",
-      "codes": "CVE-2025-24054",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49677": [
-    {
-      "id": "52360",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52360.txt",
-      "description": "Microsoft Brokering File System Windows 11 Version 22H2 - Elevation of Privilege",
-      "date_published": "2025-07-16",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-49677",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47957": [
-    {
-      "id": "52337",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52337.py",
-      "description": "Microsoft Excel LTSC 2024 - Remote Code Execution (RCE)",
-      "date_published": "2025-06-20",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-20",
-      "date_updated": "2025-06-20",
-      "verified": "0",
-      "codes": "CVE-2025-47957",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-27751": [
-    {
-      "id": "52332",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52332.txt",
-      "description": "Microsoft Excel Use After Free - Local Code Execution",
-      "date_published": "2025-06-15",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-27751",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49744": [
-    {
-      "id": "52362",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52362.txt",
-      "description": "Microsoft Graphics Component Windows 11 Pro (Build 26100+) - Local Elevation of Privileges",
-      "date_published": "2025-07-16",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-07-16",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-49744",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-26633": [
-    {
-      "id": "52498",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52498.py",
-      "description": "Microsoft MMC MSC EvilTwin - Local Admin Creation",
-      "date_published": "2026-04-08",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-04-08",
-      "date_updated": "2026-04-08",
-      "verified": "0",
-      "codes": "CVE-2025-26633",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49683": [
-    {
-      "id": "52394",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52394.txt",
-      "description": "Microsoft Virtual Hard Disk (VHDX) 11 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-03",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-49683",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/nu11secur1ty/CVE-mitre/tree/main/2025/CVE-2025-49683",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49730": [
-    {
-      "id": "52399",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52399.txt",
-      "description": "Microsoft Windows - Storage QoS Filter Driver Checker",
-      "date_published": "2025-08-11",
-      "author": "nu11secur1ty",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-49730",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/nu11secur1ty/Windows11Exploits/tree/main/2025/CVE-2025-49730",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-24076": [
-    {
-      "id": "52320",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52320.py",
-      "description": "Microsoft Windows 11 Version 24H2 Cross Device Service - Elevation of Privilege",
-      "date_published": "2025-06-09",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-09",
-      "date_updated": "2025-06-09",
-      "verified": "0",
-      "codes": "CVE-2025-24076",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-21333": [
-    {
-      "id": "52436",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52436.c",
-      "description": "Microsoft Windows Server 2025 Hyper-V NT Kernel Integration VSP - Elevation of Privilege",
-      "date_published": "2025-09-16",
-      "author": "Milad Karimi (Ex3ptionaL)",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-09-16",
-      "date_updated": "2025-09-16",
-      "verified": "0",
-      "codes": "CVE-2025-21333",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-6965": [
-    {
-      "id": "52499",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52499.py",
-      "description": "SQLite 3.50.1 - Heap Overflow",
-      "date_published": "2026-04-08",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-04-08",
-      "date_updated": "2026-04-08",
-      "verified": "0",
-      "codes": "CVE-2025-6965",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-62215": [
-    {
-      "id": "52494",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52494.txt",
-      "description": "Windows Kernel - Elevation of Privilege",
-      "date_published": "2026-04-06",
-      "author": "E1 Coders",
-      "type": "local",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2026-04-06",
-      "date_updated": "2026-04-06",
-      "verified": "0",
-      "codes": "CVE-2025-62215\u00a0",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-26264": [
-    {
-      "id": "52424",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52424.txt",
-      "description": "GeoVision ASManager Windows Application 6.1.2.0 - Remote Code Execution (RCE)",
-      "date_published": "2025-08-26",
-      "author": "Giorgi Dograshvili",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-26",
-      "date_updated": "2025-08-26",
-      "verified": "0",
-      "codes": "CVE-2025-26264",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://github.com/DRAGOWN/CVE-2025-26264",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-49741": [
-    {
-      "id": "52389",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52389.txt",
-      "description": "Microsoft Edge (Chromium-based) 135.0.7049.114/.115 - Information Disclosure",
-      "date_published": "2025-08-03",
-      "author": "nu11secur1ty",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-03",
-      "date_updated": "2025-08-03",
-      "verified": "0",
-      "codes": "CVE-2025-49741",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49741",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47165": [
-    {
-      "id": "52343",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52343.py",
-      "description": "Microsoft Excel 2024 Use after free - Remote Code Execution (RCE)",
-      "date_published": "2025-06-26",
-      "author": "nu11secur1ty",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-26",
-      "date_updated": "2025-06-26",
-      "verified": "0",
-      "codes": "CVE-2025-47165",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47171": [
-    {
-      "id": "52356",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52356.txt",
-      "description": "Microsoft Outlook - Remote Code Execution (RCE)",
-      "date_published": "2025-07-08",
-      "author": "nu11secur1ty",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-16",
-      "verified": "0",
-      "codes": "CVE-2025-47171",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47175": [
-    {
-      "id": "52351",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52351.py",
-      "description": "Microsoft PowerPoint 2019 - Remote Code Execution (RCE)",
-      "date_published": "2025-07-08",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-07-08",
-      "date_updated": "2025-07-08",
-      "verified": "0",
-      "codes": "CVE-2025-47175",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-47166": [
-    {
-      "id": "52349",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52349.txt",
-      "description": "Microsoft SharePoint 2019 - NTLM Authentication",
-      "date_published": "2025-07-02",
-      "author": "nu11secur1ty",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-07-02",
-      "date_updated": "2025-07-02",
-      "verified": "0",
-      "codes": "CVE-2025-47166",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-50154": [
-    {
-      "id": "52415",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52415.txt",
-      "description": "Microsoft Windows 10.0.19045 - NTLMv2 Hash Disclosure",
-      "date_published": "2025-08-18",
-      "author": "Ruben Enkaoua",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-18",
-      "date_updated": "2025-08-18",
-      "verified": "0",
-      "codes": "CVE-2025-50154",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50154",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-30397": [
-    {
-      "id": "52315",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52315.py",
-      "description": "Microsoft Windows Server 2025 JScript Engine - Remote Code Execution (RCE)",
-      "date_published": "2025-06-05",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-05",
-      "date_updated": "2025-06-05",
-      "verified": "0",
-      "codes": "CVE-2025-30397",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-4255": [
-    {
-      "id": "52326",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52326.txt",
-      "description": "PCMan FTP Server 2.0.7 - Buffer Overflow",
-      "date_published": "2025-06-15",
-      "author": "Fernando Mengali",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-4255",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-33073": [
-    {
-      "id": "52330",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52330.py",
-      "description": "Windows 11 SMB Client - Privilege Escalation & Remote Code Execution (RCE)",
-      "date_published": "2025-06-15",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-15",
-      "date_updated": "2025-06-15",
-      "verified": "0",
-      "codes": "CVE-2025-33073",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-24071": [
-    {
-      "id": "52325",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52325.py",
-      "description": "Windows File Explorer Windows 10 Pro x64 - TAR Extraction",
-      "date_published": "2025-06-13",
-      "author": "Daniel Miranda",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-06-13",
-      "date_updated": "2025-06-13",
-      "verified": "0",
-      "codes": "CVE-2025-24071",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    },
-    {
-      "id": "52310",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52310.py",
-      "description": "Windows File Explorer Windows 11 (23H2) - NTLM Hash Disclosure",
-      "date_published": "2025-05-29",
-      "author": "Mohammed Idrees Banyamer",
-      "type": "remote",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-05-29",
-      "date_updated": "2025-05-29",
-      "verified": "0",
-      "codes": "CVE-2025-24071",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
-  "CVE-2025-2783": [
-    {
-      "id": "52403",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/52403.txt",
-      "description": "Microsoft Edge Renderer Process (Mojo IPC) 134.0.6998.177 - Sandbox Escape",
-      "date_published": "2025-08-11",
-      "author": "nu11secur1ty",
-      "type": "webapps",
-      "platform": "windows",
-      "port": "",
-      "date_added": "2025-08-11",
-      "date_updated": "2025-08-11",
-      "verified": "0",
-      "codes": "CVE-2025-2783",
-      "tags": "",
-      "aliases": "",
-      "screenshot_url": "",
-      "application_url": "",
-      "source_url": "",
-      "source": "exploitdb"
-    }
-  ],
   "CVE-2025-0107": [
     {
       "info": {
@@ -5583,6 +1923,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0133.yaml"
     }
   ],
+  "CVE-2025-0282": [
+    {
+      "info": {
+        "Name": "Ivanti Connect Secure - Stack-based Buffer Overflow",
+        "Severity": "critical",
+        "Description": "Ivanti Connect Secure < 22.7R2.5, Ivanti Policy Secure < 22.7R1.2, and Ivanti Neurons for ZTA gateways < 22.7R2.3 contain a stack-based buffer overflow in the clientCapabilities parameter handling. This vulnerability allows remote unauthenticated attackers to execute arbitrary code through IF-T TLS requests.\n",
+        "Classification": {
+          "CVSSScore": "9.0"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0282.yaml"
+    }
+  ],
   "CVE-2025-0674": [
     {
       "info": {
@@ -5595,6 +1949,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0674.yaml"
+    }
+  ],
+  "CVE-2025-0868": [
+    {
+      "info": {
+        "Name": "DocsGPT - Unauthenticated Remote Code Execution",
+        "Severity": "critical",
+        "Description": "A vulnerability, that could result in Remote Code Execution (RCE), has been found in DocsGPT. Due to improper parsing of JSON data using eval() an unauthorized attacker could send arbitrary Python code to be executed via /api/remote endpoint.This issue affects DocsGPT- from 0.8.1 through 0.12.0.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-0868.yaml"
     }
   ],
   "CVE-2025-10035": [
@@ -5721,6 +2089,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10353.yaml"
+    }
+  ],
+  "CVE-2025-1097": [
+    {
+      "info": {
+        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized `auth-tls-match-cn` Annotation",
+        "Severity": "high",
+        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `auth-tls-match-cn` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1097.yaml"
+    }
+  ],
+  "CVE-2025-1098": [
+    {
+      "info": {
+        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized Mirror Annotations",
+        "Severity": "high",
+        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `mirror-target` and `mirror-host` Ingress annotations can be used to inject arbitrary configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1098.yaml"
     }
   ],
   "CVE-2025-11307": [
@@ -6129,6 +2525,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1743.yaml"
     }
   ],
+  "CVE-2025-1974": [
+    {
+      "info": {
+        "Name": "Ingress-Nginx Controller - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "A security issue was discovered in Kubernetes where under certain conditions, an unauthenticated attacker with access to the pod network can achieve arbitrary code execution in the context of the ingress-nginx controller. This can lead to disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1974.yaml"
+    }
+  ],
   "CVE-2025-2010": [
     {
       "info": {
@@ -6269,6 +2679,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-22785.yaml"
     }
   ],
+  "CVE-2025-2294": [
+    {
+      "info": {
+        "Name": "Kubio AI Page Builder <= 2.5.1 - Local File Inclusion",
+        "Severity": "critical",
+        "Description": "The Kubio AI Page Builder plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.5.1 via thekubio_hybrid_theme_load_template function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2294.yaml"
+    }
+  ],
   "CVE-2025-22952": [
     {
       "info": {
@@ -6309,6 +2733,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-24354.yaml"
+    }
+  ],
+  "CVE-2025-24514": [
+    {
+      "info": {
+        "Name": "Ingress-Nginx Controller - Configuration Injection via Unsanitized `auth-url` Annotation",
+        "Severity": "high",
+        "Description": "A security issue was discovered in  ingress-nginx https-//github.com/kubernetes/ingress-nginx  where the `auth-url` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-24514.yaml"
     }
   ],
   "CVE-2025-24582": [
@@ -6393,6 +2831,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25231.yaml"
+    }
+  ],
+  "CVE-2025-25257": [
+    {
+      "info": {
+        "Name": "Fortinet FortiWeb - SQL Injection",
+        "Severity": "critical",
+        "Description": "An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in FortiWeb may allow an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPS requests.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25257.yaml"
     }
   ],
   "CVE-2025-2539": [
@@ -6885,6 +3337,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29085.yaml"
     }
   ],
+  "CVE-2025-29306": [
+    {
+      "info": {
+        "Name": "FoxCMS v.1.2.5 - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "An issue in FoxCMS v.1.2.5 allows a remote attacker to execute arbitrary code via the case display page in the index.html component.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29306.yaml"
+    }
+  ],
   "CVE-2025-29925": [
     {
       "info": {
@@ -6897,6 +3363,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29925.yaml"
+    }
+  ],
+  "CVE-2025-29927": [
+    {
+      "info": {
+        "Name": "Next.js Middleware Bypass",
+        "Severity": "critical",
+        "Description": "Next.js contains a critical middleware bypass vulnerability affecting versions 11.1.4 through 15.2.2.\nThe vulnerability allows attackers to bypass middleware security controls by sending a specially crafted\n'x-middleware-subrequest' header, which can lead to authorization bypass and other security control circumvention.\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-29927.yaml"
+    }
+  ],
+  "CVE-2025-30208": [
+    {
+      "info": {
+        "Name": "Vite - Arbitrary File Read",
+        "Severity": "medium",
+        "Description": "Vite, a provider of frontend development tooling, has a vulnerability in versions prior to 6.2.3, 6.1.2, 6.0.12, 5.4.15, and 4.5.10. `@fs` denies access to files outside of Vite serving allow list. Adding `?raw??` or `?import&raw??` to the URL bypasses this limitation and returns the file content if it exists. This bypass exists because trailing separators such as `?` are removed in several places, but are not accounted for in query string regexes. The contents of arbitrary files can be returned to the browser. Only apps explicitly exposing the Vite dev server to the network (using `--host` or `server.host` config option) are affected. Versions 6.2.3, 6.1.2, 6.0.12, 5.4.15, and 4.5.10 fix the issue.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-30208.yaml"
     }
   ],
   "CVE-2025-30220": [
@@ -6939,6 +3433,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-31125.yaml"
+    }
+  ],
+  "CVE-2025-31131": [
+    {
+      "info": {
+        "Name": "Yeswiki < 4.5.2 - Unauthenticated Path Traversal",
+        "Severity": "high",
+        "Description": "YesWiki is a wiki system written in PHP. The squelette parameter is vulnerable to path traversal attacks, enabling read access to arbitrary files on the server.\n",
+        "Classification": {
+          "CVSSScore": "8.6"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-31131.yaml"
+    }
+  ],
+  "CVE-2025-31161": [
+    {
+      "info": {
+        "Name": "CrushFTP - Authentication Bypass",
+        "Severity": "critical",
+        "Description": "CrushFTP versions 10.0.0 through 10.8.3 and 11.0.0 through 11.3.0 are affected by a vulnerability that may result in unauthenticated access. Remote and unauthenticated HTTP requests to CrushFTP may allow attackers to gain unauthorized access.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-31161.yaml"
     }
   ],
   "CVE-2025-31324": [
@@ -7023,6 +3545,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32355.yaml"
+    }
+  ],
+  "CVE-2025-32429": [
+    {
+      "info": {
+        "Name": "XWiki Platform - SQL Injection",
+        "Severity": "critical",
+        "Description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In versions 9.4-rc-1 through 16.10.5 and 17.0.0-rc-1 through 17.2.2, it's possible for anyone to inject SQL using the parameter sort of the getdeleteddocuments.vm. It's injected as is as an ORDER BY value.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32429.yaml"
     }
   ],
   "CVE-2025-32430": [
@@ -7235,6 +3771,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34038.yaml"
     }
   ],
+  "CVE-2025-34040": [
+    {
+      "info": {
+        "Name": "Zhiyuan OA Platform - Arbitrary File Upload",
+        "Severity": "critical",
+        "Description": "An arbitrary file upload vulnerability exists in the Zhiyuan OA platform 5.0, 5.1 - 5.6sp1, 6.0 - 6.1sp2, 7.0, 7.0sp1 - 7.1, 7.1sp1, and 8.0 - 8.0sp2 via the wpsAssistServlet interface. The realFileType and fileId parameters are improperly validated during multipart file uploads, allowing unauthenticated attackers to upload crafted JSP files outside of intended directories using path traversal. Successful exploitation enables remote code execution as the uploaded file can be accessed and executed through the web server.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34040.yaml"
+    }
+  ],
   "CVE-2025-34045": [
     {
       "info": {
@@ -7361,6 +3911,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-3515.yaml"
     }
   ],
+  "CVE-2025-3605": [
+    {
+      "info": {
+        "Name": "WordPress Frontend Login and Registration Blocks Plugin 1.0.7 - Privilege Escalation",
+        "Severity": "critical",
+        "Description": "Privilege escalation vulnerability exists in the Frontend Login and Registration Blocks plugin for WordPress (versions <= 1.0.7). An unauthenticated attacker can exploit the AJAX endpoint flr_blocks_user_settings_handle_ajax_callback() to change the administrator's email address. Subsequently, the attacker can use the \"Forgot Password\" feature to reset the administrator's password, thereby gaining unauthorized access to the admin account.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-3605.yaml"
+    }
+  ],
   "CVE-2025-36604": [
     {
       "info": {
@@ -7471,6 +4035,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4078.yaml"
+    }
+  ],
+  "CVE-2025-4123": [
+    {
+      "info": {
+        "Name": "Grafana - XSS / Open Redirect / SSRF via Client Path Traversal",
+        "Severity": "high",
+        "Description": "An open redirect vulnerability in Grafana can be chained with other issues, such as XSS or SSRF, to increase impact. An attacker may exploit the redirect to target internal services or deliver malicious JavaScript, potentially leading to internal data exposure or account takeover.\n",
+        "Classification": {
+          "CVSSScore": "7.6"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4123.yaml"
     }
   ],
   "CVE-2025-41243": [
@@ -7655,6 +4233,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-44148.yaml"
     }
   ],
+  "CVE-2025-44177": [
+    {
+      "info": {
+        "Name": "White Star Software ProTop - Directory Traversal",
+        "Severity": "high",
+        "Description": "A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.\n",
+        "Classification": {
+          "CVSSScore": "8.2"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-44177.yaml"
+    }
+  ],
   "CVE-2025-4576": [
     {
       "info": {
@@ -7795,6 +4387,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-46565.yaml"
     }
   ],
+  "CVE-2025-46822": [
+    {
+      "info": {
+        "Name": "Java-springboot-codebase 1.1 - Arbitrary File Read",
+        "Severity": "high",
+        "Description": "OsamaTaher/Java-springboot-codebase is a collection of Java and Spring Boot code snippets, applications, and projects. Prior to commit c835c6f7799eacada4c0fc77e0816f250af01ad2, insufficient path traversal mechanisms make absolute path traversal possible. This vulnerability allows unauthorized access to sensitive internal files. Commit c835c6f7799eacada4c0fc77e0816f250af01ad2 contains a patch for the issue.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-46822.yaml"
+    }
+  ],
   "CVE-2025-47204": [
     {
       "info": {
@@ -7933,6 +4539,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49029.yaml"
+    }
+  ],
+  "CVE-2025-49132": [
+    {
+      "info": {
+        "Name": "Pterodactyl Panel - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "Pterodactyl is a free, open-source game server management panel. Using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated.\n",
+        "Classification": {
+          "CVSSScore": "10"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49132.yaml"
     }
   ],
   "CVE-2025-49493": [
@@ -8397,6 +5017,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54251.yaml"
     }
   ],
+  "CVE-2025-54589": [
+    {
+      "info": {
+        "Name": "Copyparty <=1.18.6 - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "Copyparty before 1.18.7 is vulnerable to reflected cross-site scripting (XSS) via the 'filter' parameter in the '/?ru' endpoint. Unsanitized user input is reflected in the HTML response, allowing attackers to execute arbitrary JavaScript in the context of the victim's browser.\n",
+        "Classification": {
+          "CVSSScore": "6.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54589.yaml"
+    }
+  ],
   "CVE-2025-54597": [
     {
       "info": {
@@ -8689,6 +5323,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5701.yaml"
+    }
+  ],
+  "CVE-2025-5777": [
+    {
+      "info": {
+        "Name": "Citrix NetScaler Memory Disclosure - CitrixBleed 2",
+        "Severity": "critical",
+        "Description": "Insufficient input validation leading to memory overread on the NetScaler Management Interface NetScaler ADC and NetScaler Gateway\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5777.yaml"
     }
   ],
   "CVE-2025-57789": [
