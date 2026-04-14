@@ -455,20 +455,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-31137.yaml"
     }
   ],
-  "CVE-2022-28108": [
-    {
-      "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/selenium_greed_chrome_rce_cve_2022_28108.rb",
-      "name": "Selenium chrome RCE",
-      "description": "Selenium Server (Grid) before 4.0.0-alpha-7 allows CSRF because it permits non-JSON content types\n          such as application/x-www-form-urlencoded, multipart/form-data, and text/plain."
-    },
-    {
-      "source": "metasploit",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/selenium_greed_firefox_rce_cve_2022_28108.rb",
-      "name": "Selenium geckodriver RCE",
-      "description": "Selenium Server (Grid) <= 4.27.0 (latest version at the time of this writing)\n          allows CSRF because it permits non-JSON content types\n          such as application/x-www-form-urlencoded, multipart/form-data, and text/plain."
-    }
-  ],
   "CVE-2022-23642": [
     {
       "source": "metasploit",

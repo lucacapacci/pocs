@@ -905,6 +905,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33868.yaml"
     }
   ],
+  "CVE-2026-3396": [
+    {
+      "info": {
+        "Name": "WCAPF WooCommerce Ajax Product Filter - SQL Injection",
+        "Severity": "high",
+        "Description": "WCAPF WooCommerce Ajax Product Filter <= 4.2.3 contains a time-based SQL injection caused by insufficient escaping of the 'post-author' parameter, letting unauthenticated attackers extract sensitive database information remotely.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3396.yaml"
+    }
+  ],
   "CVE-2026-34156": [
     {
       "info": {
@@ -1085,6 +1099,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
+    }
+  ],
+  "CVE-2026-6203": [
+    {
+      "info": {
+        "Name": "User Registration & Membership WordPress plugin - Open Redirect",
+        "Severity": "medium",
+        "Description": "User Registration & Membership WordPress plugin <= 5.1.4 contains an open redirect caused by insufficient validation of 'redirect_to_on_logout' parameter, letting attackers redirect users to malicious external URLs after logout, exploit requires crafted URL.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
     }
   ],
   "CVE-2026-23829": [
