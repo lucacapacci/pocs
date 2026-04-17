@@ -3605,6 +3605,18 @@
       "application_url": "",
       "source_url": "",
       "source": "exploitdb"
+    },
+    {
+      "info": {
+        "Name": "esm.sh <= v136 - Arbitrary File Write via Path Traversal",
+        "Severity": "medium",
+        "Description": "esm.sh <= 136 contains a path traversal caused by improper canonicalization of the X-Zone-Id HTTP header, letting attackers write files outside the intended storage directory, exploit requires crafted header input.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59342.yaml"
     }
   ],
   "CVE-2025-25257": [
@@ -4327,6 +4339,18 @@
       "application_url": "",
       "source_url": "",
       "source": "exploitdb"
+    },
+    {
+      "info": {
+        "Name": "WordPress Madara Theme < 2.2.2.1 - Local File Inclusion",
+        "Severity": "high",
+        "Description": "Madara WordPress theme <= 2.2.2 contains a local file inclusion vulnerability caused by improper sanitization of the 'template' parameter, letting unauthenticated attackers execute arbitrary files on the server, exploit requires crafted request.\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4524.yaml"
     }
   ],
   "CVE-2025-4094": [
