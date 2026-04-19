@@ -1181,6 +1181,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40242.yaml"
     }
   ],
+  "CVE-2026-40887": [
+    {
+      "info": {
+        "Name": "Vendure Core - SQL Injection",
+        "Severity": "critical",
+        "Description": "Vendure, an open-source headless commerce platform built on Node.js/TypeScript, contains a critical SQL injection vulnerability in its Shop API. The languageCode query parameter is interpolated directly into a raw SQL CASE expression in ProductService.findOneBySlug without parameterization or input validation, allowing unauthenticated attackers to execute arbitrary SQL commands. This can lead to full database disclosure and denial of service.\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40887.yaml"
+    }
+  ],
   "CVE-2026-4106": [
     {
       "info": {
@@ -1277,6 +1291,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
+    }
+  ],
+  "CVE-2026-39363": [
+    {
+      "info": {
+        "Name": "Vite Dev Server - Arbitrary File Read",
+        "Severity": "high",
+        "Description": "Vite dev server exposes the fetchModule method via its WebSocket HMR (Hot Module Replacement) endpoint using the vite-hmr sub-protocol. By connecting to the WebSocket endpoint and sending a crafted vite:invoke custom event that calls fetchModule with a file:// URL (e.g., file:///etc/passwd?raw), an attacker can bypass server.fs.deny restrictions and read arbitrary files from the server filesystem. The vulnerability exists because fetchModule does not enforce the same filesystem access controls as other Vite server endpoints.\n",
+        "Classification": {
+          "CVSSScore": "8.2"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39363.yaml"
     }
   ],
   "CVE-2026-39987": [
