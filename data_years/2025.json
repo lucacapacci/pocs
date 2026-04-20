@@ -5965,6 +5965,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1338.yaml"
     }
   ],
+  "CVE-2025-13390": [
+    {
+      "info": {
+        "Name": "WP Directory Kit <= 1.4.4 - Authentication Bypass",
+        "Severity": "critical",
+        "Description": "The WP Directory Kit plugin for WordPress version 1.4.4 and below contains an authentication bypass vulnerability in its auto-login functionality. The vulnerability allows unauthenticated attackers to gain administrative access by exploiting a cryptographically weak token generation mechanism that uses only the first 10 characters of MD5(user_id). For user_id=1 (typically admin), the token is always predictable.\n",
+        "Classification": {
+          "CVSSScore": "10.0"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13390.yaml"
+    }
+  ],
   "CVE-2025-13418": [
     {
       "info": {
