@@ -104,7 +104,7 @@
       "source": "metasploit",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/http_login.rb",
       "name": "HTTP Login Utility",
-      "description": "This module attempts to authenticate to an HTTP service."
+      "description": "This module attempts to authenticate to HTTP services that\n        require Basic, Digest, or WebDAV authentication.\n        It will probe URIs to identify endpoints requiring authentication (HTTP 401)\n        and then perform brute-force login attempts."
     },
     {
       "source": "metasploit",
