@@ -11057,6 +11057,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-26812.yaml"
     }
   ],
+  "CVE-2021-26947": [
+    {
+      "info": {
+        "Name": "Odoo <= 15.0 - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "A cross-site scripting (XSS) vulnerability in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows remote attackers to inject arbitrary web scripts into the browser of a victim via a crafted link. This issue could lead to the execution of malicious scripts in the context of the user's browser session.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-26947.yaml"
+    }
+  ],
   "CVE-2021-27124": [
     {
       "info": {
