@@ -1279,6 +1279,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
     }
   ],
+  "CVE-2026-2262": [
+    {
+      "info": {
+        "Name": "Easy Appointments <= 3.12.21 - Unauthenticated Sensitive Information Exposure",
+        "Severity": "high",
+        "Description": "Easy Appointments WordPress plugin <= 3.12.21 contains a sensitive information exposure caused by an unauthenticated REST API endpoint /wp-json/wp/v2/eablocks/ea_appointments/ registered with permission_callback allowing unrestricted access, letting unauthenticated attackers extract sensitive customer appointment data.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/CVE-2026-2262.yaml"
+    }
+  ],
   "CVE-2026-23829": [
     {
       "info": {
