@@ -1165,6 +1165,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34885.yaml"
     }
   ],
+  "CVE-2026-35029": [
+    {
+      "info": {
+        "Name": "LiteLLM - Arbitrary File Read",
+        "Severity": "high",
+        "Description": "LiteLLM < 1.83.0 contains a broken access control vulnerability caused by lack of admin role enforcement on /config/update endpoint, letting authenticated users modify configurations, execute code, read files, and take over accounts.\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35029.yaml"
+    }
+  ],
   "CVE-2026-35616": [
     {
       "info": {
@@ -1221,6 +1235,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39365.yaml"
     }
   ],
+  "CVE-2026-39808": [
+    {
+      "info": {
+        "Name": "Fortinet FortiSandbox - Command Injection",
+        "Severity": "critical",
+        "Description": "Fortinet FortiSandbox 4.4.0 through 4.4.8 contains a command injection caused by improper neutralization of special elements in OS commands, letting attackers execute unauthorized code or commands, exploit requires crafted input.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39808.yaml"
+    }
+  ],
   "CVE-2026-4020": [
     {
       "info": {
@@ -1247,6 +1275,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40242.yaml"
+    }
+  ],
+  "CVE-2026-40308": [
+    {
+      "info": {
+        "Name": "My Calendar WordPress Plugin - Information Disclosure",
+        "Severity": "high",
+        "Description": "My Calendar WordPress plugin <= 3.7.6 contains an injection vulnerability caused by unvalidated user input passed to parse_str() in mc_ajax_mcjs_action endpoint, letting unauthenticated attackers access or crash sites via switch_to_blog(), exploit requires WordPress Multisite or Single Site setup.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40308.yaml"
     }
   ],
   "CVE-2026-40887": [
