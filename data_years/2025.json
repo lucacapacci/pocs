@@ -5799,6 +5799,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10353.yaml"
     }
   ],
+  "CVE-2025-10897": [
+    {
+      "info": {
+        "Name": "WooCommerce Designer Pro <= 1.9.28 - Arbitrary File Read",
+        "Severity": "high",
+        "Description": "WooCommerce Designer Pro theme for WordPress <= 1.9.28 contains an arbitrary file read vulnerability caused by improper input validation, letting unauthenticated attackers read arbitrary files including sensitive configuration files, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "8.6"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10897.yaml"
+    }
+  ],
   "CVE-2025-11307": [
     {
       "info": {
@@ -5839,6 +5853,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11580.yaml"
+    }
+  ],
+  "CVE-2025-11693": [
+    {
+      "info": {
+        "Name": "Export WP Page to Static HTML <= 4.3.4 - Cookie Exposure",
+        "Severity": "critical",
+        "Description": "Export WP Page to Static HTML & PDF WordPress plugin <= 4.3.4 contains a sensitive information exposure caused by publicly exposed cookies.txt files with authentication cookies, letting unauthenticated attackers access sensitive authentication data, exploit requires site administrator to trigger backup with specific user role.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11693.yaml"
     }
   ],
   "CVE-2025-11750": [
@@ -6063,6 +6091,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13652.yaml"
+    }
+  ],
+  "CVE-2025-13801": [
+    {
+      "info": {
+        "Name": "Yoco Payments <= 3.8.8 - Path Traversal",
+        "Severity": "high",
+        "Description": "Yoco Payments WordPress plugin <= 3.8.8 contains a path traversal caused by improper validation of the file parameter, letting unauthenticated attackers read arbitrary files on the server.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13801.yaml"
     }
   ],
   "CVE-2025-13920": [
@@ -8963,6 +9005,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59049.yaml"
     }
   ],
+  "CVE-2025-59136": [
+    {
+      "info": {
+        "Name": "WordPress Gerencianet Oficial <= 3.1.3 - Unauthenticated Order Status Disclosure",
+        "Severity": "medium",
+        "Description": "Ef\u00ed Bank Gerencianet Oficial <= 3.1.3 contains an insertion of sensitive information into sent data vulnerability caused by improper handling of embedded sensitive data, letting attackers retrieve embedded sensitive data, exploit requires crafted requests.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59136.yaml"
+    }
+  ],
   "CVE-2025-59341": [
     {
       "info": {
@@ -9661,6 +9717,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-9196.yaml"
+    }
+  ],
+  "CVE-2025-9209": [
+    {
+      "info": {
+        "Name": "RestroPress 3.0.0-3.2.1 - Authentication Bypass",
+        "Severity": "critical",
+        "Description": "RestroPress Online Food Ordering System WordPress plugin 3.0.0 to 3.1.9.2 contains an authentication bypass caused by exposure of user private tokens and API data via /wp-json/wp/v2/users endpoint, letting unauthenticated attackers forge JWT tokens and authenticate as other users including administrators, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-9209.yaml"
     }
   ],
   "CVE-2025-9744": [

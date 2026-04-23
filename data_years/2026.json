@@ -1319,6 +1319,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4106.yaml"
     }
   ],
+  "CVE-2026-41176": [
+    {
+      "info": {
+        "Name": "Rclone RC - Broken Access Control",
+        "Severity": "critical",
+        "Description": "Rclone >= 1.45.0 and < 1.73.5 contains a broken access control vulnerability caused by unauthenticated access to the RC endpoint `options/set` allowing mutation of global runtime configuration, letting unauthenticated attackers access sensitive administrative functions, exploit requires RC server started without global HTTP authentication.\n",
+        "Classification": {
+          "CVSSScore": "9.2"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41176.yaml"
+    }
+  ],
   "CVE-2026-41179": [
     {
       "info": {
@@ -1331,6 +1345,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41179.yaml"
+    }
+  ],
+  "CVE-2026-41640": [
+    {
+      "info": {
+        "Name": "NocoBase - SQL Injection",
+        "Severity": "high",
+        "Description": "NocoBase versions prior to 2.0.39 contain a SQL injection vulnerability in the @nocobase/database package. The queryParentSQL function in eager-loading-tree.ts constructs a recursive CTE query by directly concatenating user-controlled primary key values into the SQL WHERE IN clause without parameterization. An authenticated attacker with record creation permissions on a tree collection with string-type primary keys can inject arbitrary SQL via crafted record identifiers, enabling full database compromise including data exfiltration and modification.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41640.yaml"
+    }
+  ],
+  "CVE-2026-41641": [
+    {
+      "info": {
+        "Name": "NocoBase - SQL Injection",
+        "Severity": "high",
+        "Description": "NocoBase @nocobase/plugin-collection-sql versions prior to 2.0.39 are vulnerable to SQL injection via the sqlCollection:update endpoint. The checkSQL() function, which blocks dangerous SQL keywords and ensures only SELECT statements are allowed, is not called during collection updates.\n",
+        "Classification": {
+          "CVSSScore": "7.2"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41641.yaml"
     }
   ],
   "CVE-2026-4257": [
