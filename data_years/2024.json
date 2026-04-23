@@ -8157,6 +8157,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-2621.yaml"
     }
   ],
+  "CVE-2024-26291": [
+    {
+      "info": {
+        "Name": "Avid NEXIS Agent - Arbitrary File Read",
+        "Severity": "high",
+        "Description": "Avid NEXIS E-series, F-series, PRO+, and System Director Appliance (SDA+) before 2025.5.1 contain an unauthenticated arbitrary file read caused by improper validation of the filename parameter, letting unauthenticated attackers read sensitive files, exploit requires no authentication.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-26291.yaml"
+    }
+  ],
   "CVE-2024-26331": [
     {
       "info": {
