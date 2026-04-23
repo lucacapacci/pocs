@@ -11953,6 +11953,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-31324.yaml"
     }
   ],
+  "CVE-2021-3152": [
+    {
+      "info": {
+        "Name": "Home Assistant HACS - Local File Inclusion",
+        "Severity": "high",
+        "Description": "Home Assistant before 2021.1.3 lacks a protection layer against directory-traversal attacks in custom integrations, letting attackers access arbitrary files, exploit requires attacker to deploy malicious custom integration.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-3152.yaml"
+    }
+  ],
   "CVE-2021-31537": [
     {
       "info": {
