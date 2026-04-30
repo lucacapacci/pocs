@@ -117,6 +117,26 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/telnet/gnu_inetutils_auth_bypass.rb",
       "name": "GNU Inetutils Telnet Authentication Bypass Exploit CVE-2026-24061",
       "description": "The telnetd service from GNU InetUtils is vulnerable to authentication-bypass, tracked as CVE-2026-24061, in\n          versions up to version 2.7. During Telnet authentication the SB byte can be sent to indicate sub-negotiation which\n          allows for the exchange of sub-option parameters after both parties have agreed to enable a specific functional option.\n          Environment variables can be sent as sub-options and it's the USER environment variable which introduces the\n          authentication bypass in this scenario. When the USER environment variable gets sent to the GNU inetutils telnetd\n          service during authentication, the variable gets appended without proper sanitization to an execv call to the\n          /usr/bin/login binary. The login binary has a -f flag which skips authentication for a specific user. So the exploit\n          sets the `USER` environment variable to -f root and the telnetd service responds with a root shell."
+    },
+    {
+      "id": "52524",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52524.py",
+      "description": "GNU InetUtils 2.6 - Telnetd Remote Privilege Escalation",
+      "date_published": "2026-04-29",
+      "author": "aliguliyev",
+      "type": "local",
+      "platform": "linux",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2026-24061",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     }
   ],
   "CVE-2026-28289": [
@@ -177,6 +197,72 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_supply_chain_rce.rb",
       "name": "MajorDoMo Supply Chain RCE via Update Poisoning",
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
+    }
+  ],
+  "CVE-2026-22241": [
+    {
+      "id": "52519",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52519.py",
+      "description": "GUnet OpenEclass E-learning platform < 4.2 - Remote Code Execution (RCE)",
+      "date_published": "2026-04-29",
+      "author": "unico007x",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2026-22241",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-22704": [
+    {
+      "id": "52526",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52526.py",
+      "description": "HAX CMS 24.x - Stored Cross-Site Scripting (XSS)",
+      "date_published": "2026-04-29",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2026-22704",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-24421": [
+    {
+      "id": "52523",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52523.txt",
+      "description": "phpMyFAQ  4.0.16 - Improper Authorization",
+      "date_published": "2026-04-29",
+      "author": "contact",
+      "type": "webapps",
+      "platform": "php",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2026-24421",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     }
   ],
   "CVE-2026-0560": [
@@ -1395,6 +1481,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41641.yaml"
+    }
+  ],
+  "CVE-2026-41940": [
+    {
+      "info": {
+        "Name": "cPanel & WHM - Authentication Bypass via Session-File CRLF Injection",
+        "Severity": "critical",
+        "Description": "cPanel and WHM versions prior to 11.110.0.97, 11.118.0.63, 11.126.0.54, 11.132.0.29, 11.134.0.20, and 11.136.0.5 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.\n",
+        "Classification": {
+          "CVSSScore": "N/A"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41940.yaml"
     }
   ],
   "CVE-2026-4257": [

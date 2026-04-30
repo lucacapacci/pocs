@@ -523,6 +523,26 @@
       "description": "This module exploits an unauthenticated remote code execution vulnerability\n          in Craft CMS versions 3.x, 4.x, and 5.x < 5.6.17 via the image transform endpoint.\n          It injects a PHP Meterpreter payload into the Craft session, then triggers its execution\n          by abusing the Yii behavior gadget chain (PhpManager) on the generate-transform endpoint.\n          Discovered in the wild by Orange Cyberdefense CSIRT and assigned CVE-2025-32432."
     },
     {
+      "id": "52525",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52525.py",
+      "description": "Craft CMS 5.6.16 - RCE",
+      "date_published": "2026-04-29",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-32432",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    },
+    {
       "info": {
         "Name": "CraftCMS - Remote Code Execution",
         "Severity": "critical",
@@ -2423,6 +2443,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-46822.yaml"
     }
   ],
+  "CVE-2025-12744": [
+    {
+      "id": "52515",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52515.py",
+      "description": "Fedora - Local Privilege Escalation",
+      "date_published": "2026-04-29",
+      "author": "Chris",
+      "type": "local",
+      "platform": "linux",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-12744",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2025-6018": [
     {
       "id": "52386",
@@ -3619,6 +3661,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59342.yaml"
     }
   ],
+  "CVE-2025-69210": [
+    {
+      "id": "52517",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52517.txt",
+      "description": "FacturaScripts 2025.43 - XSS",
+      "date_published": "2026-04-29",
+      "author": "uvettrivel007",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-69210",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2025-25257": [
     {
       "id": "52473",
@@ -3701,6 +3765,28 @@
       "date_updated": "2025-08-03",
       "verified": "0",
       "codes": "CVE-2025-41373",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2025-60751": [
+    {
+      "id": "52522",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52522.py",
+      "description": "GeographicLib v2.5.1 - stack buffer overflow",
+      "date_published": "2026-04-29",
+      "author": "rosario",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-60751",
       "tags": "",
       "aliases": "",
       "screenshot_url": "",
@@ -3841,6 +3927,28 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2294.yaml"
+    }
+  ],
+  "CVE-2025-68664": [
+    {
+      "id": "52514",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52514.py",
+      "description": "LangChain Core 1.2.4 - SSTI/RCE",
+      "date_published": "2026-04-29",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-68664",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     }
   ],
   "CVE-2025-7766": [
@@ -4467,6 +4575,28 @@
       "date_updated": "2025-05-25",
       "verified": "0",
       "codes": "CVE-2025-2594",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2025-62639": [
+    {
+      "id": "52516",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52516.py",
+      "description": "Xibo CMS  4.3.0 - RCE via SSTI",
+      "date_published": "2026-04-29",
+      "author": "Cristian Branet",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-29",
+      "date_updated": "2026-04-29",
+      "verified": "0",
+      "codes": "CVE-2025-62639",
       "tags": "",
       "aliases": "",
       "screenshot_url": "",
