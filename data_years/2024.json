@@ -10139,6 +10139,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-38653.yaml"
     }
   ],
+  "CVE-2024-38773": [
+    {
+      "info": {
+        "Name": "FormLift for Infusionsoft Web Forms <= 7.5.17 - SQL Injection",
+        "Severity": "critical",
+        "Description": "The FormLift for Infusionsoft Web Forms plugin for WordPress is vulnerable to SQL Injection via the 'form_id' parameter in versions up to, and including, 7.5.17 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.\n",
+        "Classification": {
+          "CVSSScore": "10.0"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-38773.yaml"
+    }
+  ],
   "CVE-2024-38816": [
     {
       "info": {

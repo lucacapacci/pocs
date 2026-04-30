@@ -419,6 +419,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1357.yaml"
     }
   ],
+  "CVE-2026-1368": [
+    {
+      "info": {
+        "Name": "Video Conferencing with Zoom API < 4.6.6 - Unauthenticated SDK Signature Generation",
+        "Severity": "high",
+        "Description": "Zoom WordPress plugin < 4.6.6 contains a broken authentication caused by disabled nonce verification in an AJAX handler, letting unauthenticated attackers generate valid Zoom SDK signatures and retrieve the Zoom SDK key.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1368.yaml"
+    }
+  ],
   "CVE-2026-1405": [
     {
       "info": {
@@ -655,6 +669,34 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22812.yaml"
+    }
+  ],
+  "CVE-2026-23482": [
+    {
+      "info": {
+        "Name": "Blinko < 1.8.4 - Path Traversal",
+        "Severity": "high",
+        "Description": "Blinko < 1.8.4 contains a path traversal vulnerability caused by lack of permission checks and filtering on the temp/ path in the file server endpoint, letting unauthorized attackers read arbitrary files including backup files with user notes and tokens, exploit requires no special privileges.\n",
+        "Classification": {
+          "CVSSScore": "7.5"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23482.yaml"
+    }
+  ],
+  "CVE-2026-23483": [
+    {
+      "info": {
+        "Name": "Blinko <= 1.8.3 - Path Traversal via /plugins",
+        "Severity": "medium",
+        "Description": "Blinko <= 1.8.3 contains a path traversal caused by improper path concatenation without verification in the plugin file server endpoint, letting remote attackers access arbitrary files, exploit requires network access.\n",
+        "Classification": {
+          "CVSSScore": "5.3"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23483.yaml"
     }
   ],
   "CVE-2026-23486": [
@@ -1119,6 +1161,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
+  "CVE-2026-33017": [
+    {
+      "info": {
+        "Name": "Langflow < 1.9.0 - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "Langflow versions prior to 1.9.0 are vulnerable to unauthenticated remote code execution (RCE) via the build_public_tmp endpoint. Attackers can submit a manipulated flow JSON containing Python code that is executed during the build process without proper sandboxing.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33017.yaml"
+    }
+  ],
   "CVE-2026-33032": [
     {
       "info": {
@@ -1131,6 +1187,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33032.yaml"
+    }
+  ],
+  "CVE-2026-33057": [
+    {
+      "info": {
+        "Name": "Mesop AI Sandbox <= 1.2.2 - Remote Code Execution",
+        "Severity": "critical",
+        "Description": "Mesop <= 1.2.2 contains an unrestricted remote code execution caused by unauthenticated ingestion and execution of base64-encoded Python code in the /exec-py endpoint of ai/testing module, letting attackers execute arbitrary commands on the host, exploit requires HTTP access to the server.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33057.yaml"
     }
   ],
   "CVE-2026-33340": [
@@ -1313,6 +1383,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3584.yaml"
+    }
+  ],
+  "CVE-2026-3844": [
+    {
+      "info": {
+        "Name": "Breeze <= 2.4.4 - Arbitrary File Upload",
+        "Severity": "critical",
+        "Description": "Breeze Cache WordPress plugin <= 2.4.4 contains an unrestricted file upload vulnerability caused by missing file type validation in 'fetch_gravatar_from_remote' function, letting unauthenticated attackers upload arbitrary files, exploit requires 'Host Files Locally - Gravatars' enabled.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3844.yaml"
     }
   ],
   "CVE-2026-39364": [
@@ -1579,6 +1663,20 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
+    }
+  ],
+  "CVE-2026-42167": [
+    {
+      "info": {
+        "Name": "ProFTPD mod_sql - Preauth User Backdoor",
+        "Severity": "high",
+        "Description": "ProFTPD mod_sql before 1.3.10rc1 contains a remote code execution caused by unsafe username handling with SQL backend commands in USER request logging expansions, letting remote attackers execute arbitrary code, exploit requires SQL backend allowing commands.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-42167.yaml"
     }
   ],
   "CVE-2026-39363": [
