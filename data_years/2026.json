@@ -111,6 +111,14 @@
       "description": "This module exploits a SQL injection vulnerability in openDCIM's install.php\n          endpoint (CVE-2026-28515) to achieve remote code execution. The install.php\n          script remains accessible after installation and processes LDAP configuration\n          parameters via UpdateParameter() without authentication or input sanitization,\n          allowing stacked SQL queries.\n\n          The exploit chain works by injecting SQL through the LDAP configuration form\n          to overwrite the Graphviz dot binary path in fac_Config, then triggering\n          report_network_map.php which calls exec() with the poisoned value. A backup\n          of the original configuration is created before exploitation and restored\n          after payload delivery.\n\n          Tested against openDCIM 23.04 through 25.01 on Ubuntu with Apache."
     }
   ],
+  "CVE-2026-31431": [
+    {
+      "source": "metasploit",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_31431_copy_fail.rb",
+      "name": "Copy Fail AF_ALG + authencesn Page-Cache Write",
+      "description": "CVE-2026-31431 is a logic flaw in the Linux kernel's authencesn AEAD template that, when reached via the\n          AF_ALG socket interface combined with splice(), allows an unprivileged local user to perform a controlled\n          4-byte write into the page cache of any readable file. Because the corrupted pages are never marked dirty, the\n          on-disk file is unchanged but the in-memory version is immediately visible system-wide, enabling local\n          privilege escalation by injecting shellcode into the page cache of a setuid-root binary such as /usr/bin/su.\n          The vulnerability was introduced by an in-place optimization in algif_aead.c (commit 72548b093ee3, 2017) and\n          affects essentially all major Linux distributions shipped since then until the fix in commit a664bf3d603d."
+    }
+  ],
   "CVE-2026-24061": [
     {
       "source": "metasploit",
