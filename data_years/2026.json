@@ -207,6 +207,116 @@
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
     }
   ],
+  "CVE-2026-2441": [
+    {
+      "id": "52542",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52542.txt",
+      "description": "Google Chrome  145.0.7632.75 - CSSFontFeatureValuesMap",
+      "date_published": "2026-04-30",
+      "author": "nu11secur1ty",
+      "type": "local",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-2441",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-26157": [
+    {
+      "id": "52538",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52538.py",
+      "description": "BusyBox 1.37.0 - Path Traversal",
+      "date_published": "2026-04-30",
+      "author": "Calil Khalil",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-26157",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-25047": [
+    {
+      "id": "52528",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52528.py",
+      "description": "deephas 1.0.7 - Prototype Pollution",
+      "date_published": "2026-04-30",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-25047",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-24897": [
+    {
+      "id": "52529",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52529.py",
+      "description": "Erugo  0.2.14 - Remote Code Execution (RCE)",
+      "date_published": "2026-04-30",
+      "author": "abdulmoiz",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-24897",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-25643": [
+    {
+      "id": "52533",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52533.py",
+      "description": "Frigate NVR 0.16.3 - Remote Code Execution",
+      "date_published": "2026-04-30",
+      "author": "jduardo2704",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-25643",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2026-22241": [
     {
       "id": "52519",
@@ -251,6 +361,116 @@
       "source": "exploitdb"
     }
   ],
+  "CVE-2026-24479": [
+    {
+      "id": "52539",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52539.rb",
+      "description": "HUSTOJ Zip-Slip v26.01.24 -  RCE",
+      "date_published": "2026-04-30",
+      "author": "Marshall Whittaker",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-24479",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-26235": [
+    {
+      "id": "52536",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52536.py",
+      "description": "JUNG Smart Visu Server 1.1.1050 - Dos",
+      "date_published": "2026-04-30",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-26235",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-25732": [
+    {
+      "id": "52534",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52534.py",
+      "description": "NiceGUI 3.6.1 - Path Traversal",
+      "date_published": "2026-04-30",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-25732",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-26335": [
+    {
+      "id": "52540",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52540.py",
+      "description": "Repetier-Server 1.4.10 - Path Traversal",
+      "date_published": "2026-04-30",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-26335",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-25961": [
+    {
+      "id": "52535",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52535.py",
+      "description": "SumatraPDF 3.5.2 - Remote Code Execution",
+      "date_published": "2026-04-30",
+      "author": "banyamer",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-25961",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2026-24421": [
     {
       "id": "52523",
@@ -265,6 +485,72 @@
       "date_updated": "2026-04-29",
       "verified": "0",
       "codes": "CVE-2026-24421",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-24486": [
+    {
+      "id": "52543",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52543.py",
+      "description": "Python-Multipart 0.0.22 - Path Traversal",
+      "date_published": "2026-04-30",
+      "author": "jefersoncardoso.dev",
+      "type": "webapps",
+      "platform": "python",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-24486",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-21248": [
+    {
+      "id": "52537",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.txt",
+      "description": "Windows 11 25H2  - Heap Overflow",
+      "date_published": "2026-04-30",
+      "author": "nu11secur1ty",
+      "type": "local",
+      "platform": "windows",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-21248;CVE-2026-21244",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-21244": [
+    {
+      "id": "52537",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.txt",
+      "description": "Windows 11 25H2  - Heap Overflow",
+      "date_published": "2026-04-30",
+      "author": "nu11secur1ty",
+      "type": "local",
+      "platform": "windows",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2026-21248;CVE-2026-21244",
       "tags": "",
       "aliases": "",
       "screenshot_url": "",

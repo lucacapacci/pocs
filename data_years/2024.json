@@ -145,6 +145,26 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/gather/camaleon_download_private_file.rb",
       "name": "Camaleon CMS Directory Traversal CVE-2024-46987",
       "description": "Exploits CVE-2024-46987, an authenticated directory traversal\n          vulnerability in Camaleon CMS versions <= 2.8.0 and 2.9.0"
+    },
+    {
+      "id": "52531",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52531.py",
+      "description": "Camaleon CMS  v2.9.0 - Path Traversal",
+      "date_published": "2026-04-30",
+      "author": "velampudisakshi",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2024-46987",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     }
   ],
   "CVE-2024-24919": [
@@ -1339,6 +1359,26 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pyload_js2py_cve_2024_39205.rb",
       "name": "Pyload RCE (CVE-2024-39205) with js2py sandbox escape (CVE-2024-28397)",
       "description": "CVE-2024-28397 is sandbox escape in js2py (<=0.74) which is a popular python package that can evaluate\n          javascript code inside a python interpreter. The vulnerability allows for an attacker to obtain a reference\n          to a python object in the js2py environment enabling them to escape the sandbox, bypass pyimport restrictions\n          and execute arbitrary commands on the host. At the time of writing no patch has been released, version 0.74\n          is the latest version of js2py which was released Nov 6, 2022.\n\n          CVE-2024-39205 is an remote code execution vulnerability in Pyload (<=0.5.0b3.dev85) which is an open-source\n          download manager designed to automate file downloads from various online sources. Pyload is vulnerable because\n          it exposes the vulnerable js2py functionality mentioned above on the /flash/addcrypted2 API endpoint.\n          This endpoint was designed to only accept connections from localhost but by manipulating the HOST header we\n          can bypass this restriction in order to access the API to achieve unauth RCE."
+    },
+    {
+      "id": "52532",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52532.py",
+      "description": "Js2Py 0.74 -  RCE",
+      "date_published": "2026-04-30",
+      "author": "alisunbul",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30",
+      "verified": "0",
+      "codes": "CVE-2024-28397",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
     },
     {
       "info": {
