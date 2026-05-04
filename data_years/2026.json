@@ -1763,6 +1763,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39808.yaml"
     }
   ],
+  "CVE-2026-40105": [
+    {
+      "info": {
+        "Name": "XWiki - Cross-Site Scripting",
+        "Severity": "medium",
+        "Description": "XWiki is vulnerable to reflected Cross-Site Scripting (XSS) via the `viewer=changes` endpoint. The `rev2` parameter is not properly sanitised before being rendered in the response, allowing an attacker to inject arbitrary JavaScript. Affects XWiki versions prior to the patched release.\n",
+        "Classification": {
+          "CVSSScore": "6.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40105.yaml"
+    }
+  ],
   "CVE-2026-4020": [
     {
       "info": {
