@@ -1707,6 +1707,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3844.yaml"
     }
   ],
+  "CVE-2026-39339": [
+    {
+      "info": {
+        "Name": "ChurchCRM - API Authentication Bypass via URL Injection",
+        "Severity": "critical",
+        "Description": "ChurchCRM < 7.1.0 contains an authentication bypass caused by improper API middleware URL handling in ChurchCRM/Slim/Middleware/AuthMiddleware.php, letting unauthenticated attackers access protected API endpoints, exploit requires crafted request URL with 'api/public\n",
+        "Classification": {
+          "CVSSScore": "9.1"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39339.yaml"
+    }
+  ],
   "CVE-2026-39364": [
     {
       "info": {
