@@ -40,7 +40,7 @@ def process_data():
                         "name": row['description'],
                         "description": row['description'],
                         "file": f"https://gitlab.com/exploit-database/exploitdb/-/raw/main/{row['file']}"
-                    }
+                    })
 
     # 4. Parse Nuclei JSONL
     if os.path.exists('nuclei_cves.json'):
