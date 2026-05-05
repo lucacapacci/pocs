@@ -54,7 +54,7 @@ def process_data():
                         cve_map[cve_id].append({
                             "source": "nuclei",
                             "name": info_block.get("Name", "-"),
-                            "description": info.get("Description", "-"),
+                            "description": info_block.get("Description", "-"),
                             "file": f'https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/{entry.get("file_path")}'
                         })
 
