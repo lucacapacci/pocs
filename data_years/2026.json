@@ -207,6 +207,28 @@
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177."
     }
   ],
+  "CVE-2026-23231": [
+    {
+      "id": "52549",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52549.py",
+      "description": "Linux nf_tables 6.19.3 - Local Privilege Escalation",
+      "date_published": "2026-05-04",
+      "author": "aviralyash27",
+      "type": "local",
+      "platform": "linux",
+      "port": "",
+      "date_added": "2026-05-04",
+      "date_updated": "2026-05-04",
+      "verified": "0",
+      "codes": "CVE-2026-23231",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
   "CVE-2026-2441": [
     {
       "id": "52542",
@@ -405,6 +427,40 @@
       "source": "exploitdb"
     }
   ],
+  "CVE-2026-27483": [
+    {
+      "id": "52547",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52547.py",
+      "description": "MindsDB  25.9.1.1 - Path Traversal",
+      "date_published": "2026-05-04",
+      "author": "thewhiteh4t",
+      "type": "webapps",
+      "platform": "multiple",
+      "port": "",
+      "date_added": "2026-05-04",
+      "date_updated": "2026-05-04",
+      "verified": "0",
+      "codes": "CVE-2026-27483",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    },
+    {
+      "info": {
+        "Name": "MindsDB - Remote Code Execution",
+        "Severity": "high",
+        "Description": "MindsDB < 25.9.1.1 contains a remote code execution caused by path traversal in the /api/files upload file module, letting authenticated attackers write arbitrary files and execute commands, exploit requires authentication.\n",
+        "Classification": {
+          "CVSSScore": "8.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27483.yaml"
+    }
+  ],
   "CVE-2026-25732": [
     {
       "id": "52534",
@@ -507,6 +563,28 @@
       "date_updated": "2026-04-30",
       "verified": "0",
       "codes": "CVE-2026-24486",
+      "tags": "",
+      "aliases": "",
+      "screenshot_url": "",
+      "application_url": "",
+      "source_url": "",
+      "source": "exploitdb"
+    }
+  ],
+  "CVE-2026-21250": [
+    {
+      "id": "52546",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52546.c",
+      "description": "Windows 11 24H2 - Local Privilege Escalation",
+      "date_published": "2026-05-04",
+      "author": "3302509675",
+      "type": "local",
+      "platform": "windows",
+      "port": "",
+      "date_added": "2026-05-04",
+      "date_updated": "2026-05-04",
+      "verified": "0",
+      "codes": "CVE-2026-21250",
       "tags": "",
       "aliases": "",
       "screenshot_url": "",
@@ -1187,20 +1265,6 @@
         "source": "nuclei"
       },
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2699.yaml"
-    }
-  ],
-  "CVE-2026-27483": [
-    {
-      "info": {
-        "Name": "MindsDB - Remote Code Execution",
-        "Severity": "high",
-        "Description": "MindsDB < 25.9.1.1 contains a remote code execution caused by path traversal in the /api/files upload file module, letting authenticated attackers write arbitrary files and execute commands, exploit requires authentication.\n",
-        "Classification": {
-          "CVSSScore": "8.8"
-        },
-        "source": "nuclei"
-      },
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27483.yaml"
     }
   ],
   "CVE-2026-27645": [
