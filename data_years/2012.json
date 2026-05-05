@@ -15,7 +15,7 @@
     {
       "source": "nuclei",
       "name": "Axigen Mail Server Filename Directory Traversal",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in the View Log Files component in Axigen Free Mail Server allow remote attackers to read or delete arbitrary files via a .. (dot dot) in the fileName parameter in a download action to source/loggin/page_log_dwn_file.hsp, or the fileName parameter in an edit or delete action to the default URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4940.yaml"
     }
   ],
@@ -325,7 +325,7 @@
     {
       "source": "nuclei",
       "name": "MySQL - Authentication Bypass",
-      "description": "-",
+      "description": "sql/password.c in Oracle MySQL 5.1.x before 5.1.63, 5.5.x before 5.5.24, and 5.6.x before 5.6.6, and MariaDB 5.1.x before 5.1.62, 5.2.x before 5.2.12, 5.3.x before 5.3.6, and 5.5.x before 5.5.23, when running in certain environments with certain implementations of the memcmp function, allows remote attackers to bypass authentication by repeatedly authenticating with the same incorrect password, which eventually causes a token comparison to succeed due to an improperly-checked return value.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2012/CVE-2012-2122.yaml"
     }
   ],
@@ -981,7 +981,7 @@
     {
       "source": "nuclei",
       "name": "Oracle Forms & Reports RCE (CVE-2012-3152 & CVE-2012-3153)",
-      "description": "-",
+      "description": "An unspecified vulnerability in the Oracle Reports Developer component in Oracle Fusion Middleware 11.1.1.4,\n11.1.1.6, and 11.1.2.0 allows remote attackers to affect confidentiality and integrity via unknown\nvectors related to Report Server Component.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-3153.yaml"
     }
   ],
@@ -1019,7 +1019,7 @@
     {
       "source": "nuclei",
       "name": "PHP CGI v5.3.12/5.4.2 Remote Code Execution",
-      "description": "-",
+      "description": "sapi/cgi/cgi_main.c in PHP before 5.3.12 and 5.4.x before 5.4.2, when configured as a CGI script (aka php-cgi), does not properly handle query strings that lack an = (equals sign) character, which allows remote attackers to execute arbitrary code by placing command-line options in the query string, related to lack of skipping a certain php_getopt for the 'd' case.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-1823.yaml"
     }
   ],
@@ -1103,7 +1103,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts <2.3.1.1 - Remote Code Execution",
-      "description": "-",
+      "description": "Apache Struts before 2.3.1.1 is susceptible to remote code execution. When developer mode is used in the DebuggingInterceptor component, a remote attacker can execute arbitrary OGNL commands via unspecified vectors, which can allow for execution of malware, obtaining sensitive information, modifying data, and/or gaining full control over a compromised system without entering necessary credentials.. NOTE: the vendor characterizes this behavior as not \"a security vulnerability itself.\"\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0394.yaml"
     }
   ],
@@ -3007,7 +3007,7 @@
     {
       "source": "nuclei",
       "name": "WebsitePanel before v1.2.2.1 - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in the login page in WebsitePanel before 1.2.2.1 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in ReturnUrl to Default.aspx\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4032.yaml"
     }
   ],
@@ -3423,7 +3423,7 @@
     {
       "source": "nuclei",
       "name": "ManageEngine Firewall Analyzer 7.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Multiple cross-site scripting vulnerabilities in ManageEngine Firewall Analyzer 7.2 allow remote attackers to inject arbitrary web script or HTML via the (1) subTab or (2) tab parameter to createAnomaly.do; (3) url, (4) subTab, or (5) tab parameter to mindex.do; (6) tab parameter to index2.do; or (7) port parameter to syslogViewer.do.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4889.yaml"
     }
   ],
@@ -4355,7 +4355,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts2 S2-008 RCE",
-      "description": "-",
+      "description": "The CookieInterceptor component in Apache Struts before 2.3.1.1 does not use the parameter-name whitelist, which allows remote attackers to execute arbitrary commands via a crafted HTTP Cookie header that triggers Java code execution through a static method.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0392.yaml"
     }
   ],
@@ -4385,7 +4385,7 @@
     {
       "source": "nuclei",
       "name": "Forescout CounterACT 6.3.4.1 - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in assets/login on the Forescout CounterACT NAC device before 7.0 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the 'a' parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4982.yaml"
     }
   ],
@@ -4555,7 +4555,7 @@
     {
       "source": "nuclei",
       "name": "MySQLDumper 1.24.4 - Directory Traversal",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in MySQLDumper 1.24.4 allow remote attackers to read arbitrary files via a .. (dot dot) in the (1) language parameter to learn/cubemail/install.php or (2) f parameter learn/cubemail/filemanagement.php, or execute arbitrary local files via a .. (dot dot) in the (3) config parameter to learn/cubemail/menu.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4253.yaml"
     }
   ],
@@ -4659,7 +4659,7 @@
     {
       "source": "nuclei",
       "name": "11in1 CMS 1.2.1 - Local File Inclusion (LFI)",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in 11in1 1.2.1 stable 12-31-2011 allow remote attackers to read arbitrary files via a .. (dot dot) in the class parameter to (1) index.php or (2) admin/index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0996.yaml"
     }
   ],
@@ -5541,7 +5541,7 @@
     {
       "source": "nuclei",
       "name": "Dolibarr ERP/CRM 3.2 Alpha - Multiple Directory Traversal Vulnerabilities",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in Dolibarr CMS 3.2.0 Alpha allow remote attackers to read arbitrary files and possibly execute arbitrary code via a .. (dot dot) in the (1) file parameter to document.php or (2) backtopage parameter in a create action to comm/action/fiche.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-1226.yaml"
     }
   ],
@@ -5813,7 +5813,7 @@
     {
       "source": "nuclei",
       "name": "FlatnuX CMS - Directory Traversal",
-      "description": "-",
+      "description": "A path traversal vulnerability in controlcenter.php in FlatnuX CMS 2011 08.09.2 allows remote administrators to read arbitrary files via a full pathname in the dir parameter in a contents/Files action.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4878.yaml"
     }
   ],
@@ -6665,7 +6665,7 @@
     {
       "source": "nuclei",
       "name": "OpenEMR 4.1 - Local File Inclusion",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in OpenEMR 4.1.0 allow remote authenticated users to read arbitrary files via a .. (dot dot) in the formname parameter to (1) contrib/acog/print_form.php; or (2) load_form.php, (3) view_form.php, or (4) trend_form.php in interface/patient_file/encounter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0991.yaml"
     }
   ],
@@ -7161,7 +7161,7 @@
     {
       "source": "nuclei",
       "name": "phpShowtime 2.0 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in phpShowtime 2.0 allows remote attackers to list arbitrary directories and image files via a .. (dot dot) in the r parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0981.yaml"
     }
   ],
@@ -7761,7 +7761,7 @@
     {
       "source": "nuclei",
       "name": "TikiWiki CMS Groupware v8.3 - Open Redirect",
-      "description": "-",
+      "description": "tiki-featured_link.php in TikiWiki CMS/Groupware 8.3 allows remote attackers to load arbitrary web site pages into frames and conduct phishing attacks via the url parameter, aka \"frame injection\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-5321.yaml"
     }
   ],
@@ -8181,7 +8181,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Age Verification v0.4 - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in age-verification.php in the Age Verification plugin 0.4 and earlier for WordPress allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the redirect_to parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-6499.yaml"
     }
   ],
@@ -8221,7 +8221,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin All-in-One Event Calendar 1.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Multiple cross-site scripting vulnerabilities in the All-in-One Event Calendar plugin 1.4 and 1.5 for WordPress allow remote attackers to inject arbitrary web script or HTML via the (1) title parameter to app/view/agenda-widget-form.php; (2) args, (3) title, (4) before_title, or (5) after_title parameter to app/view/agenda-widget.php; (6) button_value parameter to app/view/box_publish_button.php; or (7) msg parameter to /app/view/save_successful.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-1835.yaml"
     }
   ],
@@ -8273,7 +8273,7 @@
     {
       "source": "nuclei",
       "name": "Count Per Day <= 3.1 - download.php f Parameter Traversal Arbitrary File Access",
-      "description": "-",
+      "description": "An absolute path traversal vulnerability in download.php in the Count Per Day module before 3.1.1 for WordPress allows remote attackers to read arbitrary files via the f parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0896.yaml"
     }
   ],
@@ -8295,7 +8295,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Download Monitor < 3.3.5.9 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in the Download Monitor plugin before 3.3.5.9 for WordPress allows remote attackers to inject arbitrary web script or HTML via the dlsearch parameter to the default URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4768.yaml"
     }
   ],
@@ -8333,7 +8333,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Integrator 1.32 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in wp-integrator.php in the WordPress Integrator module 1.32 for WordPress allows remote attackers to inject arbitrary web script or HTML via the redirect_to parameter to wp-login.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-5913.yaml"
     }
   ],
@@ -8377,7 +8377,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin MF Gig Calendar 0.9.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in the MF Gig Calendar plugin 0.9.2 for WordPress allows remote attackers to inject arbitrary web script or HTML via the query string to the calendar page.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4242.yaml"
     }
   ],
@@ -8559,7 +8559,7 @@
     {
       "source": "nuclei",
       "name": "WP-FaceThumb 0.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in index.php in the WP-FaceThumb plugin 0.1 for WordPress allows remote attackers to inject arbitrary web script or HTML via the pagination_wp_facethumb parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-2371.yaml"
     }
   ],
@@ -8589,7 +8589,7 @@
     {
       "source": "nuclei",
       "name": "YouSayToo auto-publishing 1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in yousaytoo.php in YouSayToo auto-publishing plugin 1.0 for WordPress allows remote attackers to inject arbitrary web script or HTML via the submit parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-0901.yaml"
     }
   ],
@@ -9997,7 +9997,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Mapplic <= 6.1 / Mapplic Lite <= 1.0 - Authenticated Stored XSS via SVG File Upload",
-      "description": "-",
+      "description": "The Mapplic and Mapplic Lite plugins for WordPress are vulnerable to Stored Cross-Site Scripting via arbitrary URL injection in versions up to and including 6.1 and 1.0 respectively. Authenticated users with author-level permissions can inject arbitrary remote URLs for SVG map files. When a user views the map (admin panel or frontend page with shortcode), the browser fetches the SVG via jQuery .load() and inserts it into the DOM. If the SVG contains embedded JavaScript, it executes as XSS.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-10018.yaml"
     }
   ],
@@ -10005,7 +10005,7 @@
     {
       "source": "nuclei",
       "name": "2 Click Socialmedia Buttons < 0.34 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in libs/xing.php in the 2 Click Social Media Buttons plugin before 0.34 for WordPress allows remote attackers to inject arbitrary web script or HTML via the xing-url parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4273.yaml"
     }
   ],
@@ -10013,7 +10013,7 @@
     {
       "source": "nuclei",
       "name": "AWStats 6.95/7.0 - 'awredir.pl' Cross-Site Scripting",
-      "description": "-",
+      "description": "AWStats is prone to multiple cross-site scripting vulnerabilities because the application fails to properly sanitize user-supplied input.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-4547.yaml"
     }
   ]

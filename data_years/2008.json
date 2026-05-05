@@ -8267,7 +8267,7 @@
     {
       "source": "nuclei",
       "name": "AppServ Open Project <=2.5.10 - Cross-Site Scripting",
-      "description": "-",
+      "description": "AppServ Open Project 2.5.10 and earlier contains a cross-site scripting vulnerability in index.php which allows remote attackers to inject arbitrary web script or HTML via the appservlang parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-2398.yaml"
     }
   ],
@@ -10507,7 +10507,7 @@
     {
       "source": "nuclei",
       "name": "CMSimple 3.1 - Local File Inclusion",
-      "description": "-",
+      "description": "CMSimple 3.1 is susceptible to local file inclusion via cmsimple/cms.php when register_globals is enabled which allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the sl parameter to index.php. NOTE: this can be leveraged for remote file execution by including adm.php and then invoking the upload action. NOTE: on 20080601, the vendor patched 3.1 without changing the version number.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-2650.yaml"
     }
   ],
@@ -11267,7 +11267,7 @@
     {
       "source": "nuclei",
       "name": "Devalcms 1.4a - Cross-Site Scripting",
-      "description": "-",
+      "description": "Devalcms 1.4a contains a cross-site scripting vulnerability in the currentpath parameter of the index.php file.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6982.yaml"
     }
   ],
@@ -15331,7 +15331,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! <=2.0.0 RC2 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! 2.0.0 RC2 and earlier are susceptible to local file inclusion in the eXtplorer module (com_extplorer) that allows remote attackers to read arbitrary files via a .. (dot dot) in the dir parameter in a show_error action.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-4764.yaml"
     }
   ],
@@ -15575,7 +15575,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Image Browser 0.1.5 rc2 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Image Browser 0.1.5 rc2 is susceptible to local file inclusion via com_imagebrowser which could allow remote attackers to include and execute arbitrary local files via a .. (dot dot) in the folder parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-4668.yaml"
     }
   ],
@@ -15589,7 +15589,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! ionFiles 4.4.2 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! ionFiles 4.4.2 is susceptible to local file inclusion in download.php in the ionFiles (com_ionfiles) that allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6080.yaml"
     }
   ],
@@ -15929,7 +15929,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! ProDesk 1.0/1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Pro Desk Support Center (com_pro_desk) component 1.0 and 1.2 allows remote attackers to read arbitrary files via a .. (dot dot) in the include_file parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6222.yaml"
     }
   ],
@@ -15999,7 +15999,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component RWCards 3.0.11 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in captcha/captcha_image.php in the RWCards (com_rwcards) 3.0.11 component for Joomla! when magic_quotes_gpc is disabled allows remote attackers to include and execute arbitrary local files via directory traversal sequences in the img parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6172.yaml"
     }
   ],
@@ -19261,7 +19261,7 @@
     {
       "source": "nuclei",
       "name": "nweb2fax <=0.2.7 - Local File Inclusion",
-      "description": "-",
+      "description": "nweb2fax 0.2.7 and earlier allow remote attackers to read arbitrary files via the id parameter submitted to comm.php and the var_filename parameter submitted to viewrq.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6668.yaml"
     }
   ],
@@ -21821,7 +21821,7 @@
     {
       "source": "nuclei",
       "name": "phpPgAdmin <=4.2.1 - Local File Inclusion",
-      "description": "-",
+      "description": "phpPgAdmin 4.2.1 is vulnerable to local file inclusion in libraries/lib.inc.php when register globals is enabled. Remote attackers can read arbitrary files via a .. (dot dot) in the _language parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-5587.yaml"
     }
   ],
@@ -26089,7 +26089,7 @@
     {
       "source": "nuclei",
       "name": "UC Gateway Investment SiteEngine v5.0 - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in api.php in SiteEngine 5.x allows user-assisted remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the forward parameter in a logout action.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-7269.yaml"
     }
   ],
@@ -27381,7 +27381,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Sniplets <=1.2.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Sniplets 1.1.2 and 1.2.2 plugin contains a cross-site scripting vulnerability which allows remote attackers to inject arbitrary web script or HTML via the text parameter to warning.php, notice.php, and inset.php in view/sniplets/, and possibly modules/execute.php; via the url parameter to view/admin/submenu.php; and via the page parameter to view/admin/pager.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-1061.yaml"
     }
   ],
@@ -27403,7 +27403,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Sniplets 1.1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "PHP remote file inclusion vulnerability in modules/syntax_highlight.php in the Sniplets 1.1.2 and 1.2.2 plugin for WordPress allows remote attackers to execute arbitrary PHP code via a URL in the libpath parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-1059.yaml"
     }
   ],
@@ -30113,7 +30113,7 @@
     {
       "source": "nuclei",
       "name": "Titan FTP Server 6.03 and 6.0.5.549 - Heap Overflow via Long Commands",
-      "description": "-",
+      "description": "Titan FTP Server versions 6.03 and 6.05 (builds) contain multiple heap-based buffer overflow vulnerabilities. Remote attackers can cause denial of service (daemon crash) or potentially execute arbitrary code by sending excessively long USER, PASS, or other FTP commands that trigger heap overflows.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2008/CVE-2008-0702.yaml"
     }
   ],
@@ -30127,7 +30127,7 @@
     {
       "source": "nuclei",
       "name": "Titan FTP Server 6.05 DELE Command - Heap Overflow",
-      "description": "-",
+      "description": "Titan FTP Server version 6.05 build 550 contains a heap overflow vulnerability when processing long DELE commands. Remote attackers can cause denial of service (daemon crash) or potentially execute arbitrary code by sending excessively long arguments to the DELE command.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2008/CVE-2008-5281.yaml"
     }
   ],
@@ -31583,7 +31583,7 @@
     {
       "source": "nuclei",
       "name": "Microsoft OWA Exchange Server 2003 - 'redir.asp' Open Redirection",
-      "description": "-",
+      "description": "Open redirect vulnerability in exchweb/bin/redir.asp in Microsoft Outlook Web Access (OWA) for Exchange Server 2003 SP2 (aka build 6.5.7638) allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the URL parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-1547.yaml"
     }
   ],
@@ -32085,7 +32085,7 @@
     {
       "source": "nuclei",
       "name": "Parallels H-Sphere 3.0.0 P9/3.1 P1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Parallels H-Sphere 3.0.0 P9 and 3.1 P1 contains multiple cross-site scripting vulnerabilities in login.php in webshell4. An attacker can inject arbitrary web script or HTML via the err, errorcode, and login parameters, thus allowing theft of cookie-based authentication credentials and launch of other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2008/CVE-2008-6465.yaml"
     }
   ]

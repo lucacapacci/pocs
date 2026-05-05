@@ -25,7 +25,7 @@
     {
       "source": "nuclei",
       "name": "osTicket - Arbitrary File Read",
-      "description": "-",
+      "description": "Enhancesoft osTicket versions 1.18.x prior to 1.18.3 and 1.17.x prior to 1.17.7 contain an arbitrary file read vulnerability in the ticket PDF export functionality. A remote attacker can submit a ticket containing crafted rich-text HTML that includes PHP filter expressions which are insufficiently sanitized before being processed by the mPDF PDF generator during export. When the attacker exports the ticket to PDF, the generated PDF can embed the contents of attacker-selected files from the server filesystem as bitmap images, allowing disclosure of sensitive local files in the context of the osTicket application user. This issue is exploitable in default configurations where guests may create tickets and access ticket status, or where self-registration is enabled.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22200.yaml"
     }
   ],
@@ -47,7 +47,7 @@
     {
       "source": "nuclei",
       "name": "BeyondTrust Remote Support - Unauthenticated WebSocket RCE",
-      "description": "-",
+      "description": "BeyondTrust Remote Support is vulnerable to unauthenticated remote code execution via the WebSocket endpoint /nw. An attacker can extract the company identifier from the /get_mech_list endpoint and use it to connect to the WebSocket service, then inject OS commands through the binary WebSocket payload that are executed on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-1731.yaml"
     }
   ],
@@ -163,7 +163,7 @@
     {
       "source": "nuclei",
       "name": "MajorDoMo - Unauthenticated RCE",
-      "description": "-",
+      "description": "MajorDoMo contains a remote code execution caused by an include order bug and lack of exit after redirect in admin panel's PHP console, letting unauthenticated attackers execute arbitrary PHP code via crafted GET requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27174.yaml"
     }
   ],
@@ -265,7 +265,7 @@
     {
       "source": "nuclei",
       "name": "MindsDB - Remote Code Execution",
-      "description": "-",
+      "description": "MindsDB < 25.9.1.1 contains a remote code execution caused by path traversal in the /api/files upload file module, letting authenticated attackers write arbitrary files and execute commands, exploit requires authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27483.yaml"
     }
   ],
@@ -337,7 +337,7 @@
     {
       "source": "nuclei",
       "name": "MLflow Job API - Authentication Bypass",
-      "description": "-",
+      "description": "MLflow latest version contains an authentication bypass caused by unprotected FastAPI job endpoints under /ajax-api/3.0/jobs/* when basic-auth is enabled, letting unauthenticated network clients submit and manage jobs, exploit requires job execution enabled and allowlisted job functions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0545.yaml"
     }
   ],
@@ -345,7 +345,7 @@
     {
       "source": "nuclei",
       "name": "LolLMS < 2.2.0 - Server-Side Request Forgery",
-      "description": "-",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0. The /api/files/export-content endpoint processes Markdown image URLs by downloading them via _download_image_to_temp() in backend/routers/files.py without any validation, allowing an unauthenticated attacker to supply arbitrary URLs (e.g. cloud metadata endpoints or internal services) that the server will fetch, enabling internal network access, cloud metadata access, information disclosure, port scanning, and potentially remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0560.yaml"
     }
   ],
@@ -353,7 +353,7 @@
     {
       "source": "nuclei",
       "name": "WordPress List Site Contributors < 1.1.8 - Reflected XSS",
-      "description": "-",
+      "description": "WordPress List Site Contributors plugin < 1.1.8 contains a reflected XSS caused by insufficient sanitization and escaping of the 'alpha' parameter, letting unauthenticated attackers inject scripts, exploit requires user interaction.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0594.yaml"
     }
   ],
@@ -361,7 +361,7 @@
     {
       "source": "nuclei",
       "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
-      "description": "-",
+      "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
     }
   ],
@@ -369,7 +369,7 @@
     {
       "source": "nuclei",
       "name": "Frontend File Manager Plugin <= 23.5 - Unauthenticated Arbitrary Email Sending",
-      "description": "-",
+      "description": "Frontend File Manager Plugin WordPress plugin through 23.5 contains an open relay and unauthorized file access vulnerability caused by lack of authentication and security checks, letting unauthenticated attackers send emails and access files, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
     }
   ],
@@ -377,7 +377,7 @@
     {
       "source": "nuclei",
       "name": "Prodigy Commerce <= 3.3.0 - Local File Inclusion",
-      "description": "-",
+      "description": "Prodigy Commerce WordPress plugin <= 3.2.9 contains a local file inclusion caused by improper sanitization of 'parameters[template_name]' parameter, letting unauthenticated attackers include and execute arbitrary files remotely.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0926.yaml"
     }
   ],
@@ -385,7 +385,7 @@
     {
       "source": "nuclei",
       "name": "Django RasterField - SQL Injection",
-      "description": "-",
+      "description": "Django < 6.0.2, < 5.2.11, and < 4.2.28 contains a SQL injection caused by improper sanitization of the band index parameter in RasterField on PostGIS, letting remote attackers inject SQL, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1207.yaml"
     }
   ],
@@ -393,7 +393,7 @@
     {
       "source": "nuclei",
       "name": "URL Shortify <= 1.12.1 - Open Redirect",
-      "description": "-",
+      "description": "The URL Shortify plugin for WordPress is vulnerable to Open Redirect in all versions up to, and including, 1.12.1 due to insufficient validation on the 'redirect_to' parameter in the promotional dismissal handler. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites via a crafted link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1277.yaml"
     }
   ],
@@ -401,7 +401,7 @@
     {
       "source": "nuclei",
       "name": "Frontend Post Submission Manager Lite <= 1.2.7 - Open Redirect",
-      "description": "-",
+      "description": "The Frontend Post Submission Manager Lite plugin for WordPress is vulnerable to Open Redirection in all versions up to, and including, 1.2.7 due to insufficient validation on the 'requested_page' POST parameter in the verify_username_password function. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites if they can successfully trick them into performing an action such as clicking on a link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1296.yaml"
     }
   ],
@@ -409,7 +409,7 @@
     {
       "source": "nuclei",
       "name": "WordPress midi-Synth <= 1.1.0 - Unauthenticated Arbitrary File Upload",
-      "description": "-",
+      "description": "WordPress midi-Synth plugin \\u003C= 1.1.0 contains an unrestricted file upload vulnerability caused by missing file type and extension validation in the 'export' AJAX action, letting unauthenticated attackers upload arbitrary files and potentially execute remote code, exploit requires attacker to obtain a valid nonce exposed in frontend JavaScript.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1306.yaml"
     }
   ],
@@ -417,7 +417,7 @@
     {
       "source": "nuclei",
       "name": "WordPress 3D FlipBook <= 1.16.17 - Information Disclosure",
-      "description": "-",
+      "description": "WordPress 3D FlipBook - PDF Flipbook Viewer, Flipbook Image Gallery plugin versions <= 1.16.17 contain a missing authorization vulnerability in multiple AJAX endpoints. The fb3d_send_posts_in, fb3d_send_post_pages, fb3d_send_posts_in_pages, fb3d_send_posts_in_first_page, and fb3d_send_post_first_page handlers are registered with wp_ajax_nopriv hooks but fail to verify the post status of requested flipbook entries. This allows unauthenticated attackers to retrieve full metadata, PDF URLs, and configuration data of private, draft, and password-protected flipbook posts.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1314.yaml"
     }
   ],
@@ -425,7 +425,7 @@
     {
       "source": "nuclei",
       "name": "WPvivid Backup & Migration <= 0.9.123 - Arbitrary File Upload",
-      "description": "-",
+      "description": "WPvivid Backup & Migration plugin for WordPress <= 0.9.123 contains an unauthenticated arbitrary file upload vulnerability caused by improper error handling in RSA decryption and lack of path sanitization, letting unauthenticated attackers upload arbitrary PHP files and achieve remote code execution via wpvivid_action=send_to_site parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1357.yaml"
     }
   ],
@@ -433,7 +433,7 @@
     {
       "source": "nuclei",
       "name": "Video Conferencing with Zoom API < 4.6.6 - Unauthenticated SDK Signature Generation",
-      "description": "-",
+      "description": "Zoom WordPress plugin < 4.6.6 contains a broken authentication caused by disabled nonce verification in an AJAX handler, letting unauthenticated attackers generate valid Zoom SDK signatures and retrieve the Zoom SDK key.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1368.yaml"
     }
   ],
@@ -441,7 +441,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Slider Future <= 1.0.5 - Unauthenticated Arbitrary File Upload",
-      "description": "-",
+      "description": "Slider Future WordPress plugin <= 1.0.5 contains an unrestricted file upload vulnerability caused by missing file type validation in 'slider_future_handle_image_upload', letting unauthenticated attackers upload arbitrary files, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1405.yaml"
     }
   ],
@@ -449,7 +449,7 @@
     {
       "source": "nuclei",
       "name": "WordPress User Registration & Membership <= 5.1.2 - Unauthenticated Privilege Escalation",
-      "description": "-",
+      "description": "User Registration & Membership WordPress plugin <= 5.1.2 contains an improper privilege management vulnerability caused by accepting user-supplied roles without server-side allowlist enforcement, letting unauthenticated attackers create administrator accounts\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1492.yaml"
     }
   ],
@@ -457,7 +457,7 @@
     {
       "source": "nuclei",
       "name": "WP Responsive Images <= 1.0 - Arbitrary File Read",
-      "description": "-",
+      "description": "WP Responsive Images plugin for WordPress <= 1.0 contains a path traversal caused by improper sanitization of the 'src' parameter, letting unauthenticated attackers read arbitrary files on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1557.yaml"
     }
   ],
@@ -465,7 +465,7 @@
     {
       "source": "nuclei",
       "name": "wpForo Forum <= 2.4.14 - SQL Injection",
-      "description": "-",
+      "description": "wpForo Forum WordPress plugin <= 2.4.14 contains a time-based SQL injection caused by insufficient escaping of the 'wpfob' parameter, letting unauthenticated attackers extract sensitive database information.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1581.yaml"
     }
   ],
@@ -473,7 +473,7 @@
     {
       "source": "nuclei",
       "name": "Ivanti Endpoint Manager - Authentication Bypass",
-      "description": "-",
+      "description": "Ivanti Endpoint Manager < 2024 SU5 contains an authentication bypass caused by improper access control, letting remote unauthenticated attackers leak stored credential data, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1603.yaml"
     }
   ],
@@ -481,7 +481,7 @@
     {
       "source": "nuclei",
       "name": "Cisco Secure Firewall Management Center - Authentication Bypass",
-      "description": "-",
+      "description": "Cisco Secure Firewall Management Center Software contains an authentication bypass caused by improper system process creation at boot, letting unauthenticated remote attackers execute scripts and gain root access, exploit requires crafted HTTP requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20079.yaml"
     }
   ],
@@ -489,7 +489,7 @@
     {
       "source": "nuclei",
       "name": "Mail Mint < 1.19.5 - Unauthenticated Email Disclosure",
-      "description": "-",
+      "description": "Mail Mint WordPress plugin < 1.19.5 contains an information disclosure vulnerability caused by lack of authorization in a REST API endpoint, letting unauthenticated users retrieve email addresses of blog users, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2025.yaml"
     }
   ],
@@ -497,7 +497,7 @@
     {
       "source": "nuclei",
       "name": "Langflow - Broken Access Control",
-      "description": "-",
+      "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.0.dev45, multiple critical API endpoints in Langflow are missing authentication controls. The issue allows any unauthenticated user to access sensitive user conversation data, transaction histories, and perform destructive operations including message deletion. This affects endpoints handling personal data and system operations that should require proper authorization.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21445.yaml"
     }
   ],
@@ -505,7 +505,7 @@
     {
       "source": "nuclei",
       "name": "AnythingLLM - Username Enumeration via Password Recovery",
-      "description": "-",
+      "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to commit e287fab56089cf8fcea9ba579a3ecdeca0daa313, the password recovery endpoint returns different error messages depending on whether a username exists, so enabling username enumeration. Commit e287fab56089cf8fcea9ba579a3ecdeca0daa313 fixes this issue.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21484.yaml"
     }
   ],
@@ -513,7 +513,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiClientEMS 7.4.4 - SQL Injection",
-      "description": "-",
+      "description": "Fortinet FortiClientEMS version 7.4.4 and earlier contains an unauthenticated SQL injection vulnerability in the /api/v1/init_consts endpoint. The 'Site' HTTP header value is passed directly into the PostgreSQL search_path without sanitization, allowing remote unauthenticated attackers to inject arbitrary SQL commands. This can lead to information disclosure, database manipulation, or OS command execution when chained with PostgreSQL functions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21643.yaml"
     }
   ],
@@ -521,7 +521,7 @@
     {
       "source": "nuclei",
       "name": "n8n Webhooks - Remote Code Execution",
-      "description": "-",
+      "description": "n8n is an open source workflow automation platform. Versions starting with 1.65.0 and below 1.121.0 enable an attacker to access files on the underlying server through execution of certain form-based workflows. A vulnerable workflow could grant access to an unauthenticated remote attacker, resulting in exposure of sensitive information stored on the system and may enable further compromise depending on deployment configuration and workflow usage. This issue is fixed in version 1.121.0.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21858.yaml"
     }
   ],
@@ -529,7 +529,7 @@
     {
       "source": "nuclei",
       "name": "Mailpit < 1.28.3 - Server-Side Request Forgery",
-      "description": "-",
+      "description": "Mailpit <= 1.28.0 contains a server-side request forgery caused by insufficient validation of internal IP addresses in the /proxy endpoint, letting attackers make requests to internal network resources, exploit requires crafted HTTP GET requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21859.yaml"
     }
   ],
@@ -537,7 +537,7 @@
     {
       "source": "nuclei",
       "name": "n8n >= 0.123.0 and < 1.121.3 - Remote Code Execution",
-      "description": "-",
+      "description": "n8n versions >= 0.123.0 and < 1.121.3 contain a critical authenticated remote code execution vulnerability via arbitrary file write. An authenticated user can exploit the Git node to overwrite critical files and execute untrusted code on the n8n server, potentially leading to full system compromise. The vulnerability affects both self-hosted and n8n Cloud instances.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21877.yaml"
     }
   ],
@@ -545,7 +545,7 @@
     {
       "source": "nuclei",
       "name": "ZimaOS - Authentication Bypass",
-      "description": "-",
+      "description": "ZimaOS <= 1.5.0 contains a broken authentication caused by improper password validation for known system service accounts in the login function, letting attackers authenticate with any password for these accounts, exploit requires knowledge of common usernames.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21891.yaml"
     }
   ],
@@ -553,7 +553,7 @@
     {
       "source": "nuclei",
       "name": "Easy Appointments <= 3.12.21 - Information Disclosure",
-      "description": "-",
+      "description": "Easy Appointments WordPress plugin <= 3.12.21 contains a sensitive information exposure caused by an unauthenticated REST API endpoint /wp-json/wp/v2/eablocks/ea_appointments/ registered with permission_callback allowing unrestricted access, letting unauthenticated attackers extract sensitive customer appointment data.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2262.yaml"
     }
   ],
@@ -561,7 +561,7 @@
     {
       "source": "nuclei",
       "name": "Spring Cloud Config Server - Path Traversal",
-      "description": "-",
+      "description": "Spring Cloud 3.1.x < 3.1.13, 4.1.x < 4.1.9, 4.2.x < 4.2.3, 4.3.x < 4.3.2, and 5.0.x < 5.0.2 contain a path traversal caused by profile parameter substitution in Config Server using native file system backend, letting attackers access files outside configured directories, exploit requires crafted request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22739.yaml"
     }
   ],
@@ -569,7 +569,7 @@
     {
       "source": "nuclei",
       "name": "OpenCode < 1.0.216 - Unauthenticated Remote Code Execution",
-      "description": "-",
+      "description": "OpenCode versions prior to 1.0.216 contain an unauthenticated remote code execution vulnerability. The application exposes session and shell execution endpoints without proper authentication, allowing remote attackers to create sessions and execute arbitrary shell commands on the underlying server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22812.yaml"
     }
   ],
@@ -577,7 +577,7 @@
     {
       "source": "nuclei",
       "name": "Blinko < 1.8.4 - Path Traversal",
-      "description": "-",
+      "description": "Blinko < 1.8.4 contains a path traversal vulnerability caused by lack of permission checks and filtering on the temp/ path in the file server endpoint, letting unauthorized attackers read arbitrary files including backup files with user notes and tokens, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23482.yaml"
     }
   ],
@@ -585,7 +585,7 @@
     {
       "source": "nuclei",
       "name": "Blinko <= 1.8.3 - Path Traversal via /plugins",
-      "description": "-",
+      "description": "Blinko <= 1.8.3 contains a path traversal caused by improper path concatenation without verification in the plugin file server endpoint, letting remote attackers access arbitrary files, exploit requires network access.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23483.yaml"
     }
   ],
@@ -593,7 +593,7 @@
     {
       "source": "nuclei",
       "name": "Blinko <= 1.8.3 - User Information Leak",
-      "description": "-",
+      "description": "Blinko <= 1.8.4 contains an information disclosure caused by a publicly accessible endpoint exposing user information including usernames, roles, and account creation dates, letting remote attackers access sensitive user data, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23486.yaml"
     }
   ],
@@ -601,7 +601,7 @@
     {
       "source": "nuclei",
       "name": "Modular DS - Broken Access Control",
-      "description": "-",
+      "description": "Modular DS = 2.5.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23550.yaml"
     }
   ],
@@ -609,7 +609,7 @@
     {
       "source": "nuclei",
       "name": "MCPJam Inspector - Remote Code Execution",
-      "description": "-",
+      "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
     }
   ],
@@ -617,7 +617,7 @@
     {
       "source": "nuclei",
       "name": "SmarterTools SmarterMail - Admin Password Reset",
-      "description": "-",
+      "description": "Detected a SmartMail admin password reset vulnerability by sending a POST request to the `/api/v1/auth/force-reset-password` endpoint, indicating that administrative password resets could potentially be triggered without proper authorization.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23760.yaml"
     }
   ],
@@ -625,7 +625,7 @@
     {
       "source": "nuclei",
       "name": "XWiki Platform Distribution Flavor Main - Cross-Site Scripting",
-      "description": "-",
+      "description": "XWiki Platform Distribution Flavor Main versions prior to 17.6.0 are vulnerable to reflected cross-site scripting (XSS) due to improper sanitization of user-supplied input in the extensionId parameter. An attacker can exploit this issue by injecting malicious JavaScript, which will be executed in the context of the victim's browser, potentially leading to session hijacking or other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24128.yaml"
     }
   ],
@@ -633,7 +633,7 @@
     {
       "source": "nuclei",
       "name": "Ally \u2013 Web Accessibility & Usability <= 4.0.3 - SQL Injection",
-      "description": "-",
+      "description": "The Ally \u2013 Web Accessibility & Usability plugin for WordPress is vulnerable to SQL Injection via the URL path in all versions up to, and including, 4.0.3. This is due to insufficient escaping on the user-supplied URL parameter in the `get_global_remediations()` method, where it is directly concatenated into an SQL JOIN clause without proper sanitization for SQL context. While `esc_url_raw()` is applied for URL safety, it does not prevent SQL metacharacters (single quotes, parentheses) from being injected. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database via time-based blind SQL injection techniques. The Remediation module must be active, which requires the plugin to be connected to an Elementor account.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2413.yaml"
     }
   ],
@@ -641,7 +641,7 @@
     {
       "source": "nuclei",
       "name": "Geo Mashup <= 1.13.17 - SQL Injection",
-      "description": "-",
+      "description": "Geo Mashup WordPress plugin <= 1.13.17 contains a SQL injection caused by insufficient escaping of the 'sort' parameter, letting unauthenticated attackers extract sensitive database information remotely.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2416.yaml"
     }
   ],
@@ -649,7 +649,7 @@
     {
       "source": "nuclei",
       "name": "SmarterMail - Remote Code Execution",
-      "description": "-",
+      "description": "SmarterTools SmarterMail < build 9511 contains an unauthenticated remote code execution caused by malicious OS command execution via ConnectToHub API method, letting remote attackers execute arbitrary commands, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24423.yaml"
     }
   ],
@@ -657,7 +657,7 @@
     {
       "source": "nuclei",
       "name": "AnythingLLM - Information Disclosure",
-      "description": "-",
+      "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24477.yaml"
     }
   ],
@@ -665,7 +665,7 @@
     {
       "source": "nuclei",
       "name": "Group-Office < 26.0.5 - Remote Code Execution",
-      "description": "-",
+      "description": "Group-Office before versions 6.8.150, 25.0.82, and 26.0.5 is vulnerable to remote code execution via OS command injection. The endpoint email/message/tnefAttachmentFromTempFile directly concatenates the user-controlled parameter tmp_file into an exec() call. By injecting shell metacharacters into tmp_file, an authenticated attacker can execute arbitrary system commands on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25512.yaml"
     }
   ],
@@ -673,7 +673,7 @@
     {
       "source": "nuclei",
       "name": "Blesta <= 5.13.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Blesta 3.x through 5.x before 5.13.3 contains an input validation vulnerability caused by mishandling input, letting attackers potentially exploit the system, exploit requires unspecified conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25616.yaml"
     }
   ],
@@ -681,7 +681,7 @@
     {
       "source": "nuclei",
       "name": "Adminer 4.6.2 - 5.4.1 Unauthenticated Persistent DoS",
-      "description": "-",
+      "description": "Adminer <= 5.4.1 contains a denial of service caused by lack of origin validation in version check endpoint, letting attackers trigger server errors via crafted POST requests, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
@@ -689,7 +689,7 @@
     {
       "source": "nuclei",
       "name": "Ghost CMS Content API - SQL Injection",
-      "description": "-",
+      "description": "Ghost CMS before 6.19.1 is vulnerable to a blind SQL injection in the /ghost/api/content/tags/ endpoint via the filter parameter. This template checks for the vulnerability by sending a boolean-based payload.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26980.yaml"
     }
   ],
@@ -697,7 +697,7 @@
     {
       "source": "nuclei",
       "name": "Progress ShareFile Storage Zones Controller - Authentication Bypass",
-      "description": "-",
+      "description": "Customer Managed ShareFile Storage Zones Controller (SZC) contains an authentication bypass (Execution After Redirect) that allows unauthenticated attackers to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2699.yaml"
     }
   ],
@@ -705,7 +705,7 @@
     {
       "source": "nuclei",
       "name": "MajorDoMo - Cross-Site Scripting",
-      "description": "-",
+      "description": "MajorDoMo contains a reflected XSS caused by unsanitized $qry parameter in command.php, letting attackers inject arbitrary JavaScript via crafted URLs, exploit requires victim to visit malicious URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27176.yaml"
     }
   ],
@@ -713,7 +713,7 @@
     {
       "source": "nuclei",
       "name": "Changedetection.io RSS Single Watch - Cross-Site Scripting",
-      "description": "-",
+      "description": "changedetection.io < 0.54.1 contains a stored XSS caused by unescaped reflection of UUID path parameter in RSS single-watch endpoint, letting remote attackers execute JavaScript in victim's browser, exploit requires victim to visit crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27645.yaml"
     }
   ],
@@ -721,7 +721,7 @@
     {
       "source": "nuclei",
       "name": "Nginx UI < 2.3.3 - Information Disclosure",
-      "description": "-",
+      "description": "Nginx UI < 2.3.3 contains an information disclosure vulnerability caused by unauthenticated access to /api/backup endpoint exposing encryption keys in X-Backup-Security header, letting unauthenticated attackers download and decrypt full system backups.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27944.yaml"
     }
   ],
@@ -729,7 +729,7 @@
     {
       "source": "nuclei",
       "name": "Qwik - Unauthenticated RCE via server$ Deserialization",
-      "description": "-",
+      "description": "Qwik <=1.19.0 contains an insecure deserialization vulnerability in the server$ RPC mechanism, letting unauthenticated attackers execute arbitrary code remotely, exploit requires require() availability at runtime.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27971.yaml"
     }
   ],
@@ -737,7 +737,7 @@
     {
       "source": "nuclei",
       "name": "Dify User Enumeration via Observable Response Discrepancy",
-      "description": "-",
+      "description": "Dify is an open-source LLM app development platform. Prior to 1.9.0, responses from the Dify API to existing and non-existent accounts differ, allowing an attacker to enumerate email addresses registered with Dify. Version 1.9.0 fixes the issue.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28288.yaml"
     }
   ],
@@ -745,7 +745,7 @@
     {
       "source": "nuclei",
       "name": "NocoDB - User Enumeration",
-      "description": "-",
+      "description": "NocoDB is software for building databases as spreadsheets. Prior to version 0.301.3, the password forgot endpoint returned different responses for registered and unregistered emails, allowing user enumeration. This issue has been patched in version 0.301.3.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28358.yaml"
     }
   ],
@@ -753,7 +753,7 @@
     {
       "source": "nuclei",
       "name": "WeGIA <= 3.6.4 - Remote Code Execution",
-      "description": "-",
+      "description": "WeGIA <= 3.6.5 contains a remote code execution caused by improper validation of backup file names in the database restoration functionality, letting attackers with administrative access execute arbitrary OS commands\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28409.yaml"
     }
   ],
@@ -761,7 +761,7 @@
     {
       "source": "nuclei",
       "name": "Gradio - Absolute Path Traversal",
-      "description": "-",
+      "description": "Gradio < 6.7 on Windows with Python 3.13+ contains an absolute path traversal caused by incorrect path validation in path joining logic, letting unauthenticated attackers read arbitrary files from the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28414.yaml"
     }
   ],
@@ -769,7 +769,7 @@
     {
       "source": "nuclei",
       "name": "MetInfo CMS <= 8.1 - Remote Code Execution",
-      "description": "-",
+      "description": "MetInfo CMS 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability caused by insufficient input neutralization in the execution path, letting remote attackers execute arbitrary code remotely, exploit requires crafted requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29014.yaml"
     }
   ],
@@ -777,7 +777,7 @@
     {
       "source": "nuclei",
       "name": "TinaCMS - Path Traversal",
-      "description": "-",
+      "description": "TinaCMS CLI < 2.1.8 contains a file system read vulnerability caused by disabled Vite server.fs.strict setting, letting unauthenticated attackers read arbitrary files on the host system, exploit requires access to the dev server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29066.yaml"
     }
   ],
@@ -785,7 +785,7 @@
     {
       "source": "nuclei",
       "name": "SiYuan Note - Cross-Site Scripting",
-      "description": "-",
+      "description": "Unauthenticated reflected cross-site scripting (XSS) vulnerability in all versions of SiYuan Note containing `/api/icon/getDynamicIcon` with unsafe `type=8` rendering logic. Attacker-controlled `content` is inserted directly into SVG output without proper sanitization. An attacker can execute arbitrary JavaScript in users' browsers when they visit a crafted malicious link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
     }
   ],
@@ -793,7 +793,7 @@
     {
       "source": "nuclei",
       "name": "Citrix NetScaler SAML IDP - Memory Overread",
-      "description": "-",
+      "description": "NetScaler ADC and NetScaler Gateway contain an insufficient input validation vulnerability when configured as a SAML IDP, leading to memory overread, letting attackers potentially access sensitive memory, exploit requires configuration as SAML IDP\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3055.yaml"
     }
   ],
@@ -801,7 +801,7 @@
     {
       "source": "nuclei",
       "name": "Flowise - NVIDIA NIM Endpoints Missing Authentication",
-      "description": "-",
+      "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to version 3.0.13, the NVIDIA NIM router (/api/v1/nvidia-nim/*) is whitelisted in the global authentication middleware, allowing unauthenticated access to privileged container management and token generation endpoints.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30824.yaml"
     }
   ],
@@ -809,7 +809,7 @@
     {
       "source": "nuclei",
       "name": "Glances - Information Disclosure",
-      "description": "-",
+      "description": "Glances < 4.5.1 contains an information disclosure vulnerability caused by unfiltered exposure of sensitive configuration data via the /api/4/config REST API endpoint, letting remote attackers access credentials, exploit requires API access.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30928.yaml"
     }
   ],
@@ -817,7 +817,7 @@
     {
       "source": "nuclei",
       "name": "SiYuan <= v3.5.9 - SVG Animate Element XSS",
-      "description": "-",
+      "description": "SiYuan <= v3.5.9 contains a reflected XSS caused by insufficient SVG sanitization allowing SVG animation elements to inject executable JavaScript in /api/icon/getDynamicIcon endpoint, letting unauthenticated attackers execute scripts.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31807.yaml"
     }
   ],
@@ -825,7 +825,7 @@
     {
       "source": "nuclei",
       "name": "SiYuan <= v3.5.9 - Cross Site Scripting",
-      "description": "-",
+      "description": "SiYuan v3.5.10 contains a reflected XSS caused by improper sanitization of javascript: href attributes allowing ASCII control characters to bypass prefix checks in SVG sanitizer, letting unauthenticated attackers execute JavaScript via /api/icon/getDynamicIcon.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31809.yaml"
     }
   ],
@@ -833,7 +833,7 @@
     {
       "source": "nuclei",
       "name": "Budibase - Authentication Bypass",
-      "description": "-",
+      "description": "Budibase <= 3.31.4 contains an authentication bypass caused by unanchored regex in authorized() middleware matching webhook path patterns in query strings, letting unauthenticated remote attackers access any server-side API endpoint, exploit requires crafted request with webhook pattern in URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31816.yaml"
     }
   ],
@@ -841,7 +841,7 @@
     {
       "source": "nuclei",
       "name": "Webnus Inc. Modern Events Calendar - Broken Access Control",
-      "description": "-",
+      "description": "Webnus Inc. Modern Events Calendar <= 7.29.0 contains a broken access control vulnerability caused by incorrectly configured access control security levels, letting attackers bypass authorization, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32583.yaml"
     }
   ],
@@ -849,7 +849,7 @@
     {
       "source": "nuclei",
       "name": "Glances - Information Disclosure",
-      "description": "-",
+      "description": "Glances < 4.5.2 contains an information disclosure vulnerability caused by the web server running without authentication by default, letting remote attackers access sensitive system information including credentials, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
@@ -857,7 +857,7 @@
     {
       "source": "nuclei",
       "name": "Langflow < 1.9.0 - Remote Code Execution",
-      "description": "-",
+      "description": "Langflow versions prior to 1.9.0 are vulnerable to unauthenticated remote code execution (RCE) via the build_public_tmp endpoint. Attackers can submit a manipulated flow JSON containing Python code that is executed during the build process without proper sandboxing.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33017.yaml"
     }
   ],
@@ -865,7 +865,7 @@
     {
       "source": "nuclei",
       "name": "Nginx UI - Broken Access Control",
-      "description": "-",
+      "description": "Network attackers can fully control nginx service, including config modification and service restart, leading to complete service takeover.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33032.yaml"
     }
   ],
@@ -873,7 +873,7 @@
     {
       "source": "nuclei",
       "name": "Mesop AI Sandbox <= 1.2.2 - Remote Code Execution",
-      "description": "-",
+      "description": "Mesop <= 1.2.2 contains an unrestricted remote code execution caused by unauthenticated ingestion and execution of base64-encoded Python code in the /exec-py endpoint of ai/testing module, letting attackers execute arbitrary commands on the host, exploit requires HTTP access to the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33057.yaml"
     }
   ],
@@ -881,7 +881,7 @@
     {
       "source": "nuclei",
       "name": "LoLLMs WEBUI - Server-Side Request Forgery",
-      "description": "-",
+      "description": "LoLLMs WEBUI contains a server-side request forgery caused by unauthenticated access to the /api/proxy endpoint, letting attackers force the server to make arbitrary GET requests, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33340.yaml"
     }
   ],
@@ -889,7 +889,7 @@
     {
       "source": "nuclei",
       "name": "OpenAM <= 16.0.5 - Pre-Auth RCE via jato.clientSession Deserialization",
-      "description": "-",
+      "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.0.6, OpenIdentityPlatform OpenAM is vulnerable to pre-authentication Remote Code Execution (RCE) via unsafe Java deserialization of the jato.clientSession HTTP parameter. This bypasses the WhitelistObjectInputStream mitigation that was applied to the jato.pageSession parameter after CVE-2021-35464.  This vulnerability is fixed in 16.0.6.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33439.yaml"
     }
   ],
@@ -897,7 +897,7 @@
     {
       "source": "nuclei",
       "name": "AVideo <= 26.0 - WWBN AVideo - Remote Code Execution",
-      "description": "-",
+      "description": "WWBN AVideo <= 26.0 contains multiple vulnerabilities in the CloneSite plugin including unauthenticated exposure of clone secret keys and OS command injection in rsync command construction, letting unauthenticated attackers achieve remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33478.yaml"
     }
   ],
@@ -905,7 +905,7 @@
     {
       "source": "nuclei",
       "name": "LMDeploy - Server-Side Request Forgery",
-      "description": "-",
+      "description": "LMDeploy is a toolkit for compressing, deploying, and serving large language models. Versions prior to 0.12.3 have a Server-Side Request Forgery (SSRF) vulnerability in the vision-language module. The load_image() function in lmdeploy/vl/utils.py fetches arbitrary URLs without validating internal or private IP addresses, allowing unauthenticated attackers to access cloud metadata services, internal networks, and sensitive resources via the image_url parameter in /v1/chat/completions requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33626.yaml"
     }
   ],
@@ -913,7 +913,7 @@
     {
       "source": "nuclei",
       "name": "Mastodon - Open Redirect",
-      "description": "-",
+      "description": "Mastodon version < 4.5.8, < 4.4.15, < 4.3.21 is vulnerable to unauthenticated Open Redirect vulnerability (CWE-601) exists in the /web/* route due to improper handling of URL-encoded path segments.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33868.yaml"
     }
   ],
@@ -921,7 +921,7 @@
     {
       "source": "nuclei",
       "name": "WCAPF WooCommerce Ajax Product Filter - SQL Injection",
-      "description": "-",
+      "description": "WCAPF WooCommerce Ajax Product Filter <= 4.2.3 contains a time-based SQL injection caused by insufficient escaping of the 'post-author' parameter, letting unauthenticated attackers extract sensitive database information remotely.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3396.yaml"
     }
   ],
@@ -929,7 +929,7 @@
     {
       "source": "nuclei",
       "name": "NocoBase - VM Sandbox Escape to Remote Code Execution",
-      "description": "-",
+      "description": "NocoBase Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist controlled by WORKFLOW_SCRIPT_MODULES env var. The console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain (console._stdout.constructor.constructor to Function to process to child_process) to escape the sandbox and achieve Remote Code Execution as root.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
     }
   ],
@@ -937,7 +937,7 @@
     {
       "source": "nuclei",
       "name": "Apache ActiveMQ - Remote Code Execution",
-      "description": "-",
+      "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ. Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String). An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport's brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext. Because Spring's ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker's JVM through bean factory methods such as Runtime.exec(). This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: . Users are recommended to upgrade to version 5.19.5 or 6.2.3, which fixes the issue.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34197.yaml"
     }
   ],
@@ -945,7 +945,7 @@
     {
       "source": "nuclei",
       "name": "SiYuan <= v3.6.1 - Bookmark Data Disclosure",
-      "description": "-",
+      "description": "SiYuan v3.6.2 contains an information disclosure vulnerability caused by improper authorization checks in the publish service's bookmark filtering, letting unauthenticated visitors access bookmarked blocks from password-protected documents, exploit requires access to the publish service.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34453.yaml"
     }
   ],
@@ -953,7 +953,7 @@
     {
       "source": "nuclei",
       "name": "SiYuan Note - Cross-Site Scripting",
-      "description": "-",
+      "description": "SiYuan Note through version 3.6.1 is vulnerable to unauthenticated reflected Cross-Site Scripting (XSS) in the `/api/icon/getDynamicIcon` endpoint due to improper filtering of SVG elements with a namespace prefix (such as `<x:script>`). By using a namespaced script element, attackers can bypass the `SanitizeSVG` function and execute arbitrary JavaScript in the victim\u2019s browser upon visiting a crafted link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34605.yaml"
     }
   ],
@@ -961,7 +961,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Media Library Assistant <= 3.34 - SQL Injection",
-      "description": "-",
+      "description": "David Lingren Media Library Assistant <= 3.34 contains an sql injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34885.yaml"
     }
   ],
@@ -969,7 +969,7 @@
     {
       "source": "nuclei",
       "name": "LiteLLM - Arbitrary File Read",
-      "description": "-",
+      "description": "LiteLLM < 1.83.0 contains a broken access control vulnerability caused by lack of admin role enforcement on /config/update endpoint, letting authenticated users modify configurations, execute code, read files, and take over accounts.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35029.yaml"
     }
   ],
@@ -977,7 +977,7 @@
     {
       "source": "nuclei",
       "name": "FortiClient EMS - Authentication Bypass",
-      "description": "-",
+      "description": "Detects whether Fortinet hotfix FG-IR-26-099 for CVE-2026-35616 is missing by comparing behavioral responses from a certificate-authenticated endpoint. The template sends X-SSL-CLIENT-VERIFY: SUCCESS without certificate material and checks whether this spoofed header changes server behavior.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35616.yaml"
     }
   ],
@@ -985,7 +985,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Kali Forms <= 2.4.9 - Remote Code Execution",
-      "description": "-",
+      "description": "Kali Forms WordPress plugin <= 2.4.9 contains a remote code execution caused by unsafe user input handling in 'form_process' and 'prepare_post_data' functions, letting unauthenticated attackers execute code on the server, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3584.yaml"
     }
   ],
@@ -993,7 +993,7 @@
     {
       "source": "nuclei",
       "name": "Breeze <= 2.4.4 - Arbitrary File Upload",
-      "description": "-",
+      "description": "Breeze Cache WordPress plugin <= 2.4.4 contains an unrestricted file upload vulnerability caused by missing file type validation in 'fetch_gravatar_from_remote' function, letting unauthenticated attackers upload arbitrary files, exploit requires 'Host Files Locally - Gravatars' enabled.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3844.yaml"
     }
   ],
@@ -1001,7 +1001,7 @@
     {
       "source": "nuclei",
       "name": "ChurchCRM - API Authentication Bypass via URL Injection",
-      "description": "-",
+      "description": "ChurchCRM < 7.1.0 contains an authentication bypass caused by improper API middleware URL handling in ChurchCRM/Slim/Middleware/AuthMiddleware.php, letting unauthenticated attackers access protected API endpoints, exploit requires crafted request URL with 'api/public\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39339.yaml"
     }
   ],
@@ -1009,7 +1009,7 @@
     {
       "source": "nuclei",
       "name": "Vite Dev Server - Directory Traversal",
-      "description": "-",
+      "description": "Vite is a modern frontend build tool. In Vite prior to versions 6.4.3, 6.3.4, and 5.4.23, a directory traversal vulnerability affects the Vite development server. When the Vite dev server is launched with the --host or server.host option, an unauthenticated attacker can craft a request with a path containing dot segments (e.g., /.vite/../<filename>) to bypass static file restrictions and access arbitrary files on the filesystem under the project root. The vulnerability allows access to files normally denied by Vite\u2019s \"server.fs.deny\" setting, including sensitive files like .env, configuration files, or credentials in the project root. This issue has been fixed in versions 6.4.3, 6.3.4, and 5.4.23.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39364.yaml"
     }
   ],
@@ -1017,7 +1017,7 @@
     {
       "source": "nuclei",
       "name": "Vite Dev Server - Path Traversal in Optimized Deps .map Handling",
-      "description": "-",
+      "description": "Vite development server versions prior to 8.0.5, 7.3.2, and 6.4.2 are vulnerable to path traversal through the optimized dependencies sourcemap handler. The dev server's handling of .map requests for optimized dependencies resolves file paths via normalizePath(path.resolve(root, url.slice(1))) and calls readFile without restricting ../ segments in the URL. This allows an attacker to bypass server.fs.strict and retrieve auto-generated sourcemaps for files located outside the project root, leaking absolute filesystem paths. Only dev servers explicitly exposed to the network using --host or server.host are affected.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39365.yaml"
     }
   ],
@@ -1025,7 +1025,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiSandbox - Command Injection",
-      "description": "-",
+      "description": "Fortinet FortiSandbox 4.4.0 through 4.4.8 contains a command injection caused by improper neutralization of special elements in OS commands, letting attackers execute unauthorized code or commands, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39808.yaml"
     }
   ],
@@ -1033,7 +1033,7 @@
     {
       "source": "nuclei",
       "name": "XWiki - Cross-Site Scripting",
-      "description": "-",
+      "description": "XWiki is vulnerable to reflected Cross-Site Scripting (XSS) via the `viewer=changes` endpoint. The `rev2` parameter is not properly sanitised before being rendered in the response, allowing an attacker to inject arbitrary JavaScript. Affects XWiki versions prior to the patched release.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40105.yaml"
     }
   ],
@@ -1041,7 +1041,7 @@
     {
       "source": "nuclei",
       "name": "Gravity SMTP WordPress Plugin - Sensitive Information Exposure",
-      "description": "-",
+      "description": "Gravity SMTP WordPress plugin <= 2.1.4 contains a sensitive information exposure caused by an unrestricted REST API endpoint at /wp-json/gravitysmtp/v1/tests/mock-data, letting unauthenticated attackers retrieve detailed system configuration data, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4020.yaml"
     }
   ],
@@ -1049,7 +1049,7 @@
     {
       "source": "nuclei",
       "name": "Arcane <= 1.17.2 - Server-Side Request Forgery",
-      "description": "-",
+      "description": "Arcane <= 1.17.3 contains an unauthenticated server-side request forgery caused by lack of URL scheme and host validation in /api/templates/fetch endpoint, letting remote attackers perform SSRF, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40242.yaml"
     }
   ],
@@ -1057,7 +1057,7 @@
     {
       "source": "nuclei",
       "name": "My Calendar WordPress Plugin - Information Disclosure",
-      "description": "-",
+      "description": "My Calendar WordPress plugin <= 3.7.6 contains an injection vulnerability caused by unvalidated user input passed to parse_str() in mc_ajax_mcjs_action endpoint, letting unauthenticated attackers access or crash sites via switch_to_blog(), exploit requires WordPress Multisite or Single Site setup.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40308.yaml"
     }
   ],
@@ -1065,7 +1065,7 @@
     {
       "source": "nuclei",
       "name": "Apache ActiveMQ - Remote Code Execution via HTTP Discovery Transport Bypass",
-      "description": "-",
+      "description": "Apache ActiveMQ before 5.19.6 and 6.0.0 through 6.2.4 is vulnerable to remote code execution via a bypass of the CVE-2026-34197 security fix. The original fix blocked the \"vm://\" transport scheme in BrokerView.addNetworkConnector() and BrokerView.addConnector() to prevent authenticated attackers from loading malicious Spring XML configurations via the Jolokia API. However, the fix only denied the \"vm\" scheme. An attacker can bypass this restriction by using the HTTP Discovery transport(http://attacker/discovery), which is not in the denied scheme list. The attacker-controlled HTTP endpoint returns a vm:// transport URI as a second-stage response, which then loads a remote Spring XML application context, leading to arbitrary code execution on the broker JVM. The activemq-http module must be on the classpath (present by default in the \"all\" distribution), and authenticated access to the Jolokia API (/api/jolokia/) is required.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40466.yaml"
     }
   ],
@@ -1073,7 +1073,7 @@
     {
       "source": "nuclei",
       "name": "Vendure Core - SQL Injection",
-      "description": "-",
+      "description": "Vendure, an open-source headless commerce platform built on Node.js/TypeScript, contains a critical SQL injection vulnerability in its Shop API. The languageCode query parameter is interpolated directly into a raw SQL CASE expression in ProductService.findOneBySlug without parameterization or input validation, allowing unauthenticated attackers to execute arbitrary SQL commands. This can lead to full database disclosure and denial of service.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40887.yaml"
     }
   ],
@@ -1081,7 +1081,7 @@
     {
       "source": "nuclei",
       "name": "HT Mega < 3.0.7 - Sensitive Information Disclosure",
-      "description": "-",
+      "description": "The HT Mega plugin for WordPress is vulnerable to Sensitive Information Exposure via AJAX actions. This template dynamically extracts the security nonce before exploitation.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4106.yaml"
     }
   ],
@@ -1089,7 +1089,7 @@
     {
       "source": "nuclei",
       "name": "Rclone RC - Broken Access Control",
-      "description": "-",
+      "description": "Rclone >= 1.45.0 and < 1.73.5 contains a broken access control vulnerability caused by unauthenticated access to the RC endpoint `options/set` allowing mutation of global runtime configuration, letting unauthenticated attackers access sensitive administrative functions, exploit requires RC server started without global HTTP authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41176.yaml"
     }
   ],
@@ -1097,7 +1097,7 @@
     {
       "source": "nuclei",
       "name": "RClone RC - Command Injection",
-      "description": "-",
+      "description": "Rclone >= 1.48.0 and < 1.73.5 contains an unauthenticated local command execution caused by unauthenticated access to the RC endpoint operations/fsinfo with attacker-controlled fs input, letting unauthenticated attackers execute local commands, exploit requires reachable RC deployment without global HTTP authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41179.yaml"
     }
   ],
@@ -1105,7 +1105,7 @@
     {
       "source": "nuclei",
       "name": "NocoBase - SQL Injection",
-      "description": "-",
+      "description": "NocoBase versions prior to 2.0.39 contain a SQL injection vulnerability in the @nocobase/database package. The queryParentSQL function in eager-loading-tree.ts constructs a recursive CTE query by directly concatenating user-controlled primary key values into the SQL WHERE IN clause without parameterization. An authenticated attacker with record creation permissions on a tree collection with string-type primary keys can inject arbitrary SQL via crafted record identifiers, enabling full database compromise including data exfiltration and modification.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41640.yaml"
     }
   ],
@@ -1113,7 +1113,7 @@
     {
       "source": "nuclei",
       "name": "NocoBase - SQL Injection",
-      "description": "-",
+      "description": "NocoBase @nocobase/plugin-collection-sql versions prior to 2.0.39 are vulnerable to SQL injection via the sqlCollection:update endpoint. The checkSQL() function, which blocks dangerous SQL keywords and ensures only SELECT statements are allowed, is not called during collection updates.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41641.yaml"
     }
   ],
@@ -1121,7 +1121,7 @@
     {
       "source": "nuclei",
       "name": "cPanel & WHM - Authentication Bypass via Session-File CRLF Injection",
-      "description": "-",
+      "description": "cPanel and WHM versions prior to 11.110.0.97, 11.118.0.63, 11.126.0.54, 11.132.0.29, 11.134.0.20, and 11.136.0.5 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41940.yaml"
     }
   ],
@@ -1129,7 +1129,7 @@
     {
       "source": "nuclei",
       "name": "CKAN DataStore SQL Search - SQL Injection",
-      "description": "-",
+      "description": "CKAN, an open-source data management system used for powering open data portals, contains an unauthenticated SQL injection vulnerability in the datastore_search_sql API endpoint.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42031.yaml"
     }
   ],
@@ -1137,7 +1137,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
-      "description": "-",
+      "description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
     }
   ],
@@ -1145,7 +1145,7 @@
     {
       "source": "nuclei",
       "name": "Cockpit Web Console < 360 - Remote Code Execution",
-      "description": "-",
+      "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4631.yaml"
     }
   ],
@@ -1153,7 +1153,7 @@
     {
       "source": "nuclei",
       "name": "VvvebJs <= 2.0.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Givanz Vvvebjs <= 2.0.5 contains a stored XSS caused by manipulation of the \"uploadAllowExtensions\" argument in upload.php File Upload Endpoint, letting remote attackers execute scripts, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
     }
   ],
@@ -1161,7 +1161,7 @@
     {
       "source": "nuclei",
       "name": "AstrBot <= 4.22.1 - Command Injection",
-      "description": "-",
+      "description": "AstrBot versions up to and including 4.22.1 contain a command injection vulnerability in the MCP server configuration endpoint. The /api/tools/mcp/add endpoint accepts arbitrary command and args fields that are passed directly to subprocess execution during the connection test, without any validation or allowlist enforcement. An attacker with dashboard access can execute arbitrary system commands with AstrBot process privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6118.yaml"
     }
   ],
@@ -1169,7 +1169,7 @@
     {
       "source": "nuclei",
       "name": "User Registration & Membership WordPress plugin - Open Redirect",
-      "description": "-",
+      "description": "User Registration & Membership WordPress plugin <= 5.1.4 contains an open redirect caused by insufficient validation of 'redirect_to_on_logout' parameter, letting attackers redirect users to malicious external URLs after logout, exploit requires crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
     }
   ],
@@ -1177,7 +1177,7 @@
     {
       "source": "nuclei",
       "name": "Mailpit < 1.28.2 - SMTP CRLF Injection",
-      "description": "-",
+      "description": "Mailpit < 1.28 contains a header injection caused by insufficient regex validation of `RCPT TO` and `MAIL FROM` addresses in the SMTP server, letting attackers inject arbitrary SMTP headers, exploit requires crafted email addresses\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
     }
   ],
@@ -1185,7 +1185,7 @@
     {
       "source": "nuclei",
       "name": "ProFTPD mod_sql - Preauth User Backdoor",
-      "description": "-",
+      "description": "ProFTPD mod_sql before 1.3.10rc1 contains a remote code execution caused by unsafe username handling with SQL backend commands in USER request logging expansions, letting remote attackers execute arbitrary code, exploit requires SQL backend allowing commands.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-42167.yaml"
     }
   ],
@@ -1193,7 +1193,7 @@
     {
       "source": "nuclei",
       "name": "Vite Dev Server - Arbitrary File Read",
-      "description": "-",
+      "description": "Vite dev server exposes the fetchModule method via its WebSocket HMR (Hot Module Replacement) endpoint using the vite-hmr sub-protocol. By connecting to the WebSocket endpoint and sending a crafted vite:invoke custom event that calls fetchModule with a file:// URL (e.g., file:///etc/passwd?raw), an attacker can bypass server.fs.deny restrictions and read arbitrary files from the server filesystem. The vulnerability exists because fetchModule does not enforce the same filesystem access controls as other Vite server endpoints.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39363.yaml"
     }
   ],
@@ -1201,7 +1201,7 @@
     {
       "source": "nuclei",
       "name": "Marimo <= 0.20.4 - Pre-Auth Terminal WebSocket RCE",
-      "description": "-",
+      "description": "Marimo versions <= 0.20.4 contain an unauthenticated remote code execution vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to connect via WebSocket, obtain a full PTY shell, and execute arbitrary OS commands on the underlying server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39987.yaml"
     }
   ]

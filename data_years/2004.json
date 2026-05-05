@@ -237,7 +237,7 @@
     {
       "source": "nuclei",
       "name": "Distccd v1 - Remote Code Execution",
-      "description": "-",
+      "description": "distcc 2.x, as used in XCode 1.5 and others, when not configured to restrict access to the server port, allows remote attackers to execute arbitrary commands via compilation jobs, which are executed by the server without authorization checks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-2687.yaml"
     }
   ],
@@ -3295,7 +3295,7 @@
     {
       "source": "nuclei",
       "name": "ProFTPD 1.2.x - Username Enumeration via Timing Attack",
-      "description": "-",
+      "description": "ProFTPD versions 1.2.x (including 1.2.8 and 1.2.10) are vulnerable to timing attacks that allow remote attackers to distinguish valid usernames from invalid ones. The server responds in varying amounts of time when a given username exists, enabling username enumeration through response time analysis.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-1602.yaml"
     }
   ],
@@ -5171,7 +5171,7 @@
     {
       "source": "nuclei",
       "name": "Open Bulletin Board (OpenBB) v1.0.6 - Open Redirect/XSS",
-      "description": "-",
+      "description": "Multiple cross-site scripting (XSS) vulnerabilities in Open Bulletin Board (OpenBB) 1.0.6 and earlier allows remote attackers to inject arbitrary web script or HTML via the (1) redirect parameter to member.php, (2) to parameter to myhome.php (3) TID parameter to post.php, or (4) redirect parameter to index.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2004/CVE-2004-1965.yaml"
     }
   ],
@@ -5999,7 +5999,7 @@
     {
       "source": "nuclei",
       "name": "SquirrelMail 1.4.x - Folder Name Cross-Site Scripting",
-      "description": "-",
+      "description": "Multiple cross-site scripting (XSS) vulnerabilities in SquirrelMail 1.4.2 allow remote attackers to execute arbitrary script and possibly steal authentication information via multiple attack vectors, including the mailbox parameter in compose.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2004/CVE-2004-0519.yaml"
     }
   ],
@@ -7521,7 +7521,7 @@
     {
       "source": "nuclei",
       "name": "Titan FTP Server 3.01 - DoS via LIST Command Disconnection",
-      "description": "-",
+      "description": "Titan FTP Server version 3.01 build 163 (and possibly other older versions) contains a vulnerability where disconnecting during a LIST -L command may crash the daemon. Remote attackers can cause denial of service by initiating a LIST -L command and then abruptly disconnecting, leading to server instability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-0437.yaml"
     }
   ],
@@ -8557,7 +8557,7 @@
     {
       "source": "nuclei",
       "name": "Titan FTP \u2264 3.21 - Heap Overflow via Long Commands",
-      "description": "-",
+      "description": "Titan FTP versions \u2264 3.21 contain heap overflow vulnerabilities when processing long FTP commands such as CWD, STAT, or LIST. Remote attackers can cause denial of service (daemon crash) by sending excessively long arguments to these commands, potentially leading to server instability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-1641.yaml"
     }
   ],
@@ -8667,7 +8667,7 @@
     {
       "source": "nuclei",
       "name": "Pure-FTPd \u2264 1.0.18 - DoS via Connection Limit Exhaustion",
-      "description": "-",
+      "description": "Pure-FTPd versions \u2264 1.0.18 are vulnerable to denial of service through connection limit exhaustion. The vulnerability occurs in the accept_client function when the maximum number of connections is exceeded, potentially causing the server to become unresponsive or crash.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-0656.yaml"
     }
   ]

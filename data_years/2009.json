@@ -1029,7 +1029,7 @@
     {
       "source": "nuclei",
       "name": "PhpMyAdmin Scripts - Remote Code Execution",
-      "description": "-",
+      "description": "PhpMyAdmin Scripts 2.11.x before 2.11.9.5 and 3.x before 3.1.3.1 are susceptible to a remote code execution in setup.php that allows remote attackers to inject arbitrary PHP code into a configuration file via the save action. Combined with the ability to save files on server, this can allow unauthenticated users to execute arbitrary PHP code.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-1151.yaml"
     }
   ],
@@ -1057,7 +1057,7 @@
     {
       "source": "nuclei",
       "name": "ZeroShell <= 1.0beta11 Remote Code Execution",
-      "description": "-",
+      "description": "ZeroShell 1.0beta11 and earlier via cgi-bin/kerbynet allows remote attackers to execute arbitrary commands through shell metacharacters in the type parameter in a NoAuthREQ x509List action.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-0545.yaml"
     }
   ],
@@ -3485,7 +3485,7 @@
     {
       "source": "nuclei",
       "name": "Adobe Coldfusion <=8.0.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Adobe ColdFusion Server 8.0.1 and earlier contain multiple cross-site scripting vulnerabilities which allow remote attackers to inject arbitrary web script or HTML via (1) the startRow parameter to administrator/logviewer/searchlog.cfm, or the query string to (2) wizards/common/_logintowizard.cfm, (3) wizards/common/_authenticatewizarduser.cfm, or (4) administrator/enter.cfm.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-1872.yaml"
     }
   ],
@@ -3547,7 +3547,7 @@
     {
       "source": "nuclei",
       "name": "WebGlimpse 2.18.7 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in wgarcmin.cgi in WebGlimpse 2.18.7 and earlier allows remote attackers to read arbitrary files via a .. (dot dot) in the DOC parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-5114.yaml"
     }
   ],
@@ -3869,7 +3869,7 @@
     {
       "source": "nuclei",
       "name": "Cisco Linksys WVC54GCA 1.00R22/1.00R24 - Local File Inclusion",
-      "description": "-",
+      "description": "Cisco Linksys WVC54GCA 1.00R22/1.00R24 is susceptible to local file inclusion in adm/file.cgi because it allows remote attackers to read arbitrary files via a %2e. (encoded dot dot) or an absolute pathname in the next_file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-1558.yaml"
     }
   ],
@@ -5917,7 +5917,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Portfolio Nexus - Remote File Inclusion",
-      "description": "-",
+      "description": "Joomla! Portfolio Nexus 1.5 contains a remote file inclusion vulnerability in the inertialFATE iF (com_if_nexus) component that allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-4679.yaml"
     }
   ],
@@ -6923,7 +6923,7 @@
     {
       "source": "nuclei",
       "name": "Autonomy Ultraseek - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in cs.html in the Autonomy (formerly Verity) Ultraseek search engine allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via the url parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-0347.yaml"
     }
   ],
@@ -9373,7 +9373,7 @@
     {
       "source": "nuclei",
       "name": "Horde/Horde Groupware - Local File Inclusion",
-      "description": "-",
+      "description": "Horde before 3.2.4 and 3.3.3 and Horde Groupware before 1.1.5 are susceptible to local file inclusion in framework/Image/Image.php because it allows remote attackers to include and execute arbitrary local files via directory traversal sequences in the Horde_Image driver name.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-0932.yaml"
     }
   ],
@@ -9847,7 +9847,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Agora 3.0.0b - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Agora 3.0.0b (com_agora) allows remote attackers to include and execute arbitrary local files via local file inclusion in the action parameter to the avatars page, reachable through index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-3053.yaml"
     }
   ],
@@ -9989,7 +9989,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Cmimarketplace 0.1 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Cmimarketplace 0.1 is susceptible to local file inclusion because com_cmimarketplace allows remote attackers to list arbitrary directories via a .. (dot dot) in the viewit parameter to index.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-1496.yaml"
     }
   ],
@@ -10011,7 +10011,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Roland Breedveld Album 1.14 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Roland Breedveld Album 1.14 (com_album) is susceptible to local file inclusion because it allows remote attackers to access arbitrary directories and have unspecified other impact via a .. (dot dot) in the target parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-3318.yaml"
     }
   ],
@@ -10309,7 +10309,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! JoomlaPraise Projectfork  2.0.10 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! JoomlaPraise Projectfork (com_projectfork) 2.0.10 allows remote attackers to read arbitrary files via local file inclusion in the section parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-2100.yaml"
     }
   ],
@@ -10515,7 +10515,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! MooFAQ 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Ideal MooFAQ 1.0 via com_moofaq allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter (local file inclusion).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-2015.yaml"
     }
   ],
@@ -10537,7 +10537,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Omilen Photo Gallery 0.5b - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Omilen Photo Gallery (com_omphotogallery) component Beta 0.5 allows remote attackers to include and execute arbitrary local files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-4202.yaml"
     }
   ],
@@ -10851,7 +10851,7 @@
     {
       "source": "nuclei",
       "name": "KR-Web <=1.1b2 - Remote File Inclusion",
-      "description": "-",
+      "description": "KR-Web 1.1b2 and prior contain a remote file inclusion vulnerability via adm/krgourl.php, which allows remote attackers to execute arbitrary PHP code via a URL in the DOCUMENT_ROOT parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-4223.yaml"
     }
   ],
@@ -19741,7 +19741,7 @@
     {
       "source": "nuclei",
       "name": "AWStats < 6.95 - Open Redirect",
-      "description": "-",
+      "description": "An open redirect vulnerability in awredir.pl in AWStats < 6.95 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2009/CVE-2009-5020.yaml"
     }
   ],
@@ -19749,7 +19749,7 @@
     {
       "source": "nuclei",
       "name": "FileZilla Server < 0.9.31 - SSL/TLS Packet Overflow DoS",
-      "description": "-",
+      "description": "FileZilla Server versions prior to 0.9.31 contain a buffer overflow vulnerability related to SSL/TLS packet handling. This vulnerability allows remote attackers to cause a denial of service through unspecified vectors involving SSL/TLS packets.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2009/CVE-2009-0884.yaml"
     }
   ]

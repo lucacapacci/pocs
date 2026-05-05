@@ -1659,7 +1659,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts 2 - DefaultActionMapper Prefixes OGNL Code Execution",
-      "description": "-",
+      "description": "In Struts 2 before 2.3.15.1 the information following \"action:\", \"redirect:\", or \"redirectAction:\" is not properly sanitized and will be evaluated as an OGNL expression against the value stack. This introduces the possibility to inject server side code.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-2251.yaml"
     }
   ],
@@ -2063,7 +2063,7 @@
     {
       "source": "nuclei",
       "name": "Zimbra Collaboration Server 7.2.2/8.0.2 Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in /res/I18nMsg,AjxMsg,ZMsg,ZmMsg,AjxKeys,ZmKeys,ZdMsg,Ajx%20TemplateMsg.js.zgz in Zimbra 7.2.2 and 8.0.2 allows remote attackers to read arbitrary files via a .. (dot dot) in the skin parameter. This can be leveraged to execute arbitrary code by obtaining LDAP credentials and accessing the service/admin/soap API.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-7091.yaml"
     }
   ],
@@ -3427,7 +3427,7 @@
     {
       "source": "nuclei",
       "name": "AVTECH DVR - Login Verification Code Bypass",
-      "description": "-",
+      "description": "AVTECH DVR products are vulnerable to verification code bypass just by entering the \"login=quick\" parameter to bypass verification code.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-4982.yaml"
     }
   ],
@@ -3865,7 +3865,7 @@
     {
       "source": "nuclei",
       "name": "Cisco Unified Communications Manager 7/8/9 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Tomcat administrative web interface in Cisco Unified Communications Manager allows remote authenticated users to read arbitrary files via directory traversal sequences in an unspecified input string, aka Bug ID CSCui78815",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-5528.yaml"
     }
   ],
@@ -4763,7 +4763,7 @@
     {
       "source": "nuclei",
       "name": "XStream <1.4.6/1.4.10 - Remote Code Execution",
-      "description": "-",
+      "description": "Xstream API before 1.4.6 and 1.4.10 is susceptible to remote code execution. If the security framework has not been initialized, an attacker can run arbitrary shell commands by manipulating the processed input stream when unmarshaling XML or any supported format. This can allow an attacker to obtain sensitive information, modify data, and/or gain full control over a compromised system without entering necessary credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-7285.yaml"
     }
   ],
@@ -5383,7 +5383,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts - Multiple Open Redirection Vulnerabilities",
-      "description": "-",
+      "description": "Apache Struts is prone to multiple open-redirection vulnerabilities because the application fails to properly sanitize user-supplied input.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-2248.yaml"
     }
   ],
@@ -5499,7 +5499,7 @@
     {
       "source": "nuclei",
       "name": "Javafaces LFI",
-      "description": "-",
+      "description": "An Unspecified vulnerability in the Oracle GlassFish Server component in Oracle Fusion Middleware 2.1.1, 3.0.1, and 3.1.2; the Oracle JDeveloper component in Oracle Fusion Middleware 11.1.2.3.0, 11.1.2.4.0, and 12.1.2.0.0; and the Oracle WebLogic Server component in Oracle Fusion Middleware 10.3.6.0 and 12.1.1 allows remote attackers to affect confidentiality via unknown vectors related to Java Server Faces or Web Container.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-3827.yaml"
     }
   ],
@@ -6959,7 +6959,7 @@
     {
       "source": "nuclei",
       "name": "Telaen => v1.3.1 - Open Redirect",
-      "description": "-",
+      "description": "Open Redirection Vulnerability in the redir.php script in Telaen before 1.3.1 allows remote attackers to redirect victims to arbitrary websites via a crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-2621.yaml"
     }
   ],
@@ -7139,7 +7139,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Advanced Dewplayer 1.2 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in download-file.php in the Advanced Dewplayer plugin 1.2 for WordPress allows remote attackers to read arbitrary files via a .. (dot dot) in the dew_file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-7240.yaml"
     }
   ],
@@ -7185,7 +7185,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Category Grid View Gallery 2.3.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in includes/CatGridPost.php in the Category Grid View Gallery plugin 2.3.1 for WordPress allows remote attackers to inject arbitrary web script or HTML via the ID parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-4117.yaml"
     }
   ],
@@ -7223,7 +7223,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Duplicator < 0.4.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting  vulnerability in files/installer.cleanup.php in the Duplicator plugin before 0.4.5 for WordPress allows remote attackers to inject arbitrary web script or HTML via the package parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-4625.yaml"
     }
   ],
@@ -7397,7 +7397,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Traffic Analyzer - 'aoid' Cross-Site Scripting",
-      "description": "-",
+      "description": "A cross-site scripting vulnerability in js/ta_loaded.js.php in the Traffic Analyzer plugin, possibly 3.3.2 and earlier, for WordPress allows remote attackers to inject arbitrary web script or HTML via the aoid parameter.\"",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-3526.yaml"
     }
   ],
@@ -7411,7 +7411,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Uploader 1.0.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Multiple cross-site scripting  vulnerabilities in views/notify.php in the Uploader plugin 1.0.4 for WordPress allow remote attackers to inject arbitrary web script or HTML via the (1) notify or (2) blog parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-2287.yaml"
     }
   ],
@@ -7527,7 +7527,7 @@
     {
       "source": "nuclei",
       "name": "Xibo 1.2.2/1.4.1 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in Spring Signage Xibo 1.2.x before 1.2.3 and 1.4.x before 1.4.2 allows remote attackers to read arbitrary files via a .. (dot dot) in the p parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-5979.yaml"
     }
   ],
@@ -8451,7 +8451,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts2 S2-012 RCE",
-      "description": "-",
+      "description": "Apache Struts Showcase App 2.0.0 through 2.3.13, as used in Struts 2 before 2.3.14.3, allows remote attackers to execute arbitrary OGNL code via a crafted parameter name that is not properly handled when invoking a redirect.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-1965.yaml"
     }
   ],
@@ -8459,7 +8459,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Spreadsheet - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Spreadsheet plugin contains a reflected cross-site scripting vulnerability in /dhtmlxspreadsheet/codebase/spreadsheet.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-6281.yaml"
     }
   ]

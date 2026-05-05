@@ -57,7 +57,7 @@
     {
       "source": "nuclei",
       "name": "WP GDPR Compliance < 1.4.3 - Unauthenticated Call Any Action or Update Any Option",
-      "description": "-",
+      "description": "The WP GDPR Compliance plugin allows unauthenticated users to execute any action and update any database value. This vulnerability is due to the lack of proper validation in the Includes/Ajax.php file.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19207.yaml"
     }
   ],
@@ -71,7 +71,7 @@
     {
       "source": "nuclei",
       "name": "SAP Internet Graphics Server (IGS) - XML External Entity Injection",
-      "description": "-",
+      "description": "SAP Internet Graphics Servers (IGS) running versions 7.20, 7.20EXT, 7.45, 7.49, or 7.53 has two XML external entity injection (XXE) vulnerabilities within the XMLCHART page - CVE-2018-2392 and CVE-2018-2393. These vulnerabilities occur due to a lack of appropriate validation on the Extension HTML tag when submitting a POST request to the XMLCHART page to generate a new chart.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-2392.yaml"
     }
   ],
@@ -213,7 +213,7 @@
     {
       "source": "nuclei",
       "name": "Argus Surveillance DVR 4.0.0.0 - Local File Inclusion",
-      "description": "-",
+      "description": "Argus Surveillance DVR 4.0.0.0 devices allow unauthenticated local file inclusion, leading to file disclosure via a ..%2F in the WEBACCOUNT.CGI RESULTPAGE parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15745.yaml"
     }
   ],
@@ -267,7 +267,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiOS - Credentials Disclosure",
-      "description": "-",
+      "description": "Fortinet FortiOS 6.0.0 to 6.0.4, 5.6.3 to 5.6.7 and 5.4.6 to 5.4.12 and FortiProxy 2.0.0, 1.2.0 to 1.2.8, 1.1.0 to 1.1.6, 1.0.0 to 1.0.7 under SSL VPN web portal allows an unauthenticated attacker to download system files via special crafted HTTP resource requests due to improper limitation of a pathname to a restricted directory (path traversal).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-13379.yaml"
     }
   ],
@@ -343,7 +343,7 @@
     {
       "source": "nuclei",
       "name": "Splunk <=7.0.1 - Information Disclosure",
-      "description": "-",
+      "description": "Splunk through 7.0.1 is susceptible to information disclosure by appending __raw/services/server/info/server-info?output_mode=json to a query, as demonstrated by discovering a license key.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11409.yaml"
     }
   ],
@@ -363,7 +363,7 @@
     {
       "source": "nuclei",
       "name": "cgit < 1.2.1 - Directory Traversal",
-      "description": "-",
+      "description": "cGit < 1.2.1 via cgit_clone_objects has a directory traversal vulnerability when `enable-http-clone=1` is not turned off, as demonstrated by a cgit/cgit.cgi/git/objects/?path=../ request.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14912.yaml"
     }
   ],
@@ -389,7 +389,7 @@
     {
       "source": "nuclei",
       "name": "Cisco ASA - Local File Inclusion",
-      "description": "-",
+      "description": "Cisco Adaptive Security Appliances (ASA) web interfaces could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition. It is also possible on certain software releases that the ASA will not reload, but an attacker could view sensitive system information without authentication by using directory traversal techniques. The vulnerability is due to lack of proper input validation of the HTTP URL. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. An exploit could allow the attacker to cause a DoS condition or unauthenticated disclosure of information. This vulnerability applies to IPv4 and IPv6 HTTP traffic. This vulnerability affects Cisco ASA Software and Cisco Firepower Threat Defense (FTD) Software that is running on the following Cisco products: 3000 Series Industrial Security Appliance (ISA), ASA 1000V Cloud Firewall, ASA 5500 Series Adaptive Security Appliances, ASA 5500-X Series Next-Generation Firewalls, ASA Services Module for Cisco Catalyst 6500 Series Switches and Cisco 7600 Series Routers, Adaptive Security Virtual Appliance (ASAv), Firepower 2100 Series Security Appliance, Firepower 4100 Series Security Appliance, Firepower 9300 ASA Security Module, FTD Virtual (FTDv). Cisco Bug IDs: CSCvi16029.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-0296.yaml"
     }
   ],
@@ -1203,7 +1203,7 @@
     {
       "source": "nuclei",
       "name": "Western Digital MyCloud NAS - Authentication Bypass",
-      "description": "-",
+      "description": "It was discovered that the Western Digital My Cloud device before 2.30.196 is affected by an authentication bypass vulnerability. An unauthenticated attacker can exploit this vulnerability to authenticate as an admin user without needing to provide a password, thereby gaining full control of the device. (Whenever an admin logs into My Cloud, a server-side session is created that is bound to the user's IP address. After the session is created, it is possible to call authenticated CGI modules by sending the cookie username=admin in the HTTP request. The invoked CGI will check if a valid session is present and bound to the user's IP address.) It was found that it is possible for an unauthenticated attacker to create a valid session without a login. The network_mgr.cgi CGI module contains a command called \\\"cgi_get_ipv6\\\" that starts an admin session -- tied to the IP address of the user making the request -- if the additional parameter \\\"flag\\\" with the value \\\"1\\\" is provided. Subsequent invocation of commands that would normally require admin privileges now succeed if an attacker sets the username=admin cookie.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17153.yaml"
     }
   ],
@@ -1465,7 +1465,7 @@
     {
       "source": "nuclei",
       "name": "Adobe ColdFusion - Unrestricted File Upload Remote Code Execution",
-      "description": "-",
+      "description": "Adobe ColdFusion versions July 12 release (2018.0.0.310739), Update 6 and earlier, and Update 14 and earlier have an unrestricted file upload vulnerability. Successful exploitation could lead to arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15961.yaml"
     }
   ],
@@ -1499,7 +1499,7 @@
     {
       "source": "nuclei",
       "name": "GitList < 0.6.0 Remote Code Execution",
-      "description": "-",
+      "description": "klaussilveira GitList version <= 0.6 contains a passing incorrectly sanitized input via the `searchTree` function that can result in remote code execution.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000533.yaml"
     }
   ],
@@ -1513,7 +1513,7 @@
     {
       "source": "nuclei",
       "name": "Jenkins - Remote Command Injection",
-      "description": "-",
+      "description": "Jenkins 2.153 and earlier and LTS 2.138.3 and earlier are susceptible to a remote command injection via stapler/core/src/main/java/org/kohsuke/stapler/MetaClass.java that allows attackers to invoke some methods on Java objects by accessing crafted URLs that were not intended to be invoked this way.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000861.yaml"
     }
   ],
@@ -1567,7 +1567,7 @@
     {
       "source": "nuclei",
       "name": "NUUO NVRmini - Remote Command Execution",
-      "description": "-",
+      "description": "NUUO NVRmini is vulnerable to unauthenticated remote command execution through the upgrade_handle.php file. The vulnerability allows an attacker to execute arbitrary commands by manipulating the uploaddir parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14933.yaml"
     }
   ],
@@ -1593,7 +1593,7 @@
     {
       "source": "nuclei",
       "name": "OpenMRS Platform < 2.24.0 - Insecure Object Deserialization",
-      "description": "-",
+      "description": "OpenMRS before 2.24.0 is affected by an Insecure Object Deserialization vulnerability that allows an unauthenticated user to execute arbitrary commands on the targeted system via crafted XML data in a request body.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19276.yaml"
     }
   ],
@@ -1607,7 +1607,7 @@
     {
       "source": "nuclei",
       "name": "osCommerce 2.3.4.1 - Remote Code Execution",
-      "description": "-",
+      "description": "osCommerce Online Merchant 2.3.4.1 contains a remote code execution caused by insecure default configuration and missing authentication in the installer workflow, letting unauthenticated attackers execute arbitrary PHP code via install_4.php, exploit requires accessible /install/ directory after installation.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-25114.yaml"
     }
   ],
@@ -1651,7 +1651,7 @@
     {
       "source": "nuclei",
       "name": "PhpMyAdmin <4.8.2 - Local File Inclusion",
-      "description": "-",
+      "description": "PhpMyAdmin before version 4.8.2 is susceptible to local file inclusion that allows an attacker to include (view and potentially execute) files on the server. The vulnerability comes from a portion of code where pages are redirected and loaded within phpMyAdmin, and an improper test for whitelisted pages. An attacker must be authenticated, except in the \"$cfg['AllowArbitraryServer'] = true\" case (where an attacker can specify any host he/she is already in control of, and execute arbitrary code on phpMyAdmin) and the \"$cfg['ServerDefault'] = 0\" case (which bypasses the login requirement and runs the vulnerable code without any authentication).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12613.yaml"
     }
   ],
@@ -1689,7 +1689,7 @@
     {
       "source": "nuclei",
       "name": "Apache Struts2 S2-057 - Remote Code Execution",
-      "description": "-",
+      "description": "Apache Struts versions 2.3 to 2.3.34 and 2.5 to 2.5.16 suffer from possible remote code execution when alwaysSelectFullNamespace is true (either by user or a plugin like Convention Plugin) and then: results are used with no namespace and in same time, its upper package have no or wildcard namespace and similar to results, same possibility when using url tag which doesn''t have value and action set and in same time, its upper package have no or wildcard namespace.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11776.yaml"
     }
   ],
@@ -1781,7 +1781,7 @@
     {
       "source": "nuclei",
       "name": "Oracle WebLogic Server Deserialization - Remote Code Execution",
-      "description": "-",
+      "description": "The Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: Web Services) versions 10.3.6.0, 12.1.3.0, 12.2.1.2 and 12.2.1.3 contains an easily exploitable vulnerability that allows unauthenticated attackers with network access via T3 to compromise Oracle WebLogic Server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2018/CVE-2018-2628.yaml"
     }
   ],
@@ -1795,7 +1795,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Duplicator Plugin < 1.2.42 - Arbitrary Code Execution",
-      "description": "-",
+      "description": "An issue was discovered in Snap Creek Duplicator before 1.2.42. By accessing leftover installer files (installer.php and installer-backup.php), an attacker can inject PHP code into wp-config.php during the database setup step, achieving arbitrary code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17207.yaml"
     }
   ],
@@ -1901,7 +1901,7 @@
     {
       "source": "nuclei",
       "name": "Quest KACE System Management Appliance 8.0.318 - Remote Code Execution",
-      "description": "-",
+      "description": "The '/common/download_agent_installer.php' script in the Quest KACE System Management Appliance 8.0.318 is accessible by anonymous users and can be abused to execute arbitrary commands on the system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11138.yaml"
     }
   ],
@@ -1939,7 +1939,7 @@
     {
       "source": "nuclei",
       "name": "Drupal - Remote Code Execution",
-      "description": "-",
+      "description": "Drupal before 7.58, 8.x before 8.3.9, 8.4.x before 8.4.6, and 8.5.x before 8.5.1 allows remote attackers to execute arbitrary code because of an issue affecting multiple subsystems with default or common module configurations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7600.yaml"
     }
   ],
@@ -1977,7 +1977,7 @@
     {
       "source": "nuclei",
       "name": "Blueimp jQuery-File-Upload v9.22.0 - Unrestricted File Upload",
-      "description": "-",
+      "description": "Blueimp jQuery-File-Upload v9.22.0 contains an unauthenticated arbitrary file upload caused by insufficient validation in the upload component, letting remote attackers upload malicious files, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9206.yaml"
     }
   ],
@@ -1997,7 +1997,7 @@
     {
       "source": "nuclei",
       "name": "ThinkPHP 5.0.23 - Remote Code Execution",
-      "description": "-",
+      "description": "An issue was discovered in NoneCms V1.3. thinkphp/library/think/App.php allows remote attackers to execute arbitrary PHP code via crafted use of the filter parameter, as demonstrated by the s=index/\\think\\Request/input&filter=phpinfo&data=1 query string.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20062.yaml"
     }
   ],
@@ -2231,7 +2231,7 @@
     {
       "source": "nuclei",
       "name": "Apache Tika < 1.1.8 - Header Command Injection",
-      "description": "-",
+      "description": "Apache Tika versions 1.7 to 1.17 allow clients to send carefully crafted headers to tika-server that could be used to inject commands into the command line of the server running tika-server. This vulnerability only affects those running tika-server on a server that is open to untrusted clients.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1335.yaml"
     }
   ],
@@ -2251,7 +2251,7 @@
     {
       "source": "nuclei",
       "name": "DotNetNuke 9.2 - 9.2.1 - Weak Encryption & Cookie Deserialization",
-      "description": "-",
+      "description": "DNN (DotNetNuke) versions 9.2 through 9.2.1 use a weak encryption algorithm to protect input parameters. This cryptographic weakness enables attackers to craft malicious DNNPersonalization cookies that can be deserialized, leading to remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15811.yaml"
     }
   ],
@@ -2285,7 +2285,7 @@
     {
       "source": "nuclei",
       "name": "DotNetNuke 9.2 - 9.2.2 - Weak Encryption & Cookie Deserialization",
-      "description": "-",
+      "description": "DNN (DotNetNuke) versions 9.2 through 9.2.2 use a weak encryption algorithm to protect input parameters because of an incomplete fix for CVE-2018-15811. This cryptographic weakness enables attackers to craft malicious DNNPersonalization cookies that can be deserialized, leading to remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18325.yaml"
     }
   ],
@@ -2791,7 +2791,7 @@
     {
       "source": "nuclei",
       "name": "ASUSTOR ADM 3.1.0.RFQ3 - SQL Injection",
-      "description": "-",
+      "description": "ASUSTOR ADM version 3.1.0.RFQ3 is vulnerable to SQL injection via the album_id parameter in the /photo-gallery/api/album/tree_lists/ endpoint. An attacker can exploit this vulnerability to execute arbitrary SQL commands on the database, potentially leading to information disclosure or further compromise of the affected system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11511.yaml"
     }
   ],
@@ -2827,7 +2827,7 @@
     {
       "source": "nuclei",
       "name": "AudioCodes 420HD - Remote Code Execution",
-      "description": "-",
+      "description": "AudioCodes IP phone 420HD devices using firmware version 2.2.12.126 allow remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10093.yaml"
     }
   ],
@@ -2897,7 +2897,7 @@
     {
       "source": "nuclei",
       "name": "Cisco Smart Install - Configuration Download",
-      "description": "-",
+      "description": "A vulnerability in the Smart Install feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to trigger a reload of an affected device, resulting in a denial of service (DoS) condition, or to execute arbitrary code on an affected device. The vulnerability is due to improper validation of packet data.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2018/CVE-2018-0171.yaml"
     }
   ],
@@ -3013,7 +3013,7 @@
     {
       "source": "nuclei",
       "name": "Dell iDRAC7/8 Devices - Remote Code Injection",
-      "description": "-",
+      "description": "Dell EMC iDRAC7/iDRAC8, versions prior to 2.52.52.52, contain a CGI injection vulnerability\nwhich could be used to execute remote code. A remote unauthenticated attacker may\npotentially be able to use CGI variables to execute remote code.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1207.yaml"
     }
   ],
@@ -3027,7 +3027,7 @@
     {
       "source": "nuclei",
       "name": "Dasan GPON Devices - Remote Code Execution",
-      "description": "-",
+      "description": "Dasan GPON home routers are susceptible to command injection which can occur via the dest_host parameter in a diag_action=ping request to a GponForm/diag_Form URI. Because the router saves ping results in /tmp and transmits them to the user when the user revisits /diag.html, it's quite simple to execute commands and retrieve their output.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10562.yaml"
     }
   ],
@@ -3063,7 +3063,7 @@
     {
       "source": "nuclei",
       "name": "LG Supersign EZ CMS - Remote Code Execution",
-      "description": "-",
+      "description": "LG SuperSign CMS allows remote attackers to execute arbitrary code via the sourceUri parameter to qsr_server/device/getThumbnail.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17173.yaml"
     }
   ],
@@ -3157,7 +3157,7 @@
     {
       "source": "nuclei",
       "name": "TBK DVR4104/DVR4216 Devices - Authentication Bypass",
-      "description": "-",
+      "description": "TBK DVR4104 and DVR4216 devices, as well as Novo, CeNova, QSee, Pulnix, XVR 5 in 1, Securus, Night OWL, DVR Login, HVR Login, and\nMDVR Login, which run re-branded versions of the original TBK DVR4104 and DVR4216 series, allow remote attackers to bypass\nauthentication via a \"Cookie: uid=admin\" header, as demonstrated by a device.rsp?opt=user&cmd=list request that provides credentials within JSON data in a response.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9995.yaml"
     }
   ],
@@ -3243,7 +3243,7 @@
     {
       "source": "nuclei",
       "name": "CirCarLife Scada <4.3 - System Log Exposure",
-      "description": "-",
+      "description": "CirCarLife Scada before 4.3 allows remote attackers to obtain sensitive information via a direct request for the html/log or services/system/info.html URI. CirCarLife is an internet-connected electric vehicle charging station.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12634.yaml"
     }
   ],
@@ -3281,7 +3281,7 @@
     {
       "source": "nuclei",
       "name": "D-Link Routers - Remote Command Injection",
-      "description": "-",
+      "description": "D-Link DWR-116 through 1.06, DWR-512 through 2.02, DWR-712 through 2.02, DWR-912 through 2.02, DWR-921 through 2.02, and DWR-111 through 1.01 device may allow an authenticated attacker to execute arbitrary code by injecting the shell command into the chkisg.htm page Sip parameter. This allows for full control over the device internals.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10823.yaml"
     }
   ],
@@ -3295,7 +3295,7 @@
     {
       "source": "nuclei",
       "name": "D-Link Routers - Local File Inclusion",
-      "description": "-",
+      "description": "D-Link routers DWR-116 through 1.06, DIR-140L through 1.02, DIR-640L through 1.02,DWR-512 through 2.02,DWR-712 through 2.02,DWR-912 through 2.02, DWR-921 through 2.02, DWR-111 through 1.01, and probably others with the same type of firmware allows remote attackers to read arbitrary files via a /.. or // after \"GET /uir\" in an HTTP request to the web interface.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10822.yaml"
     }
   ],
@@ -3461,7 +3461,7 @@
     {
       "source": "nuclei",
       "name": "LG SuperSign EZ CMS 2.5 - Local File Inclusion",
-      "description": "-",
+      "description": "LG SuperSign CMS 2.5 allows reading of arbitrary files via signEzUI/playlist/edit/upload/..%2f URIs - aka local file inclusion.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16288.yaml"
     }
   ],
@@ -3681,7 +3681,7 @@
     {
       "source": "nuclei",
       "name": "VelotiSmart Wifi - Directory Traversal",
-      "description": "-",
+      "description": "VelotiSmart WiFi B-380 camera devices allow directory traversal via the uc-http service 1.0.0, as demonstrated by /../../etc/passwd on TCP port 80.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14064.yaml"
     }
   ],
@@ -3695,7 +3695,7 @@
     {
       "source": "nuclei",
       "name": "VMware NSX SD-WAN Edge - Command Injection",
-      "description": "-",
+      "description": "VMware NSX SD-WAN Edge (formerly VeloCloud Edge) before 3.1.2 contains an unauthenticated command injection in the local web UI diagnostic tools (Ping/Traceroute). This template detects it reliably by injecting 'id', 'whoami', and a random marker.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6961.yaml"
     }
   ],
@@ -3709,7 +3709,7 @@
     {
       "source": "nuclei",
       "name": "WirelessHART Fieldgate SWG70 3.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WirelessHART Fieldgate SWG70 3.0 is vulnerable to local file inclusion via the fcgi-bin/wgsetcgi filename parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16059.yaml"
     }
   ],
@@ -3723,7 +3723,7 @@
     {
       "source": "nuclei",
       "name": "XiongMai uc-httpd 1.0.0 - Buffer Overflow",
-      "description": "-",
+      "description": "Buffer overflow in XiongMai uc-httpd 1.0.0 has unspecified impact and attack vectors, a different vulnerability than CVE-2017-16725.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10088.yaml"
     }
   ],
@@ -3939,7 +3939,7 @@
     {
       "source": "nuclei",
       "name": "Microstrategy Web 7 - Local File Inclusion",
-      "description": "-",
+      "description": "Microstrategy Web 7 is vulnerable to local file inclusion via \"/WebMstr7/servlet/mstrWeb\" (in the parameter subpage). Remote authenticated users can bypass intended SecurityManager restrictions and list a parent directory via a /.. (slash dot dot) in a pathname used by a web application. NOTE: this is a deprecated product.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18777.yaml"
     }
   ],
@@ -3973,7 +3973,7 @@
     {
       "source": "nuclei",
       "name": "Microstrategy Web 7 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Microstrategy Web 7 does not sufficiently encode user-controlled inputs, resulting in cross-site scripting via the Login.asp Msg parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18775.yaml"
     }
   ],
@@ -4541,7 +4541,7 @@
     {
       "source": "nuclei",
       "name": "Dell EMC Avamar and Integrated Data Protection Appliance Installation Manager - Invalid Access Control",
-      "description": "-",
+      "description": "Avamar Installation Manager in Dell EMC Avamar Server 7.3.1, 7.4.1, and 7.5.0, and Dell EMC Integrated Data Protection Appliance 2.0 and 2.1, is affected by a missing access control check vulnerability which could potentially allow a remote unauthenticated attacker to read or change the Local Download Service (LDLS) credentials. The LDLS credentials are used to connect to Dell EMC Online Support. If the LDLS configuration was changed to an invalid configuration, then Avamar Installation Manager may not be able to connect to Dell EMC Online Support web site successfully. The remote unauthenticated attacker can also read and use the credentials to login to Dell EMC Online Support, impersonating the AVI service actions using those credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1217.yaml"
     }
   ],
@@ -4655,7 +4655,7 @@
     {
       "source": "nuclei",
       "name": "FUEL CMS 1.4.1 - Remote Code Execution",
-      "description": "-",
+      "description": "FUEL CMS 1.4.1 allows PHP Code Evaluation via the pages/select/ filter parameter or the preview/ data parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16763.yaml"
     }
   ],
@@ -4717,7 +4717,7 @@
     {
       "source": "nuclei",
       "name": "Responsive filemanager 9.13.1 Server-Side Request Forgery",
-      "description": "-",
+      "description": "Responsive filemanager 9.13.1 is susceptible to server-side request forgery in upload.php via the url parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14728.yaml"
     }
   ],
@@ -4739,7 +4739,7 @@
     {
       "source": "nuclei",
       "name": "Rubedo CMS <=3.4.0 - Directory Traversal",
-      "description": "-",
+      "description": "Rubedo CMS through 3.4.0 contains a directory traversal vulnerability in the theme component, allowing unauthenticated attackers to read and execute arbitrary files outside of the service root path, as demonstrated by a /theme/default/img/%2e%2e/..//etc/passwd URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16836.yaml"
     }
   ],
@@ -5413,7 +5413,7 @@
     {
       "source": "nuclei",
       "name": "Anchor CMS 0.12.3 - Error Log Exposure",
-      "description": "-",
+      "description": "Anchor CMS 0.12.3 is susceptible to an error log exposure vulnerability due to an issue  in config/error.php. The error log is exposed at an errors.log URI, and contains MySQL credentials if a MySQL error (such as \"Too many connections\") has occurred.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7251.yaml"
     }
   ],
@@ -5427,7 +5427,7 @@
     {
       "source": "nuclei",
       "name": "Apache Tomcat - Open Redirect",
-      "description": "-",
+      "description": "Apache Tomcat versions prior to 9.0.12, 8.5.34, and 7.0.91 are prone to an open-redirection vulnerability because it fails to properly sanitize user-supplied input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11784.yaml"
     }
   ],
@@ -5473,7 +5473,7 @@
     {
       "source": "nuclei",
       "name": "Comodo Unified Threat Management Web Console - Remote Code Execution",
-      "description": "-",
+      "description": "Comodo Firewall & Central Manager (UTM) All Release before 2.7.0 & 1.5.0 are susceptible to a web shell based remote code execution vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17431.yaml"
     }
   ],
@@ -5533,7 +5533,7 @@
     {
       "source": "nuclei",
       "name": "IPConfigure Orchid Core VMS 2.0.5 - Local File Inclusion",
-      "description": "-",
+      "description": "IPConfigure Orchid Core VMS 2.0.5 is susceptible to local file inclusion.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10956.yaml"
     }
   ],
@@ -5563,7 +5563,7 @@
     {
       "source": "nuclei",
       "name": "LogonTracer <=1.2.0 - Remote Command Injection",
-      "description": "-",
+      "description": "LogonTracer 1.2.0 and earlier allows remote attackers to execute arbitrary OS commands via unspecified vectors.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16167.yaml"
     }
   ],
@@ -5601,7 +5601,7 @@
     {
       "source": "nuclei",
       "name": "Oracle Fusion Middleware WebCenter Sites - Cross-Site Scripting",
-      "description": "-",
+      "description": "The Oracle WebCenter Sites component of Oracle Fusion Middleware is susceptible to multiple instances of cross-site scripting that could allow unauthenticated attackers with network access via HTTP to compromise Oracle WebCenter Sites. Impacted versions that are affected are 11.1.1.8.0, 12.2.1.2.0 and 12.2.1.3.0. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle WebCenter Sites, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle WebCenter Sites accessible data as well as unauthorized update, insert or delete access to some of Oracle WebCenter Sites accessible data.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-2791.yaml"
     }
   ],
@@ -5631,7 +5631,7 @@
     {
       "source": "nuclei",
       "name": "Tyto Sahi pro 7.x/8.x - Local File Inclusion",
-      "description": "-",
+      "description": "Tyto Sahi Pro versions through 7.x.x and 8.0.0 are susceptible to a local file inclusion vulnerability in the web reports module which can allow an outside attacker to view contents of sensitive files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20470.yaml"
     }
   ],
@@ -5733,7 +5733,7 @@
     {
       "source": "nuclei",
       "name": "Adiscon LogAnalyzer <4.1.7 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Adiscon LogAnalyzer before 4.1.7 contains a cross-site scripting vulnerability in the 'referer' parameter of the login.php file.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19877.yaml"
     }
   ],
@@ -5843,7 +5843,7 @@
     {
       "source": "nuclei",
       "name": "Centos Web Panel 0.9.8.480 - Local File Inclusion",
-      "description": "-",
+      "description": "Centos Web Panel version 0.9.8.480 suffers from local file inclusion vulnerabilities. Other vulnerabilities including cross-site scripting and remote code execution are also known to impact this version.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18323.yaml"
     }
   ],
@@ -5955,7 +5955,7 @@
     {
       "source": "nuclei",
       "name": "Cobub Razor 0.8.0 - Information Disclosure",
-      "description": "-",
+      "description": "Cobub Razor 0.8.0 is susceptible to information disclosure via generate.php, controllers/getConfigTest.php, controllers/getUpdateTest.php, controllers/postclientdataTest.php, controllers/posterrorTest.php, controllers/posteventTest.php, controllers/posttagTest.php, controllers/postusinglogTest.php, fixtures/Controller_fixt.php, fixtures/Controller_fixt2.php, fixtures/view_fixt2.php, libs/ipTest.php, or models/commonDbfix.php. An attacker can obtain sensitive information, modify data, and/or execute unauthorized operations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8770.yaml"
     }
   ],
@@ -6113,7 +6113,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 contains a cross-site scripting vulnerability via assets/add/dns.php Profile Name or notes field.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19914.yaml"
     }
   ],
@@ -6127,7 +6127,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD <=4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD through version 4.11.01 is vulnerable to cross-site scripting via the assets/edit/host.php Web Host Name or Web Host URL field.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19915.yaml"
     }
   ],
@@ -6141,7 +6141,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD through version 4.11.01 is vulnerable to cross-site scripting via the /assets/add/category.php CatagoryName and StakeHolder parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20011.yaml"
     }
   ],
@@ -6155,7 +6155,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 is vulnerable to reflected cross-site scripting via assets/edit/registrar-account.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19136.yaml"
     }
   ],
@@ -6169,7 +6169,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD through version 4.11.01 is vulnerable to cross-site scripting via the /assets/add/ssl-provider-account.php Username field.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20010.yaml"
     }
   ],
@@ -6183,7 +6183,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD through version 4.11.01 is vulnerable to cross-site scripting via the /assets/add/ssl-provider.php ssl-provider-name and ssl-provider's-url parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20009.yaml"
     }
   ],
@@ -6213,7 +6213,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 contains a cross-site scripting vulnerability via /admin/ssl-fields/add.php Display Name, Description & Notes field parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19751.yaml"
     }
   ],
@@ -6227,7 +6227,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 contains a cross-site scripting vulnerability via assets/add/account-owner.php Owner name field.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19749.yaml"
     }
   ],
@@ -6241,7 +6241,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD through 4.11.01 contains a cross-site scripting vulnerability via the assets/add/registrar.php notes field for Registrar.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19752.yaml"
     }
   ],
@@ -6267,7 +6267,7 @@
     {
       "source": "nuclei",
       "name": "Drupal - Remote Code Execution",
-      "description": "-",
+      "description": "Drupal 7.x and 8.x contain a remote code execution vulnerability that exists within multiple subsystems. This potentially allows attackers to exploit multiple attack vectors on a Drupal site, which could result in the site being compromised. This vulnerability is related to Drupal core - Highly critical - Remote Code Execution - SA-CORE-2018-002. Both SA-CORE-2018-002 and this vulnerability are being exploited in the wild.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7602.yaml"
     }
   ],
@@ -6281,7 +6281,7 @@
     {
       "source": "nuclei",
       "name": "Drupal avatar_uploader v7.x-1.0-beta8 - Local File Inclusion",
-      "description": "-",
+      "description": "In avatar_uploader v7.x-1.0-beta8 the view.php program doesn't restrict file paths, allowing unauthenticated users to retrieve arbitrary files.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9205.yaml"
     }
   ],
@@ -6391,7 +6391,7 @@
     {
       "source": "nuclei",
       "name": "FlexPaper/FlowPaper 2.3.6 - Remote Code Execution",
-      "description": "-",
+      "description": "The Publish Service in FlexPaper (later renamed FlowPaper) 2.3.6 allows remote code execution via setup.php and change_config.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11686.yaml"
     }
   ],
@@ -6619,7 +6619,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! JCK Editor SQL Injection",
-      "description": "-",
+      "description": "The JCK Editor component 6.4.4 for Joomla! allows SQL Injection via the jtreelink/dialogs/links.php parent parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17254.yaml"
     }
   ],
@@ -6969,7 +6969,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Jtag Members Directory 5.3.7 - Local File Inclusion",
-      "description": "-",
+      "description": "Joomla! Jtag Members Directory 5.3.7 is vulnerable to local file inclusion via the download_file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6008.yaml"
     }
   ],
@@ -7039,7 +7039,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component PrayerCenter 3.0.2 - SQL Injection",
-      "description": "-",
+      "description": "SQL Injection exists in the PrayerCenter 3.0.2 component for Joomla! via the sessionid parameter, a different vulnerability than CVE-2008-6429.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7314.yaml"
     }
   ],
@@ -7213,7 +7213,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Zh BaiduMap 3.0.0.1 - SQL Injection",
-      "description": "-",
+      "description": "SQL Injection exists in the Zh BaiduMap 3.0.0.1 component for Joomla! via the id parameter in a getPlacemarkDetails, getPlacemarkHoverText, getPathHoverText, or getPathDetails request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6605.yaml"
     }
   ],
@@ -7267,7 +7267,7 @@
     {
       "source": "nuclei",
       "name": "Jorani Leave Management System 0.6.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Persistent cross-site scripting (XSS) issues in Jorani 0.6.5 allow remote attackers to inject arbitrary web script or HTML via the language parameter to session/language.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15917.yaml"
     }
   ],
@@ -7639,7 +7639,7 @@
     {
       "source": "nuclei",
       "name": "OEcms 3.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "OEcms 3.1 is vulnerable to reflected cross-site scripting via the mod parameter of info.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12095.yaml"
     }
   ],
@@ -7763,7 +7763,7 @@
     {
       "source": "nuclei",
       "name": "PHP Proxy 3.0.3 - Local File Inclusion",
-      "description": "-",
+      "description": "PHP Proxy 3.0.3 is susceptible to local file inclusion vulnerabilities that allow unauthenticated users to read files from the server via index.php?q=file:/// (a different vulnerability than CVE-2018-19246).\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19458.yaml"
     }
   ],
@@ -7935,7 +7935,7 @@
     {
       "source": "nuclei",
       "name": "Responsive FileManager <9.13.4 - Local File Inclusion",
-      "description": "-",
+      "description": "Responsive FileManager before version 9.13.4 is vulnerable to local file inclusion via filemanager/ajax_calls.php because it uses external input to construct a pathname that should be within a restricted directory, aka local file inclusion.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15535.yaml"
     }
   ],
@@ -7957,7 +7957,7 @@
     {
       "source": "nuclei",
       "name": "Roxy Fileman 1.4.5 - Unrestricted File Upload",
-      "description": "-",
+      "description": "Roxy Fileman 1.4.5 is susceptible to unrestricted file upload via upload.php. An attacker can execute malware, obtain sensitive information, modify data, and/or gain full control over a compromised system without entering necessary credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20526.yaml"
     }
   ],
@@ -8019,7 +8019,7 @@
     {
       "source": "nuclei",
       "name": "Schneider Electric U.motion Builder - Remote Code Execution",
-      "description": "-",
+      "description": "U.motion Builder 1.3.4 contains a remote code execution vulnerability caused by improper input sanitization, allowing attackers to execute arbitrary system commands through crafted input parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7841.yaml"
     }
   ],
@@ -8105,7 +8105,7 @@
     {
       "source": "nuclei",
       "name": "Schools Alert Management Script - Arbitrary File Read",
-      "description": "-",
+      "description": "Schools Alert Management Script is susceptible to an arbitrary file read vulnerability via the f parameter in img.php, aka absolute path traversal.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12054.yaml"
     }
   ],
@@ -8175,7 +8175,7 @@
     {
       "source": "nuclei",
       "name": "SugarCRM 3.5.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "SugarCRM 3.5.1 is vulnerable to cross-site scripting via phprint.php and a parameter name in the query string (aka a $key variable).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-5715.yaml"
     }
   ],
@@ -8285,7 +8285,7 @@
     {
       "source": "nuclei",
       "name": "uWSGI PHP Plugin Local File Inclusion",
-      "description": "-",
+      "description": "uWSGI PHP Plugin before 2.0.17 mishandles a DOCUMENT_ROOT check during use of the --php-docroot option, making it susceptible to local file inclusion.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7490.yaml"
     }
   ],
@@ -8557,7 +8557,7 @@
     {
       "source": "nuclei",
       "name": "WordPress 99 Robots WP Background Takeover Advertisements <=4.1.4 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress 99 Robots WP Background Takeover Advertisements 4.1.4 is susceptible to local file inclusion via exports/download.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9118.yaml"
     }
   ],
@@ -8651,7 +8651,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Localize My Post 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Localize My Post 1.0 is susceptible to local file inclusion via the ajax/include.php file parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16299.yaml"
     }
   ],
@@ -8721,7 +8721,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Ninja Forms <3.3.18 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Ninja Forms plugin before 3.3.18 contains a cross-site scripting vulnerability. An attacker can inject arbitrary script in includes/Admin/Menus/Submissions.php via the begin_date, end_date, or form_id parameters. This can allow an attacker to steal cookie-based authentication credentials and launch other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19287.yaml"
     }
   ],
@@ -8759,7 +8759,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Site Editor <=1.1.1 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Site Editor through 1.1.1 allows remote attackers to retrieve arbitrary files via the ajax_path parameter to editor/extensions/pagebuilder/includes/ajax_shortcode_pattern.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7422.yaml"
     }
   ],
@@ -8781,7 +8781,7 @@
     {
       "source": "nuclei",
       "name": "Oturia WordPress Smart Google Code Inserter <3.5 - Authentication Bypass",
-      "description": "-",
+      "description": "Oturia Smart Google Code Inserter plugin before 3.5 for WordPress allows unauthenticated attackers to insert arbitrary JavaScript or HTML code (via the sgcgoogleanalytic parameter) that runs on all pages served by WordPress. The saveGoogleCode() function in smartgooglecode.php does not check if the current request is made by an authorized user, thus allowing any unauthenticated user to successfully update the inserted code.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-3810.yaml"
     }
   ],
@@ -8803,7 +8803,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Wechat Broadcast 1.2.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Wechat Broadcast plugin 1.2.0 and earlier allows Directory Traversal via the Image.php url parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16283.yaml"
     }
   ],
@@ -8833,7 +8833,7 @@
     {
       "source": "nuclei",
       "name": "WordPress WP Security Audit Log 3.1.1 - Information Disclosure",
-      "description": "-",
+      "description": "WordPress WP Security Audit Log 3.1.1 plugin is susceptible to information disclosure. Access to wp-content/uploads/wp-security-audit-log/* files is not restricted. An attacker can obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8719.yaml"
     }
   ],
@@ -8919,7 +8919,7 @@
     {
       "source": "nuclei",
       "name": "YzmCMS v3.6 - Cross-Site Scripting",
-      "description": "-",
+      "description": "In YzmCMS 3.6, index.php has XSS via the a, c, or m parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7653.yaml"
     }
   ],
@@ -8965,7 +8965,7 @@
     {
       "source": "nuclei",
       "name": "Zeta Producer Desktop CMS <14.2.1 - Local File Inclusion",
-      "description": "-",
+      "description": "Zeta Producer Desktop CMS before 14.2.1 is vulnerable to local file inclusion if the plugin \"filebrowser\" is installed because of assets/php/filebrowser/filebrowser.main.php?file=../ directory traversal.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-13980.yaml"
     }
   ],
@@ -10201,7 +10201,7 @@
     {
       "source": "nuclei",
       "name": "Acrolinx Server <5.2.5 - Local File Inclusion",
-      "description": "-",
+      "description": "Acrolinx Server prior to 5.2.5 suffers from a local file inclusion vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7719.yaml"
     }
   ],
@@ -10453,7 +10453,7 @@
     {
       "source": "nuclei",
       "name": "Ncomputing vSPace Pro 10 and 11 - Directory Traversal",
-      "description": "-",
+      "description": "Ncomputing vSpace Pro versions 10 and 11 suffer from a directory traversal vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10201.yaml"
     }
   ],
@@ -10655,7 +10655,7 @@
     {
       "source": "nuclei",
       "name": "Cybrotech CyBroHttpServer 1.0.3 - Local File Inclusion",
-      "description": "-",
+      "description": "Cybrotech CyBroHttpServer 1.0.3 is vulnerable to local file inclusion in the URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16133.yaml"
     }
   ],
@@ -10853,7 +10853,7 @@
     {
       "source": "nuclei",
       "name": "Cisco RV132W/RV134W Router - Information Disclosure",
-      "description": "-",
+      "description": "Cisco RV132W ADSL2+ Wireless-N VPN Routers and Cisco RV134W VDSL2 Wireless-AC VPN Routers could allow an unauthenticated, remote attacker to view configuration parameters for an affected device via the web interface, which could lead to the disclosure of confidential information.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-0127.yaml"
     }
   ],
@@ -10861,7 +10861,7 @@
     {
       "source": "nuclei",
       "name": "Jolokia 1.3.7 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Jolokia 1.3.7 is vulnerable to cross-site scripting in the HTTP servlet and allows an attacker to execute malicious JavaScript in the victim's browser.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000129.yaml"
     }
   ],
@@ -10869,7 +10869,7 @@
     {
       "source": "nuclei",
       "name": "Jolokia Agent - JNDI Code Injection",
-      "description": "-",
+      "description": "Jolokia agent is vulnerable to a JNDI injection vulnerability that allows a remote attacker to run arbitrary Java code on the server when the agent is in proxy mode.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000130.yaml"
     }
   ],
@@ -10877,7 +10877,7 @@
     {
       "source": "nuclei",
       "name": "Cobbler - Authentication Bypass",
-      "description": "-",
+      "description": "Cobbler versions 2.6.11+, but code inspection suggests at least 2.0.0+ and possibly even older versions, may be vulnerable to an authentication bypass vulnerability in XMLRPC API (/cobbler_api) that can result in privilege escalation, data manipulation or exfiltration, and LDAP credential harvesting. This attack appear to be exploitable via \"network connectivity\". Taking advantage of improper validation of security tokens in API endpoints. Please note this is a different issue than CVE-2018-10931.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000226.yaml"
     }
   ],
@@ -10885,7 +10885,7 @@
     {
       "source": "nuclei",
       "name": "Jenkins GitHub Plugin <=1.29.1 - Server-Side Request Forgery",
-      "description": "-",
+      "description": "Jenkins GitHub Plugin 1.29.1 and earlier is susceptible to server-side request forgery via GitHubTokenCredentialsCreator.java, which allows attackers to leverage attacker-specified credentials IDs obtained through another method and capture the credentials stored in Jenkins.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000600.yaml"
     }
   ],
@@ -10893,7 +10893,7 @@
     {
       "source": "nuclei",
       "name": "Sympa version =>6.2.16 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Sympa version 6.2.16 and later contains a URL Redirection to Untrusted Site vulnerability in the referer parameter of the wwsympa fcgi login action that can result in open redirection and reflected cross-site scripting via data URIs.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000671.yaml"
     }
   ],
@@ -10901,7 +10901,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 is vulnerable to cross-site scripting via the segments/add.php Segment Name field.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1000856.yaml"
     }
   ],
@@ -10909,7 +10909,7 @@
     {
       "source": "nuclei",
       "name": "Dolibarr <7.0.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Dolibarr before 7.0.2  is vulnerable to cross-site scripting and allows remote attackers to inject arbitrary web script or HTML via the foruserlogin parameter to adherents/cartes/carte.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10095.yaml"
     }
   ],
@@ -10917,7 +10917,7 @@
     {
       "source": "nuclei",
       "name": "Palo Alto Networks PAN-OS GlobalProtect <8.1.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Palo Alto Networks PAN-OS before 8.1.4 GlobalProtect Portal Login page allows an unauthenticated attacker to inject arbitrary JavaScript or HTML, making it vulnerable to cross-site scripting.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10141.yaml"
     }
   ],
@@ -10925,7 +10925,7 @@
     {
       "source": "nuclei",
       "name": "Zend Server <9.13 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Zend Server before version 9.13 is vulnerable to cross-site scripting via the debug_host parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10230.yaml"
     }
   ],
@@ -10933,7 +10933,7 @@
     {
       "source": "nuclei",
       "name": "AWStats <= 7.5 - Full Path Disclosure",
-      "description": "-",
+      "description": "AWStats 7.6 contains a full path disclosure caused by improper handling of framename and update parameters in awstats.pl, letting remote attackers determine server file paths, exploit requires sending crafted parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10245.yaml"
     }
   ],
@@ -10941,7 +10941,7 @@
     {
       "source": "nuclei",
       "name": "Lantronix SecureLinx Spider (SLS) 2.2+ - Cross-Site Scripting",
-      "description": "-",
+      "description": "Lantronix SecureLinx Spider (SLS) 2.2+ devices have XSS in the auth.asp login page.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10383.yaml"
     }
   ],
@@ -10949,7 +10949,7 @@
     {
       "source": "nuclei",
       "name": "NagiosXI <= 5.4.12 `commandline.php` SQL injection",
-      "description": "-",
+      "description": "A SQL injection issue was discovered in Nagios XI before 5.4.13 via the admin/commandline.php cname parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10735.yaml"
     }
   ],
@@ -10957,7 +10957,7 @@
     {
       "source": "nuclei",
       "name": "NagiosXI <= 5.4.12 - SQL injection",
-      "description": "-",
+      "description": "A SQL injection issue was discovered in Nagios XI before 5.4.13 via the admin/info.php key1 parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10736.yaml"
     }
   ],
@@ -10965,7 +10965,7 @@
     {
       "source": "nuclei",
       "name": "NagiosXI <= 5.4.12 logbook.php SQL injection",
-      "description": "-",
+      "description": "A SQL injection issue was discovered in Nagios XI before 5.4.13 via the admin/logbook.php txtSearch parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10737.yaml"
     }
   ],
@@ -10973,7 +10973,7 @@
     {
       "source": "nuclei",
       "name": "NagiosXI <= 5.4.12 menuaccess.php - SQL injection",
-      "description": "-",
+      "description": "A SQL injection issue was discovered in Nagios XI before 5.4.13 via the admin/menuaccess.php chbKey1 parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10738.yaml"
     }
   ],
@@ -10981,7 +10981,7 @@
     {
       "source": "nuclei",
       "name": "LG NAS Devices - Remote Code Execution",
-      "description": "-",
+      "description": "LG NAS devices contain a pre-auth remote command injection via the \"password\" parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10818.yaml"
     }
   ],
@@ -10989,7 +10989,7 @@
     {
       "source": "nuclei",
       "name": "Prestashop AttributeWizardPro Module - Arbitrary File Upload",
-      "description": "-",
+      "description": "In the Attribute Wizard addon 1.6.9 for PrestaShop allows remote attackers to execute arbitrary code by uploading a php file.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-10942.yaml"
     }
   ],
@@ -10997,7 +10997,7 @@
     {
       "source": "nuclei",
       "name": "Quest KACE SMA /common/run_cross_report.php 'fmt' XSS",
-      "description": "-",
+      "description": "The 'fmt' parameter of the '/common/run_cross_report.php' script in the the Quest KACE System Management Appliance 8.0.318 is vulnerable to cross-site scripting.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11133.yaml"
     }
   ],
@@ -11005,7 +11005,7 @@
     {
       "source": "nuclei",
       "name": "Pandora FMS <=7.0NG.722 - Remote Code Execution",
-      "description": "-",
+      "description": "Pandora FMS versions <=7.0NG.722 are vulnerable to unauthenticated remote code execution by chaining an unrestricted file upload (CVE-2018-11221) and a local file inclusion (CVE-2018-11222). An attacker can upload a malicious PHP file as a plugin and execute it via LFI, leading to full compromise of the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11222.yaml"
     }
   ],
@@ -11013,7 +11013,7 @@
     {
       "source": "nuclei",
       "name": "Monstra CMS <=3.0.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Monstra CMS 3.0.4 and earlier contains a cross-site scripting vulnerability via index.php.  An attacker can inject arbitrary script in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11227.yaml"
     }
   ],
@@ -11021,7 +11021,7 @@
     {
       "source": "nuclei",
       "name": "Opencart Divido - Sql Injection",
-      "description": "-",
+      "description": "OpenCart Divido plugin is susceptible to SQL injection\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11231.yaml"
     }
   ],
@@ -11029,7 +11029,7 @@
     {
       "source": "nuclei",
       "name": "Monstra CMS 3.0.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Monstra CMS 3.0.4 contains a cross-site scripting vulnerability via the registration form (i.e., the login parameter to users/registration). An attacker can inject arbitrary script in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11473.yaml"
     }
   ],
@@ -11037,7 +11037,7 @@
     {
       "source": "nuclei",
       "name": "WordPress wpForo Forum <= 1.4.11 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress wpForo Forum plugin before 1.4.12 for WordPress allows unauthenticated reflected cross-site scripting via the URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11709.yaml"
     }
   ],
@@ -11045,7 +11045,7 @@
     {
       "source": "nuclei",
       "name": "Apache Tomcat JK Connect <=1.2.44 - Manager Access",
-      "description": "-",
+      "description": "Apache Tomcat JK (mod_jk) Connector 1.2.0 to 1.2.44 allows specially constructed requests to expose application functionality through the reverse proxy. It is also possible in some configurations for a specially constructed request to bypass the access controls configured in httpd. While there is some overlap between this issue and CVE-2018-1323, they are not identical.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-11759.yaml"
     }
   ],
@@ -11053,7 +11053,7 @@
     {
       "source": "nuclei",
       "name": "Eaton Intelligent Power Manager 1.6 - Directory Traversal",
-      "description": "-",
+      "description": "Eaton Intelligent Power Manager v1.6 allows an attacker to include a file via directory traversal, which can lead to sensitive information disclosure, denial of service and code execution.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12031.yaml"
     }
   ],
@@ -11061,7 +11061,7 @@
     {
       "source": "nuclei",
       "name": "Seagate NAS OS 4.3.15.1 - Server Information Disclosure",
-      "description": "-",
+      "description": "Seagate NAS OS version 4.3.15.1 has insufficient access control which allows attackers to obtain information about the NAS without authentication via empty POST requests in /api/external/7.0/system.System.get_infos.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12296.yaml"
     }
   ],
@@ -11069,7 +11069,7 @@
     {
       "source": "nuclei",
       "name": "Seagate NAS OS 4.3.15.1 - Open Redirect",
-      "description": "-",
+      "description": "Seagate NAS OS 4.3.15.1 contains an open redirect vulnerability in echo-server.html, which can allow an attacker to disclose information in the referer header via the state URL parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12300.yaml"
     }
   ],
@@ -11077,7 +11077,7 @@
     {
       "source": "nuclei",
       "name": "Intelbras NPLUG 1.0.0.14 - Authentication Bypass",
-      "description": "-",
+      "description": "Intelbras NPLUG 1.0.0.14 is vulnerable to authentication bypass through cookie manipulation. An attacker can bypass authentication by simply setting a cookie named \"admin:\".\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12455.yaml"
     }
   ],
@@ -11085,7 +11085,7 @@
     {
       "source": "nuclei",
       "name": "SV3C HD Camera L Series - Open Redirect",
-      "description": "-",
+      "description": "SV3C HD Camera L Series 2.3.4.2103-S50-NTD-B20170508B and 2.3.4.2103-S50-NTD-B20170823B contains an open redirect vulnerability. It does not perform origin checks on URLs in the camera's web interface, which can be leveraged to send a user to an unexpected endpoint. An attacker can possibly obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12675.yaml"
     }
   ],
@@ -11093,7 +11093,7 @@
     {
       "source": "nuclei",
       "name": "Spring MVC Framework - Local File Inclusion",
-      "description": "-",
+      "description": "Spring MVC Framework versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported are vulnerable to local file inclusion because they allow applications to configure Spring MVC to serve static resources (e.g. CSS, JS, images). A malicious user can send a request using a specially crafted URL that can lead a directory traversal attack.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1271.yaml"
     }
   ],
@@ -11101,7 +11101,7 @@
     {
       "source": "nuclei",
       "name": "Spring Data Commons - Remote Code Execution",
-      "description": "-",
+      "description": "Spring Data Commons, versions prior to 1.13 to 1.13.10, 2.0 to 2.0.5,\nand older unsupported versions, contain a property binder vulnerability\ncaused by improper neutralization of special elements.\nAn unauthenticated remote malicious user (or attacker) can supply\nspecially crafted request parameters against Spring Data REST backed HTTP resources\nor using Spring Data's projection-based request payload binding hat can lead to a remote code execution attack.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-1273.yaml"
     }
   ],
@@ -11109,7 +11109,7 @@
     {
       "source": "nuclei",
       "name": "Webgrind <= 1.5 - Local File Inclusion",
-      "description": "-",
+      "description": "Webgrind 1.5 relies on user input to display a file, which lets anyone view files from the local filesystem (that the webserver user has access to) via an index.php?op=fileviewer&file= URI\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12909.yaml"
     }
   ],
@@ -11117,7 +11117,7 @@
     {
       "source": "nuclei",
       "name": "Zoho manageengine - Cross-Site Scripting",
-      "description": "-",
+      "description": "Zoho manageengine is vulnerable to reflected cross-site scripting. This impacts  Zoho ManageEngine Netflow Analyzer before build 123137, Network Configuration Manager before build 123128, OpManager before build 123148, OpUtils before build 123161, and Firewall Analyzer before build 123147 via the parameter 'operation' to /servlet/com.adventnet.me.opmanager.servlet.FailOverHelperServlet.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-12998.yaml"
     }
   ],
@@ -11125,7 +11125,7 @@
     {
       "source": "nuclei",
       "name": "TOTOLINK A3002RU 1.0.8 - Information Disclosure",
-      "description": "-",
+      "description": "TOTOLINK A3002RU firmware version 1.0.8 contains a vulnerability in which an unauthenticated attacker can obtain the plaintext admin password by making a GET request for `password.htm`. This allows remote attackers to gain administrative access without credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-13317.yaml"
     }
   ],
@@ -11133,7 +11133,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiOS - Cross-Site Scripting",
-      "description": "-",
+      "description": "Fortinet FortiOS 6.0.0 to 6.0.4, 5.6.0 to 5.6.7, 5.4.0 to 5.4.12, 5.2 and below versions under SSL VPN web portal are vulnerable to cross-site scripting and allows attacker to execute unauthorized malicious script code via the error or message handling parameters.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-13380.yaml"
     }
   ],
@@ -11141,7 +11141,7 @@
     {
       "source": "nuclei",
       "name": "Synacor Zimbra Collaboration Suite Collaboration <8.8.11 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Synacor Zimbra Collaboration Suite Collaboration before 8.8.11 is vulnerable to cross-site scripting via the AJAX and html web clients.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14013.yaml"
     }
   ],
@@ -11149,7 +11149,7 @@
     {
       "source": "nuclei",
       "name": "Orange Forum 1.4.0 - Open Redirect",
-      "description": "-",
+      "description": "Orange Forum 1.4.0 contains an open redirect vulnerability in views/auth.go via the next parameter to /login or /signup. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14474.yaml"
     }
   ],
@@ -11157,7 +11157,7 @@
     {
       "source": "nuclei",
       "name": "Django - Open Redirect",
-      "description": "-",
+      "description": "Django 1.11.x before 1.11.15 and 2.0.x before 2.0.8 contains an open redirect vulnerability. If  django.middleware.common.CommonMiddleware and APPEND_SLASH settings are selected, and if the project has a URL pattern that accepts any path ending in a slash, an attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14574.yaml"
     }
   ],
@@ -11165,7 +11165,7 @@
     {
       "source": "nuclei",
       "name": "Loytec LGATE-902 <6.4.2 - Local File Inclusion",
-      "description": "-",
+      "description": "Loytec LGATE-902 versions prior to 6.4.2 suffers from a local file inclusion vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14916.yaml"
     }
   ],
@@ -11173,7 +11173,7 @@
     {
       "source": "nuclei",
       "name": "LOYTEC LGATE-902 6.3.2 - Local File Inclusion",
-      "description": "-",
+      "description": "LOYTEC LGATE-902 6.3.2 is susceptible to local file inclusion which could allow an attacker to manipulate path references and access files and directories (including critical system files) that are stored outside the root folder of the web application running on the device. This can be used to read and configuration files containing, e.g., usernames and passwords.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14918.yaml"
     }
   ],
@@ -11181,7 +11181,7 @@
     {
       "source": "nuclei",
       "name": "Polarisft Intellect Core Banking Software Version 9.7.1 - Open Redirect",
-      "description": "-",
+      "description": "Polarisft Intellect Core Banking Software Version 9.7.1 is susceptible to an open redirect issue in the Core and Portal modules via the /IntellectMain.jsp?IntellectSystem= URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-14931.yaml"
     }
   ],
@@ -11189,7 +11189,7 @@
     {
       "source": "nuclei",
       "name": "LG-Ericsson iPECS NMS 30M - Local File Inclusion",
-      "description": "-",
+      "description": "Ericsson-LG iPECS NMS 30M allows local file inclusion via ipecs-cm/download?filename=../ URIs.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15138.yaml"
     }
   ],
@@ -11197,7 +11197,7 @@
     {
       "source": "nuclei",
       "name": "D-Link Central WifiManager - Server-Side Request Forgery",
-      "description": "-",
+      "description": "D-Link Central WifiManager is susceptible to server-side request forgery. The MailConnect feature on D-Link Central WiFiManager CWM-100 1.03 r0098 devices is intended to check a connection to an SMTP server but actually allows outbound TCP to any port on any IP address, as demonstrated by an index.php/System/MailConnect/host/127.0.0.1/port/22/secure/ URI. This can undermine accountability of where scan or connections actually came from and or bypass the FW etc. This can be automated via script or using a browser.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-15517.yaml"
     }
   ],
@@ -11205,7 +11205,7 @@
     {
       "source": "nuclei",
       "name": "BIBLIOsoft BIBLIOpac 2008 - Cross-Site Scripting",
-      "description": "-",
+      "description": "BIBLIOsoft BIBLIOpac 2008 contains a cross-site scripting vulnerability via the db or action parameter to bin/wxis.exe/bibliopac/, which allows a remote attacker to inject arbitrary web script or HTML.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16139.yaml"
     }
   ],
@@ -11213,7 +11213,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Gift Voucher <4.1.8 - Blind SQL Injection",
-      "description": "-",
+      "description": "WordPress Gift Vouchers plugin before 4.1.8 contains a blind SQL injection vulnerability via the template_id parameter in a wp-admin/admin-ajax.php wpgv_doajax_front_template request. An attacker can possibly obtain sensitive information, modify data, and/or execute unauthorized administrative operations in the context of the affected site.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16159.yaml"
     }
   ],
@@ -11221,7 +11221,7 @@
     {
       "source": "nuclei",
       "name": "Nuxeo <10.3 - Remote Code Execution",
-      "description": "-",
+      "description": "Nuxeo prior to version 10.3 is susceptible to an unauthenticated remote code execution vulnerability via server-side template injection.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16341.yaml"
     }
   ],
@@ -11229,7 +11229,7 @@
     {
       "source": "nuclei",
       "name": "WordPress File Manager < 3.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress File Manager plugin before 3.0 is vulnerable to authenticated reflected cross-site scripting (XSS) via the lang parameter in the admin dashboard. The parameter is directly echoed into a JavaScript context without proper sanitization.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16363.yaml"
     }
   ],
@@ -11237,7 +11237,7 @@
     {
       "source": "nuclei",
       "name": "CirCarLife <4.3 - Improper Authentication",
-      "description": "-",
+      "description": "CirCarLife before 4.3 is susceptible to improper authentication. An internal installation path disclosure exists due to the lack of authentication for /html/repository.System. An attacker can obtain sensitive information, modify data, and/or execute unauthorized operations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16668.yaml"
     }
   ],
@@ -11245,7 +11245,7 @@
     {
       "source": "nuclei",
       "name": "CirCarLife <4.3 - Improper Authentication",
-      "description": "-",
+      "description": "CirCarLife before 4.3 is susceptible to improper authentication. A PLC status disclosure exists due to lack of authentication for /html/devstat.html. An attacker can obtain sensitive information, modify data, and/or execute unauthorized operations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16670.yaml"
     }
   ],
@@ -11253,7 +11253,7 @@
     {
       "source": "nuclei",
       "name": "CirCarLife <4.3 - Improper Authentication",
-      "description": "-",
+      "description": "CirCarLife before 4.3 is susceptible to improper authentication. A system software information disclosure exists due to lack of authentication for /html/device-id. An attacker can obtain sensitive information, modify data, and/or execute unauthorized operations.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16671.yaml"
     }
   ],
@@ -11261,7 +11261,7 @@
     {
       "source": "nuclei",
       "name": "NCBI ToolBox - Directory Traversal",
-      "description": "-",
+      "description": "NCBI ToolBox 2.0.7 through 2.2.26 legacy versions contain a path traversal vulnerability via viewcgi.cgi which may result in reading of arbitrary files (i.e., significant information disclosure) or file deletion via the nph-viewgif.cgi query string.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16716.yaml"
     }
   ],
@@ -11269,7 +11269,7 @@
     {
       "source": "nuclei",
       "name": "Eventum <3.4.0 - Open Redirect",
-      "description": "-",
+      "description": "Eventum before 3.4.0 contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16761.yaml"
     }
   ],
@@ -11277,7 +11277,7 @@
     {
       "source": "nuclei",
       "name": "Monstra CMS 3.0.4 - HTTP Header Injection",
-      "description": "-",
+      "description": "Monstra CMS 3.0.4 is susceptible to HTTP header injection in the plugins/captcha/crypt/cryptographp.php cfg parameter. An attacker can potentially supply invalid input and cause the server to allow redirects to attacker-controlled domains, perform cache poisoning, and/or allow improper access to virtual hosts not intended for this purpose. This is a related issue to CVE-2012-2943.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-16979.yaml"
     }
   ],
@@ -11285,7 +11285,7 @@
     {
       "source": "nuclei",
       "name": "Apache2 - Transfer-Encoding Chunked XSS",
-      "description": "-",
+      "description": "Apache2 PHP before 5.6.38, 7.0.x before 7.0.32, 7.1.x before 7.1.22, and 7.2.x before 7.2.10 contain a reflected cross-site scripting vulnerability caused by mishandling of chunked transfer-encoding requests in sapi/apache2handler/sapi_apache2.c. Attackers can execute malicious scripts via crafted requests by sending a specially crafted chunked request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17082.yaml"
     }
   ],
@@ -11293,7 +11293,7 @@
     {
       "source": "nuclei",
       "name": "Kibana - Local File Inclusion",
-      "description": "-",
+      "description": "Kibana versions before 6.4.3 and 5.6.13 contain an arbitrary file inclusion flaw in the Console plugin. An attacker with access to the Kibana Console API could send a request that will attempt to execute JavaScript which could possibly lead to an attacker executing arbitrary commands with permissions of the Kibana process on the host system.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17246.yaml"
     }
   ],
@@ -11301,7 +11301,7 @@
     {
       "source": "nuclei",
       "name": "Zoho ManageEngine OpManager - SQL Injection",
-      "description": "-",
+      "description": "Zoho ManageEngine OpManager before 12.3 Build 123196 does not require authentication for /oputilsServlet requests, as demonstrated by a /oputilsServlet?action=getAPIKey request that can be leveraged against Firewall Analyzer to add an admin user via /api/json/v2/admin/addUser or conduct a SQL Injection attack via the /api/json/device/setManaged name parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17283.yaml"
     }
   ],
@@ -11309,7 +11309,7 @@
     {
       "source": "nuclei",
       "name": "DotCMS < 5.0.2 - Open Redirect",
-      "description": "-",
+      "description": "dotCMS before 5.0.2 contains multiple open redirect vulnerabilities via the html/common/forward_js.jsp FORWARD_URL parameter or the html/portlet/ext/common/page_preview_popup.jsp hostname parameter. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-17422.yaml"
     }
   ],
@@ -11317,7 +11317,7 @@
     {
       "source": "nuclei",
       "name": "WordPress sitepress-multilingual-cms 3.6.3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin sitepress-multilingual-cms 3.6.3 is vulnerable to cross-site scripting in process_forms via any locale_file_name_ parameter (such as locale_file_name_en) in an authenticated theme-localization.php request to wp-admin/admin.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18069.yaml"
     }
   ],
@@ -11325,7 +11325,7 @@
     {
       "source": "nuclei",
       "name": "Kubernetes Dashboard <1.10.1 - Authentication Bypass",
-      "description": "-",
+      "description": "Kubernetes Dashboard before 1.10.1 allows attackers to bypass authentication and use Dashboard's Service Account for reading secrets within the cluster.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18264.yaml"
     }
   ],
@@ -11333,7 +11333,7 @@
     {
       "source": "nuclei",
       "name": "Planon <Live Build 41 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Planon before Live Build 41 is vulnerable to cross-site scripting.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18570.yaml"
     }
   ],
@@ -11341,7 +11341,7 @@
     {
       "source": "nuclei",
       "name": "DedeCMS 5.7 SP2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DedeCMS 5.7 SP2 is vulnerable to cross-site scripting via the function named GetPageList defined in the include/datalistcp.class.php file that is used to display the page numbers list at the bottom of some templates, as demonstrated by the PATH_INFO to /member/index.php, /member/pm.php, /member/content_list.php, or /plus/feedback.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18608.yaml"
     }
   ],
@@ -11349,7 +11349,7 @@
     {
       "source": "nuclei",
       "name": "ACME mini_httpd <1.30 - Local File Inclusion",
-      "description": "-",
+      "description": "ACME mini_httpd before 1.30 is vulnerable to local file inclusion.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18778.yaml"
     }
   ],
@@ -11357,7 +11357,7 @@
     {
       "source": "nuclei",
       "name": "TIBCO JasperReports Library - Directory Traversal",
-      "description": "-",
+      "description": "The default server implementation of TIBCO Software Inc.'s TIBCO JasperReports Library, TIBCO JasperReports Library Community Edition, TIBCO JasperReports Library for ActiveMatrix BPM, TIBCO JasperReports Server, TIBCO JasperReports Server Community Edition, TIBCO JasperReports Server for ActiveMatrix BPM, TIBCO Jaspersoft for AWS with Multi-Tenancy, and TIBCO Jaspersoft Reporting and Analytics for AWS contains a directory-traversal vulnerability that may theoretically allow web server users to access contents of the host system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18809.yaml"
     }
   ],
@@ -11365,7 +11365,7 @@
     {
       "source": "nuclei",
       "name": "Gogs (Go Git Service) 0.11.66 - Remote Code Execution",
-      "description": "-",
+      "description": "Gogs 0.11.66 allows remote code execution because it does not properly validate session IDs, as demonstrated by a \"..\" session-file forgery in the file session provider in file.go. This is related to session ID handling in the go-macaron/session code for Macaron.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-18925.yaml"
     }
   ],
@@ -11373,7 +11373,7 @@
     {
       "source": "nuclei",
       "name": "PHPCMS 2008 - Remote Code Execution via Template Injection",
-      "description": "-",
+      "description": "PHPCMS 2008 suffers from an unauthenticated RCE via template injection in type.php, where attacker-supplied content is written into a PHP template cache file, which is then executable.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19127.yaml"
     }
   ],
@@ -11381,7 +11381,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 is vulnerable to reflected cross-site Scripting via assets/edit/ip-address.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19137.yaml"
     }
   ],
@@ -11389,7 +11389,7 @@
     {
       "source": "nuclei",
       "name": "Zyxel VMG1312-B10D 5.13AAXA.8 - Local File Inclusion",
-      "description": "-",
+      "description": "Zyxel VMG1312-B10D 5.13AAXA.8 is susceptible to local file inclusion. A remote unauthenticated attacker can send a specially crafted URL request containing \"dot dot\" sequences (/../), conduct directory traversal attacks, and view arbitrary files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19326.yaml"
     }
   ],
@@ -11397,7 +11397,7 @@
     {
       "source": "nuclei",
       "name": "Wowza Streaming Engine Manager 4.7.4.01 - Directory Traversal",
-      "description": "-",
+      "description": "Wowza Streaming Engine 4.7.4.01 allows traversal of the directory structure and retrieval of a file via a remote, specifically crafted HTTP request to the REST API.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19365.yaml"
     }
   ],
@@ -11405,7 +11405,7 @@
     {
       "source": "nuclei",
       "name": "SolarWinds Database Performance Analyzer 11.1.457 - Cross-Site Scripting",
-      "description": "-",
+      "description": "SolarWinds Database Performance Analyzer 11.1.457 contains a reflected cross-site scripting vulnerability in its idcStateError component, where the page parameter is reflected into the HREF of the 'Try Again' Button on the page, aka a /iwc/idcStateError.iwc?page= URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19386.yaml"
     }
   ],
@@ -11413,7 +11413,7 @@
     {
       "source": "nuclei",
       "name": "PRTG Network Monitor - Local File Inclusion",
-      "description": "-",
+      "description": "PRTG Network Monitor before 18.2.40.1683 allows remote unauthenticated attackers to create users with read-write privileges (including administrator). A remote unauthenticated user can craft an HTTP request and override attributes of the 'include' directive in /public/login.htm and perform a Local File Inclusion attack, by including /api/addusers and executing it. By providing the 'id' and 'users' parameters, an unauthenticated attacker can create a user with read-write privileges (including administrator).\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19410.yaml"
     }
   ],
@@ -11421,7 +11421,7 @@
     {
       "source": "nuclei",
       "name": "Oracle Secure Global Desktop Administration Console 4.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Oracle Secure Global Desktop Administration Console 4.4 contains a reflected cross-site scripting vulnerability in helpwindow.jsp via all parameters, as demonstrated by the sgdadmin/faces/com_sun_web_ui/help/helpwindow.jsp windowTitle parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19439.yaml"
     }
   ],
@@ -11429,7 +11429,7 @@
     {
       "source": "nuclei",
       "name": "Tarantella Enterprise <3.11 - Local File Inclusion",
-      "description": "-",
+      "description": "Tarantella Enterprise versions prior to 3.11 are susceptible to local file inclusion.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19753.yaml"
     }
   ],
@@ -11437,7 +11437,7 @@
     {
       "source": "nuclei",
       "name": "DomainMOD 4.11.01 - Cross-Site Scripting",
-      "description": "-",
+      "description": "DomainMOD 4.11.01 contains a cross-site scripting vulnerability via /domain//admin/dw/add-server.php DisplayName parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-19892.yaml"
     }
   ],
@@ -11445,7 +11445,7 @@
     {
       "source": "nuclei",
       "name": "WordPress JSmol2WP <=1.07 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress JSmol2WP version 1.07 and earlier is vulnerable to cross-site scripting and allows remote attackers to inject arbitrary web script or HTML via the jsmol.php data parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20462.yaml"
     }
   ],
@@ -11453,7 +11453,7 @@
     {
       "source": "nuclei",
       "name": "WordPress JSmol2WP <=1.07 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress JSmol2WP plugin 1.07 is susceptible to local file inclusion via ../ directory traversal in query=php://filter/resource= in the jsmol.php query string. An attacker can possibly obtain sensitive information, modify data, and/or execute unauthorized administrative operations in the context of the affected site. This can also be exploited for server-side request forgery.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20463.yaml"
     }
   ],
@@ -11461,7 +11461,7 @@
     {
       "source": "nuclei",
       "name": "Imcat 4.4 - Phpinfo Configuration",
-      "description": "-",
+      "description": "Imcat 4.4 allows remote attackers to read phpinfo output via the root/tools/adbug/binfo.php?phpinfo1 URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20608.yaml"
     }
   ],
@@ -11469,7 +11469,7 @@
     {
       "source": "nuclei",
       "name": "Atlassian Jira WallboardServlet <7.13.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "The WallboardServlet resource in Jira before version 7.13.1 allows remote attackers to inject arbitrary HTML or JavaScript via a cross-site scripting vulnerability in the cyclePeriod parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20824.yaml"
     }
   ],
@@ -11477,7 +11477,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Payeezy Pay <=2.97 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Plugin WP Payeezy Pay is prone to a local file inclusion vulnerability because it fails to sufficiently verify user-supplied input. Exploiting this issue may allow an attacker to obtain sensitive information that could aid in further attacks. WordPress Plugin WP Payeezy Pay version 2.97 is vulnerable; prior versions are also affected.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-20985.yaml"
     }
   ],
@@ -11485,7 +11485,7 @@
     {
       "source": "nuclei",
       "name": "Oracle WebLogic Server - Remote Code Execution",
-      "description": "-",
+      "description": "The Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: WLS - Web Services) is susceptible to a remote code execution vulnerability that is easily exploitable and could allow unauthenticated attackers with network access via HTTP to compromise the server. Supported versions that are affected are 12.1.3.0, 12.2.1.2 and 12.2.1.3.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-2894.yaml"
     }
   ],
@@ -11493,7 +11493,7 @@
     {
       "source": "nuclei",
       "name": "Oracle E-Business Suite - Blind SSRF",
-      "description": "-",
+      "description": "Oracle E-Business Suite, Application Management Pack component (User Monitoring subcomponent), is susceptible to blind server-side request forgery. An attacker with network access via HTTP can gain read access to a subset of data, connect to internal services like HTTP-enabled databases, or perform post requests towards internal services which are not intended to be exposed. Affected supported versions are 12.1.3, 12.2.3, 12.2.4, 12.2.5, 12.2.6, and 12.2.7.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-3167.yaml"
     }
   ],
@@ -11501,7 +11501,7 @@
     {
       "source": "nuclei",
       "name": "Oracle Fusion Middleware WebCenter Sites 11.1.1.8.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "The Oracle WebCenter Sites 11.1.1.8.0 component of Oracle Fusion Middleware is impacted by easily exploitable cross-site scripting vulnerabilities that allow high privileged attackers with network access via HTTP to compromise Oracle WebCenter Sites.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-3238.yaml"
     }
   ],
@@ -11509,7 +11509,7 @@
     {
       "source": "nuclei",
       "name": "node-srv - Local File Inclusion",
-      "description": "-",
+      "description": "node-srv is vulnerable to local file inclusion due to lack of url validation, which allows a malicious user to read content of any file with known path.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-3714.yaml"
     }
   ],
@@ -11517,7 +11517,7 @@
     {
       "source": "nuclei",
       "name": "Ruby On Rails - Local File Inclusion",
-      "description": "-",
+      "description": "Ruby On Rails is vulnerable to local file inclusion caused by secondary decoding in Sprockets 3.7.1 and lower versions. An attacker can use %252e%252e/ to access the root directory and read or execute any file on the target server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-3760.yaml"
     }
   ],
@@ -11525,7 +11525,7 @@
     {
       "source": "nuclei",
       "name": "Atlassian Jira Confluence - Cross-Site Scripting",
-      "description": "-",
+      "description": "Atlassian Jira Confluence before version 7.6.6, from version 7.7.0 before version 7.7.4, from version 7.8.0 before version 7.8.4, and from version 7.9.0 before version 7.9.2, allows remote attackers to inject arbitrary HTML or JavaScript via a cross-site scripting vulnerability in the error message of custom fields when an invalid value is specified.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-5230.yaml"
     }
   ],
@@ -11533,7 +11533,7 @@
     {
       "source": "nuclei",
       "name": "Grav CMS <1.3.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Grav CMS before 1.3.0 is vulnerable to cross-site scripting via system/src/Grav/Common/Twig/Twig.php and allows remote attackers to inject arbitrary web script or HTML via the PATH_INFO to admin/tools.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-5233.yaml"
     }
   ],
@@ -11541,7 +11541,7 @@
     {
       "source": "nuclei",
       "name": "WordPress SagePay Server Gateway for WooCommerce <1.0.9 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress SagePay Server Gateway for WooCommerce before 1.0.9 is vulnerable to cross-site scripting via the includes/pages/redirect.php page parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-5316.yaml"
     }
   ],
@@ -11549,7 +11549,7 @@
     {
       "source": "nuclei",
       "name": "Zeit Next.js < 4.2.3 - Local File Inclusion",
-      "description": "-",
+      "description": "Zeit Next.js before 4.2.3 is susceptible to local file inclusion under the /_next request namespace. An attacker can obtain sensitive information, modify data, and/or execute unauthorized administrative operations in the context of the affected site.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6184.yaml"
     }
   ],
@@ -11557,7 +11557,7 @@
     {
       "source": "nuclei",
       "name": "vBulletin - Open Redirect",
-      "description": "-",
+      "description": "vBulletin 3.x.x and 4.2.x through 4.2.5 contains an open redirect vulnerability via the redirector.php URL parameter. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6200.yaml"
     }
   ],
@@ -11565,7 +11565,7 @@
     {
       "source": "nuclei",
       "name": "D-Link - Unauthenticated Remote Code Execution",
-      "description": "-",
+      "description": "OS command injection vulnerability in soap.cgi (soapcgi_main in cgibin) in D-Link DIR-880L DIR-880L_REVA_FIRMWARE_PATCH_1.08B04 and previous versions, DIR-868L DIR868LA1_FW112b04 and previous versions, DIR-65L DIR-865L_REVA_FIRMWARE_PATCH_1.08.B01 and previous versions, and DIR-860L DIR860LA1_FW110b04 and previous versions allows remote attackers to execute arbitrary OS commands via the service parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6530.yaml"
     }
   ],
@@ -11573,7 +11573,7 @@
     {
       "source": "nuclei",
       "name": "Zimbra Collaboration Suite - Cross-site Scripting",
-      "description": "-",
+      "description": "Cross-site scripting (XSS) vulnerability in the ZmMailMsgView.getAttachmentLinkHtml function in Zimbra Collaboration Suite (ZCS) before 8.7 Patch 1 and 8.8.x before 8.8.7 might allow remote attackers to inject arbitrary web script or HTML via a Content-Location header in an email attachment.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6882.yaml"
     }
   ],
@@ -11581,7 +11581,7 @@
     {
       "source": "nuclei",
       "name": "DedeCMS 5.7 - Path Disclosure",
-      "description": "-",
+      "description": "DedeCMS 5.7 allows remote attackers to discover the full path via a direct request for include/downmix.inc.php or inc/inc_archives_functions.php",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-6910.yaml"
     }
   ],
@@ -11589,7 +11589,7 @@
     {
       "source": "nuclei",
       "name": "osTicket < 1.10.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Cross-site scripting (XSS) vulnerability in /ajax.php/form/help-topic in Enhancesoft osTicket before 1.10.2 allows remote attackers to inject arbitrary web script or HTML via the \"message\" parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7192.yaml"
     }
   ],
@@ -11597,7 +11597,7 @@
     {
       "source": "nuclei",
       "name": "osTicket < 1.10.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Cross-site scripting (XSS) vulnerability in /scp/directory.php in Enhancesoft osTicket before 1.10.2 allows remote attackers to inject arbitrary web script or HTML via the \"order\" parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7193.yaml"
     }
   ],
@@ -11605,7 +11605,7 @@
     {
       "source": "nuclei",
       "name": "osTicket < 1.10.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Cross-site scripting (XSS) vulnerability in /scp/index.php in Enhancesoft osTicket before 1.10.2 allows remote attackers to inject arbitrary web script or HTML via the \"sort\" parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7196.yaml"
     }
   ],
@@ -11613,7 +11613,7 @@
     {
       "source": "nuclei",
       "name": "TITool PrintMonitor - Blind SQL Injection",
-      "description": "-",
+      "description": "The username parameter of the TITool PrintMonitor solution during the login request is vulnerable to and/or time-based blind SQLi.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7282.yaml"
     }
   ],
@@ -11621,7 +11621,7 @@
     {
       "source": "nuclei",
       "name": "AxxonSoft Axxon Next - Local File Inclusion",
-      "description": "-",
+      "description": "AxxonSoft Axxon Next suffers from a local file inclusion vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7467.yaml"
     }
   ],
@@ -11629,7 +11629,7 @@
     {
       "source": "nuclei",
       "name": "CouchCMS <= 2.0 - Path Disclosure",
-      "description": "-",
+      "description": "CouchCMS <= 2.0 allows remote attackers to discover the full path via a direct request to includes/mysql2i/mysql2i.func.php or addons/phpmailer/phpmailer.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7662.yaml"
     }
   ],
@@ -11637,7 +11637,7 @@
     {
       "source": "nuclei",
       "name": "DedeCMS 5.7SP2 - Cross-Site Request Forgery/Remote Code Execution",
-      "description": "-",
+      "description": "DedeCMS 5.7SP2 is susceptible to cross-site request forgery with a corresponding impact of arbitrary code execution because the partcode parameter in a tag_test_action.php request can specify a runphp field in conjunction with PHP code.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7700.yaml"
     }
   ],
@@ -11645,7 +11645,7 @@
     {
       "source": "nuclei",
       "name": "Schneider Electric U.motion Builder - SQL Injection",
-      "description": "-",
+      "description": "The vulnerability exists within processing of track_import_export.php in Schneider Electric U.motion Builder software versions prior to v1.3.4. The underlying SQLite database query is subject to SQL injection on the object_id input parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-7765.yaml"
     }
   ],
@@ -11653,7 +11653,7 @@
     {
       "source": "nuclei",
       "name": "Apache ActiveMQ <=5.15.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Apache ActiveMQ versions 5.0.0 to 5.15.5 are vulnerable to cross-site scripting via the web based administration console on the queue.jsp page. The root cause of this issue is improper data filtering of the QueueFilter parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8006.yaml"
     }
   ],
@@ -11661,7 +11661,7 @@
     {
       "source": "nuclei",
       "name": "Apache Spark UI - Cross-Site Scripting",
-      "description": "-",
+      "description": "Apache Spark UI before 2.3.2 is vulnerable to XSS via unsanitized query string parameters in the /jobs/ endpoint.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8024.yaml"
     }
   ],
@@ -11669,7 +11669,7 @@
     {
       "source": "nuclei",
       "name": "Apache OFBiz - XML External Entity Injection",
-      "description": "-",
+      "description": "In Apache OFBiz 16.11.01 to 16.11.04, the OFBiz HTTP engine (org.apache.ofbiz.service.engine.HttpEngine.java) handles requests for HTTP services via the /webtools/control/httpService endpoint. Both POST and GET requests to the httpService endpoint may contain three parameters: serviceName, serviceMode, and serviceContext. The exploitation occurs by having DOCTYPEs pointing to external references that trigger a payload that returns secret information from the host.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8033.yaml"
     }
   ],
@@ -11677,7 +11677,7 @@
     {
       "source": "nuclei",
       "name": "AppWeb - Authentication Bypass",
-      "description": "-",
+      "description": "The Embedthis HTTP library, and Appweb versions before 7.0.3, have a logic flaw related to the authCondition function in http/httpLib.c. With a forged HTTP request, it is possible to bypass authentication for the form and digest login types.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8715.yaml"
     }
   ],
@@ -11685,7 +11685,7 @@
     {
       "source": "nuclei",
       "name": "Mirasys DVMS Workstation <=5.12.6 - Local File Inclusion",
-      "description": "-",
+      "description": "Mirasys DVMS Workstation versions 5.12.6 and prior suffer from local file inclusion vulnerabilities.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8727.yaml"
     }
   ],
@@ -11693,7 +11693,7 @@
     {
       "source": "nuclei",
       "name": "PrestaShop Responsive Mega Menu Module - Remote Code Execution",
-      "description": "-",
+      "description": "The 'Responsive Mega Menu' module for PrestaShop is prone to a remote code execution and SQL injection vulnerability. modules/bamegamenu/ajax_phpcode.php in the Responsive Mega Menu (Horizontal+Vertical+Dropdown) Pro module 1.0.32 for PrestaShop allows remote attackers to execute an SQL injection or remote code execution through function calls in the code parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-8823.yaml"
     }
   ],
@@ -11701,7 +11701,7 @@
     {
       "source": "nuclei",
       "name": "PrismaWEB - Credentials Disclosure",
-      "description": "-",
+      "description": "PrismaWEB is susceptible to credential disclosure. The vulnerability exists due to the disclosure of hard-coded credentials allowing an attacker to effectively bypass authentication of PrismaWEB with administrator privileges. The credentials can be disclosed by simply navigating to the login_par.js JavaScript page that holds the username and password for the management interface that are being used via the Login() function in /scripts/functions_cookie.js script.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9161.yaml"
     }
   ],
@@ -11709,7 +11709,7 @@
     {
       "source": "nuclei",
       "name": "Etherpad Lite <1.6.4 - Admin Authentication Bypass",
-      "description": "-",
+      "description": "Etherpad Lite before 1.6.4 is exploitable for admin access.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2018/CVE-2018-9845.yaml"
     }
   ],
@@ -11717,7 +11717,7 @@
     {
       "source": "nuclei",
       "name": "Oracle WebLogic Server - Remote Code Execution",
-      "description": "-",
+      "description": "The Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: Web Services) versions 10.3.6.0, 12.1.3.0, 12.2.1.2 and 12.2.1.3 contain an easily exploitable vulnerability that allows unauthenticated attackers with network access via T3 to compromise Oracle WebLogic Server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2018/CVE-2018-2893.yaml"
     }
   ],
@@ -11725,7 +11725,7 @@
     {
       "source": "nuclei",
       "name": "Apache HTTP Server - NULL Pointer Dereference",
-      "description": "-",
+      "description": "By specially crafting HTTP requests, the mod_md challenge handler would dereference a NULL pointer and cause the child process to segfault. This could be used to DoS the server. Fixed in Apache HTTP Server 2.4.34 (Affected 2.4.33)\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2018/CVE-2018-8011.yaml"
     }
   ]

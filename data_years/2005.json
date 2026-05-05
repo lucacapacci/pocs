@@ -5895,7 +5895,7 @@
     {
       "source": "nuclei",
       "name": "Cofax <=2.0RC3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Cofax 2.0 RC3 and earlier contains a cross-site scripting vulnerability in search.htm which allows remote attackers to inject arbitrary web script or HTML via the searchstring parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2005/CVE-2005-4385.yaml"
     }
   ],
@@ -10285,7 +10285,7 @@
     {
       "source": "nuclei",
       "name": "SAP Web Application Server 6.x/7.0 - Open Redirect",
-      "description": "-",
+      "description": "frameset.htm in the BSP runtime in SAP Web Application Server (WAS) 6.10 through 7.00 allows remote attackers to log users out and redirect them to arbitrary web sites via a close command in the sap-sessioncmd parameter and a URL in the sap-exiturl parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2005/CVE-2005-3634.yaml"
     }
   ],
@@ -10645,7 +10645,7 @@
     {
       "source": "nuclei",
       "name": "SquirrelMail Address Add 1.4.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "SquirrelMail Address Add 1.4.2 plugin contains a cross-site scripting vulnerability. It fails to properly sanitize user-supplied input, thus allowing an attacker to execute arbitrary script in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2005/CVE-2005-3128.yaml"
     }
   ],
@@ -13319,7 +13319,7 @@
     {
       "source": "nuclei",
       "name": "Lotus Domino R5 and R6 WebMail - Information Disclosure",
-      "description": "-",
+      "description": "Lotus Domino R5 and R6 WebMail with 'Generate HTML for all fields' enabled (which is by default) allows remote attackers to read the HTML source to obtain sensitive information including the password hash in the HTTPPassword field, the password change date in the HTTPPasswordChangeDate field, and the client Lotus Domino release in the ClntBld field (a different vulnerability than CVE-2005-2696).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2005/CVE-2005-2428.yaml"
     }
   ],
@@ -13677,7 +13677,7 @@
     {
       "source": "nuclei",
       "name": "Horde Groupware Unauthenticated Admin Access",
-      "description": "-",
+      "description": "Horde Groupware contains an administrative account with a blank password, which allows remote attackers to gain access.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2005/CVE-2005-3344.yaml"
     }
   ],
@@ -13685,7 +13685,7 @@
     {
       "source": "nuclei",
       "name": "FileZilla Server < 0.9.6 - DoS via MS-DOS Device Names",
-      "description": "-",
+      "description": "FileZilla Server versions prior to 0.9.6 are vulnerable to denial of service when processing filenames containing MS-DOS device names such as CON, NUL, COM1, LPT1, and others. Remote attackers can cause the server to crash or become unresponsive by requesting files with these reserved device names.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2005/CVE-2005-0850.yaml"
     }
   ],
@@ -13693,7 +13693,7 @@
     {
       "source": "nuclei",
       "name": "FileZilla Server < 0.9.6 - DoS via MODE Z Infinite Loop",
-      "description": "-",
+      "description": "FileZilla Server versions prior to 0.9.6 are vulnerable to denial of service when using MODE Z (zlib compression). Remote attackers can cause an infinite loop via certain file uploads or directory listings, leading to server unresponsiveness.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2005/CVE-2005-0851.yaml"
     }
   ]

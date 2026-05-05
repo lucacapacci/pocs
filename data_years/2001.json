@@ -47,7 +47,7 @@
     {
       "source": "nuclei",
       "name": "Cisco IOS HTTP Configuration - Authentication Bypass",
-      "description": "-",
+      "description": "HTTP server for Cisco IOS 11.3 to 12.2 allows attackers to bypass authentication and execute arbitrary commands, when local authorization is being used, by specifying a high access level in the URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2001/CVE-2001-0537.yaml"
     }
   ],
@@ -4289,7 +4289,7 @@
     {
       "source": "nuclei",
       "name": "Deprecated SSHv1 Protocol Detection",
-      "description": "-",
+      "description": "SSHv1 is deprecated and has known cryptographic issues.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2001/CVE-2001-1473.yaml"
     }
   ]

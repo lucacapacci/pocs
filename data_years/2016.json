@@ -105,7 +105,7 @@
     {
       "source": "nuclei",
       "name": "ZOHO WebNMS Framework <5.2 SP1 - Local File Inclusion",
-      "description": "-",
+      "description": "ZOHO WebNMS Framework before version 5.2 SP1 is vulnerable local file inclusion which allows an attacker to read arbitrary files via a .. (dot dot) in the fileName parameter to servlets/FetchFile.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-6601.yaml"
     }
   ],
@@ -221,7 +221,7 @@
     {
       "source": "nuclei",
       "name": "Zabbix - SQL Injection",
-      "description": "-",
+      "description": "Zabbix before 2.2.14 and 3.0 before 3.0.4 allows remote attackers to execute arbitrary SQL commands via the toggle_ids array parameter in latest.php and perform SQL injection attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10134.yaml"
     }
   ],
@@ -601,7 +601,7 @@
     {
       "source": "nuclei",
       "name": "NETGEAR Routers - Remote Code Execution",
-      "description": "-",
+      "description": "NETGEAR routers R6250 before 1.0.4.6.Beta, R6400 before 1.0.1.18.Beta, R6700 before 1.0.1.14.Beta, R6900, R7000 before 1.0.7.6.Beta, R7100LG before 1.0.0.28.Beta, R7300DST before 1.0.0.46.Beta, R7900 before 1.0.1.8.Beta, R8000 before 1.0.3.26.Beta, D6220, D6400, D7000, and possibly others allow remote attackers to execute arbitrary commands via shell metacharacters in the path info to cgi-bin/.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-6277.yaml"
     }
   ],
@@ -627,7 +627,7 @@
     {
       "source": "nuclei",
       "name": "NETGEAR WNAP320 Access Point Firmware - Remote Command Injection",
-      "description": "-",
+      "description": "NETGEAR WNAP320 Access Point Firmware version 2.0.3 could allow an unauthenticated, remote attacker to perform command injection attacks against an affected device.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1555.yaml"
     }
   ],
@@ -681,7 +681,7 @@
     {
       "source": "nuclei",
       "name": "NUUO NVR camera `debugging_center_utils_.php` - Command Execution",
-      "description": "-",
+      "description": "__debugging_center_utils___.php in NUUO NVRmini 2 1.7.5 through 3.0.0, NUUO NVRsolo 1.7.5 through 3.0.0, and NETGEAR ReadyNAS Surveillance 1.1.1 through 1.4.1 allows remote attackers to execute arbitrary PHP code via the log parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-5674.yaml"
     }
   ],
@@ -711,7 +711,7 @@
     {
       "source": "nuclei",
       "name": "Western Digital MyCloud NAS - Command Injection",
-      "description": "-",
+      "description": "Unauthenticated Remote Command injection as root occurs in the Western Digital MyCloud NAS 2.11.142 /web/google_analytics.php URL via a modified arg parameter in the POST data.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10108.yaml"
     }
   ],
@@ -853,7 +853,7 @@
     {
       "source": "nuclei",
       "name": "Jenkins CLI - HTTP Java Deserialization",
-      "description": "-",
+      "description": "The remoting module in Jenkins before 2.32 and LTS before 2.19.3 allows remote attackers to execute arbitrary code via a crafted serialized Java object, which triggers an LDAP query to a third-party server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-9299.yaml"
     }
   ],
@@ -931,7 +931,7 @@
     {
       "source": "nuclei",
       "name": "Apache ActiveMQ Fileserver - Arbitrary File Write",
-      "description": "-",
+      "description": "Apache ActiveMQ 5.x before 5.14.0 allows remote attackers to upload and execute arbitrary files via an HTTP PUT followed by an HTTP MOVE request via the Fileserver web application.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-3088.yaml"
     }
   ],
@@ -1127,7 +1127,7 @@
     {
       "source": "nuclei",
       "name": "WordPress PHPMailer < 5.2.18 - Remote Code Execution",
-      "description": "-",
+      "description": "WordPress PHPMailer before 5.2.18 might allow remote attackers to pass extra parameters to the mail command and consequently execute arbitrary code via a \" (backslash double quote) in a crafted Sender property in isMail transport.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10033.yaml"
     }
   ],
@@ -1215,7 +1215,7 @@
     {
       "source": "nuclei",
       "name": "Apache Shiro 1.2.4 Cookie RememberME - Deserial Remote Code Execution Vulnerability",
-      "description": "-",
+      "description": "Apache Shiro before 1.2.5, when a cipher key has not been configured for the \"remember me\" feature, allows remote attackers to execute arbitrary code or bypass intended access restrictions via an unspecified request parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-4437.yaml"
     }
   ],
@@ -1235,7 +1235,7 @@
     {
       "source": "nuclei",
       "name": "Apache S2-032 Struts - Remote Code Execution",
-      "description": "-",
+      "description": "Apache Struts 2.3.19 to 2.3.20.2, 2.3.21 to 2.3.24.1, and 2.3.25 to 2.3.28, when dynamic method invocation is enabled, allows remote attackers to execute arbitrary code via method: prefix (related to chained expressions).\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-3081.yaml"
     }
   ],
@@ -1269,7 +1269,7 @@
     {
       "source": "nuclei",
       "name": "Trend Micro Threat Discovery Appliance 2.6.1062r1 - Authentication Bypass",
-      "description": "-",
+      "description": "Trend Micro Threat Discovery Appliance 2.6.1062r1 is vulnerable to a  directory traversal vulnerability when processing a session_id cookie, which allows a remote, unauthenticated attacker to delete arbitrary files as root. This can be used to bypass authentication or cause a DoS.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-7552.yaml"
     }
   ],
@@ -1387,7 +1387,7 @@
     {
       "source": "nuclei",
       "name": "Oracle WebLogic Server Java Object Deserialization - Remote Code Execution",
-      "description": "-",
+      "description": "Unspecified vulnerability in the Oracle WebLogic Server component in Oracle Fusion Middleware 10.3.6.0, 12.1.3.0, and 12.2.1.0 allows remote attackers to affect confidentiality, integrity, and availability via vectors related to WLS Core Components, a different vulnerability than CVE-2016-3586.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2016/CVE-2016-3510.yaml"
     }
   ],
@@ -1503,7 +1503,7 @@
     {
       "source": "nuclei",
       "name": "WP Mobile Detector <= 3.5 - Unrestricted File Upload",
-      "description": "-",
+      "description": "WP Mobile Detector plugin for WordPress <= 3.5 contains an unrestricted file upload vulnerability caused by missing file type validation in resize.php, letting unauthenticated attackers upload arbitrary files, potentially leading to remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-15043.yaml"
     }
   ],
@@ -1737,7 +1737,7 @@
     {
       "source": "nuclei",
       "name": "HP Data Protector - Arbitrary Command Execution",
-      "description": "-",
+      "description": "HPE Data Protector before 7.03_108, 8.x before 8.15, and 9.x before 9.06 allow remote attackers to execute arbitrary code via unspecified vectors related to lack of authentication. This vulnerability exists because of an incomplete fix for CVE-2014-2623.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2016/CVE-2016-2004.yaml"
     }
   ],
@@ -2343,7 +2343,7 @@
     {
       "source": "nuclei",
       "name": "SAP xMII 15.0 for SAP NetWeaver 7.4 - Local File Inclusion",
-      "description": "-",
+      "description": "SAP xMII 15.0 for SAP NetWeaver 7.4 is susceptible to a local file inclusion vulnerability in the GetFileList function. This can allow remote attackers to read arbitrary files via a .. (dot dot) in the path parameter to /Catalog, aka SAP Security Note 2230978.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-2389.yaml"
     }
   ],
@@ -4513,7 +4513,7 @@
     {
       "source": "nuclei",
       "name": "vBulletin <= 4.2.3 - SQL Injection",
-      "description": "-",
+      "description": "vBulletin versions 3.6.0 through 4.2.3 are vulnerable to an SQL injection vulnerability in the vBulletin core forumrunner addon. The vulnerability allows an attacker to execute arbitrary SQL queries and potentially access sensitive information from the database.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-6195.yaml"
     }
   ],
@@ -5753,7 +5753,7 @@
     {
       "source": "nuclei",
       "name": "Aruba Airwave <8.2.3.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Aruba Airwave before version 8.2.3.1 is vulnerable to reflected cross-site scripting.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-8527.yaml"
     }
   ],
@@ -5785,7 +5785,7 @@
     {
       "source": "nuclei",
       "name": "Adobe AEM Dispatcher <4.15 - Rules Bypass",
-      "description": "-",
+      "description": "Dispatcher before 4.1.5 in Adobe Experience Manager 5.6.1, 6.0.0, and 6.1.0 does not properly implement a URL filter, which allows remote attackers to bypass dispatcher rules via unspecified vectors.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-0957.yaml"
     }
   ],
@@ -5793,7 +5793,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Admin Font Editor <=1.8 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Admin Font Editor 1.8 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000126.yaml"
     }
   ],
@@ -5801,7 +5801,7 @@
     {
       "source": "nuclei",
       "name": "WordPress AJAX Random Post <=2.00 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress AJAX Random Post 2.00 is vulnerable to reflected cross-site scripting.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000127.yaml"
     }
   ],
@@ -5809,7 +5809,7 @@
     {
       "source": "nuclei",
       "name": "WordPress anti-plagiarism <=3.60 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress anti-plagiarism 3.6.0 and prior are vulnerable to reflected cross-site scripting.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000128.yaml"
     }
   ],
@@ -5817,7 +5817,7 @@
     {
       "source": "nuclei",
       "name": "WordPress defa-online-image-protector <=3.3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress defa-online-image-protector 3.3 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000129.yaml"
     }
   ],
@@ -5825,7 +5825,7 @@
     {
       "source": "nuclei",
       "name": "WordPress e-search <=1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Wordpress plugin e-search 1.0 and before contains a cross-site scripting vulnerability via date_select.php which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000130.yaml"
     }
   ],
@@ -5833,7 +5833,7 @@
     {
       "source": "nuclei",
       "name": "WordPress e-search <=1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress e-search 1.0 and before contains a reflected cross-site scripting vulnerability via title_az.php which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000131.yaml"
     }
   ],
@@ -5841,7 +5841,7 @@
     {
       "source": "nuclei",
       "name": "WordPress enhanced-tooltipglossary 3.2.8 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress enhanced-tooltipglossary 3.2.8 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000132.yaml"
     }
   ],
@@ -5849,7 +5849,7 @@
     {
       "source": "nuclei",
       "name": "WordPress forget-about-shortcode-buttons 1.1.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Wordpress plugin forget-about-shortcode-buttons 1.1.1 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000133.yaml"
     }
   ],
@@ -5857,7 +5857,7 @@
     {
       "source": "nuclei",
       "name": "WordPress HDW Video Gallery <=1.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress HDW Video Gallery 1.2 and before contains a cross-site scripting vulnerability via playlist.php which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000134.yaml"
     }
   ],
@@ -5865,7 +5865,7 @@
     {
       "source": "nuclei",
       "name": "WordPress HDW Video Gallery <=1.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress HDW Video Gallery 1.2 and before contains a cross-site scripting vulnerability via mychannel.php which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000135.yaml"
     }
   ],
@@ -5873,7 +5873,7 @@
     {
       "source": "nuclei",
       "name": "WordPress heat-trackr 1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress heat-trackr 1.0 contains a cross-site scripting vulnerability via heat-trackr_abtest_add.php which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000136.yaml"
     }
   ],
@@ -5881,7 +5881,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Hero Maps Pro 2.1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Hero Maps Pro 2.1.0 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000137.yaml"
     }
   ],
@@ -5889,7 +5889,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Admin Font Editor <=1.8 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Admin Font Editor plugin indexisto 1.8 and before contains a cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000138.yaml"
     }
   ],
@@ -5897,7 +5897,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Infusionsoft Gravity Forms <=1.5.11 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin Infusionsoft 1.5.11 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000139.yaml"
     }
   ],
@@ -5905,7 +5905,7 @@
     {
       "source": "nuclei",
       "name": "WordPress New Year Firework <=1.1.9 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress New Year Firework 1.1.9 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000140.yaml"
     }
   ],
@@ -5913,7 +5913,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Page Layout builder v1.9.3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin Page-layout-builder v1.9.3 contains a cross-site scripting vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000141.yaml"
     }
   ],
@@ -5921,7 +5921,7 @@
     {
       "source": "nuclei",
       "name": "WordPress MW Font Changer <=4.2.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress MW Font Changer plugin 4.2.5 and before contains a cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000142.yaml"
     }
   ],
@@ -5929,7 +5929,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Photoxhibit 2.1.8 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Photoxhibit 2.1.8 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000143.yaml"
     }
   ],
@@ -5937,7 +5937,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Pondol Form to Mail <=1.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Pondol Form to Mail 1.1 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000146.yaml"
     }
   ],
@@ -5945,7 +5945,7 @@
     {
       "source": "nuclei",
       "name": "WordPress S3 Video <=0.983 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress S3 Video and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000148.yaml"
     }
   ],
@@ -5953,7 +5953,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Simpel Reserveren <=3.5.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin Simpel Reserveren 3.5.2 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000149.yaml"
     }
   ],
@@ -5961,7 +5961,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Tidio-form <=1.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress tidio-form1.0 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000152.yaml"
     }
   ],
@@ -5969,7 +5969,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Tidio Gallery <=1.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin tidio-gallery v1.1 contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000153.yaml"
     }
   ],
@@ -5977,7 +5977,7 @@
     {
       "source": "nuclei",
       "name": "WordPress WHIZZ <=1.0.7 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress plugin WHIZZ 1.07 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000154.yaml"
     }
   ],
@@ -5985,7 +5985,7 @@
     {
       "source": "nuclei",
       "name": "WordPress WPSOLR <=8.6 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress WPSOLR 8.6 and before contains a reflected cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-1000155.yaml"
     }
   ],
@@ -5993,7 +5993,7 @@
     {
       "source": "nuclei",
       "name": "Opsview Monitor Pro - Local File Inclusion",
-      "description": "-",
+      "description": "Opsview Monitor Pro prior to 5.1.0.162300841, prior to 5.0.2.27475, prior to 4.6.4.162391051, and 4.5.x without a certain 2016 security patch is vulnerable to unauthenticated local file inclusion and can be exploited by issuing a specially crafted HTTP GET request utilizing a simple bypass.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10367.yaml"
     }
   ],
@@ -6001,7 +6001,7 @@
     {
       "source": "nuclei",
       "name": "Opsview Monitor Pro - Open Redirect",
-      "description": "-",
+      "description": "Opsview Monitor Pro before 5.1.0.162300841, before 5.0.2.27475, before 4.6.4.162391051, and 4.5.x without a certain 2016 security patch contains an open redirect vulnerability. An attacker can redirect users to arbitrary web sites and conduct phishing attacks via the back parameter to the login URI.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10368.yaml"
     }
   ],
@@ -6009,7 +6009,7 @@
     {
       "source": "nuclei",
       "name": "Wordpress Zedna eBook download <1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "Wordpress Zedna eBook download prior to version 1.2 was affected by a filedownload.php local file inclusion vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10924.yaml"
     }
   ],
@@ -6017,7 +6017,7 @@
     {
       "source": "nuclei",
       "name": "WordPress zm-gallery plugin 1.0 SQL Injection",
-      "description": "-",
+      "description": "zm-gallery plugin 1.0 for WordPress is susceptible to SQL injection via the order parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10940.yaml"
     }
   ],
@@ -6025,7 +6025,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Mail Masta 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Mail Masta 1.0 is susceptible to local file inclusion in count_of_send.php and csvexport.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10956.yaml"
     }
   ],
@@ -6033,7 +6033,7 @@
     {
       "source": "nuclei",
       "name": "WordPress wSecure Lite < 2.4 - Remote Code Execution",
-      "description": "-",
+      "description": "WordPress wsecure plugin before 2.4 is susceptible to remote code execution via shell metacharacters in the wsecure-config.php publish parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10960.yaml"
     }
   ],
@@ -6041,7 +6041,7 @@
     {
       "source": "nuclei",
       "name": "Newspaper Theme 6.4\u20136.7.1 - Privilege Escalation",
-      "description": "-",
+      "description": "Newspaper Theme versions 6.4 to 6.7.1 for WordPress lacked proper options access control through td_ajax_update_panel, which led to a Privilege Escalation vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10972.yaml"
     }
   ],
@@ -6049,7 +6049,7 @@
     {
       "source": "nuclei",
       "name": "Brafton WordPress Plugin < 3.4.8 - Cross-Site Scripting",
-      "description": "-",
+      "description": "The Brafton plugin before 3.4.8 for WordPress has XSS via the wp-admin/admin.php?page=BraftonArticleLoader tab parameter to BraftonAdminPage.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10973.yaml"
     }
   ],
@@ -6057,7 +6057,7 @@
     {
       "source": "nuclei",
       "name": "Safe Editor Plugin < 1.2 - CSS/JS-injection",
-      "description": "-",
+      "description": "The safe-editor plugin before 1.2 for WordPress has no se_save authentication, with resultant XSS.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10976.yaml"
     }
   ],
@@ -6065,7 +6065,7 @@
     {
       "source": "nuclei",
       "name": "ScoreMe Theme - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress ScoreMe theme through 2016-04-01 contains a reflected cross-site scripting vulnerability via the s parameter which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10993.yaml"
     }
   ],
@@ -6073,7 +6073,7 @@
     {
       "source": "nuclei",
       "name": "MainWP Dashboard <= 3.1.2 - Stored Cross-Site Scripting",
-      "description": "-",
+      "description": "MainWP Dashboard \u2013 The Private WordPress Manager for Multiple Website Maintenance plugin for WordPress versions up to 3.1.2 contains a stored cross-site scripting caused by insufficient input sanitization and output escaping in 'mwp_setup_purchase_username' parameter, letting unauthenticated attackers inject and execute arbitrary scripts when users access affected pages.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-15041.yaml"
     }
   ],
@@ -6081,7 +6081,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Frontend File Manager < 4.0 & N-Media Post Frontend < 1.1 - Arbitrary File Upload",
-      "description": "-",
+      "description": "The Frontend File Manager plugin (<4.0) and N-Media Post Front-end Form plugin (<1.1) for WordPress were vulnerable to arbitrary file uploads due to missing file type validation. This allowed unauthenticated attackers to upload arbitrary files and potentially achieve remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-15042.yaml"
     }
   ],
@@ -6089,7 +6089,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiOS - Open Redirect/Cross-Site Scripting",
-      "description": "-",
+      "description": "FortiOS Web User Interface in 5.0.x before 5.0.13, 5.2.x before 5.2.3, and 5.4.x before 5.4.0 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks or cross-site scripting attacks via the \"redirect\" parameter to \"login.\"",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-3978.yaml"
     }
   ],
@@ -6097,7 +6097,7 @@
     {
       "source": "nuclei",
       "name": "Apache mod_userdir CRLF injection",
-      "description": "-",
+      "description": "Apache CRLF injection allowing HTTP response splitting attacks on sites using mod_userdir.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-4975.yaml"
     }
   ],
@@ -6105,7 +6105,7 @@
     {
       "source": "nuclei",
       "name": "Spring Security OAuth2 Remote Command Execution",
-      "description": "-",
+      "description": "Spring Security OAuth versions 2.0.0 to 2.0.9 and 1.0.0 to 1.0.5 contain a remote command execution vulnerability. When processing authorization requests using the whitelabel views, the response_type parameter value was executed as Spring SpEL which enabled a malicious user to trigger remote command execution via the crafting of the value for response_type.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-4977.yaml"
     }
   ],
@@ -6113,7 +6113,7 @@
     {
       "source": "nuclei",
       "name": "NETGEAR DGN2200 / DGND3700 - Admin Password Disclosure",
-      "description": "-",
+      "description": "NETGEAR DGN2200 / DGND3700 is susceptible to a vulnerability within the page 'BSW_cxttongr.htm' which can allow a remote attacker to access this page without any authentication. The attacker can then use this password to gain administrator access of the targeted router's web interface.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-5649.yaml"
     }
   ],
@@ -6121,7 +6121,7 @@
     {
       "source": "nuclei",
       "name": "Sony IPELA Engine IP Camera - Hardcoded Account",
-      "description": "-",
+      "description": "Multiple SONY network cameras are vulnerable to sensitive information disclosure via hardcoded credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-7834.yaml"
     }
   ],
@@ -6129,7 +6129,7 @@
     {
       "source": "nuclei",
       "name": "SPIP <3.1.2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "SPIP 3.1.2 and earlier contains a cross-site scripting vulnerability in valider_xml.php which allows remote attackers to inject arbitrary web script or HTML via the var_url parameter in a valider_xml action.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-7981.yaml"
     }
   ],
@@ -6137,7 +6137,7 @@
     {
       "source": "nuclei",
       "name": "Memcached Server SASL Authentication - Remote Code Execution",
-      "description": "-",
+      "description": "An integer overflow in process_bin_sasl_auth function in Memcached, which is responsible for authentication commands of Memcached binary protocol, can be abused to cause heap overflow and lead to remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2016/CVE-2016-8706.yaml"
     }
   ]

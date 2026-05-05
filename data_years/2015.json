@@ -85,7 +85,7 @@
     {
       "source": "nuclei",
       "name": "SysAid Help Desk <15.2 - Local File Inclusion",
-      "description": "-",
+      "description": "SysAid Help Desk before 15.2 contains multiple local file inclusion vulnerabilities which can allow remote attackers to read arbitrary files via .. (dot dot) in the fileName parameter of getGfiUpgradeFile or cause a denial of service (CPU and memory consumption) via .. (dot dot) in the fileName parameter of calculateRdsFileChecksum.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2996.yaml"
     }
   ],
@@ -195,7 +195,7 @@
     {
       "source": "nuclei",
       "name": "Microsoft Windows 'HTTP.sys' - Remote Code Execution",
-      "description": "-",
+      "description": "HTTP.sys in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 allows remote attackers to execute arbitrary code via crafted HTTP requests, aka \"HTTP.sys Remote Code Execution Vulnerability.\"\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1635.yaml"
     }
   ],
@@ -273,7 +273,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Core SQL Injection",
-      "description": "-",
+      "description": "A SQL injection vulnerability in Joomla! 3.2 before 3.4.4 allows remote attackers to execute arbitrary SQL commands.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7297.yaml"
     }
   ],
@@ -319,7 +319,7 @@
     {
       "source": "nuclei",
       "name": "TP-LINK - Local File Inclusion",
-      "description": "-",
+      "description": "TP-LINK is susceptible to local file inclusion in these products: Archer C5 (1.2) with firmware before 150317, Archer C7 (2.0) with firmware before 150304, and C8 (1.0) with firmware before 150316, Archer C9 (1.0), TL-WDR3500 (1.0), TL-WDR3600 (1.0), and TL-WDR4300 (1.0) with firmware before 150302, TL-WR740N (5.0) and TL-WR741ND (5.0) with firmware before 150312, and TL-WR841N (9.0), TL-WR841N (10.0), TL-WR841ND (9.0), and TL-WR841ND (10.0) with firmware before 150310.  Because of insufficient input validation, arbitrary local files can be disclosed. Files that include passwords and other sensitive information can be accessed.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-3035.yaml"
     }
   ],
@@ -389,7 +389,7 @@
     {
       "source": "nuclei",
       "name": "ElasticSearch <1.6.1 - Local File Inclusion",
-      "description": "-",
+      "description": "ElasticSearch before 1.6.1 allows remote attackers to read arbitrary files via unspecified vectors related to snapshot API calls.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5531.yaml"
     }
   ],
@@ -491,7 +491,7 @@
     {
       "source": "nuclei",
       "name": "mTheme Unus < 2.3 - Directory Traversal",
-      "description": "-",
+      "description": "The mTheme-Unus theme for WordPress, prior to version 2.3, contained a directory traversal flaw that let attackers access arbitrary files. This was possible by exploiting the files parameter in css/css.php with .. sequences.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9406.yaml"
     }
   ],
@@ -1253,7 +1253,7 @@
     {
       "source": "nuclei",
       "name": "ElasticSearch - Remote Code Execution",
-      "description": "-",
+      "description": "ElasticSearch before 1.3.8 and 1.4.x before 1.4.3 allows remote attackers to bypass the sandbox protection mechanism and execute arbitrary shell commands via a crafted script to the Groovy scripting engine.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1427.yaml"
     }
   ],
@@ -1313,7 +1313,7 @@
     {
       "source": "nuclei",
       "name": "Joomla HTTP Header Unauthenticated - Remote Code Execution",
-      "description": "-",
+      "description": "Joomla! 1.5.x, 2.x, and 3.x before 3.4.6 allow remote attackers to conduct PHP object injection attacks and execute arbitrary PHP code via the HTTP User-Agent header, as exploited in the wild in December 2015\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8562.yaml"
     }
   ],
@@ -1377,7 +1377,7 @@
     {
       "source": "nuclei",
       "name": "Ruby on Rails Web Console - Remote Code Execution",
-      "description": "-",
+      "description": "Ruby on Rails Web Console before 2.1.3, as used with Ruby on Rails 3.x and 4.x, does not properly restrict the use of X-Forwarded-For headers in determining a client's IP address, which allows remote attackers to bypass the whitelisted_ips protection mechanism via a crafted request to request.rb.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-3224.yaml"
     }
   ],
@@ -1673,7 +1673,7 @@
     {
       "source": "nuclei",
       "name": "ProFTPd - Remote Code Execution",
-      "description": "-",
+      "description": "ProFTPD 1.3.5 contains a remote code execution vulnerability via the mod_copy module which allows remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2015/CVE-2015-3306.yaml"
     }
   ],
@@ -1687,7 +1687,7 @@
     {
       "source": "nuclei",
       "name": "Xdebug <= 2.5.5 - Command Injection",
-      "description": "-",
+      "description": "Xdebug <= 2.5.5 contains an unauthenticated command injection caused by accepting debugger protocol commands without authentication when remote debugging is enabled, letting remote attackers execute arbitrary PHP code and system commands, exploit requires remote debugging enabled.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-10141.yaml"
     }
   ],
@@ -2289,7 +2289,7 @@
     {
       "source": "nuclei",
       "name": "IBM WebSphere Java Object Deserialization - Remote Code Execution",
-      "description": "-",
+      "description": "IBM Websphere Application Server 7, 8, and 8.5 have a deserialization vulnerability in the SOAP Connector (port 8880 by default).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7450.yaml"
     }
   ],
@@ -2443,7 +2443,7 @@
     {
       "source": "nuclei",
       "name": "DotNetNuke 07.04.00 - Administration Authentication Bypass",
-      "description": "-",
+      "description": "The installation wizard in DotNetNuke (DNN) before 7.4.1 allows remote attackers to reinstall the application and gain SuperUser access via a direct request to Install/InstallWizard.aspx.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2794.yaml"
     }
   ],
@@ -2719,7 +2719,7 @@
     {
       "source": "nuclei",
       "name": "D-Link DVG-N5402SP - Local File Inclusion",
-      "description": "-",
+      "description": "D-Link DVG-N5402SP is susceptible to local file inclusion in products with firmware W1000CN-00, W1000CN-03, or W2000EN-00. A remote attacker can read sensitive information via a .. (dot dot) in the errorpage parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7245.yaml"
     }
   ],
@@ -2749,7 +2749,7 @@
     {
       "source": "nuclei",
       "name": "ADB/Pirelli ADSL2/2+ Wireless Router P.DGA4001N - Information Disclosure",
-      "description": "-",
+      "description": "ADB (formerly Pirelli Broadband Solutions) P.DGA4001N router with firmware PDG_TEF_SP_4.06L.6 does not properly restrict access to the web interface, which allows remote attackers to obtain sensitive information or cause a denial of service (device restart) as demonstrated by a direct request to (1) wlsecurity.html or (2) resetrouter.html.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-0554.yaml"
     }
   ],
@@ -2985,7 +2985,7 @@
     {
       "source": "nuclei",
       "name": "Bonita BPM Portal <6.5.3 - Local File Inclusion",
-      "description": "-",
+      "description": "Bonita BPM Portal before 6.5.3 allows remote attackers to read arbitrary files via a .. (dot dot) in the theme parameter and a file path in the location parameter to bonita/portal/themeResource.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-3897.yaml"
     }
   ],
@@ -3465,7 +3465,7 @@
     {
       "source": "nuclei",
       "name": "Ericsson Drutt MSDP - Local File Inclusion",
-      "description": "-",
+      "description": "Ericsson Drutt Mobile Service Delivery Platform (MSDP) 4, 5, and 6 allows remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the default URI in the Instance Monitor.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2166.yaml"
     }
   ],
@@ -4023,7 +4023,7 @@
     {
       "source": "nuclei",
       "name": "Eclipse Jetty <9.2.9.v20150224 - Sensitive Information Leakage",
-      "description": "-",
+      "description": "Eclipse Jetty before 9.2.9.v20150224 allows remote attackers to obtain sensitive information from process memory via illegal characters in an HTTP header.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2080.yaml"
     }
   ],
@@ -4573,7 +4573,7 @@
     {
       "source": "nuclei",
       "name": "Elasticsearch - Local File Inclusion",
-      "description": "-",
+      "description": "Elasticsearch before 1.4.5 and 1.5.x before 1.5.2 allows remote attackers to read arbitrary files via unspecified vectors when a site plugin is enabled.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-3337.yaml"
     }
   ],
@@ -4787,7 +4787,7 @@
     {
       "source": "nuclei",
       "name": "IceWarp Mail Server <11.1.1 - Directory Traversal",
-      "description": "-",
+      "description": "IceWarp Mail Server versions prior to 11.1.1 suffer from a directory traversal vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1503.yaml"
     }
   ],
@@ -4849,7 +4849,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Helpdesk Pro plugin <1.4.0 - Local File Inclusion",
-      "description": "-",
+      "description": "Directory traversal vulnerability in the Helpdesk Pro plugin before 1.4.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the filename parameter in a ticket.download_attachment task.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4074.yaml"
     }
   ],
@@ -4903,7 +4903,7 @@
     {
       "source": "nuclei",
       "name": "Koha 3.20.1 - Directory Traversal",
-      "description": "-",
+      "description": "Koha 3.14.x before 3.14.16, 3.16.x before 3.16.12, 3.18.x before 3.18.08, and 3.20.x before 3.20.1 allow remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the template_path parameter to (1) svc/virtualshelves/search or (2) svc/members/search.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4632.yaml"
     }
   ],
@@ -4941,7 +4941,7 @@
     {
       "source": "nuclei",
       "name": "Magento Server Mass Importer - Cross-Site Scripting",
-      "description": "-",
+      "description": "Magento Server Mass Importer plugin contains multiple cross-site scripting vulnerabilities which allow remote attackers to inject arbitrary web script or HTML via the (1) profile parameter to web/magmi.php or (2) QUERY_STRING to web/magmi_import_run.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2068.yaml"
     }
   ],
@@ -4955,7 +4955,7 @@
     {
       "source": "nuclei",
       "name": "Magento Server MAGMI - Directory Traversal",
-      "description": "-",
+      "description": "Magento Server MAGMI (aka Magento Mass Importer) contains a directory traversal vulnerability in web/ajax_pluginconf.php. that allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2067.yaml"
     }
   ],
@@ -5007,7 +5007,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Slider Revolution - Local File Disclosure",
-      "description": "-",
+      "description": "Directory traversal vulnerability in the Elegant Themes Divi theme for WordPress allows remote attackers to read arbitrary files via a .. (dot dot) in the img parameter in a revslider_show_image action to wp-admin/admin-ajax.php. NOTE: this vulnerability may be a duplicate of CVE-2014-9734.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1579.yaml"
     }
   ],
@@ -5021,7 +5021,7 @@
     {
       "source": "nuclei",
       "name": "Novius OS 5.0.1-elche - Open Redirect",
-      "description": "-",
+      "description": "Novius OS 5.0.1 (Elche) allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the redirect parameter to admin/nos/login.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5354.yaml"
     }
   ],
@@ -5381,7 +5381,7 @@
     {
       "source": "nuclei",
       "name": "404 to 301 <= 2.0.2 - Authenticated Blind SQL Injection",
-      "description": "-",
+      "description": "The 404 to 301 \u2013 Redirect, Log and Notify 404 Errors WordPress plugin was affected by an Authenticated Blind SQL Injection security vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9323.yaml"
     }
   ],
@@ -5395,7 +5395,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Plugin Aviary Image Editor Addon For Gravity Forms 3.0 Beta - Arbitrary File Upload",
-      "description": "-",
+      "description": "Unrestricted file upload vulnerability in includes/upload.php in the Aviary Image Editor Add-on For Gravity Forms plugin 3.0 beta for WordPress allows remote attackers to execute arbitrary code by uploading a file with an executable extension, then accessing it via a direct request to the file in wp-content/uploads/gform_aviary.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4455.yaml"
     }
   ],
@@ -5409,7 +5409,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Church Admin <0.810 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Church Admin plugin before 0.810 allows remote attackers to inject arbitrary web script or HTML via the address parameter via index.php/2015/05/21/church_admin-registration-form/.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4127.yaml"
     }
   ],
@@ -5559,7 +5559,7 @@
     {
       "source": "nuclei",
       "name": "NewStatPress <0.9.9 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress NewStatPress plugin before 0.9.9 contains a cross-site scripting vulnerability in includes/nsp_search.php. The plugin allows remote authenticated users to inject arbitrary web script or HTML via the where1 parameter in the nsp_search page to wp-admin/admin.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4063.yaml"
     }
   ],
@@ -5573,7 +5573,7 @@
     {
       "source": "nuclei",
       "name": "WordPress NewStatPress 0.9.8 - SQL Injection",
-      "description": "-",
+      "description": "WordPress NewStatPress 0.9.8 plugin contains a SQL injection vulnerability in includes/nsp_search.php. A remote authenticated user can execute arbitrary SQL commands via the where1 parameter in the nsp_search page to wp-admin/admin.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4062.yaml"
     }
   ],
@@ -5619,7 +5619,7 @@
     {
       "source": "nuclei",
       "name": "WordPress SE HTML5 Album Audio Player 1.1.0 - Directory Traversal",
-      "description": "-",
+      "description": "WordPress SE HTML5 Album Audio Player 1.1.0 contains a directory traversal vulnerability in download_audio.php that allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4414.yaml"
     }
   ],
@@ -5673,7 +5673,7 @@
     {
       "source": "nuclei",
       "name": "Swim Team <= v1.44.10777 - Local File Inclusion",
-      "description": "-",
+      "description": "The program /wp-swimteam/include/user/download.php allows unauthenticated attackers to retrieve arbitrary files from the system.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5471.yaml"
     }
   ],
@@ -5727,7 +5727,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Spider Calendar <=1.4.9 - SQL Injection",
-      "description": "-",
+      "description": "WordPress Spider Calendar plugin through 1.4.9 is susceptible to SQL injection. An attacker can execute arbitrary SQL commands via the cat_id parameter in a spiderbigcalendar_month action to wp-admin/admin-ajax.php, thus making it possible to obtain sensitive information, modify data, and/or execute unauthorized administrative operations.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2196.yaml"
     }
   ],
@@ -5861,7 +5861,7 @@
     {
       "source": "nuclei",
       "name": "Xsuite <=2.4.4.5 - Open Redirect",
-      "description": "-",
+      "description": "Xsuite 2.4.4.5 and prior contains an open redirect vulnerability, which can allow a remote attacker to redirect users to arbitrary web sites and conduct phishing attacks via a malicious URL in the redirurl parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4668.yaml"
     }
   ],
@@ -5883,7 +5883,7 @@
     {
       "source": "nuclei",
       "name": "Xceedium Xsuite <=2.4.4.5 - Local File Inclusion",
-      "description": "-",
+      "description": "Xceedium Xsuite 2.4.4.5 and earlier is vulnerable to local file inclusion via opm/read_sessionlog.php that allows remote attackers to read arbitrary files in the logFile parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4666.yaml"
     }
   ],
@@ -7279,7 +7279,7 @@
     {
       "source": "nuclei",
       "name": "Kaseya Virtual System Administrator - Open Redirect",
-      "description": "-",
+      "description": "Kaseya Virtual System Administrator 7.x before 7.0.0.29, 8.x before 8.0.0.18, 9.0 before 9.0.0.14, and 9.1 before 9.1.0.4 are susceptible to an open redirect vulnerability. An attacker can redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2863.yaml"
     }
   ],
@@ -7547,7 +7547,7 @@
     {
       "source": "nuclei",
       "name": "Atlassian Confluence <5.8.17 - Information Disclosure",
-      "description": "-",
+      "description": "Atlassian Confluence before 5.8.17 contains an information disclsoure vulnerability. A remote authenticated user can read configuration files via the decoratorName parameter to (1) spaces/viewdefaultdecorator.action or (2) admin/viewdefaultdecorator.action.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8399.yaml"
     }
   ],
@@ -7619,7 +7619,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Candidate Application Form <= 1.3 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Candidate Application Form <= 1.3 is susceptible to arbitrary file downloads because the code in downloadpdffile.php does not do any sanity checks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1000005.yaml"
     }
   ],
@@ -7627,7 +7627,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Simple Image Manipulator < 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress Simple Image Manipulator 1.0 is vulnerable to local file inclusion in ./simple-image-manipulator/controller/download.php  because no checks are made to authenticate users or sanitize input when determining file location.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1000010.yaml"
     }
   ],
@@ -7635,7 +7635,7 @@
     {
       "source": "nuclei",
       "name": "WordPress MyPixs <=0.3 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress MyPixs 0.3 and prior contains a local file inclusion vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1000012.yaml"
     }
   ],
@@ -7643,7 +7643,7 @@
     {
       "source": "nuclei",
       "name": "Fortinet FortiOS <=5.2.3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Fortinet FortiOS 5.2.x before 5.2.3 contains a cross-site scripting vulnerability in the SSL VPN login page which allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1880.yaml"
     }
   ],
@@ -7651,7 +7651,7 @@
     {
       "source": "nuclei",
       "name": "WP Attachment Export < 0.2.4 - Unrestricted File Download",
-      "description": "-",
+      "description": "The plugin does not have proper access controls, allowing unauthenticated users to download the XML data that holds all the details of attachments/posts on a Wordpress\npowered site. This includes details of even privately published posts and password protected posts with their passwords revealed in plain text.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-20067.yaml"
     }
   ],
@@ -7659,7 +7659,7 @@
     {
       "source": "nuclei",
       "name": "WordPress AB Google Map Travel <=3.4 - Stored Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress AB Google Map Travel plugin through 3.4 contains multiple stored cross-site scripting vulnerabilities. The plugin allows an attacker to hijack the administrator authentication for requests via the (1) lat (Latitude), (2) long (Longitude), (3) map_width, (4) map_height, or (5) zoom (Map Zoom) parameters in the ab_map_options page to wp-admin/admin.php.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2755.yaml"
     }
   ],
@@ -7667,7 +7667,7 @@
     {
       "source": "nuclei",
       "name": "Navis DocumentCloud <0.1.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Navis DocumentCloud plugin before 0.1.1 for WordPress contains a reflected cross-site scripting vulnerability in js/window.php which allows remote attackers to inject arbitrary web script or HTML via the wpbase parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2807.yaml"
     }
   ],
@@ -7675,7 +7675,7 @@
     {
       "source": "nuclei",
       "name": "ResourceSpace - Local File inclusion",
-      "description": "-",
+      "description": "ResourceSpace is prone to a local file-inclusion vulnerability because it fails to sufficiently sanitize user-supplied input.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-3648.yaml"
     }
   ],
@@ -7683,7 +7683,7 @@
     {
       "source": "nuclei",
       "name": "Symfony - Authentication Bypass",
-      "description": "-",
+      "description": "Symfony 2.3.19 through 2.3.28, 2.4.9 through 2.4.10, 2.5.4 through 2.5.11, and 2.6.0 through 2.6.7, when ESI or SSI support enabled, does not check if the _controller attribute is set, which allows remote attackers to bypass URL signing and security rules by including (1) no hash or (2) an invalid hash in a request to /_fragment in the HttpKernel component.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4050.yaml"
     }
   ],
@@ -7691,7 +7691,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Zip Attachments <= 1.1.4 - Arbitrary File Retrieval",
-      "description": "-",
+      "description": "WordPress zip-attachments plugin allows arbitrary file retrieval as it does not check the download path of the requested file.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-4694.yaml"
     }
   ],
@@ -7699,7 +7699,7 @@
     {
       "source": "nuclei",
       "name": "WordPress StageShow <5.0.9 - Open Redirect",
-      "description": "-",
+      "description": "WordPress StageShow plugin before 5.0.9 contains an open redirect vulnerability in the Redirect function in stageshow_redirect.php. A remote attacker can redirect users to arbitrary web sites and conduct phishing attacks via a malicious URL in the url parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5461.yaml"
     }
   ],
@@ -7707,7 +7707,7 @@
     {
       "source": "nuclei",
       "name": "WordPress MDC YouTube Downloader 2.1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "WordPress MDC YouTube Downloader 2.1.0 plugin is susceptible to local file inclusion. A remote attacker can read arbitrary files via a full pathname in the file parameter to includes/download.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5469.yaml"
     }
   ],
@@ -7715,7 +7715,7 @@
     {
       "source": "nuclei",
       "name": "Geddy <13.0.8 - Local File Inclusion",
-      "description": "-",
+      "description": "Geddy prior to version 13.0.8 contains a directory traversal vulnerability in lib/app/index.js  that allows remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the PATH_INFO to the default URI.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5688.yaml"
     }
   ],
@@ -7723,7 +7723,7 @@
     {
       "source": "nuclei",
       "name": "Nordex NC2 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Nordex NC2 contains a cross-site scripting vulnerability which allows an attacker to execute arbitrary script code in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-6477.yaml"
     }
   ],
@@ -7731,7 +7731,7 @@
     {
       "source": "nuclei",
       "name": "Combodo iTop <2.2.0-2459 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Combodo iTop before 2.2.0-2459 contains a cross-site scripting vulnerability in application/dashboard.class.inc.php which allows remote attackers to inject arbitrary web script or HTML via a dashboard title.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-6544.yaml"
     }
   ],
@@ -7739,7 +7739,7 @@
     {
       "source": "nuclei",
       "name": "WordPress sourceAFRICA <=0.1.3 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress sourceAFRICA plugin version 0.1.3 contains a cross-site scripting vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-6920.yaml"
     }
   ],
@@ -7747,7 +7747,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Pie-Register <2.0.19 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Pie Register before 2.0.19 contains a reflected cross-site scripting vulnerability in pie-register/pie-register.php which allows remote attackers to inject arbitrary web script or HTML via the invitaion_code parameter in a pie-register page to the default URL.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7377.yaml"
     }
   ],
@@ -7755,7 +7755,7 @@
     {
       "source": "nuclei",
       "name": "ManageEngine Firewall Analyzer <8.0 - Local File Inclusion",
-      "description": "-",
+      "description": "ManageEngine Firewall Analyzer before 8.0 is vulnerable to local file inclusion.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7780.yaml"
     }
   ],
@@ -7763,7 +7763,7 @@
     {
       "source": "nuclei",
       "name": "Kentico CMS 8.2 - Open Redirect",
-      "description": "-",
+      "description": "Kentico CMS 8.2 contains an open redirect vulnerability via GetDocLink.ashx with link variable. An attacker can construct a URL within the application that causes a redirection to an arbitrary external domain.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7823.yaml"
     }
   ],
@@ -7771,7 +7771,7 @@
     {
       "source": "nuclei",
       "name": "SourceBans <2.0 - Cross-Site Scripting",
-      "description": "-",
+      "description": "SourceBans before 2.0 contains a cross-site scripting vulnerability which allows remote attackers to inject arbitrary web script or HTML via the advSearch parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8349.yaml"
     }
   ],
@@ -7779,7 +7779,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Calls to Action <=2.4.3 - Authenticated Reflected XSS",
-      "description": "-",
+      "description": "Calls to Action plugin before 2.5.1 for WordPress contains stored XSS caused by unsanitized input in open-tab parameter in wp-admin/edit.php and wp-cta-variation-id parameter in ab-testing-call-to-action-example/, letting remote attackers inject arbitrary web script or HTML, exploit requires sending crafted requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8350.yaml"
     }
   ],
@@ -7787,7 +7787,7 @@
     {
       "source": "nuclei",
       "name": "Umbraco <7.4.0- Server-Side Request Forgery",
-      "description": "-",
+      "description": "Umbraco before version 7.4.0 contains a server-side request forgery vulnerability in feedproxy.aspx that allows attackers to send arbitrary HTTP GET requests via http://local/Umbraco/feedproxy.aspx?url=http://127.0.0.1:80/index.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8813.yaml"
     }
   ],
@@ -7795,7 +7795,7 @@
     {
       "source": "nuclei",
       "name": "NewStatPress <=1.0.4 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress NewStatPress plugin through 1.0.4 contains a cross-site scripting vulnerability. The plugin utilizes, on lines 28 and 31 of the file \"includes/nsp_search.php\", several variables from the $_GET scope without sanitation. While WordPress automatically escapes quotes on this scope, the outputs on these lines are outside of quotes, and as such can be utilized to initiate a cross-site scripting attack.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9312.yaml"
     }
   ],
@@ -7803,7 +7803,7 @@
     {
       "source": "nuclei",
       "name": "WordPress Symposium <=15.8.1 - Cross-Site Scripting",
-      "description": "-",
+      "description": "WordPress Symposium through 15.8.1 contains a reflected cross-site scripting vulnerability via the wp-content/plugins/wp-symposium/get_album_item.php?size parameter which allows an attacker to steal cookie-based authentication credentials and launch other attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9414.yaml"
     }
   ],
@@ -7811,7 +7811,7 @@
     {
       "source": "nuclei",
       "name": "BJ Lazy Load (Timthumb) <= 0.7.5 - Remote File Inclusion",
-      "description": "-",
+      "description": "The BJ Lazy Load plugin v0.7.5 for WordPress has a Remote File Inclusion vulnerability via TimThumb.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9415.yaml"
     }
   ],
@@ -7819,7 +7819,7 @@
     {
       "source": "nuclei",
       "name": "WordPress RobotCPA 5 - Directory Traversal",
-      "description": "-",
+      "description": "The RobotCPA plugin 5 for WordPress has directory traversal via the f.php l parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9480.yaml"
     }
   ],
@@ -7827,7 +7827,7 @@
     {
       "source": "nuclei",
       "name": "WordPress ShowBiz Pro <= 1.7.1 - Authenticated Arbitrary File Upload to RCE",
-      "description": "-",
+      "description": "The WordPress ShowBiz Pro plugin version <= 1.7.1 allows arbitrary PHP file upload via the `admin-ajax.php` endpoint.This leads to unauthenticated remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9499.yaml"
     }
   ],
@@ -7835,7 +7835,7 @@
     {
       "source": "nuclei",
       "name": "vsftpd <= 3.0.2 - Access Restriction Bypass",
-      "description": "-",
+      "description": "vsftpd 3.0.2 and earlier contain a vulnerability that allows remote attackers to bypass access restrictions due to improper parsing of the deny_file configuration directive.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2015/CVE-2015-1419.yaml"
     }
   ]

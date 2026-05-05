@@ -363,7 +363,7 @@
     {
       "source": "nuclei",
       "name": "Apache Axis2 Default Login",
-      "description": "-",
+      "description": "Apache Axis2, as used in dswsbobje.war in SAP BusinessObjects Enterprise XI 3.2, CA ARCserve D2D r15, and other products, has a default password of axis2 for the admin account, which makes it easier for remote attackers to execute arbitrary code by uploading a crafted web service.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0219.yaml"
     }
   ],
@@ -397,7 +397,7 @@
     {
       "source": "nuclei",
       "name": "Adobe ColdFusion 8.0/8.0.1/9.0/9.0.1 LFI",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in the administrator console in Adobe ColdFusion 9.0.1 and earlier allow remote attackers to read arbitrary files via the locale parameter to (1) CFIDE/administrator/settings/mappings.cfm, (2) logging/settings.cfm, (3) datasources/index.cfm, (4) j2eepackaging/editarchive.cfm, and (5) enter.cfm in CFIDE/administrator/.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2861.yaml"
     }
   ],
@@ -425,7 +425,7 @@
     {
       "source": "nuclei",
       "name": "Red Hat JBoss Enterprise Application Platform - Sensitive Information Disclosure",
-      "description": "-",
+      "description": "Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 is susceptible to sensitive information disclosure. A remote attacker can obtain sensitive information about \"deployed web contexts\" via a request to the status servlet, as demonstrated by a full=true query string. NOTE: this issue exists because of a CVE-2008-3273 regression.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1429.yaml"
     }
   ],
@@ -827,7 +827,7 @@
     {
       "source": "nuclei",
       "name": "ListSERV Maestro <= 9.0-8 RCE",
-      "description": "-",
+      "description": "A struts-based OGNL remote code execution vulnerability exists in ListSERV Maestro before and including version 9.0-8.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1870.yaml"
     }
   ],
@@ -931,7 +931,7 @@
     {
       "source": "nuclei",
       "name": "ProFTPd-1.3.3c - Backdoor Command Execution",
-      "description": "-",
+      "description": "ProFTPD 1.3.3c contains a command injection backdoor caused by a hidden FTP command trigger in the source tarball, letting remote unauthenticated attackers execute arbitrary shell commands with root privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2010/CVE-2010-20103.yaml"
     }
   ],
@@ -3515,7 +3515,7 @@
     {
       "source": "nuclei",
       "name": "Camtron CMNC-200 IP Camera - Directory Traversal",
-      "description": "-",
+      "description": "The CMNC-200 IP Camera has a built-in web server that is vulnerable to directory transversal attacks, allowing access to any file on the camera file system.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4231.yaml"
     }
   ],
@@ -3601,7 +3601,7 @@
     {
       "source": "nuclei",
       "name": "Motorola SBV6120E SURFboard Digital Voice Modem SBV6X2X-1.0.0.5-SCM - Directory Traversal",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in the web server for Motorola SURFBoard cable modem SBV6120E running firmware SBV6X2X-1.0.0.5-SCM-02-SHPC allow remote attackers to read arbitrary files via (1) \"//\" (multiple leading slash), (2) ../ (dot dot) sequences, and encoded dot dot sequences in a URL request.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2307.yaml"
     }
   ],
@@ -4839,7 +4839,7 @@
     {
       "source": "nuclei",
       "name": "HP System Management Homepage (SMH) v2.x.x.x - Open Redirect",
-      "description": "-",
+      "description": "Open redirect vulnerability in red2301.html in HP System Management Homepage (SMH) 2.x.x.x allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via the RedirectUrl parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1586.yaml"
     }
   ],
@@ -7513,7 +7513,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component & Plugin JE Tooltip 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JE Form Creator (com_jeformcr) component for Joomla!, when magic_quotes_gpc is disabled, allows remote attackers to read arbitrary files via directory traversal sequences in the view parameter to index.php. NOTE -- the original researcher states that the affected product is JE Tooltip, not Form Creator; however, the exploit URL suggests that Form Creator is affected.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1217.yaml"
     }
   ],
@@ -7551,7 +7551,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Address Book 1.5.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the AddressBook (com_addressbook) component 1.5.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1471.yaml"
     }
   ],
@@ -7565,7 +7565,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Advertising 0.25 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Advertising (com_advertising) component 0.25 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1473.yaml"
     }
   ],
@@ -7579,7 +7579,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Affiliate Datafeeds 880 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Affiliate Datafeeds (com_datafeeds) component build 880 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1979.yaml"
     }
   ],
@@ -7601,7 +7601,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component AlphaUserPoints 1.5.5 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the AlphaUserPoints (com_alphauserpoints) component 1.5.5 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1476.yaml"
     }
   ],
@@ -7623,7 +7623,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Arcade Games 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Arcade Games (com_arcadegames) component 1.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1714.yaml"
     }
   ],
@@ -7637,7 +7637,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Archery Scores 1.0.6 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in archeryscores.php in the Archery Scores (com_archeryscores) component 1.0.6 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1718.yaml"
     }
   ],
@@ -7691,7 +7691,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component AWDwall 1.5.4 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the AWDwall (com_awdwall) component 1.5.4 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1494.yaml"
     }
   ],
@@ -7721,7 +7721,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component BeeHeard 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the BeeHeard (com_beeheard) and BeeHeard Lite (com_beeheardlite) component 1.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1952.yaml"
     }
   ],
@@ -7765,7 +7765,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Canteen 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A SQL injection vulnerability in menu.php in the Canteen (com_canteen) component 1.0 for Joomla! allows remote attackers to execute arbitrary SQL commands via the mealid parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4977.yaml"
     }
   ],
@@ -7793,7 +7793,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component CCNewsLetter - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the ccNewsletter (com_ccnewsletter) component 1.0.5 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter in a ccnewsletter action to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0467.yaml"
     }
   ],
@@ -7837,7 +7837,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_abbrev - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Abbreviations Manager (com_abbrev) component 1.1 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0985.yaml"
     }
   ],
@@ -7859,7 +7859,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_bfsurvey - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the BF Survey (com_bfsurvey) component for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2259.yaml"
     }
   ],
@@ -7881,7 +7881,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_biblestudy - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Bible Study (com_biblestudy) component 6.1 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter in a studieslist action to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0157.yaml"
     }
   ],
@@ -7895,7 +7895,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_blog - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in index.php in the MyBlog (com_myblog) component 3.0.329 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the task parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1540.yaml"
     }
   ],
@@ -7909,7 +7909,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_cartweberp - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the CARTwebERP (com_cartweberp) component 1.56.75 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0982.yaml"
     }
   ],
@@ -7937,7 +7937,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Cookex Agency CKForms - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Cookex Agency CKForms (com_ckforms) component 1.3.3 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1345.yaml"
     }
   ],
@@ -7959,7 +7959,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_communitypolls 1.5.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Community Polls (com_communitypolls) component 1.5.2, and possibly earlier, for Core Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1081.yaml"
     }
   ],
@@ -7989,7 +7989,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_gcalendar Suite 2.1.5 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the GCalendar (com_gcalendar) component 2.1.5 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0972.yaml"
     }
   ],
@@ -8019,7 +8019,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_janews - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JA News (com_janews) component 1.0 for Joomla! allows remote attackers to read arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1219.yaml"
     }
   ],
@@ -8033,7 +8033,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_jashowcase - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JA Showcase (com_jashowcase) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter in a jashowcase action to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0943.yaml"
     }
   ],
@@ -8047,7 +8047,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_jcollection - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JCollection (com_jcollection) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0944.yaml"
     }
   ],
@@ -8061,7 +8061,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_jresearch - 'Controller' Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in jresearch.php in the J!Research (com_jresearch) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1340.yaml"
     }
   ],
@@ -8075,7 +8075,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_jvideodirect - Directory Traversal",
-      "description": "-",
+      "description": "Directory traversal vulnerability in the jVideoDirect (com_jvideodirect) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0942.yaml"
     }
   ],
@@ -8137,7 +8137,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component com_rokdownloads - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the RokDownloads (com_rokdownloads) component before 1.0.1 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1056.yaml"
     }
   ],
@@ -8199,7 +8199,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Deluxe Blog Factory 1.1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Deluxe Blog Factory (com_blogfactory) component 1.1.2 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1955.yaml"
     }
   ],
@@ -8229,7 +8229,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component DW Graph - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in dwgraphs.php in the DecryptWeb DW Graphs (com_dwgraphs) component 1.0 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1302.yaml"
     }
   ],
@@ -8251,7 +8251,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Fabrik 2.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Fabrik (com_fabrik) component 2.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1981.yaml"
     }
   ],
@@ -8265,7 +8265,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component FDione Form Wizard 1.0.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Dione Form Wizard (aka FDione or com_dioneformwizard) component 1.0.2 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2045.yaml"
     }
   ],
@@ -8279,7 +8279,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Foobla Suggestions 1.5.1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Foobla Suggestions (com_foobla_suggestions) component 1.5.1.2 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2920.yaml"
     }
   ],
@@ -8309,7 +8309,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Gadget Factory 1.0.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Gadget Factory (com_gadgetfactory) component 1.0.0 and 1.5.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1956.yaml"
     }
   ],
@@ -8355,7 +8355,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Graphics 1.0.6 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in graphics.php in the Graphics (com_graphics) component 1.0.6 and 1.5.0 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1653.yaml"
     }
   ],
@@ -8377,7 +8377,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Highslide 1.5 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Highslide JS (com_hsconfig) component 1.5 and 2.0.9 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1314.yaml"
     }
   ],
@@ -8391,7 +8391,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Horoscope 1.5.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Daily Horoscope (com_horoscope) component 1.5.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1472.yaml"
     }
   ],
@@ -8413,7 +8413,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component iF surfALERT 1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the iF surfALERT (com_if_surfalert) component 1.2 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1717.yaml"
     }
   ],
@@ -8435,7 +8435,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component iNetLanka Contact Us Draw Root Map 1.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the iNetLanka Contact Us Draw Root Map (com_drawroot) component 1.1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1723.yaml"
     }
   ],
@@ -8449,7 +8449,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component iNetLanka Multiple Map 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the iNetLanka Multiple Map (com_multimap) component 1.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1953.yaml"
     }
   ],
@@ -8463,7 +8463,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component iNetLanka Multiple root 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the iNetLanka Multiple root (com_multiroot) component 1.0 and 1.1 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1954.yaml"
     }
   ],
@@ -8485,7 +8485,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component J!WHMCS Integrator 1.5.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the J!WHMCS Integrator (com_jwhmcs) component 1.5.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1977.yaml"
     }
   ],
@@ -8499,7 +8499,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JA Comment - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JA Comment (com_jacomment) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1601.yaml"
     }
   ],
@@ -8513,7 +8513,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JA Voice 2.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JA Voice (com_javoice) component 2.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1982.yaml"
     }
   ],
@@ -8617,7 +8617,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JE Job 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A SQL injection vulnerability in the JExtensions JE Job (com_jejob) component 1.0 for Joomla! allows remote attackers to execute arbitrary SQL commands via the catid parameter in an item action to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-5028.yaml"
     }
   ],
@@ -8639,7 +8639,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JE Quotation Form 1.0b1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JE Quotation Form (com_jequoteform) component 1.0b1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2128.yaml"
     }
   ],
@@ -8653,7 +8653,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component jesectionfinder - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JExtensions JE Section/Property Finder (jesectionfinder) component for Joomla! allows remote attackers to include and execute arbitrary local files via directory traversal sequences in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2680.yaml"
     }
   ],
@@ -8675,7 +8675,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Jfeedback 1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Ternaria Informatica Jfeedback! (com_jfeedback) component 1.2 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1478.yaml"
     }
   ],
@@ -8697,7 +8697,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Jimtawl 1.0.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Jimtawl (com_jimtawl) component 1.0.2 Joomla! allows remote attackers to read arbitrary files and possibly unspecified other impacts via a .. (dot dot) in the task parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4769.yaml"
     }
   ],
@@ -8711,7 +8711,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JInventory 1.23.02 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in jinventory.php in the JInventory (com_jinventory) component 1.23.02 and possibly other versions before 1.26.03, a module for Joomla!, allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1305.yaml"
     }
   ],
@@ -8749,7 +8749,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Joomla! Flickr 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in joomlaflickr.php in the Joomla! Flickr (com_joomlaflickr) component 1.0.3 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1980.yaml"
     }
   ],
@@ -8771,7 +8771,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JotLoader 2.2.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JotLoader (com_jotloader) component 2.2.1 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the section parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4617.yaml"
     }
   ],
@@ -8799,7 +8799,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Jphone 1.0 Alpha 3 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in jphone.php in the JPhone (com_jphone) component 1.0 Alpha 3 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-3426.yaml"
     }
   ],
@@ -8813,7 +8813,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JProject Manager 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Ternaria Informatica JProject Manager (com_jprojectmanager) component 1.0 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impact via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1469.yaml"
     }
   ],
@@ -8835,7 +8835,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component JRadio - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in JRadio (com_jradio) component before 1.5.1 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4719.yaml"
     }
   ],
@@ -8865,7 +8865,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Jstore - 'Controller' Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in Jstore (com_jstore) component for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-5286.yaml"
     }
   ],
@@ -8903,7 +8903,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Juke Box 1.7 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the JOOFORGE Jutebox (com_jukebox) component 1.0 and 1.7 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1352.yaml"
     }
   ],
@@ -8939,7 +8939,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Jw_allVideos - Arbitrary File Retrieval",
-      "description": "-",
+      "description": "A directory traversal vulnerability in includes/download.php in the JoomlaWorks AllVideos (Jw_allVideos) plugin 3.0 through 3.2 for Joomla! allows remote attackers to read arbitrary files via a ./../.../ (modified dot dot) in the file parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0696.yaml"
     }
   ],
@@ -8961,7 +8961,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component LoginBox - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the LoginBox Pro (com_loginbox) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1353.yaml"
     }
   ],
@@ -8975,7 +8975,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Love Factory 1.3.4 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Love Factory (com_lovefactory) component 1.3.4 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1957.yaml"
     }
   ],
@@ -8989,7 +8989,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Magic Updater - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Magic Updater (com_joomlaupdater) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1307.yaml"
     }
   ],
@@ -9003,7 +9003,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Matamko 1.01 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Matamko (com_matamko) component 1.01 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1495.yaml"
     }
   ],
@@ -9025,7 +9025,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component MMS Blog 2.3.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the MMS Blog (com_mmsblog) component 2.3.0 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1491.yaml"
     }
   ],
@@ -9039,7 +9039,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component MS Comment 0.8.0b - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Moron Solutions MS Comment (com_mscomment) component 0.8.0b for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2050.yaml"
     }
   ],
@@ -9053,7 +9053,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component MT Fire Eagle 1.2 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the MT Fire Eagle (com_mtfireeagle) component 1.2 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1719.yaml"
     }
   ],
@@ -9075,7 +9075,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Music Manager - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Music Manager component for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the cid parameter to album.html.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2857.yaml"
     }
   ],
@@ -9113,7 +9113,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component News Portal 1.5.x - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the iJoomla News Portal (com_news_portal) component 1.5.x for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1312.yaml"
     }
   ],
@@ -9143,7 +9143,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component NoticeBoard 1.3 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Code-Garage NoticeBoard (com_noticeboard) component 1.3 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1658.yaml"
     }
   ],
@@ -9157,7 +9157,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Online Exam 1.5.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Online Examination (aka Online Exam or com_onlineexam) component 1.5.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1715.yaml"
     }
   ],
@@ -9171,7 +9171,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Online Market 2.x - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Online Market (com_market) component 2.x for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1722.yaml"
     }
   ],
@@ -9201,7 +9201,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component OrgChart 1.0.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the OrgChart (com_orgchart) component 1.0.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1878.yaml"
     }
   ],
@@ -9231,7 +9231,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Percha Downloads Attach 1.1 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Percha Downloads Attach (com_perchadownloadsattach) component 1.1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2037.yaml"
     }
   ],
@@ -9245,7 +9245,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Percha Fields Attach 1.0 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Percha Fields Attach (com_perchafieldsattach) component 1.x for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2036.yaml"
     }
   ],
@@ -9259,7 +9259,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Percha Gallery 1.6 Beta - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Percha Gallery (com_perchagallery) component 1.6 Beta for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2035.yaml"
     }
   ],
@@ -9273,7 +9273,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Percha Image Attach 1.1 - Directory Traversal",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Percha Image Attach (com_perchaimageattach) component 1.1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2034.yaml"
     }
   ],
@@ -9287,7 +9287,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Percha Categories Tree 0.6 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Percha Fields Attach (com_perchafieldsattach) component 1.x for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2033.yaml"
     }
   ],
@@ -9301,7 +9301,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Photo Battle 1.0.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Photo Battle (com_photobattle) component 1.0.1 for Joomla! allows remote attackers to read arbitrary files via the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1461.yaml"
     }
   ],
@@ -9315,7 +9315,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Picasa 2.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Picasa (com_joomlapicasa2) component 2.0 and 2.0.5 for Joomla! allows remote attackers to read arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1306.yaml"
     }
   ],
@@ -9329,7 +9329,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Picasa2Gallery 1.2.8 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Picasa2Gallery (com_picasa2gallery) component 1.2.8 and earlier for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2507.yaml"
     }
   ],
@@ -9343,7 +9343,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component PicSell 1.0 - Arbitrary File Retrieval",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the PicSell (com_picsell) component 1.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the dflink parameter in a prevsell dwnfree action to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-3203.yaml"
     }
   ],
@@ -9357,7 +9357,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component PowerMail Pro 1.5.3 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the givesight PowerMail Pro (com_powermail) component 1.5.3 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1532.yaml"
     }
   ],
@@ -9371,7 +9371,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Preventive And Reservation 1.0.5 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Preventive & Reservation (com_preventive) component 1.0.5 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1475.yaml"
     }
   ],
@@ -9385,7 +9385,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Property - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Real Estate Property (com_properties) component 3.1.22-03 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1875.yaml"
     }
   ],
@@ -9437,7 +9437,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Realtyna Translator 1.0.15 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Realtyna Translator (com_realtyna) component 1.0.15 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2682.yaml"
     }
   ],
@@ -9465,7 +9465,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component redSHOP 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the redSHOP (com_redshop) component 1.0.x for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1531.yaml"
     }
   ],
@@ -9479,7 +9479,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component redTWITTER 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A drectory traversal vulnerability in the redTWITTER (com_redtwitter) component 1.0.x including 1.0b11 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1983.yaml"
     }
   ],
@@ -9545,7 +9545,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Saber Cart 1.0.0.12 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Seber Cart (com_sebercart) component 1.0.0.12 and 1.0.0.13 for Joomla!, when magic_quotes_gpc is disabled, allows remote attackers to read arbitrary files via a .. (dot dot) in the view parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1313.yaml"
     }
   ],
@@ -9589,7 +9589,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Shoutbox Pro - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Shoutbox Pro (com_shoutbox) component for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1534.yaml"
     }
   ],
@@ -9609,7 +9609,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component simpledownload <=0.9.5 - Arbitrary File Retrieval",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the SimpleDownload (com_simpledownload) component before 0.9.6 for Joomla! allows remote attackers to retrieve arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2122.yaml"
     }
   ],
@@ -9623,7 +9623,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component SmartSite 1.0.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the SmartSite (com_smartsite) component 1.0.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1657.yaml"
     }
   ],
@@ -9637,7 +9637,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component SMEStorage - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the SMEStorage (com_smestorage) component before 1.1 for Joomla! allows remote attackers to read arbitrary files via directory traversal sequences in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1858.yaml"
     }
   ],
@@ -9667,7 +9667,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component SVMap 1.1.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the SVMap (com_svmap) component 1.1.1 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1308.yaml"
     }
   ],
@@ -9681,7 +9681,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Sweetykeeper 1.5 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Sweety Keeper (com_sweetykeeper) component 1.5.x for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1474.yaml"
     }
   ],
@@ -9727,7 +9727,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component TRAVELbook 1.0.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the TRAVELbook (com_travelbook) component 1.0.1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1535.yaml"
     }
   ],
@@ -9749,7 +9749,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component TweetLA 1.0.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the TweetLA (com_tweetla) component 1.0.1 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1533.yaml"
     }
   ],
@@ -9763,7 +9763,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Ultimate Portfolio 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Ultimate Portfolio (com_ultimateportfolio) component 1.0 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1659.yaml"
     }
   ],
@@ -9777,7 +9777,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component User Status - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in userstatus.php in the User Status (com_userstatus) component 1.21.16 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1304.yaml"
     }
   ],
@@ -9805,7 +9805,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Visites 1.1 - MosConfig_absolute_path Remote File Inclusion",
-      "description": "-",
+      "description": "A PHP remote file inclusion vulnerability in core/include/myMailer.class.php in the Visites (com_joomla-visites) component 1.1 RC2 for Joomla! allows remote attackers to execute arbitrary PHP code via a URL in the mosConfig_absolute_path parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2918.yaml"
     }
   ],
@@ -9819,7 +9819,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component VJDEO 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the VJDEO (com_vjdeo) component 1.0 and 1.0.1 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1354.yaml"
     }
   ],
@@ -9833,7 +9833,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component Web TV 1.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the Web TV (com_webtv) component 1.0 for Joomla! allows remote attackers to read arbitrary files and have possibly other unspecified impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1470.yaml"
     }
   ],
@@ -9847,7 +9847,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component webERPcustomer - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in weberpcustomer.php in the webERPcustomer (com_weberpcustomer) component 1.2.1 and 1.x before 1.06.02 for Joomla! allows remote attackers to read arbitrary files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1315.yaml"
     }
   ],
@@ -9869,7 +9869,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component WMI 1.5.0 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in wmi.php in the Webmoney Web Merchant Interface (aka WMI or com_wmi) component 1.5.0 for Joomla! allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1607.yaml"
     }
   ],
@@ -9899,7 +9899,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component ZiMB Comment 0.8.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the ZiMB Comment (com_zimbcomment) component 0.8.1 for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1602.yaml"
     }
   ],
@@ -9913,7 +9913,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Component ZiMBCore 0.1 - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in the ZiMB Core (aka ZiMBCore or com_zimbcore) component 0.1 in the ZiMB Manager collection for Joomla! allows remote attackers to read arbitrary files and possibly have unspecified other impacts via a .. (dot dot) in the controller parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-1603.yaml"
     }
   ],
@@ -9935,7 +9935,7 @@
     {
       "source": "nuclei",
       "name": "Joomla! Plugin Core Design Scriptegrator - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in plugins/system/cdscriptegrator/libraries/highslide/js/jsloader.php in the Core Design Scriptegrator plugin 1.4.1 for Joomla! allows remote attackers to read, and possibly include and execute, arbitrary files via directory traversal sequences in the files[] parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-0759.yaml"
     }
   ],
@@ -10167,7 +10167,7 @@
     {
       "source": "nuclei",
       "name": "Lokomedia CMS - Local File Inclusion",
-      "description": "-",
+      "description": "A Local File Inclusion (LFI) vulnerability exists in Lokomedia CMS. The application allows an attacker to include files on the server that should not be accessible, potentially exposing sensitive information.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-2018.yaml"
     }
   ],
@@ -10339,7 +10339,7 @@
     {
       "source": "nuclei",
       "name": "MODx manager - Local File Inclusion",
-      "description": "-",
+      "description": "A directory traversal vulnerability in manager/controllers/default/resource/tvs.php in MODx Revolution 2.0.2-pl and possibly earlier allows remote attackers to read arbitrary files via a .. (dot dot) in the class_key parameter when magic_quotes_gpc is disabled.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-5278.yaml"
     }
   ],
@@ -10933,7 +10933,7 @@
     {
       "source": "nuclei",
       "name": "phpShowtime 2.0 - Directory Traversal",
-      "description": "-",
+      "description": "Multiple directory traversal vulnerabilities in Pandora FMS before 3.1.1 allow remote attackers to include and execute arbitrary local files via (1) the page parameter to ajax.php or (2) the id parameter to general/pandora_help.php, and allow remote attackers to include and execute, create, modify, or delete arbitrary local files via (3) the layout parameter to operation/agentes/networkmap.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4282.yaml"
     }
   ],
@@ -14391,7 +14391,7 @@
     {
       "source": "nuclei",
       "name": "Tiki Wiki CMS Groupware 5.2 - Local File Inclusion",
-      "description": "-",
+      "description": "Tiki Wiki CMS Groupware 5.2 is susceptible to a local file inclusion vulnerability.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2010/CVE-2010-4239.yaml"
     }
   ],
@@ -14399,7 +14399,7 @@
     {
       "source": "nuclei",
       "name": "ProFTPD < 1.3.3c - Directory Traversal via mod_site_misc",
-      "description": "-",
+      "description": "ProFTPD versions before 1.3.3c contain directory traversal vulnerabilities in the mod_site_misc module. The vulnerability allows attackers to traverse directories and potentially overwrite arbitrary files on the system through crafted input to commands like SITE MKDIR and other SITE commands.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2010/CVE-2010-3867.yaml"
     }
   ]

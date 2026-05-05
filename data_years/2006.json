@@ -81,7 +81,7 @@
     {
       "source": "nuclei",
       "name": "Webmin < 1.290 / Usermin < 1.220 - Arbitrary File Disclosure",
-      "description": "-",
+      "description": "Webmin before 1.290 and Usermin before 1.220 contain a path traversal caused by calling the simplify_path function before decoding HTML, letting remote attackers read arbitrary files, exploit requires sending crafted '..%01' sequences.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2006/CVE-2006-3392.yaml"
     }
   ],
@@ -115,7 +115,7 @@
     {
       "source": "nuclei",
       "name": "FileZilla Server < 0.9.22 - DoS via Wildcard Commands",
-      "description": "-",
+      "description": "FileZilla Server versions prior to 0.9.22 are vulnerable to remote denial of service (crash) when processing wildcard arguments to LIST/NLST commands, malformed PORT commands, or other malformed commands. This leads to NULL pointer dereference that can crash the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2006/CVE-2006-6565.yaml"
     }
   ],
@@ -21083,7 +21083,7 @@
     {
       "source": "nuclei",
       "name": "Squirrelmail <=1.4.6 - Local File Inclusion",
-      "description": "-",
+      "description": "SquirrelMail 1.4.6 and earlier versions are susceptible to a PHP local file inclusion vulnerability in functions/plugin.php if register_globals is enabled and magic_quotes_gpc is disabled. This allows remote attackers to execute arbitrary PHP code via a URL in the plugins array parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2006/CVE-2006-2842.yaml"
     }
   ],
@@ -25915,7 +25915,7 @@
     {
       "source": "nuclei",
       "name": "Cherokee HTTPD <=0.5 - Cross-Site Scripting",
-      "description": "-",
+      "description": "Cherokee HTTPD 0.5 and earlier contains a cross-site scripting vulnerability which allows remote attackers to inject arbitrary web script or HTML via a malformed request that generates an HTTP 400 error, which is not properly handled when the error message is generated.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2006/CVE-2006-1681.yaml"
     }
   ],
@@ -25923,7 +25923,7 @@
     {
       "source": "nuclei",
       "name": "FileZilla FTP Server 2.2.22 - Buffer Overflow",
-      "description": "-",
+      "description": "FileZilla FTP Server version 2.2.22 contains a buffer overflow vulnerability that allows remote authenticated attackers to cause denial of service and potentially execute arbitrary code. The vulnerability can be triggered by sending excessively long PORT or PASS commands followed by MLSD commands, or through the remote interface.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2006/CVE-2006-2173.yaml"
     }
   ]

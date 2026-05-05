@@ -2693,7 +2693,7 @@
     {
       "source": "nuclei",
       "name": "Jakarta Tomcat 3.1 and 3.0 - Information Disclosure",
-      "description": "-",
+      "description": "Jakarta Tomcat 3.1 and 3.0 under Apache contain a vulnerability in the Snoop servlet that reveals sensitive system information when a remote attacker requests a nonexistent URL with a .snp extension, exploit requires remote access.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2000/CVE-2000-0760.yaml"
     }
   ],
@@ -4761,7 +4761,7 @@
     {
       "source": "nuclei",
       "name": "Microsoft FrontPage Extensions - Information Disclosure",
-      "description": "-",
+      "description": "Frontpage Server Extensions allows remote attackers to determine the name of the anonymous account via an RPC POST request to shtml.dll in the /_vti_bin/ virtual directory.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2000/CVE-2000-0114.yaml"
     }
   ]
