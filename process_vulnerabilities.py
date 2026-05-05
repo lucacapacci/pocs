@@ -20,12 +20,11 @@ def process_data():
                 if 'references' in info:
                     for ref in info['references']:
                         if ref.startswith('CVE-'):
-                            file_path = f'https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master{info.get("path")}'
                             cve_map[ref].append({
                                 "source": "metasploit",
-                                "file": file_path,
-                                "name": info.get("name"),
-                                "description": info.get("description")
+                                "name": info.get("name", "-"),
+                                "description": info.get("description", "-"),
+                                "file": f'https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master{info.get("path")}'
                             })
 
     # 3. Parse Exploit-DB CSV
@@ -35,11 +34,13 @@ def process_data():
             for row in reader:
                 codes = row.get('codes', '')
                 found_cves = re.findall(r'CVE-\d{4}-\d{3,10}', codes)
-                for cve in found_cves:
-                    # Add Source tag to the CSV row data
-                    row["source"] = "exploitdb"
-                    row["file"] = f"https://gitlab.com/exploit-database/exploitdb/-/raw/main/{row['file']}"
-                    cve_map[cve].append(row)
+                for cve_id in found_cves:
+                    cve_map[cve_id].append({
+                        "source": "exploitdb",
+                        "name": row['description'],
+                        "description": row['description'],
+                        "file": f"https://gitlab.com/exploit-database/exploitdb/-/raw/main/{row['file']}"
+                    }
 
     # 4. Parse Nuclei JSONL
     if os.path.exists('nuclei_cves.json'):
@@ -49,12 +50,11 @@ def process_data():
                     entry = json.loads(line)
                     cve_id = entry.get("ID")
                     if cve_id and cve_id.startswith("CVE-"):
-                        # Inject Source into the 'Info' block as per your example
-                        info_block = entry.get("Info", {})
-                        info_block["source"] = "nuclei"
-                        
+                        info_block = entry.get("Info", {})                        
                         cve_map[cve_id].append({
-                            "info": info_block,
+                            "source": "nuclei",
+                            "name": info_block.get("Name", "-"),
+                            "description": info.get("Description", "-"),
                             "file": f'https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/{entry.get("file_path")}'
                         })
 
