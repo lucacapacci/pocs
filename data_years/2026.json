@@ -2009,6 +2009,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41940.yaml"
     }
   ],
+  "CVE-2026-42031": [
+    {
+      "info": {
+        "Name": "CKAN DataStore SQL Search - SQL Injection",
+        "Severity": "high",
+        "Description": "CKAN, an open-source data management system used for powering open data portals, contains an unauthenticated SQL injection vulnerability in the datastore_search_sql API endpoint.\n",
+        "Classification": {
+          "CVSSScore": "9.8"
+        },
+        "source": "nuclei"
+      },
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42031.yaml"
+    }
+  ],
   "CVE-2026-4257": [
     {
       "info": {
