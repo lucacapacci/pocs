@@ -1203,7 +1203,7 @@
     {
       "source": "metasploit",
       "name": "Apache Shiro v1.2.4 Cookie RememberME Deserial RCE",
-      "description": "This vulnerability allows remote attackers to execute arbitrary code on vulnerable\n          installations of Apache Shiro v1.2.4. Note that other versions of Apache Shiro may\n          also be exploitable if the encryption key used by Shiro to encrypt rememberMe\n          cookies is known.",
+      "description": "This vulnerability allows remote attackers to execute arbitrary code on vulnerable\n          installations of Apache Shiro v1.2.4. Note that other versions of Apache Shiro may\n          also be exploitable if the encryption key used by Shiro to encrypt rememberMe\n          cookies is known.\n\n          The gadget chain used for Java deserialization must be present on the target's classpath.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/shiro_rememberme_v124_deserialize.rb"
     },
     {
