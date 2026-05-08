@@ -191,6 +191,36 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52542.txt"
     }
   ],
+  "CVE-2026-34156": [
+    {
+      "source": "exploitdb",
+      "name": "NocoBase  2.0.27 - VM Sandbox Escape",
+      "description": "NocoBase  2.0.27 - VM Sandbox Escape",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52552.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "NocoBase - VM Sandbox Escape to Remote Code Execution",
+      "description": "NocoBase Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist controlled by WORKFLOW_SCRIPT_MODULES env var. The console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain (console._stdout.constructor.constructor to Function to process to child_process) to escape the sandbox and achieve Remote Code Execution as root.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
+    }
+  ],
+  "CVE-2026-32746": [
+    {
+      "source": "exploitdb",
+      "name": "telnetd 2.7 - Buffer Overflow",
+      "description": "telnetd 2.7 - Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52556.py"
+    }
+  ],
+  "CVE-2026-25099": [
+    {
+      "source": "exploitdb",
+      "name": "Bludit CMS 3.18.4 -  RCE",
+      "description": "Bludit CMS 3.18.4 -  RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52553.py"
+    }
+  ],
   "CVE-2026-26157": [
     {
       "source": "exploitdb",
@@ -221,6 +251,20 @@
       "name": "Frigate NVR 0.16.3 - Remote Code Execution",
       "description": "Frigate NVR 0.16.3 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52533.py"
+    }
+  ],
+  "CVE-2026-26980": [
+    {
+      "source": "exploitdb",
+      "name": "Ghost CMS 6.19.0 - SQLi",
+      "description": "Ghost CMS 6.19.0 - SQLi",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52555.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Ghost CMS Content API - SQL Injection",
+      "description": "Ghost CMS before 6.19.1 is vulnerable to a blind SQL injection in the /ghost/api/content/tags/ endpoint via the filter parameter. This template checks for the vulnerability by sending a boolean-based payload.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26980.yaml"
     }
   ],
   "CVE-2026-22241": [
@@ -693,14 +737,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
-  "CVE-2026-26980": [
-    {
-      "source": "nuclei",
-      "name": "Ghost CMS Content API - SQL Injection",
-      "description": "Ghost CMS before 6.19.1 is vulnerable to a blind SQL injection in the /ghost/api/content/tags/ endpoint via the filter parameter. This template checks for the vulnerability by sending a boolean-based payload.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26980.yaml"
-    }
-  ],
   "CVE-2026-2699": [
     {
       "source": "nuclei",
@@ -933,14 +969,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3396.yaml"
     }
   ],
-  "CVE-2026-34156": [
-    {
-      "source": "nuclei",
-      "name": "NocoBase - VM Sandbox Escape to Remote Code Execution",
-      "description": "NocoBase Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist controlled by WORKFLOW_SCRIPT_MODULES env var. The console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain (console._stdout.constructor.constructor to Function to process to child_process) to escape the sandbox and achieve Remote Code Execution as root.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
-    }
-  ],
   "CVE-2026-34197": [
     {
       "source": "nuclei",
@@ -963,6 +991,14 @@
       "name": "SiYuan Note - Cross-Site Scripting",
       "description": "SiYuan Note through version 3.6.1 is vulnerable to unauthenticated reflected Cross-Site Scripting (XSS) in the `/api/icon/getDynamicIcon` endpoint due to improper filtering of SVG elements with a namespace prefix (such as `<x:script>`). By using a namespaced script element, attackers can bypass the `SanitizeSVG` function and execute arbitrary JavaScript in the victim\u2019s browser upon visiting a crafted link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34605.yaml"
+    }
+  ],
+  "CVE-2026-34847": [
+    {
+      "source": "nuclei",
+      "name": "Hoppscotch <= 2026.2.1 - Open Redirect",
+      "description": "Hoppscotch <= 2026.2.1 is vulnerable to a DOM-based open redirect on the /enter page. The redirect query parameter is passed directly to windowz location.href with no origin validation. Requires one additional query parameter to trigger. Exploited via a crafted URL such as /enter?redirect=evil.com&foo=bar.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34847.yaml"
     }
   ],
   "CVE-2026-34885": [
@@ -1075,6 +1111,14 @@
       "name": "Apache ActiveMQ - Remote Code Execution via HTTP Discovery Transport Bypass",
       "description": "Apache ActiveMQ before 5.19.6 and 6.0.0 through 6.2.4 is vulnerable to remote code execution via a bypass of the CVE-2026-34197 security fix. The original fix blocked the \"vm://\" transport scheme in BrokerView.addNetworkConnector() and BrokerView.addConnector() to prevent authenticated attackers from loading malicious Spring XML configurations via the Jolokia API. However, the fix only denied the \"vm\" scheme. An attacker can bypass this restriction by using the HTTP Discovery transport(http://attacker/discovery), which is not in the denied scheme list. The attacker-controlled HTTP endpoint returns a vm:// transport URI as a second-stage response, which then loads a remote Spring XML application context, leading to arbitrary code execution on the broker JVM. The activemq-http module must be on the classpath (present by default in the \"all\" distribution), and authenticated access to the Jolokia API (/api/jolokia/) is required.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40466.yaml"
+    }
+  ],
+  "CVE-2026-40878": [
+    {
+      "source": "nuclei",
+      "name": "Mailcow < 2026-03b - Href Link Injection",
+      "description": "mailcow < 2026-03b reflects raw REQUEST_URI into JavaScript and href links on the login page, allowing attackers to inject parameters that break JS logic and enable phishing.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40878.yaml"
     }
   ],
   "CVE-2026-40887": [
