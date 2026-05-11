@@ -177,6 +177,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2264.yaml"
     }
   ],
+  "CVE-2025-6793": [
+    {
+      "source": "metasploit",
+      "name": "Marvell QConvergeConsole Path Traversal (CVE-2025-6793)",
+      "description": "This module exploits a path traversal vulnerability (CVE-2025-6793) in Marvell QConvergeConsole <= v5.5.0.85 to retrieve arbitrary files from the system. No authentication is required to exploit this issue.\n          Note that whatever file will be retrieved, will also be deleted from the remote server.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/gather/qconvergeconsole_traversal.rb"
+    }
+  ],
   "CVE-2025-13315": [
     {
       "source": "metasploit",
@@ -4447,6 +4455,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-47539.yaml"
     }
   ],
+  "CVE-2025-47577": [
+    {
+      "source": "nuclei",
+      "name": "TI WooCommerce Wishlist <= 2.9.2 - Arbitrary File Upload",
+      "description": "TemplateInvaders TI WooCommerce Wishlist <= 2.10.0 contains an unrestricted file upload vulnerability caused by lack of proper file type validation, letting attackers upload web shells to the server, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-47577.yaml"
+    }
+  ],
   "CVE-2025-47646": [
     {
       "source": "nuclei",
@@ -4461,6 +4477,14 @@
       "name": "Wing FTP Server <= 7.4.3 - Path Disclosure via Overlong UID Cookie",
       "description": "Wing FTP Server versions prior to 7.4.4 are vulnerable to an authenticated information disclosure vulnerability (CVE-2025-47813).\nThe vulnerability occurs due to improper validation of the 'UID' session cookie in the /loginok.html endpoint. Supplying an\noverlong UID value causes the server to respond with an error that includes the full local filesystem path. This can aid in further\nexploitation (e.g., CVE-2025-47812) by revealing the application\u2019s file system layout.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-47813.yaml"
+    }
+  ],
+  "CVE-2025-48157": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Formality Plugin <= 1.5.9 - Local File Inclusion",
+      "description": "Michele Giorgi Formality <= 1.5.9 contains a file inclusion vulnerability caused by improper control of filename in include/require statements, letting attackers include local files, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-48157.yaml"
     }
   ],
   "CVE-2025-48281": [

@@ -5549,6 +5549,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-43160.yaml"
     }
   ],
+  "CVE-2024-4322": [
+    {
+      "source": "nuclei",
+      "name": "LoLLMS WebUI < 9.8 - Path Traversal",
+      "description": "parisneo/lollms-webui contains a path traversal caused by improper handling of 'category' parameter in /list_personalities endpoint, letting attackers list arbitrary directories, exploit requires control over 'category' parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-4322.yaml"
+    }
+  ],
   "CVE-2024-4325": [
     {
       "source": "nuclei",
@@ -5835,6 +5843,14 @@
       "name": "NAKIVO Backup and Replication Solution - Unauthenticated Arbitrary File Read",
       "description": "NAKIVO Backup & Replication is a data protection solution used for backing up and restoring virtualized and physical environments. A vulnerability has been identified in certain versions of NAKIVO Backup & Replication that allows an unauthenticated attacker to read arbitrary files on the underlying system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-48248.yaml"
+    }
+  ],
+  "CVE-2024-48259": [
+    {
+      "source": "nuclei",
+      "name": "Cloudlog - SQL Injection",
+      "description": "Cloudlog 2.6.15 contains a SQL injection caused by unsanitized input in oqrs.php request_form, letting attackers execute arbitrary SQL commands via station_id or callsign, exploit requires sending crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-48259.yaml"
     }
   ],
   "CVE-2024-48307": [
