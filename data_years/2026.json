@@ -953,6 +953,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33478.yaml"
     }
   ],
+  "CVE-2026-33534": [
+    {
+      "source": "nuclei",
+      "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
+      "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
+    }
+  ],
   "CVE-2026-33626": [
     {
       "source": "nuclei",
@@ -1039,6 +1047,22 @@
       "name": "WordPress Kali Forms <= 2.4.9 - Remote Code Execution",
       "description": "Kali Forms WordPress plugin <= 2.4.9 contains a remote code execution caused by unsafe user input handling in 'form_process' and 'prepare_post_data' functions, letting unauthenticated attackers execute code on the server, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3584.yaml"
+    }
+  ],
+  "CVE-2026-38360": [
+    {
+      "source": "nuclei",
+      "name": "dash-uploader 0.1.0 - 0.7.0a2 - Unauthenticated Arbitrary File Write via Path Traversal",
+      "description": "fohrloop dash-uploader v0.1.0 through v0.7.0a2 contains a directory traversal vulnerability caused by improper handling in dash_uploader/httprequesthandler.py components, letting remote attackers execute arbitrary code, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-38360.yaml"
+    }
+  ],
+  "CVE-2026-38361": [
+    {
+      "source": "nuclei",
+      "name": "dash-uploader 0.1.0 - 0.7.0a2 - Denial-of-Service via flowTotalChunks",
+      "description": "fohrloop dash-uploader v0.1.0 through v0.7.0a2 contains a remote code execution caused by improper handling in Upload function and max_file_size parameter in dash_uploader components, letting remote attackers execute arbitrary code, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-38361.yaml"
     }
   ],
   "CVE-2026-3844": [
