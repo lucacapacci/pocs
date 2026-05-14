@@ -59,6 +59,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/grandstream_gxp1600_unauth_rce.rb"
     }
   ],
+  "CVE-2026-24479": [
+    {
+      "source": "metasploit",
+      "name": "HUSTOJ Admin users can zip-slip problem_import_qduoj.php, planting PHP files in webroot for RCE",
+      "description": "A user with administrative privileges can abuse the problem_import_qduoj.php CGI script\nusing a crafted zip file (zip-slip) to traverse backwards through the filesystem, then to the\nwebroot, where they can extract a PHP file that spawns a shell to get full RCE in the\ncontext of the webserver.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/hustoj_problem_import_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HUSTOJ Zip-Slip v26.01.24 -  RCE",
+      "description": "HUSTOJ Zip-Slip v26.01.24 -  RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52539.rb"
+    }
+  ],
   "CVE-2026-1281": [
     {
       "source": "metasploit",
@@ -297,14 +311,6 @@
       "name": "HAX CMS 24.x - Stored Cross-Site Scripting (XSS)",
       "description": "HAX CMS 24.x - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52526.py"
-    }
-  ],
-  "CVE-2026-24479": [
-    {
-      "source": "exploitdb",
-      "name": "HUSTOJ Zip-Slip v26.01.24 -  RCE",
-      "description": "HUSTOJ Zip-Slip v26.01.24 -  RCE",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52539.rb"
     }
   ],
   "CVE-2026-26235": [
