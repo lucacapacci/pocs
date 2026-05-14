@@ -343,6 +343,12 @@
       "name": "Ninja Forms Uploads - Unauthenticated PHP File Upload",
       "description": "Ninja Forms Uploads - Unauthenticated PHP File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52560.sh"
+    },
+    {
+      "source": "nuclei",
+      "name": "Ninja Forms File Uploads <= 3.3.26 - Arbitrary File Upload",
+      "description": "Ninja Forms File Uploads plugin for WordPress versions up to and including 3.3.26 is vulnerable to unauthenticated arbitrary file upload which could lead to remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0740.yaml"
     }
   ],
   "CVE-2026-26335": [
@@ -1025,6 +1031,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34453.yaml"
     }
   ],
+  "CVE-2026-34486": [
+    {
+      "source": "nuclei",
+      "name": "Apache Tomcat Tribes EncryptInterceptor Bypass - Remote Code Execution",
+      "description": "Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor. This issue affects Apache Tomcat: 11.0.20, 10.1.53, 9.0.116.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34486.yaml"
+    }
+  ],
   "CVE-2026-34605": [
     {
       "source": "nuclei",
@@ -1239,6 +1253,22 @@
       "name": "CKAN DataStore SQL Search - SQL Injection",
       "description": "CKAN, an open-source data management system used for powering open data portals, contains an unauthenticated SQL injection vulnerability in the datastore_search_sql API endpoint.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42031.yaml"
+    }
+  ],
+  "CVE-2026-42281": [
+    {
+      "source": "nuclei",
+      "name": "MagicMirror <= 2.35.0 - Server-Side Request Forgery",
+      "description": "An unauthenticated Server-Side Request Forgery (SSRF) vulnerability in the /cors endpoint allows any remote attacker to force the MagicMirror\u00b2 server to perform arbitrary HTTP requests to internal networks, cloud metadata services, and localhost services. The endpoint also expands environment variable placeholders (VAR_NAME), enabling exfiltration of server-side secrets.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42281.yaml"
+    }
+  ],
+  "CVE-2026-42569": [
+    {
+      "source": "nuclei",
+      "name": "phpVMS < 7.0.6 - Legacy Importer Authorization Bypass",
+      "description": "phpVMS < 7.0.6 contains an authentication bypass caused by unauthenticated access to a legacy import feature, letting unauthenticated attackers access restricted functionality, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42569.yaml"
     }
   ],
   "CVE-2026-4257": [
