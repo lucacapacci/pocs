@@ -2797,6 +2797,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52283.txt"
     }
   ],
+  "CVE-2025-58434": [
+    {
+      "source": "exploitdb",
+      "name": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
+      "description": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/typescript/webapps/52557.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Flowise <= 3.0.5 - Account Takeover",
+      "description": "Flowise versions 3.0.5 and earlier had a vulnerability in the forgot-password endpoint, which returned valid reset tokens without authentication\u2014allowing attackers to reset passwords and take over accounts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-58434.yaml"
+    }
+  ],
   "CVE-2025-59254": [
     {
       "source": "exploitdb",
@@ -5013,14 +5027,6 @@
       "name": "WordPress 3D FlipBook Plugin <= 1.16.17 - Sensitive Information Exposure",
       "description": "The 3D FlipBook WordPress plugin (\u2264 v1.16.17) has a vulnerability where an unauthenticated AJAX action (fb3d_send_posts) exposes sensitive data. Attackers can access all flipbook posts\u2014including password-protected content, metadata, PDF URLs, and plugin settings\u2014without authorization.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-58226.yaml"
-    }
-  ],
-  "CVE-2025-58434": [
-    {
-      "source": "nuclei",
-      "name": "Flowise <= 3.0.5 - Account Takeover",
-      "description": "Flowise versions 3.0.5 and earlier had a vulnerability in the forgot-password endpoint, which returned valid reset tokens without authentication\u2014allowing attackers to reset passwords and take over accounts.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-58434.yaml"
     }
   ],
   "CVE-2025-58443": [
