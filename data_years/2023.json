@@ -1465,6 +1465,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-26469.yaml"
     }
   ],
+  "CVE-2023-30253": [
+    {
+      "source": "metasploit",
+      "name": "Dolibarr ERP/CRM Authenticated Code Injection",
+      "description": "Dolibarr ERP/CRM before 17.0.1 allows remote code execution by an\n          authenticated user who has access to the Website module. The\n          application filters lowercase `<?php` tags to prevent PHP code\n          injection in website page content, but this check can be bypassed\n          by using an uppercase variant such as `<?PHP`. This\n          allows injecting arbitrary PHP code that is executed when the\n          website page is rendered. Versions prior to 17.0.1 are known to\n          be vulnerable. The vulnerability was fixed in version 17.0.1.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/dolibarr_cms_rce_cve_2023_30253.rb"
+    }
+  ],
   "CVE-2023-27253": [
     {
       "source": "metasploit",

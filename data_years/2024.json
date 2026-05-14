@@ -1177,6 +1177,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-36401.yaml"
     }
   ],
+  "CVE-2024-48760": [
+    {
+      "source": "metasploit",
+      "name": "GestioIP 3.5.7 Remote Command Execution",
+      "description": "This module exploits a command execution via file upload.\n          If GestioIP is configured to use no authentication for admin account,\n          no password is required to exploit the vulnerability. Otherwise, an authenticated\n          user with admin right on the web site is required to exploit.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/gestioip_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GestioIP 3.5.7 - Remote Command Execution (RCE)",
+      "description": "GestioIP 3.5.7 - Remote Command Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52204.txt"
+    }
+  ],
   "CVE-2024-24725": [
     {
       "source": "metasploit",
@@ -1979,14 +1993,6 @@
       "name": "GestioIP 3.5.7 - Reflected Cross-Site Scripting (Reflected XSS)",
       "description": "GestioIP 3.5.7 - Reflected Cross-Site Scripting (Reflected XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52202.txt"
-    }
-  ],
-  "CVE-2024-48760": [
-    {
-      "source": "exploitdb",
-      "name": "GestioIP 3.5.7 - Remote Command Execution (RCE)",
-      "description": "GestioIP 3.5.7 - Remote Command Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52204.txt"
     }
   ],
   "CVE-2024-50861": [
