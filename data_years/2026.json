@@ -259,6 +259,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52528.py"
     }
   ],
+  "CVE-2026-2624": [
+    {
+      "source": "exploitdb",
+      "name": "ePati Antikor NGFW 2.0.1301 -  Authentication Bypass",
+      "description": "ePati Antikor NGFW 2.0.1301 -  Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52562.txt"
+    }
+  ],
   "CVE-2026-24897": [
     {
       "source": "exploitdb",
@@ -357,6 +365,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0740.yaml"
     }
   ],
+  "CVE-2026-25994": [
+    {
+      "source": "exploitdb",
+      "name": "PJPROJECT 2.16 - Heap Bufferoverflow",
+      "description": "PJPROJECT 2.16 - Heap Bufferoverflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52561.py"
+    }
+  ],
   "CVE-2026-26335": [
     {
       "source": "exploitdb",
@@ -371,6 +387,20 @@
       "name": "SumatraPDF 3.5.2 - Remote Code Execution",
       "description": "SumatraPDF 3.5.2 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52535.py"
+    }
+  ],
+  "CVE-2026-4257": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
+      "description": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52564.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
+      "description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
     }
   ],
   "CVE-2026-24421": [
@@ -1275,14 +1305,6 @@
       "name": "phpVMS < 7.0.6 - Legacy Importer Authorization Bypass",
       "description": "phpVMS < 7.0.6 contains an authentication bypass caused by unauthenticated access to a legacy import feature, letting unauthenticated attackers access restricted functionality, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42569.yaml"
-    }
-  ],
-  "CVE-2026-4257": [
-    {
-      "source": "nuclei",
-      "name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
-      "description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
     }
   ],
   "CVE-2026-4631": [
