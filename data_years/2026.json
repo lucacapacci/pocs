@@ -1394,5 +1394,13 @@
       "description": "Marimo versions <= 0.20.4 contain an unauthenticated remote code execution vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to connect via WebSocket, obtain a full PTY shell, and execute arbitrary OS commands on the underlying server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39987.yaml"
     }
+  ],
+  "CVE-2026-44578": [
+    {
+      "source": "nuclei",
+      "name": "Next.js WebSocket Upgrade Handler - SSRF",
+      "description": "Next.js 13.4.13 to before 15.5.16 and 16.2.5 contains a server-side request forgery caused by crafted WebSocket upgrade requests in the built-in Node.js server, letting attackers proxy requests to arbitrary destinations, exploit requires self-hosted deployment.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-44578.yaml"
+    }
   ]
 }
