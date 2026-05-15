@@ -1331,6 +1331,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
     }
   ],
+  "CVE-2026-5718": [
+    {
+      "source": "nuclei",
+      "name": "Drag and Drop Multiple File Upload - CF7 <= 1.3.9.6 - Remote Code Execution",
+      "description": "Drag and Drop Multiple File Upload for Contact Form 7 WordPress plugin <= 1.3.9.6 contains an unrestricted file upload caused by insufficient file type validation and bypass of filename sanitization with non-ASCII characters, letting unauthenticated attackers upload arbitrary files and achieve remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5718.yaml"
+    }
+  ],
   "CVE-2026-6118": [
     {
       "source": "nuclei",
