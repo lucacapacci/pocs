@@ -37,6 +37,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22200.yaml"
     }
   ],
+  "CVE-2026-3055": [
+    {
+      "source": "metasploit",
+      "name": "Citrix ADC (NetScaler) CVE-2026-3055 Scanner",
+      "description": "This module scans for a vulnerability that allows a remote, unauthenticated attacker to leak memory from a\n          target Citrix ADC server configured as a SAML IdP. The leaked memory is then scanned for session cookies\n          which can be hijacked if found.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/citrix_netscaler_cve_2026_3055.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Citrix NetScaler SAML IDP - Memory Overread",
+      "description": "NetScaler ADC and NetScaler Gateway contain an insufficient input validation vulnerability when configured as a SAML IDP, leading to memory overread, letting attackers potentially access sensitive memory, exploit requires configuration as SAML IDP\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3055.yaml"
+    }
+  ],
   "CVE-2026-29058": [
     {
       "source": "metasploit",
@@ -937,14 +951,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
     }
   ],
-  "CVE-2026-3055": [
-    {
-      "source": "nuclei",
-      "name": "Citrix NetScaler SAML IDP - Memory Overread",
-      "description": "NetScaler ADC and NetScaler Gateway contain an insufficient input validation vulnerability when configured as a SAML IDP, leading to memory overread, letting attackers potentially access sensitive memory, exploit requires configuration as SAML IDP\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3055.yaml"
-    }
-  ],
   "CVE-2026-30824": [
     {
       "source": "nuclei",
@@ -1335,6 +1341,22 @@
       "name": "Cockpit Web Console < 360 - Remote Code Execution",
       "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4631.yaml"
+    }
+  ],
+  "CVE-2026-46372": [
+    {
+      "source": "nuclei",
+      "name": "SillyTavern - Server-Side Request Forgery",
+      "description": "SillyTavern versions up to and including 1.17.0 expose the /api/search/searxng endpoint, which accepts an attacker-controlled baseUrl parameter and uses it directly to build outbound server-side fetch requests. An authenticated low-privilege user can point baseUrl at an internal or loopback HTTP service and receive the full response body, enabling read access to internal services, cloud metadata endpoints, and private network resources.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46372.yaml"
+    }
+  ],
+  "CVE-2026-47668": [
+    {
+      "source": "nuclei",
+      "name": "DbGate - Remote Code Execution via Anonymous JWT",
+      "description": "DbGate contains a remote code execution vulnerability exploitable by unauthenticated attackers. The /auth/login endpoint issues anonymous JWT tokens without credentials, and the /runners/start endpoint accepts JavaScript payloads that execute via Node.js child_process, allowing arbitrary command execution on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-47668.yaml"
     }
   ],
   "CVE-2026-4810": [

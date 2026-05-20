@@ -3261,6 +3261,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-12536.yaml"
     }
   ],
+  "CVE-2025-12841": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Bookit < 2.5.1 - Unauthenticated Stripe Settings Update",
+      "description": "Bookit WordPress plugin < 2.5.1 contains a broken access control vulnerability caused by a publicly accessible REST endpoint allowing unauthenticated update of Stripe payment options, letting remote attackers modify payment settings without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-12841.yaml"
+    }
+  ],
   "CVE-2025-1302": [
     {
       "source": "nuclei",

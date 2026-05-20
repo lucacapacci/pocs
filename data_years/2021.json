@@ -4949,6 +4949,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-24915.yaml"
     }
   ],
+  "CVE-2021-24916": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Qubely < 1.8.6 - Unauthenticated Email Sending",
+      "description": "Qubely WordPress plugin < 1.8.6 contains an insecure deserialization caused by unauthenticated users being able to send arbitrary emails via the qubely_send_form_data AJAX action, letting attackers send spam or malicious emails, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-24916.yaml"
+    }
+  ],
   "CVE-2021-24934": [
     {
       "source": "nuclei",
