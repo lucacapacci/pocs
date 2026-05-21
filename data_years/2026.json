@@ -143,6 +143,22 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_31431_copy_fail.rb"
     }
   ],
+  "CVE-2026-43284": [
+    {
+      "source": "metasploit",
+      "name": "xfrm-ESP Page-Cache Write via CVE-2026-43284",
+      "description": "CVE-2026-43284 is a Linux kernel page-cache write vulnerability in the IPsec/xfrm\n          subsystem affecting ESP (Encapsulating Security Payload) fragmentation. Dubbed\n          \"DirtyFrag\", the bug allows a local unprivileged user to gain write access to read-only\n          page-cache pages by triggering a race condition in how the kernel handles shared fragments\n          when processing ESP-encapsulated UDP packets. The exploit overwrites a SUID binary on disk\n          to execute an arbitrary payload as root.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_43284_dirty_frag.rb"
+    }
+  ],
+  "CVE-2026-43500": [
+    {
+      "source": "metasploit",
+      "name": "rxkad Page-Cache Write via CVE-2026-43500",
+      "description": "CVE-2026-43500 exploits a memory-corruption vulnerability in the Linux kernel's RxRPC\n          authentication subsystem (rxkad). When a crafted DATA packet is delivered to an AF_RXRPC\n          socket configured with an attacker-controlled rxkad session key, the kernel's\n          rxkad_verify_packet_1() function performs an in-place 8-byte pcbc(fcrypt) decryption\n          directly on the page-cache page referenced by the splice offset. Because the decryption\n          mutates the page in-place without marking it dirty, the corrupted in-memory view is\n          immediately visible to all processes reading from the page cache. This allows a local\n          attacker to corrupt the in-memory contents of a SUID binary and escalate privileges to root.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_43500_dirty_frag.rb"
+    }
+  ],
   "CVE-2026-24061": [
     {
       "source": "metasploit",
