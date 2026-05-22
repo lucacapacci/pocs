@@ -1429,6 +1429,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
     }
   ],
+  "CVE-2026-9082": [
+    {
+      "source": "nuclei",
+      "name": "Drupal Core - Anonymous SQL Injection via PostgreSQL Entity Query",
+      "description": "Drupal core from 8.9.0 before 10.4.10, 10.5.0 before 10.5.10, 10.6.0 before 10.6.9, 11.0.0 before 11.1.10, 11.2.0 before 11.2.12, and 11.3.0 before 11.3.10 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9082.yaml"
+    }
+  ],
   "CVE-2026-23829": [
     {
       "source": "nuclei",
