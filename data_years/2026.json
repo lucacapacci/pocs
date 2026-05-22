@@ -295,6 +295,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52538.py"
     }
   ],
+  "CVE-2026-4631": [
+    {
+      "source": "exploitdb",
+      "name": "Cockpit 359 - RCE",
+      "description": "Cockpit 359 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52572.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Cockpit Web Console < 360 - Remote Code Execution",
+      "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4631.yaml"
+    }
+  ],
   "CVE-2026-21876": [
     {
       "source": "exploitdb",
@@ -333,6 +347,14 @@
       "name": "Frigate NVR 0.16.3 - Remote Code Execution",
       "description": "Frigate NVR 0.16.3 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52533.py"
+    }
+  ],
+  "CVE-2026-25895": [
+    {
+      "source": "exploitdb",
+      "name": "FUXA  1.2.9 -  RCE",
+      "description": "FUXA  1.2.9 -  RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52568.py"
     }
   ],
   "CVE-2026-26980": [
@@ -1349,14 +1371,6 @@
       "name": "phpVMS < 7.0.6 - Legacy Importer Authorization Bypass",
       "description": "phpVMS < 7.0.6 contains an authentication bypass caused by unauthenticated access to a legacy import feature, letting unauthenticated attackers access restricted functionality, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42569.yaml"
-    }
-  ],
-  "CVE-2026-4631": [
-    {
-      "source": "nuclei",
-      "name": "Cockpit Web Console < 360 - Remote Code Execution",
-      "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4631.yaml"
     }
   ],
   "CVE-2026-46372": [
