@@ -1389,6 +1389,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46372.yaml"
     }
   ],
+  "CVE-2026-46725": [
+    {
+      "source": "nuclei",
+      "name": "TYPO3 ceselector Extension - Insecure Deserialization",
+      "description": "TYPO3 extension contains a PHP Object Injection caused by passing attacker-controlled cookie to unserialize() without validation, letting remote unauthenticated attackers achieve remote code execution, exploit requires Persistent Mode: Static configuration.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46725.yaml"
+    }
+  ],
   "CVE-2026-47668": [
     {
       "source": "nuclei",

@@ -7165,6 +7165,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-4462.yaml"
     }
   ],
+  "CVE-2021-4463": [
+    {
+      "source": "nuclei",
+      "name": "Longjing Technology BEMS API 1.21 - Unauthenticated Arbitrary File Download",
+      "description": "Longjing Technology BEMS API 1.21 is vulnerable to local file inclusion. Input passed through the fileName parameter through the downloads API endpoint is not properly verified before being used to download files. This can be exploited to disclose the contents of arbitrary and sensitive files through directory traversal attacks.",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-4463.yaml"
+    }
+  ],
   "CVE-2021-44910": [
     {
       "source": "nuclei",
