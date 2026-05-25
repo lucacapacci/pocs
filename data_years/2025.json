@@ -1173,6 +1173,12 @@
       "name": "Web-Check Screenshot API Command Injection RCE",
       "description": "This module exploits a command injection vulnerability in Web-Check's `/api/screenshot` endpoint.\n          The `directChromiumScreenshot()` function uses `child_process.exec()` with unsanitized user input,\n          allowing command injection via URL query parameters. The vulnerability was patched in commit\n          0e4958aa10b2650d32439a799f6fc83a7cd46cef by replacing `exec()` with `execFile()`.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/web_check_screenshot_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Web-Check < 2.0.1 Screenshot API - OS Command Injection",
+      "description": "Lissy93/web-check contains a command injection caused by unsanitized user input in the screenshot API, letting attackers execute arbitrary system commands, exploit requires sending crafted url parameters.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32778.yaml"
     }
   ],
   "CVE-2025-47812": [

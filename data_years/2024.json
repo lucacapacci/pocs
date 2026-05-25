@@ -5115,6 +5115,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-36412.yaml"
     }
   ],
+  "CVE-2024-36420": [
+    {
+      "source": "nuclei",
+      "name": "Flowise 1.4.3 - Arbitrary File Read",
+      "description": "Flowise 1.4.3 contains a path traversal caused by lack of sanitization of 'fileName' parameter in /api/v1/openai-assistants-file endpoint in index.ts, letting attackers read arbitrary files, exploit requires attacker to send crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-36420.yaml"
+    }
+  ],
   "CVE-2024-36527": [
     {
       "source": "nuclei",
@@ -7049,6 +7057,14 @@
       "name": "Grafana Post-Auth DuckDB - SQL Injection To File Read",
       "description": "The SQL Expressions experimental feature of Grafana allows for the evaluation of `duckdb` queries containing user input. These queries are insufficiently sanitized before being passed to `duckdb`, leading to a command injection and local file inclusion vulnerability. Any user with the VIEWER or higher permission is capable of executing this attack. The `duckdb` binary must be present in Grafana's $PATH for this attack to function; by default, this binary is not installed in Grafana distributions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-9264.yaml"
+    }
+  ],
+  "CVE-2024-9362": [
+    {
+      "source": "nuclei",
+      "name": "Polyaxon - Unauthenticated Directory Traversal",
+      "description": "Polyaxon latest version contains a path traversal caused by insufficient validation in directory access, letting unauthenticated attackers retrieve directory information and file contents, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-9362.yaml"
     }
   ],
   "CVE-2024-9463": [
