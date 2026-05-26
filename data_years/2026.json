@@ -241,6 +241,26 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_supply_chain_rce.rb"
     }
   ],
+  "CVE-2026-4257": [
+    {
+      "source": "metasploit",
+      "name": "Supsystic Contact Form Wordpress Plugin SSTI RCE",
+      "description": "This module performs SSTI achieving RCE in webpages containing the\n          Contact Form Wordpress plugin by Supsystic in versions 1.7.36 and\n          before.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_plugin_supsystic_contact_form_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
+      "description": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52564.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
+      "description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
+    }
+  ],
   "CVE-2026-23231": [
     {
       "source": "exploitdb",
@@ -461,20 +481,6 @@
       "name": "SumatraPDF 3.5.2 - Remote Code Execution",
       "description": "SumatraPDF 3.5.2 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52535.py"
-    }
-  ],
-  "CVE-2026-4257": [
-    {
-      "source": "exploitdb",
-      "name": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
-      "description": "WordPress Plugin Supsystic Contact Form 1.7.36 - SSTI",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52564.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "WordPress Contact Form by Supsystic - Server-Side Template Injection",
-      "description": "Contact Form by Supsystic WordPress plugin <= 1.7.36 contains a server-side template injection caused by unsandboxed Twig_Loader_String and cfsPreFill functionality, letting unauthenticated attackers execute arbitrary code remotely via GET parameters.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
     }
   ],
   "CVE-2026-24421": [
