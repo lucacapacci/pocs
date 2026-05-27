@@ -315,6 +315,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-17519.yaml"
     }
   ],
+  "CVE-2020-36939": [
+    {
+      "source": "metasploit",
+      "name": "Cassandra Web File Read Vulnerability",
+      "description": "This module exploits an unauthenticated directory traversal vulnerability in Cassandra Web\n          'Cassandra Web' version 0.5.0 and earlier, allowing arbitrary file read with the web server privileges.\n          This vulnerability occurred due to the disabled Rack::Protection module",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/cassandra_web_file_read.rb"
+    }
+  ],
   "CVE-2020-26948": [
     {
       "source": "metasploit",
@@ -4895,6 +4903,14 @@
       "name": "ThemeREX Addons - Remote Code Execution",
       "description": "ThemeREX Addons plugin before 2020-03-09 for WordPress contains an access control vulnerability in the /trx_addons/v2/get/sc_layout REST API endpoint, allowing any users to execute PHP functions because includes/plugin.rest-api.php calls trx_addons_rest_get_sc_layout with an unsafe sc parameter, letting attackers execute arbitrary PHP functions, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-10257.yaml"
+    }
+  ],
+  "CVE-2020-10532": [
+    {
+      "source": "nuclei",
+      "name": "WatchGuard Fireware AD Helper Component - Credentials Disclosure",
+      "description": "WatchGuard Fireware Threat Detection and Response (TDR) service contains a credential-disclosure vulnerability in the AD Helper component that allows unauthenticated attackers to gain Active Directory credentials for a Windows domain in plaintext.",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-10532.yaml"
     }
   ],
   "CVE-2020-10546": [

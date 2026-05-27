@@ -329,6 +329,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-23752.yaml"
     }
   ],
+  "CVE-2023-28459": [
+    {
+      "source": "metasploit",
+      "name": "Pretalx Arbitrary File Read/Limited File Write",
+      "description": "This module exploits functionality in Pretalx that export conference schedule as zipped file. The Pretalx will iteratively include any file referenced by any HTML tag and does not properly check the path of the file, which can lead to arbitrary file read. The module requires credentials that allow schedule export, schedule release and approval of proposals. Additionally, module requires conference name and URL for media files.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/pretalx_file_read_cve_2023_28459.rb"
+    }
+  ],
+  "CVE-2023-28458": [
+    {
+      "source": "metasploit",
+      "name": "Pretalx Arbitrary File Read/Limited File Write",
+      "description": "This module exploits functionality in Pretalx that export conference schedule as zipped file. The Pretalx will iteratively include any file referenced by any HTML tag and does not properly check the path of the file, which can lead to arbitrary file read. The module requires credentials that allow schedule export, schedule release and approval of proposals. Additionally, module requires conference name and URL for media files.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/pretalx_file_read_cve_2023_28459.rb"
+    },
+    {
+      "source": "metasploit",
+      "name": "Pretalx Limited File Write to Remote Code Execution",
+      "description": "This module exploits CVE-2023-28458, a limited file write in Pretalx, up to version 2.3.1. The module will use the vulnerability to write a malicious site-specific configuration hook forPython. Once hook is written, payload will be executed every time Pretalx user runs any Python code. Pretalx needs to run in debug mode to exploit this.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pretalx_rce_cve_2023_28458.rb"
+    }
+  ],
   "CVE-2023-6063": [
     {
       "source": "metasploit",
@@ -745,14 +767,6 @@
       "name": "OpenTSDB 2.4.1 unauthenticated command injection",
       "description": "This module exploits an unauthenticated command injection\n          vulnerability in the key parameter in OpenTSDB through\n          2.4.1 (CVE-2023-36812/CVE-2023-25826) in order to achieve\n          unauthenticated remote code execution as the root user.\n\n          The module first attempts to obtain the OpenTSDB version via\n          the api. If the version is 2.4.1 or lower, the module\n          performs additional checks to obtain the configured metrics\n          and aggregators. It then randomly selects one metric and one\n          aggregator and uses those to instruct the target server to\n          plot a graph. As part of this request, the key parameter is\n          set to the payload, which will then be executed by the target\n          if the latter is vulnerable.\n\n          This module has been successfully tested against OpenTSDB\n          version 2.4.1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/opentsdb_key_cmd_injection.rb"
-    }
-  ],
-  "CVE-2023-28458": [
-    {
-      "source": "metasploit",
-      "name": "Pretalx Limited File Write to Remote Code Execution",
-      "description": "This module exploits CVE-2023-28458, a limited file write in Pretalx, up to version 2.3.1. The module will use the vulnerability to write a malicious site-specific configuration hook forPython. Once hook is written, payload will be executed every time Pretalx user runs any Python code. Pretalx needs to run in debug mode to exploit this.",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pretalx_rce_cve_2023_28458.rb"
     }
   ],
   "CVE-2023-0297": [

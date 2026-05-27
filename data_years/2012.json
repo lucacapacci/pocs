@@ -2457,6 +2457,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/rabidhamster_r4_log.rb"
     }
   ],
+  "CVE-2012-2576": [
+    {
+      "source": "metasploit",
+      "name": "Solarwinds Storage Manager 5.1.0 SQL Injection",
+      "description": "This module exploits a SQL injection found in Solarwinds Storage Manager\n          login interface.  It will send a malicious SQL query to create a JSP file\n          under the web root directory, and then let it download and execute our malicious\n          executable under the context of SYSTEM.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/solarwinds_storage_manager_sql.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
+      "description": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18818.py"
+    }
+  ],
   "CVE-2012-2962": [
     {
       "source": "metasploit",
@@ -9691,14 +9705,6 @@
       "name": "Samsung Kies 2.3.2.12054_20 - Multiple Vulnerabilities",
       "description": "Samsung Kies 2.3.2.12054_20 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/22007.txt"
-    }
-  ],
-  "CVE-2012-2576": [
-    {
-      "source": "exploitdb",
-      "name": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
-      "description": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18818.py"
     }
   ],
   "CVE-2012-5335": [
