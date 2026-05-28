@@ -149,6 +149,12 @@
       "name": "xfrm-ESP Page-Cache Write via CVE-2026-43284",
       "description": "CVE-2026-43284 is a Linux kernel page-cache write vulnerability in the IPsec/xfrm\n          subsystem affecting ESP (Encapsulating Security Payload) fragmentation. Dubbed\n          \"DirtyFrag\", the bug allows a local unprivileged user to gain write access to read-only\n          page-cache pages by triggering a race condition in how the kernel handles shared fragments\n          when processing ESP-encapsulated UDP packets. The exploit overwrites a SUID binary on disk\n          to execute an arbitrary payload as root.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_43284_dirty_frag.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linux Kernel - Local Privilege Escalation",
+      "description": "Linux Kernel - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52585.txt"
     }
   ],
   "CVE-2026-43500": [
@@ -157,6 +163,12 @@
       "name": "rxkad Page-Cache Write via CVE-2026-43500",
       "description": "CVE-2026-43500 exploits a memory-corruption vulnerability in the Linux kernel's RxRPC\n          authentication subsystem (rxkad). When a crafted DATA packet is delivered to an AF_RXRPC\n          socket configured with an attacker-controlled rxkad session key, the kernel's\n          rxkad_verify_packet_1() function performs an in-place 8-byte pcbc(fcrypt) decryption\n          directly on the page-cache page referenced by the splice offset. Because the decryption\n          mutates the page in-place without marking it dirty, the corrupted in-memory view is\n          immediately visible to all processes reading from the page cache. This allows a local\n          attacker to corrupt the in-memory contents of a SUID binary and escalate privileges to root.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_43500_dirty_frag.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linux Kernel - Local Privilege Escalation",
+      "description": "Linux Kernel - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52585.txt"
     }
   ],
   "CVE-2026-24061": [
@@ -275,12 +287,36 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_template_import_rce.rb"
     }
   ],
+  "CVE-2026-6815": [
+    {
+      "source": "exploitdb",
+      "name": "Casdoor 3.54.1 - Arbitrary File Write via Path Traversal",
+      "description": "Casdoor 3.54.1 - Arbitrary File Write via Path Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/52584.py"
+    }
+  ],
+  "CVE-2026-36356": [
+    {
+      "source": "exploitdb",
+      "name": "MeiG Smart FORGE_SLT711 - OS Command Injection",
+      "description": "MeiG Smart FORGE_SLT711 - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/hardware/52581.py"
+    }
+  ],
   "CVE-2026-23231": [
     {
       "source": "exploitdb",
       "name": "Linux nf_tables 6.19.3 - Local Privilege Escalation",
       "description": "Linux nf_tables 6.19.3 - Local Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52549.py"
+    }
+  ],
+  "CVE-2026-36355": [
+    {
+      "source": "exploitdb",
+      "name": "Realtek rtl819x  - Local Privilege",
+      "description": "Realtek rtl819x  - Local Privilege",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52580.c"
     }
   ],
   "CVE-2026-2441": [
@@ -381,6 +417,20 @@
       "name": "Erugo  0.2.14 - Remote Code Execution (RCE)",
       "description": "Erugo  0.2.14 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52529.py"
+    }
+  ],
+  "CVE-2026-33534": [
+    {
+      "source": "exploitdb",
+      "name": "EspoCRM 9.3.3 -  SSRF",
+      "description": "EspoCRM 9.3.3 -  SSRF",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52583.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
+      "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
     }
   ],
   "CVE-2026-25643": [
@@ -527,6 +577,14 @@
       "name": "phpMyFAQ  4.0.16 - Improper Authorization",
       "description": "phpMyFAQ  4.0.16 - Improper Authorization",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52523.txt"
+    }
+  ],
+  "CVE-2026-44262": [
+    {
+      "source": "exploitdb",
+      "name": "scramble - Remote Code Execution",
+      "description": "scramble - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52582.py"
     }
   ],
   "CVE-2026-24486": [
@@ -1143,14 +1201,6 @@
       "name": "AVideo <= 26.0 - WWBN AVideo - Remote Code Execution",
       "description": "WWBN AVideo <= 26.0 contains multiple vulnerabilities in the CloneSite plugin including unauthenticated exposure of clone secret keys and OS command injection in rsync command construction, letting unauthenticated attackers achieve remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33478.yaml"
-    }
-  ],
-  "CVE-2026-33534": [
-    {
-      "source": "nuclei",
-      "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
-      "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
     }
   ],
   "CVE-2026-33626": [
