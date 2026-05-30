@@ -152,6 +152,12 @@
     },
     {
       "source": "exploitdb",
+      "name": "Linux Kernel -  Local Privilege Escalation",
+      "description": "Linux Kernel -  Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
+    },
+    {
+      "source": "exploitdb",
       "name": "Linux Kernel - Local Privilege Escalation",
       "description": "Linux Kernel - Local Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52585.txt"
@@ -163,6 +169,12 @@
       "name": "rxkad Page-Cache Write via CVE-2026-43500",
       "description": "CVE-2026-43500 exploits a memory-corruption vulnerability in the Linux kernel's RxRPC\n          authentication subsystem (rxkad). When a crafted DATA packet is delivered to an AF_RXRPC\n          socket configured with an attacker-controlled rxkad session key, the kernel's\n          rxkad_verify_packet_1() function performs an in-place 8-byte pcbc(fcrypt) decryption\n          directly on the page-cache page referenced by the splice offset. Because the decryption\n          mutates the page in-place without marking it dirty, the corrupted in-memory view is\n          immediately visible to all processes reading from the page cache. This allows a local\n          attacker to corrupt the in-memory contents of a SUID binary and escalate privileges to root.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_43500_dirty_frag.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linux Kernel -  Local Privilege Escalation",
+      "description": "Linux Kernel -  Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
     },
     {
       "source": "exploitdb",
@@ -317,6 +329,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/hardware/52581.py"
     }
   ],
+  "CVE-2026-46300": [
+    {
+      "source": "exploitdb",
+      "name": "Linux Kernel -  Local Privilege Escalation",
+      "description": "Linux Kernel -  Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
+    }
+  ],
   "CVE-2026-23231": [
     {
       "source": "exploitdb",
@@ -333,12 +353,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52580.c"
     }
   ],
+  "CVE-2026-35333": [
+    {
+      "source": "exploitdb",
+      "name": "strongSwan 5.9.13 - DoS",
+      "description": "strongSwan 5.9.13 - DoS",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52586.py"
+    }
+  ],
   "CVE-2026-2441": [
     {
       "source": "exploitdb",
       "name": "Google Chrome  145.0.7632.75 - CSSFontFeatureValuesMap",
       "description": "Google Chrome  145.0.7632.75 - CSSFontFeatureValuesMap",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52542.txt"
+    }
+  ],
+  "CVE-2026-46522": [
+    {
+      "source": "exploitdb",
+      "name": "ImageMagick - Infinite Loop in the MIFF decoder can lead to CPU exhaustion",
+      "description": "ImageMagick - Infinite Loop in the MIFF decoder can lead to CPU exhaustion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52595.sh"
     }
   ],
   "CVE-2026-34156": [
@@ -355,12 +391,52 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
     }
   ],
+  "CVE-2026-34474": [
+    {
+      "source": "exploitdb",
+      "name": "ZTE H298A / H108N - Unauthenticated Credential Exposure",
+      "description": "ZTE H298A / H108N - Unauthenticated Credential Exposure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52592.txt"
+    }
+  ],
+  "CVE-2026-34473": [
+    {
+      "source": "exploitdb",
+      "name": "ZTE Routers  - Unauthenticated Denial of Service",
+      "description": "ZTE Routers  - Unauthenticated Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52594.txt"
+    }
+  ],
+  "CVE-2026-34472": [
+    {
+      "source": "exploitdb",
+      "name": "ZTE ZXHN H188A V6 - Authentication Bypass",
+      "description": "ZTE ZXHN H188A V6 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52593.txt"
+    }
+  ],
+  "CVE-2026-35330": [
+    {
+      "source": "exploitdb",
+      "name": "strongSwan 5.9.13 - libsimaka EAP-SIM/AKA heap buffer overflow",
+      "description": "strongSwan 5.9.13 - libsimaka EAP-SIM/AKA heap buffer overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52587.c"
+    }
+  ],
   "CVE-2026-32746": [
     {
       "source": "exploitdb",
       "name": "telnetd 2.7 - Buffer Overflow",
       "description": "telnetd 2.7 - Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52556.py"
+    }
+  ],
+  "CVE-2026-44403": [
+    {
+      "source": "exploitdb",
+      "name": "Wing FTP Server 8.1.3 - Authenticated Remote Code Execution",
+      "description": "Wing FTP Server 8.1.3 - Authenticated Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52589.txt"
     }
   ],
   "CVE-2026-23918": [
@@ -407,6 +483,14 @@
       "name": "coreruleset 4.21.0 - Firewall Bypass",
       "description": "coreruleset 4.21.0 - Firewall Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52558.py"
+    }
+  ],
+  "CVE-2026-44376": [
+    {
+      "source": "exploitdb",
+      "name": "CubeCart < 6.7.0 - Reflected Cross-Site Scripting (XSS) (Unauthenticated)",
+      "description": "CubeCart < 6.7.0 - Reflected Cross-Site Scripting (XSS) (Unauthenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52588.txt"
     }
   ],
   "CVE-2026-25047": [
@@ -509,6 +593,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52536.py"
     }
   ],
+  "CVE-2026-0770": [
+    {
+      "source": "exploitdb",
+      "name": "Langflow 1.3.0 - Remote Code Execution",
+      "description": "Langflow 1.3.0 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52597.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
+      "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
+    }
+  ],
+  "CVE-2026-44680": [
+    {
+      "source": "exploitdb",
+      "name": "MikroORM   7.0.13 - SQL Injection",
+      "description": "MikroORM   7.0.13 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52600.py"
+    }
+  ],
   "CVE-2026-27483": [
     {
       "source": "exploitdb",
@@ -553,6 +659,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52561.py"
     }
   ],
+  "CVE-2026-0926": [
+    {
+      "source": "exploitdb",
+      "name": "Prodigy Commerce 3.3.0 - Local File Inclusion",
+      "description": "Prodigy Commerce 3.3.0 - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52598.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Prodigy Commerce <= 3.3.0 - Local File Inclusion",
+      "description": "Prodigy Commerce WordPress plugin <= 3.2.9 contains a local file inclusion caused by improper sanitization of 'parameters[template_name]' parameter, letting unauthenticated attackers include and execute arbitrary files remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0926.yaml"
+    }
+  ],
+  "CVE-2026-1830": [
+    {
+      "source": "exploitdb",
+      "name": "Quick Playground for WordPress 1.3.1 - Unauthenticated Remote Code Execution",
+      "description": "Quick Playground for WordPress 1.3.1 - Unauthenticated Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52596.py"
+    }
+  ],
   "CVE-2026-26335": [
     {
       "source": "exploitdb",
@@ -583,6 +711,14 @@
       "name": "Grav CMS 2.0.0-beta.2 -  Remote Code Execution",
       "description": "Grav CMS 2.0.0-beta.2 -  Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52578.py"
+    }
+  ],
+  "CVE-2026-42471": [
+    {
+      "source": "exploitdb",
+      "name": "MixPHP Framework 2.2.17 - Unsafe Deserialization Remote Code Execution",
+      "description": "MixPHP Framework 2.2.17 - Unsafe Deserialization Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52590.py"
     }
   ],
   "CVE-2026-24421": [
@@ -641,6 +777,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52567.txt"
     }
   ],
+  "CVE-2026-32202": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft - NTLMv2 Hash Capture",
+      "description": "Microsoft - NTLMv2 Hash Capture",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52601.txt"
+    }
+  ],
   "CVE-2026-0545": [
     {
       "source": "nuclei",
@@ -665,28 +809,12 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0594.yaml"
     }
   ],
-  "CVE-2026-0770": [
-    {
-      "source": "nuclei",
-      "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
-      "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
-    }
-  ],
   "CVE-2026-0829": [
     {
       "source": "nuclei",
       "name": "Frontend File Manager Plugin <= 23.5 - Unauthenticated Arbitrary Email Sending",
       "description": "Frontend File Manager Plugin WordPress plugin through 23.5 contains an open relay and unauthorized file access vulnerability caused by lack of authentication and security checks, letting unauthenticated attackers send emails and access files, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
-    }
-  ],
-  "CVE-2026-0926": [
-    {
-      "source": "nuclei",
-      "name": "Prodigy Commerce <= 3.3.0 - Local File Inclusion",
-      "description": "Prodigy Commerce WordPress plugin <= 3.2.9 contains a local file inclusion caused by improper sanitization of 'parameters[template_name]' parameter, letting unauthenticated attackers include and execute arbitrary files remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0926.yaml"
     }
   ],
   "CVE-2026-1207": [
