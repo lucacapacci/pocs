@@ -1161,6 +1161,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27645.yaml"
     }
   ],
+  "CVE-2026-27771": [
+    {
+      "source": "nuclei",
+      "name": "Gitea Container Registry - Unauthorized Private Image Access",
+      "description": "Gitea < 1.26.2 allows unauthenticated remote attackers to pull private container images.The /v2/token endpoint grants anonymous ghost tokens (UserID:-1) with no scope restriction.The ReqContainerAccess middleware does not check package owner visibility, so ghost users can enumerate all container repositories via /_catalog and pull any private image layer.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27771.yaml"
+    }
+  ],
   "CVE-2026-27944": [
     {
       "source": "nuclei",
@@ -1695,6 +1703,14 @@
       "name": "FlipperCode Custom CSS, JS & PHP <= 2.0.7 - Remote Code Execution",
       "description": "Custom css-js-php WordPress plugin through 2.0.7 contains a command injection caused by unsanitized user input used in SQL query and passed to eval(), letting unauthenticated attackers execute arbitrary PHP code on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6433.yaml"
+    }
+  ],
+  "CVE-2026-8181": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Burst Statistics 3.4.0-3.4.1.1 - Authentication Bypass",
+      "description": "Burst Statistics \u2013 Privacy-Friendly WordPress Analytics plugin 3.4.0 to 3.4.1.1 contains an authentication bypass caused by incorrect return-value handling in is_mainwp_authenticated() function, letting unauthenticated attackers impersonate administrators, exploit requires knowledge of an administrator username.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8181.yaml"
     }
   ],
   "CVE-2026-8679": [
