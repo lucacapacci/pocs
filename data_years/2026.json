@@ -1641,6 +1641,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42031.yaml"
     }
   ],
+  "CVE-2026-42208": [
+    {
+      "source": "nuclei",
+      "name": "LiteLLM - SQL Injection",
+      "description": "LiteLLM 1.81.16 to < 1.83.7 contains a SQL injection caused by improper handling of caller-supplied key in database query during proxy API key checks, letting unauthenticated attackers read and modify database data, exploit requires crafted Authorization header.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42208.yaml"
+    }
+  ],
   "CVE-2026-42281": [
     {
       "source": "nuclei",
@@ -1655,6 +1663,22 @@
       "name": "phpVMS < 7.0.6 - Legacy Importer Authorization Bypass",
       "description": "phpVMS < 7.0.6 contains an authentication bypass caused by unauthenticated access to a legacy import feature, letting unauthenticated attackers access restricted functionality, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42569.yaml"
+    }
+  ],
+  "CVE-2026-42589": [
+    {
+      "source": "nuclei",
+      "name": "Gotenberg - Command Injection",
+      "description": "Gotenberg < 8.31.0 contains a command injection caused by lack of validation on JSON metadata keys in /forms/pdfengines/metadata/write endpoint, letting unauthenticated attackers execute OS commands, exploit requires crafted HTTP request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42589.yaml"
+    }
+  ],
+  "CVE-2026-42647": [
+    {
+      "source": "nuclei",
+      "name": "JoomSport <= 5.7.7 - SQL Injection",
+      "description": "The JoomSport WordPress plugin through 5.7.7 is vulnerable to unauthenticated time-based blind SQL injection via the 'sortf' GET parameter in the player list view. The parameter value is backtick-wrapped and directly concatenated into an ORDER BY clause.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42647.yaml"
     }
   ],
   "CVE-2026-46372": [
@@ -1735,6 +1759,14 @@
       "name": "FlipperCode Custom CSS, JS & PHP <= 2.0.7 - Remote Code Execution",
       "description": "Custom css-js-php WordPress plugin through 2.0.7 contains a command injection caused by unsanitized user input used in SQL query and passed to eval(), letting unauthenticated attackers execute arbitrary PHP code on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6433.yaml"
+    }
+  ],
+  "CVE-2026-7798": [
+    {
+      "source": "nuclei",
+      "name": "WordPress FluentCRM <= 2.9.87 - Unauthenticated Blind SSRF",
+      "description": "FluentCRM WordPress plugin <= 2.9.87 contains a blind server-side request forgery caused by improper validation of the 'SubscribeURL' parameter, letting unauthenticated attackers make arbitrary web requests, exploit requires unconfigured SES bounce handling key.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7798.yaml"
     }
   ],
   "CVE-2026-8181": [
