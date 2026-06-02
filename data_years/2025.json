@@ -2601,6 +2601,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-3605.yaml"
     }
   ],
+  "CVE-2025-10162": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress OrderConvo 14 - Path Traversal",
+      "description": "WordPress OrderConvo 14 - Path Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52607.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress OrderConvo < 14 - Path Traversal",
+      "description": "WooCommerce OrderConvo WordPress plugin \\u003C 14 contains a path traversal vulnerability caused by improper validation of file download paths, letting unauthenticated attackers read or download arbitrary files remotely\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10162.yaml"
+    }
+  ],
   "CVE-2025-67586": [
     {
       "source": "exploitdb",
@@ -3119,14 +3133,6 @@
       "name": "Jinher OA - SQL Injection",
       "description": "jinher jinher_oa is an office automation software that facilitates workflow management and collaboration within organizations. It sits in the enterprise layer of the tech stack, is typically deployed as self_hosted, and\u2014within the information_technology industry\u2014serves the business_apps domain.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10090.yaml"
-    }
-  ],
-  "CVE-2025-10162": [
-    {
-      "source": "nuclei",
-      "name": "WordPress OrderConvo < 14 - Path Traversal",
-      "description": "WooCommerce OrderConvo WordPress plugin \\u003C 14 contains a path traversal vulnerability caused by improper validation of file download paths, letting unauthenticated attackers read or download arbitrary files remotely\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-10162.yaml"
     }
   ],
   "CVE-2025-10204": [

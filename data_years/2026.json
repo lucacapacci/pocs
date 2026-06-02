@@ -729,6 +729,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52604.py"
     }
   ],
+  "CVE-2026-9082": [
+    {
+      "source": "exploitdb",
+      "name": "Drupal Core 10.5.5 - Error-Based SQL Injection",
+      "description": "Drupal Core 10.5.5 - Error-Based SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52608.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Drupal Core - Anonymous SQL Injection via PostgreSQL Entity Query",
+      "description": "Drupal core from 8.9.0 before 10.4.10, 10.5.0 before 10.5.10, 10.6.0 before 10.6.9, 11.0.0 before 11.1.10, 11.2.0 before 11.2.12, and 11.3.0 before 11.3.10 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9082.yaml"
+    }
+  ],
   "CVE-2026-42607": [
     {
       "source": "exploitdb",
@@ -1783,14 +1797,6 @@
       "name": "WordPress AudioIgniter <= 2.0.2 - Unauthenticated IDOR",
       "description": "The AudioIgniter plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 2.0.2. The handle_playlist_endpoint() function accepted a user-controlled playlist ID and returned track data without authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8679.yaml"
-    }
-  ],
-  "CVE-2026-9082": [
-    {
-      "source": "nuclei",
-      "name": "Drupal Core - Anonymous SQL Injection via PostgreSQL Entity Query",
-      "description": "Drupal core from 8.9.0 before 10.4.10, 10.5.0 before 10.5.10, 10.6.0 before 10.6.9, 11.0.0 before 11.1.10, 11.2.0 before 11.2.12, and 11.3.0 before 11.3.10 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9082.yaml"
     }
   ],
   "CVE-2026-23829": [
