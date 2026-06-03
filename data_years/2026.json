@@ -773,6 +773,12 @@
       "name": "scramble - Remote Code Execution",
       "description": "scramble - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52582.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Scramble Laravel - Remote Code Execution",
+      "description": "Scramble for Laravel >= 0.13.2 and < 0.13.22 contains a remote code execution caused by evaluation of user-controlled input in validation rules during documentation generation, letting remote attackers execute arbitrary PHP code, exploit requires publicly accessible documentation endpoints.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44262.yaml"
     }
   ],
   "CVE-2026-24486": [
@@ -1271,6 +1277,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29014.yaml"
     }
   ],
+  "CVE-2026-29059": [
+    {
+      "source": "nuclei",
+      "name": "Windmill/Nextcloud Flow < 1.603.3 - Unauthenticated Path Traversal",
+      "description": "Windmill < 1.603.3 contains a path traversal caused by unsanitized filename parameter in get_log_file endpoint, letting unauthenticated attackers read arbitrary files on the server, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29059.yaml"
+    }
+  ],
   "CVE-2026-29066": [
     {
       "source": "nuclei",
@@ -1701,6 +1715,14 @@
       "name": "JoomSport <= 5.7.7 - SQL Injection",
       "description": "The JoomSport WordPress plugin through 5.7.7 is vulnerable to unauthenticated time-based blind SQL injection via the 'sortf' GET parameter in the player list view. The parameter value is backtick-wrapped and directly concatenated into an ORDER BY clause.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42647.yaml"
+    }
+  ],
+  "CVE-2026-45397": [
+    {
+      "source": "nuclei",
+      "name": "Open WebUI < 0.9.5 - Information Disclosure",
+      "description": "Open WebUI < 0.9.5 contains an information disclosure vulnerability caused by unauthenticated access to GET /api/v1/retrieval/ endpoint, letting remote attackers retrieve live RAG pipeline configuration without authorization, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-45397.yaml"
     }
   ],
   "CVE-2026-46372": [
