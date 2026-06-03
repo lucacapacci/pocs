@@ -4570,7 +4570,7 @@
   "CVE-2025-49001": [
     {
       "source": "nuclei",
-      "name": "DataEase <=2.10.8 - JWT Authentication Bypass",
+      "name": "DataEase < 2.10.10 - JWT Authentication Bypass",
       "description": "DataEase < 2.10.10 contains a broken authentication caused by ineffective secret verification, letting users forge JWT tokens, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49001.yaml"
     }
