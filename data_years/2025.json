@@ -4527,6 +4527,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-47646.yaml"
     }
   ],
+  "CVE-2025-47783": [
+    {
+      "source": "nuclei",
+      "name": "Label Studio < 1.18.0 - Reflected XSS",
+      "description": "Label Studio < 1.18.0 contains a stored XSS caused by improper sanitization in POST /projects/upload-example/ endpoint, letting attackers inject malicious scripts to hijack sessions and perform unauthorized actions, exploit requires sending crafted requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-47783.yaml"
+    }
+  ],
   "CVE-2025-47813": [
     {
       "source": "nuclei",
