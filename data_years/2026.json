@@ -1165,6 +1165,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25512.yaml"
     }
   ],
+  "CVE-2026-25527": [
+    {
+      "source": "nuclei",
+      "name": "changedetection.io <= 0.52.9 - Unauthenticated Path Traversal",
+      "description": "changedetection.io <= 0.53.9 contains a path traversal caused by improper validation of the 'group' parameter in /static/<group>/<filename> route, letting unauthenticated attackers read local application source files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25527.yaml"
+    }
+  ],
   "CVE-2026-25545": [
     {
       "source": "nuclei",
