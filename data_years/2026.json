@@ -1517,6 +1517,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34885.yaml"
     }
   ],
+  "CVE-2026-34910": [
+    {
+      "source": "nuclei",
+      "name": "UniFi OS Server - Command Injection",
+      "description": "A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34910.yaml"
+    }
+  ],
   "CVE-2026-35029": [
     {
       "source": "nuclei",
@@ -1765,6 +1773,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44551.yaml"
     }
   ],
+  "CVE-2026-45298": [
+    {
+      "source": "nuclei",
+      "name": "Dozzle - Server Side Request Forgery",
+      "description": "Dozzle prior to 10.5.2 contains a server-side request forgery caused by unauthenticated access to POST /api/notifications/test-webhook forwarding attacker-controlled URLs, letting remote attackers send arbitrary HTTP POST requests and receive response data, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-45298.yaml"
+    }
+  ],
   "CVE-2026-45397": [
     {
       "source": "nuclei",
@@ -1821,6 +1837,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48710.yaml"
     }
   ],
+  "CVE-2026-5073": [
+    {
+      "source": "nuclei",
+      "name": "WordPress ARMember Premium <= 7.3.1 - Unauthenticated SQL Injection",
+      "description": "The ARMember Premium plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the 'arm_directory_paging_action' AJAX action in all versions up to, and including, 7.3.1. This is due to insufficient escaping on the user-supplied 'order' and 'orderby' parameters and the lack of sufficient preparation on the existing SQL query in the `arm_get_directory_members()` function.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5073.yaml"
+    }
+  ],
   "CVE-2026-5615": [
     {
       "source": "nuclei",
@@ -1867,6 +1891,14 @@
       "name": "WordPress FluentCRM <= 2.9.87 - Unauthenticated Blind SSRF",
       "description": "FluentCRM WordPress plugin <= 2.9.87 contains a blind server-side request forgery caused by improper validation of the 'SubscribeURL' parameter, letting unauthenticated attackers make arbitrary web requests, exploit requires unconfigured SES bounce handling key.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7798.yaml"
+    }
+  ],
+  "CVE-2026-8054": [
+    {
+      "source": "nuclei",
+      "name": "dotCMS Core Publish Audit API - Unauthenticated SQL Injection",
+      "description": "dotCMS Core 25.11.04-1 through 26.04.28-02 contains an SQL injection caused by unsanitized input in Publish Audit API endpoints (/api/auditPublishing/get and /api/auditPublishing/getAll), letting remote unauthenticated attackers read, modify, or destroy arbitrary database content, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8054.yaml"
     }
   ],
   "CVE-2026-8181": [
