@@ -893,6 +893,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10520.yaml"
     }
   ],
+  "CVE-2026-10580": [
+    {
+      "source": "nuclei",
+      "name": "Hippoo Mobile App for WooCommerce <= 1.9.4 - Authentication Bypass to Admin Account Takeover",
+      "description": "Hippoo Mobile App for WooCommerce WordPress plugin <= 1.9.4 contains an authentication bypass caused by logic conflation in user permission checks, letting unauthenticated attackers take over administrator accounts via REST API password reset.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10580.yaml"
+    }
+  ],
   "CVE-2026-1207": [
     {
       "source": "nuclei",
@@ -1349,6 +1357,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
     }
   ],
+  "CVE-2026-3018": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Newsletters <= 4.13 - Unauthenticated SQL Injection",
+      "description": "Newsletters WordPress plugin <= 4.13 contains a time-based SQL injection caused by insufficient escaping of the 'wpmlsubscriber_id' parameter, letting unauthenticated attackers extract sensitive database information.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3018.yaml"
+    }
+  ],
   "CVE-2026-30824": [
     {
       "source": "nuclei",
@@ -1413,6 +1429,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
+  "CVE-2026-3300": [
+    {
+      "source": "nuclei",
+      "name": "Everest Forms Pro <= 1.9.12 - Unauthenticated RCE via Calculation Formula Injection",
+      "description": "The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_filter() function concatenating user-submitted form field values into a PHP code string without proper escaping before passing it to eval(). The sanitize_text_field() function applied to input does not escape single quotes or other PHP code context characters. This makes it possible for unauthenticated attackers to inject and execute arbitrary PHP code on the server by submitting a crafted value in any string-type form field (text, email, URL, select, radio) when a form uses the \"Complex Calculation\" feature.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3300.yaml"
+    }
+  ],
   "CVE-2026-33017": [
     {
       "source": "nuclei",
@@ -1451,6 +1475,14 @@
       "name": "OpenAM <= 16.0.5 - Pre-Auth RCE via jato.clientSession Deserialization",
       "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.0.6, OpenIdentityPlatform OpenAM is vulnerable to pre-authentication Remote Code Execution (RCE) via unsafe Java deserialization of the jato.clientSession HTTP parameter. This bypasses the WhitelistObjectInputStream mitigation that was applied to the jato.pageSession parameter after CVE-2021-35464.  This vulnerability is fixed in 16.0.6.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33439.yaml"
+    }
+  ],
+  "CVE-2026-33476": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan <= v3.6.1 - Path Traversal",
+      "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, the Siyuan kernel exposes an unauthenticated file-serving endpoint under `/appearance/*filepath.` Due to improper path sanitization, attackers can perform directory traversal and read arbitrary files accessible to the server process. Authentication checks explicitly exclude this endpoint, allowing exploitation without valid credentials. Version 3.6.2 fixes this issue.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33476.yaml"
     }
   ],
   "CVE-2026-33478": [
@@ -1629,6 +1661,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40105.yaml"
     }
   ],
+  "CVE-2026-40151": [
+    {
+      "source": "nuclei",
+      "name": "PraisonAI AgentOS - Information Disclosure",
+      "description": "PraisonAI's AgentOS FastAPI application server exposes an unauthenticated `GET /api/agents` endpoint that lists every registered agent's name, role and the opening of its instructions (system prompt). No authentication is enforced on the route, allowing a remote attacker to enumerate agent configurations and harvest sensitive details embedded in system prompts, such as internal API references, business logic and credential hints. This endpoint belongs to the AgentOS FastAPI server and is distinct from the legacy Flask `/agents` server tracked as CVE-2026-44338.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40151.yaml"
+    }
+  ],
   "CVE-2026-4020": [
     {
       "source": "nuclei",
@@ -1699,6 +1739,14 @@
       "name": "RClone RC - Command Injection",
       "description": "Rclone >= 1.48.0 and < 1.73.5 contains an unauthenticated local command execution caused by unauthenticated access to the RC endpoint operations/fsinfo with attacker-controlled fs input, letting unauthenticated attackers execute local commands, exploit requires reachable RC deployment without global HTTP authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41179.yaml"
+    }
+  ],
+  "CVE-2026-41492": [
+    {
+      "source": "nuclei",
+      "name": "Dgraph <= 25.3.2 - Admin Token Disclosure",
+      "description": "Dgraph <= 25.3.2 contains an information disclosure caused by unauthenticated access to the /debug/vars endpoint , which publishes  the cmdline variable including the --security token= flag, letting unauthenticated remote attackers retrieve the admin token and access admin-only endpoints, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41492.yaml"
     }
   ],
   "CVE-2026-41640": [
@@ -1797,6 +1845,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-45397.yaml"
     }
   ],
+  "CVE-2026-46364": [
+    {
+      "source": "nuclei",
+      "name": "phpMyFAQ <= 4.1.1 - SQL Injection",
+      "description": "phpMyFAQ before 4.1.2 contains an unauthenticated SQL injection vulnerability in BuiltinCaptcha::garbageCollector() and BuiltinCaptcha::saveCaptcha() methods that interpolate unsanitized User-Agent headers into DELETE and INSERT queries. Unauthenticated attackers can exploit the public GET /api/captcha endpoint by crafting malicious User-Agent headers to perform time-based blind SQL injection, extracting sensitive data including user credentials, admin tokens, and SMTP credentials from the database.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46364.yaml"
+    }
+  ],
   "CVE-2026-46372": [
     {
       "source": "nuclei",
@@ -1843,6 +1899,14 @@
       "name": "Starlette - Improper Validation of Unsafe Equivalence in Input",
       "description": "A flaw was found in Starlette, a lightweight ASGI (Asynchronous Server Gateway Interface) framework. A remote attacker could exploit this vulnerability by sending a specially crafted HTTP Host request header. This malformed header could cause the request.url to be incorrectly reconstructed, leading to a discrepancy with the actual requested path. Consequently, security restrictions enforced by middleware and endpoints that rely on request.url for validation could be bypassed, potentially allowing unauthorized access or actions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48710.yaml"
+    }
+  ],
+  "CVE-2026-49777": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Product Slider Pro for WooCommerce < 3.5.4 - Supply Chain Backdoor RCE",
+      "description": "Improper Validation of Specified Quantity in Input vulnerability in ShapedPlugin, LLC Product Slider Pro for WooCommerce allows Malicious Software Implanted. This issue affects Product Slider Pro for WooCommerce: from n/a before 3.5.4.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49777.yaml"
     }
   ],
   "CVE-2026-5027": [
@@ -1939,6 +2003,22 @@
       "name": "WordPress MapPress Maps <= 2.96.6 - Unauthenticated IDOR",
       "description": "MapPress Maps for WordPress <= 2.96.6 contains an authorization bypass caused by missing ownership verification in REST API routes, letting unauthenticated attackers read any map data and authenticated contributors modify any map, exploit requires crafted API requests\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8839.yaml"
+    }
+  ],
+  "CVE-2026-9290": [
+    {
+      "source": "nuclei",
+      "name": "WP User Manager \u2013 User Profile Builder & Membership - Local File Inclusion",
+      "description": "WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress <= 2.9.17 contains a local file inclusion caused by improper handling in the profile template scope function, letting unauthenticated attackers execute arbitrary PHP code, exploit requires ability to upload or control PHP files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9290.yaml"
+    }
+  ],
+  "CVE-2026-44338": [
+    {
+      "source": "nuclei",
+      "name": "PraisonAI - Authentication Bypass",
+      "description": "PraisonAI 2.5.6 to < 4.6.34 contains a broken authentication caused by disabled default authentication in legacy Flask API server, letting remote attackers access /agents and trigger workflows without token, exploit requires network access to API server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/cve-2026-44338.yaml"
     }
   ],
   "CVE-2026-23829": [

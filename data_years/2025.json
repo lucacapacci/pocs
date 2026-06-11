@@ -3327,6 +3327,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-1323.yaml"
     }
   ],
+  "CVE-2025-13339": [
+    {
+      "source": "nuclei",
+      "name": "Hippoo Mobile App for WooCommerce <= 1.7.1 - Unauthenticated Arbitrary File Read",
+      "description": "The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Path Traversal in all versions up to and including 1.7.1 via the template_redirect() function. The plugin registers 'hippoo_serve' as a WordPress query variable and uses it to serve PWA files from the pwa/ directory. In vulnerable versions, the user-supplied value is concatenated directly into a filesystem path without any sanitization or directory confinement check, then passed to readfile(). This allows unauthenticated attackers to read arbitrary files on the server by injecting directory traversal sequences (../).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13339.yaml"
+    }
+  ],
   "CVE-2025-1338": [
     {
       "source": "nuclei",
@@ -3645,6 +3653,14 @@
       "name": "Omnissa Workspace ONE UEM - Path Traversal",
       "description": "Omnissa Workspace ONE UEM contains a path traversal caused by crafted GET requests to restricted API endpoints, letting malicious actors access sensitive information, exploit requires sending crafted requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25231.yaml"
+    }
+  ],
+  "CVE-2025-25296": [
+    {
+      "source": "nuclei",
+      "name": "Label Studio < 1.16.0 - Cross-Site Scripting",
+      "description": "Label Studio prior to version 1.16.0 contains a cross-site scripting caused by rendering unsanitized user-provided HTML in the /projects/upload-example endpoint, letting attackers execute arbitrary JavaScript via crafted label_config in a GET request, exploit requires victims to visit malicious URL.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25296.yaml"
     }
   ],
   "CVE-2025-2539": [
