@@ -321,6 +321,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_template_import_rce.rb"
     }
   ],
+  "CVE-2026-46333": [
+    {
+      "source": "metasploit",
+      "name": "Linux Kernel __ptrace_may_access() Exit Race chage File Disclosure",
+      "description": "This module exploits a race condition in the Linux kernel\n          do_exit() teardown path affecting __ptrace_may_access().\n\n          During process termination, privileged file descriptors may\n          remain accessible through pidfd_getfd() after task->mm becomes\n          NULL, allowing sensitive file disclosure from privileged SUID\n          binaries such as chage.\n\n          This module targets chage to disclose /etc/shadow.\n\n          This module performs information disclosure only and does not\n          create a new session.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/post/linux/gather/cve_2026_46333_chage.rb"
+    }
+  ],
   "CVE-2026-6815": [
     {
       "source": "exploitdb",
