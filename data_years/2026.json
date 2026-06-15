@@ -1901,6 +1901,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-47668.yaml"
     }
   ],
+  "CVE-2026-47670": [
+    {
+      "source": "nuclei",
+      "name": "DbGate - Remote Code Execution via Dynamic Import Bypass",
+      "description": "DbGate versions <= 7.1.8 are vulnerable to authenticated remote code execution via the POST /runners/load-reader endpoint. The functionName parameter is directly interpolated into a JavaScript code template without sanitization. The require=null mitigation is bypassed via dynamic import().\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-47670.yaml"
+    }
+  ],
   "CVE-2026-4810": [
     {
       "source": "nuclei",
@@ -1931,6 +1939,14 @@
       "name": "WordPress Product Slider Pro for WooCommerce < 3.5.4 - Supply Chain Backdoor RCE",
       "description": "Improper Validation of Specified Quantity in Input vulnerability in ShapedPlugin, LLC Product Slider Pro for WooCommerce allows Malicious Software Implanted. This issue affects Product Slider Pro for WooCommerce: from n/a before 3.5.4.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49777.yaml"
+    }
+  ],
+  "CVE-2026-50230": [
+    {
+      "source": "nuclei",
+      "name": "Lyrion Music Server <= 9.2.0 - Cross-Site Scripting",
+      "description": "Lyrion Music Server 9.2.0 contains a reflected XSS caused by improper sanitization of the search parameter in the server.log endpoint, letting unauthenticated attackers execute arbitrary script in users' browsers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50230.yaml"
     }
   ],
   "CVE-2026-5027": [
