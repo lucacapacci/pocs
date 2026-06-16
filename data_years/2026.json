@@ -313,6 +313,38 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4257.yaml"
     }
   ],
+  "CVE-2026-34413": [
+    {
+      "source": "metasploit",
+      "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Media Upload",
+      "description": "This module bypasses authentication failure, extension blacklist,\n          and path traversal vulnerabilities in the /editor/elfinder/php/connector.php\n          endpoint to upload and execute a shell in Xerte Online Toolkits\n          versions 3.15 (commit 4e40f8030a2e3267267db7ce03e0ff57270be6f5 as\n          there's no patch versions used) and earlier.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_mediaupload.rb"
+    }
+  ],
+  "CVE-2026-34414": [
+    {
+      "source": "metasploit",
+      "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Media Upload",
+      "description": "This module bypasses authentication failure, extension blacklist,\n          and path traversal vulnerabilities in the /editor/elfinder/php/connector.php\n          endpoint to upload and execute a shell in Xerte Online Toolkits\n          versions 3.15 (commit 4e40f8030a2e3267267db7ce03e0ff57270be6f5 as\n          there's no patch versions used) and earlier.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_mediaupload.rb"
+    }
+  ],
+  "CVE-2026-34415": [
+    {
+      "source": "metasploit",
+      "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Media Upload",
+      "description": "This module bypasses authentication failure, extension blacklist,\n          and path traversal vulnerabilities in the /editor/elfinder/php/connector.php\n          endpoint to upload and execute a shell in Xerte Online Toolkits\n          versions 3.15 (commit 4e40f8030a2e3267267db7ce03e0ff57270be6f5 as\n          there's no patch versions used) and earlier.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_mediaupload.rb"
+    }
+  ],
+  "CVE-2026-41459": [
+    {
+      "source": "metasploit",
+      "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Media Upload",
+      "description": "This module bypasses authentication failure, extension blacklist,\n          and path traversal vulnerabilities in the /editor/elfinder/php/connector.php\n          endpoint to upload and execute a shell in Xerte Online Toolkits\n          versions 3.15 (commit 4e40f8030a2e3267267db7ce03e0ff57270be6f5 as\n          there's no patch versions used) and earlier.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_mediaupload.rb"
+    }
+  ],
   "CVE-2026-32985": [
     {
       "source": "metasploit",
@@ -1979,6 +2011,14 @@
       "name": "WordPress ARMember Premium <= 7.3.1 - Unauthenticated SQL Injection",
       "description": "The ARMember Premium plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the 'arm_directory_paging_action' AJAX action in all versions up to, and including, 7.3.1. This is due to insufficient escaping on the user-supplied 'order' and 'orderby' parameters and the lack of sufficient preparation on the existing SQL query in the `arm_get_directory_members()` function.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5073.yaml"
+    }
+  ],
+  "CVE-2026-50751": [
+    {
+      "source": "nuclei",
+      "name": "Check Point IKEv1 Remote-Access VPN - Certificate Authentication Bypass",
+      "description": "IKEv1 key exchange contains a broken authentication caused by logic flow weakness in Remote Access and Mobile Access certificate validation, letting unauthenticated remote attackers bypass user authentication and establish VPN connections without valid passwords, exploit requires use of deprecated IKEv1.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
     }
   ],
   "CVE-2026-5615": [
