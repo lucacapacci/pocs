@@ -1261,6 +1261,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25545.yaml"
     }
   ],
+  "CVE-2026-25555": [
+    {
+      "source": "nuclei",
+      "name": "OpenBullet2 <= 0.3.2 - Authentication Bypass",
+      "description": "OpenBullet2 <= 0.3.2 contains an authentication bypass caused by improper API key authentication middleware handling empty X-Api-Key header, letting unauthenticated attackers gain admin access, exploit requires sending empty X-Api-Key header.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25555.yaml"
+    }
+  ],
   "CVE-2026-25616": [
     {
       "source": "nuclei",
@@ -2019,6 +2027,14 @@
       "name": "Check Point IKEv1 Remote-Access VPN - Certificate Authentication Bypass",
       "description": "IKEv1 key exchange contains a broken authentication caused by logic flow weakness in Remote Access and Mobile Access certificate validation, letting unauthenticated remote attackers bypass user authentication and establish VPN connections without valid passwords, exploit requires use of deprecated IKEv1.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
+    }
+  ],
+  "CVE-2026-54069": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan Note <= 3.6.5 - Authentication Bypass",
+      "description": "SiYuan Note 3.6.5 and prior is vulnerable to authentication bypass. The CheckAuth middleware unconditionally trusted all chrome-extension:// origins, granting RoleAdministrator access without token validation to any request with a spoofed Origin header. Fixed in v3.7.0.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54069.yaml"
     }
   ],
   "CVE-2026-5615": [
