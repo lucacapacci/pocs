@@ -1333,12 +1333,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27645.yaml"
     }
   ],
+  "CVE-2026-27760": [
+    {
+      "source": "nuclei",
+      "name": "OpenCATS - Command Injection",
+      "description": "OpenCATS prior to commit 3002a29 contains a command injection caused by injection of PHP statements into the installer AJAX endpoint's databaseConnectivity action parameter, letting unauthenticated attackers execute arbitrary code, exploit requires incomplete installation wizard.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27760.yaml"
+    }
+  ],
   "CVE-2026-27771": [
     {
       "source": "nuclei",
       "name": "Gitea Container Registry - Unauthorized Private Image Access",
       "description": "Gitea < 1.26.2 allows unauthenticated remote attackers to pull private container images.The /v2/token endpoint grants anonymous ghost tokens (UserID:-1) with no scope restriction.The ReqContainerAccess middleware does not check package owner visibility, so ghost users can enumerate all container repositories via /_catalog and pull any private image layer.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27771.yaml"
+    }
+  ],
+  "CVE-2026-27826": [
+    {
+      "source": "nuclei",
+      "name": "mcp-atlassian < 0.17.0 - Server-Side Request Forgery",
+      "description": "MCP Atlassian < 0.17.0 contains a server-side request forgery caused by improper validation of custom HTTP headers in the HTTP middleware, letting unauthenticated attackers force outbound requests to arbitrary URLs, exploit requires access to the mcp-atlassian HTTP endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27826.yaml"
     }
   ],
   "CVE-2026-27833": [
