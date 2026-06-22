@@ -1133,6 +1133,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21891.yaml"
     }
   ],
+  "CVE-2026-22557": [
+    {
+      "source": "nuclei",
+      "name": "UniFi Network Application - Path Traversal",
+      "description": "UniFi Network Application contains a path traversal vulnerability allowing a network attacker to access and manipulate files on the underlying system, potentially leading to account access, exploit requires network access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22557.yaml"
+    }
+  ],
   "CVE-2026-2262": [
     {
       "source": "nuclei",
@@ -2251,6 +2259,14 @@
       "name": "Next.js WebSocket Upgrade Handler - SSRF",
       "description": "Next.js 13.4.13 to before 15.5.16 and 16.2.5 contains a server-side request forgery caused by crafted WebSocket upgrade requests in the built-in Node.js server, letting attackers proxy requests to arbitrary destinations, exploit requires self-hosted deployment.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-44578.yaml"
+    }
+  ],
+  "CVE-2026-4480": [
+    {
+      "source": "nuclei",
+      "name": "Samba Printing Subsystem - Remote Code Execution",
+      "description": "A flaw was found in the Samba printing subsystem. Samba passes the client-controlled job description string to the command configured with the \"print command\" setting via the \"%J\" substitution character without escaping shell meta characters. A remote attacker could exploit this vulnerability by sending a specially crafted print job description that contains unescaped shell characters. This could lead to remote code execution on the affected system.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-4480.yaml"
     }
   ]
 }
