@@ -2085,6 +2085,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54069.yaml"
     }
   ],
+  "CVE-2026-54236": [
+    {
+      "source": "nuclei",
+      "name": "vLLM <= 0.23.0 - Anthropic Router Heap Address Information Leak",
+      "description": "vLLM <= 0.23.0 incompletely fixes CVE-2026-22778. The original fix added sanitize_message to the OpenAI router but the Anthropic-compatible router (/v1/messages) echoes str(exc) directly.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54236.yaml"
+    }
+  ],
+  "CVE-2026-55592": [
+    {
+      "source": "nuclei",
+      "name": "Dashy <= 4.3.6 - Reflected XSS via Workspace",
+      "description": "Dashy versions up to 4.3.6 contain a reflected cross-site scripting vulnerability in the workspace view. The url query parameter is passed directly to an iframe src attribute without scheme validation, allowing an attacker to inject javascript: URIs that execute arbitrary JavaScript in the context of the Dashy origin.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55592.yaml"
+    }
+  ],
   "CVE-2026-5615": [
     {
       "source": "nuclei",
