@@ -341,6 +341,12 @@
       "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Media Upload",
       "description": "This module bypasses authentication failure, extension blacklist,\n          and path traversal vulnerabilities in the /editor/elfinder/php/connector.php\n          endpoint to upload and execute a shell in Xerte Online Toolkits\n          versions 3.15 (commit 4e40f8030a2e3267267db7ce03e0ff57270be6f5 as\n          there's no patch versions used) and earlier.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_mediaupload.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Xerte Online Toolkits <= 3.15 - Remote Code Execution",
+      "description": "Xerte Online Toolkits versions 3.15 and earlier expose the elFinder file manager connector at /editor/elfinder/php/connector.php without authentication (CVE-2026-34413), because the access-control redirect for unauthenticated users does not call exit()/die() and execution continues server-side. This is chained with a relative path traversal in the elFinder rename command (CVE-2026-34414) and an incomplete file-extension blocklist that still permits .php4 (CVE-2026-34415) to write an attacker-controlled PHP file into the application root, resulting in unauthenticated remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34413.yaml"
     }
   ],
   "CVE-2026-34414": [
