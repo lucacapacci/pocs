@@ -1443,6 +1443,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28414.yaml"
     }
   ],
+  "CVE-2026-28496": [
+    {
+      "source": "nuclei",
+      "name": "FOSSBilling - Server-Side Template Injection",
+      "description": "A Server-Side Template Injection (SSTI) vulnerability exists in FOSSBilling's template rendering system. Administrators with access to features that render Twig templates (email templates, mass mail campaigns, custom payment adapters, and the string_render API endpoint) can inject arbitrary Twig expressions, leading to information disclosure and remote code execution. The vulnerability exists because Twig templates are rendered without a sandbox, allowing access to the full Twig environment, API context, and the application's dependency injection container.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28496.yaml"
+    }
+  ],
   "CVE-2026-29014": [
     {
       "source": "nuclei",
@@ -2083,6 +2091,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
     }
   ],
+  "CVE-2026-53787": [
+    {
+      "source": "nuclei",
+      "name": "Magento 2 Amasty Order Attributes < 4.0.0 - Unauthenticated Arbitrary File Upload",
+      "description": "Amasty Order Attributes for Magento 2 < 4.0.0 contains an unrestricted file upload vulnerability caused by lack of authentication and validation in the upload endpoint, letting unauthenticated attackers upload arbitrary files including PHP, enabling remote code execution or malware hosting.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53787.yaml"
+    }
+  ],
   "CVE-2026-54066": [
     {
       "source": "nuclei",
@@ -2097,6 +2113,14 @@
       "name": "SiYuan Note <= 3.6.5 - Authentication Bypass",
       "description": "SiYuan Note 3.6.5 and prior is vulnerable to authentication bypass. The CheckAuth middleware unconditionally trusted all chrome-extension:// origins, granting RoleAdministrator access without token validation to any request with a spoofed Origin header. Fixed in v3.7.0.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54069.yaml"
+    }
+  ],
+  "CVE-2026-54157": [
+    {
+      "source": "nuclei",
+      "name": "LobeHub LobeChat <= 2.1.56 - Server-Side Request Forgery",
+      "description": "LobeHub LobeChat versions up to and including 2.1.56 are vulnerable to an unauthenticated server-side request forgery vulnerability in the /webapi/proxy endpoint. The endpoint accepts a URL in the POST request body and fetches it server-side without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54157.yaml"
     }
   ],
   "CVE-2026-54236": [
