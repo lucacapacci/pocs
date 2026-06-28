@@ -1185,6 +1185,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22739.yaml"
     }
   ],
+  "CVE-2026-22778": [
+    {
+      "source": "nuclei",
+      "name": "vLLM 0.8.3 - 0.14.0 - Information Disclosure",
+      "description": "vLLM 0.8.3 to - 0.14.1 contains an information disclosure caused by leaking a heap address in error messages from the multimodal endpoint when processing invalid images, letting remote attackers reduce ASLR entropy, exploit requires sending invalid images.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22778.yaml"
+    }
+  ],
   "CVE-2026-22812": [
     {
       "source": "nuclei",
