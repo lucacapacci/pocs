@@ -2233,6 +2233,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8181.yaml"
     }
   ],
+  "CVE-2026-8383": [
+    {
+      "source": "nuclei",
+      "name": "LearnPress < 4.3.7 - Information Disclosure",
+      "description": "LearnPress WordPress plugin < 4.3.7 contains an information disclosure vulnerability caused by missing capability checks on a REST endpoint, letting unauthenticated visitors retrieve sensitive user role and capability data via crafted requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8383.yaml"
+    }
+  ],
   "CVE-2026-8679": [
     {
       "source": "nuclei",
