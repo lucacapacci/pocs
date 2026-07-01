@@ -2193,6 +2193,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
     }
   ],
+  "CVE-2026-56782": [
+    {
+      "source": "nuclei",
+      "name": "Gorse < 0.5.10 - Unauthenticated Database Dump",
+      "description": "Gorse < 0.5.10 contains an authentication bypass caused by empty admin_api_key in /api/dump and /api/restore endpoints, letting unauthenticated remote attackers access and modify protected data, exploit requires default empty admin_api_key configuration.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56782.yaml"
+    }
+  ],
   "CVE-2026-5718": [
     {
       "source": "nuclei",
