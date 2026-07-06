@@ -1097,6 +1097,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1603.yaml"
     }
   ],
+  "CVE-2026-1890": [
+    {
+      "source": "nuclei",
+      "name": "LeadConnector < 3.0.22 - Unauthenticated Arbitrary Data Write",
+      "description": "LeadConnector WordPress plugin < 3.0.22 contains a broken access control caused by missing authorization in a REST route, letting unauthenticated attackers overwrite existing data remotely, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
+    }
+  ],
   "CVE-2026-20079": [
     {
       "source": "nuclei",
@@ -2079,6 +2087,14 @@
       "name": "Google ADK-Python - Unauthenticated Builder Endpoint",
       "description": "Google Agent Development Kit (ADK) 1.7.0 through 1.28.1 and 2.0.0a1 through 2.0.0a2 on Python (OSS), Cloud Run, and GKE contains a code injection and missing authentication vulnerability, letting unauthenticated remote attackers execute arbitrary code on the server, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4810.yaml"
+    }
+  ],
+  "CVE-2026-48611": [
+    {
+      "source": "nuclei",
+      "name": "phpBB < 3.3.17 - Authentication Bypass",
+      "description": "phpBB before 3.3.17 contains an authentication bypass vulnerability in the login-link feature. By setting the auth_provider query parameter to \"apache\", an unauthenticated attacker can bypass password verification and log in as any user, including administrators. The Apache auth provider trusts the Basic authentication header username without password verification, as it assumes Apache handles authentication upstream.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48611.yaml"
     }
   ],
   "CVE-2026-48710": [

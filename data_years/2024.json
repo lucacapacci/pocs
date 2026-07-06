@@ -1431,6 +1431,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/misc/cups_ipp_remote_code_execution.rb"
     }
   ],
+  "CVE-2024-27822": [
+    {
+      "source": "metasploit",
+      "name": "macOS PackageKit ZSH Environment Privilege Escalation",
+      "description": "This module exploits CVE-2024-27822, a vulnerability in macOS\n          PackageKit.framework where PKG installer scripts using a ZSH shebang\n          (#!/bin/zsh) are executed as root while inheriting the installing user's\n          environment. This causes ZSH to load the user's ~/.zshenv with root\n          privileges before the installer script body runs.\n\n          The module injects a payload into ~/.zshenv that only fires when EUID is 0,\n          uploads a minimal PKG (from data/exploits/CVE-2024-27822/template.pkg) whose\n          install script uses a #!/bin/zsh shebang, and opens it with Installer.app.\n          When the user approves the installation dialog and authenticates, PackageKit\n          runs the install script as root. ZSH sources ~/.zshenv before the script body\n          executes, so the payload fires with root privileges. The original ~/.zshenv\n          content is restored immediately after the payload runs.\n\n          Affected: macOS 14.4 and earlier, 13.6.6 and earlier, 12.7.4 and earlier,\n          and all macOS 11 and older releases.\n          Fixed in: macOS 14.5, 13.6.7, 12.7.5.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/osx/local/packagekit_zshenv_privesc.rb"
+    }
+  ],
   "CVE-2024-45256": [
     {
       "source": "metasploit",
