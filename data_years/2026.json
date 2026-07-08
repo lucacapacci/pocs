@@ -445,6 +445,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52580.c"
     }
   ],
+  "CVE-2026-56766": [
+    {
+      "source": "exploitdb",
+      "name": "Hydra - Stack Buffer Overflow",
+      "description": "Hydra - Stack Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52622.py"
+    }
+  ],
   "CVE-2026-35333": [
     {
       "source": "exploitdb",
@@ -601,6 +609,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52528.py"
     }
   ],
+  "CVE-2026-49952": [
+    {
+      "source": "exploitdb",
+      "name": "Discuz! X5.0 - Authentication Bypass",
+      "description": "Discuz! X5.0 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52621.py"
+    }
+  ],
   "CVE-2026-2624": [
     {
       "source": "exploitdb",
@@ -629,6 +645,14 @@
       "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
       "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
+    }
+  ],
+  "CVE-2026-58057": [
+    {
+      "source": "exploitdb",
+      "name": "Flowise  3.1.3 - arbitrary code execution",
+      "description": "Flowise  3.1.3 - arbitrary code execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52623.py"
     }
   ],
   "CVE-2026-25643": [
@@ -713,6 +737,20 @@
       "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
       "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
+    }
+  ],
+  "CVE-2026-23744": [
+    {
+      "source": "exploitdb",
+      "name": "MCPJam Inspector - Remote Code Execution",
+      "description": "MCPJam Inspector - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52625.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "MCPJam Inspector - Remote Code Execution",
+      "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
     }
   ],
   "CVE-2026-44680": [
@@ -819,6 +857,14 @@
       "name": "SumatraPDF 3.5.2 - Remote Code Execution",
       "description": "SumatraPDF 3.5.2 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52535.py"
+    }
+  ],
+  "CVE-2026-57588": [
+    {
+      "source": "exploitdb",
+      "name": "Tenable Nessus 10.12.1 - SQL Injection",
+      "description": "Tenable Nessus 10.12.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52620.py"
     }
   ],
   "CVE-2026-3180": [
@@ -1303,14 +1349,6 @@
       "name": "Modular DS - Broken Access Control",
       "description": "Modular DS = 2.5.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23550.yaml"
-    }
-  ],
-  "CVE-2026-23744": [
-    {
-      "source": "nuclei",
-      "name": "MCPJam Inspector - Remote Code Execution",
-      "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
     }
   ],
   "CVE-2026-23760": [
