@@ -2179,6 +2179,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52492.py"
     }
   ],
+  "CVE-2025-60188": [
+    {
+      "source": "exploitdb",
+      "name": "Atarim WordPress Plugin  4.2.2 - Sensitive Information Exposure",
+      "description": "Atarim WordPress Plugin  4.2.2 - Sensitive Information Exposure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52628.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Atarim < 4.2.2 - Sensitive Information Exposure",
+      "description": "Vito Peleg Atarim <= 4.2 contains an insertion of sensitive information into sent data vulnerability caused by improper handling of embedded sensitive data, letting attackers retrieve embedded sensitive data remotely, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-60188.yaml"
+    }
+  ],
   "CVE-2025-8550": [
     {
       "source": "exploitdb",
@@ -5195,14 +5209,6 @@
       "name": "ownCloud Guests - User Enumeration",
       "description": "ownCloud Guests before 0.12.5 contains an unauthenticated user enumeration vulnerability caused by insufficient validation of the token in showPasswordForm at /apps/guests/register/{email}/{token}, letting unauthenticated attackers enumerate valid guest users, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59716.yaml"
-    }
-  ],
-  "CVE-2025-60188": [
-    {
-      "source": "nuclei",
-      "name": "Atarim < 4.2.2 - Sensitive Information Exposure",
-      "description": "Vito Peleg Atarim <= 4.2 contains an insertion of sensitive information into sent data vulnerability caused by improper handling of embedded sensitive data, letting attackers retrieve embedded sensitive data remotely, exploit requires no special privileges.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-60188.yaml"
     }
   ],
   "CVE-2025-6058": [
