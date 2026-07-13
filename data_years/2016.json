@@ -849,12 +849,6 @@
       "name": "Jenkins CLI - HTTP Java Deserialization (Metasploit)",
       "description": "Jenkins CLI - HTTP Java Deserialization (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/44642.rb"
-    },
-    {
-      "source": "nuclei",
-      "name": "Jenkins CLI - HTTP Java Deserialization",
-      "description": "The remoting module in Jenkins before 2.32 and LTS before 2.19.3 allows remote attackers to execute arbitrary code via a crafted serialized Java object, which triggers an LDAP query to a third-party server.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-9299.yaml"
     }
   ],
   "CVE-2016-1000282": [
