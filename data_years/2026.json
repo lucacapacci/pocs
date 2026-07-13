@@ -1181,6 +1181,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1368.yaml"
     }
   ],
+  "CVE-2026-13731": [
+    {
+      "source": "nuclei",
+      "name": "WPBot <= 8.4.9 - Cross-Site Scripting",
+      "description": "WPBot <= 8.4.9 is vulnerable to stored cross-site scripting via the conversation parameter in the qcld_wb_chatbot_conversation_save AJAX action. The AJAX nonce (qcsecretbotnonceval123qc) is publicly emitted on every frontend page via wp_localize_script under the ajax_nonce key, making it freely obtainable by unauthenticated visitors. The conversation parameter is saved to the database without sanitization and rendered unsanitized in the admin chat session view, causing stored XSS that executes when an administrator views saved chat sessions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-13731.yaml"
+    }
+  ],
   "CVE-2026-1405": [
     {
       "source": "nuclei",
@@ -2275,6 +2283,14 @@
       "name": "Check Point IKEv1 Remote-Access VPN - Certificate Authentication Bypass",
       "description": "IKEv1 key exchange contains a broken authentication caused by logic flow weakness in Remote Access and Mobile Access certificate validation, letting unauthenticated remote attackers bypass user authentication and establish VPN connections without valid passwords, exploit requires use of deprecated IKEv1.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
+    }
+  ],
+  "CVE-2026-52774": [
+    {
+      "source": "nuclei",
+      "name": "YesWiki Bazar Widget - Reflected XSS via 'id' Parameter",
+      "description": "YesWiki's Bazar widget handler reflects the id GET parameter into HTML attributes using strip_tags() only. strip_tags() does not escape double quotes, allowing an attacker to break out of the data-formid attribute and inject arbitrary event handlers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52774.yaml"
     }
   ],
   "CVE-2026-52815": [
