@@ -715,6 +715,12 @@
       "name": "Joomla Page Builder CK  3.5.10 -  Arbitrary File Upload",
       "description": "Joomla Page Builder CK  3.5.10 -  Arbitrary File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52626.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Page Builder CK <= 3.5.10 - Unauthenticated Arbitrary File Upload",
+      "description": "Joomla Page Builder CK contains an unrestricted file upload vulnerability caused by lack of proper validation, letting unauthenticated attackers upload executable files and achieve remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56290.yaml"
     }
   ],
   "CVE-2026-26235": [
@@ -1243,6 +1249,14 @@
       "name": "LeadConnector < 3.0.22 - Unauthenticated Arbitrary Data Write",
       "description": "LeadConnector WordPress plugin < 3.0.22 contains a broken access control caused by missing authorization in a REST route, letting unauthenticated attackers overwrite existing data remotely, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
+    }
+  ],
+  "CVE-2026-1980": [
+    {
+      "source": "nuclei",
+      "name": "WPBookit <= 1.0.8 - Unauthenticated Customer Information Disclosure",
+      "description": "WPBookit WordPress plugin <= 1.0.8 contains an information disclosure vulnerability caused by missing authorization check on 'get_customer_list' route, letting unauthenticated attackers retrieve sensitive customer data.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1980.yaml"
     }
   ],
   "CVE-2026-20079": [
@@ -2355,6 +2369,14 @@
       "name": "Gogs < 0.14.3 - Unauthenticated Organization Teams Disclosure",
       "description": "Gogs before version 0.14.3 contains an unauthenticated information disclosure vulnerability. The GET /api/v1/orgs/:orgname/teams endpoint returns all teams for any organization without requiring authentication. The route group lacks the reqToken() middleware, exposing team IDs, names, descriptions, and permission levels to any unauthenticated caller.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52815.yaml"
+    }
+  ],
+  "CVE-2026-52824": [
+    {
+      "source": "nuclei",
+      "name": "Kimai <= 2.57.0 - Default APP_SECRET Authentication Bypass",
+      "description": "Kimai Docker images <= 2.57.0 ship with a hardcoded APP_SECRET of \"change_this_to_something_unique\". This default secret is used by Symfony's SignatureHasher to HMAC-sign login links and remember-me cookies. An unauthenticated attacker who knows this default secret can forge valid authentication tokens and hijack any user account, including the super-admin.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52824.yaml"
     }
   ],
   "CVE-2026-53787": [
