@@ -1205,6 +1205,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1492.yaml"
     }
   ],
+  "CVE-2026-15094": [
+    {
+      "source": "nuclei",
+      "name": "WP Hotel Booking <= 2.3.2 - Cross-Site Scripting",
+      "description": "The WP Hotel Booking plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'check_in_date' parameter in all versions up to, and including, 2.3.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-15094.yaml"
+    }
+  ],
   "CVE-2026-1557": [
     {
       "source": "nuclei",
@@ -2189,6 +2197,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46372.yaml"
     }
   ],
+  "CVE-2026-46442": [
+    {
+      "source": "nuclei",
+      "name": "Flowise < 3.1.2 - node-custom-function Unauthorized RCE",
+      "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to version 3.1.2, POST /api/v1/node-custom-function lacks route-level authorization, allowing any authenticated user or API key to submit arbitrary JavaScript to the Custom JS Function node. When E2B_APIKEY is not configured \u2014 the common deployment case \u2014 Flowise executes this code inside a NodeVM sandbox. This sandbox can be escaped, allowing an attacker to reach the host process object and execute system commands via child_process. The result is authenticated remote code execution on the Flowise server host. This issue has been patched in version 3.1.2.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-46442.yaml"
+    }
+  ],
   "CVE-2026-46670": [
     {
       "source": "nuclei",
@@ -2379,6 +2395,14 @@
       "name": "vLLM <= 0.23.0 - Anthropic Router Heap Address Information Leak",
       "description": "vLLM <= 0.23.0 incompletely fixes CVE-2026-22778. The original fix added sanitize_message to the OpenAI router but the Anthropic-compatible router (/v1/messages) echoes str(exc) directly.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54236.yaml"
+    }
+  ],
+  "CVE-2026-54836": [
+    {
+      "source": "nuclei",
+      "name": "YMC Filter - SQL Injection",
+      "description": "YMC Filter <= 3.11.5 contains an sql injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54836.yaml"
     }
   ],
   "CVE-2026-55592": [
