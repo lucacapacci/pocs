@@ -2355,6 +2355,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
     }
   ],
+  "CVE-2026-52773": [
+    {
+      "source": "nuclei",
+      "name": "YesWiki Archived Revision - Cross-Site Scripting",
+      "description": "YesWiki's archived-revision view reflects the time GET parameter into a hidden HTML input in handlers/page/show.php without escaping. Because MySQL coerces malformed DATETIME strings, an attacker can append an XSS payload after a valid revision timestamp.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52773.yaml"
+    }
+  ],
   "CVE-2026-52774": [
     {
       "source": "nuclei",
@@ -2633,6 +2641,14 @@
       "name": "Palo Alto Networks PAN-OS - Authentication Bypass",
       "description": "Palo Alto Networks PAN-OS contains an authentication bypass caused by flaws in the GlobalProtect portal and gateway, letting attackers establish unauthorized VPN connections, exploit requires network access to the portal or gateway.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-0257.yaml"
+    }
+  ],
+  "CVE-2026-15409": [
+    {
+      "source": "nuclei",
+      "name": "SonicWall SMA1000 - Server-Side Request Forgery",
+      "description": "SMA1000 Appliance Work Place interface contains a server side request forgery caused by improper request validation, letting remote unauthenticated attackers make requests to unintended locations, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-15409.yaml"
     }
   ],
   "CVE-2026-33453": [
