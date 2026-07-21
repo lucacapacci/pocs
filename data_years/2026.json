@@ -1763,6 +1763,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
+  "CVE-2026-3296": [
+    {
+      "source": "nuclei",
+      "name": "Everest Forms WordPress Plugin <= 3.4.3 - PHP Object Injection",
+      "description": "The Everest Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.4.3 via deserialization of untrusted input from form entry metadata. This is due to the html-admin-page-entries-view.php file calling PHP's native unserialize() on stored entry meta values without passing the allowed_classes parameter. This makes it possible for unauthenticated attackers to inject a serialized PHP object payload through any public Everest Forms form field. The payload survives sanitize_text_field() sanitization (serialization control characters are not stripped) and is stored in the wp_evf_entrymeta database table. When an administrator views entries or views an individual entry, the unsafe unserialize() call processes the stored data without class restrictions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3296.yaml"
+    }
+  ],
   "CVE-2026-3300": [
     {
       "source": "nuclei",
@@ -1825,6 +1833,14 @@
       "name": "AVideo <= 26.0 - WWBN AVideo - Remote Code Execution",
       "description": "WWBN AVideo <= 26.0 contains multiple vulnerabilities in the CloneSite plugin including unauthenticated exposure of clone secret keys and OS command injection in rsync command construction, letting unauthenticated attackers achieve remote code execution.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33478.yaml"
+    }
+  ],
+  "CVE-2026-33497": [
+    {
+      "source": "nuclei",
+      "name": "Langflow < 1.7.0 - Path Traversal",
+      "description": "Langflow < 1.7.1 contains a path traversal caused by insufficient filtering of folder_name and file_name parameters in download_profile_picture endpoint, letting attackers read secret_key across directories, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33497.yaml"
     }
   ],
   "CVE-2026-33626": [
