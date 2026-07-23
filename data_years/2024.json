@@ -5553,6 +5553,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-42009.yaml"
     }
   ],
+  "CVE-2024-42323": [
+    {
+      "source": "nuclei",
+      "name": "Apache HertzBeat < 1.6.0 - SnakeYAML Deserialization Remote Code Execution",
+      "description": "Apache HertzBeat versions before 1.6.0 use a vulnerable version of the SnakeYAML library to parse YAML files imported through the `/api/monitors/import` and `/api/alert/defines/import` endpoints. An authenticated user can submit a YAML file that constructs an `org.h2.jdbc.JdbcConnection` with a malicious H2 in-memory JDBC URL whose `INIT` block contains a `CREATE ALIAS ... $$ ... $$` Java source snippet, achieving remote code execution inside the HertzBeat JVM. The vulnerability is exploitable in default deployments because the official Docker image and quickstart documentation ship with the well-known default credentials `admin:hertzbeat`, which the template uses for chained authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-42323.yaml"
+    }
+  ],
   "CVE-2024-4257": [
     {
       "source": "nuclei",
@@ -6343,6 +6351,14 @@
       "name": "Apache Pinot < 1.3.0 - Authentication Bypass",
       "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of Apache Pinot. Authentication is not required to exploit this vulnerability.The specific flaw exists within the AuthenticationFilter class. The issue results from insufficient neutralization of special characters in a URI. An attacker can leverage this vulnerability to bypass authentication on the system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-56325.yaml"
+    }
+  ],
+  "CVE-2024-56511": [
+    {
+      "source": "nuclei",
+      "name": "DataEase < 2.10.4 - Authentication Bypass via Whitelist Path Traversal",
+      "description": "DataEase versions up to and including 2.10.3 contain an authentication bypass in `io.dataease.auth.filter.TokenFilter`. The filter passes the raw, unnormalized request URI to `WhitelistUtils.match()`, which only checks for whitelisted prefixes such as `/geo/`, `/customGeo/`, `/map/`, `/oauth2/`, and `/websocket` without resolving `..` segments. By prepending a whitelisted prefix and traversing back into the configured `server.servlet.context-path`, an attacker bypasses the filter while Tomcat still routes the request to the genuine, protected controller. This collapses the entire `/de2api` surface (user management, datasources, dashboards, exports) into unauthenticated access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-56511.yaml"
     }
   ],
   "CVE-2024-56512": [

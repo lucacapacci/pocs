@@ -979,6 +979,12 @@
       "name": "Joomla Extension 4.1.4 - PHP Object injection",
       "description": "Joomla Extension 4.1.4 - PHP Object injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52617.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Joomla SP LMS <= 4.1.3 - Remote Code Execution",
+      "description": "SP LMS (com_splms) < 4.1.4 by JoomShaper deserializes user-controlled cookie data without validation, enabling an unauthenticated remote attacker to execute arbitrary code on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-48909.yaml"
     }
   ],
   "CVE-2026-42471": [
@@ -1737,6 +1743,14 @@
       "name": "Budibase - Authentication Bypass",
       "description": "Budibase <= 3.31.4 contains an authentication bypass caused by unanchored regex in authorized() middleware matching webhook path patterns in query strings, letting unauthenticated remote attackers access any server-side API endpoint, exploit requires crafted request with webhook pattern in URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31816.yaml"
+    }
+  ],
+  "CVE-2026-31831": [
+    {
+      "source": "nuclei",
+      "name": "Tautulli <= 2.16.1 - Path Traversal",
+      "description": "Tautulli is a monitoring and tracking tool for Plex Media Server. Prior to version 2.17.0, the `/newsletter/image/images` endpoint joins user-controlled path segments onto the newsletter image directory without containment validation. Authentication is not required for this endpoint, allowing unauthenticated attackers to perform directory traversal and read arbitrary files accessible to the server process. Reading `config/config.ini` discloses the API key, the hashed admin password, the JWT token secret, and the Plex Media Server token. Version 2.17.0 fixes this issue.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-31831.yaml"
     }
   ],
   "CVE-2026-32230": [
@@ -2579,6 +2593,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8383.yaml"
     }
   ],
+  "CVE-2026-8385": [
+    {
+      "source": "nuclei",
+      "name": "WordPress WP Go Maps < 10.0.10 - Unauthenticated Marker Data Disclosure",
+      "description": "WP Go Maps WordPress plugin < 10.0.10 contains an information disclosure vulnerability caused by improper enforcement of marker approval filter in admin-ajax fallback for datatables route, letting unauthenticated visitors retrieve unapproved marker records.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8385.yaml"
+    }
+  ],
   "CVE-2026-8386": [
     {
       "source": "nuclei",
@@ -2713,6 +2735,14 @@
       "name": "Samba Printing Subsystem - Remote Code Execution",
       "description": "A flaw was found in the Samba printing subsystem. Samba passes the client-controlled job description string to the command configured with the \"print command\" setting via the \"%J\" substitution character without escaping shell meta characters. A remote attacker could exploit this vulnerability by sending a specially crafted print job description that contains unescaped shell characters. This could lead to remote code execution on the affected system.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-4480.yaml"
+    }
+  ],
+  "CVE-2026-48908": [
+    {
+      "source": "nuclei",
+      "name": "Joomla SP Page Builder <= 6.6.1 - Unauthenticated Arbitrary File Upload RCE",
+      "description": "SP Page Builder for Joomla contains an unrestricted file upload vulnerability allowing unauthenticated users to upload and execute arbitrary PHP code, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-48908.yaml"
     }
   ]
 }
