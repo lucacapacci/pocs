@@ -5019,6 +5019,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-5569.yaml"
     }
   ],
+  "CVE-2025-55746": [
+    {
+      "source": "nuclei",
+      "name": "Directus - Unauthenticated File Modification",
+      "description": "Directus versions from 10.8.0 before 11.9.3 allow unauthenticated attackers to modify the contents of an existing file when a valid file UUID is known. The PATCH /files/{id} endpoint processes multipart file uploads without proper authentication, allowing file content replacement despite returning a 403 status code. This template requires a known, controlled Directus file UUID provided via the file_id variable.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-55746.yaml"
+    }
+  ],
   "CVE-2025-55747": [
     {
       "source": "nuclei",
