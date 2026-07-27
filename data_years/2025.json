@@ -615,6 +615,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52361.txt"
     }
   ],
+  "CVE-2025-49132": [
+    {
+      "source": "metasploit",
+      "name": "Pterodactyl Panel CVE-2025-49132 Remote Code Execution",
+      "description": "This module exploits a vulnerability in Pterodactyl Panel before version 1.11.11 that allows unauthenticated\n          remote code execution through improper handling of locale file operations. The vulnerability\n          exists in the locale.json endpoint which allows path traversal and arbitrary file creation. Code execution\n          is in the context of the user running the webserver.\n\n          The exploit leverages PEAR (PHP Extension and Application Repository) for command injection by creating a\n          malicious payload file in the /tmp through path traversal, then executing it via PHP execution with pearcmd.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pterodactyl_locales_locale_json.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)",
+      "description": "Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52341.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Pterodactyl Panel - Remote Code Execution",
+      "description": "Pterodactyl is a free, open-source game server management panel. Using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49132.yaml"
+    }
+  ],
   "CVE-2025-34112": [
     {
       "source": "metasploit",
@@ -2467,20 +2487,6 @@
       "name": "projectworlds Online Admission System 1.0 - SQL Injection",
       "description": "projectworlds Online Admission System 1.0 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52398.c"
-    }
-  ],
-  "CVE-2025-49132": [
-    {
-      "source": "exploitdb",
-      "name": "Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)",
-      "description": "Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52341.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "Pterodactyl Panel - Remote Code Execution",
-      "description": "Pterodactyl is a free, open-source game server management panel. Using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-49132.yaml"
     }
   ],
   "CVE-2025-65027": [
