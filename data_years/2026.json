@@ -1919,6 +1919,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3396.yaml"
     }
   ],
+  "CVE-2026-34036": [
+    {
+      "source": "nuclei",
+      "name": "Dolibarr <=22.0.4 - Local File Inclusion",
+      "description": "Dolibarr <= 22.0.4 contains a local file inclusion caused by manipulation of the objectdesc parameter and a fail-open logic flaw in restrictedArea() in /core/ajax/selectobject.php, letting authenticated users with no specific privileges read arbitrary non-PHP files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34036.yaml"
+    }
+  ],
   "CVE-2026-34453": [
     {
       "source": "nuclei",
@@ -2061,6 +2069,14 @@
       "name": "Vite Dev Server - Path Traversal in Optimized Deps .map Handling",
       "description": "Vite development server versions prior to 8.0.5, 7.3.2, and 6.4.2 are vulnerable to path traversal through the optimized dependencies sourcemap handler. The dev server's handling of .map requests for optimized dependencies resolves file paths via normalizePath(path.resolve(root, url.slice(1))) and calls readFile without restricting ../ segments in the URL. This allows an attacker to bypass server.fs.strict and retrieve auto-generated sourcemaps for files located outside the project root, leaking absolute filesystem paths. Only dev servers explicitly exposed to the network using --host or server.host are affected.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39365.yaml"
+    }
+  ],
+  "CVE-2026-39468": [
+    {
+      "source": "nuclei",
+      "name": "Meta Box <= 5.11.1 - Arbitrary File Deletion",
+      "description": "The Meta Box plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ajax_delete_file function. This makes it possible for authenticated attackers with Contributor-level access and above to delete arbitrary files on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39468.yaml"
     }
   ],
   "CVE-2026-39808": [
@@ -2765,6 +2781,14 @@
       "name": "SonicWall SMA1000 - Server-Side Request Forgery",
       "description": "SMA1000 Appliance Work Place interface contains a server side request forgery caused by improper request validation, letting remote unauthenticated attackers make requests to unintended locations, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-15409.yaml"
+    }
+  ],
+  "CVE-2026-16232": [
+    {
+      "source": "nuclei",
+      "name": "Check Point Security Management Server - SmartConsole Authentication Bypass",
+      "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server IP address and a configuration that does not restrict Trusted Clients. Check Point is aware that this vulnerability is being exploited and has affected a very small number of customers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-16232.yaml"
     }
   ],
   "CVE-2026-33453": [
