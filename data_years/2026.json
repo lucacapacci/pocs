@@ -213,6 +213,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52585.txt"
     }
   ],
+  "CVE-2026-46300": [
+    {
+      "source": "metasploit",
+      "name": "Fragnesia LPE (CVE-2026-46300)",
+      "description": "This module exploits CVE-2026-46300, a Linux kernel local privilege\n          escalation vulnerability introduced in version 4.10. The flaw resides in the kernel's IPsec\n          ESP-in-TCP handling: when an ESP-encapsulated TCP segment containing a\n          shared fragment (SKBFL_SHARED_FRAG) is received and decrypted, the AES-GCM keystream\n          is applied to page cache pages of the target file without enforcing\n          write permissions. This allows an unprivileged attacker to overwrite\n          arbitrary bytes of a read-only file backed by the page cache. Upstream fix is ported\n          independently by different vendors, so there's release version from which each kernel is\n          not vulnerable anymore.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_46300_fragnesia.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linux Kernel -  Local Privilege Escalation",
+      "description": "Linux Kernel -  Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
+    }
+  ],
   "CVE-2026-0826": [
     {
       "source": "metasploit",
@@ -353,6 +367,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_supply_chain_rce.rb"
     }
   ],
+  "CVE-2026-3891": [
+    {
+      "source": "metasploit",
+      "name": "WordPress Unauthenticated RCE via Pix for WooCommerce plugin",
+      "description": "This Metasploit module exploits an Unauthenticated Arbitrary File Upload vulnerability in the Pix for WooCommerce plugin for WordPress.\n\n          Attackers can leverage the missing capability check and insufficient file type validation in the 'lkn_pix_for_woocommerce_c6_save_settings' function to upload arbitrary files to the affected server, which may lead to remote code execution under the web server's privileges.\n\n          The affected versions include all releases up to and including 1.5.0.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_plugin_pix_unauth_rce_cve_2026_3891.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Pix for WooCommerce <= 1.5.0 - Unauthenticated Arbitrary File Upload",
+      "description": "The Pix for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check and missing file type validation in the 'lkn_pix_for_woocommerce_c6_save_settings' function in all versions up to, and including, 1.5.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3891.yaml"
+    }
+  ],
   "CVE-2026-4257": [
     {
       "source": "metasploit",
@@ -441,14 +469,6 @@
       "name": "MeiG Smart FORGE_SLT711 - OS Command Injection",
       "description": "MeiG Smart FORGE_SLT711 - OS Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/hardware/52581.py"
-    }
-  ],
-  "CVE-2026-46300": [
-    {
-      "source": "exploitdb",
-      "name": "Linux Kernel -  Local Privilege Escalation",
-      "description": "Linux Kernel -  Local Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
     }
   ],
   "CVE-2026-23231": [
@@ -2049,14 +2069,6 @@
       "name": "Breeze <= 2.4.4 - Arbitrary File Upload",
       "description": "Breeze Cache WordPress plugin <= 2.4.4 contains an unrestricted file upload vulnerability caused by missing file type validation in 'fetch_gravatar_from_remote' function, letting unauthenticated attackers upload arbitrary files, exploit requires 'Host Files Locally - Gravatars' enabled.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3844.yaml"
-    }
-  ],
-  "CVE-2026-3891": [
-    {
-      "source": "nuclei",
-      "name": "Pix for WooCommerce <= 1.5.0 - Unauthenticated Arbitrary File Upload",
-      "description": "The Pix for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing capability check and missing file type validation in the 'lkn_pix_for_woocommerce_c6_save_settings' function in all versions up to, and including, 1.5.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3891.yaml"
     }
   ],
   "CVE-2026-39339": [
