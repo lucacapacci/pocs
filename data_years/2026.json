@@ -301,6 +301,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/gogs_rebase_rce.rb"
     }
   ],
+  "CVE-2026-48907": [
+    {
+      "source": "metasploit",
+      "name": "Joomla Content Editor Unauthenticated File Upload RCE",
+      "description": "This module exploits an unauthenticated arbitrary profile creation vulnerability in the JCE\n          (Joomla Content Editor) extension for Joomla! (CVE-2026-48907). The profiles.import task fails to enforce\n          authentication, allowing the import of a crafted profile that is directly written to disk as a PHP web shell.\n          This results in remote code execution, provided that the tmp/ directory is not explicitly restricted.\n\n          JCE versions up to and including 2.9.99.4 are affected.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/joomla_com_jce_unauth_file_upload_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Joomla! JCE extension < 2.9.99.5 unauthenticated RCE",
+      "description": "Joomla JCE editor extension contains an unrestricted file upload vulnerability caused by allowing unauthenticated users to create new editor profiles, letting attackers upload and execute PHP code remotely, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48907.yaml"
+    }
+  ],
   "CVE-2026-27966": [
     {
       "source": "metasploit",
@@ -623,6 +637,12 @@
       "name": "Discuz! X5.0 - Authentication Bypass",
       "description": "Discuz! X5.0 - Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52621.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Discuz! X5.0 - Authentication Bypass",
+      "description": "Discuz! X5.0 20260320 through 20260501 contains an authentication bypass caused by exploitation of a shared cryptographic key and encryption oracle in dbbak.php and logging_ctl::logging_more(), letting unauthenticated remote attackers access database backup and restore functions, exploit requires crafted payload injection via username parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49952.yaml"
     }
   ],
   "CVE-2026-2624": [
@@ -2263,6 +2283,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44551.yaml"
     }
   ],
+  "CVE-2026-44825": [
+    {
+      "source": "nuclei",
+      "name": "Apache Solr 9.4.0-9.10.1 / 10.0.0 - Hardcoded Default Credentials",
+      "description": "Apache Solr 9.4.0 through 9.10.1 and 10.0.0 contain a hardcoded credentials vulnerability caused by default Basic Authentication template users in bin/solr auth enable, letting remote attackers gain full administrative access. Exploit requires use of default template users.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44825.yaml"
+    }
+  ],
   "CVE-2026-45298": [
     {
       "source": "nuclei",
@@ -2391,20 +2419,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48710.yaml"
     }
   ],
-  "CVE-2026-48907": [
-    {
-      "source": "nuclei",
-      "name": "Joomla! JCE extension < 2.9.99.5 unauthenticated RCE",
-      "description": "Joomla JCE editor extension contains an unrestricted file upload vulnerability caused by allowing unauthenticated users to create new editor profiles, letting attackers upload and execute PHP code remotely, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48907.yaml"
-    }
-  ],
   "CVE-2026-49777": [
     {
       "source": "nuclei",
       "name": "WordPress Product Slider Pro for WooCommerce < 3.5.4 - Supply Chain Backdoor RCE",
       "description": "Improper Validation of Specified Quantity in Input vulnerability in ShapedPlugin, LLC Product Slider Pro for WooCommerce allows Malicious Software Implanted. This issue affects Product Slider Pro for WooCommerce: from n/a before 3.5.4.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49777.yaml"
+    }
+  ],
+  "CVE-2026-4987": [
+    {
+      "source": "nuclei",
+      "name": "SureForms <= 2.5.2 - Unauthenticated Payment Amount Validation Bypass via form_id",
+      "description": "The SureForms plugin for WordPress is vulnerable to payment amount validation bypass in versions up to, and including, 2.5.2.\nThe create_payment_intent AJAX handler checks `if ($form_id > 0 && !empty($block_id))` before calling validate_payment_amount().\nBy sending form_id=0 (the default intval of a missing/zero value), an unauthenticated attacker completely skips the server-side\namount validation and can create Stripe payment intents with arbitrary amounts, bypassing configured pricing.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4987.yaml"
     }
   ],
   "CVE-2026-50229": [
