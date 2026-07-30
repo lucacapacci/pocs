@@ -2655,6 +2655,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6433.yaml"
     }
   ],
+  "CVE-2026-65694": [
+    {
+      "source": "nuclei",
+      "name": "Microweber CMS <= 2.0.20 - Unauthenticated Arbitrary File Read",
+      "description": "Microweber CMS <= 2.0.20 contains a path traversal vulnerability caused by failure to normalize path query parameter in static file controller, letting unauthenticated remote attackers read arbitrary files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65694.yaml"
+    }
+  ],
   "CVE-2026-6875": [
     {
       "source": "nuclei",
