@@ -2567,6 +2567,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54836.yaml"
     }
   ],
+  "CVE-2026-55450": [
+    {
+      "source": "nuclei",
+      "name": "Langflow < 1.9.1 - Unauthenticated File Upload",
+      "description": "Langflow < 1.9.1 contains an unrestricted file upload caused by lack of upload limitations, letting unauthenticated attackers exhaust server space and leak absolute file paths, exploit requires network access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55450.yaml"
+    }
+  ],
   "CVE-2026-55592": [
     {
       "source": "nuclei",
