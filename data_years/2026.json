@@ -1767,6 +1767,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3018.yaml"
     }
   ],
+  "CVE-2026-30623": [
+    {
+      "source": "nuclei",
+      "name": "LiteLLM 1.18.10 - Command Injection",
+      "description": "LiteLLM 1.18.10 contains a remote code execution caused by lack of validation of arbitrary command and args in MCP server creation, letting attackers execute OS commands remotely, exploit requires crafted JSON configuration.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30623.yaml"
+    }
+  ],
   "CVE-2026-30824": [
     {
       "source": "nuclei",

@@ -3681,6 +3681,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25037.yaml"
     }
   ],
+  "CVE-2025-2505": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Age Gate <= 3.5.3 - Unauthenticated Local File Inclusion",
+      "description": "The Age Gate plugin for WordPress up to version 3.5.3 contains a local PHP file inclusion caused by the 'lang' parameter, letting unauthenticated attackers include and execute arbitrary PHP files, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-2505.yaml"
+    }
+  ],
   "CVE-2025-25231": [
     {
       "source": "nuclei",

@@ -8051,6 +8051,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2019/CVE-2019-14789.yaml"
     }
   ],
+  "CVE-2019-14793": [
+    {
+      "source": "nuclei",
+      "name": "Meta Box <= 4.16.2 - Arbitrary File Deletion",
+      "description": "The Meta Box plugin for WordPress is vulnerable to arbitrary file deletion in the ajax_delete_file function. The function accepts any attachment_id from the POST request and directly calls wp_delete_attachment() or unlink() without validating that the attachment belongs to the specified Meta Box field, without path traversal protection on the unlink path, and without any ownership or authorization checks. This makes it possible for authenticated attackers to delete arbitrary files on the server including wp-config.php.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2019/CVE-2019-14793.yaml"
+    }
+  ],
   "CVE-2019-14950": [
     {
       "source": "nuclei",
