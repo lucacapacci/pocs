@@ -2295,6 +2295,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42796.yaml"
     }
   ],
+  "CVE-2026-44381": [
+    {
+      "source": "nuclei",
+      "name": "MISP < 2.5.37 - SQL Injection",
+      "description": "MISP before 2.5.37 is vulnerable to SQL injection via the order parameter in EventsController. The POST body order value is passed directly into ORDER BY clauses without validation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44381.yaml"
+    }
+  ],
   "CVE-2026-44551": [
     {
       "source": "nuclei",
@@ -2639,6 +2647,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59801.yaml"
     }
   ],
+  "CVE-2026-60004": [
+    {
+      "source": "nuclei",
+      "name": "Gitea <= 1.27.0 - Pre-Auth Remote Code Execution",
+      "description": "Gitea versions 1.17 through 1.27.0 contain a remote code execution vulnerability in the diffpatch endpoint caused by an add/add collision that writes an executable Git hook into the bare repository's GIT_DIR. An attacker with write access can execute arbitrary commands as the Gitea service account, exploit requires only open registration for unauthenticated access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-60004.yaml"
+    }
+  ],
   "CVE-2026-6118": [
     {
       "source": "nuclei",
@@ -2805,14 +2821,6 @@
       "name": "PraisonAI - Authentication Bypass",
       "description": "PraisonAI 2.5.6 to < 4.6.34 contains a broken authentication caused by disabled default authentication in legacy Flask API server, letting remote attackers access /agents and trigger workflows without token, exploit requires network access to API server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/cve-2026-44338.yaml"
-    }
-  ],
-  "CVE-2026-44381": [
-    {
-      "source": "nuclei",
-      "name": "MISP < 2.5.37 - SQL Injection",
-      "description": "MISP before 2.5.37 is vulnerable to SQL injection via the order parameter in EventsController. The POST body order value is passed directly into ORDER BY clauses without validation.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/cve-2026-44381.yaml"
     }
   ],
   "CVE-2026-23829": [
