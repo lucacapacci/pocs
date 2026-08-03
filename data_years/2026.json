@@ -2295,6 +2295,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42796.yaml"
     }
   ],
+  "CVE-2026-44338": [
+    {
+      "source": "nuclei",
+      "name": "PraisonAI - Authentication Bypass",
+      "description": "PraisonAI 2.5.6 to < 4.6.34 contains a broken authentication caused by disabled default authentication in legacy Flask API server, letting remote attackers access /agents and trigger workflows without token, exploit requires network access to API server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44338.yaml"
+    }
+  ],
   "CVE-2026-44381": [
     {
       "source": "nuclei",
@@ -2813,14 +2821,6 @@
       "name": "WP User Manager \u2013 User Profile Builder & Membership - Local File Inclusion",
       "description": "WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress <= 2.9.17 contains a local file inclusion caused by improper handling in the profile template scope function, letting unauthenticated attackers execute arbitrary PHP code, exploit requires ability to upload or control PHP files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9290.yaml"
-    }
-  ],
-  "CVE-2026-44338": [
-    {
-      "source": "nuclei",
-      "name": "PraisonAI - Authentication Bypass",
-      "description": "PraisonAI 2.5.6 to < 4.6.34 contains a broken authentication caused by disabled default authentication in legacy Flask API server, letting remote attackers access /agents and trigger workflows without token, exploit requires network access to API server.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/cve-2026-44338.yaml"
     }
   ],
   "CVE-2026-23829": [
