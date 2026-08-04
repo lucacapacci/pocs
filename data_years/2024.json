@@ -5217,6 +5217,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-36991.yaml"
     }
   ],
+  "CVE-2024-37014": [
+    {
+      "source": "nuclei",
+      "name": "Langflow <= 1.0.12 - Remote Code Execution",
+      "description": "Langflow 0.6.19 contains a remote code execution caused by accepting untrusted Python scripts in the /api/v1/custom_component endpoint, letting remote attackers execute arbitrary code, exploit requires access to the endpoint and untrusted script input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-37014.yaml"
+    }
+  ],
   "CVE-2024-37152": [
     {
       "source": "nuclei",
