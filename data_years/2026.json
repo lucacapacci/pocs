@@ -367,6 +367,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_supply_chain_rce.rb"
     }
   ],
+  "CVE-2026-27760": [
+    {
+      "source": "metasploit",
+      "name": "OpenCATS Installer PHP Code Injection",
+      "description": "This module exploits an unauthenticated PHP code injection in the OpenCATS\n          installer AJAX endpoint (CVE-2026-27760).\n\n          The databaseConnectivity action passes the user POST parameter directly to\n          changeConfigSetting(), which interpolates it into a define() statement in\n          config.php without any sanitization. This only works when the installation\n          wizard was never completed, meaning the INSTALL_BLOCK file is absent.\n\n          The exploit injects an eval() backdoor into config.php, probes until the\n          injected code is live (handles OPcache revalidation transparently), triggers\n          the payload via index.php, and then restores config.php.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/opencats_installer_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "OpenCATS - Command Injection",
+      "description": "OpenCATS prior to commit 3002a29 contains a command injection caused by injection of PHP statements into the installer AJAX endpoint's databaseConnectivity action parameter, letting unauthenticated attackers execute arbitrary code, exploit requires incomplete installation wizard.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27760.yaml"
+    }
+  ],
   "CVE-2026-3891": [
     {
       "source": "metasploit",
@@ -1637,14 +1651,6 @@
       "name": "Changedetection.io RSS Single Watch - Cross-Site Scripting",
       "description": "changedetection.io < 0.54.1 contains a stored XSS caused by unescaped reflection of UUID path parameter in RSS single-watch endpoint, letting remote attackers execute JavaScript in victim's browser, exploit requires victim to visit crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27645.yaml"
-    }
-  ],
-  "CVE-2026-27760": [
-    {
-      "source": "nuclei",
-      "name": "OpenCATS - Command Injection",
-      "description": "OpenCATS prior to commit 3002a29 contains a command injection caused by injection of PHP statements into the installer AJAX endpoint's databaseConnectivity action parameter, letting unauthenticated attackers execute arbitrary code, exploit requires incomplete installation wizard.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27760.yaml"
     }
   ],
   "CVE-2026-27771": [
