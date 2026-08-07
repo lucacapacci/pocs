@@ -3281,6 +3281,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11833.yaml"
     }
   ],
+  "CVE-2025-11953": [
+    {
+      "source": "nuclei",
+      "name": "React Native Community CLI - Unauthenticated OS Command Injection",
+      "description": "The Metro development server started by the React Native Community CLI binds to external network interfaces by default and exposes an unauthenticated /open-url endpoint. Affected versions pass the attacker supplied url value straight to the open() helper without validating the scheme, allowing an unauthenticated attacker to launch arbitrary executables on the developer machine. On Windows the request is dispatched through cmd, which permits arbitrary shell commands with fully controlled arguments. The fix was released as a backport across several release lines, so the version number alone does not indicate whether an instance is affected, and this template probes the endpoint behaviour instead.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11953.yaml"
+    }
+  ],
   "CVE-2025-12055": [
     {
       "source": "nuclei",
