@@ -5593,6 +5593,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-71259.yaml"
     }
   ],
+  "CVE-2025-71324": [
+    {
+      "source": "nuclei",
+      "name": "Flowise - Path Traversal",
+      "description": "Flowise < 3.0.6 contains a path traversal vulnerability caused by improper validation of the chatId parameter in /api/v1/get-upload-file and /api/v1/openai-assistants-file/download endpoints, letting unauthenticated attackers read arbitrary files including sensitive database files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-71324.yaml"
+    }
+  ],
   "CVE-2025-71334": [
     {
       "source": "nuclei",

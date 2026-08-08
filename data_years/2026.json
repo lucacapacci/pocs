@@ -1323,6 +1323,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1405.yaml"
     }
   ],
+  "CVE-2026-14894": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Super Forms <= 6.3.313 - Arbitrary File Upload",
+      "description": "Super Forms \u2013 Drag & Drop Form Builder WordPress plugin \\u003C= 6.3.313 contains an arbitrary file upload vulnerability caused by missing file type validation and lack of capability checks in submit_form nopriv AJAX handler, letting unauthenticated attackers upload executable files and achieve remote code execution, exploit requires no authentication due to nonce bypass.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-14894.yaml"
+    }
+  ],
   "CVE-2026-1492": [
     {
       "source": "nuclei",
@@ -2777,6 +2785,14 @@
       "name": "WordPress Core < 7.0.3 - Preauth Reflected XSS (XSS2Shell)",
       "description": "Pre-authentication reflected XSS in WordPress wp-login.php (CVE-2026-64638).\nThe flaw exploits a parser differential between PHP strip_tags() and\nWordPress KSES. Tags with whitespace after < (e.g. \"< area\") survive\nstrip_tags() but are normalized to valid HTML by KSES, leading to\nattacker-controlled DOM elements that trigger automatic JavaScript\nexecution via user-profile.js. No user interaction required.\nAffects all WordPress versions < 7.0.3.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-64638.yaml"
+    }
+  ],
+  "CVE-2026-65442": [
+    {
+      "source": "nuclei",
+      "name": "FormCraft3 <= 3.9.15 - Server-Side Request Forgery",
+      "description": "Unauthenticated Server Side Request Forgery (SSRF) in FormCraft <= 3.9.15 versions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65442.yaml"
     }
   ],
   "CVE-2026-65694": [
