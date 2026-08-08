@@ -1283,6 +1283,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1314.yaml"
     }
   ],
+  "CVE-2026-13147": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Kirki < 6.0.12 - Server-Side Request Forgery",
+      "description": "Kirki WordPress plugin < 6.0.12 contains a server-side request forgery caused by lack of URL validation, letting unauthenticated attackers make the site issue HTTP requests to arbitrary hosts, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-13147.yaml"
+    }
+  ],
   "CVE-2026-1357": [
     {
       "source": "nuclei",
@@ -2467,6 +2475,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-47717.yaml"
     }
   ],
+  "CVE-2026-48030": [
+    {
+      "source": "nuclei",
+      "name": "Pheditor 2.0.1-2.0.3 - OS Command Injection",
+      "description": "Pheditor 2.0.1 to - 2.0.4 contains an OS command injection caused by improper sanitization of the 'dir' POST parameter in the terminal action handler, letting authenticated users execute arbitrary OS commands with web server privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48030.yaml"
+    }
+  ],
   "CVE-2026-4810": [
     {
       "source": "nuclei",
@@ -2753,6 +2769,14 @@
       "name": "FlipperCode Custom CSS, JS & PHP <= 2.0.7 - Remote Code Execution",
       "description": "Custom css-js-php WordPress plugin through 2.0.7 contains a command injection caused by unsanitized user input used in SQL query and passed to eval(), letting unauthenticated attackers execute arbitrary PHP code on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6433.yaml"
+    }
+  ],
+  "CVE-2026-64638": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Core < 7.0.3 - Preauth Reflected XSS (XSS2Shell)",
+      "description": "Pre-authentication reflected XSS in WordPress wp-login.php (CVE-2026-64638).\nThe flaw exploits a parser differential between PHP strip_tags() and\nWordPress KSES. Tags with whitespace after < (e.g. \"< area\") survive\nstrip_tags() but are normalized to valid HTML by KSES, leading to\nattacker-controlled DOM elements that trigger automatic JavaScript\nexecution via user-profile.js. No user interaction required.\nAffects all WordPress versions < 7.0.3.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-64638.yaml"
     }
   ],
   "CVE-2026-65694": [
