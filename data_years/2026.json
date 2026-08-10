@@ -165,6 +165,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/paperclipai_unauth_rce_cve_2026_41679.rb"
     }
   ],
+  "CVE-2026-15409": [
+    {
+      "source": "metasploit",
+      "name": "SonicWall SMA1000 WorkPlace wsproxy SSRF Remote Command Execution",
+      "description": "This module exploits a Server-Side Request Forgery (SSRF)\n          vulnerability in the SonicWall SMA1000 WorkPlace wsproxy service to\n          access the internal Erlang distribution service.\n\n          After authenticating using the known Erlang distribution cookie, the\n          module invokes os:cmd/1 through Erlang RPC to execute arbitrary Unix\n          commands in the context of the vulnerable SMA service.\n\n          The check method performs a benign Erlang node RPC rather than\n          executing an operating system command.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/sonicwall_sma1000_wsproxy_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "SonicWall SMA1000 - Server-Side Request Forgery",
+      "description": "SMA1000 Appliance Work Place interface contains a server side request forgery caused by improper request validation, letting remote unauthenticated attackers make requests to unintended locations, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-15409.yaml"
+    }
+  ],
   "CVE-2026-31431": [
     {
       "source": "metasploit",
@@ -2961,14 +2975,6 @@
       "name": "Palo Alto Networks PAN-OS - Authentication Bypass",
       "description": "Palo Alto Networks PAN-OS contains an authentication bypass caused by flaws in the GlobalProtect portal and gateway, letting attackers establish unauthorized VPN connections, exploit requires network access to the portal or gateway.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-0257.yaml"
-    }
-  ],
-  "CVE-2026-15409": [
-    {
-      "source": "nuclei",
-      "name": "SonicWall SMA1000 - Server-Side Request Forgery",
-      "description": "SMA1000 Appliance Work Place interface contains a server side request forgery caused by improper request validation, letting remote unauthenticated attackers make requests to unintended locations, exploit requires no special privileges.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-15409.yaml"
     }
   ],
   "CVE-2026-16232": [
