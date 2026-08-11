@@ -353,6 +353,12 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/joomla_com_jce_unauth_file_upload_rce.rb"
     },
     {
+      "source": "exploitdb",
+      "name": "Joomla 2.9.99.4 - Unauthenticated Remote Code Execution",
+      "description": "Joomla 2.9.99.4 - Unauthenticated Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52630.py"
+    },
+    {
       "source": "nuclei",
       "name": "Joomla! JCE extension < 2.9.99.5 unauthenticated RCE",
       "description": "Joomla JCE editor extension contains an unrestricted file upload vulnerability caused by allowing unauthenticated users to create new editor profiles, letting attackers upload and execute PHP code remotely, exploit requires no authentication.\n",
@@ -583,6 +589,14 @@
       "name": "ImageMagick - Infinite Loop in the MIFF decoder can lead to CPU exhaustion",
       "description": "ImageMagick - Infinite Loop in the MIFF decoder can lead to CPU exhaustion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52595.sh"
+    }
+  ],
+  "CVE-2026-58289": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Edge 150.0.4078.48 - RCE",
+      "description": "Microsoft Edge 150.0.4078.48 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52632.py`"
     }
   ],
   "CVE-2026-34156": [
@@ -953,6 +967,14 @@
       "name": "OpenEMR 7.0.2 - Arbitrary File Read",
       "description": "OpenEMR 7.0.2 - Arbitrary File Read",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52610.py"
+    }
+  ],
+  "CVE-2026-58138": [
+    {
+      "source": "exploitdb",
+      "name": "OrkesConductor 3.30.2 - Unauthenticated Remote Code Execution",
+      "description": "OrkesConductor 3.30.2 - Unauthenticated Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52633.py"
     }
   ],
   "CVE-2026-25994": [
