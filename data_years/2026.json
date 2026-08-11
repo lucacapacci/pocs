@@ -2863,6 +2863,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6875.yaml"
     }
   ],
+  "CVE-2026-71209": [
+    {
+      "source": "nuclei",
+      "name": "Audiobookshelf - Authentication Bypass",
+      "description": "Audiobookshelf contains a path traversal caused by improper authentication-exemption check on URL-encoded paths in server/routers/Auth.js, letting unauthenticated attackers read arbitrary files, exploit requires crafted URL with encoded traversal sequences.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-71209.yaml"
+    }
+  ],
   "CVE-2026-7798": [
     {
       "source": "nuclei",
