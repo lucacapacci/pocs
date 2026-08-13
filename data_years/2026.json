@@ -1917,6 +1917,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
     }
   ],
+  "CVE-2026-3001": [
+    {
+      "source": "nuclei",
+      "name": "Gutenverse Plugin <= 3.4.6 - Cross-Site Scripting",
+      "description": "The Gutenverse plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 's' parameter in versions up to and including 3.4.6. The issue arises due to insufficient input sanitization and output escaping in the `render_content()` method of `class-search-result-title.php`, which outputs the value of `get_query_var('s')` directly into the page HTML without applying `esc_html()`. This makes it possible for unauthenticated attackers to inject and execute arbitrary web scripts in pages via a crafted URL, provided the `gutenverse/search-result-title` block is present on the site's search results template.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3001.yaml"
+    }
+  ],
   "CVE-2026-3018": [
     {
       "source": "nuclei",
@@ -1955,6 +1963,14 @@
       "name": "OneUptime < 10.0.21 - Path Traversal",
       "description": "OneUptime < 10.0.21 contains a path traversal caused by unsanitized componentName parameter in /workflow/docs/:componentName endpoint, letting unauthenticated attackers read arbitrary files from the server filesystem.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30958.yaml"
+    }
+  ],
+  "CVE-2026-30965": [
+    {
+      "source": "nuclei",
+      "name": "Parse Server < 8.6.21 / 9.x < 9.5.2 - Session Token Exfiltration",
+      "description": "Parse Server < 8.6.21 / 9.x < 9.5.2 contains an information disclosure vulnerability caused by improper handling of the redirectClassNameForKey query parameter, letting authenticated or unauthenticated attackers exfiltrate session tokens, exploit requires ability to create or update an object with a new relation field depending on Class-Level Permissions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30965.yaml"
     }
   ],
   "CVE-2026-31807": [
@@ -2187,6 +2203,14 @@
       "name": "UniFi OS Server - Command Injection",
       "description": "A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34910.yaml"
+    }
+  ],
+  "CVE-2026-34976": [
+    {
+      "source": "nuclei",
+      "name": "Dgraph <=v25.3.0 - Admin Mutation Missing Authorization",
+      "description": "Dgraph <=v25.3.0 contains an authentication bypass caused by missing authorization middleware for the restoreTenant admin mutation, letting unauthenticated attackers overwrite the database, read files, and perform SSRF, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34976.yaml"
     }
   ],
   "CVE-2026-35029": [
@@ -2661,6 +2685,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4987.yaml"
     }
   ],
+  "CVE-2026-50160": [
+    {
+      "source": "nuclei",
+      "name": "Hoppscotch <= 2026.4.1 - Mass Assignment JWT_SECRET Overwrite",
+      "description": "Hoppscotch self-hosted backend <= 2026.4.1 contains a broken authentication caused by mass assignment via unauthenticated POST /v1/onboarding/config endpoint, letting unauthenticated attackers overwrite JWT_SECRET to forge tokens and fully compromise the server, exploit requires attacker to access fresh instance before onboarding completes or when no users exist.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50160.yaml"
+    }
+  ],
   "CVE-2026-50229": [
     {
       "source": "nuclei",
@@ -2741,12 +2773,36 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53576.yaml"
     }
   ],
+  "CVE-2026-53629": [
+    {
+      "source": "nuclei",
+      "name": "GLPI - Blind SQL Injection in History Log Filter (LogBleed)",
+      "description": "GLPI versions before 10.0.26 and 11.0.8 are vulnerable to a blind SQL injection in the history log filter. The Log::convertFiltersValuesToSqlCriteria() function splits the affected_fields filter into key:operator:value parts and DBmysqlIterator::analyseCrit() does not quote OR, AND and NOT as column names, allowing an authenticated user with logs READ right to inject arbitrary SQL. Verified against glpi/glpi:10.0.25 (Docker + MariaDB): filter \"OR::1 AND sleep(5)\" produces \"... AND (((((1 AND sleep(5))))))\" in the query and the request takes ~5s. On 10.0.26 the same payload is rejected (~30ms).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53629.yaml"
+    }
+  ],
+  "CVE-2026-53755": [
+    {
+      "source": "nuclei",
+      "name": "crawl4ai < 0.8.9 - Server Side Request Forgery",
+      "description": "Crawl4AI < 0.8.9 contains a server-side request forgery caused by insufficient SSRF destination checks on proxy addresses in browser and crawler configurations, letting unauthenticated attackers access internal services and cloud metadata endpoints.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53755.yaml"
+    }
+  ],
   "CVE-2026-53787": [
     {
       "source": "nuclei",
       "name": "Magento 2 Amasty Order Attributes < 4.0.0 - Unauthenticated Arbitrary File Upload",
       "description": "Amasty Order Attributes for Magento 2 < 4.0.0 contains an unrestricted file upload vulnerability caused by lack of authentication and validation in the upload endpoint, letting unauthenticated attackers upload arbitrary files including PHP, enabling remote code execution or malware hosting.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53787.yaml"
+    }
+  ],
+  "CVE-2026-53976": [
+    {
+      "source": "nuclei",
+      "name": "OpenChamber <1.13.0 - Unauthenticated Arbitrary File Read",
+      "description": "OpenChamber 1.11.7 contains a path traversal vulnerability in the file-serving endpoints /api/fs/read, /api/fs/stat, and /api/fs/raw that allows unauthenticated remote attackers to read arbitrary files by supplying the allowOutsideWorkspace=true query parameter alongside an absolute path, bypassing the workspace boundary check in resolveReadPathFromContext. Attackers can exploit the vacuous isPathWithinRoot guard to read sensitive files such as the JWT signing secret, SSH private keys, API credentials, and environment variables, enabling full authentication bypass by forging session cookies on password-protected deployments.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53976.yaml"
     }
   ],
   "CVE-2026-54066": [
@@ -2925,6 +2981,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65694.yaml"
     }
   ],
+  "CVE-2026-67208": [
+    {
+      "source": "nuclei",
+      "name": "Juggle <= 1.6.0 - Unauthenticated Exposed H2 Database Console",
+      "description": "Juggle ships the H2 database web console enabled and reachable from\nnon-localhost by default. No application-level authentication covers\nthe /h2-console path, and the shipped default datasource credentials\n(sa/juggle) are known. An unauthenticated remote attacker can reach the\nconsole and, using the default credentials, achieve OS command\nexecution on the host via the H2 CREATE ALIAS Runtime.exec() technique.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-67208.yaml"
+    }
+  ],
+  "CVE-2026-6826": [
+    {
+      "source": "nuclei",
+      "name": "Concrete CMS <9.5.1 - Unauthenticated File Usage Disclosure",
+      "description": "Concrete CMS 9.5.0 and below  is vulnerable to unauthenticated file usage disclosure via missing permission check in the usage controller.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6826.yaml"
+    }
+  ],
   "CVE-2026-6875": [
     {
       "source": "nuclei",
@@ -3043,6 +3115,14 @@
       "name": "WordPress MapPress Maps <= 2.96.6 - Unauthenticated IDOR",
       "description": "MapPress Maps for WordPress <= 2.96.6 contains an authorization bypass caused by missing ownership verification in REST API routes, letting unauthenticated attackers read any map data and authenticated contributors modify any map, exploit requires crafted API requests\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8839.yaml"
+    }
+  ],
+  "CVE-2026-8857": [
+    {
+      "source": "nuclei",
+      "name": "MediaWiki EasyTimeline - Code Injection RCE",
+      "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
     }
   ],
   "CVE-2026-9198": [
