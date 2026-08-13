@@ -1013,6 +1013,12 @@
       "name": "OrkesConductor 3.30.2 - Unauthenticated Remote Code Execution",
       "description": "OrkesConductor 3.30.2 - Unauthenticated Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52633.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Orkes Conductor 3.21.21-3.30.1 - Remote Code Execution",
+      "description": "Orkes Conductor from 3.21.21 before 3.30.2 is vulnerable to unauthenticated remote code execution. The INLINE workflow task evaluates a user-supplied JavaScript expression in a GraalVM context created with HostAccess.ALL, so an unauthenticated attacker can reflect from the bound input object to java.lang.Runtime and execute arbitrary operating system commands through the workflow API.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58138.yaml"
     }
   ],
   "CVE-2026-25994": [
@@ -2131,6 +2137,14 @@
       "name": "Mastodon - Open Redirect",
       "description": "Mastodon version < 4.5.8, < 4.4.15, < 4.3.21 is vulnerable to unauthenticated Open Redirect vulnerability (CWE-601) exists in the /web/* route due to improper handling of URL-encoded path segments.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33868.yaml"
+    }
+  ],
+  "CVE-2026-3395": [
+    {
+      "source": "nuclei",
+      "name": "MaxSite CMS <=109.1 - Remote Code Execution",
+      "description": "MaxSite CMS through 109.1 allows unauthenticated remote attackers to execute arbitrary code via the MarkItUp editor preview AJAX endpoint, preview-ajax.php. The endpoint insufficiently authenticates the request, failing to ensure the user is logged in, and processes the attacker's input via unsafe usage of PHP eval() on user-supplied [php]...[/php] shortcodes. By providing a POST request to the vulnerable /ajax/ endpoint with crafted input, attackers may achieve remote code execution. The issue is addressed in version 109.2 by implementing proper authentication controls.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3395.yaml"
     }
   ],
   "CVE-2026-3396": [
