@@ -1323,6 +1323,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10580.yaml"
     }
   ],
+  "CVE-2026-10768": [
+    {
+      "source": "nuclei",
+      "name": "Drupal LocalGov Workflows < 1.6.0 - Information Disclosure",
+      "description": "Drupal LocalGov Workflows < 1.6.0 contains a broken access control vulnerability caused by missing authorization checks, letting attackers perform forceful browsing to access unauthorized resources, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10768.yaml"
+    }
+  ],
   "CVE-2026-10823": [
     {
       "source": "nuclei",
@@ -1481,6 +1489,14 @@
       "name": "WordPress TranslatePress < 3.2.6 - Cross-Site Scripting",
       "description": "TranslatePress plugin < 3.2.6 for WordPress contains a reflected cross-site scripting vulnerability in the translation marker processing feature, letting attackers inject and execute arbitrary JavaScript code, exploit requires no authentication or privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17505.yaml"
+    }
+  ],
+  "CVE-2026-17532": [
+    {
+      "source": "nuclei",
+      "name": "Seraphinite Accelerator <= 2.29.18 - Cross-Site Scripting",
+      "description": "The Seraphinite Accelerator plugin for WordPress up to and including 2.29.18 was vulnerable to reflected cross-site scripting through the seraph_accel_prep parameter. CacheExtractPreparePageParams() compared the expected HMAC against the JSON-decoded nonce with PHP's loose != operator, so a JSON boolean true satisfied the comparison and bypassed the signature check, and _CbContentFinishSkip() then concatenated the attacker-controlled selfTest field straight into the response body, letting unauthenticated attackers inject arbitrary scripts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17532.yaml"
     }
   ],
   "CVE-2026-1890": [
@@ -1723,6 +1739,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24477.yaml"
     }
   ],
+  "CVE-2026-25231": [
+    {
+      "source": "nuclei",
+      "name": "FileRise <= 3.3.0 - Unauthenticated File Read",
+      "description": "FileRise <= 3.3.0 contains an unauthenticated file read vulnerability caused by a lack of access control on the /uploads directory, letting unauthenticated attackers access uploaded files directly, exploit requires knowledge or guessing of file paths.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25231.yaml"
+    }
+  ],
   "CVE-2026-25512": [
     {
       "source": "nuclei",
@@ -1771,6 +1795,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
+  "CVE-2026-2614": [
+    {
+      "source": "nuclei",
+      "name": "MLflow <= 3.9.0 - Arbitrary File Read",
+      "description": "mlflow mlflow <= 3.9.0 contains a path traversal caused by bypassing source path validation via the mlflow.prompt.is_prompt tag in CreateModelVersion request, letting unauthenticated remote attackers read arbitrary files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-2614.yaml"
+    }
+  ],
   "CVE-2026-26190": [
     {
       "source": "nuclei",
@@ -1811,6 +1843,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27176.yaml"
     }
   ],
+  "CVE-2026-27542": [
+    {
+      "source": "nuclei",
+      "name": "WooCommerce Wholesale Lead Capture <= 2.0.3.1 - Unauthenticated Privilege Escalation",
+      "description": "Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture <= 2.0.3.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27542.yaml"
+    }
+  ],
   "CVE-2026-27645": [
     {
       "source": "nuclei",
@@ -1825,6 +1865,14 @@
       "name": "Gitea Container Registry - Unauthorized Private Image Access",
       "description": "Gitea < 1.26.2 allows unauthenticated remote attackers to pull private container images.The /v2/token endpoint grants anonymous ghost tokens (UserID:-1) with no scope restriction.The ReqContainerAccess middleware does not check package owner visibility, so ghost users can enumerate all container repositories via /_catalog and pull any private image layer.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27771.yaml"
+    }
+  ],
+  "CVE-2026-27796": [
+    {
+      "source": "nuclei",
+      "name": "Homarr < 1.54.0 - Information Disclosure",
+      "description": "Homarr < 1.54.0 contains an information disclosure caused by the integration.all tRPC endpoint being exposed as a publicProcedure, letting unauthenticated users retrieve sensitive integration metadata, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27796.yaml"
     }
   ],
   "CVE-2026-27826": [
@@ -2369,6 +2417,14 @@
       "name": "Arcane <= 1.17.2 - Server-Side Request Forgery",
       "description": "Arcane <= 1.17.3 contains an unauthenticated server-side request forgery caused by lack of URL scheme and host validation in /api/templates/fetch endpoint, letting remote attackers perform SSRF, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40242.yaml"
+    }
+  ],
+  "CVE-2026-40280": [
+    {
+      "source": "nuclei",
+      "name": "Gotenberg <= 8.30.1 - Server Side Request Forgery",
+      "description": "Gotenberg is an API-based document conversion tool. In versions 8.30.1 and earlier, the default private-IP deny-lists for the --webhook-deny-list and --api-download-from-deny-list flags use a case-sensitive regular expression (^https?://) to match URL schemes. Because Go's net/url.Parse() normalizes the scheme to lowercase before establishing the outbound TCP connection, an attacker can bypass the deny-list by simply capitalizing part of the URL scheme (e.g., HTTP://, HTTPS://, or Http://). This allows unauthenticated requests to reach internal network services, including private IP ranges, loopback addresses, and cloud instance metadata endpoints such as HTTP://169.254.169.254/latest/meta-data.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40280.yaml"
     }
   ],
   "CVE-2026-40308": [
@@ -2995,6 +3051,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6118.yaml"
     }
   ],
+  "CVE-2026-61808": [
+    {
+      "source": "nuclei",
+      "name": "LightRAG <= 1.5.4 - Missing Authentication",
+      "description": "LightRAG through version 1.5.4 contains a broken access control vulnerability caused by the API server binding to all network interfaces with authentication disabled, letting unauthenticated network attackers fully control indexed documents and resources, exploit requires network access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61808.yaml"
+    }
+  ],
   "CVE-2026-6203": [
     {
       "source": "nuclei",
@@ -3041,6 +3105,14 @@
       "name": "Microweber CMS <= 2.0.20 - Unauthenticated Arbitrary File Read",
       "description": "Microweber CMS <= 2.0.20 contains a path traversal vulnerability caused by failure to normalize path query parameter in static file controller, letting unauthenticated remote attackers read arbitrary files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65694.yaml"
+    }
+  ],
+  "CVE-2026-65919": [
+    {
+      "source": "nuclei",
+      "name": "Meshery <1.0.57 - Arbitrary File Read",
+      "description": "Meshery before 1.0.57 contains an unauthenticated arbitrary file read vulnerability in the /api/system/fileView and /api/system/fileDownload endpoints that pass user-supplied file parameters directly to os.Open without path validation. Attackers can supply absolute paths or traversal sequences in the file parameter to read arbitrary files from the host filesystem without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65919.yaml"
     }
   ],
   "CVE-2026-67208": [
