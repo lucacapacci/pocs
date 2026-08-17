@@ -1483,6 +1483,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1603.yaml"
     }
   ],
+  "CVE-2026-16268": [
+    {
+      "source": "nuclei",
+      "name": "Newsletters < 4.16 - Unauthenticated SSRF via SNS Bounce Handler",
+      "description": "Newsletters WordPress plugin < 4.16 contains a server-side request forgery caused by lack of authentication and validation in bounce-processing requests, letting unauthenticated attackers make arbitrary requests to internal or external hosts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16268.yaml"
+    }
+  ],
   "CVE-2026-17505": [
     {
       "source": "nuclei",
