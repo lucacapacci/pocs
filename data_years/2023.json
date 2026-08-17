@@ -3879,14 +3879,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-1408.yaml"
     }
   ],
-  "CVE-2023-1434": [
-    {
-      "source": "nuclei",
-      "name": "Odoo - Cross-Site Scripting",
-      "description": "Odoo is a business suite that has features for many business-critical areas, such as e-commerce, billing, or CRM. Versions before the 16.0 release are vulnerable to CVE-2023-1434 and is caused by an incorrect content type being set on an API endpoint.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-1434.yaml"
-    }
-  ],
   "CVE-2023-1454": [
     {
       "source": "nuclei",
@@ -4261,14 +4253,6 @@
       "name": "mojoPortal 2.7.0.0 - Cross-Site Scripting",
       "description": "mojoPortal 2.7.0.0 contains a cross-site scripting vulnerability in the FileDialog.aspx component, which can allow an attacker to execute arbitrary web scripts or HTML via a crafted payload injected into the ed and tbi parameters.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-24322.yaml"
-    }
-  ],
-  "CVE-2023-24367": [
-    {
-      "source": "nuclei",
-      "name": "Temenos T24 R20 - Cross-Site Scripting",
-      "description": "Temenos T24 release 20 contains a reflected cross-site scripting vulnerability via the routineName parameter at genrequest.jsp. An attacker can inject arbitrary script in the browser of an unsuspecting user in the context of the affected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-24367.yaml"
     }
   ],
   "CVE-2023-2437": [
@@ -5687,14 +5671,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39007.yaml"
     }
   ],
-  "CVE-2023-39024": [
-    {
-      "source": "nuclei",
-      "name": "Harman Media Suite <= 4.2.0 - Local File Disclosure",
-      "description": "Harman Media Suite (versions 4.2.0 and below) are vulnerable to possible Local File Disclosure. This allows an unauthenticated user to potentially download attachments and recordings stored within the Media Suite application if anonymous access to the User Portal is enabled.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39024.yaml"
-    }
-  ],
   "CVE-2023-39108": [
     {
       "source": "nuclei",
@@ -5717,14 +5693,6 @@
       "name": "rConfig 3.9.4 - Server-Side Request Forgery",
       "description": "rconfig v3.9.4 was discovered to contain a Server-Side Request Forgery (SSRF) via the path parameter at /ajaxGetFileByPath.php. This vulnerability allows authenticated attackers to make arbitrary requests via injection of crafted URLs.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39110.yaml"
-    }
-  ],
-  "CVE-2023-39120": [
-    {
-      "source": "nuclei",
-      "name": "Nodogsplash - Directory Traversal",
-      "description": "Nodogsplash product was affected by a directory traversal vulnerability that also impacted the OpenWrt product. This vulnerability was addressed in Nodogsplash version 5.0.1. Exploiting this vulnerability, remote attackers could read arbitrary files from the target system.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39120.yaml"
     }
   ],
   "CVE-2023-39121": [

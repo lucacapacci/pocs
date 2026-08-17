@@ -3121,14 +3121,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-0705.yaml"
     }
   ],
-  "CVE-2024-0713": [
-    {
-      "source": "nuclei",
-      "name": "Monitorr Services Configuration - Arbitrary File Upload",
-      "description": "A vulnerability was found in Monitorr 1.7.6m. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /assets/php/upload.php of the component Services Configuration. The manipulation of the argument fileToUpload leads to unrestricted upload. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-251539. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-0713.yaml"
-    }
-  ],
   "CVE-2024-0799": [
     {
       "source": "nuclei",
@@ -3479,14 +3471,6 @@
       "name": "WordPress Competition Form Plugin <= 2.0 - Cross-Site Scripting",
       "description": "Competition Form WordPress plugin <= 2.0 contains a reflected cross-site scripting caused by lack of sanitization and escaping of a parameter before outputting it in the page, letting attackers execute malicious scripts in the context of high privilege users, exploit requires victim to visit a maliciously crafted page.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-12749.yaml"
-    }
-  ],
-  "CVE-2024-12760": [
-    {
-      "source": "nuclei",
-      "name": "BentoML v1.3.9 - Open Redirect",
-      "description": "An open redirect vulnerability exists in BentoML v1.3.9, where the file parameter in the /ui/gradio_api/file= endpoint can be manipulated to redirect users to malicious websites. This could facilitate phishing attacks by tricking users into visiting attacker-controlled URLs.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-12760.yaml"
     }
   ],
   "CVE-2024-12824": [
@@ -4097,22 +4081,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-23055.yaml"
     }
   ],
-  "CVE-2024-23163": [
-    {
-      "source": "nuclei",
-      "name": "GestSup - Account Takeover",
-      "description": "GestSup contains an authentication bypass vulnerability allowing attackers to take over user accounts, leading to full compromise including data disclosure and modification.",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-23163.yaml"
-    }
-  ],
-  "CVE-2024-23167": [
-    {
-      "source": "nuclei",
-      "name": "GestSup - Cross-Site Scripting",
-      "description": "GestSup allows its users to add events to the calendar of all users. This is the HTTP request sent when a user adds an event to their calendar.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-23167.yaml"
-    }
-  ],
   "CVE-2024-2330": [
     {
       "source": "nuclei",
@@ -4223,14 +4191,6 @@
       "name": "Liferay Portal - Open Redirect",
       "description": "HtmlUtil.escapeRedirect in Liferay Portal 7.2.0 through 7.4.3.18, and older unsupported versions, and Liferay DXP 7.4 before update 19, 7.3 before update 4, 7.2 before fix pack 19, and older unsupported versions can be circumvented by using the 'REPLACEMENT CHARACTER' (U+FFFD), which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, (3) `noSuchEntryRedirect` parameter, and (4) others parameters that rely on HtmlUtil.escapeRedirect.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-25608.yaml"
-    }
-  ],
-  "CVE-2024-25669": [
-    {
-      "source": "nuclei",
-      "name": "CaseAware a360inc - Cross-Site Scripting",
-      "description": "a360inc CaseAware contains a reflected cross-site scripting vulnerability via the user parameter transmitted in the login.php query string. This is a bypass of the fix reported in 2017\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-25669.yaml"
     }
   ],
   "CVE-2024-25723": [
@@ -6417,14 +6377,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-57049.yaml"
     }
   ],
-  "CVE-2024-57050": [
-    {
-      "source": "nuclei",
-      "name": "TP-LINK WR840N v6 up to 0.9.1 4.16 - Improper Authentication",
-      "description": "A vulnerability in the TP-Link WR840N v6 router with firmware version 0.9.1 4.16 and earlier permits unauthorized individuals to bypass the authentication of some interfaces under the /cgi directory.When adding Referer- http-//tplinkwifi.net to the the request, it will be recognized as passing the authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-57050.yaml"
-    }
-  ],
   "CVE-2024-57241": [
     {
       "source": "nuclei",
@@ -6447,6 +6399,14 @@
       "name": "WpStickyBar <= 2.1.0 - SQL Injection",
       "description": "The plugin does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-5765.yaml"
+    }
+  ],
+  "CVE-2024-57726": [
+    {
+      "source": "nuclei",
+      "name": "SimpleHelp <= 5.5.7 - Privilege Escalation",
+      "description": "SimpleHelp remote support software v5.5.7 and before contains a privilege escalation caused by insufficient access controls in API key creation, letting low-privileges technicians escalate privileges to server admin, exploit requires low-privileges technician access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-57726.yaml"
     }
   ],
   "CVE-2024-58136": [
