@@ -359,6 +359,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52630.py"
     },
     {
+      "source": "exploitdb",
+      "name": "Joomla JCE_2.9.15 - Remote Code Execution",
+      "description": "Joomla JCE_2.9.15 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52645.py"
+    },
+    {
       "source": "nuclei",
       "name": "Joomla! JCE extension < 2.9.99.5 unauthenticated RCE",
       "description": "Joomla JCE editor extension contains an unrestricted file upload vulnerability caused by allowing unauthenticated users to create new editor profiles, letting attackers upload and execute PHP code remotely, exploit requires no authentication.\n",
@@ -465,6 +471,12 @@
       "name": "WordPress Unauthenticated RCE via Pix for WooCommerce plugin",
       "description": "This Metasploit module exploits an Unauthenticated Arbitrary File Upload vulnerability in the Pix for WooCommerce plugin for WordPress.\n\n          Attackers can leverage the missing capability check and insufficient file type validation in the 'lkn_pix_for_woocommerce_c6_save_settings' function to upload arbitrary files to the affected server, which may lead to remote code execution under the web server's privileges.\n\n          The affected versions include all releases up to and including 1.5.0.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_plugin_pix_unauth_rce_cve_2026_3891.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WooCommerce 1.5.0 - Unauthenticated Arbitrary File Upload",
+      "description": "WooCommerce 1.5.0 - Unauthenticated Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52642.py"
     },
     {
       "source": "nuclei",
@@ -587,12 +599,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52622.py"
     }
   ],
+  "CVE-2026-55584": [
+    {
+      "source": "exploitdb",
+      "name": "phpSysInfo 3.4.5 - IP Allowlist Bypass",
+      "description": "phpSysInfo 3.4.5 - IP Allowlist Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52648.py"
+    }
+  ],
   "CVE-2026-61876": [
     {
       "source": "exploitdb",
       "name": "LuCI DHCPv6 -  Lease Hostname Stored Cross-Site Scripting",
       "description": "LuCI DHCPv6 -  Lease Hostname Stored Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52637.py"
+    }
+  ],
+  "CVE-2026-58058": [
+    {
+      "source": "exploitdb",
+      "name": "Nmap  7.99  - Extension Header Integer Underflow",
+      "description": "Nmap  7.99  - Extension Header Integer Underflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52647.py"
     }
   ],
   "CVE-2026-35333": [
@@ -1037,6 +1065,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52636.py"
     }
   ],
+  "CVE-2026-63505": [
+    {
+      "source": "exploitdb",
+      "name": "Probo 0.222.2 -  IDOR",
+      "description": "Probo 0.222.2 -  IDOR",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52650.txt"
+    }
+  ],
   "CVE-2026-0926": [
     {
       "source": "exploitdb",
@@ -1095,6 +1131,14 @@
       "name": "Tenable Nessus 10.12.1 - SQL Injection",
       "description": "Tenable Nessus 10.12.1 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52620.py"
+    }
+  ],
+  "CVE-2026-14620": [
+    {
+      "source": "exploitdb",
+      "name": "webpack_devserver 5.2.5 -  CSRF",
+      "description": "webpack_devserver 5.2.5 -  CSRF",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52649.txt"
     }
   ],
   "CVE-2026-3180": [
@@ -1217,6 +1261,14 @@
       "name": "Python-Multipart 0.0.22 - Path Traversal",
       "description": "Python-Multipart 0.0.22 - Path Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52543.py"
+    }
+  ],
+  "CVE-2026-55780": [
+    {
+      "source": "exploitdb",
+      "name": "NanaZip 6.5  -  DoS",
+      "description": "NanaZip 6.5  -  DoS",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/52652.txt"
     }
   ],
   "CVE-2026-36213": [

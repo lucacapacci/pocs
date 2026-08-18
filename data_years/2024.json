@@ -1689,6 +1689,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/51869.txt"
     }
   ],
+  "CVE-2024-10914": [
+    {
+      "source": "exploitdb",
+      "name": "D-Link DNS_340L - OS Command Injection",
+      "description": "D-Link DNS_340L - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/52643.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "D-Link NAS - Command Injection via Name Parameter",
+      "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been declared as critical. Affected by this vulnerability is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument name leads to os command injection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-10914.yaml"
+    }
+  ],
   "CVE-2024-27356": [
     {
       "source": "exploitdb",
@@ -3271,14 +3285,6 @@
       "name": "FastChat - Open Redirect",
       "description": "Detects an open redirect vulnerability in lm-sys/fastchat version 0.2.36, which allows attackers to redirect users to malicious URLs.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-10908.yaml"
-    }
-  ],
-  "CVE-2024-10914": [
-    {
-      "source": "nuclei",
-      "name": "D-Link NAS - Command Injection via Name Parameter",
-      "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been declared as critical. Affected by this vulnerability is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument name leads to os command injection.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-10914.yaml"
     }
   ],
   "CVE-2024-10915": [
