@@ -7759,6 +7759,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7377.yaml"
     }
   ],
+  "CVE-2015-7501": [
+    {
+      "source": "nuclei",
+      "name": "Red Hat JBoss - Insecure Deserialization",
+      "description": "Red Hat JBoss Application Server (4.x, 5.x, 6.x) contains an insecure deserialization vulnerability in the JMXInvokerServlet and EJBInvokerServlet HTTP Invoker endpoints. These endpoints deserialize arbitrary Java objects from unauthenticated HTTP POST requests. An attacker can send a crafted Apache Commons Collections gadget chain to achieve remote code execution. CVE-2015-7501 is the original 2015 FoxGlove Security disclosure of the Java Commons Collections deserialization vulnerability class.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-7501.yaml"
+    }
+  ],
   "CVE-2015-7780": [
     {
       "source": "nuclei",
