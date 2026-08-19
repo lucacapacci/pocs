@@ -1603,6 +1603,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
     }
   ],
+  "CVE-2026-19478": [
+    {
+      "source": "nuclei",
+      "name": "GitLab CE/EE - GraphQL @gl_introduced Arbitrary Method Invocation",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19478.yaml"
+    }
+  ],
   "CVE-2026-1980": [
     {
       "source": "nuclei",
@@ -3105,6 +3113,14 @@
       "name": "YMC Filter - SQL Injection",
       "description": "YMC Filter <= 3.11.5 contains an sql injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54836.yaml"
+    }
+  ],
+  "CVE-2026-55224": [
+    {
+      "source": "nuclei",
+      "name": "MineAdmin < 3.2.0-alpha.2 - Plugin Path Traversal to RCE",
+      "description": "MineAdmin versions before 3.2.0-alpha.2 contain a path traversal vulnerability in the app-store plugin service. The identifier parameter is concatenated into filesystem paths without sanitization.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55224.yaml"
     }
   ],
   "CVE-2026-55450": [
