@@ -1075,6 +1075,12 @@
       "name": "Planyo_Online_Reservation_System  3.0 - Arbitrary File Read via SSRF",
       "description": "Planyo_Online_Reservation_System  3.0 - Arbitrary File Read via SSRF",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52636.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Planyo Online Reservation System <= 3.0 - Arbitrary File Read",
+      "description": "The Planyo Online Reservation System plugin for WordPress through 3.0 ships ulap.php, an AJAX proxy that is directly reachable without WordPress bootstrapping or authentication. The send_http_post() function validates the host of the supplied URL against an allowlist that includes localhost, but never validates the URL scheme, so a file://localhost/ URL passes the host check and is handed to curl_init() or fopen(). Both support the file:// wrapper, so the contents of arbitrary local files are returned in the response.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3576.yaml"
     }
   ],
   "CVE-2026-63505": [
@@ -1593,6 +1599,14 @@
       "name": "Seraphinite Accelerator <= 2.29.18 - Cross-Site Scripting",
       "description": "The Seraphinite Accelerator plugin for WordPress up to and including 2.29.18 was vulnerable to reflected cross-site scripting through the seraph_accel_prep parameter. CacheExtractPreparePageParams() compared the expected HMAC against the JSON-decoded nonce with PHP's loose != operator, so a JSON boolean true satisfied the comparison and bypassed the signature check, and _CbContentFinishSkip() then concatenated the attacker-controlled selfTest field straight into the response body, letting unauthenticated attackers inject arbitrary scripts.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17532.yaml"
+    }
+  ],
+  "CVE-2026-17594": [
+    {
+      "source": "nuclei",
+      "name": "Sonatype Nexus Repository < 3.95.0 - Privilege Escalation via Repository Format Mismatch",
+      "description": "Nexus Repository 3 CE/Pro 3.0.0 through 3.94.x contains an incorrect authorization vulnerability caused by inconsistent authorization checks in the repository-creation UI, letting delegated repository-admin users create unauthorized repository formats, exploit requires delegated repository-admin privilege.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17594.yaml"
     }
   ],
   "CVE-2026-1890": [
@@ -3417,6 +3431,14 @@
       "name": "WordPress Burst Statistics 3.4.0-3.4.1.1 - Authentication Bypass",
       "description": "Burst Statistics \u2013 Privacy-Friendly WordPress Analytics plugin 3.4.0 to 3.4.1.1 contains an authentication bypass caused by incorrect return-value handling in is_mainwp_authenticated() function, letting unauthenticated attackers impersonate administrators, exploit requires knowledge of an administrator username.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8181.yaml"
+    }
+  ],
+  "CVE-2026-8237": [
+    {
+      "source": "nuclei",
+      "name": "Concrete CMS <= 9.5.0 - Unauthenticated Conversation Message Disclosure (IDOR)",
+      "description": "Concrete CMS <= 9.5.0 contains an IDOR caused by insufficient access control in /ccm/frontend/conversations/message_detail endpoint, letting unauthenticated attackers enumerate conversation messages and attachments.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8237.yaml"
     }
   ],
   "CVE-2026-8383": [

@@ -3991,6 +3991,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-1221.yaml"
     }
   ],
+  "CVE-2022-1281": [
+    {
+      "source": "nuclei",
+      "name": "Photo Gallery WordPress v1.6.3 - SQL Injection",
+      "description": "Photo Gallery WordPress plugin v1.6.3 contains a SQL injection caused by improper escaping of $_POST['filter_tag'] parameter in SQL queries, letting attackers execute arbitrary SQL commands, exploit requires sending crafted POST requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-1281.yaml"
+    }
+  ],
   "CVE-2022-1386": [
     {
       "source": "nuclei",
