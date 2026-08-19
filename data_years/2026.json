@@ -883,6 +883,12 @@
       "name": "FUXA  1.2.9 -  RCE",
       "description": "FUXA  1.2.9 -  RCE",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52568.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "FUXA <= 1.2.9 - Unauthenticated Path Traversal to Arbitrary File Write",
+      "description": "FUXA, an open-source Node.js SCADA/HMI web interface, through version 1.2.9 exposes an unauthenticated POST /api/upload endpoint that resolves the attacker-controlled `destination` field from the JSON request body against the application directory with only a leading underscore prefix and no containment check. Because path.resolve() honours \"../\" segments, an unauthenticated attacker can escape the application directory and write arbitrary files anywhere on the filesystem reachable by the service account - for example into the public web root (a/../../client/dist), into cron directories, or over SSH authorized_keys - leading to remote code execution. Version 1.2.10 rejects any destination containing a traversal segment and additionally requires an authenticated administrator.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25895.yaml"
     }
   ],
   "CVE-2026-26980": [
@@ -1549,6 +1555,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1581.yaml"
     }
   ],
+  "CVE-2026-15826": [
+    {
+      "source": "nuclei",
+      "name": "User Profile Builder 3.16.4 - Unauthenticated Authentication Bypass",
+      "description": "The User Profile Builder plugin for WordPress version 3.16.4 is vulnerable to an authentication bypass via type confusion. Profile Builder's automatic-login-after-registration handler passes the return value of wp_insert_user() through absint() before testing it with is_wp_error(), so the error check runs against the already-coerced integer. A registration submitted with a 61-70 character username passes the plugin's own validation but is rejected by WordPress core, because the user_login column is VARCHAR(60), and wp_insert_user() returns a WP_Error object. absint() coerces that object to the integer 1, is_wp_error(1) is false, and the plugin binds a transient-backed autologin nonce to user ID 1. Consuming that nonce calls wp_set_auth_cookie(1) and logs the unauthenticated attacker in as the site's Administrator.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-15826.yaml"
+    }
+  ],
   "CVE-2026-1603": [
     {
       "source": "nuclei",
@@ -1627,6 +1641,14 @@
       "name": "Splunk Enterprise & Cloud Platform - Unrestricted File Upload",
       "description": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.3 and 10.2.2510.14, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.<br><br>The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any network-reachable user to invoke file operations without credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20253.yaml"
+    }
+  ],
+  "CVE-2026-20896": [
+    {
+      "source": "nuclei",
+      "name": "Gitea Docker Image <= 1.26.2 - Reverse Proxy Header Authentication Bypass",
+      "description": "The official Gitea Docker image through version 1.26.2 ships with REVERSE_PROXY_TRUSTED_PROXIES set to a wildcard, causing Gitea to trust reverse-proxy authentication headers (X-WEBAUTH-USER) from any source IP instead of restricting trust to the configured reverse proxy. When reverse-proxy authentication is enabled, an unauthenticated remote attacker can impersonate any existing user, including an administrator, by sending the target username in the X-WEBAUTH-USER header.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20896.yaml"
     }
   ],
   "CVE-2026-21445": [
@@ -2171,6 +2193,14 @@
       "name": "Uptime-Kuma < v1.23.0 - Improper Access Control",
       "description": "Uptime-Kuma before v1.23.0 is vulnerable to an information disclosure issue due to missing authorization on the /api/badge/1/ping/24 endpoint. An unauthenticated attacker can access this endpoint to leak ping statistics, such as average ping and ping history, for existing monitors without needing access to the protected status page. This can lead to unintended exposure of internal monitoring data.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32230.yaml"
+    }
+  ],
+  "CVE-2026-32255": [
+    {
+      "source": "nuclei",
+      "name": "Kan <= 0.5.4 - Server-Side Request Forgery",
+      "description": "Kan, an open-source project management tool (Trello alternative), versions 0.5.4 and below are vulnerable to an unauthenticated Server-Side Request Forgery in the /api/download/attatchment endpoint. The endpoint passes the attacker-controlled `url` query parameter straight to a server-side fetch() without validating the destination host, allowing an unauthenticated attacker to make the server issue arbitrary outbound HTTP requests and read back the full response body.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32255.yaml"
     }
   ],
   "CVE-2026-32583": [
@@ -2925,6 +2955,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5027.yaml"
     }
   ],
+  "CVE-2026-5032": [
+    {
+      "source": "nuclei",
+      "name": "W3 Total Cache <= 2.9.3 - Unauthenticated Dynamic Security Token Disclosure",
+      "description": "The W3 Total Cache WordPress plugin through version 2.9.3 skips its entire output buffering and processing pipeline whenever an incoming request's User-Agent header contains the string \"W3 Total Cache\", without authenticating the caller. On sites that use developer-placed dynamic fragment tags, the raw mfunc/mclude HTML comments - which embed the per-site W3TC_DYNAMIC_SECURITY token - are therefore rendered directly into the page source instead of being processed and stripped, letting an unauthenticated attacker harvest the token by comparing a normal response against one sent with the magic User-Agent.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5032.yaml"
+    }
+  ],
   "CVE-2026-5073": [
     {
       "source": "nuclei",
@@ -3091,6 +3129,14 @@
       "name": "VvvebJs <= 2.0.5 - Cross-Site Scripting",
       "description": "Givanz Vvvebjs <= 2.0.5 contains a stored XSS caused by manipulation of the \"uploadAllowExtensions\" argument in upload.php File Upload Endpoint, letting remote attackers execute scripts, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
+    }
+  ],
+  "CVE-2026-56265": [
+    {
+      "source": "nuclei",
+      "name": "Crawl4AI < 0.8.7 - Hardcoded JWT Signing Key Authentication Bypass",
+      "description": "Crawl4AI Docker API server versions before 0.8.7 ship with a hardcoded default JWT signing key (\"mysecret\") used to sign and verify HS256 authentication tokens. Because the key is identical across every deployment where SECRET_KEY has not been overridden, an unauthenticated attacker can forge a valid Bearer token and use it to access every JWT-protected API endpoint (/md, /html, /screenshot, /pdf, /execute_js, /crawl, /ask).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56265.yaml"
     }
   ],
   "CVE-2026-56291": [
