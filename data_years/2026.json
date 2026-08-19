@@ -3129,6 +3129,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54836.yaml"
     }
   ],
+  "CVE-2026-55087": [
+    {
+      "source": "nuclei",
+      "name": "Etherpad 2.1.0 <= 3.0.0 - Cross-Site Scripting",
+      "description": "Etherpad versions 2.1.0 through 3.0.0 reflect the x-proxy-path request header into admin HTML, JavaScript, and CSS responses without sanitization. An attacker can abuse this behavior to inject crafted content into generated resource URLs, enabling cross-site scripting and cache poisoning scenarios.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55087.yaml"
+    }
+  ],
   "CVE-2026-55224": [
     {
       "source": "nuclei",
