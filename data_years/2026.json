@@ -51,6 +51,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3055.yaml"
     }
   ],
+  "CVE-2026-6826": [
+    {
+      "source": "metasploit",
+      "name": "Concrete CMS Unauthenticated File Usage Disclosure",
+      "description": "Concrete CMS (formerly concrete5) 9.x before 9.5.1 exposes the file usage\n          dialog controller at /ccm/system/dialogs/file/usage/<fID> without a view\n          permission check (CVE-2026-6826). An unauthenticated attacker can enumerate the\n          numeric file ID space and, for every file registered in the file manager, learn\n          where it is used: the referencing Page ID, page Version, file Handle, and the\n          page Location (path). This discloses the site's internal page tree, unpublished\n          and internal page paths, and file handles to anonymous callers.\n\n          This module enumerates a range of file IDs and reports the disclosed usage\n          records. It is read-only.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/concrete_cms_file_usage_disclosure.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Concrete CMS <9.5.1 - Unauthenticated File Usage Disclosure",
+      "description": "Concrete CMS 9.5.0 and below  is vulnerable to unauthenticated file usage disclosure via missing permission check in the usage controller.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6826.yaml"
+    }
+  ],
   "CVE-2026-42208": [
     {
       "source": "metasploit",
@@ -303,6 +317,14 @@
       "name": "Flowise CSV Agent Prompt Injection RCE",
       "description": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of FlowiseAI Flowise.\n          Authentication is not required to exploit this vulnerability.\n\n          The specific flaw exists within the run method of the CSV_Agents class.\n          The issue results from the lack of proper sandboxing when evaluating an LLM generated python script.\n          An attacker can leverage this vulnerability to execute code in the context of the user running the server.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/flowise_auth_rce_cve_2026_41264.rb"
+    }
+  ],
+  "CVE-2026-56274": [
+    {
+      "source": "metasploit",
+      "name": "Flowise MCP Server Remote Code Execution",
+      "description": "Flowise versions from 2.2.7 prior to 3.1.2 are vulnerable to remote code execution\n          through the Custom MCP (Model Context Protocol) node configuration.\n\n          The vulnerability exists in the /api/v1/node-load-method/customMCP endpoint,\n          which accepts arbitrary command and argument configurations for MCP server\n          initialization. An authenticated attacker can abuse the npx --yes flag to\n          fetch and execute a malicious npm package from an attacker-controlled HTTP\n          server, achieving arbitrary command execution on the Flowise host.\n\n          This module creates a malicious npm package tar archive in memory, serves it\n          via Metasploit's built-in HTTP server, then triggers the vulnerable endpoint\n          to download and execute the package via npx.\n\n          To interact with the obtained shell, use the command: sessions -i <id>\n          (for example: sessions -i 1).",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/flowise_mcp_rce.rb"
     }
   ],
   "CVE-2026-28289": [
@@ -3381,14 +3403,6 @@
       "name": "Juggle <= 1.6.0 - Unauthenticated Exposed H2 Database Console",
       "description": "Juggle ships the H2 database web console enabled and reachable from\nnon-localhost by default. No application-level authentication covers\nthe /h2-console path, and the shipped default datasource credentials\n(sa/juggle) are known. An unauthenticated remote attacker can reach the\nconsole and, using the default credentials, achieve OS command\nexecution on the host via the H2 CREATE ALIAS Runtime.exec() technique.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-67208.yaml"
-    }
-  ],
-  "CVE-2026-6826": [
-    {
-      "source": "nuclei",
-      "name": "Concrete CMS <9.5.1 - Unauthenticated File Usage Disclosure",
-      "description": "Concrete CMS 9.5.0 and below  is vulnerable to unauthenticated file usage disclosure via missing permission check in the usage controller.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6826.yaml"
     }
   ],
   "CVE-2026-6854": [
