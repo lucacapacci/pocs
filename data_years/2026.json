@@ -441,6 +441,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33017.yaml"
     }
   ],
+  "CVE-2026-9198": [
+    {
+      "source": "metasploit",
+      "name": "Langflow AI auto_login RCE",
+      "description": "Langflow versions 1.10.0 and below are susceptible to\n          unauthenticated remote code execution. By chaining\n          /api/v1/auto_login with /api/v1/validate/code, a remote\n          unauthenticated attacker can send crafted HTTP requests to execute\n          arbitrary code.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_unauth_rce_cve_2026_9198.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "IBM Langflow - Remote Code Execution",
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 contains a remote code execution caused by chaining /api/v1/auto_login and /api/v1/validate/code endpoints, letting unauthenticated attackers execute arbitrary code remotely, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9198.yaml"
+    }
+  ],
   "CVE-2026-27175": [
     {
       "source": "metasploit",
@@ -3577,14 +3591,6 @@
       "name": "MediaWiki EasyTimeline - Code Injection RCE",
       "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
-    }
-  ],
-  "CVE-2026-9198": [
-    {
-      "source": "nuclei",
-      "name": "IBM Langflow - Remote Code Execution",
-      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 contains a remote code execution caused by chaining /api/v1/auto_login and /api/v1/validate/code endpoints, letting unauthenticated attackers execute arbitrary code remotely, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9198.yaml"
     }
   ],
   "CVE-2026-9282": [
