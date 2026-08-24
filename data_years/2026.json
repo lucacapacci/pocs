@@ -499,6 +499,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27760.yaml"
     }
   ],
+  "CVE-2026-77647": [
+    {
+      "source": "metasploit",
+      "name": "SPIP X-Spip-Filtre Unauthenticated RCE",
+      "description": "This module exploits a PHP function-call injection in SPIP's\n          template engine. The analyse_resultat_skel() function extracts\n          <?php header(\"X-Spip-Filtre: ...\"); ?> patterns from the rendered\n          page body and calls the listed functions as template filters.\n\n          A newline character is injected into a GET parameter value, which\n          places a header() call on its own line inside the compiled PHP\n          template. The filter chain intval|_request|system reads a shell\n          command from a POST parameter and executes it.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spip_x_spip_filtre_rce.rb"
+    }
+  ],
   "CVE-2026-63030": [
     {
       "source": "metasploit",

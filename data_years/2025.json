@@ -3529,6 +3529,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-14726.yaml"
     }
   ],
+  "CVE-2025-14998": [
+    {
+      "source": "nuclei",
+      "name": "Branda WordPress plugin - Privilege Escalation",
+      "description": "Branda WordPress plugin <= 3.4.24 contains a privilege escalation caused by improper user identity validation in password update functionality, letting unauthenticated attackers change arbitrary user passwords, including administrators, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-14998.yaml"
+    }
+  ],
   "CVE-2025-15503": [
     {
       "source": "nuclei",
