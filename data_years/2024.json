@@ -1119,6 +1119,12 @@
       "name": "ConnectWise ScreenConnect Unauthenticated Remote Code Execution",
       "description": "This module exploits an authentication bypass vulnerability that allows an unauthenticated attacker to create\n          a new administrator user account on a vulnerable ConnectWise ScreenConnect server. The attacker can leverage\n          this to achieve RCE by uploading a malicious extension module. All versions of ScreenConnect version 23.9.7\n          and below are affected.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/connectwise_screenconnect_rce_cve_2024_1709.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "ConnectWise ScreenConnect <= 23.9.7 - Path Traversal",
+      "description": "ConnectWise ScreenConnect 23.9.7 and prior contain a path traversal caused by improper handling of user input, letting attackers execute remote code or access confidential data, exploit requires network access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-1708.yaml"
     }
   ],
   "CVE-2024-1709": [

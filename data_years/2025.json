@@ -3537,6 +3537,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-14998.yaml"
     }
   ],
+  "CVE-2025-15403": [
+    {
+      "source": "nuclei",
+      "name": "RegistrationMagic <= 6.0.7.1 - Privilege Escalation",
+      "description": "RegistrationMagic WordPress plugin <= 6.0.7.1 contains a privilege escalation caused by improper access control in 'add_menu' via 'rm_user_exists' AJAX action, letting unauthenticated attackers manipulate admin menu capabilities, exploit requires subscriber user for further escalation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-15403.yaml"
+    }
+  ],
   "CVE-2025-15503": [
     {
       "source": "nuclei",

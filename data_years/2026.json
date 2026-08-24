@@ -1505,6 +1505,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11387.yaml"
     }
   ],
+  "CVE-2026-11801": [
+    {
+      "source": "nuclei",
+      "name": "WPAdverts <= 2.3.2 - Information Disclosure",
+      "description": "WPAdverts \u2013 Classifieds Plugin for WordPress <= 2.3.2 contains an authorization bypass caused by improper user authorization verification in classifieds-types REST endpoint, letting unauthenticated attackers retrieve internal site configuration data, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11801.yaml"
+    }
+  ],
   "CVE-2026-1207": [
     {
       "source": "nuclei",
