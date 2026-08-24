@@ -3353,6 +3353,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6118.yaml"
     }
   ],
+  "CVE-2026-61511": [
+    {
+      "source": "nuclei",
+      "name": "vBulletin 6.x - Remote Code Execution",
+      "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contain an eval injection vulnerability caused by insufficiently restrictive regex filtering in vB5_Template_Runtime::runMaths(), letting unauthenticated remote attackers execute arbitrary PHP code via the pagenav[pagenumber] parameter in ajax/render template route.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61511.yaml"
+    }
+  ],
   "CVE-2026-61808": [
     {
       "source": "nuclei",
