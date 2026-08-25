@@ -1721,6 +1721,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
     }
   ],
+  "CVE-2026-18963": [
+    {
+      "source": "nuclei",
+      "name": "Keycloak < 26.7.2 - Unauthenticated Account Takeover via Reset-Credentials Bypass",
+      "description": "Keycloak versions prior to 26.7.2, 26.6.6, and 26.4.15 contain a flaw in the reset-credentials flow that allows an unauthenticated attacker to bypass email verification and take over any user account. Two bugs are chained: (1) the tryAnotherWay handler stores a generic \"true\" selector note not scoped to the execution ID, and (2) ResetCredentialEmail.action() calls context.success() without verifying ACTION_TOKEN_USER_ID.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18963.yaml"
+    }
+  ],
   "CVE-2026-19478": [
     {
       "source": "nuclei",
