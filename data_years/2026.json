@@ -79,6 +79,26 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6826.yaml"
     }
   ],
+  "CVE-2026-9082": [
+    {
+      "source": "metasploit",
+      "name": "Drupal Core PostgreSQL EntityQuery SQL Injection",
+      "description": "This module detects CVE-2026-9082, an unauthenticated SQL injection in\n          Drupal core's PostgreSQL EntityQuery condition handler. It uses a crafted\n          JSON:API filter array key to confirm the vulnerability with time-based\n          blind SQL injection. MySQL, MariaDB, and SQLite are not affected.\n\n          The configured JSON:API resource must be anonymously readable and expose\n          at least one entity with a case-insensitive string field.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/drupal_pgsql_entityquery_sqli.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Drupal Core 10.5.5 - Error-Based SQL Injection",
+      "description": "Drupal Core 10.5.5 - Error-Based SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52608.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Drupal Core - Anonymous SQL Injection via PostgreSQL Entity Query",
+      "description": "Drupal core from 8.9.0 before 10.4.10, 10.5.0 before 10.5.10, 10.6.0 before 10.6.9, 11.0.0 before 11.1.10, 11.2.0 before 11.2.12, and 11.3.0 before 11.3.10 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9082.yaml"
+    }
+  ],
   "CVE-2026-42208": [
     {
       "source": "metasploit",
@@ -91,6 +111,14 @@
       "name": "LiteLLM - SQL Injection",
       "description": "LiteLLM 1.81.16 to < 1.83.7 contains a SQL injection caused by improper handling of caller-supplied key in database query during proxy API key checks, letting unauthenticated attackers read and modify database data, exploit requires crafted Authorization header.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42208.yaml"
+    }
+  ],
+  "CVE-2026-0265": [
+    {
+      "source": "metasploit",
+      "name": "PAN-OS GlobalProtect CAS CVE-2026-0265 Vulnerability Checker",
+      "description": "This module checks a PAN-OS GlobalProtect portal for CVE-2026-0265\n          using the Bishop Fox scanner decision flow. It performs anonymous\n          GET requests to the GlobalProtect prelogin endpoint, retrying transient\n          failures and HTTP 503 responses, then checks\n          whether CAS authentication is enabled, decodes the embedded SAML/JWT\n          token when present, extracts PanOSversion, and compares it against\n          the advisory version matrix.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/panos_cve_2026_0265.rb"
     }
   ],
   "CVE-2026-63030": [
@@ -1303,20 +1331,6 @@
       "name": "YAMCS yamcs-core  5.12.7 - User Enumeration",
       "description": "YAMCS yamcs-core  5.12.7 - User Enumeration",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52604.py"
-    }
-  ],
-  "CVE-2026-9082": [
-    {
-      "source": "exploitdb",
-      "name": "Drupal Core 10.5.5 - Error-Based SQL Injection",
-      "description": "Drupal Core 10.5.5 - Error-Based SQL Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52608.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "Drupal Core - Anonymous SQL Injection via PostgreSQL Entity Query",
-      "description": "Drupal core from 8.9.0 before 10.4.10, 10.5.0 before 10.5.10, 10.6.0 before 10.6.9, 11.0.0 before 11.1.10, 11.2.0 before 11.2.12, and 11.3.0 before 11.3.10 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers execute arbitrary SQL queries, exploit requires crafted input.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9082.yaml"
     }
   ],
   "CVE-2026-42607": [
