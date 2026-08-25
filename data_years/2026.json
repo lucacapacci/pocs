@@ -93,6 +93,40 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42208.yaml"
     }
   ],
+  "CVE-2026-63030": [
+    {
+      "source": "metasploit",
+      "name": "WordPress Core wp2shell Unauthenticated SQL Injection via REST Batch Route Confusion",
+      "description": "WordPress core 6.9.0 - 6.9.4 and 7.0.0 - 7.0.1 are affected by an unauthenticated\n          SQL injection reachable through the REST API batch endpoint (/batch/v1).\n\n          The batch controller builds parallel $matches (the matched handler per sub-request)\n          and $validation (the validation result per sub-request) arrays, then indexes both by\n          the same offset when dispatching. A sub-request whose path fails wp_parse_url() is\n          appended to $validation but not to $matches, desynchronising the two arrays so a\n          sub-request is dispatched under a different sub-request's handler (CVE-2026-63030).\n\n          Nesting the primitive twice lets a GET on the single-post item route\n          /wp/v2/posts/999999, carrying the collection-only parameter author_exclude, be\n          dispatched under the posts collection get_items() handler, where author_exclude maps\n          to the WP_Query author__not_in query var. The vulnerable builds interpolate that value\n          into SQL as a string (CVE-2026-60137), producing a pre-authentication boolean- and\n          time-based blind SQL injection in the post_author NOT IN (...) clause.\n\n          This module confirms the route-confusion primitive with a benign marker probe, then\n          uses a time-based blind injection to dump WordPress user logins and password hashes.\n          It is read-only and does not create posts, users, or other content.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/wordpress_wp2shell_sqli.rb"
+    },
+    {
+      "source": "metasploit",
+      "name": "WordPress WP2Shell REST API Batch Route Confusion SQLi to RCE",
+      "description": "This module chains two WordPress core vulnerabilities, together known as\n          WP2Shell, to gain unauthenticated remote code execution against default\n          installs of WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1.\n          The vulnerabilities are fixed in WordPress 6.9.5 and 7.0.2.\n\n          CVE-2026-60137 is an SQL injection in WP_Query's author__not_in parameter, and\n          CVE-2026-63030 is a REST API batch endpoint route-confusion bug that lets an\n          unauthenticated request reach that injection.\n\n          The module uses the injection to read the database table prefix and the\n          administrator user ID, poisons WordPress' object cache to publish a crafted\n          customizer changeset, and re-enters the REST API with administrator privileges\n          to create a new administrator account. It then logs in as that account, uploads\n          a plugin containing a Metasploit payload, and executes it for a session. Once a\n          session is obtained the uploaded plugin is removed, and the created administrator\n          account is removed as well unless KeepAdmin is set.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Core 6.9-7.0.1 - Pre-Auth Batch-Route Confusion",
+      "description": "WordPress core versions 6.9.0 through 6.9.4 and 7.0.0 through 7.0.1 are vulnerable to a pre-authentication route confusion issue in the REST API batch endpoint (/?rest_route=/batch/v1). A malformed nested batch request desynchronizes the batch router, allowing unauthenticated requests to reach unintended REST API handlers and bypass authorization checks. This route confusion can be chained with a SQL injection flaw (CVE-2026-60137) in the author_exclude parameter to extract database contents and ultimately achieve remote code execution. This template safely detects the vulnerable handler state via the route confusion behavior alone, without executing SQL or relying on response timing.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63030.yaml"
+    }
+  ],
+  "CVE-2026-60137": [
+    {
+      "source": "metasploit",
+      "name": "WordPress Core wp2shell Unauthenticated SQL Injection via REST Batch Route Confusion",
+      "description": "WordPress core 6.9.0 - 6.9.4 and 7.0.0 - 7.0.1 are affected by an unauthenticated\n          SQL injection reachable through the REST API batch endpoint (/batch/v1).\n\n          The batch controller builds parallel $matches (the matched handler per sub-request)\n          and $validation (the validation result per sub-request) arrays, then indexes both by\n          the same offset when dispatching. A sub-request whose path fails wp_parse_url() is\n          appended to $validation but not to $matches, desynchronising the two arrays so a\n          sub-request is dispatched under a different sub-request's handler (CVE-2026-63030).\n\n          Nesting the primitive twice lets a GET on the single-post item route\n          /wp/v2/posts/999999, carrying the collection-only parameter author_exclude, be\n          dispatched under the posts collection get_items() handler, where author_exclude maps\n          to the WP_Query author__not_in query var. The vulnerable builds interpolate that value\n          into SQL as a string (CVE-2026-60137), producing a pre-authentication boolean- and\n          time-based blind SQL injection in the post_author NOT IN (...) clause.\n\n          This module confirms the route-confusion primitive with a benign marker probe, then\n          uses a time-based blind injection to dump WordPress user logins and password hashes.\n          It is read-only and does not create posts, users, or other content.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/wordpress_wp2shell_sqli.rb"
+    },
+    {
+      "source": "metasploit",
+      "name": "WordPress WP2Shell REST API Batch Route Confusion SQLi to RCE",
+      "description": "This module chains two WordPress core vulnerabilities, together known as\n          WP2Shell, to gain unauthenticated remote code execution against default\n          installs of WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1.\n          The vulnerabilities are fixed in WordPress 6.9.5 and 7.0.2.\n\n          CVE-2026-60137 is an SQL injection in WP_Query's author__not_in parameter, and\n          CVE-2026-63030 is a REST API batch endpoint route-confusion bug that lets an\n          unauthenticated request reach that injection.\n\n          The module uses the injection to read the database table prefix and the\n          administrator user ID, poisons WordPress' object cache to publish a crafted\n          customizer changeset, and re-enters the REST API with administrator privileges\n          to create a new administrator account. It then logs in as that account, uploads\n          a plugin containing a Metasploit payload, and executes it for a session. Once a\n          session is obtained the uploaded plugin is removed, and the created administrator\n          account is removed as well unless KeepAdmin is set.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
+    }
+  ],
   "CVE-2026-29058": [
     {
       "source": "metasploit",
@@ -267,6 +301,20 @@
       "name": "Linux Kernel -  Local Privilege Escalation",
       "description": "Linux Kernel -  Local Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52591.txt"
+    }
+  ],
+  "CVE-2026-16232": [
+    {
+      "source": "metasploit",
+      "name": "Check Point SmartConsole Authentication Bypass Run Script RCE",
+      "description": "This module exploits CVE-2026-16232, an authentication bypass in the\n          Check Point SmartConsole login process affecting Security Management\n          Server and Multi-Domain Security Management Server. A vulnerable\n          management server accepts a client-supplied SIC distinguished name\n          during an application certificate bind instead of binding the\n          application identity to the authenticated peer certificate.\n\n          The module uses the unauthenticated FWM/CPMI service to replay the\n          management server's own SIC DN, mints a SmartConsole SSO ticket, and\n          redeems it over the CPM SOAP service. The resulting administrative\n          session is then used to submit a local one-time run-script command.\n\n          Affected versions include R82.10 before Jumbo Hotfix Take 36, R82\n          before Jumbo Hotfix Take 118, and R81.20 before Jumbo Hotfix Take 158.\n          Older supported release families are also affected according to the\n          vendor advisory. Exploitation requires network access to the\n          management server (Specifically the FWM/CPMI service port on TCP\n          18190, and the CPM/DLE service port on TCP 19009), and a Trusted\n          Clients configuration that does not restrict GUI clients.\n\n          This module has been successfully tested against vulnerable R82.10\n          and R81.20 targets.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/misc/checkpoint_smartconsole_cve_2026_16232_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Check Point Security Management Server - SmartConsole Authentication Bypass",
+      "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server IP address and a configuration that does not restrict Trusted Clients. Check Point is aware that this vulnerability is being exploited and has affected a very small number of customers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-16232.yaml"
     }
   ],
   "CVE-2026-0826": [
@@ -513,28 +561,6 @@
       "name": "SPIP X-Spip-Filtre Unauthenticated RCE",
       "description": "This module exploits a PHP function-call injection in SPIP's\n          template engine. The analyse_resultat_skel() function extracts\n          <?php header(\"X-Spip-Filtre: ...\"); ?> patterns from the rendered\n          page body and calls the listed functions as template filters.\n\n          A newline character is injected into a GET parameter value, which\n          places a header() call on its own line inside the compiled PHP\n          template. The filter chain intval|_request|system reads a shell\n          command from a POST parameter and executes it.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spip_x_spip_filtre_rce.rb"
-    }
-  ],
-  "CVE-2026-63030": [
-    {
-      "source": "metasploit",
-      "name": "WordPress WP2Shell REST API Batch Route Confusion SQLi to RCE",
-      "description": "This module chains two WordPress core vulnerabilities, together known as\n          WP2Shell, to gain unauthenticated remote code execution against default\n          installs of WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1.\n          The vulnerabilities are fixed in WordPress 6.9.5 and 7.0.2.\n\n          CVE-2026-60137 is an SQL injection in WP_Query's author__not_in parameter, and\n          CVE-2026-63030 is a REST API batch endpoint route-confusion bug that lets an\n          unauthenticated request reach that injection.\n\n          The module uses the injection to read the database table prefix and the\n          administrator user ID, poisons WordPress' object cache to publish a crafted\n          customizer changeset, and re-enters the REST API with administrator privileges\n          to create a new administrator account. It then logs in as that account, uploads\n          a plugin containing a Metasploit payload, and executes it for a session. Once a\n          session is obtained the uploaded plugin is removed, and the created administrator\n          account is removed as well unless KeepAdmin is set.",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
-    },
-    {
-      "source": "nuclei",
-      "name": "WordPress Core 6.9-7.0.1 - Pre-Auth Batch-Route Confusion",
-      "description": "WordPress core versions 6.9.0 through 6.9.4 and 7.0.0 through 7.0.1 are vulnerable to a pre-authentication route confusion issue in the REST API batch endpoint (/?rest_route=/batch/v1). A malformed nested batch request desynchronizes the batch router, allowing unauthenticated requests to reach unintended REST API handlers and bypass authorization checks. This route confusion can be chained with a SQL injection flaw (CVE-2026-60137) in the author_exclude parameter to extract database contents and ultimately achieve remote code execution. This template safely detects the vulnerable handler state via the route confusion behavior alone, without executing SQL or relying on response timing.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63030.yaml"
-    }
-  ],
-  "CVE-2026-60137": [
-    {
-      "source": "metasploit",
-      "name": "WordPress WP2Shell REST API Batch Route Confusion SQLi to RCE",
-      "description": "This module chains two WordPress core vulnerabilities, together known as\n          WP2Shell, to gain unauthenticated remote code execution against default\n          installs of WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1.\n          The vulnerabilities are fixed in WordPress 6.9.5 and 7.0.2.\n\n          CVE-2026-60137 is an SQL injection in WP_Query's author__not_in parameter, and\n          CVE-2026-63030 is a REST API batch endpoint route-confusion bug that lets an\n          unauthenticated request reach that injection.\n\n          The module uses the injection to read the database table prefix and the\n          administrator user ID, poisons WordPress' object cache to publish a crafted\n          customizer changeset, and re-enters the REST API with administrator privileges\n          to create a new administrator account. It then logs in as that account, uploads\n          a plugin containing a Metasploit payload, and executes it for a session. Once a\n          session is obtained the uploaded plugin is removed, and the created administrator\n          account is removed as well unless KeepAdmin is set.",
-      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
     }
   ],
   "CVE-2026-3891": [
@@ -3767,14 +3793,6 @@
       "name": "Palo Alto Networks PAN-OS - Authentication Bypass",
       "description": "Palo Alto Networks PAN-OS contains an authentication bypass caused by flaws in the GlobalProtect portal and gateway, letting attackers establish unauthorized VPN connections, exploit requires network access to the portal or gateway.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-0257.yaml"
-    }
-  ],
-  "CVE-2026-16232": [
-    {
-      "source": "nuclei",
-      "name": "Check Point Security Management Server - SmartConsole Authentication Bypass",
-      "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server IP address and a configuration that does not restrict Trusted Clients. Check Point is aware that this vulnerability is being exploited and has affected a very small number of customers.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-16232.yaml"
     }
   ],
   "CVE-2026-33453": [
