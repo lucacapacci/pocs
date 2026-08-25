@@ -4267,6 +4267,12 @@
       "name": "rConfig 3.93 - 'ajaxAddTemplate.php' Authenticated Remote Code Execution",
       "description": "rConfig 3.93 - 'ajaxAddTemplate.php' Authenticated Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/48207.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "rConfig <= 3.9.4 - Authenticated OS Command Injection",
+      "description": "lib/ajaxHandlers/ajaxAddTemplate.php in rConfig through 3.9.4 does not properly sanitize the fileName POST parameter before using it in a shell command, allowing an authenticated attacker to inject arbitrary OS commands. This template uses default admin credentials to log in before triggering the injection; override the username / userpassword fields for environments with changed credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-10221.yaml"
     }
   ],
   "CVE-2020-23934": [

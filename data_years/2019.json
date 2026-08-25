@@ -1563,6 +1563,12 @@
       "name": "PHP-FPM + Nginx - Remote Code Execution",
       "description": "PHP-FPM + Nginx - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/47553.md"
+    },
+    {
+      "source": "nuclei",
+      "name": "PHP-FPM Path Info Buffer Underflow - Remote Code Execution",
+      "description": "In PHP-FPM before 7.1.33, 7.2.x before 7.2.24, and 7.3.x before 7.3.11, when deployed in certain Nginx configurations with the fastcgi_split_path_info directive, a crafted request with an empty PATH_INFO can trigger a buffer underflow in the php-fpm code. This may allow an unauthenticated remote attacker to execute arbitrary code through specially crafted URLs by manipulating the PATH_INFO, leading to potential remote code execution. This template checks for the presence of the vulnerable misconfiguration without performing exploitation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2019/CVE-2019-11043.yaml"
     }
   ],
   "CVE-2019-10867": [
