@@ -827,6 +827,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52593.txt"
     }
   ],
+  "CVE-2026-42167": [
+    {
+      "source": "exploitdb",
+      "name": "CVE-2026-42167 - ProFTPD mod_sql post-authentication SQLi - RCE",
+      "description": "CVE-2026-42167 - ProFTPD mod_sql post-authentication SQLi - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52658.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "ProFTPD mod_sql - Preauth User Backdoor",
+      "description": "ProFTPD mod_sql before 1.3.10rc1 contains a remote code execution caused by unsafe username handling with SQL backend commands in USER request logging expansions, letting remote attackers execute arbitrary code, exploit requires SQL backend allowing commands.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-42167.yaml"
+    }
+  ],
   "CVE-2026-61459": [
     {
       "source": "exploitdb",
@@ -3791,14 +3805,6 @@
       "name": "Mailpit < 1.28.2 - SMTP CRLF Injection",
       "description": "Mailpit < 1.28 contains a header injection caused by insufficient regex validation of `RCPT TO` and `MAIL FROM` addresses in the SMTP server, letting attackers inject arbitrary SMTP headers, exploit requires crafted email addresses\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
-    }
-  ],
-  "CVE-2026-42167": [
-    {
-      "source": "nuclei",
-      "name": "ProFTPD mod_sql - Preauth User Backdoor",
-      "description": "ProFTPD mod_sql before 1.3.10rc1 contains a remote code execution caused by unsafe username handling with SQL backend commands in USER request logging expansions, letting remote attackers execute arbitrary code, exploit requires SQL backend allowing commands.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-42167.yaml"
     }
   ],
   "CVE-2026-0257": [
