@@ -1783,6 +1783,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17594.yaml"
     }
   ],
+  "CVE-2026-18577": [
+    {
+      "source": "nuclei",
+      "name": "N-able N-central < 2026.3.1.10 - Authentication Bypass",
+      "description": "N-able N-central versions through 2026.3.1 contain an authentication bypass that lets a remote unauthenticated attacker take over an administrator account and gain full control of the N-central server. CVE-2026-18577 is a bypass of the incomplete fix for CVE-2026-18556, so the 2026.3.1 Hotfix 1 build (2026.3.1.7) does not fully remediate it. Hotfix 2 (2026.3.1.10) supersedes Hotfix 1 and is the first fully fixed 2026.3 build.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18577.yaml"
+    }
+  ],
   "CVE-2026-1890": [
     {
       "source": "nuclei",
@@ -2959,6 +2967,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42796.yaml"
     }
   ],
+  "CVE-2026-42878": [
+    {
+      "source": "nuclei",
+      "name": "FacturaScripts - Unauthenticated phpinfo Disclosure",
+      "description": "Detected FacturaScripts exposes a debug branch in the Installer controller that calls phpinfo() when the request carries the phpinfo=TRUE query parameter, and on an instance that has not finished installation, this endpoint was reachable without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42878.yaml"
+    }
+  ],
   "CVE-2026-44338": [
     {
       "source": "nuclei",
@@ -3647,12 +3663,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-72898.yaml"
     }
   ],
+  "CVE-2026-7467": [
+    {
+      "source": "nuclei",
+      "name": "Read More & Accordion <= 3.5.7 - Authenticated Privilege Escalation",
+      "description": "The Read More & Accordion (expand-maker) plugin for WordPress through 3.5.7 allows privilege escalation due to improper validation in the importData AJAX handler (yrm_import_data action). An authenticated user with plugin access can upload a crafted JSON attachment to insert arbitrary rows into WordPress database tables, including those that control user roles and capabilities, potentially leading to site takeover.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7467.yaml"
+    }
+  ],
   "CVE-2026-76904": [
     {
       "source": "nuclei",
       "name": "GeoServer jsonArrayContains CQL Filter - SQL Injection",
       "description": "GeoServer is an open source software server written in Java that allows users to share and edit geospatial data. GeoTools FilterToSqlHelper.constructEquality writes the expected argument of the jsonArrayContains CQL function RAW into the SQL string while only escaping the JSON pointer. A single quote in the value parameter breaks out of the PostgreSQL jsonb_path_exists string literal, enabling unauthenticated SQL injection. When the PostGIS backend runs with superuser privileges, the injection escalates to operating system command execution through PostgreSQL COPY TO PROGRAM. Users are advised to upgrade to either version 2.21.4, or version 2.22.2 to resolve this issue. Users unable to upgrade should enable the PostGIS DataStore preparedStatements setting and disable encode functions as a workaround.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76904.yaml"
+    }
+  ],
+  "CVE-2026-77806": [
+    {
+      "source": "nuclei",
+      "name": "SPIP < 4.4.22 - Unauthenticated RCE",
+      "description": "SPIP < 4.4.21 contains a remote code execution caused by mishandling of the X-Spip-Filtre HTTP request header in analyse_resultat_skel, letting unauthenticated remote attackers execute arbitrary code.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77806.yaml"
     }
   ],
   "CVE-2026-7798": [
@@ -3807,6 +3839,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
     }
   ],
+  "CVE-2026-73570": [
+    {
+      "source": "nuclei",
+      "name": "Zimbra Collaboration Suite < 10.1.20 - OS Command Injection",
+      "description": "Zimbra Collaboration Suite (ZCS) before version 10.1.20 is vulnerable to OS command injection in the SNMP notification processing due to improper input sanitization. According to the NVD, when SNMP notifications are enabled and the zimbra-snmp package is installed, an unauthenticated attacker can inject arbitrary commands using crafted SMTP requests that result in malicious log entries. The swatchdog service monitors the log, and upon matching a pattern, passes the log content to zmsnmptrapd, which unsafely uses the Perl backtick operator to execute commands. This can ultimately allow remote attackers to execute arbitrary operating system commands as the zimbra user. Active exploitation of this vulnerability has been observed in the wild, as confirmed by CERT Polska and CISA.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-73570.yaml"
+    }
+  ],
   "CVE-2026-0257": [
     {
       "source": "nuclei",
@@ -3861,6 +3901,14 @@
       "name": "Joomla SP Page Builder <= 6.6.1 - Unauthenticated Arbitrary File Upload RCE",
       "description": "SP Page Builder for Joomla contains an unrestricted file upload vulnerability allowing unauthenticated users to upload and execute arbitrary PHP code, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-48908.yaml"
+    }
+  ],
+  "CVE-2026-55040": [
+    {
+      "source": "nuclei",
+      "name": "Microsoft SharePoint Server - JWT Authentication Bypass",
+      "description": "Microsoft SharePoint Server is vulnerable to an authentication bypass (CVE-2026-55040) in its JWT token validation pipeline (SPJsonWebSecurityTokenHandlerV2). The chain disables signature requirements (RequireSignedTokens=false, accepting alg:none tokens), resolves the actor token x5t thumbprint against the server's own STS signing certificate (freely retrievable from /_layouts/15/metadata/json/1) without verifying the signature, accepts unregistered certificate issuers, and only checks the actor token signature is non-empty. An unauthenticated remote attacker can forge a JWT and authenticate as any SharePoint user, including a site administrator. This template forges such a token and confirms the bypass by obtaining a SharePoint form digest.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-55040.yaml"
     }
   ]
 }
