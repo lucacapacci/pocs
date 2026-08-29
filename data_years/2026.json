@@ -2891,6 +2891,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-40887.yaml"
     }
   ],
+  "CVE-2026-41042": [
+    {
+      "source": "nuclei",
+      "name": "Apache Gravitino < 1.2.1 - Unauthenticated Remote Code Execution",
+      "description": "Apache Gravitino < 1.2.1 contains a remote code execution caused by unsanitized H2 JDBC URL via testConnection API using H2's INIT parameter, letting unauthenticated attackers execute arbitrary Java code remotely, exploit requires H2 usage.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41042.yaml"
+    }
+  ],
   "CVE-2026-4106": [
     {
       "source": "nuclei",
@@ -3865,14 +3873,6 @@
       "name": "Bagisto <= 2.4.1 - Unauthenticated Arbitrary File Read",
       "description": "Bagisto through 2.4.1 is vulnerable to unauthenticated path traversal in the ImageCache controller. The `original` image-cache route (/cache/original/{filename}) passes the user-supplied filename to getImagePath() without any '..' filtering or realpath containment, allowing a remote unauthenticated attacker to read files outside the intended public image directories (upload/images) - for example the application's composer.json, artisan and other source files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9506.yaml"
-    }
-  ],
-  "CVE-2026-41042": [
-    {
-      "source": "nuclei",
-      "name": "Apache Gravitino < 1.2.1 - Unauthenticated Remote Code Execution",
-      "description": "Apache Gravitino < 1.2.1 contains a remote code execution caused by unsanitized H2 JDBC URL via testConnection API using H2's INIT parameter, letting unauthenticated attackers execute arbitrary Java code remotely, exploit requires H2 usage.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/`CVE-2026-41042.yaml"
     }
   ],
   "CVE-2026-23829": [
