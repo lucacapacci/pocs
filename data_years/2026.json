@@ -1547,6 +1547,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0717.yaml"
     }
   ],
+  "CVE-2026-0743": [
+    {
+      "source": "nuclei",
+      "name": "WP Content Permission <= 1.2 - Cross-Site Scripting",
+      "description": "The WP Content Permission plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'ohmem-message' parameter in all versions up to, and including, 1.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0743.yaml"
+    }
+  ],
   "CVE-2026-0829": [
     {
       "source": "nuclei",
@@ -3003,6 +3011,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42589.yaml"
     }
   ],
+  "CVE-2026-42596": [
+    {
+      "source": "nuclei",
+      "name": "Gotenberg < 8.31.0 - Server-Side Request Forgery",
+      "description": "Gotenberg before 8.31.0 is vulnerable to server-side request forgery (SSRF) due to insufficient validation of URLs in the downloadFrom API. An unauthenticated attacker can exploit the flaw by providing specially crafted IPv4-mapped IPv6 addresses (such as http://[::ffff:127.0.0.1]) that bypass the deny-list and allow access to internal resources. Fixed versions properly recognize these addresses and prevent such requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42596.yaml"
+    }
+  ],
   "CVE-2026-42647": [
     {
       "source": "nuclei",
@@ -3025,6 +3041,14 @@
       "name": "FacturaScripts - Unauthenticated phpinfo Disclosure",
       "description": "Detected FacturaScripts exposes a debug branch in the Installer controller that calls phpinfo() when the request carries the phpinfo=TRUE query parameter, and on an instance that has not finished installation, this endpoint was reachable without authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42878.yaml"
+    }
+  ],
+  "CVE-2026-44177": [
+    {
+      "source": "nuclei",
+      "name": "Kirby CMS 5.3.0-5.4.0 - Path Traversal",
+      "description": "Kirby CMS versions 5.3.0 through 5.4.0 are vulnerable to a path traversal vulnerability via the /api/auth/login endpoint. An unauthenticated attacker may supply a specially crafted email value in the request body containing traversal sequences (such as \"../..\"), which the application concatenates directly into a filesystem path when hydrating user objects. This can result in the resolution of paths outside the intended accounts directory and may lead to the inclusion of unintended files such as index.php, causing a denial of service by exhausting memory limits. The issue is addressed in version 5.4.1 by properly validating and sanitizing the user-supplied input to prevent directory traversal.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44177.yaml"
     }
   ],
   "CVE-2026-44338": [
@@ -3451,6 +3475,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55224.yaml"
     }
   ],
+  "CVE-2026-55229": [
+    {
+      "source": "nuclei",
+      "name": "Gotenberg < 8.34.0 - Local File Disclosure",
+      "description": "Gotenberg before 8.34.0 allows SSRF and limited local file disclosure via its /forms/libreoffice/convert endpoint. When LibreOffice is used to convert user-uploaded DOCX files, external relationships within the document (such as a:blip r:link TargetMode=\"External\") can instruct LibreOffice to fetch local resources (file://) or remote resources (http/https), which are then included as images in the generated PDF. This can disclose the contents of local files LibreOffice can open as images, or allow outbound requests to attacker-controlled endpoints. Version 8.34.0 disables resolution of external resources during document conversion to mitigate the vulnerability.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55229.yaml"
+    }
+  ],
   "CVE-2026-55450": [
     {
       "source": "nuclei",
@@ -3849,6 +3881,14 @@
       "name": "MediaWiki EasyTimeline - Code Injection RCE",
       "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
+    }
+  ],
+  "CVE-2026-9133": [
+    {
+      "source": "nuclei",
+      "name": "Amazon rabbitmq-aws 0.1.0 through 0.2.0 - Arbitrary File Read",
+      "description": "Amazon rabbitmq-aws versions 0.1.0 through 0.2.0 contain active debug code in the ARN resolver. An authenticated RabbitMQ user with management API access can submit an arn:aws-debug:file ARN to the validation endpoint and read arbitrary files accessible to the RabbitMQ process.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9133.yaml"
     }
   ],
   "CVE-2026-9282": [
