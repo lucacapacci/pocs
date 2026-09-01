@@ -1913,6 +1913,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18963.yaml"
     }
   ],
+  "CVE-2026-19092": [
+    {
+      "source": "nuclei",
+      "name": "Tutor LMS < 4.0.6 - Unauthenticated Arbitrary PHP Function Invocation",
+      "description": "Tutor LMS WordPress plugin < 4.0.6 contains a template injection caused by insufficient prevention of request data overwriting internal variables during template rendering, letting unauthenticated attackers invoke arbitrary zero-argument PHP functions and receive their output.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19092.yaml"
+    }
+  ],
   "CVE-2026-19478": [
     {
       "source": "nuclei",
