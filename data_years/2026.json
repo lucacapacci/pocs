@@ -743,6 +743,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/52584.py"
     }
   ],
+  "CVE-2026-51133": [
+    {
+      "source": "exploitdb",
+      "name": "C-MOR  6.0104 - Cross-Site Scripting (XSS)",
+      "description": "C-MOR  6.0104 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/52665.txt"
+    }
+  ],
   "CVE-2026-36356": [
     {
       "source": "exploitdb",
@@ -963,6 +971,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52538.py"
     }
   ],
+  "CVE-2026-51134": [
+    {
+      "source": "exploitdb",
+      "name": "C-MOR  6.0104 - Directory Traversal",
+      "description": "C-MOR  6.0104 - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52666.txt"
+    }
+  ],
   "CVE-2026-4631": [
     {
       "source": "exploitdb",
@@ -983,6 +999,38 @@
       "name": "coreruleset 4.21.0 - Firewall Bypass",
       "description": "coreruleset 4.21.0 - Firewall Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52558.py"
+    }
+  ],
+  "CVE-2026-54644": [
+    {
+      "source": "exploitdb",
+      "name": "CubeCart 6.7.4 - Cross-Site Scripting",
+      "description": "CubeCart 6.7.4 - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52661.txt"
+    }
+  ],
+  "CVE-2026-54646": [
+    {
+      "source": "exploitdb",
+      "name": "CubeCart 6.7.4 - SQL",
+      "description": "CubeCart 6.7.4 - SQL",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52663.txt"
+    }
+  ],
+  "CVE-2026-54647": [
+    {
+      "source": "exploitdb",
+      "name": "CubeCart 6.7.4 - SQL injection",
+      "description": "CubeCart 6.7.4 - SQL injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52664.txt"
+    }
+  ],
+  "CVE-2026-54645": [
+    {
+      "source": "exploitdb",
+      "name": "CubeCart 6.7.4 - Stored XSS",
+      "description": "CubeCart 6.7.4 - Stored XSS",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52662.txt"
     }
   ],
   "CVE-2026-44376": [
@@ -1149,6 +1197,20 @@
       "name": "Krayin CRM v2.2.x - Authenticated Remote Code Execution",
       "description": "Krayin CRM v2.2.x - Authenticated Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52629.py"
+    }
+  ],
+  "CVE-2026-5027": [
+    {
+      "source": "exploitdb",
+      "name": "Langflow  1.8.4 - Path Traversal to Remote Code Execution",
+      "description": "Langflow  1.8.4 - Path Traversal to Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52659.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow <= 1.8.4 - Path Traversal to RCE via File Upload",
+      "description": "The application contains a path traversal vulnerability caused by unsanitized 'filename' parameter in the 'POST /api/v2/files' multipart form data, letting attackers write files to arbitrary filesystem locations, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5027.yaml"
     }
   ],
   "CVE-2026-0770": [
@@ -3289,14 +3351,6 @@
       "name": "Lyrion Music Server <= 9.2.0 - Cross-Site Scripting",
       "description": "Lyrion Music Server 9.2.0 contains a reflected XSS caused by improper sanitization of the search parameter in the server.log endpoint, letting unauthenticated attackers execute arbitrary script in users' browsers.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50230.yaml"
-    }
-  ],
-  "CVE-2026-5027": [
-    {
-      "source": "nuclei",
-      "name": "Langflow <= 1.8.4 - Path Traversal to RCE via File Upload",
-      "description": "The application contains a path traversal vulnerability caused by unsanitized 'filename' parameter in the 'POST /api/v2/files' multipart form data, letting attackers write files to arbitrary filesystem locations, exploit requires crafted request.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5027.yaml"
     }
   ],
   "CVE-2026-5032": [
