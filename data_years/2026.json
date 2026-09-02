@@ -1153,6 +1153,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52559.py"
     }
   ],
+  "CVE-2026-65008": [
+    {
+      "source": "exploitdb",
+      "name": "Grav CMS 2.0.7 - RCE",
+      "description": "Grav CMS 2.0.7 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52669.py"
+    }
+  ],
   "CVE-2026-22241": [
     {
       "source": "exploitdb",
@@ -1271,6 +1279,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27483.yaml"
     }
   ],
+  "CVE-2026-15013": [
+    {
+      "source": "exploitdb",
+      "name": "miniOrange  5.4.3 - Unauthenticated Auth Bypass",
+      "description": "miniOrange  5.4.3 - Unauthenticated Auth Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52668.py"
+    }
+  ],
   "CVE-2026-25732": [
     {
       "source": "exploitdb",
@@ -1313,6 +1329,14 @@
       "name": "Orkes Conductor 3.21.21-3.30.1 - Remote Code Execution",
       "description": "Orkes Conductor from 3.21.21 before 3.30.2 is vulnerable to unauthenticated remote code execution. The INLINE workflow task evaluates a user-supplied JavaScript expression in a GraalVM context created with HostAccess.ALL, so an unauthenticated attacker can reflect from the bound input object to java.lang.Runtime and execute arbitrary operating system commands through the workflow API.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58138.yaml"
+    }
+  ],
+  "CVE-2026-25544": [
+    {
+      "source": "exploitdb",
+      "name": "Payload CMS 3.72.0 - Blind SQL Injection",
+      "description": "Payload CMS 3.72.0 - Blind SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52671.py"
     }
   ],
   "CVE-2026-25994": [
@@ -1397,6 +1421,14 @@
       "name": "webpack_devserver 5.2.5 -  CSRF",
       "description": "webpack_devserver 5.2.5 -  CSRF",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52649.txt"
+    }
+  ],
+  "CVE-2026-67206": [
+    {
+      "source": "exploitdb",
+      "name": "Wolf CMS 0.8.3.1 - RCE v",
+      "description": "Wolf CMS 0.8.3.1 - RCE v",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52672.py"
     }
   ],
   "CVE-2026-3180": [
@@ -3879,6 +3911,14 @@
       "name": "WordPress Burst Statistics 3.4.0-3.4.1.1 - Authentication Bypass",
       "description": "Burst Statistics \u2013 Privacy-Friendly WordPress Analytics plugin 3.4.0 to 3.4.1.1 contains an authentication bypass caused by incorrect return-value handling in is_mainwp_authenticated() function, letting unauthenticated attackers impersonate administrators, exploit requires knowledge of an administrator username.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8181.yaml"
+    }
+  ],
+  "CVE-2026-82329": [
+    {
+      "source": "nuclei",
+      "name": "JFrog Artifactory Access Blank Join Key Authentication Bypass",
+      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-82329.yaml"
     }
   ],
   "CVE-2026-8236": [
