@@ -475,6 +475,12 @@
       "name": "Ghost CMS Remote Code Execution",
       "description": "This module exploits a Remote Code Execution (RCE) vulnerability in Ghost CMS.\n          Specifically crafted malicious themes can execute arbitrary code on the server running Ghost.\n\n          The affected versions include all releases from 0.7.2 up to and including 6.19.0.\n          For versions 5.105.0-5.130.5 and 6.0.0-6.10.3, the module also leverages a 2FA bypass.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/ghostcms_auth_rce_cve_2026_29053.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Ghost_CMS 6.19.0  - Remote Code Execution",
+      "description": "Ghost_CMS 6.19.0  - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52676.txt"
     }
   ],
   "CVE-2026-22594": [
@@ -575,6 +581,12 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_unauth_rce_cve_2026_9198.rb"
     },
     {
+      "source": "exploitdb",
+      "name": "Langflow 1.10.0 - RCE",
+      "description": "Langflow 1.10.0 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52675.py"
+    },
+    {
       "source": "nuclei",
       "name": "IBM Langflow - Remote Code Execution",
       "description": "IBM Langflow OSS 1.0.0 through 1.10.0 contains a remote code execution caused by chaining /api/v1/auto_login and /api/v1/validate/code endpoints, letting unauthenticated attackers execute arbitrary code remotely, exploit requires no authentication.\n",
@@ -609,6 +621,26 @@
       "name": "MajorDoMo Supply Chain RCE via Update Poisoning",
       "description": "This module exploits an unauthenticated remote code execution vulnerability in\n          MajorDoMo's saverestore module via supply chain poisoning. The saverestore module's\n          admin() method is reachable without authentication through the /objects/?module=saverestore\n          endpoint because usual() calls admin() directly and uses gr() (which reads from $_REQUEST)\n          instead of $this->mode for mode checks.\n\n          Two unauthenticated GET requests chain together for full RCE:\n          1. auto_update_settings - poisons the MASTER_UPDATE_URL to point to an attacker-controlled server\n          2. force_update - triggers autoUpdateSystem() which fetches an Atom feed and tarball from the\n          poisoned URL, extracts the tarball, and copies all files to the webroot via copyTree()\n\n          The tarball is downloaded via curl with CURLOPT_SSL_VERIFYPEER set to FALSE and no integrity\n          check. The attacker serves a fake Atom feed with an entry older than the configured delay\n          (default 1 day) and a tarball containing a PHP webshell. After deployment, the module\n          executes the payload through the webshell.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_supply_chain_rce.rb"
+    }
+  ],
+  "CVE-2026-23744": [
+    {
+      "source": "metasploit",
+      "name": "MCPJam Inspector Connect API Command Execution",
+      "description": "This module exploits an unauthenticated command execution vulnerability in\n          MCPJam Inspector. The /api/mcp/connect endpoint accepts a JSON serverConfig\n          object containing a command and argument list used to start an MCP server.\n          A remote attacker can abuse this endpoint to execute arbitrary operating\n          system commands as the user running MCPJam Inspector.\n\n          By default, this module starts a transient Node.js stdio MCP server, then\n          invokes a tool that executes the Metasploit command payload. A direct\n          /bin/sh -c mode is also available via EXEC_METHOD=direct_sh, but the MCP\n          tool mode is more reliable when the inspector expects a valid MCP\n          handshake.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/mcpjam_inspector_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MCPJam Inspector - Remote Code Execution",
+      "description": "MCPJam Inspector - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52625.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "MCPJam Inspector - Remote Code Execution",
+      "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
     }
   ],
   "CVE-2026-27760": [
@@ -823,6 +855,54 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52586.py"
     }
   ],
+  "CVE-2026-51407": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
+  "CVE-2026-51406": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
+  "CVE-2026-51405": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
+  "CVE-2026-51404": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
+  "CVE-2026-51403": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
+  "CVE-2026-51402": [
+    {
+      "source": "exploitdb",
+      "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+    }
+  ],
   "CVE-2026-2441": [
     {
       "source": "exploitdb",
@@ -961,6 +1041,14 @@
       "name": "Blocksy Companion  2.1.46 - RCE",
       "description": "Blocksy Companion  2.1.46 - RCE",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52640.py"
+    }
+  ],
+  "CVE-2026-41456": [
+    {
+      "source": "exploitdb",
+      "name": "Bludit CMS  3.20.0 - Reflected Cross-Site Scripting",
+      "description": "Bludit CMS  3.20.0 - Reflected Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52678.py"
     }
   ],
   "CVE-2026-25099": [
@@ -1243,18 +1331,18 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
     }
   ],
-  "CVE-2026-23744": [
+  "CVE-2026-39987": [
     {
       "source": "exploitdb",
-      "name": "MCPJam Inspector - Remote Code Execution",
-      "description": "MCPJam Inspector - Remote Code Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52625.py"
+      "name": "Marimo  0.20.4 - RCE",
+      "description": "Marimo  0.20.4 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52673.py"
     },
     {
       "source": "nuclei",
-      "name": "MCPJam Inspector - Remote Code Execution",
-      "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
+      "name": "Marimo <= 0.20.4 - Pre-Auth Terminal WebSocket RCE",
+      "description": "Marimo versions <= 0.20.4 contain an unauthenticated remote code execution vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to connect via WebSocket, obtain a full PTY shell, and execute arbitrary OS commands on the underlying server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39987.yaml"
     }
   ],
   "CVE-2026-44680": [
@@ -4071,14 +4159,6 @@
       "name": "Vite Dev Server - Arbitrary File Read",
       "description": "Vite dev server exposes the fetchModule method via its WebSocket HMR (Hot Module Replacement) endpoint using the vite-hmr sub-protocol. By connecting to the WebSocket endpoint and sending a crafted vite:invoke custom event that calls fetchModule with a file:// URL (e.g., file:///etc/passwd?raw), an attacker can bypass server.fs.deny restrictions and read arbitrary files from the server filesystem. The vulnerability exists because fetchModule does not enforce the same filesystem access controls as other Vite server endpoints.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39363.yaml"
-    }
-  ],
-  "CVE-2026-39987": [
-    {
-      "source": "nuclei",
-      "name": "Marimo <= 0.20.4 - Pre-Auth Terminal WebSocket RCE",
-      "description": "Marimo versions <= 0.20.4 contain an unauthenticated remote code execution vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to connect via WebSocket, obtain a full PTY shell, and execute arbitrary OS commands on the underlying server.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-39987.yaml"
     }
   ],
   "CVE-2026-44578": [
