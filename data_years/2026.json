@@ -3769,6 +3769,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-57219.yaml"
     }
   ],
+  "CVE-2026-57582": [
+    {
+      "source": "nuclei",
+      "name": "GeoNetwork - Reflected Cross-Site Scripting",
+      "description": "GeoNetwork versions 4.4.5 through 4.4.11 are vulnerable to reflected cross-site scripting (XSS) in the public unauthenticated catalog search functionality. The uiconfig query parameter of the catalog.search endpoint is reflected into a JavaScript context without sufficient sanitization, allowing arbitrary JavaScript execution in a victim's browser.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-57582.yaml"
+    }
+  ],
   "CVE-2026-57827": [
     {
       "source": "nuclei",
@@ -4143,6 +4151,14 @@
       "name": "Bagisto <= 2.4.1 - Unauthenticated Arbitrary File Read",
       "description": "Bagisto through 2.4.1 is vulnerable to unauthenticated path traversal in the ImageCache controller. The `original` image-cache route (/cache/original/{filename}) passes the user-supplied filename to getImagePath() without any '..' filtering or realpath containment, allowing a remote unauthenticated attacker to read files outside the intended public image directories (upload/images) - for example the application's composer.json, artisan and other source files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9506.yaml"
+    }
+  ],
+  "CVE-2026-9586": [
+    {
+      "source": "nuclei",
+      "name": "Sangoma Switchvox < 8.4.0.2 - Unauthenticated SQL Injection",
+      "description": "Sangoma Switchvox before version 8.4.0.2 contains an unauthenticated SQL injection vulnerability in the /pa endpoint (PhoneAppsHandler.pm). The PhoneIP field extracted from an XML POST body is concatenated directly into an unparameterized PostgreSQL query that runs as a database superuser. An attacker can break out of the single-quoted SQL string context and leverage PostgreSQL COPY TO PROGRAM to execute arbitrary operating system commands without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9586.yaml"
     }
   ],
   "CVE-2026-23829": [
