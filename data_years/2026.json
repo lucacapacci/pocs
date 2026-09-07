@@ -1745,6 +1745,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0560.yaml"
     }
   ],
+  "CVE-2026-0561": [
+    {
+      "source": "nuclei",
+      "name": "Shield Security <= 21.0.8 - Unauthenticated Reflected XSS",
+      "description": "Shield Security WordPress plugin <= 21.0.8 contains a reflected cross-site scripting caused by insufficient input sanitization and output escaping in the 'message' parameter, letting unauthenticated attackers inject scripts, exploit requires user interaction.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0561.yaml"
+    }
+  ],
   "CVE-2026-0594": [
     {
       "source": "nuclei",
@@ -2295,6 +2303,14 @@
       "name": "Modular DS - Broken Access Control",
       "description": "Modular DS = 2.5.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23550.yaml"
+    }
+  ],
+  "CVE-2026-23693": [
+    {
+      "source": "nuclei",
+      "name": "ElementsKit Lite <3.7.9 - Unauthenticated Mailchimp Proxy",
+      "description": "The ElementsKit Elementor Addons Lite (elementskit-lite) plugin for WordPress before 3.7.9 registers the REST route /wp-json/elementskit/v1/widget/mailchimp/subscribe with no authentication or capability check (CWE-306). The handler accepts client-supplied Mailchimp API credentials and a `list` parameter and issues upstream Mailchimp API requests, letting an unauthenticated attacker use the site as an open proxy to Mailchimp.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23693.yaml"
     }
   ],
   "CVE-2026-23696": [
