@@ -2193,6 +2193,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21859.yaml"
     }
   ],
+  "CVE-2026-21875": [
+    {
+      "source": "nuclei",
+      "name": "ClipBucket v5 <= 5.5.2 - Unauthenticated Blind SQL Injection",
+      "description": "ClipBucket v5.5.2-#187 and below contain a blind SQL injection caused by unsanitized obj_id parameter in /actions/ajax.php used in user_exists function, letting attackers perform blind SQL injection remotely, exploit requires crafted POST request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21875.yaml"
+    }
+  ],
   "CVE-2026-21877": [
     {
       "source": "nuclei",
@@ -2575,6 +2583,14 @@
       "name": "WeGIA <= 3.6.4 - Remote Code Execution",
       "description": "WeGIA <= 3.6.5 contains a remote code execution caused by improper validation of backup file names in the database restoration functionality, letting attackers with administrative access execute arbitrary OS commands\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28409.yaml"
+    }
+  ],
+  "CVE-2026-28411": [
+    {
+      "source": "nuclei",
+      "name": "WeGIA < 3.6.5 - Unauthenticated Authentication Bypass via extract()",
+      "description": "WeGIA < 3.6.5 contains an authentication bypass caused by unsafe use of extract() on $_REQUEST, letting unauthenticated attackers bypass authentication and access protected areas, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28411.yaml"
     }
   ],
   "CVE-2026-28414": [
@@ -3225,6 +3241,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42031.yaml"
     }
   ],
+  "CVE-2026-42221": [
+    {
+      "source": "nuclei",
+      "name": "Nginx UI <= 2.3.7 - Unauthenticated Installer Exposure",
+      "description": "Nginx UI 2.0.0 to 2.3.8 contains an authentication bypass caused by unauthenticated access to /api/install during first-run setup, letting remote attackers claim the initial admin account, exploit requires attacker to access the service before legitimate operator.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42221.yaml"
+    }
+  ],
   "CVE-2026-42271": [
     {
       "source": "nuclei",
@@ -3311,6 +3335,14 @@
       "name": "PraisonAI - Authentication Bypass",
       "description": "PraisonAI 2.5.6 to < 4.6.34 contains a broken authentication caused by disabled default authentication in legacy Flask API server, letting remote attackers access /agents and trigger workflows without token, exploit requires network access to API server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44338.yaml"
+    }
+  ],
+  "CVE-2026-44343": [
+    {
+      "source": "nuclei",
+      "name": "WGDashboard < 4.3.2 - Unauthenticated File Read",
+      "description": "WGDashboard < 4.3.2 contains a path traversal vulnerability caused by improper access control, letting unauthorized attackers access the host file system without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44343.yaml"
     }
   ],
   "CVE-2026-44381": [
