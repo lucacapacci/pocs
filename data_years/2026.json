@@ -275,6 +275,28 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/paperclipai_unauth_rce_cve_2026_41679.rb"
     }
   ],
+  "CVE-2026-83548": [
+    {
+      "source": "metasploit",
+      "name": "SonicWall SMA1000 WorkPlace SSRF to Root Remote Code Execution",
+      "description": "This module chains three issues in SonicWall SMA1000 appliances. An\n          unauthenticated, absolute-form OPTIONS request makes the WorkPlace\n          listener act as an unintended forward proxy (CVE-2026-83548). The\n          module uses this access and a vendor-installed CouchDB update handler\n          to obtain read and write access to loopback CouchDB (SMA1000-9427),\n          then enables CouchDB's native Erlang query server and executes one\n          command as the couchdb service account.\n\n          That command derives the appliance-local ctrl-service credential and\n          invokes sysCtrl.execCmsSnmpTrap. A command injection in the SNMP trap\n          script (CVE-2026-83549) executes the selected command as root.\n\n          The module attempts to restore the original CouchDB logger\n          configuration, remove its injected INI data, disable the Erlang query\n          server, and delete its randomized CouchDB documents. SonicWall fixed\n          the issues in platform hotfixes 12.4.3-03526 and 12.5.0-02952.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/sonicwall_sma1000_couchdb_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "SonicWall SMA1000 WorkPlace - Unauthenticated SSRF to CouchDB",
+      "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-83548.yaml"
+    }
+  ],
+  "CVE-2026-83549": [
+    {
+      "source": "metasploit",
+      "name": "SonicWall SMA1000 WorkPlace SSRF to Root Remote Code Execution",
+      "description": "This module chains three issues in SonicWall SMA1000 appliances. An\n          unauthenticated, absolute-form OPTIONS request makes the WorkPlace\n          listener act as an unintended forward proxy (CVE-2026-83548). The\n          module uses this access and a vendor-installed CouchDB update handler\n          to obtain read and write access to loopback CouchDB (SMA1000-9427),\n          then enables CouchDB's native Erlang query server and executes one\n          command as the couchdb service account.\n\n          That command derives the appliance-local ctrl-service credential and\n          invokes sysCtrl.execCmsSnmpTrap. A command injection in the SNMP trap\n          script (CVE-2026-83549) executes the selected command as root.\n\n          The module attempts to restore the original CouchDB logger\n          configuration, remove its injected INI data, disable the Erlang query\n          server, and delete its randomized CouchDB documents. SonicWall fixed\n          the issues in platform hotfixes 12.4.3-03526 and 12.5.0-02952.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/sonicwall_sma1000_couchdb_rce.rb"
+    }
+  ],
   "CVE-2026-15409": [
     {
       "source": "metasploit",
@@ -545,6 +567,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48907.yaml"
     }
   ],
+  "CVE-2026-19295": [
+    {
+      "source": "metasploit",
+      "name": "Langflow AI authenticated RCE",
+      "description": "Langflow versions 1.11.1 and below are susceptible to authenticated\n          remote code execution. By saving a flow where `data.type` is empty,\n          an authenticated user can bypass the flow guard and execute\n          arbitrary Python code.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_rce_cve_2026_19295.rb"
+    }
+  ],
   "CVE-2026-27966": [
     {
       "source": "metasploit",
@@ -781,6 +811,14 @@
       "name": "Xerte Online Toolkits Arbitrary File Upload - Unauthenticated Template Import",
       "description": "This module exploits an authentication bypass allowing arbitrary\n          file upload in versions 3.14 and earlier to upload and execute a shell.\n          Specifically, this targets /website_code/php/import/import.php\n\n          OPSEC\n          This module results in directories being created and database entries which can\n          not easily be cleaned up automatically.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_template_import_rce.rb"
+    }
+  ],
+  "CVE-2026-75604": [
+    {
+      "source": "metasploit",
+      "name": "Next.js Unauthenticated RCE on Windows Servers",
+      "description": "This module exploits a Remote Code Execution (RCE) vulnerability in Next.js applications\n          hosted on Windows servers. Specifically crafted requests can execute arbitrary code on the target server.\n\n          The affected versions include releases from 13.4.0 up to 15.5.24, and 16.0.0 up to 16.3.3,\n          utilizing both Pages and App Routers without Cache Components.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/nextjs_unauth_rce_cve_2026_75604.rb"
     }
   ],
   "CVE-2026-46333": [
@@ -1767,6 +1805,14 @@
       "name": "OpenFlagr <= 1.1.18 - Authentication Bypass",
       "description": "OpenFlagr <= 1.1.18 contains an authentication bypass caused by improper path normalization handling in HTTP middleware whitelist logic, letting attackers access protected API endpoints without valid credentials, exploit requires crafted requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0650.yaml"
+    }
+  ],
+  "CVE-2026-0702": [
+    {
+      "source": "nuclei",
+      "name": "VidShop for WooCommerce <= 1.1.4 - SQL Injection",
+      "description": "VidShop \u2013 Shoppable Videos for WooCommerce plugin for WordPress <= 1.1.4 contains a time-based SQL injection caused by insufficient escaping of the 'fields' parameter, letting unauthenticated attackers extract sensitive database information.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0702.yaml"
     }
   ],
   "CVE-2026-0717": [
@@ -4185,6 +4231,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86207.yaml"
     }
   ],
+  "CVE-2026-86426": [
+    {
+      "source": "nuclei",
+      "name": "LibreNMS <= 26.7.0 - Unauthenticated API Access",
+      "description": "LibreNMS <= 26.8.0 contains an authentication bypass caused by MySQL type coercion in the REST API token validation, letting unauthenticated attackers access protected endpoints and execute remote code via alert templates.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86426.yaml"
+    }
+  ],
   "CVE-2026-8679": [
     {
       "source": "nuclei",
@@ -4335,14 +4389,6 @@
       "name": "Microsoft SharePoint Server - JWT Authentication Bypass",
       "description": "Microsoft SharePoint Server is vulnerable to an authentication bypass (CVE-2026-55040) in its JWT token validation pipeline (SPJsonWebSecurityTokenHandlerV2). The chain disables signature requirements (RequireSignedTokens=false, accepting alg:none tokens), resolves the actor token x5t thumbprint against the server's own STS signing certificate (freely retrievable from /_layouts/15/metadata/json/1) without verifying the signature, accepts unregistered certificate issuers, and only checks the actor token signature is non-empty. An unauthenticated remote attacker can forge a JWT and authenticate as any SharePoint user, including a site administrator. This template forges such a token and confirms the bypass by obtaining a SharePoint form digest.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-55040.yaml"
-    }
-  ],
-  "CVE-2026-83548": [
-    {
-      "source": "nuclei",
-      "name": "SonicWall SMA1000 WorkPlace - Unauthenticated SSRF to CouchDB",
-      "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-83548.yaml"
     }
   ]
 }

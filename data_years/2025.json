@@ -257,6 +257,34 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/audiobookshelf_auth_bypass.rb"
     }
   ],
+  "CVE-2025-54988": [
+    {
+      "source": "metasploit",
+      "name": "Elasticsearch ingest-attachment Apache Tika XFA XXE Local File Read",
+      "description": "This module validates CVE-2025-54988 / CVE-2025-66516 through an\n          Elasticsearch ingest pipeline using the attachment processor. It creates\n          a temporary pipeline, submits an in-memory PDF containing crafted XFA data\n          to the _simulate API, extracts a caller-selected local file, and removes\n          the pipeline in an ensure block.\n\n          The target must permit pipeline creation, simulation, and deletion. The\n          default proof file is /etc/hostname. No index or document is created.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/elasticsearch_tika_xfa_xxe.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Apache Tika - XXE Injection",
+      "description": "Apache Tika versions 1.13 through 3.2.1 are vulnerable to XXE via malicious XFA in PDFs, allowing file read and SSRF attacks.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54988.yaml"
+    }
+  ],
+  "CVE-2025-66516": [
+    {
+      "source": "metasploit",
+      "name": "Elasticsearch ingest-attachment Apache Tika XFA XXE Local File Read",
+      "description": "This module validates CVE-2025-54988 / CVE-2025-66516 through an\n          Elasticsearch ingest pipeline using the attachment processor. It creates\n          a temporary pipeline, submits an in-memory PDF containing crafted XFA data\n          to the _simulate API, extracts a caller-selected local file, and removes\n          the pipeline in an ensure block.\n\n          The target must permit pipeline creation, simulation, and deletion. The\n          default proof file is /etc/hostname. No index or document is created.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/elasticsearch_tika_xfa_xxe.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Apache Tika - XML External Entity Injection",
+      "description": "Apache Tika tika-core (1.13-3.2.1), tika-pdf-module (2.0.0-3.2.1), and tika-parsers (1.13-1.28.5) contain an XML External Entity injection caused by processing crafted XFA files inside PDFs, letting attackers perform XXE attacks remotely, exploit requires crafted PDF input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-66516.yaml"
+    }
+  ],
   "CVE-2025-34118": [
     {
       "source": "metasploit",
@@ -5095,14 +5123,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54793.yaml"
     }
   ],
-  "CVE-2025-54988": [
-    {
-      "source": "nuclei",
-      "name": "Apache Tika - XXE Injection",
-      "description": "Apache Tika versions 1.13 through 3.2.1 are vulnerable to XXE via malicious XFA in PDFs, allowing file read and SSRF attacks.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-54988.yaml"
-    }
-  ],
   "CVE-2025-55150": [
     {
       "source": "nuclei",
@@ -5565,14 +5585,6 @@
       "name": "XWiki DeleteApplication - Cross-Site Scripting",
       "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Versions 6.2-milestone-1 through 16.10.9 and 17.0.0-rc-1 through 17.4.1 of both XWiki Platform Flamingo Skin Resources and XWiki Platform Web Templates are vulnerable to a reflected XSS attack through a deletion confirmation message. The attacker-supplied script is executed when the victim clicks the \"No\" button. This issue is fixed in versions 16.10.10 and 17.4.2 of both XWiki Platform Flamingo Skin Resources and XWiki Platform Web Templates.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-66472.yaml"
-    }
-  ],
-  "CVE-2025-66516": [
-    {
-      "source": "nuclei",
-      "name": "Apache Tika - XML External Entity Injection",
-      "description": "Apache Tika tika-core (1.13-3.2.1), tika-pdf-module (2.0.0-3.2.1), and tika-parsers (1.13-1.28.5) contain an XML External Entity injection caused by processing crafted XFA files inside PDFs, letting attackers perform XXE attacks remotely, exploit requires crafted PDF input.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-66516.yaml"
     }
   ],
   "CVE-2025-66744": [
