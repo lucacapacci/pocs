@@ -2105,6 +2105,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19598.yaml"
     }
   ],
+  "CVE-2026-19632": [
+    {
+      "source": "nuclei",
+      "name": "TranslatePress <= 3.3.1 - Unauthenticated Account Takeover",
+      "description": "TranslatePress WordPress plugin <= 3.3.1 contains a sensitive information exposure caused by the 'trp_get_translations_regular' AJAX action saving password-reset URLs in translation dictionary, letting unauthenticated attackers extract admin password-reset URLs, exploit requires automatic string saving enabled and admin profile locale set to a published secondary language.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19632.yaml"
+    }
+  ],
   "CVE-2026-1980": [
     {
       "source": "nuclei",
@@ -3889,6 +3897,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-60004.yaml"
     }
   ],
+  "CVE-2026-60105": [
+    {
+      "source": "nuclei",
+      "name": "Monsta FTP <= 2.14.4 - Unauthenticated SSRF via IPv6 Blocklist Bypass",
+      "description": "Monsta FTP before 2.14.5 contains a server-side request forgery vulnerability in the fetchRemoteFile action caused by an incomplete IP blocklist check in the isBlockedIP() function, which fails to detect embedded IPv4 addresses within IPv4-mapped IPv6 addresses.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-60105.yaml"
+    }
+  ],
   "CVE-2026-6118": [
     {
       "source": "nuclei",
@@ -4153,6 +4169,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8386.yaml"
     }
   ],
+  "CVE-2026-86206": [
+    {
+      "source": "nuclei",
+      "name": "N-able N-central - Access Control Bypass via Path Confusion and Forwarded Header Spoofing",
+      "description": "A vulnerability in the N-central internal API access control filter allows unauthorised access to internal APIs. This is fixed in N-central 2026.3 HF3 and 2026.4\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86206.yaml"
+    }
+  ],
+  "CVE-2026-86207": [
+    {
+      "source": "nuclei",
+      "name": "N-able N-central - Authentication Bypass",
+      "description": "An authentication bypass in N-central < 2026.3 HF 3 leads to authentication bypass in internal-only APIs.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86207.yaml"
+    }
+  ],
   "CVE-2026-8679": [
     {
       "source": "nuclei",
@@ -4303,6 +4335,14 @@
       "name": "Microsoft SharePoint Server - JWT Authentication Bypass",
       "description": "Microsoft SharePoint Server is vulnerable to an authentication bypass (CVE-2026-55040) in its JWT token validation pipeline (SPJsonWebSecurityTokenHandlerV2). The chain disables signature requirements (RequireSignedTokens=false, accepting alg:none tokens), resolves the actor token x5t thumbprint against the server's own STS signing certificate (freely retrievable from /_layouts/15/metadata/json/1) without verifying the signature, accepts unregistered certificate issuers, and only checks the actor token signature is non-empty. An unauthenticated remote attacker can forge a JWT and authenticate as any SharePoint user, including a site administrator. This template forges such a token and confirms the bypass by obtaining a SharePoint form digest.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-55040.yaml"
+    }
+  ],
+  "CVE-2026-83548": [
+    {
+      "source": "nuclei",
+      "name": "SonicWall SMA1000 WorkPlace - Unauthenticated SSRF to CouchDB",
+      "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-83548.yaml"
     }
   ]
 }
