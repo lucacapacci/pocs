@@ -175,6 +175,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
     }
   ],
+  "CVE-2026-20929": [
+    {
+      "source": "metasploit",
+      "name": "ESC8 Relay: SMB to HTTP(S) via Kerberos",
+      "description": "This module creates an SMB server and relays the Kerberos AP-REQ passed to it\n        (for example from a coerced host, CVE-2026-20929) to an AD CS Web Enrollment\n        HTTP endpoint to gain an authenticated connection. Once that connection is\n        established, the module makes an authenticated request for a certificate based\n        on a given template.\n\n        Unlike NTLM, a Kerberos AP-REQ is a complete, self-contained credential bound\n        to the SPN the victim was coerced into requesting, so there is no\n        challenge/response and the relay is a single request. The captured AP-REQ can\n        only be relayed to the service matching that SPN.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/server/relay/esc8_kerberos.rb"
+    }
+  ],
   "CVE-2026-29058": [
     {
       "source": "metasploit",
@@ -195,6 +203,20 @@
       "name": "BeyondTrust Remote Support - Unauthenticated WebSocket RCE",
       "description": "BeyondTrust Remote Support is vulnerable to unauthenticated remote code execution via the WebSocket endpoint /nw. An attacker can extract the company identifier from the /get_mech_list endpoint and use it to connect to the WebSocket service, then inject OS commands through the binary WebSocket payload that are executed on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-1731.yaml"
+    }
+  ],
+  "CVE-2026-20079": [
+    {
+      "source": "metasploit",
+      "name": "Cisco Secure Firewall Management Center Authentication Bypass RCE",
+      "description": "This module exploits CVE-2026-20079, an authentication bypass in the\n          web interface of Cisco Secure Firewall Management Center (FMC). It\n          upgrades a boot-created machine session, obtains its session-specific\n          action token, writes a Makeself-compatible shell script, and executes\n          the selected command payload as root.\n\n          Exploitation requires the transient csm_processes startup session to\n          still exist. Normal authenticated activity or session cleanup may\n          remove that session, so an affected appliance may not be exploitable\n          at the time of testing. The underlying request sequence and\n          FIFO/netcat payload were tested against Cisco Secure FMC 10.0.1-1.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/cisco_fmc_auth_bypass_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Cisco Secure Firewall Management Center - Authentication Bypass",
+      "description": "Cisco Secure Firewall Management Center Software contains an authentication bypass caused by improper system process creation at boot, letting unauthenticated remote attackers execute scripts and gain root access, exploit requires crafted HTTP requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20079.yaml"
     }
   ],
   "CVE-2026-45087": [
@@ -2173,14 +2195,6 @@
       "name": "LB-LINK Routers - Unauthenticated Command Injection",
       "description": "LB-LINK X-PRO 1.0.22-20231206 contains a hardcoded credentials vulnerability caused by manipulation of an unknown function in /etc/shadow, letting remote attackers use hardcoded credentials, exploit requires high complexity\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19900.yaml"
-    }
-  ],
-  "CVE-2026-20079": [
-    {
-      "source": "nuclei",
-      "name": "Cisco Secure Firewall Management Center - Authentication Bypass",
-      "description": "Cisco Secure Firewall Management Center Software contains an authentication bypass caused by improper system process creation at boot, letting unauthenticated remote attackers execute scripts and gain root access, exploit requires crafted HTTP requests.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-20079.yaml"
     }
   ],
   "CVE-2026-2025": [
