@@ -4181,6 +4181,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8054.yaml"
     }
   ],
+  "CVE-2026-81199": [
+    {
+      "source": "nuclei",
+      "name": "MasterStudy LMS < 3.7.46 - Unauthenticated Student Statistics Disclosure",
+      "description": "MasterStudy LMS WordPress plugin before 3.7.46 contains an information disclosure vulnerability caused by missing authorization checks in student learning statistics, letting unauthenticated attackers access sensitive user course data, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-81199.yaml"
+    }
+  ],
   "CVE-2026-8181": [
     {
       "source": "nuclei",
@@ -4283,6 +4291,14 @@
       "name": "WP Maps Pro (wp-google-map-gold) <= 6.1.0 - Unauthenticated Administrator Account Creation",
       "description": "The WP Maps Pro plugin for WordPress is vulnerable to Privilege Escalation via Administrator Account Creation in all versions up to, and including, 6.1.0. This is due to the wpgmp_temp_access_ajax AJAX action being registered with wp_ajax_nopriv_ and protected only by a nonce check using the fc-call-nonce nonce, which is publicly embedded into every frontend page via wp_localize_script as the nonce field of the wpgmp_local JavaScript object, rendering the check ineffective as an access control mechanism. This makes it possible for unauthenticated attackers to invoke the wpgmp_temp_access_support handler with check_temp=false, which unconditionally creates a new WordPress user with the hardcoded role of administrator via wp_insert_user() and returns a magic login URL that, when visited, calls wp_set_auth_cookie() to fully authenticate the attacker as the newly created administrator, resulting in complete site takeover.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8732.yaml"
+    }
+  ],
+  "CVE-2026-87820": [
+    {
+      "source": "nuclei",
+      "name": "CyberPanel 2.4.3-2.4.5 - AI Scanner Debug Disclosure",
+      "description": "CyberPanel versions 2.4.3 through 2.4.5 expose unauthenticated AI Scanner debugging endpoints that disclose administrator usernames, API-key prefixes, scan identifiers, target domains, and account metadata. Unauthenticated attackers can enumerate panel administrators and recent scanner activity to inventory multi-tenant installations and facilitate follow-on attacks.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87820.yaml"
     }
   ],
   "CVE-2026-8839": [
