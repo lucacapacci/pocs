@@ -745,6 +745,12 @@
       "name": "SimpleHelp OIDC Authentication Bypass Remote Code Execution",
       "description": "This module exploits CVE-2026-48558 to forge an OpenID Connect identity token and\n          obtain a SimpleHelp technician session. It then uses SimpleHelp's legitimate remote\n          access WebSocket protocol to connect to an online managed machine and execute a\n          payload through the remote terminal.\n\n          An OIDC provider must be enabled for a technician group that permits group-authenticated\n          logins. The group must be allowed to access the selected machine and run remote commands.\n          The SimpleHelp server must have a valid session license, and at least one managed machine\n          must be online.\n\n          SimpleHelp 5.5.0 through 5.5.15 are affected. Some SimpleHelp 6.0 prerelease builds before\n          6.0 RC2 are also affected.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/simplehelp_oidc_auth_bypass_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "SimpleHelp <=5.5.15 - OIDC JWT Authentication Bypass",
+      "description": "SimpleHelp <= 5.5.15 and 6.0 pre-release contain an authentication bypass caused by lack of cryptographic signature verification in OIDC tokens, letting remote unauthenticated attackers gain technician sessions, exploit requires OIDC authentication configured.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48558.yaml"
     }
   ],
   "CVE-2026-77647": [
@@ -2729,6 +2735,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29183.yaml"
     }
   ],
+  "CVE-2026-29962": [
+    {
+      "source": "nuclei",
+      "name": "HSC MailInspector - Local File Inclusion",
+      "description": "HSC MailInspector v5.3.3-7 contains a path traversal caused by improper control of user-supplied file paths in /vendor/phpunit/phpunit.php, letting remote attackers read arbitrary files, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29962.yaml"
+    }
+  ],
   "CVE-2026-3001": [
     {
       "source": "nuclei",
@@ -2759,6 +2773,14 @@
       "name": "Flowise - NVIDIA NIM Endpoints Missing Authentication",
       "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to version 3.0.13, the NVIDIA NIM router (/api/v1/nvidia-nim/*) is whitelisted in the global authentication middleware, allowing unauthenticated access to privileged container management and token generation endpoints.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30824.yaml"
+    }
+  ],
+  "CVE-2026-30849": [
+    {
+      "source": "nuclei",
+      "name": "MantisBT < 2.28.1 - SOAP API Authentication Bypass",
+      "description": "Mantis Bug Tracker < 2.28.1 on MySQL databases contains an authentication bypass caused by improper type checking on the password parameter in the SOAP API, letting attackers login without the actual password using a crafted SOAP envelope, exploit requires knowing the victim's username.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30849.yaml"
     }
   ],
   "CVE-2026-30928": [
