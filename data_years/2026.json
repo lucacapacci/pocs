@@ -2575,6 +2575,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26217.yaml"
     }
   ],
+  "CVE-2026-26265": [
+    {
+      "source": "nuclei",
+      "name": "Discourse - Private User Field Disclosure via Directory Items IDOR",
+      "description": "Discourse prior to 2025.12.2, 2026.1.1, and 2026.2.0 contains an IDOR vulnerability caused by lack of authorization checks on user_field_ids parameter in DirectoryItemsController#index, letting any user retrieve private user field values, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26265.yaml"
+    }
+  ],
   "CVE-2026-26341": [
     {
       "source": "nuclei",
@@ -4007,6 +4015,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58123.yaml"
     }
   ],
+  "CVE-2026-58191": [
+    {
+      "source": "nuclei",
+      "name": "Appium base-driver <=10.6.0 - Reflected Cross-Site Scripting",
+      "description": "Appium <= 10.7.0 contains a reflected XSS caused by unescaped reflection of throwError query parameter, comments POST field, and User-Agent header in base-driver routes, letting remote attackers execute arbitrary JavaScript, exploit requires crafted HTTP requests.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58191.yaml"
+    }
+  ],
   "CVE-2026-58455": [
     {
       "source": "nuclei",
@@ -4061,6 +4077,14 @@
       "name": "vBulletin 6.x - Remote Code Execution",
       "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contain an eval injection vulnerability caused by insufficiently restrictive regex filtering in vB5_Template_Runtime::runMaths(), letting unauthenticated remote attackers execute arbitrary PHP code via the pagenav[pagenumber] parameter in ajax/render template route.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61511.yaml"
+    }
+  ],
+  "CVE-2026-61736": [
+    {
+      "source": "nuclei",
+      "name": "LightRAG <= 1.5.3 - Credentialed CORS Wildcard",
+      "description": "LightRAG <= 1.5.4 contains a broken access control vulnerability caused by default CORS_ORIGINS=* with allow_credentials=True in lightrag_server.py, letting malicious websites perform authenticated API requests, exploit requires authenticated user.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61736.yaml"
     }
   ],
   "CVE-2026-61808": [
