@@ -255,6 +255,12 @@
       "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
       "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/ivanti_epmm_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Ivanti EPMM <=12.7.0.0 - Unauthenticated Code Injection",
+      "description": "Ivanti Endpoint Manager Mobile (EPMM) versions 12.5.0.0 through 12.7.0.0 contain a code injection vulnerability that allows unauthenticated remote attackers to achieve arbitrary code execution on the target system.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1281.yaml"
     }
   ],
   "CVE-2026-1340": [
@@ -729,6 +735,12 @@
       "name": "PaperCut NG/MF Unauthenticated RCE (CVE-2026-81578 + CVE-2026-82078)",
       "description": "This module exploits an authentication bypass in PaperCut NG and MF. A crafted Apache Tapestry\n          complex-direct request invokes privileged ConfigEditor components through the public Home\n          page. On version 26, the module reconfigures external user lookup to use an H2 JDBC URL whose\n          initialization SQL evaluates Groovy code. On versions 24 and 25, it uses a bundled Derby\n          procedure to write a temporary Groovy bootstrap class to the application classpath, then loads\n          it as a database driver. The Java target serves an executable payload JAR and a generic\n          memory-backed JAR loader over HTTP. Its payload classes and resources remain in memory; however,\n          versions 24 and 25 still require the temporary Derby bootstrap class. The command targets execute\n          a Windows or Linux command payload directly.\n\n          This module was successfully tested against:\n          * PaperCut MF 26.0.4 (Build 76494) <-- emergency patch v1\n          * PaperCut NG 26.0.4 (Build 76495) <-- emergency patch v1\n          * PaperCut NG 26.0.3 (Build 76225)\n          * PaperCut NG 25.0.11 (Build 75758)\n          * PaperCut NG 24.1.9 (Build 73376)",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/papercut_ng_external_user_lookup_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "PaperCut NG/MF <=26.0.4 - Unauthenticated ConfigEditor Access via Tapestry Complex-Direct",
+      "description": "PaperCut NG and PaperCut MF versions 24.x through 26.x contain an authentication bypass vulnerability in the Apache Tapestry-based web interface. By crafting a complex-direct service request that specifies the public Home page as the render target while invoking the privileged ConfigEditor page's form listeners, an unauthenticated remote attacker can search and modify server configuration options. PaperCut's access control validates the render page but fails to validate the component page, allowing full configuration access without authentication. When chained with CVE-2026-82078, an attacker reconfigures external user lookup to use a malicious JDBC URL whose initialization SQL evaluates arbitrary Groovy code, achieving unauthenticated remote code execution. This vulnerability is actively exploited in the wild.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-81578.yaml"
     }
   ],
   "CVE-2026-82078": [
@@ -1887,6 +1899,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0743.yaml"
     }
   ],
+  "CVE-2026-0768": [
+    {
+      "source": "nuclei",
+      "name": "Langflow <=1.2.x - Unauthenticated Remote Code Execution via validate_code",
+      "description": "Langflow <= 1.2.x exposes POST /api/v1/validate/code without any authentication. The endpoint calls validate_code() which exec()s user-supplied Python code. Default-argument expressions in Python execute at function-definition time, allowing arbitrary OS command execution without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0768.yaml"
+    }
+  ],
   "CVE-2026-0829": [
     {
       "source": "nuclei",
@@ -2615,6 +2635,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27176.yaml"
     }
   ],
+  "CVE-2026-27454": [
+    {
+      "source": "nuclei",
+      "name": "Discourse <=2026.2.0 - Hidden Post Revision Disclosure via revert_to Authorization Bypass",
+      "description": "Discourse versions before 2026.1.2, 2026.2.1, and 2026.3.0-latest.1 contain an authorization bypass in PostsController#display_post. The controller calls post.revert_to(params[:version]) directly whenever a version query parameter is present, without checking whether the corresponding PostRevision is hidden or whether the caller has permission to view edit history. By requesting a post at its publicly known version number via GET /posts/:id.json?version=<public_version>, the next PostRevision's stored modifications are applied unconditionally. If staff have hidden that revision, its pre-edit content is returned to an unauthenticated caller. On patched installs the same request is rejected with 403 because guardian.ensure_can_see!(post_revision) is evaluated first.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27454.yaml"
+    }
+  ],
   "CVE-2026-27542": [
     {
       "source": "nuclei",
@@ -2677,6 +2705,14 @@
       "name": "Qwik - Unauthenticated RCE via server$ Deserialization",
       "description": "Qwik <=1.19.0 contains an insecure deserialization vulnerability in the server$ RPC mechanism, letting unauthenticated attackers execute arbitrary code remotely, exploit requires require() availability at runtime.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27971.yaml"
+    }
+  ],
+  "CVE-2026-28141": [
+    {
+      "source": "nuclei",
+      "name": "NextGEN Gallery <= 4.2.3 - Reflected Cross-Site Scripting",
+      "description": "NextGEN Gallery through 4.2.3 reflects a URL-decoded `ngg_tag` route value into the generated tag page without the context-specific escaping added in 4.2.4. An unauthenticated attacker can break out of the tag context and inject an auto-executing script. This template injects an `svg onload` payload carrying a random nonce and matches its unencoded reflection; slash and backtick syntax keep the request off common WAF signatures.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28141.yaml"
     }
   ],
   "CVE-2026-28288": [
@@ -2765,6 +2801,14 @@
       "name": "HSC MailInspector - Local File Inclusion",
       "description": "HSC MailInspector v5.3.3-7 contains a path traversal caused by improper control of user-supplied file paths in /vendor/phpunit/phpunit.php, letting remote attackers read arbitrary files, exploit requires crafted request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29962.yaml"
+    }
+  ],
+  "CVE-2026-29963": [
+    {
+      "source": "nuclei",
+      "name": "HSC MailInspector - Unauthenticated Arbitrary File Read",
+      "description": "HSC MailInspector 5.3.3-7 contains a path traversal caused by improper validation of user-supplied input in /tap/dw.php text parameter, letting remote attackers access arbitrary files, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29963.yaml"
     }
   ],
   "CVE-2026-3001": [
@@ -3919,6 +3963,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55229.yaml"
     }
   ],
+  "CVE-2026-5524": [
+    {
+      "source": "nuclei",
+      "name": "Divi Form Builder <=5.1.8 - Unauthenticated Arbitrary File Upload RCE",
+      "description": "The Divi Form Builder plugin for WordPress versions 5.1.8 and prior contains an unauthenticated arbitrary file upload vulnerability in the do_image_upload() AJAX handler. The user-controlled acceptFileTypes POST parameter is injected unsanitized into a PHP regex for file extension validation. By supplying acceptFileTypes=phtml the constructed regex accepts .phtml files while the plugin's .htaccess only blocks .php, so Apache executes .phtml files as PHP. The required nonce (fb_nonce) is publicly embedded in any page containing a Divi form via the de_fb_obj JavaScript object. Uploaded shells land in /wp-content/uploads/de_fb_uploads/. Fixed in 5.1.9.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5524.yaml"
+    }
+  ],
   "CVE-2026-55450": [
     {
       "source": "nuclei",
@@ -4055,6 +4107,30 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58644.yaml"
     }
   ],
+  "CVE-2026-59177": [
+    {
+      "source": "nuclei",
+      "name": "ESPHome Device Builder <1.0.10 - Unauthenticated Dashboard Access",
+      "description": "ESPHome Device Builder versions before 1.0.10 bind the trusted Home Assistant ingress site to all interfaces. A client that can reach the ingress port can therefore access the dashboard without the Supervisor's authentication proxy.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59177.yaml"
+    }
+  ],
+  "CVE-2026-59509": [
+    {
+      "source": "nuclei",
+      "name": "cve-search 4.0-6.0.0 - Unauthenticated NoSQL Injection",
+      "description": "cve-search versions 4.0 through 6.0.0 expose an unauthenticated DataTables endpoint that accepts attacker-controlled MongoDB collection, projection, filtering, and pagination parameters. This detector uses a harmless invalid projection field against the intended cves collection; version 6.0.1 rejects that field.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59509.yaml"
+    }
+  ],
+  "CVE-2026-59726": [
+    {
+      "source": "nuclei",
+      "name": "ruflo MCP Bridge - Unauthenticated RCE via terminal_execute",
+      "description": "ruflo MCP bridge (< 3.16.3) in its default docker-compose deployment exposes POST /mcp with no authentication and binds to all interfaces (0.0.0.0:3001). The executeTool() function has no server-side deny list for dangerous tools, allowing an unauthenticated attacker to invoke tools/call with ruflo__terminal_execute, which runs execSync(command) on attacker-supplied input. This yields arbitrary command execution as the node user (uid 1000) inside the bridge container. The blocklist (AUTOPILOT_BLOCKED_PATTERNS + isBlockedTool()) is enforced only in the autopilot SSE handler; POST /mcp and POST /mcp/:group bypass it entirely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59726.yaml"
+    }
+  ],
   "CVE-2026-59801": [
     {
       "source": "nuclei",
@@ -4117,6 +4193,14 @@
       "name": "User Registration & Membership WordPress plugin - Open Redirect",
       "description": "User Registration & Membership WordPress plugin <= 5.1.4 contains an open redirect caused by insufficient validation of 'redirect_to_on_logout' parameter, letting attackers redirect users to malicious external URLs after logout, exploit requires crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
+    }
+  ],
+  "CVE-2026-62382": [
+    {
+      "source": "nuclei",
+      "name": "PasswordPusher v1.45.11-v2.9.5 - Unauthenticated Anonymous Push Deletion via Ownership Bypass",
+      "description": "PasswordPusher v1.45.11 through v2.9.5 allows unauthenticated deletion of anonymous pushes due to a nil==nil ownership-check bypass (CWE-863). The deletion guard evaluates (@push.user == current_user) || @push.deletable_by_viewer. For anonymous pushes, @push.user is nil; for unauthenticated requests, current_user is nil. Ruby evaluates nil==nil as true, so the ownership check passes and the deletable_by_viewer=false restriction is completely bypassed. Anyone who knows the secret URL token can permanently expire an anonymous push without any credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62382.yaml"
     }
   ],
   "CVE-2026-6433": [
@@ -4365,6 +4449,14 @@
       "name": "WP Go Maps < 10.0.10 - Unauthenticated Marker Information Disclosure",
       "description": "WP Go Maps WordPress plugin <10.0.10 contains an information disclosure vulnerability caused by lack of approval-state filtering on the public single-marker REST endpoint, letting unauthenticated users access unapproved marker records including PII and geographic coordinates, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8386.yaml"
+    }
+  ],
+  "CVE-2026-85200": [
+    {
+      "source": "nuclei",
+      "name": "GEO my WP <=4.5.5.3 - Unauthenticated Local File Inclusion",
+      "description": "GEO my WP WordPress plugin <= 4.5.5.3 contains a local file inclusion caused by improper handling in gmw_posts_locator_ajax_info_window_loader function, letting unauthenticated attackers execute arbitrary PHP code remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85200.yaml"
     }
   ],
   "CVE-2026-85706": [
