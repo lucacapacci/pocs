@@ -2699,6 +2699,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27944.yaml"
     }
   ],
+  "CVE-2026-27960": [
+    {
+      "source": "nuclei",
+      "name": "OpenCTI < 6.9.13 - Authentication Bypass via User Impersonation",
+      "description": "OpenCTI < 6.9.13 allows authentication bypass by supplying a Bearer token set to the admin user's internal_id UUID instead of a valid JWT. The default admin internal_id (88ec0c6a-13ce-5e39-b486-354fe4a7084f) grants full admin access to the GraphQL API, effectively bypassing all authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27960.yaml"
+    }
+  ],
   "CVE-2026-27971": [
     {
       "source": "nuclei",
