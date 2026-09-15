@@ -3031,6 +3031,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34036.yaml"
     }
   ],
+  "CVE-2026-34234": [
+    {
+      "source": "nuclei",
+      "name": "CtrlPanel <= 1.1.1 - Remote Code Execution",
+      "description": "CtrlPanel versions <= 1.1.1 are vulnerable to unauthenticated Remote Code Execution (RCE) via the web installer endpoint (public/installer/index.php). The installer loaded and executed form handler files before checking for the install.lock gate, allowing attackers to reach installer forms on fully-deployed instances. User-supplied POST values (url, key, clientkey) from the Pterodactyl configuration form were interpolated directly into shell command strings executed via bash -c without sanitization, enabling command injection. The vulnerability is confirmed actively exploited in the wild.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34234.yaml"
+    }
+  ],
   "CVE-2026-34453": [
     {
       "source": "nuclei",
@@ -3365,6 +3373,14 @@
       "name": "NocoBase - SQL Injection",
       "description": "NocoBase @nocobase/plugin-collection-sql versions prior to 2.0.39 are vulnerable to SQL injection via the sqlCollection:update endpoint. The checkSQL() function, which blocks dangerous SQL keywords and ensures only SELECT statements are allowed, is not called during collection updates.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41641.yaml"
+    }
+  ],
+  "CVE-2026-41948": [
+    {
+      "source": "nuclei",
+      "name": "Dify <=1.14.1 - Unauthenticated Plugin Daemon Path Traversal",
+      "description": "Dify version 1.14.1 and prior are affected by an unauthenticated path traversal in the Plugin Daemon icon proxy endpoint. The /console/api/workspaces/current/plugin/icon endpoint requires no authentication and passes the filename query parameter unsanitized into the internal Plugin Daemon REST API URL. Using ../ dot-sequence traversal an attacker escapes the authorized plugin/{tenant_id}/asset/ namespace and reaches arbitrary internal Plugin Daemon endpoints. The /health/check endpoint is always available and returns Plugin Daemon version, build time and pool status confirming exploitation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41948.yaml"
     }
   ],
   "CVE-2026-42031": [
@@ -4413,6 +4429,14 @@
       "name": "CyberPanel 2.4.3-2.4.5 - AI Scanner Debug Disclosure",
       "description": "CyberPanel versions 2.4.3 through 2.4.5 expose unauthenticated AI Scanner debugging endpoints that disclose administrator usernames, API-key prefixes, scan identifiers, target domains, and account metadata. Unauthenticated attackers can enumerate panel administrators and recent scanner activity to inventory multi-tenant installations and facilitate follow-on attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87820.yaml"
+    }
+  ],
+  "CVE-2026-88062": [
+    {
+      "source": "nuclei",
+      "name": "OmniRoute < 3.8.49 - Unauthenticated RCE",
+      "description": "OmniRoute <= 3.8.49 contains a remote code execution caused by insufficient validation of interpreter arguments in the POST /api/acp/agents endpoint, letting remote attackers execute arbitrary code, exploit requires anonymous access when requireLogin is false or management session/API key when true.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-88062.yaml"
     }
   ],
   "CVE-2026-8839": [
