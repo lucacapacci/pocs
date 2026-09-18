@@ -6901,6 +6901,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-42359.yaml"
     }
   ],
+  "CVE-2021-42392": [
+    {
+      "source": "nuclei",
+      "name": "H2 Database Console - JNDI Injection RCE",
+      "description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution via the H2 web console (versions before 2.0.206 / 1.4.198 with the console enabled).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-42392.yaml"
+    }
+  ],
   "CVE-2021-42551": [
     {
       "source": "nuclei",

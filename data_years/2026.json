@@ -3443,6 +3443,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41948.yaml"
     }
   ],
+  "CVE-2026-42018": [
+    {
+      "source": "nuclei",
+      "name": "JFrog Artifactory - Anonymous Token Disclosure via Trailing Slash Auth Bypass",
+      "description": "JFrog Artifactory contains an information disclosure caused by returning an internal anonymous-user token to unauthenticated callers when anonymous access is disabled, letting unauthenticated attackers access sensitive resources. The exploit requires anonymous access to be disabled.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42018.yaml"
+    }
+  ],
   "CVE-2026-42031": [
     {
       "source": "nuclei",
@@ -4473,6 +4481,14 @@
       "name": "GEO my WP <=4.5.5.3 - Unauthenticated Local File Inclusion",
       "description": "GEO my WP WordPress plugin <= 4.5.5.3 contains a local file inclusion caused by improper handling in gmw_posts_locator_ajax_info_window_loader function, letting unauthenticated attackers execute arbitrary PHP code remotely.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85200.yaml"
+    }
+  ],
+  "CVE-2026-85688": [
+    {
+      "source": "nuclei",
+      "name": "TEN Framework - Arbitrary File Read & Write",
+      "description": "TEN Framework 0.11.71 contains unauthenticated arbitrary file read and write vulnerabilities in the TMAN Designer file-content API endpoints, letting attackers read or write arbitrary files and execute code. The exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85688.yaml"
     }
   ],
   "CVE-2026-85706": [
