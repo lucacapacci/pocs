@@ -269,6 +269,12 @@
       "name": "Ivanti Endpoint Manager Mobile (EPMM) unauthenticated RCE",
       "description": "This module exploits a OS command injection issue in Ivanti Endpoint Manager Mobile (EPMM), formerly known\n          as MobileIron. A remote attacker can achieve unauthenticated RCE with root privileges on an affected device.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/ivanti_epmm_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Ivanti EPMM < 12.8.0.0 - Remote Code Execution",
+      "description": "Ivanti Endpoint Manager Mobile contains a code injection vulnerability allowing unauthenticated attackers to execute arbitrary code remotely, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1340.yaml"
     }
   ],
   "CVE-2026-28515": [
@@ -2041,6 +2047,14 @@
       "name": "WordPress Kirki < 6.0.12 - Server-Side Request Forgery",
       "description": "Kirki WordPress plugin < 6.0.12 contains a server-side request forgery caused by lack of URL validation, letting unauthenticated attackers make the site issue HTTP requests to arbitrary hosts, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-13147.yaml"
+    }
+  ],
+  "CVE-2026-13153": [
+    {
+      "source": "nuclei",
+      "name": "Essential Blocks < 6.4.0 - Information Disclosure",
+      "description": "Gutenberg Essential Blocks WordPress plugin < 6.4.0 contains an information disclosure caused by unrestricted access to a public REST route exposing non-public WooCommerce sales metrics, letting unauthenticated users read product sales data.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-13153.yaml"
     }
   ],
   "CVE-2026-1357": [
@@ -4003,6 +4017,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55450.yaml"
     }
   ],
+  "CVE-2026-55549": [
+    {
+      "source": "nuclei",
+      "name": "Yamcs <=5.8.6 - Cross-Site Scripting",
+      "description": "Yamcs < 5.9.4 contains a stored XSS caused by inadequate HTML escaping of attacker-controlled redirect_uri parameter in authorization template, letting attackers execute JavaScript to steal authentication data, exploit requires user to open crafted URL.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55549.yaml"
+    }
+  ],
   "CVE-2026-55592": [
     {
       "source": "nuclei",
@@ -4315,6 +4337,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-69084.yaml"
     }
   ],
+  "CVE-2026-69085": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan <=3.7.2 - SQL Injection",
+      "description": "SiYuan before v3.7.3 contains a SQL injection caused by direct concatenation of the keyword parameter in /api/filetree/searchDocs endpoint, letting attackers with publish RoleReader token or unauthenticated in publish mode read and modify database content.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-69085.yaml"
+    }
+  ],
   "CVE-2026-69251": [
     {
       "source": "nuclei",
@@ -4451,6 +4481,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8237.yaml"
     }
   ],
+  "CVE-2026-82456": [
+    {
+      "source": "nuclei",
+      "name": "argocd-mcp 0.8.0 - Unauthenticated MCP Session and Tool Access",
+      "description": "argocd-mcp before 0.9.0 binds its MCP HTTP listener to all interfaces without requiring authentication. A remote unauthenticated attacker can initialize an MCP session, complete the handshake, and enumerate or invoke the full Argo CD tool surface using the operator's stored API token.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-82456.yaml"
+    }
+  ],
   "CVE-2026-8383": [
     {
       "source": "nuclei",
@@ -4515,6 +4553,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86207.yaml"
     }
   ],
+  "CVE-2026-86218": [
+    {
+      "source": "nuclei",
+      "name": "N-able N-central <2026.3.1.14 - Pre-Authentication Remote Code Execution",
+      "description": "N-able N-central versions before 2026.3.1.14 are vulnerable to pre-authentication remote code execution via static code injection (CWE-96). An unauthenticated attacker with network access to the N-central management interface can execute arbitrary code on the server, potentially compromising every managed endpoint under the platform's control. Huntress confirmed active in-the-wild exploitation. N-able's hosted (NCOD) instances were automatically patched, on-premises deployments require manual upgrade to 2026.3.1.14. The N-central build version is exposed pre-authentication in the login page JavaScript object (ncentralVersion), enabling reliable version-based detection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86218.yaml"
+    }
+  ],
   "CVE-2026-86426": [
     {
       "source": "nuclei",
@@ -4577,6 +4623,14 @@
       "name": "MediaWiki EasyTimeline - Code Injection RCE",
       "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
+    }
+  ],
+  "CVE-2026-9103": [
+    {
+      "source": "nuclei",
+      "name": "Langflow OSS - Superuser Token Issuance",
+      "description": "Langflow OSS with default AUTO_LOGIN exposes `/api/v1/auto_login`, which returns a superuser access token to any unauthenticated request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9103.yaml"
     }
   ],
   "CVE-2026-9133": [

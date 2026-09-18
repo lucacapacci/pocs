@@ -5091,7 +5091,7 @@
     {
       "source": "nuclei",
       "name": "Apache Cocoon 2.1.12 - XML Injection",
-      "description": "Apache Cocoon 2.1.12 is susceptible to  XML injection. When using the StreamGenerator, the code parses a user-provided XML. A specially crafted XML, including external system entities, can be used to access any file on the server system.",
+      "description": "Apache Cocoon 2.1.12 contains an XML injection caused by parsing user-provided XML with external system entities in StreamGenerator, letting attackers access arbitrary files on the server, exploit requires sending malicious XML.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-11991.yaml"
     }
   ],
