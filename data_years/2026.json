@@ -4513,6 +4513,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8386.yaml"
     }
   ],
+  "CVE-2026-84434": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Gravity Forms Plugin <=3.1.0.4 - Unauthenticated Arbitrary File Upload",
+      "description": "Gravity Forms WordPress plugin version 3.1.0.4 and earlier contains an unauthenticated arbitrary file upload vulnerability caused by bypassing extension validation in hidden file upload fields. Unauthenticated attackers can upload any file type including PHP when a form has a File Upload field configured with Hidden visibility. The bypass works because the server-side extension validation is skipped for fields with gfield_visibility_hidden CSS class.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-84434.yaml"
+    }
+  ],
   "CVE-2026-85200": [
     {
       "source": "nuclei",
