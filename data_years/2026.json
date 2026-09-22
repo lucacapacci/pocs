@@ -4331,6 +4331,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-65919.yaml"
     }
   ],
+  "CVE-2026-6639": [
+    {
+      "source": "nuclei",
+      "name": "AI Copilot Content Generator <=1.4.6 - Unauthenticated Task Data Exposure",
+      "description": "AIWU AI Chatbot & Workflow Automation WordPress plugin <= 1.4.6 contains a sensitive information exposure caused by unauthenticated access to getCurrentTaskResults() method, letting unauthenticated attackers retrieve API keys and configuration data, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6639.yaml"
+    }
+  ],
   "CVE-2026-67208": [
     {
       "source": "nuclei",
@@ -4721,6 +4729,14 @@
       "name": "Palo Alto Networks PAN-OS - Authentication Bypass",
       "description": "Palo Alto Networks PAN-OS contains an authentication bypass caused by flaws in the GlobalProtect portal and gateway, letting attackers establish unauthorized VPN connections, exploit requires network access to the portal or gateway.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-0257.yaml"
+    }
+  ],
+  "CVE-2026-27886": [
+    {
+      "source": "nuclei",
+      "name": "Strapi <=5.36.x - Admin Credential Enumeration",
+      "description": "Strapi versions starting in 4.0.0 and prior to 5.37.0 did not sufficiently sanitize query parameters when filtering content via relational fields. An attacker could use the `where` query parameter on any publicly-accessible content-type with an `updatedBy` field to perform a boolean-oracle attack against private fields on the joined admin_users table, including the resetPasswordToken field, enabling full administrative account takeover without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-27886.yaml"
     }
   ],
   "CVE-2026-33453": [
