@@ -4683,6 +4683,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
     }
   ],
+  "CVE-2026-89063": [
+    {
+      "source": "nuclei",
+      "name": "Bookly <=28.1 - IDOR Unauthenticated Sensitive Data Access",
+      "description": "Bookly WordPress plugin <= 28.1 contains an insecure direct object reference caused by missing validation on 'conversation_id' parameter, letting unauthenticated attackers read and inject messages into any AI booking conversation, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89063.yaml"
+    }
+  ],
   "CVE-2026-9103": [
     {
       "source": "nuclei",
