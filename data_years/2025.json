@@ -3339,6 +3339,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11368.yaml"
     }
   ],
+  "CVE-2025-11452": [
+    {
+      "source": "nuclei",
+      "name": "Asgaros Forum < 3.2.0 - SQL Injection",
+      "description": "Asgaros Forum for WordPress versions prior to 3.2.0 is vulnerable to unauthenticated SQL injection through the asgarosforum_unread_exclude cookie. The cookie is JSON-decoded and its object keys are imploded into a NOT IN() clause without sanitisation. The vulnerable query only runs while rendering the forum page, so the payload must be sent there rather than to the site root.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-11452.yaml"
+    }
+  ],
   "CVE-2025-11580": [
     {
       "source": "nuclei",
@@ -4345,6 +4353,14 @@
       "name": "Moodle LMS Jmol Plugin <= 6.1 - Cross-Site Scripting",
       "description": "A reflected cross-site scripting (XSS) vulnerability exists in the Moodle LMS Jmol plugin version 6.1 and prior via the data parameter in jsmol.php. The application fails to properly sanitize user input before embedding it into the HTTP response, allowing an attacker to execute arbitrary JavaScript in the victim's browser by crafting a malicious link. This can be used to hijack user sessions or manipulate page content.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34032.yaml"
+    }
+  ],
+  "CVE-2025-34033": [
+    {
+      "source": "nuclei",
+      "name": "Blue Angel Software Suite (5V Technologies) - OS Command Injection",
+      "description": "Blue Angel 5V Technologies Blue Angel Software Suite through 20230920, as used in Analog Telephone Adapter (ATA) and Voice over IP (VoIP) devices, allows remote authenticated attackers to execute arbitrary OS commands as root via shell metacharacters in the ping_addr parameter to webctrl.cgi?action=pingtest_update.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34033.yaml"
     }
   ],
   "CVE-2025-34035": [
@@ -5513,6 +5529,14 @@
       "name": "Vite - Information Disclosure",
       "description": "Vite is a frontend tooling framework for JavaScript.In versions from 2.9.18 to before 3.0.0, 3.2.9 to before 4.0.0, 4.5.3 to before 5.0.0, 5.2.6 to before 5.4.21, 6.0.0 to before 6.4.1, 7.0.0 to before 7.0.8, and 7.1.0 to before 7.1.11, files denied by server.fs.deny were sent if the URL ended with \\ when the dev server is running on Windows. Only apps explicitly exposing the Vite dev server to the network and running the dev server on Windows were affected. This issue has been patched in versions 5.4.21, 6.4.1, 7.0.8, and 7.1.11.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-62522.yaml"
+    }
+  ],
+  "CVE-2025-62593": [
+    {
+      "source": "nuclei",
+      "name": "Ray < 2.52.0 - Remote Code Execution",
+      "description": "Ray versions prior to 2.52.0 allow unauthenticated remote code execution via the job submission API at /api/jobs/. A weak User-Agent heuristic (rejecting Mozilla-prefixed headers) can be bypassed by non-browser clients, enabling arbitrary command execution when the dashboard is network-reachable.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-62593.yaml"
     }
   ],
   "CVE-2025-62613": [
