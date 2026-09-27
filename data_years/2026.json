@@ -155,6 +155,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/panos_cve_2026_0265.rb"
     }
   ],
+  "CVE-2026-22778": [
+    {
+      "source": "metasploit",
+      "name": "vLLM Multimodal Heap-Address Information Leak Scanner",
+      "description": "This module detects vLLM OpenAI-compatible servers affected by\n          CVE-2026-22778. When an invalid image is sent to a multimodal endpoint,\n          Pillow (PIL) raises UnidentifiedImageError whose message includes the\n          Python repr of the underlying BytesIO buffer\n          (\"<_io.BytesIO object at 0x...>\"), exposing a live heap address.\n          Vulnerable versions return that error message directly to the client,\n          which weakens ASLR and forms the first stage of a chain that ends in a\n          JPEG2000 heap overflow in the bundled FFmpeg/OpenCV video decoder.\n          Affected versions are 0.8.3 through 0.14.0 (fixed in 0.14.1, which\n          sanitizes the address out of the message).\n\n          The module first reads the unauthenticated /version banner and compares\n          it against the affected range. It then issues a single benign request to\n          the chat completions endpoint containing a deliberately malformed\n          base64 image. If the response leaks a \"0x\" heap address the target is\n          reported vulnerable with high confidence; if the address is stripped the\n          fix is present; if the server reports that the model has no image support\n          the leak path is not reachable as deployed. The probe never sends a\n          video URL and never reaches the heap-overflow code path.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/vllm_multimodal_info_leak.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "vLLM 0.8.3 - 0.14.0 - Information Disclosure",
+      "description": "vLLM 0.8.3 to - 0.14.1 contains an information disclosure caused by leaking a heap address in error messages from the multimodal endpoint when processing invalid images, letting remote attackers reduce ASLR entropy, exploit requires sending invalid images.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22778.yaml"
+    }
+  ],
   "CVE-2026-63030": [
     {
       "source": "metasploit",
@@ -2425,14 +2439,6 @@
       "name": "Spring Cloud Config Server - Path Traversal",
       "description": "Spring Cloud 3.1.x < 3.1.13, 4.1.x < 4.1.9, 4.2.x < 4.2.3, 4.3.x < 4.3.2, and 5.0.x < 5.0.2 contain a path traversal caused by profile parameter substitution in Config Server using native file system backend, letting attackers access files outside configured directories, exploit requires crafted request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22739.yaml"
-    }
-  ],
-  "CVE-2026-22778": [
-    {
-      "source": "nuclei",
-      "name": "vLLM 0.8.3 - 0.14.0 - Information Disclosure",
-      "description": "vLLM 0.8.3 to - 0.14.1 contains an information disclosure caused by leaking a heap address in error messages from the multimodal endpoint when processing invalid images, letting remote attackers reduce ASLR entropy, exploit requires sending invalid images.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22778.yaml"
     }
   ],
   "CVE-2026-22812": [
