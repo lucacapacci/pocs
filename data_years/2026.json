@@ -2025,6 +2025,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1207.yaml"
     }
   ],
+  "CVE-2026-12227": [
+    {
+      "source": "nuclei",
+      "name": "Visual Composer <= 45.16.0 - Unauthenticated LFI",
+      "description": "Visual Composer Website Builder for WordPress <= 45.16.0 contains a local file inclusion vulnerability caused by improper validation of the vcv-template parameter, letting unauthenticated attackers include and execute arbitrary files, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12227.yaml"
+    }
+  ],
   "CVE-2026-12394": [
     {
       "source": "nuclei",
@@ -4281,6 +4289,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61511.yaml"
     }
   ],
+  "CVE-2026-61560": [
+    {
+      "source": "nuclei",
+      "name": "GitLab MCP Server < 2.1.27 - Unauthenticated SSE Transport Access",
+      "description": "The @zereight/mcp-gitlab GitLab MCP server exposes its SSE transport endpoints without any authentication when SSE mode is enabled. An unauthenticated attacker with network access can establish an MCP session and invoke every registered tool, including upload_markdown, which reads arbitrary files from the server filesystem via an unsanitized file_path parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61560.yaml"
+    }
+  ],
   "CVE-2026-61736": [
     {
       "source": "nuclei",
@@ -4711,6 +4727,14 @@
       "name": "MediaWiki EasyTimeline - Code Injection RCE",
       "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
+    }
+  ],
+  "CVE-2026-89013": [
+    {
+      "source": "nuclei",
+      "name": "Dolibarr < 24.0.0 - Authorization Bypass via hashp Parameter",
+      "description": "Dolibarr ERP/CRM versions 23.0.4 through 24.0.0 contain an authorization bypass vulnerability in document.php and viewimage.php. The public share-link feature forces NOLOGIN when hashp is present, but the value 'shared' skips token resolution while the override still fires for any non-empty hashp value. This bypass allows unauthenticated remote attackers to read arbitrary files from all Dolibarr managed directories including logs, SQL database backups, invoices, contracts, user vcards, and custom module sources.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89013.yaml"
     }
   ],
   "CVE-2026-89063": [
