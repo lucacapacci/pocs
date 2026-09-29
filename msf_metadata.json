@@ -208725,7 +208725,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-03-21 12:21:09 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/accessibility_features_debugger.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/accessibility_features_debugger",
@@ -208777,7 +208777,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-02-17 16:32:34 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/assistive_technology.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/assistive_technology",
@@ -208828,7 +208828,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-05-25 12:53:27 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/bits.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/bits",
@@ -208932,7 +208932,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-03-21 12:21:09 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/image_exec_options.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/image_exec_options",
@@ -209055,6 +209055,59 @@
     "session_types": [
       "meterpreter",
       "shell"
+    ],
+    "needs_cleanup": null,
+    "actions": []
+  },
+  "exploit_windows/persistence/ollama_auto_update": {
+    "name": "Ollama Windows Auto-Update Path Traversal Persistence",
+    "fullname": "exploit/windows/persistence/ollama_auto_update",
+    "aliases": [],
+    "rank": 600,
+    "disclosure_date": "2026-04-29",
+    "type": "exploit",
+    "author": [
+      "Bartłomiej Dmitruk",
+      "h00die"
+    ],
+    "description": "Ollama for Windows versions 0.12.10 through 0.22.1 are vulnerable to a\n          path traversal attack (CVE-2026-42249) in the auto-update download mechanism,\n          combined with a completely absent signature verification function\n          (CVE-2026-42248). Payloads are written to the startup folder\n          and executed at next login.",
+    "references": [
+      "CVE-2026-42248",
+      "CVE-2026-42249",
+      "URL-https://www.striga.ai/research/ollama-windows-auto-update-rce",
+      "ATT&CK-T1547.001",
+      "ATT&CK-T1546"
+    ],
+    "platform": "Windows",
+    "arch": "x64, x86",
+    "rport": null,
+    "autofilter_ports": [],
+    "autofilter_services": [],
+    "targets": [
+      "Automatic"
+    ],
+    "mod_time": "2026-06-08 08:39:59 +0000",
+    "path": "/modules/exploits/windows/persistence/ollama_auto_update.rb",
+    "is_install_path": true,
+    "ref_name": "windows/persistence/ollama_auto_update",
+    "check": true,
+    "post_auth": false,
+    "default_credential": false,
+    "notes": {
+      "Stability": [
+        "crash-safe"
+      ],
+      "SideEffects": [
+        "artifacts-on-disk",
+        "config-changes"
+      ],
+      "Reliability": [
+        "event-dependent",
+        "repeatable-session"
+      ]
+    },
+    "session_types": [
+      "meterpreter"
     ],
     "needs_cleanup": null,
     "actions": []
@@ -209293,7 +209346,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-03-21 12:21:09 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/registry_userinit.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/registry_userinit",
@@ -209349,7 +209402,7 @@
     "targets": [
       "Windows"
     ],
-    "mod_time": "2026-05-25 12:05:13 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/service.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/service",
@@ -209406,7 +209459,7 @@
     "targets": [
       "Windows"
     ],
-    "mod_time": "2026-05-25 12:05:13 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/service_for_user/event.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/service_for_user/event",
@@ -209463,7 +209516,7 @@
     "targets": [
       "Windows"
     ],
-    "mod_time": "2026-05-25 12:05:13 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/service_for_user/lock_unlock.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/service_for_user/lock_unlock",
@@ -209520,7 +209573,7 @@
     "targets": [
       "Windows"
     ],
-    "mod_time": "2026-05-25 12:05:13 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/service_for_user/logon.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/service_for_user/logon",
@@ -209576,7 +209629,7 @@
     "targets": [
       "Windows"
     ],
-    "mod_time": "2026-05-25 12:05:13 +0000",
+    "mod_time": "2026-09-29 09:32:06 +0000",
     "path": "/modules/exploits/windows/persistence/service_for_user/schedule.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/service_for_user/schedule",
@@ -209677,7 +209730,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-02-17 16:32:34 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/task_scheduler.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/task_scheduler",
@@ -209827,7 +209880,7 @@
     "targets": [
       "Automatic"
     ],
-    "mod_time": "2026-03-31 23:49:08 +0000",
+    "mod_time": "2026-09-20 14:34:58 +0000",
     "path": "/modules/exploits/windows/persistence/userinit_mpr_logon_script.rb",
     "is_install_path": true,
     "ref_name": "windows/persistence/userinit_mpr_logon_script",
