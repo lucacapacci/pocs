@@ -1141,6 +1141,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-1709.yaml"
     }
   ],
+  "CVE-2024-58286": [
+    {
+      "source": "metasploit",
+      "name": "dizqueTV Unauthenticated Remote Code Execution",
+      "description": "dizqueTV, a Node.js-based IPTV streaming server, is vulnerable to\n          unauthenticated remote code execution via the ffmpegPath configuration\n          parameter. On Linux, an attacker can inject a command into the ffmpegPath value.\n          On Windows, an attacker can upload a malicious batch script through the image\n          upload endpoint and set the ffmpegPath setting to the uploaded file. Requesting\n          the version API triggers execution on both platforms.\n\n          The ffmpegPath value is used by Node's child process APIs without adequate\n          validation, allowing arbitrary command execution as the Node.js process user.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/dizquetv_rce.rb"
+    }
+  ],
   "CVE-2024-0204": [
     {
       "source": "metasploit",

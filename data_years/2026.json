@@ -671,6 +671,26 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_rce_cve_2026_19295.rb"
     }
   ],
+  "CVE-2026-0770": [
+    {
+      "source": "metasploit",
+      "name": "Langflow Unauthenticated RCE (validate endpoint)",
+      "description": "Langflow versions up to and including 1.7.3 contain a remote code\n          execution vulnerability in the `validate` endpoint where unsanitized\n          values in `exec_globals`/`code` allow an attacker to execute arbitrary\n          Python code. This module abuses the `/api/v1/auto_login` (or\n          `/api/v1/login`) and `/api/v1/validate/code` endpoints to execute an\n          arbitrary Metasploit command payload.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_rce_cve_2026_0770.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Langflow 1.3.0 - Remote Code Execution",
+      "description": "Langflow 1.3.0 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52597.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
+      "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
+    }
+  ],
   "CVE-2026-27966": [
     {
       "source": "metasploit",
@@ -1529,20 +1549,6 @@
       "name": "Langflow <= 1.8.4 - Path Traversal to RCE via File Upload",
       "description": "The application contains a path traversal vulnerability caused by unsanitized 'filename' parameter in the 'POST /api/v2/files' multipart form data, letting attackers write files to arbitrary filesystem locations, exploit requires crafted request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5027.yaml"
-    }
-  ],
-  "CVE-2026-0770": [
-    {
-      "source": "exploitdb",
-      "name": "Langflow 1.3.0 - Remote Code Execution",
-      "description": "Langflow 1.3.0 - Remote Code Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52597.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "Langflow < 1.3.0 - Remote Code Execution via validate_code() exec()",
-      "description": "Langflow contains a remote code execution caused by inclusion of functionality from untrusted control sphere in the exec_globals parameter at the validate endpoint, letting remote attackers execute arbitrary code as root, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0770.yaml"
     }
   ],
   "CVE-2026-39987": [
