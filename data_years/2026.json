@@ -1499,6 +1499,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52526.py"
     }
   ],
+  "CVE-2026-40297": [
+    {
+      "source": "exploitdb",
+      "name": "InvoicePlane 1.7.1 -  RCE",
+      "description": "InvoicePlane 1.7.1 -  RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52685.txt"
+    }
+  ],
   "CVE-2026-56290": [
     {
       "source": "exploitdb",
@@ -1527,6 +1535,14 @@
       "name": "KeepInMind 0.8.4.2 -  Stored XSS",
       "description": "KeepInMind 0.8.4.2 -  Stored XSS",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52614.txt"
+    }
+  ],
+  "CVE-2026-100885": [
+    {
+      "source": "exploitdb",
+      "name": "Krayin CRM 2.2.4 - IDOR",
+      "description": "Krayin CRM 2.2.4 - IDOR",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52687.txt"
     }
   ],
   "CVE-2026-38526": [
@@ -1715,6 +1731,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52540.py"
     }
   ],
+  "CVE-2026-69137": [
+    {
+      "source": "exploitdb",
+      "name": "SuiteCRM  8.10.1 - Authenticated SSRF",
+      "description": "SuiteCRM  8.10.1 - Authenticated SSRF",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52686.py"
+    }
+  ],
   "CVE-2026-25961": [
     {
       "source": "exploitdb",
@@ -1745,6 +1769,20 @@
       "name": "Wolf CMS 0.8.3.1 - RCE v",
       "description": "Wolf CMS 0.8.3.1 - RCE v",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52672.py"
+    }
+  ],
+  "CVE-2026-87902": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress 7.0.2 - Path Travesal",
+      "description": "WordPress 7.0.2 - Path Travesal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52690.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Core - PHP Template Path Traversal",
+      "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87902.yaml"
     }
   ],
   "CVE-2026-3180": [
@@ -3877,6 +3915,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49060.yaml"
     }
   ],
+  "CVE-2026-49468": [
+    {
+      "source": "nuclei",
+      "name": "LiteLLM Proxy < 1.84.0 - Host Header Authentication Bypass",
+      "description": "LiteLLM Proxy before 1.84.0 derives its public-route authorization check from a URL reconstructed with the unvalidated Host header. A Host value containing a fragment can make a protected request appear to target the public root route, bypassing the API-key check. Version 1.84.0 derives the route from the raw ASGI path instead.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49468.yaml"
+    }
+  ],
   "CVE-2026-49777": [
     {
       "source": "nuclei",
@@ -4747,14 +4793,6 @@
       "name": "CyberPanel 2.4.3-2.4.5 - AI Scanner Debug Disclosure",
       "description": "CyberPanel versions 2.4.3 through 2.4.5 expose unauthenticated AI Scanner debugging endpoints that disclose administrator usernames, API-key prefixes, scan identifiers, target domains, and account metadata. Unauthenticated attackers can enumerate panel administrators and recent scanner activity to inventory multi-tenant installations and facilitate follow-on attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87820.yaml"
-    }
-  ],
-  "CVE-2026-87902": [
-    {
-      "source": "nuclei",
-      "name": "WordPress Core - PHP Template Path Traversal",
-      "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87902.yaml"
     }
   ],
   "CVE-2026-88062": [
