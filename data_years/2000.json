@@ -41,6 +41,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20096.txt"
     }
   ],
+  "CVE-2000-0979": [
+    {
+      "source": "metasploit",
+      "name": "CVE-2000-0979 SMB Share Password Enumerator",
+      "description": "This module exploits CVE-2000-0979, an information disclosure vulnerability\n          in the share-level password authentication of Microsoft Windows 9x/Me SMB\n          servers. The server validates passwords one character at a time, allowing an\n          attacker to enumerate the correct password byte-by-byte based on the server\n          response. A zero-length password is always accepted, and each subsequent\n          character can be brute-forced individually, significantly reducing the search\n          space required to recover the full share password.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/smb/cve_2000_0979.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Windows 9x/ME - Share Level Password Bypass (1)",
+      "description": "Microsoft Windows 9x/ME - Share Level Password Bypass (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20283.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Windows 9x/ME - Share Level Password Bypass (2)",
+      "description": "Microsoft Windows 9x/ME - Share Level Password Bypass (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20284.txt"
+    }
+  ],
   "CVE-2000-0248": [
     {
       "source": "metasploit",
@@ -4503,20 +4523,6 @@
       "name": "Microsoft Windows 95/98 - UNC Buffer Overflow (2)",
       "description": "Microsoft Windows 95/98 - UNC Buffer Overflow (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/19608.c"
-    }
-  ],
-  "CVE-2000-0979": [
-    {
-      "source": "exploitdb",
-      "name": "Microsoft Windows 9x/ME - Share Level Password Bypass (1)",
-      "description": "Microsoft Windows 9x/ME - Share Level Password Bypass (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20283.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Microsoft Windows 9x/ME - Share Level Password Bypass (2)",
-      "description": "Microsoft Windows 9x/ME - Share Level Password Bypass (2)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20284.txt"
     }
   ],
   "CVE-2000-0929": [
