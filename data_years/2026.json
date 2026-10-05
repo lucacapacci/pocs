@@ -229,6 +229,12 @@
       "name": "AVideo Encoder getImage.php Unauthenticated Command Injection",
       "description": "This module exploits an unauthenticated OS command injection vulnerability\n          in AVideo Encoder's getImage.php endpoint (CVE-2026-29058).\n\n          The base64Url GET parameter is base64-decoded and injected directly into an\n          ffmpeg shell command within double quotes, without any sanitization or use of\n          escapeshellarg(). PHP's FILTER_VALIDATE_URL check does not block shell\n          metacharacters such as $() in the URL path, allowing command substitution.\n\n          A crafted URL like http://x/$(cmd) passes FILTER_VALIDATE_URL and is interpolated\n          into: ffmpeg -i \"{$url}\" ... resulting in arbitrary command execution as www-data.\n\n          The Encoder code is served by the main AVideo Apache container (mounted at\n          /Encoder), so exploitation gives access to the main application context including\n          database credentials and configuration.\n\n          Fixed in AVideo Encoder version 7.0 (commit 78178d1) which added escapeshellarg()\n          and shell metacharacter stripping.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/avideo_encoder_getimage_cmd_injection.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "WWBN AVideo Encoder < 7.0 - Unauthenticated OS Command Injection",
+      "description": "AVideo < 7.0 contains a command injection caused by shell command substitution in the base64Url GET parameter, letting unauthenticated attackers execute arbitrary OS commands, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-29058.yaml"
     }
   ],
   "CVE-2026-1731": [
@@ -2009,6 +2015,14 @@
       "name": "OpenFlagr <= 1.1.18 - Authentication Bypass",
       "description": "OpenFlagr <= 1.1.18 contains an authentication bypass caused by improper path normalization handling in HTTP middleware whitelist logic, letting attackers access protected API endpoints without valid credentials, exploit requires crafted requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0650.yaml"
+    }
+  ],
+  "CVE-2026-0692": [
+    {
+      "source": "nuclei",
+      "name": "BlueSnap Payment Gateway for WooCommerce <=3.4.0 - IPN Authorization Bypass",
+      "description": "BlueSnap Payment Gateway for WooCommerce <= 3.4.0 validates its unauthenticated IPN webhook using WooCommerce's client-IP geolocation, which trusts spoofed forwarding headers instead of requiring a webhook signature. Version 3.4.1 replaces the IP check with HMAC-SHA256 security headers. This detector supplies a generated, non-existent transaction ID, so the vulnerable code reaches the order lookup and returns `Order could not be found` without changing an order.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0692.yaml"
     }
   ],
   "CVE-2026-0702": [
@@ -4185,6 +4199,14 @@
       "name": "Yamcs <=5.8.6 - Cross-Site Scripting",
       "description": "Yamcs < 5.9.4 contains a stored XSS caused by inadequate HTML escaping of attacker-controlled redirect_uri parameter in authorization template, letting attackers execute JavaScript to steal authentication data, exploit requires user to open crafted URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55549.yaml"
+    }
+  ],
+  "CVE-2026-55552": [
+    {
+      "source": "nuclei",
+      "name": "Yamcs <=5.11.12 - Arbitrary File Read",
+      "description": "Yamcs through 5.11.12 serves static web resources through a handler that resolves the requested path against the configured web root without rejecting absolute paths. A request path that begins with a double slash is resolved as an absolute filesystem path, discarding the web root, and the handler returns the referenced file from the underlying host, letting unauthenticated attackers read any non-hidden file readable by the Yamcs service account whose path contains no dot segment.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55552.yaml"
     }
   ],
   "CVE-2026-55592": [
