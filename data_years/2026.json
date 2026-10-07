@@ -2481,6 +2481,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21484.yaml"
     }
   ],
+  "CVE-2026-21589": [
+    {
+      "source": "nuclei",
+      "name": "Atlassian Jira/Confluence/Bitbucket - Pre-Auth Arbitrary File Read",
+      "description": "Atlassian products including Jira, Confluence, and Bitbucket Data Center contain a pre-authentication arbitrary file read vulnerability in the shared atlassian-plugins-webresource library. The library improperly handles double colons (::) as path separators in the resource routing, allowing unauthenticated attackers to traverse the filesystem and read arbitrary files within the application server's webroot, including sensitive configuration files such as web.xml and crowd.properties containing plaintext credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21589.yaml"
+    }
+  ],
   "CVE-2026-21643": [
     {
       "source": "nuclei",
