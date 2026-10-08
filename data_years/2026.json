@@ -323,6 +323,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1340.yaml"
     }
   ],
+  "CVE-2026-86218": [
+    {
+      "source": "metasploit",
+      "name": "N-able N-central Struts BeanUtils Unauthenticated RCE",
+      "description": "N-able N-central before 2026.3.1.14 uses a session-scoped Struts form on\n          an unauthenticated action. Two concurrent multipart requests can race the\n          form's multipart handler and expose Jetty's live configuration to Commons\n          BeanUtils property population.\n\n          This module changes a lazy N-central servlet holder into Jetty's bundled\n          CGI servlet, configures it to invoke /bin/sh, and sends a command payload\n          through the holder's existing URL mapping. By default, a second CGI\n          request uses N-central's local JMX service and installed Java libraries to\n          stop only the changed holder and restore its original servlet in memory.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/nable_ncentral_unauth_rce_cve_2026_86218.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "N-able N-central <2026.3.1.14 - Pre-Authentication Remote Code Execution",
+      "description": "N-able N-central versions before 2026.3.1.14 are vulnerable to pre-authentication remote code execution via static code injection (CWE-96). An unauthenticated attacker with network access to the N-central management interface can execute arbitrary code on the server, potentially compromising every managed endpoint under the platform's control. Huntress confirmed active in-the-wild exploitation. N-able's hosted (NCOD) instances were automatically patched, on-premises deployments require manual upgrade to 2026.3.1.14. The N-central build version is exposed pre-authentication in the login page JavaScript object (ncentralVersion), enabling reliable version-based detection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86218.yaml"
+    }
+  ],
   "CVE-2026-28515": [
     {
       "source": "metasploit",
@@ -419,6 +433,14 @@
       "name": "Copy Fail AF_ALG + authencesn Page-Cache Write",
       "description": "CVE-2026-31431 is a logic flaw in the Linux kernel's authencesn AEAD template that, when reached via the\n          AF_ALG socket interface combined with splice(), allows an unprivileged local user to perform a controlled\n          4-byte write into the page cache of any readable file. Because the corrupted pages are never marked dirty, the\n          on-disk file is unchanged but the in-memory version is immediately visible system-wide, enabling local\n          privilege escalation by injecting shellcode into the page cache of a setuid-root binary such as /usr/bin/su.\n          The vulnerability was introduced by an in-place optimization in algif_aead.c (commit 72548b093ee3, 2017) and\n          affects essentially all major Linux distributions shipped since then until the fix in commit a664bf3d603d.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_31431_copy_fail.rb"
+    }
+  ],
+  "CVE-2026-3888": [
+    {
+      "source": "metasploit",
+      "name": "Local Privilege Escalation in snapd",
+      "description": "The `snap-confine` in some Ubuntu versions is vulnerable to race condition, when setting up snap sandbox and creating mimic of /usr/lib/x86_64-linux-gnu.\n          The snapd package is vulnerable up to version 2.74.1+ubuntu26.04.3 - however, each minor version has its own patch.\n          The time window between creating bind-mounted copies of real libraries and copying them into sandbox /usr/lib/x86_64-linux-gnu allows the attacker to take control of content of those libraries by recreating /tmp/.snap folder.\n          This folder is owned by root, but it's auto-deleted after 30 days without activity (by default on Ubuntu 24.04+).\n          The attacker can recreate this folder once it is deleted and take over the sandboxed libraries.\n          After gaining root inside sandbox, it can escape the sandbox by copying setuid binary into host filesystem.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/cve_2026_3888.rb"
     }
   ],
   "CVE-2026-43284": [
@@ -677,6 +699,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_rce_cve_2026_19295.rb"
     }
   ],
+  "CVE-2026-7873": [
+    {
+      "source": "metasploit",
+      "name": "Langflow AI Code Validation Authenticated RCE",
+      "description": "Langflow versions 1.0.0 through 1.10.0 are susceptible to authenticated remote code\n          execution due to improper validation of code in the `/api/v1/validate/code` endpoint.\n\n          Arbitrary code is executed under the context of the backend Langflow process.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_rce_cve_2026_7873.rb"
+    }
+  ],
   "CVE-2026-0770": [
     {
       "source": "metasploit",
@@ -703,6 +733,20 @@
       "name": "Langflow RCE",
       "description": "The CSV Agent node in Langflow hardcodes allow_dangerous_code=True, which automatically exposes LangChain's Python REPL tool (python_repl_ast).\n          As a result, an attacker can execute arbitrary Python and OS commands on the server via prompt injection, leading to full Remote Code Execution (RCE).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_rce_cve_2026_27966.rb"
+    }
+  ],
+  "CVE-2026-0768": [
+    {
+      "source": "metasploit",
+      "name": "Langflow AI Validate Code Injection unauth RCE",
+      "description": "Langflow version 1.4.2 is susceptible to unauthenticated\n          remote code execution due to improper handling of the code\n          parameter provided to the `/validate` endpoint.\n\n          Arbitrary code is executed under the context of the backend\n          Langflow process.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_unauth_rce_cve_2026_0768.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow <=1.2.x - Unauthenticated Remote Code Execution via validate_code",
+      "description": "Langflow <= 1.2.x exposes POST /api/v1/validate/code without any authentication. The endpoint calls validate_code() which exec()s user-supplied Python code. Default-argument expressions in Python execute at function-definition time, allowing arbitrary OS command execution without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0768.yaml"
     }
   ],
   "CVE-2026-33017": [
@@ -2047,14 +2091,6 @@
       "name": "WP Content Permission <= 1.2 - Cross-Site Scripting",
       "description": "The WP Content Permission plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'ohmem-message' parameter in all versions up to, and including, 1.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0743.yaml"
-    }
-  ],
-  "CVE-2026-0768": [
-    {
-      "source": "nuclei",
-      "name": "Langflow <=1.2.x - Unauthenticated Remote Code Execution via validate_code",
-      "description": "Langflow <= 1.2.x exposes POST /api/v1/validate/code without any authentication. The endpoint calls validate_code() which exec()s user-supplied Python code. Default-argument expressions in Python execute at function-definition time, allowing arbitrary OS command execution without authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0768.yaml"
     }
   ],
   "CVE-2026-0829": [
@@ -4791,14 +4827,6 @@
       "name": "N-able N-central - Authentication Bypass",
       "description": "An authentication bypass in N-central < 2026.3 HF 3 leads to authentication bypass in internal-only APIs.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86207.yaml"
-    }
-  ],
-  "CVE-2026-86218": [
-    {
-      "source": "nuclei",
-      "name": "N-able N-central <2026.3.1.14 - Pre-Authentication Remote Code Execution",
-      "description": "N-able N-central versions before 2026.3.1.14 are vulnerable to pre-authentication remote code execution via static code injection (CWE-96). An unauthenticated attacker with network access to the N-central management interface can execute arbitrary code on the server, potentially compromising every managed endpoint under the platform's control. Huntress confirmed active in-the-wild exploitation. N-able's hosted (NCOD) instances were automatically patched, on-premises deployments require manual upgrade to 2026.3.1.14. The N-central build version is exposed pre-authentication in the login page JavaScript object (ncentralVersion), enabling reliable version-based detection.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86218.yaml"
     }
   ],
   "CVE-2026-86242": [
