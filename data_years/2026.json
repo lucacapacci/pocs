@@ -4965,6 +4965,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9290.yaml"
     }
   ],
+  "CVE-2026-93674": [
+    {
+      "source": "nuclei",
+      "name": "Langflow OSS <=1.12.2 - Unauthenticated RCE via Import Code Execution",
+      "description": "Langflow OSS 1.0.0 through 1.12.2 is vulnerable to unauthenticated remote code execution via the POST /api/v1/validate/code endpoint, which calls importlib.import_module() on user-supplied import statements, executing module top-level code instead of merely validating syntax.\nCombined with the default LANGFLOW_AUTO_LOGIN=true configuration (which issues a superuser JWT from GET /api/v1/auto_login with no credentials) and the custom_component exec() sink (POST /api/v1/custom_component, which can plant arbitrary Python modules into site-packages), a remote unauthenticated attacker achieves arbitrary OS command execution.\nFixed in 1.12.3 by replacing importlib.import_module() with importlib.util.find_spec() (commit 461506ac2f).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93674.yaml"
+    }
+  ],
   "CVE-2026-9506": [
     {
       "source": "nuclei",
