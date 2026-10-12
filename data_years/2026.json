@@ -2205,6 +2205,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12394.yaml"
     }
   ],
+  "CVE-2026-12609": [
+    {
+      "source": "nuclei",
+      "name": "Eclipse Theia - Unauthenticated Path Traversal",
+      "description": "Eclipse Theia's plugin-ext backend exposes the hostedPlugin endpoint without constraining the resolved path to the plugin directory. An unauthenticated request using encoded traversal sequences can therefore read files accessible to the backend process. The built-in vscode_bat plugin identifier provides a deterministic anchor without target-specific setup.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12609.yaml"
+    }
+  ],
   "CVE-2026-1277": [
     {
       "source": "nuclei",
@@ -2907,6 +2915,14 @@
       "name": "WooCommerce Wholesale Lead Capture <= 2.0.3.1 - Unauthenticated Privilege Escalation",
       "description": "Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture <= 2.0.3.1 contains a broken access control vulnerability caused by incorrect privilege assignment, letting attackers escalate their privileges, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27542.yaml"
+    }
+  ],
+  "CVE-2026-27604": [
+    {
+      "source": "nuclei",
+      "name": "FOSSBilling 0.5.4-0.7.x - Unauthenticated System API Role Authorization Bypass",
+      "description": "FOSSBilling versions 0.5.4 through 0.7.x contain an authorization bypass in API role handling. The internal system role is accepted from the URL, resolves to the cron-admin identity, and reaches privileged system API methods without authentication, a session, or a CSRF token. Version 0.8.0 rejects the system route role.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27604.yaml"
     }
   ],
   "CVE-2026-27645": [
@@ -4213,6 +4229,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54236.yaml"
     }
   ],
+  "CVE-2026-54617": [
+    {
+      "source": "nuclei",
+      "name": "GravitLauncher LaunchServer <=5.7.11 - Unauthenticated Path Traversal to Arbitrary File Read",
+      "description": "LaunchServer's Netty FileServerHandler computes the served path by stripping one leading character on the assumption that every request-target begins with '/'. Netty's HttpServerCodec accepts a request-target without a leading slash verbatim, so a request without a leading slash bypasses path normalization and escapes the updatesDir. The file server is enabled by default (netty.fileServerEnabled=true) on 0.0.0.0:9274 with no authentication, allowing an unauthenticated remote GET to read any file readable by the LaunchServer process including its own ECDSA signing key (.keys/ecdsa_id), which signs access JWTs and enables full authentication bypass for any account.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54617.yaml"
+    }
+  ],
   "CVE-2026-54836": [
     {
       "source": "nuclei",
@@ -4531,6 +4555,14 @@
       "name": "PasswordPusher v1.45.11-v2.9.5 - Unauthenticated Anonymous Push Deletion via Ownership Bypass",
       "description": "PasswordPusher v1.45.11 through v2.9.5 allows unauthenticated deletion of anonymous pushes due to a nil==nil ownership-check bypass (CWE-863). The deletion guard evaluates (@push.user == current_user) || @push.deletable_by_viewer. For anonymous pushes, @push.user is nil; for unauthenticated requests, current_user is nil. Ruby evaluates nil==nil as true, so the ownership check passes and the deletable_by_viewer=false restriction is completely bypassed. Anyone who knows the secret URL token can permanently expire an anonymous push without any credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62382.yaml"
+    }
+  ],
+  "CVE-2026-63358": [
+    {
+      "source": "nuclei",
+      "name": "FileGator < 7.14.2 - Privilege Escalation",
+      "description": "FileGator accepts arbitrary Unix permission values via the '/chmoditems' API endpoint and passes the value directly to PHP's native 'chmod()' function through 'octdec()' conversion, with no validation. This allows an authenticated user with 'chmod' permission to upgrade their privileges to root.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63358.yaml"
     }
   ],
   "CVE-2026-6433": [
@@ -4949,6 +4981,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9103.yaml"
     }
   ],
+  "CVE-2026-91136": [
+    {
+      "source": "nuclei",
+      "name": "Divi Plus <= 2.4.0 - Unauthenticated Arbitrary File Read",
+      "description": "The Divi Plus WordPress plugin through 2.4.0 exposes the /wp-json/elicus/v1/dipl-modules/svg-animator REST route with a permission callback that returns true unconditionally, and passes the svg_image parameter to file_get_contents() without any path restriction, so an unauthenticated attacker can read any file readable by the web server user.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-91136.yaml"
+    }
+  ],
   "CVE-2026-9133": [
     {
       "source": "nuclei",
@@ -4995,6 +5035,14 @@
       "name": "Sangoma Switchvox < 8.4.0.2 - Unauthenticated SQL Injection",
       "description": "Sangoma Switchvox before version 8.4.0.2 contains an unauthenticated SQL injection vulnerability in the /pa endpoint (PhoneAppsHandler.pm). The PhoneIP field extracted from an XML POST body is concatenated directly into an unparameterized PostgreSQL query that runs as a database superuser. An attacker can break out of the single-quoted SQL string context and leverage PostgreSQL COPY TO PROGRAM to execute arbitrary operating system commands without authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9586.yaml"
+    }
+  ],
+  "CVE-2026-9833": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Tag Groups < 2.2.0 - Reflected Cross-Site Scripting",
+      "description": "The Tag Groups WordPress plugin < 2.2.0 contains a stored XSS caused by improper escaping of an AJAX parameter reflected in an HTML response, letting unauthenticated attackers execute arbitrary JavaScript in browsers of logged-in users with edit_pages capability, exploit requires victim interaction.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9833.yaml"
     }
   ],
   "CVE-2026-23829": [
