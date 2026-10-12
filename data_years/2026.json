@@ -2813,6 +2813,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
+  "CVE-2026-26077": [
+    {
+      "source": "nuclei",
+      "name": "Discourse - Unauthenticated Mailpace Webhook Bounce-Score Forgery",
+      "description": "Discourse's WebhooksController contains a missing-authentication flaw caused by accepting requests to provider webhook endpoints (including /webhooks/mailpace, SendGrid, Mailjet, Mandrill, Postmark, and SparkPost) without validating a token when none is configured, which is the default state, letting an unauthenticated attacker forge webhook payloads.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-26077.yaml"
+    }
+  ],
   "CVE-2026-2614": [
     {
       "source": "nuclei",
