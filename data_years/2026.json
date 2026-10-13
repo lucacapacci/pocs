@@ -15,6 +15,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/networking/cisco_sdwan_vhub_auth_bypass.rb"
     }
   ],
+  "CVE-2026-53959": [
+    {
+      "source": "metasploit",
+      "name": "4gaBoards Mass User Information Disclosure (CVE-2026-53959)",
+      "description": "This module exploits a broken access control vulnerability in 4gaBoards versions 3.3.8 or less.\n          The /api/users endpoint allows any authenticated user to enumerate account information for every user.\n          Responses expose email, phone, organization, name, isAdmin, ssoGoogleEmail, ssoGithubEmail, and other SSO-linked email fields.\n\n          The module first creates a new user with the supplied email to obtain an access token.\n          The access token is then used to dump information of all users registered on the application.\n          If valid administrator credentials are provided, the module also performs cleanup by deleting the newly created user account.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/gather/4gaboards_users_info_disclosure_cve_2026_53959.rb"
+    }
+  ],
   "CVE-2026-28501": [
     {
       "source": "metasploit",
@@ -1803,6 +1811,12 @@
       "name": "SuiteCRM  8.10.1 - Authenticated SSRF",
       "description": "SuiteCRM  8.10.1 - Authenticated SSRF",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52686.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "SuiteCRM <= 7.15.1, <= 8.10.1 - Authenticated SSRF",
+      "description": "SuiteCRM CalendarAccount testConnection accepts an attacker-controlled server_url and passes it to cURL without destination validation. An authenticated user can cause a server-side request to loopback or internal network services.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-69137.yaml"
     }
   ],
   "CVE-2026-25961": [
@@ -2965,6 +2979,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27833.yaml"
     }
   ],
+  "CVE-2026-27934": [
+    {
+      "source": "nuclei",
+      "name": "Discourse < 2026.1.2/2026.2.1/2026.3.0-latest.1 - Unauthenticated Private User Action Disclosure",
+      "description": "Discourse < 2026.1.2/2026.2.1/2026.3.0-latest.1 contains an information disclosure vulnerability caused by lack of visibility checks in a user action API endpoint, letting unauthorized users access post titles and excerpts, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27934.yaml"
+    }
+  ],
   "CVE-2026-27944": [
     {
       "source": "nuclei",
@@ -3283,6 +3305,14 @@
       "name": "Canto <= 3.1.1 - Missing Authorization to Unauthenticated File Upload",
       "description": "The Canto plugin for WordPress is vulnerable to missing authorization in the copy-media.php upload flow.\nThe file is directly accessible and accepts attacker-controlled parameters for the upload destination, allowing unauthenticated users to upload arbitrary files constrained to WordPress-allowed MIME types.\nThe fbc_app_api parameter controls the domain WordPress fetches from via wp_safe_remote_get, enabling SSRF to attacker-controlled infrastructure.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3335.yaml"
+    }
+  ],
+  "CVE-2026-33425": [
+    {
+      "source": "nuclei",
+      "name": "Discourse - Private Group Membership Inference via exclude_groups",
+      "description": "Discourse < 2026.3.0-latest.1, 2026.2.1, and 2026.1.2 contains an information disclosure caused by unauthenticated users observing directory results changes with the exclude_groups parameter, letting attackers determine private group membership, exploit requires public access to user directory.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33425.yaml"
     }
   ],
   "CVE-2026-33439": [
@@ -4565,6 +4595,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63358.yaml"
     }
   ],
+  "CVE-2026-6377": [
+    {
+      "source": "nuclei",
+      "name": "Next4Biz CSM - Arbitrary File Read via DownloadFileHandler",
+      "description": "Next4Biz CSM exposes the DownloadFileHandler.ashx endpoint, whose file parameter is passed to a path helper that never confirms the resolved path stays inside the upload directory before the file is streamed back. Because Path.Combine returns an absolute second argument verbatim, an unauthenticated attacker can supply an absolute Windows path and read any file the IIS application pool identity can open.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6377.yaml"
+    }
+  ],
   "CVE-2026-6433": [
     {
       "source": "nuclei",
@@ -4721,7 +4759,7 @@
     {
       "source": "nuclei",
       "name": "GeoServer jsonArrayContains CQL Filter - SQL Injection",
-      "description": "GeoServer is an open source software server written in Java that allows users to share and edit geospatial data. GeoTools FilterToSqlHelper.constructEquality writes the expected argument of the jsonArrayContains CQL function RAW into the SQL string while only escaping the JSON pointer. A single quote in the value parameter breaks out of the PostgreSQL jsonb_path_exists string literal, enabling unauthenticated SQL injection. When the PostGIS backend runs with superuser privileges, the injection escalates to operating system command execution through PostgreSQL COPY TO PROGRAM. Users are advised to upgrade to either version 2.21.4, or version 2.22.2 to resolve this issue. Users unable to upgrade should enable the PostGIS DataStore preparedStatements setting and disable encode functions as a workaround.\n",
+      "description": "GeoServer is an open source software server written in Java that allows users to share and edit geospatial data. GeoTools FilterToSqlHelper.constructEquality writes the expected argument of the jsonArrayContains CQL function RAW into the SQL string while only escaping the JSON pointer. A single quote in the value parameter breaks out of the PostgreSQL jsonb_path_exists string literal, enabling unauthenticated SQL injection. When the PostGIS backend runs with superuser privileges, the injection escalates to operating system command execution through PostgreSQL COPY TO PROGRAM. Patches are available in GeoTools 33.6 and 34.5. No known workaround is available, so the scope can only be limited by restricting which CQL functions are exposed.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76904.yaml"
     }
   ],
@@ -4757,12 +4795,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8037.yaml"
     }
   ],
+  "CVE-2026-80462": [
+    {
+      "source": "nuclei",
+      "name": "Chef Automate API Gateway - Authentication Bypass",
+      "description": "Chef Automate derives an internal service identity from an X.509 certificate supplied in a request header without verifying its issuer. The load balancer blanks X-Client-Cert but does not strip the Grpc-Metadata- prefixed variants, which grpc-gateway rewrites into the metadata key the gateway's auth middleware reads. A remote unauthenticated attacker can present a self-signed certificate naming an internal service such as deployment-service and be authenticated as that service.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-80462.yaml"
+    }
+  ],
   "CVE-2026-8054": [
     {
       "source": "nuclei",
       "name": "dotCMS Core Publish Audit API - Unauthenticated SQL Injection",
       "description": "dotCMS Core 25.11.04-1 through 26.04.28-02 contains an SQL injection caused by unsanitized input in Publish Audit API endpoints (/api/auditPublishing/get and /api/auditPublishing/getAll), letting remote unauthenticated attackers read, modify, or destroy arbitrary database content, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8054.yaml"
+    }
+  ],
+  "CVE-2026-8089": [
+    {
+      "source": "nuclei",
+      "name": "WordPress weMail < 2.1.3 - Cross-Site Scripting",
+      "description": "The weMail plugin for WordPress < 2.1.3 is vulnerable to reflected cross-site scripting. The plugin does not properly escape a user-supplied parameter before reflecting it into an HTML attribute on a non-nonce-protected AJAX response.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8089.yaml"
     }
   ],
   "CVE-2026-81199": [
