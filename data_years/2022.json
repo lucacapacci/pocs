@@ -5077,6 +5077,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-28033.yaml"
     }
   ],
+  "CVE-2022-28108": [
+    {
+      "source": "nuclei",
+      "name": "Selenium Grid < 4.0.0-alpha-7 - Remote Code Execution",
+      "description": "Selenium Server (Grid) before 4.0.0-alpha-7 permits unauthenticated session creation and unsafe capability injection via /wd/hub/session due to missing Origin validation and weak content-type enforcement.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2022/CVE-2022-28108.yaml"
+    }
+  ],
   "CVE-2022-28290": [
     {
       "source": "nuclei",
