@@ -353,6 +353,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86218.yaml"
     }
   ],
+  "CVE-2026-27960": [
+    {
+      "source": "metasploit",
+      "name": "OpenCTI Authentication Bypass and Notifier EJS Remote Code Execution",
+      "description": "This module chains CVE-2026-27960 and CVE-2026-39980 to achieve\n          unauthenticated remote command execution against vulnerable OpenCTI\n          instances.\n\n          CVE-2026-27960 allows an unauthenticated attacker to authenticate to\n          the GraphQL API using the UUID of an existing user as a bearer token.\n          By default, this module uses OpenCTI's deterministic default\n          administrator UUID. A different user UUID can be supplied with USER_ID.\n\n          After confirming the authentication bypass, the module locates the\n          Platform mailer notification connector and exploits CVE-2026-39980,\n          an EJS notifier template sanitizer bypass, to execute a Unix command in\n          the OpenCTI Node.js process context.\n\n          The full unauthenticated chain applies where the affected version\n          ranges overlap: OpenCTI 6.6.0 through 6.9.4.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/opencti_notifier_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "OpenCTI < 6.9.13 - Authentication Bypass via User Impersonation",
+      "description": "OpenCTI < 6.9.13 allows authentication bypass by supplying a Bearer token set to the admin user's internal_id UUID instead of a valid JWT. The default admin internal_id (88ec0c6a-13ce-5e39-b486-354fe4a7084f) grants full admin access to the GraphQL API, effectively bypassing all authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27960.yaml"
+    }
+  ],
+  "CVE-2026-39980": [
+    {
+      "source": "metasploit",
+      "name": "OpenCTI Authentication Bypass and Notifier EJS Remote Code Execution",
+      "description": "This module chains CVE-2026-27960 and CVE-2026-39980 to achieve\n          unauthenticated remote command execution against vulnerable OpenCTI\n          instances.\n\n          CVE-2026-27960 allows an unauthenticated attacker to authenticate to\n          the GraphQL API using the UUID of an existing user as a bearer token.\n          By default, this module uses OpenCTI's deterministic default\n          administrator UUID. A different user UUID can be supplied with USER_ID.\n\n          After confirming the authentication bypass, the module locates the\n          Platform mailer notification connector and exploits CVE-2026-39980,\n          an EJS notifier template sanitizer bypass, to execute a Unix command in\n          the OpenCTI Node.js process context.\n\n          The full unauthenticated chain applies where the affected version\n          ranges overlap: OpenCTI 6.6.0 through 6.9.4.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/opencti_notifier_rce.rb"
+    }
+  ],
   "CVE-2026-28515": [
     {
       "source": "metasploit",
@@ -3009,14 +3031,6 @@
       "name": "Nginx UI < 2.3.3 - Information Disclosure",
       "description": "Nginx UI < 2.3.3 contains an information disclosure vulnerability caused by unauthenticated access to /api/backup endpoint exposing encryption keys in X-Backup-Security header, letting unauthenticated attackers download and decrypt full system backups.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27944.yaml"
-    }
-  ],
-  "CVE-2026-27960": [
-    {
-      "source": "nuclei",
-      "name": "OpenCTI < 6.9.13 - Authentication Bypass via User Impersonation",
-      "description": "OpenCTI < 6.9.13 allows authentication bypass by supplying a Bearer token set to the admin user's internal_id UUID instead of a valid JWT. The default admin internal_id (88ec0c6a-13ce-5e39-b486-354fe4a7084f) grants full admin access to the GraphQL API, effectively bypassing all authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27960.yaml"
     }
   ],
   "CVE-2026-27971": [
