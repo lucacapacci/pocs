@@ -2473,6 +2473,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18072.yaml"
     }
   ],
+  "CVE-2026-18143": [
+    {
+      "source": "nuclei",
+      "name": "Request Quote for WooCommerce <= 2.9.2 - Unauthenticated Arbitrary File Upload",
+      "description": "Request a Quote for WooCommerce plugin for WordPress <= 2.9.2 contains an unrestricted file upload vulnerability caused by missing file extension and MIME type validation in afrfq_submit_quote_via_popup(), letting unauthenticated attackers upload executable files, exploit requires enabled public quote rule with multi-page popup flow.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18143.yaml"
+    }
+  ],
   "CVE-2026-18577": [
     {
       "source": "nuclei",
