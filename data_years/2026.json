@@ -721,6 +721,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48907.yaml"
     }
   ],
+  "CVE-2026-93674": [
+    {
+      "source": "metasploit",
+      "name": "Langflow AI Auth Blind Command Injection",
+      "description": "Langflow versions 1.5.0 through 1.9.0 are susceptible to\n          authenticated blind command injection due to a flaw in how\n          the Langflow STDIO service launches processes through system shells.\n\n          OS commands are executed under the context of the running Langflow process.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_command_injection_cve_2026_93674.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow OSS <=1.12.2 - Unauthenticated RCE via Import Code Execution",
+      "description": "Langflow OSS 1.0.0 through 1.12.2 is vulnerable to unauthenticated remote code execution via the POST /api/v1/validate/code endpoint, which calls importlib.import_module() on user-supplied import statements, executing module top-level code instead of merely validating syntax.\nCombined with the default LANGFLOW_AUTO_LOGIN=true configuration (which issues a superuser JWT from GET /api/v1/auto_login with no credentials) and the custom_component exec() sink (POST /api/v1/custom_component, which can plant arbitrary Python modules into site-packages), a remote unauthenticated attacker achieves arbitrary OS command execution.\nFixed in 1.12.3 by replacing importlib.import_module() with importlib.util.find_spec() (commit 461506ac2f).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93674.yaml"
+    }
+  ],
   "CVE-2026-18729": [
     {
       "source": "metasploit",
@@ -5119,14 +5133,6 @@
       "name": "Check Point Security Management - Unauthenticated Directory Traversal to RCE",
       "description": "Check Point Management Server contains a directory traversal and unrestricted file upload vulnerability allowing unauthenticated attackers to upload and execute arbitrary scripts remotely, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93616.yaml"
-    }
-  ],
-  "CVE-2026-93674": [
-    {
-      "source": "nuclei",
-      "name": "Langflow OSS <=1.12.2 - Unauthenticated RCE via Import Code Execution",
-      "description": "Langflow OSS 1.0.0 through 1.12.2 is vulnerable to unauthenticated remote code execution via the POST /api/v1/validate/code endpoint, which calls importlib.import_module() on user-supplied import statements, executing module top-level code instead of merely validating syntax.\nCombined with the default LANGFLOW_AUTO_LOGIN=true configuration (which issues a superuser JWT from GET /api/v1/auto_login with no credentials) and the custom_component exec() sink (POST /api/v1/custom_component, which can plant arbitrary Python modules into site-packages), a remote unauthenticated attacker achieves arbitrary OS command execution.\nFixed in 1.12.3 by replacing importlib.import_module() with importlib.util.find_spec() (commit 461506ac2f).\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93674.yaml"
     }
   ],
   "CVE-2026-9506": [
