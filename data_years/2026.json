@@ -2215,6 +2215,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10823.yaml"
     }
   ],
+  "CVE-2026-108578": [
+    {
+      "source": "nuclei",
+      "name": "Neterbit NW-431F - Unauthenticated SMS Disclosure",
+      "description": "Neterbit NW-431F 20250715 contains an information disclosure vulnerability caused by manipulation in /sms.json of the Embedded Web Server, letting remote attackers access sensitive information, exploit requires no special conditions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-108578.yaml"
+    }
+  ],
   "CVE-2026-1115": [
     {
       "source": "nuclei",
@@ -4119,6 +4127,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49468.yaml"
     }
   ],
+  "CVE-2026-49772": [
+    {
+      "source": "nuclei",
+      "name": "The Events Calendar 6.15.12 - 6.16.2 - Unauthenticated Blind SQL Injection",
+      "description": "The Events Calendar WordPress plugin versions 6.15.12 through 6.16.2 do not properly validate the order parameter of the experimental tec/v1 REST events endpoint, allowing unauthenticated attackers to run blind SQL queries and extract arbitrary database contents.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49772.yaml"
+    }
+  ],
   "CVE-2026-49777": [
     {
       "source": "nuclei",
@@ -4807,6 +4823,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7467.yaml"
     }
   ],
+  "CVE-2026-76268": [
+    {
+      "source": "nuclei",
+      "name": "Splunk Enterprise Patroni REST API - Missing Authentication RCE",
+      "description": "Splunk Enterprise versions 10.2.0 through 10.2.6 and 10.4.0 through 10.4.2 expose the Patroni REST API (PostgreSQL sidecar) on SHC members without authentication. An unauthenticated attacker can PATCH /config to set a malicious archive_command and POST /restart to trigger it, achieving remote code execution with the privileges of the PostgreSQL process via the classic Patroni RCE chain.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76268.yaml"
+    }
+  ],
   "CVE-2026-76904": [
     {
       "source": "nuclei",
@@ -5133,6 +5157,14 @@
       "name": "Check Point Security Management - Unauthenticated Directory Traversal to RCE",
       "description": "Check Point Management Server contains a directory traversal and unrestricted file upload vulnerability allowing unauthenticated attackers to upload and execute arbitrary scripts remotely, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93616.yaml"
+    }
+  ],
+  "CVE-2026-94169": [
+    {
+      "source": "nuclei",
+      "name": "The Grid <= 2.8.1 - Unauthenticated Code Injection",
+      "description": "Theme-one The Grid <= 2.8.1 contains a command injection caused by improper control of code generation, letting attackers execute arbitrary commands remotely, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-94169.yaml"
     }
   ],
   "CVE-2026-9506": [
