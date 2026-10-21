@@ -2239,6 +2239,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-108578.yaml"
     }
   ],
+  "CVE-2026-109618": [
+    {
+      "source": "nuclei",
+      "name": "PHP2Shell (CVE-2026-109618/CVE-2026-109619) - Vulnerable Version Detection",
+      "description": "Detects upstream PHP versions affected by the PHP2Shell vulnerabilities using\nthe exact version disclosed in the X-Powered-By response header. This is a\npassive version check and does not attempt exploitation or validate runtime\nconfiguration. Vendor packages may contain backported fixes without changing\nthe upstream PHP version string.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109618.yaml"
+    }
+  ],
   "CVE-2026-1115": [
     {
       "source": "nuclei",
