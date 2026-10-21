@@ -2415,6 +2415,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1492.yaml"
     }
   ],
+  "CVE-2026-15015": [
+    {
+      "source": "nuclei",
+      "name": "MountDev AI MCP Connector <= 1.6.1 - Unauthenticated Admin OAuth Token Exposure",
+      "description": "MountDev AI MCP Connector for WordPress (mountdev-ai-mcp-connector) <= 1.6.1 is vulnerable to unauthenticated authorization bypass (CWE-862) via its OAuth 2.0 implementation. The plugin exposes a publicly accessible Dynamic Client Registration endpoint (/mcp-register) at WordPress init-level that allows any unauthenticated caller to register arbitrary OAuth clients. The subsequent authorization endpoint (/wp-json/mountdev-ai-mcp-connector/v1/oauth/authorize) then auto-approves the OAuth flow using the first WordPress administrator account found via get_users({role: administrator, number: 1}), issuing an admin-bound authorization code without checking who is making the request. Exchanging this code at /mcp-token yields a full Bearer token granting administrator-equivalent access to the MCP tool surface and all exposed WordPress content, users, options, and settings.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-15015.yaml"
+    }
+  ],
   "CVE-2026-15094": [
     {
       "source": "nuclei",
@@ -2509,6 +2517,14 @@
       "name": "Request Quote for WooCommerce <= 2.9.2 - Unauthenticated Arbitrary File Upload",
       "description": "Request a Quote for WooCommerce plugin for WordPress <= 2.9.2 contains an unrestricted file upload vulnerability caused by missing file extension and MIME type validation in afrfq_submit_quote_via_popup(), letting unauthenticated attackers upload executable files, exploit requires enabled public quote rule with multi-page popup flow.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18143.yaml"
+    }
+  ],
+  "CVE-2026-18315": [
+    {
+      "source": "nuclei",
+      "name": "TrueBooker <= 1.2.6 - Unauthenticated Authorization Bypass",
+      "description": "TrueBooker \u2013 Appointment Booking and Scheduler System WordPress plugin <= 1.2.6 contains an authorization bypass through user-controlled key caused by lack of authentication in admin_user_create_cus AJAX handler, letting unauthenticated attackers take over any user account by overwriting email and using lost-password flow, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18315.yaml"
     }
   ],
   "CVE-2026-18577": [
@@ -4207,6 +4223,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-50751.yaml"
     }
   ],
+  "CVE-2026-52715": [
+    {
+      "source": "nuclei",
+      "name": "GEO my WP <= 4.5.5 - Unauthenticated SQL Injection",
+      "description": "The GEO my WP plugin for WordPress up to and including 4.5.5 does not sanitise the swlatlng and nelatlng map boundary parameters of its locator search form. The values are split on a comma and concatenated directly into the SQL query, allowing unauthenticated attackers to run blind SQL queries and extract arbitrary database contents.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52715.yaml"
+    }
+  ],
   "CVE-2026-52773": [
     {
       "source": "nuclei",
@@ -4429,6 +4453,14 @@
       "name": "Provectus kafka-ui <=0.7.2 - Remote Code Execution",
       "description": "Provectus kafka-ui versions 0.7.0 through 0.7.2 are vulnerable to code injection in the `/api/smartfilters/testexecutions` endpoint. The `filterCode` parameter is evaluated as a Groovy expression without sandboxing, allowing an unauthenticated attacker to execute arbitrary code and operating-system commands on the host.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5562.yaml"
+    }
+  ],
+  "CVE-2026-56070": [
+    {
+      "source": "nuclei",
+      "name": "Advance Product Search <= 1.4.4 - Unauthenticated Time-Based Blind SQL Injection",
+      "description": "Advance Product Search 1.4.4 and earlier is vulnerable to unauthenticated time-based blind SQL injection. The plugin rebuilds the WordPress search SQL by hand and uses $wpdb->esc_like() which escapes LIKE wildcards but not single quotes, allowing injection through the ?s= parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56070.yaml"
     }
   ],
   "CVE-2026-5615": [
@@ -4807,6 +4839,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-71362.yaml"
     }
   ],
+  "CVE-2026-72867": [
+    {
+      "source": "nuclei",
+      "name": "Dokploy <= 0.29.12 - Authenticated RCE via Command Injection",
+      "description": "Dokploy <= 0.29.12 is vulnerable to authenticated OS command injection through the customGitBranch field of a compose service. The value is concatenated unsanitized into git clone --branch <customGitBranch> ... and executed via /bin/sh during deploy (packages/server/src/utils/providers/git.ts -> child_process.exec). An authenticated user can inject shell metacharacters to achieve remote code execution on the Dokploy host.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-72867.yaml"
+    }
+  ],
   "CVE-2026-72898": [
     {
       "source": "nuclei",
@@ -4917,6 +4957,14 @@
       "name": "WordPress Burst Statistics 3.4.0-3.4.1.1 - Authentication Bypass",
       "description": "Burst Statistics \u2013 Privacy-Friendly WordPress Analytics plugin 3.4.0 to 3.4.1.1 contains an authentication bypass caused by incorrect return-value handling in is_mainwp_authenticated() function, letting unauthenticated attackers impersonate administrators, exploit requires knowledge of an administrator username.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8181.yaml"
+    }
+  ],
+  "CVE-2026-82186": [
+    {
+      "source": "nuclei",
+      "name": "WordPress WPLP Cookie Consent < 4.4.2 - SQL Injection",
+      "description": "The WPLP Cookie Consent WordPress plugin before 4.4.2 does not properly validate a pagination parameter before using it in a SQL query, allowing users with administrator privileges to execute arbitrary SQL commands.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-82186.yaml"
     }
   ],
   "CVE-2026-82222": [
