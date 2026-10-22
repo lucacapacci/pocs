@@ -2189,6 +2189,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
     }
   ],
+  "CVE-2026-103956": [
+    {
+      "source": "nuclei",
+      "name": "Loom for AWS < 1.6.1 - Unauthenticated Super-Admin Access",
+      "description": "Loom for AWS < 1.6.1 contains a broken authentication caused by missing authentication for critical functions in the authentication dependency, letting remote actors obtain super-admin authority over the agent control plane, exploit requires no identity provider configured.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-103956.yaml"
+    }
+  ],
   "CVE-2026-104935": [
     {
       "source": "nuclei",
@@ -2256,9 +2264,17 @@
   "CVE-2026-109618": [
     {
       "source": "nuclei",
-      "name": "PHP2Shell (CVE-2026-109618/CVE-2026-109619) - Vulnerable Version Detection",
-      "description": "Detects upstream PHP versions affected by the PHP2Shell vulnerabilities using\nthe exact version disclosed in the X-Powered-By response header. This is a\npassive version check and does not attempt exploitation or validate runtime\nconfiguration. Vendor packages may contain backported fixes without changing\nthe upstream PHP version string.\n",
+      "name": "PHP2Shell (CVE-2026-109618/CVE-2026-109619) - Active Crash Detection",
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109618.yaml"
+    }
+  ],
+  "CVE-2026-110372": [
+    {
+      "source": "nuclei",
+      "name": "WordPress OttoKit Plugin <= 1.1.40 - Unauthenticated Privilege Escalation via connection-denied Token",
+      "description": "OttoKit (formerly SureTriggers) WordPress plugin <= 1.1.40 unauthenticated privilege escalation. When an admin denies the OttoKit SaaS connection, the plugin stores the fixed public string 'connection-denied' as the site API secret. The RestController::autheticate_user permission callback reads the 'st_authorization' request header, strips a 'Bearer ' prefix via sscanf($token,'Bearer %s'), then hash_equals() it against the stored secret. An attacker who sends 'st-authorization: Bearer connection-denied' is authenticated to the automation REST API and can create administrator accounts. Fixed in 1.1.41.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-110372.yaml"
     }
   ],
   "CVE-2026-1115": [
@@ -2331,6 +2347,14 @@
       "name": "URL Shortify <= 1.12.1 - Open Redirect",
       "description": "The URL Shortify plugin for WordPress is vulnerable to Open Redirect in all versions up to, and including, 1.12.1 due to insufficient validation on the 'redirect_to' parameter in the promotional dismissal handler. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites via a crafted link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1277.yaml"
+    }
+  ],
+  "CVE-2026-12800": [
+    {
+      "source": "nuclei",
+      "name": "Premium Packages \u2013 Sell Digital Products Securely - SQL Injection",
+      "description": "Premium Packages \u2013 Sell Digital Products Securely WordPress plugin <= 6.2.0 contains a SQL injection caused by insufficient escaping of 'code' parameter in CouponCodes::find() method, letting unauthenticated attackers extract sensitive database information via crafted SQL queries.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12800.yaml"
     }
   ],
   "CVE-2026-12898": [
@@ -2427,6 +2451,14 @@
       "name": "Realtyna Organic IDX/WPL <= 5.2.0 - Unauthenticated Arbitrary File Upload",
       "description": "Realtyna Organic IDX plugin + WPL Real Estate plugin for WordPress <= 5.2.0 contains an unrestricted file upload vulnerability caused by missing file type validation and static API credentials, letting unauthenticated attackers upload executable files and achieve remote code execution, exploit requires knowledge of static API credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-14483.yaml"
+    }
+  ],
+  "CVE-2026-14870": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Database for Contact Form 7, WPforms, Elementor forms < 1.5.3 - Cross-Site Scripting",
+      "description": "Database for Contact Form 7, WPforms, Elementor forms WordPress plugin < 1.5.3 contains a reflected XSS caused by improper sanitization and escaping of a parameter in an admin page, letting attackers execute scripts against admin users, exploit requires admin access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-14870.yaml"
     }
   ],
   "CVE-2026-14894": [
@@ -5093,6 +5125,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-84434.yaml"
     }
   ],
+  "CVE-2026-85097": [
+    {
+      "source": "nuclei",
+      "name": "Bricksforge WordPress Plugin <=3.1.8.9 - Unauthenticated Arbitrary File Upload",
+      "description": "Bricksforge WordPress plugin versions up to and including 3.1.8.9 are vulnerable to unauthenticated arbitrary file upload leading to remote code execution. An attacker obtains a wp_rest nonce via the bricksforge_regenerate_nonce AJAX action, uploads a GIF/PHP polyglot through the form_file_upload REST endpoint with the nonce in the X-WP-Nonce header, then triggers form_submit to copy the file to the WordPress media uploads directory where it executes as PHP. Requires a published Bricks Pro Form with a file field on the target; the post_id, form_id, and field_id template variables must be set accordingly.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85097.yaml"
+    }
+  ],
   "CVE-2026-85200": [
     {
       "source": "nuclei",
@@ -5107,6 +5147,14 @@
       "name": "TEN Framework - Arbitrary File Read & Write",
       "description": "TEN Framework 0.11.71 contains unauthenticated arbitrary file read and write vulnerabilities in the TMAN Designer file-content API endpoints, letting attackers read or write arbitrary files and execute code. The exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85688.yaml"
+    }
+  ],
+  "CVE-2026-85714": [
+    {
+      "source": "nuclei",
+      "name": "Stirling PDF <= 2.13.1 - H2 Database Import Remote Code Execution",
+      "description": "Stirling-PDF < 2.13.2 contains a command injection caused by insufficient SQL whitelist validation in DatabaseService.validateSqlContent(), letting authenticated administrators execute arbitrary OS commands via crafted SQL files, exploit requires admin authentication and default H2 database with security mode.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85714.yaml"
     }
   ],
   "CVE-2026-86206": [
