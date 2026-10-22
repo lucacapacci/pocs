@@ -2573,6 +2573,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
     }
   ],
+  "CVE-2026-18937": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Broken Link Checker < 2.4.12 - Remote Code Execution",
+      "description": "The Broken Link Checker WordPress plugin before 2.4.12 does not limit which query variables it accepts from user input on sites using plain permalinks, allowing unauthenticated users to overwrite arbitrary PHP global variables on the server when a classic (non-block) theme is active.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18937.yaml"
+    }
+  ],
   "CVE-2026-19092": [
     {
       "source": "nuclei",
@@ -4139,6 +4147,14 @@
       "name": "Starlette - Improper Validation of Unsafe Equivalence in Input",
       "description": "A flaw was found in Starlette, a lightweight ASGI (Asynchronous Server Gateway Interface) framework. A remote attacker could exploit this vulnerability by sending a specially crafted HTTP Host request header. This malformed header could cause the request.url to be incorrectly reconstructed, leading to a discrepancy with the actual requested path. Consequently, security restrictions enforced by middleware and endpoints that rely on request.url for validation could be bypassed, potentially allowing unauthorized access or actions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48710.yaml"
+    }
+  ],
+  "CVE-2026-4883": [
+    {
+      "source": "nuclei",
+      "name": "Piotnet Forms Pro <= 2.1.40 - Unauthenticated Arbitrary File Upload RCE",
+      "description": "Piotnet Forms WordPress plugin <= 2.1.40 contains an unrestricted file upload vulnerability caused by incomplete file extension blacklist in 'piotnetforms_ajax_form_builder', letting unauthenticated attackers upload arbitrary files, exploit requires a file field in the form.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4883.yaml"
     }
   ],
   "CVE-2026-48939": [
