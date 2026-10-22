@@ -1655,6 +1655,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52614.txt"
     }
   ],
+  "CVE-2026-18963": [
+    {
+      "source": "exploitdb",
+      "name": "Keycloak  26.7.2 - Unauthenticated Account Takeover",
+      "description": "Keycloak  26.7.2 - Unauthenticated Account Takeover",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52699.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Keycloak < 26.7.2 - Unauthenticated Account Takeover via Reset-Credentials Bypass",
+      "description": "Keycloak versions prior to 26.7.2, 26.6.6, and 26.4.15 contain a flaw in the reset-credentials flow that allows an unauthenticated attacker to bypass email verification and take over any user account. Two bugs are chained: (1) the tryAnotherWay handler stores a generic \"true\" selector note not scoped to the execution ID, and (2) ResetCredentialEmail.action() calls context.success() without verifying ACTION_TOKEN_USER_ID.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18963.yaml"
+    }
+  ],
   "CVE-2026-100885": [
     {
       "source": "exploitdb",
@@ -2557,14 +2571,6 @@
       "name": "LeadConnector < 3.0.22 - Unauthenticated Arbitrary Data Write",
       "description": "LeadConnector WordPress plugin < 3.0.22 contains a broken access control caused by missing authorization in a REST route, letting unauthenticated attackers overwrite existing data remotely, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1890.yaml"
-    }
-  ],
-  "CVE-2026-18963": [
-    {
-      "source": "nuclei",
-      "name": "Keycloak < 26.7.2 - Unauthenticated Account Takeover via Reset-Credentials Bypass",
-      "description": "Keycloak versions prior to 26.7.2, 26.6.6, and 26.4.15 contain a flaw in the reset-credentials flow that allows an unauthenticated attacker to bypass email verification and take over any user account. Two bugs are chained: (1) the tryAnotherWay handler stores a generic \"true\" selector note not scoped to the execution ID, and (2) ResetCredentialEmail.action() calls context.success() without verifying ACTION_TOKEN_USER_ID.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18963.yaml"
     }
   ],
   "CVE-2026-19092": [
@@ -5189,6 +5195,14 @@
       "name": "Bookly <=28.1 - IDOR Unauthenticated Sensitive Data Access",
       "description": "Bookly WordPress plugin <= 28.1 contains an insecure direct object reference caused by missing validation on 'conversation_id' parameter, letting unauthenticated attackers read and inject messages into any AI booking conversation, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89063.yaml"
+    }
+  ],
+  "CVE-2026-90774": [
+    {
+      "source": "nuclei",
+      "name": "rustypaste < 0.18.1 - Filename Header Path Traversal",
+      "description": "rustypaste before 0.18.1 contains a path traversal caused by improper validation of the custom filename HTTP header, letting attackers write files outside the upload directory.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-90774.yaml"
     }
   ],
   "CVE-2026-90898": [
