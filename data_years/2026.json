@@ -2571,6 +2571,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16268.yaml"
     }
   ],
+  "CVE-2026-16535": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Link Library < 7.9.4 - Cross-Site Scripting",
+      "description": "Link Library WordPress plugin < 7.9.4 contains a reflected XSS caused by unsanitised and unescaped parameter reflected in response, letting unauthenticated attackers execute scripts via user interaction.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16535.yaml"
+    }
+  ],
   "CVE-2026-17505": [
     {
       "source": "nuclei",
@@ -4571,6 +4579,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5562.yaml"
     }
   ],
+  "CVE-2026-56062": [
+    {
+      "source": "nuclei",
+      "name": "Quotes llama <= 3.1.5 - SQL Injection",
+      "description": "Quotes llama 3.1.5 and earlier contains a time-based blind SQL injection vulnerability caused by improper control of a SQL identifier. The select_search() AJAX handler (registered for guests via wp_ajax_nopriv_select_search) reads the attacker-controlled 'sc' parameter from $_POST and substitutes it into the query through the malformed wpdb placeholder '%1s'.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56062.yaml"
+    }
+  ],
   "CVE-2026-56070": [
     {
       "source": "nuclei",
@@ -5019,6 +5035,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76268.yaml"
     }
   ],
+  "CVE-2026-76460": [
+    {
+      "source": "nuclei",
+      "name": "Cisco Identity Services Engine - ise-kong API Gateway Authentication Bypass",
+      "description": "Cisco Identity Services Engine contains an authentication bypass caused by insufficient authentication control on an API endpoint, letting unauthenticated remote attackers gain unauthorized access, exploit requires crafted request to API endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76460.yaml"
+    }
+  ],
   "CVE-2026-76904": [
     {
       "source": "nuclei",
@@ -5145,6 +5169,14 @@
       "name": "argocd-mcp 0.8.0 - Unauthenticated MCP Session and Tool Access",
       "description": "argocd-mcp before 0.9.0 binds its MCP HTTP listener to all interfaces without requiring authentication. A remote unauthenticated attacker can initialize an MCP session, complete the handshake, and enumerate or invoke the full Argo CD tool surface using the operator's stored API token.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-82456.yaml"
+    }
+  ],
+  "CVE-2026-82901": [
+    {
+      "source": "nuclei",
+      "name": "Ultimate Addons for Contact Form 7 <= 3.5.50 - Arbitrary File Upload",
+      "description": "Ultimate Addons for Contact Form 7 (UACF7) <= 3.5.50 copies every file submitted through a Contact Form 7 [uacf7_signature] field into wp-content/uploads/uacf7-uploads/ with no file-type or extension validation when the PDF Generator module is enabled on the form. An unauthenticated attacker can POST to the public CF7 REST feedback endpoint and write an arbitrary file of any extension into the webroot (CWE-434). The written file is directly retrievable without authentication. The copy sink is addons/pdf-generator/pdf-generator.php, which stores the file as \"{time()}-{field_name}-{sanitize_file_name(basename)}\". Fixed in 3.5.51, which adds uacf7_is_safe_uploaded_file() with a MIME/extension allowlist.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-82901.yaml"
     }
   ],
   "CVE-2026-8383": [
@@ -5307,6 +5339,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89013.yaml"
     }
   ],
+  "CVE-2026-89026": [
+    {
+      "source": "nuclei",
+      "name": "Issabel Framework - Hard-Coded PBX API JWT Key",
+      "description": "Issabel Framework before commit b97dbaf uses a shared HS256 key for PBX API bearer tokens. This template uses the read-only AMI ExtensionState action to check whether the PBX API accepts a short-lived token signed with either the vulnerable upstream-source key or the key in the 5.0.0-2 RPM, after rejecting an unrelated key.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89026.yaml"
+    }
+  ],
   "CVE-2026-89063": [
     {
       "source": "nuclei",
@@ -5315,12 +5355,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89063.yaml"
     }
   ],
+  "CVE-2026-89079": [
+    {
+      "source": "nuclei",
+      "name": "Theme My Login <= 7.2.1 - Privilege Escalation",
+      "description": "Theme My Login (TML) <= 7.2.1 for WordPress is vulnerable to unauthenticated account takeover on multisite installations. The multisite-only filter tml_ms_filter_pre_insert_user_data(), hooked on wp_pre_insert_user_data, hashes and injects $_POST['user_pass1'] into the user record whenever the tml_user_passwords network option is enabled, WITHOUT checking the $update flag. During a lost password request (wp-login.php?action=lostpassword -> retrieve_password() -> wp_update_user()), this filter fires on the EXISTING target user, overwriting their password with an attacker-chosen value. An unauthenticated attacker can therefore take over any account, including a network administrator, by sending user_pass1 in the lost-password POST. Fixed in 7.2.2 (changeset 3696081 / commit 06b76231) by adding the $update guard and only applying the password during activation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89079.yaml"
+    }
+  ],
   "CVE-2026-90774": [
     {
       "source": "nuclei",
       "name": "rustypaste < 0.18.1 - Filename Header Path Traversal",
       "description": "rustypaste before 0.18.1 contains a path traversal caused by improper validation of the custom filename HTTP header, letting attackers write files outside the upload directory.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-90774.yaml"
+    }
+  ],
+  "CVE-2026-90817": [
+    {
+      "source": "nuclei",
+      "name": "REDCap >= 13.3.0 - Unauthenticated Remote Code Execution via Survey Passthru",
+      "description": "REDCap versions 13.3.0 through 16.0.48 LTS, 17.3.9 LTS, and 17.4.3 Standard contain an unauthenticated remote code execution vulnerability. The application is vulnerable to an authentication bypass via a double-URL-decoded __passthru parameter (%2569ndex.php -> index.php) on public survey endpoints, which routes requests to internal authenticated controllers. An unauthenticated attacker can abuse this routing flaw combined with PHP filter chains to inject and execute arbitrary code through the Laravel Blade template cache.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-90817.yaml"
     }
   ],
   "CVE-2026-90898": [
