@@ -2001,6 +2001,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52604.py"
     }
   ],
+  "CVE-2026-109618": [
+    {
+      "source": "exploitdb",
+      "name": "PHP2Shell (CVE-2026-109618) - PHP core versions after v5.4 - RCE",
+      "description": "PHP2Shell (CVE-2026-109618) - PHP core versions after v5.4 - RCE",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/52704.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "PHP2Shell (CVE-2026-109618/CVE-2026-109619) - Active Crash Detection",
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109618.yaml"
+    }
+  ],
   "CVE-2026-42607": [
     {
       "source": "exploitdb",
@@ -2283,14 +2297,6 @@
       "name": "Neterbit NW-431F - Unauthenticated SMS Disclosure",
       "description": "Neterbit NW-431F 20250715 contains an information disclosure vulnerability caused by manipulation in /sms.json of the Embedded Web Server, letting remote attackers access sensitive information, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-108578.yaml"
-    }
-  ],
-  "CVE-2026-109618": [
-    {
-      "source": "nuclei",
-      "name": "PHP2Shell (CVE-2026-109618/CVE-2026-109619) - Active Crash Detection",
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109618.yaml"
     }
   ],
   "CVE-2026-110372": [
@@ -2635,6 +2641,14 @@
       "name": "WordPress Broken Link Checker < 2.4.12 - Remote Code Execution",
       "description": "The Broken Link Checker WordPress plugin before 2.4.12 does not limit which query variables it accepts from user input on sites using plain permalinks, allowing unauthenticated users to overwrite arbitrary PHP global variables on the server when a classic (non-block) theme is active.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18937.yaml"
+    }
+  ],
+  "CVE-2026-19089": [
+    {
+      "source": "nuclei",
+      "name": "Product Input Fields for WooCommerce < 2.0.2 - Arbitrary File Upload to RCE",
+      "description": "WooCommerce WordPress plugin < 2.0.2 contains an unrestricted file upload vulnerability caused by lack of validation on uploaded file types when accepted-types setting is empty, letting unauthenticated attackers upload arbitrary files and achieve remote code execution on servers ignoring directory access rules, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19089.yaml"
     }
   ],
   "CVE-2026-19092": [
@@ -3957,6 +3971,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42461.yaml"
     }
   ],
+  "CVE-2026-42564": [
+    {
+      "source": "nuclei",
+      "name": "jotty.page < 1.22.0 - Path Traversal",
+      "description": "jotty\u00b7page < 1.22.0 contains a path traversal caused by lack of validation on filename parameter in /api/app-icons/[filename], letting unauthenticated attackers read arbitrary files outside intended directory.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42564.yaml"
+    }
+  ],
   "CVE-2026-42569": [
     {
       "source": "nuclei",
@@ -4883,6 +4905,14 @@
       "name": "AI Copilot Content Generator <=1.4.6 - Unauthenticated Task Data Exposure",
       "description": "AIWU AI Chatbot & Workflow Automation WordPress plugin <= 1.4.6 contains a sensitive information exposure caused by unauthenticated access to getCurrentTaskResults() method, letting unauthenticated attackers retrieve API keys and configuration data, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6639.yaml"
+    }
+  ],
+  "CVE-2026-66914": [
+    {
+      "source": "nuclei",
+      "name": "SEBLOD for Joomla < 3.30.0/< 4.7.0/< 6.0.1 - Path Traversal",
+      "description": "Joomla Extension SEBLOD < 3.30.0, < 4.7.0, < 6.0.1 contains an unauthenticated path traversal caused by improper validation of file paths, letting unauthenticated attackers download files inside and outside the webroot, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-66914.yaml"
     }
   ],
   "CVE-2026-67208": [
