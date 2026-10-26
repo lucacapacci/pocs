@@ -2227,6 +2227,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
     }
   ],
+  "CVE-2026-102782": [
+    {
+      "source": "nuclei",
+      "name": "OrdaSoft Simple Membership < 7.4.0 - SQL Injection",
+      "description": "OrdaSoft Simple Membership (com_simplemembership) for Joomla before 7.4.0 is vulnerable to unauthenticated SQL injection via the 'login' parameter of the checkLoginPass task (site/simplemembership.php). The handler passes the value through Joomla's generic input filter, which strips HTML but leaves quotes and SQL syntax intact, and concatenates it directly into the SQL query with no escaping or parameter binding. Error-based injection via extractvalue() lets unauthenticated attackers exfiltrate database contents.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102782.yaml"
+    }
+  ],
+  "CVE-2026-102878": [
+    {
+      "source": "nuclei",
+      "name": "mcp-chrome-bridge (hangwin/mcp-chrome) <= 1.0.31 - CORS Origin Bypass (CSWSH)",
+      "description": "mcp-chrome-bridge <=1.0.31 uses origin.startsWith for CORS, so origins like http://127.0.0.1.evil.com are wrongly allowed, letting attackers bypass CORS and access the local server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102878.yaml"
+    }
+  ],
   "CVE-2026-103956": [
     {
       "source": "nuclei",
@@ -2321,6 +2337,22 @@
       "name": "SMS Alert \u2013 SMS & OTP for WooCommerce - Privilege Escalation",
       "description": "The SMS Alert \u2013 SMS & OTP for WooCommerce, Order Notifications & Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.9.5. This is due to the plugin not properly validating a user's identity prior to updating their details like reset the password of any user account, including administrators, and gain full access to those accounts. This makes it possible for unauthenticated attackers to change arbitrary user's email addresses, including administrators, and leverage that to reset the user's password and gain access to their account. This is only vulnerable on sites with OTP verification for password resets enabled, and where the administrator (or other user) has set a phone number for OTP verification.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11387.yaml"
+    }
+  ],
+  "CVE-2026-11565": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Advanced File Manager < 5.4.13 - Arbitrary File Read",
+      "description": "The Advanced File Manager WordPress plugin before 5.4.13 does not perform capability checks in several of its file management AJAX actions, allowing users with any role to which an administrator has granted file-manager access (as low as Subscriber) to read arbitrary files on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11565.yaml"
+    }
+  ],
+  "CVE-2026-116067": [
+    {
+      "source": "nuclei",
+      "name": "Paisa < 0.7.8 - Unauthenticated Path Traversal",
+      "description": "Paisa < 0.7.8 contains a path traversal vulnerability caused by improper sanitization of file names in GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers, letting unauthenticated attackers read arbitrary files and delete backups via ../ sequences.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116067.yaml"
     }
   ],
   "CVE-2026-11801": [
@@ -2593,6 +2625,14 @@
       "name": "Seraphinite Accelerator <= 2.29.18 - Cross-Site Scripting",
       "description": "The Seraphinite Accelerator plugin for WordPress up to and including 2.29.18 was vulnerable to reflected cross-site scripting through the seraph_accel_prep parameter. CacheExtractPreparePageParams() compared the expected HMAC against the JSON-decoded nonce with PHP's loose != operator, so a JSON boolean true satisfied the comparison and bypassed the signature check, and _CbContentFinishSkip() then concatenated the attacker-controlled selfTest field straight into the response body, letting unauthenticated attackers inject arbitrary scripts.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17532.yaml"
+    }
+  ],
+  "CVE-2026-17540": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Bit File Manager < 6.9.1 - Arbitrary File Read",
+      "description": "The Bit File Manager WordPress plugin before 6.9.1 does not properly authorise its file management commands, allowing any authenticated user, such as a subscriber, to read and delete arbitrary files under the WordPress installation directory.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-17540.yaml"
     }
   ],
   "CVE-2026-17594": [
@@ -4747,6 +4787,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59509.yaml"
     }
   ],
+  "CVE-2026-59707": [
+    {
+      "source": "nuclei",
+      "name": "LocalAI < 4.6.0 - Server-Side Request Forgery",
+      "description": "LocalAI before 4.6.0 is affected by an unauthenticated server-side request forgery vulnerability in the POST /models/apply endpoint. The gallery `url` field is passed to the gallery config fetcher without validation, allowing an unauthenticated attacker to make the server issue HTTP requests to arbitrary internal, loopback, link-local, and cloud-metadata addresses. The outcome of the server-side fetch is reflected in the model-apply job status.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59707.yaml"
+    }
+  ],
   "CVE-2026-59726": [
     {
       "source": "nuclei",
@@ -5371,6 +5419,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-89079.yaml"
     }
   ],
+  "CVE-2026-9062": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Agile Store Locator < 1.6.9 - Arbitrary File Read",
+      "description": "The Agile Store Locator WordPress plugin before 1.6.9 does not validate a parameter before using it in a file path, allowing high-privileged users such as administrators to read arbitrary .php files from the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9062.yaml"
+    }
+  ],
   "CVE-2026-90774": [
     {
       "source": "nuclei",
@@ -5435,6 +5491,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9290.yaml"
     }
   ],
+  "CVE-2026-93485": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Core < 7.1.1 - Unauthenticated Stored XSS via Comment (Comment2Shell)",
+      "description": "WordPress core before 7.1.1 is vulnerable to unauthenticated stored XSS via crafted blockquote comments. wp_kses_post accepts a <blockquote> with a literal newline in the cite attribute, wpautop's non-quote-aware regex injects a <p> inside the cite value, and wptexturize leaves the attribute open so onfocus/autofocus land on <code> as real HTML attributes, giving zero-click stored XSS. Only triggers when comments are open and auto-approved.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-93485.yaml"
+    }
+  ],
   "CVE-2026-93616": [
     {
       "source": "nuclei",
@@ -5465,6 +5529,14 @@
       "name": "Sangoma Switchvox < 8.4.0.2 - Unauthenticated SQL Injection",
       "description": "Sangoma Switchvox before version 8.4.0.2 contains an unauthenticated SQL injection vulnerability in the /pa endpoint (PhoneAppsHandler.pm). The PhoneIP field extracted from an XML POST body is concatenated directly into an unparameterized PostgreSQL query that runs as a database superuser. An attacker can break out of the single-quoted SQL string context and leverage PostgreSQL COPY TO PROGRAM to execute arbitrary operating system commands without authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9586.yaml"
+    }
+  ],
+  "CVE-2026-97359": [
+    {
+      "source": "nuclei",
+      "name": "Rejetto HTTP File Server 2.4.x - Template Injection",
+      "description": "Rejetto HTTP File Server (HFS) 2.4.x inserts the multipart upload filename into the server-side template symbol map as %item-resource% without escaping. A filename containing the literal %item-resource% is substituted a second time by the sequential global replacement in xtpl(), allowing a :} sequence to terminate the quoting region so a following {.exec|...} macro is executed as an operating-system command. An unauthenticated attacker achieves remote code execution with a single request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-97359.yaml"
     }
   ],
   "CVE-2026-9833": [
