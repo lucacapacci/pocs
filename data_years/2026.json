@@ -2275,6 +2275,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10520.yaml"
     }
   ],
+  "CVE-2026-10525": [
+    {
+      "source": "nuclei",
+      "name": "NEX-Forms Express WP Form Builder < 9.2.3 - Unauthenticated Stored XSS",
+      "description": "NEX-Forms Express WP Form Builder plugin for WordPress before 9.2.3 is vulnerable to unauthenticated stored Cross-Site Scripting. The plugin registers a wp_ajax_nopriv_submit_nex_form handler for form submissions. Array-type field values are processed through rest_sanitize_array(), which only reindexes the array and performs no HTML sanitization, so markup is stored verbatim. When an administrator views the submitted entries, the stored payload renders without esc_html() escaping and executes arbitrary JavaScript in the admin's browser. Scalar fields are not affected (they are passed through strip_tags()).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10525.yaml"
+    }
+  ],
   "CVE-2026-10580": [
     {
       "source": "nuclei",
@@ -2345,6 +2353,14 @@
       "name": "WordPress Advanced File Manager < 5.4.13 - Arbitrary File Read",
       "description": "The Advanced File Manager WordPress plugin before 5.4.13 does not perform capability checks in several of its file management AJAX actions, allowing users with any role to which an administrator has granted file-manager access (as low as Subscriber) to read arbitrary files on the server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11565.yaml"
+    }
+  ],
+  "CVE-2026-116006": [
+    {
+      "source": "nuclei",
+      "name": "Ruoyi-Vue-Pro - Unauthenticated Admin Takeover via Predictable SMS Code",
+      "description": "ruoyi-vue-pro (Yudao) ships base configuration yudao.sms-code.begin-code=end-code=9999, so every generated SMS verification code is the constant \"9999\" in all profiles. The anonymous SMS-login flow therefore grants an access token to any account whose mobile number is known: send-sms-code followed by sms-login with code 9999 issues a full token, including for the seeded super administrator account (mobile 18818260272 in the shipped SQL). No CAPTCHA hook exists for scene=21 in any profile.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116006.yaml"
     }
   ],
   "CVE-2026-116067": [
@@ -2609,6 +2625,14 @@
       "name": "WordPress Link Library < 7.9.4 - Cross-Site Scripting",
       "description": "Link Library WordPress plugin < 7.9.4 contains a reflected XSS caused by unsanitised and unescaped parameter reflected in response, letting unauthenticated attackers execute scripts via user interaction.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16535.yaml"
+    }
+  ],
+  "CVE-2026-16959": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Media Library Assistant < 3.40 - SQL Injection",
+      "description": "The Media Library Assistant WordPress plugin before 3.40 does not validate a search parameter before concatenating it into a SQL query in one of its media-library query handlers, allowing users with the Author role and above to perform SQL injection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16959.yaml"
     }
   ],
   "CVE-2026-17505": [
@@ -5545,6 +5569,14 @@
       "name": "WordPress Tag Groups < 2.2.0 - Reflected Cross-Site Scripting",
       "description": "The Tag Groups WordPress plugin < 2.2.0 contains a stored XSS caused by improper escaping of an AJAX parameter reflected in an HTML response, letting unauthenticated attackers execute arbitrary JavaScript in browsers of logged-in users with edit_pages capability, exploit requires victim interaction.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9833.yaml"
+    }
+  ],
+  "CVE-2026-9848": [
+    {
+      "source": "nuclei",
+      "name": "WP Ticket <= 6.0.4 - SQL Injection",
+      "description": "WP Ticket (wp-ticket) for WordPress through 6.0.4 allows unauthenticated SQL injection via front-end search due to unsanitized use of the \"s\" parameter in emd_author_search_results(). Exploitation requires at least one guest ticket. Fixed in 6.0.5.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9848.yaml"
     }
   ],
   "CVE-2026-23829": [

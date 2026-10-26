@@ -6395,6 +6395,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-56512.yaml"
     }
   ],
+  "CVE-2024-56829": [
+    {
+      "source": "nuclei",
+      "name": "Huang Yaoshi Pharmaceutical Management Software - Unrestricted File Upload",
+      "description": "Huang Yaoshi Pharmaceutical Management Software up to 16.0 contains an unrestricted file upload caused by accepting .asp filenames in the UploadFile element of a SOAP request to /XSDService.asmx, letting attackers upload arbitrary files, exploit requires sending a crafted SOAP request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-56829.yaml"
+    }
+  ],
   "CVE-2024-57045": [
     {
       "source": "nuclei",
