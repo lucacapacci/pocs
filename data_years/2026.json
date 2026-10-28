@@ -2259,6 +2259,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-103956.yaml"
     }
   ],
+  "CVE-2026-104736": [
+    {
+      "source": "nuclei",
+      "name": "LearnPress <= 4.4.9.1 - PHP Object Injection",
+      "description": "LearnPress WordPress plugin <= 4.4.10 contains a PHP Object Injection caused by deserialization of untrusted 'checkout-email' parameter in checkout AJAX action, letting unauthenticated attackers inject PHP objects remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-104736.yaml"
+    }
+  ],
   "CVE-2026-104935": [
     {
       "source": "nuclei",
@@ -4737,6 +4745,14 @@
       "name": "Provectus kafka-ui <=0.7.2 - Remote Code Execution",
       "description": "Provectus kafka-ui versions 0.7.0 through 0.7.2 are vulnerable to code injection in the `/api/smartfilters/testexecutions` endpoint. The `filterCode` parameter is evaluated as a Groovy expression without sandboxing, allowing an unauthenticated attacker to execute arbitrary code and operating-system commands on the host.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5562.yaml"
+    }
+  ],
+  "CVE-2026-55864": [
+    {
+      "source": "nuclei",
+      "name": "GeoNetwork - Server-Side Request Forgery (SSRF)",
+      "description": "GeoNetwork versions 4.0.0 to 4.2.16 and 4.4.0 to 4.4.11 are vulnerable to an unauthenticated server-side request forgery (SSRF) in the SLD tool. The POST /srv/api/tools/ogc/sld endpoint accepts a caller-supplied WMS server URL and performs a server-side HTTP GetStyles request to it without any validation, allowing an anonymous attacker to make the server issue arbitrary outbound HTTP requests to internal services and read XML responses back.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55864.yaml"
     }
   ],
   "CVE-2026-56062": [
