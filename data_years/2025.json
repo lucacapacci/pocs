@@ -1,4 +1,24 @@
 {
+  "CVE-2025-58434": [
+    {
+      "source": "metasploit",
+      "name": "Flowise Authentication Bypass",
+      "description": "In Flowise versions 3.0.1 through 3.0.5, the `forgot-password` endpoint returns sensitive information including\n          a valid password reset `tempToken` without authentication or verification.\n          This enables any attacker to generate a reset token for arbitrary users and directly reset their password, leading to a\n          complete account takeover (ATO).",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/flowise_auth_bypass_cve_2025_58434.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
+      "description": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/typescript/webapps/52557.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Flowise <= 3.0.5 - Account Takeover",
+      "description": "Flowise versions 3.0.5 and earlier had a vulnerability in the forgot-password endpoint, which returned valid reset tokens without authentication\u2014allowing attackers to reset passwords and take over accounts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-58434.yaml"
+    }
+  ],
   "CVE-2025-64446": [
     {
       "source": "metasploit",
@@ -2937,20 +2957,6 @@
       "name": "ERPNext 14.82.1 - Account Takeover via Cross-Site Request Forgery (CSRF)",
       "description": "ERPNext 14.82.1 - Account Takeover via Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52283.txt"
-    }
-  ],
-  "CVE-2025-58434": [
-    {
-      "source": "exploitdb",
-      "name": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
-      "description": "Flowise < 3.0.5 - Missing Authentication for Critical Function",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/typescript/webapps/52557.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "Flowise <= 3.0.5 - Account Takeover",
-      "description": "Flowise versions 3.0.5 and earlier had a vulnerability in the forgot-password endpoint, which returned valid reset tokens without authentication\u2014allowing attackers to reset passwords and take over accounts.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-58434.yaml"
     }
   ],
   "CVE-2025-59254": [
