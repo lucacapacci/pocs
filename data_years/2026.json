@@ -1097,6 +1097,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/xerte_unauthenticated_template_import_rce.rb"
     }
   ],
+  "CVE-2026-76443": [
+    {
+      "source": "metasploit",
+      "name": "Cisco Secure Email Gateway S/MIME SQL Injection RCE",
+      "description": "This module exploits an unauthenticated SQL injection in Cisco Secure\n          Email Gateway S/MIME certificate harvesting. A sender-controlled email\n          address in a signing certificate is used in a PostgreSQL query without\n          escaping. The module sends one signed email whose certificate supplies\n          enough addresses to flush the asynchronous database writer, stacks COPY\n          TO PROGRAM, and runs a payload as root through AsyncOS runas and Python.\n\n          The check identifies the product through Cisco SEG's hidden SMTP\n          queue-status command. AsyncOS does not expose a version through a\n          benign SMTP command, so the check can only identify the product but not\n          if it is explicitly vulnerable. Public-key harvesting must be enabled on\n          the inbound mail flow policy for the target to be exploitable.\n\n          The Cisco advisory is vague so attributing this vulnerability to a specific CVE is\n          not obvious, but this appears to be CVE-2026-76443 rather than CVE-2026-76461\n          based on the IOCs available for CVE-2026-76461.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/smtp/cisco_secure_email_gateway_smime_sqli_rce.rb"
+    }
+  ],
   "CVE-2026-75604": [
     {
       "source": "metasploit",
@@ -2307,6 +2315,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10768.yaml"
     }
   ],
+  "CVE-2026-108123": [
+    {
+      "source": "nuclei",
+      "name": "WP Booking System <= 2.1.0.3 - Unauthenticated Email Log Disclosure",
+      "description": "WP Booking System \u2013 Booking Calendar plugin for WordPress <= 2.1.0.3 contains an authorization bypass caused by improper user authorization verification, letting unauthenticated attackers read stored notification emails exposing customer PII, exploit requires authenticated Subscriber-level user.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-108123.yaml"
+    }
+  ],
   "CVE-2026-10818": [
     {
       "source": "nuclei",
@@ -2363,6 +2379,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11565.yaml"
     }
   ],
+  "CVE-2026-115886": [
+    {
+      "source": "nuclei",
+      "name": "MLflow <3.17.0 - Unauthenticated SSRF via Third-Party (TruLens) Scorer",
+      "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 3.12.0rc0 until 3.17.0, the scorer invoke, register, and GenAI evaluate endpoints, including unauthenticated POST /ajax-api/3.0/mlflow/scorer/invoke, accept serialized third-party scorer data that Scorer.model_validate_json resolves using a module-path allowlist without constraining the selected class or its constructor arguments. When optional trulens and trulens-providers-litellm packages are installed, an attacker can select mlflow.genai.scorers.trulens, choose a model URI outside MLflow's native provider registry so execution uses the LiteLLM fallback, and supply api_base and api_key values that cause the server to send an outbound request to an attacker-chosen or internal host with attacker-controlled headers and body. The vulnerable deserialization occurs before a tracking-store lookup or job submission.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-115886.yaml"
+    }
+  ],
   "CVE-2026-116006": [
     {
       "source": "nuclei",
@@ -2377,6 +2401,22 @@
       "name": "Paisa < 0.7.8 - Unauthenticated Path Traversal",
       "description": "Paisa < 0.7.8 contains a path traversal vulnerability caused by improper sanitization of file names in GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers, letting unauthenticated attackers read arbitrary files and delete backups via ../ sequences.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116067.yaml"
+    }
+  ],
+  "CVE-2026-116070": [
+    {
+      "source": "nuclei",
+      "name": "Docker-Proxy hubcmdui - Missing Authentication on /api/config",
+      "description": "Docker-Proxy through 5.1.9 exposes the hubcmdui configuration endpoint /api/config without authentication. An unauthenticated remote attacker can read the full server configuration, including the WeChat/Telegram monitoring webhook URLs and bot token inside monitoringConfig, the menuItems structure and docker host settings, and can overwrite configuration via the unauthenticated POST handler. The fix restricts anonymous callers to a public subset (theme, language, logo, proxyDomain).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116070.yaml"
+    }
+  ],
+  "CVE-2026-116167": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan 2.9.0-3.8.6 - Unauthenticated XSS via check-auth \"to\" Parameter",
+      "description": "SiYuan 2.9.0 through 3.8.6 serves the unauthenticated /check-auth authorization page (app/stage/auth.html) with a script that assigns the `to` query parameter to window.location.href without scheme validation. A crafted link whose `to` value is a javascript: URI executes script in the kernel origin once the victim completes authentication on that page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116167.yaml"
     }
   ],
   "CVE-2026-116205": [
@@ -3073,6 +3113,14 @@
       "name": "AnythingLLM - Information Disclosure",
       "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24477.yaml"
+    }
+  ],
+  "CVE-2026-24898": [
+    {
+      "source": "nuclei",
+      "name": "OpenEMR < 8.0.0 - MedEx Callback Unauthenticated Token Disclosure",
+      "description": "OpenEMR < 8.0.0 contains an unauthenticated token disclosure caused by bypassing authentication in the MedEx callback endpoint, letting unauthenticated visitors obtain MedEx API tokens and perform unauthorized actions, exploit requires crafted POST request with callback_key.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24898.yaml"
     }
   ],
   "CVE-2026-25231": [
@@ -5337,6 +5385,14 @@
       "name": "GEO my WP <=4.5.5.3 - Unauthenticated Local File Inclusion",
       "description": "GEO my WP WordPress plugin <= 4.5.5.3 contains a local file inclusion caused by improper handling in gmw_posts_locator_ajax_info_window_loader function, letting unauthenticated attackers execute arbitrary PHP code remotely.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85200.yaml"
+    }
+  ],
+  "CVE-2026-85595": [
+    {
+      "source": "nuclei",
+      "name": "Traefik < 2.11.55 / 3.0.0 - 3.7.10 - Digest Authentication Bypass",
+      "description": "Traefik < 2.11.55 contains an authentication bypass caused by digestAuth middleware returning empty secret for unknown usernames, letting attackers bypass authentication on digestAuth-protected routes without valid credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-85595.yaml"
     }
   ],
   "CVE-2026-85688": [
