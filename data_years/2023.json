@@ -6757,6 +6757,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-5375.yaml"
     }
   ],
+  "CVE-2023-54335": [
+    {
+      "source": "nuclei",
+      "name": "eXtplorer <= 2.1.14 - Authentication Bypass",
+      "description": "eXtplorer <= 2.1.14 contains an authentication bypass in ext_find_user() (include/users.php). When the `password` POST field is omitted entirely, the password is NULL and the function returns the matching user record without checking any password. With the default \"admin\" account, an unauthenticated attacker can log in as administrator.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-54335.yaml"
+    }
+  ],
   "CVE-2023-54391": [
     {
       "source": "nuclei",
