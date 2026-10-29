@@ -4363,6 +4363,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48030.yaml"
     }
   ],
+  "CVE-2026-48048": [
+    {
+      "source": "nuclei",
+      "name": "XWiki Platform - Password Hash Disclosure",
+      "description": "XWiki Platform is a generic wiki platform. The patch for GHSA-5cf8-vrr8-8hjm / CVE-2023-26476 was insufficient. Starting with version 6.2.1 and prior to 16.10.17, 17.4.9, 17.10.13, and 18.0.0RC1, slightly modified LiveTableResults parameters (for example password_class) still allow an unauthenticated attacker to discover password hashes one bit at a time. With about 768 requests, the full password salt and hash of a user can be retrieved. The check for password and email properties does not consider the class passed via the _class parameters.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48048.yaml"
+    }
+  ],
   "CVE-2026-4810": [
     {
       "source": "nuclei",
