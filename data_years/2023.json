@@ -4933,6 +4933,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3169.yaml"
     }
   ],
+  "CVE-2023-31719": [
+    {
+      "source": "nuclei",
+      "name": "FUXA <= 1.1.12 - Unauthenticated SQL Injection",
+      "description": "FUXA <= 1.1.12 contains a SQL injection caused by unsanitized input in /api/signin, letting attackers execute arbitrary SQL commands, exploit requires sending crafted input to the endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-31719.yaml"
+    }
+  ],
   "CVE-2023-3188": [
     {
       "source": "nuclei",
