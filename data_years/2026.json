@@ -163,6 +163,34 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42208.yaml"
     }
   ],
+  "CVE-2026-25555": [
+    {
+      "source": "metasploit",
+      "name": "OpenBullet2 NTLMv2 Hash Disclosure via UNC Path Proxy Source",
+      "description": "This Metasploit module exploits a Credential Disclosure vulnerability in OpenBullet2 on Windows.\n\n          An attacker can force the application to disclose the NTLMv2 hash of the process user by configuring a job proxy source with a malicious UNC path.\n          When the job starts, the application attempts to load proxies from the specified path via SMB, allowing the hash to be captured for offline cracking or relaying.\n\n          The affected versions include releases from 0.2.5.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/openbullet2_unauth_hash_disclosure_cve_2026_39908.rb"
+    },
+    {
+      "source": "metasploit",
+      "name": "OpenBullet2 Unauthenticated RCE via Config Configuration Interface",
+      "description": "This Metasploit module exploits an Unauthenticated Remote Code Execution (RCE) vulnerability in OpenBullet2.\n\n          Attackers can leverage the plain C# execution mode, which lacks reference filtering or API restrictions, to access the file system, spawn processes, and invoke arbitrary .NET APIs as the process user.\n\n          The affected versions include releases from 0.2.5.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/openbullet2_unauth_rce_cve_2026_25856.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "OpenBullet2 <= 0.3.2 - Authentication Bypass",
+      "description": "OpenBullet2 <= 0.3.2 contains an authentication bypass caused by improper API key authentication middleware handling empty X-Api-Key header, letting unauthenticated attackers gain admin access, exploit requires sending empty X-Api-Key header.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25555.yaml"
+    }
+  ],
+  "CVE-2026-39908": [
+    {
+      "source": "metasploit",
+      "name": "OpenBullet2 NTLMv2 Hash Disclosure via UNC Path Proxy Source",
+      "description": "This Metasploit module exploits a Credential Disclosure vulnerability in OpenBullet2 on Windows.\n\n          An attacker can force the application to disclose the NTLMv2 hash of the process user by configuring a job proxy source with a malicious UNC path.\n          When the job starts, the application attempts to load proxies from the specified path via SMB, allowing the hash to be captured for offline cracking or relaying.\n\n          The affected versions include releases from 0.2.5.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/openbullet2_unauth_hash_disclosure_cve_2026_39908.rb"
+    }
+  ],
   "CVE-2026-0265": [
     {
       "source": "metasploit",
@@ -951,6 +979,14 @@
       "name": "MCPJam Inspector - Remote Code Execution",
       "description": "MCPJam inspector is the local-first development platform for MCP servers. The Latest version 1.4.2 and earlier are vulnerable to a remote code execution (RCE) vulnerability, which allows an attacker to send a crafted HTTP request that triggers the installation of an MCP server, leading to RCE.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23744.yaml"
+    }
+  ],
+  "CVE-2026-25856": [
+    {
+      "source": "metasploit",
+      "name": "OpenBullet2 Unauthenticated RCE via Config Configuration Interface",
+      "description": "This Metasploit module exploits an Unauthenticated Remote Code Execution (RCE) vulnerability in OpenBullet2.\n\n          Attackers can leverage the plain C# execution mode, which lacks reference filtering or API restrictions, to access the file system, spawn processes, and invoke arbitrary .NET APIs as the process user.\n\n          The affected versions include releases from 0.2.5.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/openbullet2_unauth_rce_cve_2026_25856.rb"
     }
   ],
   "CVE-2026-27760": [
@@ -3203,14 +3239,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25545.yaml"
     }
   ],
-  "CVE-2026-25555": [
-    {
-      "source": "nuclei",
-      "name": "OpenBullet2 <= 0.3.2 - Authentication Bypass",
-      "description": "OpenBullet2 <= 0.3.2 contains an authentication bypass caused by improper API key authentication middleware handling empty X-Api-Key header, letting unauthenticated attackers gain admin access, exploit requires sending empty X-Api-Key header.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25555.yaml"
-    }
-  ],
   "CVE-2026-25616": [
     {
       "source": "nuclei",
@@ -4601,6 +4629,14 @@
       "name": "Kimai <= 2.57.0 - Default APP_SECRET Authentication Bypass",
       "description": "Kimai Docker images <= 2.57.0 ship with a hardcoded APP_SECRET of \"change_this_to_something_unique\". This default secret is used by Symfony's SignatureHasher to HMAC-sign login links and remember-me cookies. An unauthenticated attacker who knows this default secret can forge valid authentication tokens and hijack any user account, including the super-admin.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52824.yaml"
+    }
+  ],
+  "CVE-2026-53468": [
+    {
+      "source": "nuclei",
+      "name": "Typemill CMS < 2.23.0 - Cross-Site Scripting",
+      "description": "Typemill CMS before version 2.23.0 is vulnerable to stored HTML attribute injection in the page metadata fields (og:title and og:description). An authenticated user with permission to modify page metadata can inject arbitrary HTML attributes into generated meta tags via the /api/v1/meta endpoint due to missing output encoding in the renderMeta() function in system/typemill/Assets.php.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53468.yaml"
     }
   ],
   "CVE-2026-53519": [
