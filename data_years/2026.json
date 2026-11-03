@@ -725,6 +725,12 @@
       "name": "GitLab CI/CD RegExp Integer Overflow Remote Code Execution",
       "description": "This module exploits an integer overflow in the Ruby regular expression compiler through\n          GitLab's CI lint API. An attacker with credentials for a user who can push to a public\n          project plants a crafted CI configuration and repository path. An unauthenticated CI\n          lint request then compiles the expression and executes a command as the GitLab git account.\n\n          The module selects the native pcode and libruby layout for affected official GitLab CE\n          and EE Docker images on Linux amd64. Each attempt allocates slightly more than 2 GiB and crashes a\n          Puma worker after execution. GitLab 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4\n          before 19.4.2 are affected.\n\n          The official 19.3.4 package already contains the Ruby overflow fix and is not supported.\n          Rebuilt packages and source installations may require different native layouts.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/gitlab_cicd_regexp_rce_cve_2026_97229.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "GitLab CE/EE < 19.2.8 / 19.3.5 / 19.4.2 - Unauthenticated RCE via Onigmo Integer Overflow",
+      "description": "GitLab CE/EE 19.2.0\u201319.2.7, 19.3.0\u201319.3.4, and 19.4.0\u201319.4.1 contain a remote code execution caused by insufficient regular expression validation in CI/CD configuration, letting unauthenticated users execute arbitrary code remotely, exploit requires crafted regex in CI/CD config\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-97229.yaml"
     }
   ],
   "CVE-2026-52806": [
@@ -817,6 +823,12 @@
       "name": "Langflow AI Code Validation Authenticated RCE",
       "description": "Langflow versions 1.0.0 through 1.10.0 are susceptible to authenticated remote code\n          execution due to improper validation of code in the `/api/v1/validate/code` endpoint.\n\n          Arbitrary code is executed under the context of the backend Langflow process.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_auth_rce_cve_2026_7873.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow 1.7.2-1.10.0 - Authenticated Remote Code Execution",
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 contains a command injection caused by insufficient input validation, letting authenticated attackers execute arbitrary OS commands and read sensitive files, exploit requires authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7873.yaml"
     }
   ],
   "CVE-2026-0770": [
@@ -2279,6 +2291,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
     }
   ],
+  "CVE-2026-102764": [
+    {
+      "source": "nuclei",
+      "name": "BeyondTrust Remote Support <= 26.2.3 - Origin Validation File Upload",
+      "description": "The vulnerability exists within internal components of BeyondTrust\u2019s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102764.yaml"
+    }
+  ],
   "CVE-2026-102782": [
     {
       "source": "nuclei",
@@ -2423,6 +2443,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1115.yaml"
     }
   ],
+  "CVE-2026-112866": [
+    {
+      "source": "nuclei",
+      "name": "Product Filter by WBW <= 3.4.6 - SQL Injection",
+      "description": "WPFactory Product Filter by WBW woo-product-filter <= 3.4.6 contains an SQL injection caused by improper neutralization of special elements in SQL commands, letting attackers perform blind SQL injection remotely, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-112866.yaml"
+    }
+  ],
   "CVE-2026-11387": [
     {
       "source": "nuclei",
@@ -2501,6 +2529,14 @@
       "name": "danmu_api - Unauthenticated Access to Admin API via Default Token",
       "description": "danmu_api before 1.21.7 contains an authentication bypass caused by default TOKEN usage and unset ADMIN_TOKEN, letting unauthenticated attackers modify server environment configuration via specific API endpoints, exploit requires default token configuration.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116485.yaml"
+    }
+  ],
+  "CVE-2026-116690": [
+    {
+      "source": "nuclei",
+      "name": "MLflow 3.10.0-3.16.1 - Arbitrary File Read",
+      "description": "MLflow 3.10.0 through 3.16.1 contains a path traversal in the prompt branch of the CreateModelVersion handler. The fix for CVE-2026-2614 only validated prompt sources that carry a URL scheme, so a schemeless relative path such as ../../../etc is stored unchanged as the model version artifact location and later served by the model-versions/get-artifact endpoint, letting unauthenticated remote attackers read arbitrary files from the server filesystem.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116690.yaml"
     }
   ],
   "CVE-2026-116748": [
@@ -2589,6 +2625,14 @@
       "name": "Frontend Post Submission Manager Lite <= 1.2.7 - Open Redirect",
       "description": "The Frontend Post Submission Manager Lite plugin for WordPress is vulnerable to Open Redirection in all versions up to, and including, 1.2.7 due to insufficient validation on the 'requested_page' POST parameter in the verify_username_password function. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites if they can successfully trick them into performing an action such as clicking on a link.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1296.yaml"
+    }
+  ],
+  "CVE-2026-12970": [
+    {
+      "source": "nuclei",
+      "name": "WordPress LearnPress < 4.4.1 - Cross-Site Scripting",
+      "description": "LearnPress < 4.4.1 does not escape the c_search parameter before reflecting it into the value attribute of the search input on the Course Builder questions page (/course-builder/questions/), allowing attribute-injection reflected XSS against authenticated admins/instructors.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12970.yaml"
     }
   ],
   "CVE-2026-13001": [
