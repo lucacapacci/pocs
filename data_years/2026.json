@@ -2371,6 +2371,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10525.yaml"
     }
   ],
+  "CVE-2026-105740": [
+    {
+      "source": "nuclei",
+      "name": "Langflow 1.8.3 and 1.9.0 - Authenticated MCP Stdio Command Execution",
+      "description": "An authenticated user can register an MCP stdio server command that executes\nwhen Langflow lists server actions. The 1.9.0 REST validation can be bypassed\nby placing arguments in the command field. This probe runs a short Python\ncallback, verifies an out-of-band DNS lookup, and removes its server config.\nThe equivalent sink is hardened in 1.10.3.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-105740.yaml"
+    }
+  ],
   "CVE-2026-10580": [
     {
       "source": "nuclei",
@@ -2417,6 +2425,14 @@
       "name": "Neterbit NW-431F - Unauthenticated SMS Disclosure",
       "description": "Neterbit NW-431F 20250715 contains an information disclosure vulnerability caused by manipulation in /sms.json of the Embedded Web Server, letting remote attackers access sensitive information, exploit requires no special conditions.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-108578.yaml"
+    }
+  ],
+  "CVE-2026-109619": [
+    {
+      "source": "nuclei",
+      "name": "PHP 8.2 < 8.2.35, 8.3 < 8.3.36, 8.4 < 8.4.27, 8.5 < 8.5.12 - Use-After-Free Remote Code Execution",
+      "description": "PHP 8.2 before 8.2.35, 8.3 before 8.3.36, 8.4 before 8.4.27, and 8.5 before 8.5.12 contain a use-after-free caused by request-owned global state that is not reset before the request heap is freed, letting unauthenticated attackers execute arbitrary code in a subsequent request handled by the same worker; exploitation requires a crafted request sequence and a reachable session or INI consumer.\nThis template performs a passive version check against the PHP version disclosed in the X-Powered-By or Server response header and does not send a crafted request. It follows same-origin redirects (same host and port); redirects to another origin are ignored so a third-party response cannot be attributed to the scanned host. Limitations: detection requires the version to be exposed, so hosts with expose_php=Off and no PHP version in the Server header, hosts behind a proxy or FastCGI configuration that strips these headers, and applications that override them are not detected. These headers can also be spoofed, so a match is only as trustworthy as the disclosed header. Builds that backport the fix while keeping the upstream version number (for example 8.2.34-1ubuntu1) still match, so a match reports an affected upstream version rather than confirmed exploitability. Pre-release or development builds of a fixed version (for example 8.2.35RC1) and responses that advertise conflicting versions in different headers are not matched.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109619.yaml"
     }
   ],
   "CVE-2026-110372": [
@@ -2545,6 +2561,14 @@
       "name": "Transmission 4.0.0-4.1.2 - Permissive CORS Exposes RPC Session ID",
       "description": "Transmission 4.0.0 through 4.1.2 sends Access-Control-Allow-Origin: * on RPC responses and advertises X-Transmission-Session-Id via Access-Control-Expose-Headers on the 409 session handshake. Any website a user visits can read the session-id nonce that guards against CSRF, enabling cross-origin control of the daemon's RPC API.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116748.yaml"
+    }
+  ],
+  "CVE-2026-116817": [
+    {
+      "source": "nuclei",
+      "name": "OpenPanel - Unauthenticated Bull Board Queue Dashboard",
+      "description": "OpenPanel before 3.0.0 contains a broken authentication vulnerability caused by missing authentication on the Bull Board dashboard served on the worker HTTP port, letting unauthenticated attackers access and modify queue data and jobs, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116817.yaml"
     }
   ],
   "CVE-2026-11801": [
@@ -5657,6 +5681,14 @@
       "name": "MediaWiki EasyTimeline - Code Injection RCE",
       "description": "MediaWiki EasyTimeline (Timeline) extension versions before 1.46.0, 1.45.4, 1.44.6, and 1.43.9 contain a code injection vulnerability caused by insufficient neutralization of newlines in TextData text attributes in EasyTimeline.pl / Timeline.php. A crafted <timeline> block can inject ploticus '#proc getdata' and 'command:' directives, which execute via /bin/sh because EasyTimeline invokes ploticus without the -noshell flag. Exploitation requires the ability to submit timeline markup for rendering \u2014 low-privileged edit access, or anonymous access on wikis that allow anonymous editing and API use. This template's parse-based check needs API read access; optional username/password inputs can be supplied for private wikis that deny anonymous read.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8857.yaml"
+    }
+  ],
+  "CVE-2026-88804": [
+    {
+      "source": "nuclei",
+      "name": "SUSE Rancher - Stored XSS via Unauthenticated Settings Override",
+      "description": "SUSE Rancher supports HTTP method override via the `_method` query parameter in the Norman API framework. Public UI settings routes were intended to be read-only for unauthenticated users, but the method override allows an unauthenticated attacker to perform PUT requests, modifying settings such as `ui-pl` (the product-line branding value). This value is rendered as raw HTML on the Rancher login page (`/dashboard/auth/login`) without sanitization, enabling stored cross-site scripting. Any user who subsequently opens the login page executes the attacker-controlled script in the Rancher origin, potentially leading to administrator session hijacking, bootstrap password disclosure, or full administrative control of the Rancher installation and its downstream clusters.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-88804.yaml"
     }
   ],
   "CVE-2026-89013": [
