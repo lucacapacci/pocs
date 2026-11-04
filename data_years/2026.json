@@ -2475,6 +2475,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11387.yaml"
     }
   ],
+  "CVE-2026-114509": [
+    {
+      "source": "nuclei",
+      "name": "Laravel TokenGuard - Authentication Bypass",
+      "description": "Laravel's TokenGuard (driver => token, hash => false) does not validate the\ncredential type before the database lookup. Sending a JSON body with\napi_token as an array of integers ({\"api_token\":[0]}) produces a\nwhereIn('api_token', [0]) query; under MySQL/MariaDB implicit casting,\nevery varchar token not starting with a digit evaluates to 0, so the first\nuser row is returned to an unauthenticated attacker.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-114509.yaml"
+    }
+  ],
   "CVE-2026-11565": [
     {
       "source": "nuclei",
@@ -2577,6 +2585,22 @@
       "name": "WPAdverts <= 2.3.2 - Information Disclosure",
       "description": "WPAdverts \u2013 Classifieds Plugin for WordPress <= 2.3.2 contains an authorization bypass caused by improper user authorization verification in classifieds-types REST endpoint, letting unauthenticated attackers retrieve internal site configuration data, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11801.yaml"
+    }
+  ],
+  "CVE-2026-118539": [
+    {
+      "source": "nuclei",
+      "name": "Drupal Commerce Core < 3.3.13 / < 8.x-2.41 - Guest Cart Admin Access Bypass",
+      "description": "Drupal Commerce Core before 3.3.13 on the 3.x branch and before 8.x-2.41\non the 2.x branch does not sufficiently protect certain order administration\nroutes. This template finds a public product using a bounded set of 63\ncanonical product IDs, adds one item to a fresh guest cart, and checks\nwhether the guest can read that cart order's administrative state-transition\nform. No account, prior order ID, JSON:API, or checkout is required. The\nguest draft order persists. Sites without a usable product among the sampled\nIDs produce no finding, which is inconclusive.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-118539.yaml"
+    }
+  ],
+  "CVE-2026-120446": [
+    {
+      "source": "nuclei",
+      "name": "madong-admin-saas <= 5.1.4 - Unauthenticated Platform Tenant Management Access",
+      "description": "madong-admin-saas <= 5.1.4 contains a broken authentication caused by 'platformapi' middleware key mismatch in platform tenant management API, letting unauthenticated remote attackers manage tenants and subscription plans.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120446.yaml"
     }
   ],
   "CVE-2026-1207": [
@@ -4803,6 +4827,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54236.yaml"
     }
   ],
+  "CVE-2026-54419": [
+    {
+      "source": "nuclei",
+      "name": "PIAF-HMS ec.php - SQL Injection",
+      "description": "claudiopizzillo PIAF-HMS (PBX-In-A-Flash Hotel Management System; no released versions, latest commit 389d2633441b65ced1c104212cd62be2bfca21e5) contains multiple unauthenticated SQL injection vulnerabilities. The application has no authentication mechanism and passes user-supplied HTTP parameters directly into deprecated mysql_query calls via string concatenation, without sanitization, escaping, or parameterization.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-54419.yaml"
+    }
+  ],
   "CVE-2026-54617": [
     {
       "source": "nuclei",
@@ -5371,6 +5403,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-75128.yaml"
     }
   ],
+  "CVE-2026-75650": [
+    {
+      "source": "nuclei",
+      "name": "Adobe Commerce/Magento <= 2.4.9 - StyleSmuggler Unauthenticated RCE via SSTI",
+      "description": "Adobe Commerce contains a template injection caused by improper neutralization of special elements in the template engine, letting attackers execute arbitrary code in the context of the current user, exploit requires no user interaction\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-75650.yaml"
+    }
+  ],
   "CVE-2026-76268": [
     {
       "source": "nuclei",
@@ -5841,6 +5881,14 @@
       "name": "Plex Media Server < 1.43.3.10861 - Unauthenticated SSRF via Companion Protocol (plex2shell)",
       "description": "Plex Media Server < 1.43.3.10861 contains a server side request forgery caused by improper validation of the 'protocol' parameter in /player/timeline, letting attackers with any X-Plex-Token value force the server to POST to arbitrary destinations, exploit requires any X-Plex-Token value.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-96652.yaml"
+    }
+  ],
+  "CVE-2026-96655": [
+    {
+      "source": "nuclei",
+      "name": "Plex Media Server < 1.43.3.10861 - SSRF via Transcoder",
+      "description": "Plex Media Server before 1.43.3.10861 allows an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-96655.yaml"
     }
   ],
   "CVE-2026-97359": [
