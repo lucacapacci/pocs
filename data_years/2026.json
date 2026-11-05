@@ -2483,6 +2483,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-114509.yaml"
     }
   ],
+  "CVE-2026-115574": [
+    {
+      "source": "nuclei",
+      "name": "Zulip Server 11.0 - 12.1 - Unauthenticated Custom Profile Field Disclosure",
+      "description": "Zulip 11.0 to 12.1 contains an information disclosure caused by missing access-control check in GET /json/users endpoint, letting unauthenticated spectators access all users' custom profile fields, exploit requires web-public channels enabled.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-115574.yaml"
+    }
+  ],
   "CVE-2026-11565": [
     {
       "source": "nuclei",
@@ -2555,6 +2563,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116485.yaml"
     }
   ],
+  "CVE-2026-116548": [
+    {
+      "source": "nuclei",
+      "name": "VikRentCar <= 1.4.10 - Cross-Site Scripting",
+      "description": "The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'optionals' parameter in all versions up to, and including, 1.4.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116548.yaml"
+    }
+  ],
   "CVE-2026-116690": [
     {
       "source": "nuclei",
@@ -2587,6 +2603,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11801.yaml"
     }
   ],
+  "CVE-2026-118523": [
+    {
+      "source": "nuclei",
+      "name": "EventPrime < 4.3.6.1 - Unauthenticated Pending Post Disclosure",
+      "description": "EventPrime WordPress plugin < 4.3.6.1 contains a broken access control vulnerability caused by improper handling of Pending Review post status, letting unauthenticated users view non-public content awaiting review, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-118523.yaml"
+    }
+  ],
   "CVE-2026-118539": [
     {
       "source": "nuclei",
@@ -2595,12 +2619,44 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-118539.yaml"
     }
   ],
+  "CVE-2026-119495": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Better Search < 4.5.3 - Unauthenticated Arbitrary Post Type Content Disclosure",
+      "description": "WebberZone Better Search <= 4.5.2 contains a broken access control caused by incorrectly configured access control security levels, letting attackers exploit unauthorized access, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-119495.yaml"
+    }
+  ],
+  "CVE-2026-120201": [
+    {
+      "source": "nuclei",
+      "name": "Jpom 2.10.0-2.11.12 - Authentication Bypass",
+      "description": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass caused by injection of query conditions into the JPOM-USER-TOKEN header, letting unauthenticated attackers gain super-administrator access and execute commands, exploit requires crafted header injection.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120201.yaml"
+    }
+  ],
+  "CVE-2026-120442": [
+    {
+      "source": "nuclei",
+      "name": "ape-volo-admin <= 3.5.2 - Authentication Bypass via Hardcoded JWT Signing Key",
+      "description": "ape-volo-admin < 3.6.1 contains an authentication bypass caused by a hardcoded JWT signing key in appsettings.json, letting unauthenticated attackers forge administrator tokens and gain full API control, exploit requires knowledge of the hardcoded key.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120442.yaml"
+    }
+  ],
   "CVE-2026-120446": [
     {
       "source": "nuclei",
       "name": "madong-admin-saas <= 5.1.4 - Unauthenticated Platform Tenant Management Access",
       "description": "madong-admin-saas <= 5.1.4 contains a broken authentication caused by 'platformapi' middleware key mismatch in platform tenant management API, letting unauthenticated remote attackers manage tenants and subscription plans.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120446.yaml"
+    }
+  ],
+  "CVE-2026-120597": [
+    {
+      "source": "nuclei",
+      "name": "WordPress Welcart e-Commerce < 2.12.7 -  Cross-Site Scripting",
+      "description": "Welcart e-Commerce Plugin up to 2.12.6 contains a stored XSS caused by improper escaping of the ResponseCd argument in ESCOTT_MAIN::error_page_message, letting remote attackers execute scripts, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120597.yaml"
     }
   ],
   "CVE-2026-1207": [
@@ -2625,6 +2681,14 @@
       "name": "WordPress MemberGlut < 1.1.5 - Unauthenticated Privilege Escalation",
       "description": "MemberGlut WordPress plugin < 1.1.5 contains a broken access control vulnerability caused by lack of validation of roles during front-end registration, letting unauthenticated users register with arbitrary roles including administrator, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12394.yaml"
+    }
+  ],
+  "CVE-2026-12583": [
+    {
+      "source": "nuclei",
+      "name": "Newsletters < 4.15 - Unauthenticated PHP Object Injection via Subscriber Custom Field",
+      "description": "The Newsletters WordPress plugin before 4.15 does not prevent deserialization of untrusted input that is stored through a public form, allowing unauthenticated attackers to inject a PHP object and, via a property-oriented gadget chain bundled with the Newsletters WordPress plugin before 4.15, write arbitrary files and execute code on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12583.yaml"
     }
   ],
   "CVE-2026-12609": [
@@ -3161,6 +3225,14 @@
       "name": "Spring Cloud Config Server - Path Traversal",
       "description": "Spring Cloud 3.1.x < 3.1.13, 4.1.x < 4.1.9, 4.2.x < 4.2.3, 4.3.x < 4.3.2, and 5.0.x < 5.0.2 contain a path traversal caused by profile parameter substitution in Config Server using native file system backend, letting attackers access files outside configured directories, exploit requires crafted request.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22739.yaml"
+    }
+  ],
+  "CVE-2026-22777": [
+    {
+      "source": "nuclei",
+      "name": "ComfyUI-Manager < 3.39.2 - CRLF Configuration Injection",
+      "description": "ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. Prior to versions 3.39.2 and 4.0.5, an attacker can inject special characters into HTTP query parameters to add arbitrary configuration values to the config.ini file. This can lead to security setting tampering or modification of application behavior.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-22777.yaml"
     }
   ],
   "CVE-2026-22812": [
