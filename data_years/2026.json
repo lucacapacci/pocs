@@ -2707,6 +2707,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12583.yaml"
     }
   ],
+  "CVE-2026-12592": [
+    {
+      "source": "nuclei",
+      "name": "SlimStat Analytics < 5.5.0 - Unauthenticated Stored XSS via CF-IPCountry Header",
+      "description": "SlimStat Analytics WordPress plugin < 5.5.0 contains a stored XSS caused by unescaped visitor-controlled geolocation value in admin analytics reports, letting unauthenticated visitors execute scripts in admin browsers, exploit requires Cloudflare geolocation provider configuration.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12592.yaml"
+    }
+  ],
   "CVE-2026-12609": [
     {
       "source": "nuclei",
