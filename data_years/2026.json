@@ -2587,6 +2587,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116548.yaml"
     }
   ],
+  "CVE-2026-116606": [
+    {
+      "source": "nuclei",
+      "name": "Barracuda Email Security Gateway - Authentication Bypass",
+      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116606.yaml"
+    }
+  ],
   "CVE-2026-116690": [
     {
       "source": "nuclei",
@@ -2617,6 +2625,22 @@
       "name": "WPAdverts <= 2.3.2 - Information Disclosure",
       "description": "WPAdverts \u2013 Classifieds Plugin for WordPress <= 2.3.2 contains an authorization bypass caused by improper user authorization verification in classifieds-types REST endpoint, letting unauthenticated attackers retrieve internal site configuration data, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-11801.yaml"
+    }
+  ],
+  "CVE-2026-118066": [
+    {
+      "source": "nuclei",
+      "name": "LatePoint < 5.7.7 - Unauthenticated Authentication Bypass / Account Takeover",
+      "description": "Unauthenticated SQL operator injection in the latepoint_route_call AJAX route (wp_ajax_nopriv). build_conditions_query() in lib/models/model.php treats literal 'IS NULL'/'IS NOT NULL' as SQL operators and concatenates them unbound, bypassing the customer password-reset token check -> account takeover of LatePoint customers and their linked WP subscriber accounts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-118066.yaml"
+    }
+  ],
+  "CVE-2026-118267": [
+    {
+      "source": "nuclei",
+      "name": "WP Data Access <= 5.5.89 - Incorrect Authorization to Privilege Escalation",
+      "description": "The WP Data Access plugin for WordPress is vulnerable to Incorrect Authorization leading to Privilege Escalation in all versions up to, and including, 5.5.89. The plugin's write REST API endpoints (wpda/app/update, wpda/app/delete, wpda/app/insert) pass attacker-supplied key and val parameters directly to database operations without enforcing the container's row-filter (defaultWhere) or per-column allow-list (isSelected) restrictions that are correctly applied on read endpoints. Exploitation by unauthenticated attackers requires that an administrator has published a Data App whose rest_api.authorization is set to 'anonymous' and whose container has write transactions (update, delete, or insert) enabled. This is an explicitly advertised use-case of the plugin. When this precondition is met, an attacker can overwrite the administrator's password in wp_users and authenticate as admin for full site takeover.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-118267.yaml"
     }
   ],
   "CVE-2026-118523": [
@@ -2937,6 +2961,14 @@
       "name": "Ivanti Endpoint Manager - Authentication Bypass",
       "description": "Ivanti Endpoint Manager < 2024 SU5 contains an authentication bypass caused by improper access control, letting remote unauthenticated attackers leak stored credential data, exploit requires no special privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1603.yaml"
+    }
+  ],
+  "CVE-2026-16062": [
+    {
+      "source": "nuclei",
+      "name": "Event Booking Manager for WooCommerce <= 5.3.6 - PHP Object Injection",
+      "description": "Event Booking Manager for WooCommerce WordPress plugin <= 5.3.6 contains an insecure deserialization vulnerability caused by deserialization of user-controlled input in event content fields, letting users with Contributor-level access inject PHP objects, potentially leading to arbitrary file deletion, data retrieval, or remote code execution if a POP chain is present.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-16062.yaml"
     }
   ],
   "CVE-2026-16268": [
