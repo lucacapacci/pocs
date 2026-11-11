@@ -2603,6 +2603,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116690.yaml"
     }
   ],
+  "CVE-2026-116747": [
+    {
+      "source": "nuclei",
+      "name": "Kener - Authentication Bypass",
+      "description": "Kener 3.0.0 before 4.1.10 falls back to the hardcoded JWT secret \"DUMMY_SECRET\" when the KENER_SECRET_KEY environment variable is unset or empty. An unauthenticated attacker can forge session cookies and password-reset tokens signed with that key. A forged password-reset token accepted by POST /account/forgot/api/password-reset produces a distinct response: the request passes token verification and fails only later at user lookup (\"User does not exist\"), whereas patched versions reject the token signature immediately with \"Invalid or expired token\".\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116747.yaml"
+    }
+  ],
   "CVE-2026-116748": [
     {
       "source": "nuclei",
@@ -2713,6 +2721,14 @@
       "name": "Visual Composer <= 45.16.0 - Unauthenticated LFI",
       "description": "Visual Composer Website Builder for WordPress <= 45.16.0 contains a local file inclusion vulnerability caused by improper validation of the vcv-template parameter, letting unauthenticated attackers include and execute arbitrary files, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12227.yaml"
+    }
+  ],
+  "CVE-2026-123270": [
+    {
+      "source": "nuclei",
+      "name": "Redpanda Connect Streams API - Unauthenticated Remote Code Execution",
+      "description": "Redpanda Connect 4.39.0 through 4.110.0 exposes an unauthenticated streams management API by default; an attacker can register and trigger a stream containing a command processor.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123270.yaml"
     }
   ],
   "CVE-2026-12394": [
@@ -3137,6 +3153,14 @@
       "name": "TranslatePress <= 3.3.1 - Unauthenticated Account Takeover",
       "description": "TranslatePress WordPress plugin <= 3.3.1 contains a sensitive information exposure caused by the 'trp_get_translations_regular' AJAX action saving password-reset URLs in translation dictionary, letting unauthenticated attackers extract admin password-reset URLs, exploit requires automatic string saving enabled and admin profile locale set to a published secondary language.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19632.yaml"
+    }
+  ],
+  "CVE-2026-19697": [
+    {
+      "source": "nuclei",
+      "name": "GutenKit Blocks Addon < 2.5.0 - Stored Cross-Site Scripting",
+      "description": "GutenKit Blocks Addon before 2.5.0 lets an authenticated Author upload an unsanitized SVG through the WordPress REST media endpoint; JavaScript in the SVG can execute when a user opens its URL.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19697.yaml"
     }
   ],
   "CVE-2026-1980": [
@@ -5339,6 +5363,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6279.yaml"
     }
   ],
+  "CVE-2026-62850": [
+    {
+      "source": "nuclei",
+      "name": "FreeScout < 1.8.225 - Unauthenticated Maintenance File Existence Oracle",
+      "description": "FreeScout before 1.8.225 exposes the maintenance endpoint /tools.php without authentication; different responses to existing and non-existing PHP paths disclose filesystem path existence before credential validation.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62850.yaml"
+    }
+  ],
   "CVE-2026-63358": [
     {
       "source": "nuclei",
@@ -5969,6 +6001,14 @@
       "name": "WP User Manager \u2013 User Profile Builder & Membership - Local File Inclusion",
       "description": "WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress <= 2.9.17 contains a local file inclusion caused by improper handling in the profile template scope function, letting unauthenticated attackers execute arbitrary PHP code, exploit requires ability to upload or control PHP files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9290.yaml"
+    }
+  ],
+  "CVE-2026-92998": [
+    {
+      "source": "nuclei",
+      "name": "Click n Chat < 1.1.3 - Unauthenticated SQL Injection",
+      "description": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not sanitise sort parameters before using them in a SQL ORDER BY clause, allowing unauthenticated attackers to perform SQL injection attacks.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-92998.yaml"
     }
   ],
   "CVE-2026-93485": [
