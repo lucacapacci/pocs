@@ -6715,6 +6715,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-6690.yaml"
     }
   ],
+  "CVE-2024-6695": [
+    {
+      "source": "nuclei",
+      "name": "Profile Builder <= 3.11.8 - Unauthenticated Privilege Escalation",
+      "description": "Profile Builder and Profile Builder Pro WordPress plugins up to and including 3.11.8 compare the submitted registration email against existing users and pending signups without trimming whitespace. Because MySQL string equality ignores trailing spaces but PHP does not, and a leading space desyncs the two checks entirely, an unauthenticated attacker can register a pending signup bound to an existing user's email (e.g. the administrator) by submitting that email with a leading space. When the signup is later activated it collides with the existing account, granting the attacker administrative access without holding any account on the site. Exploitation requires the plugin's Email Confirmation feature to be enabled and a page containing the [wppb-register] shortcode.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-6695.yaml"
+    }
+  ],
   "CVE-2024-6746": [
     {
       "source": "nuclei",

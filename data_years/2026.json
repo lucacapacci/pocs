@@ -2731,6 +2731,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123270.yaml"
     }
   ],
+  "CVE-2026-123488": [
+    {
+      "source": "nuclei",
+      "name": "Craft CMS < 4.18.9, < 5.11.2 - Unauthenticated SQL Injection",
+      "description": "Craft CMS < 4.18.9, < 5.11.2 contain an unauthenticated SQL injection caused by unsanitized concatenation of the attribute parameter in the element search endpoint, letting remote attackers read and write the database to gain administrator access, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123488.yaml"
+    }
+  ],
   "CVE-2026-12394": [
     {
       "source": "nuclei",
@@ -4089,6 +4097,14 @@
       "name": "Apache Tomcat Tribes EncryptInterceptor Bypass - Remote Code Execution",
       "description": "Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor. This issue affects Apache Tomcat: 11.0.20, 10.1.53, 9.0.116.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34486.yaml"
+    }
+  ],
+  "CVE-2026-34577": [
+    {
+      "source": "nuclei",
+      "name": "Postiz < 2.21.3 - Unauthenticated Server-Side Request Forgery",
+      "description": "Postiz before 2.21.3 exposes an unauthenticated GET /public/stream endpoint that fetches a user-supplied URL and returns its response; a weak mp4 suffix check allows requests to internal HTTP services.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34577.yaml"
     }
   ],
   "CVE-2026-34605": [

@@ -5013,6 +5013,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-24979.yaml"
     }
   ],
+  "CVE-2021-24981": [
+    {
+      "source": "nuclei",
+      "name": "Directorist < 7.0.6.2 - Cross-Site Request Forgery to Arbitrary File Upload",
+      "description": "The Directorist plugin for WordPress before 7.0.6.2 does not verify a CSRF nonce on its front-end listing submission handler (the add_listing_action AJAX action, registered for unauthenticated users via wp_ajax_nopriv). An attacker can forge a listing submission - including file uploads - on behalf of a logged-in user, leading to arbitrary file upload and potential remote code execution. The fix adds directorist_verify_nonce() to atbdp_submit_listing(). This template detects the missing nonce check by sending a listing submission with no nonce: a vulnerable build processes it (failing later at field validation) while a patched build rejects it at the nonce gate.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-24981.yaml"
+    }
+  ],
   "CVE-2021-24987": [
     {
       "source": "nuclei",
@@ -7003,6 +7011,14 @@
       "name": "Atmail 6.5.0 - Cross-Site Scripting",
       "description": "Atmail 6.5.0 contains a cross-site scripting vulnerability in WebAdmin Control Pane via the format parameter to the default URI, which allows remote attackers to inject arbitrary web script or HTML via the \u201cformat\u201d parameter.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-43574.yaml"
+    }
+  ],
+  "CVE-2021-4358": [
+    {
+      "source": "nuclei",
+      "name": "WP DSGVO Tools (GDPR) <= 3.1.22 - Unauthenticated Stored Cross-Site Scripting",
+      "description": "The WP DSGVO Tools (GDPR) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via an unknown parameter in versions up to, and including, 3.1.23 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-4358.yaml"
     }
   ],
   "CVE-2021-43725": [
