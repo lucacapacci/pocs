@@ -1765,6 +1765,12 @@
       "name": "Simple File List WordPress Plugin 4.2.2 - File Upload to RCE",
       "description": "Simple File List WordPress Plugin 4.2.2 - File Upload to RCE",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52371.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Simple File List < 4.2.3 - Unauthenticated Remote Code Execution",
+      "description": "WordPress Simple File List plugin before version 4.2.3 is vulnerable to unauthenticated remote code execution. The ee-upload-engine.php and ee-file-engine.php scripts register their WordPress nonce checks via add_action('plugins_loaded', ...) after including wp-load.php, making the security checks dead code since the hook has already fired. Combined with a deterministic upload token (md5('unique_salt' + timestamp)) and no file extension validation on the rename action, an attacker can upload a PHP payload disguised as a .png file and rename it to .php, achieving arbitrary code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-36847.yaml"
     }
   ],
   "CVE-2020-24719": [

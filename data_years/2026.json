@@ -2147,6 +2147,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44262.yaml"
     }
   ],
+  "CVE-2026-59726": [
+    {
+      "source": "exploitdb",
+      "name": "Ruflo MCP Bridge  3.16.2 - Remote Code Execution",
+      "description": "Ruflo MCP Bridge  3.16.2 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/52705.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "ruflo MCP Bridge - Unauthenticated RCE via terminal_execute",
+      "description": "ruflo MCP bridge (< 3.16.3) in its default docker-compose deployment exposes POST /mcp with no authentication and binds to all interfaces (0.0.0.0:3001). The executeTool() function has no server-side deny list for dangerous tools, allowing an unauthenticated attacker to invoke tools/call with ruflo__terminal_execute, which runs execSync(command) on attacker-supplied input. This yields arbitrary command execution as the node user (uid 1000) inside the bridge container. The blocklist (AUTOPILOT_BLOCKED_PATTERNS + isBlockedTool()) is enforced only in the autopilot SSE handler; POST /mcp and POST /mcp/:group bypass it entirely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59726.yaml"
+    }
+  ],
   "CVE-2026-24486": [
     {
       "source": "exploitdb",
@@ -3523,6 +3537,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25892.yaml"
     }
   ],
+  "CVE-2026-25939": [
+    {
+      "source": "nuclei",
+      "name": "FUXA - Authorization Bypass",
+      "description": "FUXA 1.2.8 through 1.2.10 contains an authorization bypass caused by improper access control in scheduler management, letting unauthenticated remote attackers create and modify schedulers, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25939.yaml"
+    }
+  ],
   "CVE-2026-26077": [
     {
       "source": "nuclei",
@@ -4443,6 +4465,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41948.yaml"
     }
   ],
+  "CVE-2026-42016": [
+    {
+      "source": "nuclei",
+      "name": "JFrog Artifactory - Unauthenticated Admin Token Minting via Token Scope Bypass",
+      "description": "JFrog Artifactory Self-Hosted can disclose an anonymous token through the trailing-slash AWS token endpoint (CVE-2026-42018), and affected releases can use that token to issue an administrator-scoped token without enforcing its scope (CVE-2026-42016).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42016.yaml"
+    }
+  ],
   "CVE-2026-42018": [
     {
       "source": "nuclei",
@@ -5283,14 +5313,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59707.yaml"
     }
   ],
-  "CVE-2026-59726": [
-    {
-      "source": "nuclei",
-      "name": "ruflo MCP Bridge - Unauthenticated RCE via terminal_execute",
-      "description": "ruflo MCP bridge (< 3.16.3) in its default docker-compose deployment exposes POST /mcp with no authentication and binds to all interfaces (0.0.0.0:3001). The executeTool() function has no server-side deny list for dangerous tools, allowing an unauthenticated attacker to invoke tools/call with ruflo__terminal_execute, which runs execSync(command) on attacker-supplied input. This yields arbitrary command execution as the node user (uid 1000) inside the bridge container. The blocklist (AUTOPILOT_BLOCKED_PATTERNS + isBlockedTool()) is enforced only in the autopilot SSE handler; POST /mcp and POST /mcp/:group bypass it entirely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59726.yaml"
-    }
-  ],
   "CVE-2026-59801": [
     {
       "source": "nuclei",
@@ -5577,6 +5599,14 @@
       "name": "Read More & Accordion <= 3.5.7 - Authenticated Privilege Escalation",
       "description": "The Read More & Accordion (expand-maker) plugin for WordPress through 3.5.7 allows privilege escalation due to improper validation in the importData AJAX handler (yrm_import_data action). An authenticated user with plugin access can upload a crafted JSON attachment to insert arbitrary rows into WordPress database tables, including those that control user roles and capabilities, potentially leading to site takeover.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7467.yaml"
+    }
+  ],
+  "CVE-2026-7482": [
+    {
+      "source": "nuclei",
+      "name": "Ollama < 0.17.1 - Information Disclosure",
+      "description": "Ollama < 0.17.1 contains a heap out-of-bounds read caused by improper validation of tensor offset and size in GGUF model loader, letting remote attackers leak sensitive memory data via /api/create and /api/push endpoints, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-7482.yaml"
     }
   ],
   "CVE-2026-75128": [
