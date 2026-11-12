@@ -2761,6 +2761,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12394.yaml"
     }
   ],
+  "CVE-2026-125357": [
+    {
+      "source": "nuclei",
+      "name": "Munin munin-httpd 2.99.1-2.999.18 - Unauthenticated Path Traversal",
+      "description": "Munin munin-httpd 2.99.1 through 2.999.18 contains a path traversal caused by improper '/../' substring check in static file handler Munin::Master::HTML::handle_request, letting unauthenticated attackers read files outside the static directory.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-125357.yaml"
+    }
+  ],
   "CVE-2026-12583": [
     {
       "source": "nuclei",
