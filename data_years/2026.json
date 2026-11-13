@@ -949,6 +949,12 @@
       "name": "MajorDoMo Remote Command Injection via cycle_execs Race Condition",
       "description": "This module exploits an unauthenticated command injection vulnerability in MajorDoMo's\n          remote command handler (rc/index.php). The param parameter is interpolated into double\n          quotes without escapeshellarg(), and the resulting string is passed to safe_exec() which\n          inserts it into the safe_execs database table with no sanitization.\n\n          The cycle_execs.php worker script is web-accessible without authentication. On startup it\n          purges the safe_execs queue, then enters an infinite loop polling the table every second\n          and passing each command to exec(). A race condition is required: the worker must be\n          started first (which purges existing entries), then the injection is performed while the\n          worker is polling. The next iteration picks up and executes the attacker's payload.\n\n          The command parameter must reference a valid .bat file in rc/commands/. The default\n          MajorDoMo installation ships with shutdown.bat, displayon.bat, and displayoff.bat.\n\n          All versions of MajorDoMo up to and including the latest release are affected.\n          The fix is tracked in PR sergejey/majordomo#1177.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/majordomo_cmd_injection_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "MajorDoMo - OS Command Injection via Race Condition",
+      "description": "MajorDoMo (Major Domestic Module) is vulnerable to unauthenticated OS command injection via rc/index.php. The $param variable is interpolated into a command string within double quotes without escapeshellarg() sanitization, and the cycle_execs.php worker executes the queued command via exec() without sanitization. An attacker triggers cycle_execs.php to start the polling worker, then injects a malicious command via the rc endpoint. Detection requires the cycle_execs.php worker to be running, which is the default state for deployed MajorDoMo instances.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27175.yaml"
     }
   ],
   "CVE-2026-27174": [
@@ -4295,6 +4301,14 @@
       "name": "Fortinet FortiSandbox - Command Injection",
       "description": "Fortinet FortiSandbox 4.4.0 through 4.4.8 contains a command injection caused by improper neutralization of special elements in OS commands, letting attackers execute unauthorized code or commands, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39808.yaml"
+    }
+  ],
+  "CVE-2026-39813": [
+    {
+      "source": "nuclei",
+      "name": "Fortinet FortiSandbox - Path Traversal Authentication Bypass",
+      "description": "A path traversal vulnerability (CWE-24) in the FortiSandbox JRPC API is_valid_session() function allows an unauthenticated attacker to bypass authentication. The user-supplied session value is passed to os.path.join() without validation. A session of \"../../tmp/\" resolves to /tmp/, which always exists and has a recent mtime, so the session check succeeds. This grants unauthenticated access to read-only JRPC methods such as sys/status (version, hostname, serial number, and resource usage). Affects FortiSandbox 4.4.0 through 4.4.8 and 5.0.0 through 5.0.5. Fixed in 4.4.9 and 5.0.6 (FG-IR-26-112). The patched is_valid_session() accepts only 32-character hexadecimal session IDs.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39813.yaml"
     }
   ],
   "CVE-2026-40105": [

@@ -6597,6 +6597,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-49494.yaml"
     }
   ],
+  "CVE-2023-49606": [
+    {
+      "source": "nuclei",
+      "name": "Tinyproxy < 1.11.2 - Use After Free in HTTP Connection Header",
+      "description": "A use-after-free vulnerability exists in the HTTP Connection Headers parsing in Tinyproxy 1.10.0 through 1.11.1. The remove_connection_headers() function in reqs.c frees a header value pointer that is subsequently reused during header iteration, leading to memory corruption. An unauthenticated remote attacker can trigger this by sending a specially crafted HTTP Connection header (e.g., Connection: Connection), causing proxy worker process crashes (denial of service) or potentially achieving remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-49606.yaml"
+    }
+  ],
   "CVE-2023-4973": [
     {
       "source": "nuclei",

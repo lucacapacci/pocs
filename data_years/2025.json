@@ -2433,6 +2433,12 @@
       "name": "FUXA 1.2.8 - Authentication Bypass + RCE Exploit",
       "description": "FUXA 1.2.8 - Authentication Bypass + RCE Exploit",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52544.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "FUXA <= 1.2.8 - Authentication Bypass to Remote Code Execution",
+      "description": "FUXA versions up to and including 1.2.8 contain an authentication bypass in the jwt-helper.js middleware. The requireAuth function trusts the HTTP Referer header containing '/fuxa' (or localhost/loopback patterns) to whitelist requests as \"internal\", skipping JWT verification entirely. This allows unauthenticated attackers to POST to /api/runscript and execute arbitrary Node.js code server-side via Module._compile(), typically running as root inside Docker deployments.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-69985.yaml"
     }
   ],
   "CVE-2025-41373": [
@@ -4561,6 +4567,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4210.yaml"
     }
   ],
+  "CVE-2025-4283": [
+    {
+      "source": "nuclei",
+      "name": "SourceCodester Stock Management System 1.0 - SQL Injection Authentication Bypass",
+      "description": "SourceCodester Stock Management System 1.0 contains a SQL injection vulnerability in the login function at /sms/classes/Login.php. The username parameter is directly interpolated into an SQL query without sanitization, allowing an unauthenticated attacker to bypass authentication and gain admin access via a crafted OR-based payload.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4283.yaml"
+    }
+  ],
   "CVE-2025-4302": [
     {
       "source": "nuclei",
@@ -5439,6 +5453,14 @@
       "name": "ownCloud Guests - User Enumeration",
       "description": "ownCloud Guests before 0.12.5 contains an unauthenticated user enumeration vulnerability caused by insufficient validation of the token in showPasswordForm at /apps/guests/register/{email}/{token}, letting unauthenticated attackers enumerate valid guest users, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-59716.yaml"
+    }
+  ],
+  "CVE-2025-60021": [
+    {
+      "source": "nuclei",
+      "name": "Apache bRPC Heap Profiler - Remote Command Injection",
+      "description": "Apache bRPC versions before 1.15.0 contain a remote command injection vulnerability in the heap profiler built-in service (/pprof/heap). The extra_options query parameter is concatenated directly into a shell command string passed to popen() without any validation or sanitization, allowing unauthenticated attackers to execute arbitrary OS commands on the server. The display parameter must be set to text, svg, or flamegraph to reach the vulnerable code path, and jemalloc profiling must be active (MALLOC_CONF=prof:true).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-60021.yaml"
     }
   ],
   "CVE-2025-6058": [
