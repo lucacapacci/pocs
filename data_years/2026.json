@@ -255,6 +255,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_batch_desync_rce.rb"
     }
   ],
+  "CVE-2026-93637": [
+    {
+      "source": "metasploit",
+      "name": "Zimbra GraphQL Authentication Rate Limit Bypass",
+      "description": "Zimbra Collaboration Network Edition exposes an unauthenticated GraphQL\n          authenticate mutation. Failed GraphQL authentication does not update the\n          source-IP failure counter enforced for SOAP authentication. GraphQL aliases\n          also permit many password candidates to be submitted in one HTTP request.\n\n          This module uses the standard Metasploit credential options and sends the\n          resulting username and password pairs through batches of aliased authenticate\n          mutations. A successful password is stored as a credential, but the returned\n          authentication token is not displayed or stored. An enabled per-account\n          lockout policy can still lock local target accounts.\n\n          Zimbra 10.1.0 through 10.1.21 are known to be affected. No fixed release has\n          been published.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/zimbra_graphql_brute.rb"
+    }
+  ],
   "CVE-2026-20929": [
     {
       "source": "metasploit",
@@ -2253,6 +2261,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52606.py"
     }
   ],
+  "CVE-2026-65600": [
+    {
+      "source": "nuclei",
+      "name": "Traefik - Authentication Bypass - Version Detection",
+      "description": "Traefik versions <= v2.11.51, >= v3.0.0 <= v3.6.22, and >= v3.7.0 <= v3.7.6 contain an authentication bypass via path traversal in the ReplacePathRegex middleware (CVE-2026-65600). This template passively identifies vulnerable versions by reading the version reported on the Traefik API (/api/version), which is exposed when the dashboard/API is reachable (e.g. api.insecure=true or the api@internal service routed without auth).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2026-65600.yaml"
+    }
+  ],
   "CVE-2026-0545": [
     {
       "source": "nuclei",
@@ -2803,6 +2819,14 @@
       "name": "WordPress MemberGlut < 1.1.5 - Unauthenticated Privilege Escalation",
       "description": "MemberGlut WordPress plugin < 1.1.5 contains a broken access control vulnerability caused by lack of validation of roles during front-end registration, letting unauthenticated users register with arbitrary roles including administrator, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12394.yaml"
+    }
+  ],
+  "CVE-2026-124027": [
+    {
+      "source": "nuclei",
+      "name": "ChatWiki < 2.10.0 - Cross-Tenant Document Page Disclosure",
+      "description": "ChatWiki before 2.10.0 exposes /manage/getLibRawFileOnePage without authentication and trusts a caller-supplied admin_user_id, allowing document-page access across tenants.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124027.yaml"
     }
   ],
   "CVE-2026-125357": [
@@ -4059,6 +4083,14 @@
       "name": "LoLLMs WEBUI - Server-Side Request Forgery",
       "description": "LoLLMs WEBUI contains a server-side request forgery caused by unauthenticated access to the /api/proxy endpoint, letting attackers force the server to make arbitrary GET requests, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33340.yaml"
+    }
+  ],
+  "CVE-2026-33344": [
+    {
+      "source": "nuclei",
+      "name": "dagu <= 2.3.0 - Path Traversal via Encoded Slashes in DAG Name",
+      "description": "Dagu is a workflow engine with a built-in Web user interface. From version 2.0.0 to before version 2.3.1, the fix for CVE-2026-27598 added ValidateDAGName to CreateNewDAG and rewrote generateFilePath to use filepath.Base. This patched the CREATE path. The remaining API endpoints - GET, DELETE, RENAME, EXECUTE - all pass the {fileName} URL path parameter to locateDAG without calling ValidateDAGName. %2F-encoded forward slashes in the {fileName} segment traverse outside the DAGs directory. This issue has been patched in version 2.3.1.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33344.yaml"
     }
   ],
   "CVE-2026-3335": [
