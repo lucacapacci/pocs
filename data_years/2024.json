@@ -5027,6 +5027,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-34351.yaml"
     }
   ],
+  "CVE-2024-34444": [
+    {
+      "source": "nuclei",
+      "name": "Slider Revolution < 6.7.0 - Unauthenticated Broken Access Control",
+      "description": "ThemePunch OHG Slider Revolution < 6.7.0 contains a missing authorization vulnerability caused by insufficient access control in the plugin, letting attackers perform unauthorized actions, exploit requires no specific conditions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-34444.yaml"
+    }
+  ],
   "CVE-2024-34470": [
     {
       "source": "nuclei",
@@ -6995,6 +7003,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-8252.yaml"
     }
   ],
+  "CVE-2024-8275": [
+    {
+      "source": "nuclei",
+      "name": "The Events Calendar <= 6.6.4 - SQL Injection",
+      "description": "The Events Calendar plugin for WordPress through 6.6.4 is vulnerable to unauthenticated SQL injection via the `order` parameter. On a site whose theme or integration forwards the request `order` value into the events query (tribe_get_events()) with a non-past display, the value reaches the ORDER BY clause without being constrained to ASC/DESC, allowing an unauthenticated attacker to inject arbitrary SQL and read sensitive data from the database. This template confirms the flaw with a time-based payload that delays the response only when the injected SQL executes.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-8275.yaml"
+    }
+  ],
   "CVE-2024-8425": [
     {
       "source": "nuclei",
@@ -7273,6 +7289,14 @@
       "name": "Crypto <= 2.15 - Authentication Bypass",
       "description": "The Crypto plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.15. This is due a to limited arbitrary method call to 'crypto_connect_ajax_process::log_in' function in the 'crypto_connect_ajax_process' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-9989.yaml"
+    }
+  ],
+  "CVE-2024-6648": [
+    {
+      "source": "nuclei",
+      "name": "AP Page Builder < 4.0.0 - Unauthenticated Absolute Path Traversal",
+      "description": "AP Page Builder < 4.0.0 contains a path traversal caused by modification of 'product_item_path' in 'config' JSON file, letting unauthenticated remote attackers read arbitrary files on the system, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2024-6648.yaml"
     }
   ],
   "CVE-2024-23108": [

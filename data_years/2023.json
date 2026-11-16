@@ -5829,6 +5829,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3990.yaml"
     }
   ],
+  "CVE-2023-39964": [
+    {
+      "source": "nuclei",
+      "name": "1Panel <= 1.4.3 - Authenticated Arbitrary File Read",
+      "description": "1Panel contains an arbitrary file read caused by unfiltered file path parameter in LoadFromFile function in api/v1/file.go, letting attackers read arbitrary important configuration files, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39964.yaml"
+    }
+  ],
   "CVE-2023-40000": [
     {
       "source": "nuclei",

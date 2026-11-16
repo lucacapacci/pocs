@@ -3775,6 +3775,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-22214.yaml"
     }
   ],
+  "CVE-2025-22777": [
+    {
+      "source": "nuclei",
+      "name": "GiveWP <= 3.19.3 - Unauthenticated PHP Object Injection via company Parameter",
+      "description": "Deserialization of Untrusted Data vulnerability in StellarWP GiveWP give allows Object Injection.This issue affects GiveWP: from n/a through <= 3.19.3.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-22777.yaml"
+    }
+  ],
   "CVE-2025-22785": [
     {
       "source": "nuclei",
@@ -5933,6 +5941,14 @@
       "name": "Citrix NetScaler ADC & Gateway - Reflected XSS / Open Redirect",
       "description": "Cross-Site Scripting (XSS) in NetScaler ADC and NetScaler Gateway when the appliance is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2025/CVE-2025-12101.yaml"
+    }
+  ],
+  "CVE-2025-34469": [
+    {
+      "source": "nuclei",
+      "name": "Cowrie < 2.9.0 - Server-Side Request Forgery",
+      "description": "Cowrie < 2.9.0 contains a server-side request forgery caused by emulated wget and curl commands performing real outbound HTTP requests without rate limiting, letting unauthenticated remote attackers generate unbounded HTTP traffic, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2025/CVE-2025-34469.yaml"
     }
   ],
   "CVE-2025-46817": [
