@@ -1855,6 +1855,12 @@
       "name": "OrientDB - Code Execution",
       "description": "OrientDB - Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/44068.md"
+    },
+    {
+      "source": "nuclei",
+      "name": "OrientDB =< 2.2.22 - Remote Code Execution",
+      "description": "OrientDB through 2.2.22 does not enforce privilege requirements during where/fetchplan/order-by use (CVE-2017-11467, CWE-269), letting a user with the default database credentials (admin/admin) create and execute an unsandboxed server-side Groovy function through the HTTP API (port 2480). The Groovy function runs arbitrary JVM code - and OS commands via Runtime/ProcessBuilder - achieving remote code execution. This template lists a database, creates a Groovy function that computes md5(<nonce>), triggers it, confirms code execution when the nonce's md5 is returned, and deletes the function. The payload is pure-JVM (no OS command), so it works on both Windows and Linux.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2017/CVE-2017-11467.yaml"
     }
   ],
   "CVE-2017-9080": [

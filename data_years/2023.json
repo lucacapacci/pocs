@@ -4341,6 +4341,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-2518.yaml"
     }
   ],
+  "CVE-2023-2523": [
+    {
+      "source": "nuclei",
+      "name": "Weaver E-Office - Unrestricted File Upload",
+      "description": "Weaver E-Office 9.5 allows unauthenticated unrestricted file upload via App/Ajax/ajax.php?action=mobile_upload_save. The upload_quwan multipart field is not adequately validated; public proofs of concept upload a PHP file whose name ends with a trailing dot (filename=\"1.php.\") to bypass extension checks and then request the saved attachment to achieve remote code execution. This template uploads only a harmless .txt file containing a unique marker, reads it back, and does not upload or execute PHP. No vendor-published patched version was identified in the CVE record; operators should restrict the endpoint and apply any E-Office update provided by Weaver (Fanwei).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-2523.yaml"
+    }
+  ],
   "CVE-2023-25280": [
     {
       "source": "nuclei",

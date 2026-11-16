@@ -1163,6 +1163,12 @@
       "name": "phpMyAdmin 4.6.2 - (Authenticated) Remote Code Execution",
       "description": "phpMyAdmin 4.6.2 - (Authenticated) Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40185.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "phpMyAdmin 4.0.x/4.4.x/4.6.x - Authenticated Remote Code Execution",
+      "description": "phpMyAdmin 4.0.x before 4.0.10.16, 4.4.x before 4.4.15.7, and 4.6.x before 4.6.3 does not properly choose delimiters to prevent the preg_replace 'e' (eval) modifier being reachable through the table search-and-replace feature (CVE-2016-5734). On PHP older than 7.0 (where the /e modifier still exists), an authenticated attacker stores a crafted value (0/e followed by a NUL byte) in a table cell, then issues a regex find-and-replace whose replacement string is evaluated as PHP, achieving remote code execution. This template logs in, seeds the crafted row, and evaluates print(md5(<nonce>)) via the replacement, confirming execution when the nonce's md5 appears in the response. The payload is PHP-native (no shell command), so it works on both Windows and Linux hosts.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-5734.yaml"
     }
   ],
   "CVE-2016-2098": [
