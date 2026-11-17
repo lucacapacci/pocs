@@ -2357,6 +2357,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0829.yaml"
     }
   ],
+  "CVE-2026-102657": [
+    {
+      "source": "nuclei",
+      "name": "esm.sh web handler < v137_7 - Path Traversal",
+      "description": "esm.sh server < 137_7 contains a path traversal caused by improper validation of URL-decoded r.URL.Path in web.NewHandler, letting unauthenticated remote attackers read files outside Config.AppDir, exploit requires Dev mode disabled.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102657.yaml"
+    }
+  ],
   "CVE-2026-102764": [
     {
       "source": "nuclei",
@@ -2395,6 +2403,14 @@
       "name": "Loom for AWS < 1.6.1 - Unauthenticated Super-Admin Access",
       "description": "Loom for AWS < 1.6.1 contains a broken authentication caused by missing authentication for critical functions in the authentication dependency, letting remote actors obtain super-admin authority over the agent control plane, exploit requires no identity provider configured.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-103956.yaml"
+    }
+  ],
+  "CVE-2026-104476": [
+    {
+      "source": "nuclei",
+      "name": "Backdrop CMS - Unauthenticated Configuration Export Archive Disclosure",
+      "description": "Backdrop CMS 1.35.0 and 1.34.x before 1.34.5 can leave a configuration export archive in temporary storage after an authorized user downloads it; the config file download hook permits an unauthenticated visitor to retrieve that archive.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-104476.yaml"
     }
   ],
   "CVE-2026-104736": [
@@ -2509,6 +2525,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109619.yaml"
     }
   ],
+  "CVE-2026-109991": [
+    {
+      "source": "nuclei",
+      "name": "FunnelKit Payment Gateway for Stripe WooCommerce < 1.16.0 - Unauthenticated Data Exposure",
+      "description": "FunnelKit Payment Gateway for Stripe WooCommerce plugin for WordPress \\u003C= 1.15.0.2 contains an insecure direct object reference caused by missing validation on 'order-pay' parameter, letting unauthenticated attackers read full billing PII by enumerating order IDs.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109991.yaml"
+    }
+  ],
   "CVE-2026-110355": [
     {
       "source": "nuclei",
@@ -2531,6 +2555,14 @@
       "name": "Collabora Built-in CODE Server < 26.4.303 - OS Command Injection",
       "description": "Collabora Online Built-in CODE Server before 26.4.303 contains a command injection caused by improper handling in proxy.php when the CODE server is not running, letting remote attackers execute OS commands, exploit requires CODE server to be stopped.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-110447.yaml"
+    }
+  ],
+  "CVE-2026-111057": [
+    {
+      "source": "nuclei",
+      "name": "Mercury 3.0.0 - 3.2.3 - Unauthenticated Terminal Access",
+      "description": "Mercury 3.0.0 through 3.2.3 is missing a comma in the BLOCKED_PATTERNS list of mercury_app/block_handler.py. Python joins the JupyterLab rule and the /api/terminals rule into one regular expression, so a direct request to /api/terminals is not blocked and reaches the Jupyter Server terminal API without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-111057.yaml"
     }
   ],
   "CVE-2026-1115": [
@@ -2773,6 +2805,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120201.yaml"
     }
   ],
+  "CVE-2026-120409": [
+    {
+      "source": "nuclei",
+      "name": "All-in-One Video Gallery < 5.1.1 - Unauthenticated Password-Protected Video Source Disclosure",
+      "description": "All-in-One Video Gallery before 5.1.1 serves the media source of a password-protected video through its standalone player page without checking the video's WordPress password.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120409.yaml"
+    }
+  ],
   "CVE-2026-120442": [
     {
       "source": "nuclei",
@@ -2827,6 +2867,14 @@
       "name": "Craft CMS < 4.18.9, < 5.11.2 - Unauthenticated SQL Injection",
       "description": "Craft CMS < 4.18.9, < 5.11.2 contain an unauthenticated SQL injection caused by unsanitized concatenation of the attribute parameter in the element search endpoint, letting remote attackers read and write the database to gain administrator access, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123488.yaml"
+    }
+  ],
+  "CVE-2026-123807": [
+    {
+      "source": "nuclei",
+      "name": "Signal K Server 2.0.0 - 2.33.x - Path Traversal",
+      "description": "Signal K Server 2.0.0 to 2.34.0 and @signalk/resources-provider 1.0.0 to 1.5.3 contain a path traversal and insecure direct object reference caused by insufficient path containment in resourceId handling, letting attackers read, write, or delete arbitrary JSON files and escalate to remote code execution by forging admin tokens, exploit requires readonly user token or anonymous read access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123807.yaml"
     }
   ],
   "CVE-2026-12394": [
@@ -3275,6 +3323,14 @@
       "name": "GutenKit Blocks Addon < 2.5.0 - Stored Cross-Site Scripting",
       "description": "GutenKit Blocks Addon before 2.5.0 lets an authenticated Author upload an unsanitized SVG through the WordPress REST media endpoint; JavaScript in the SVG can execute when a user opens its URL.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19697.yaml"
+    }
+  ],
+  "CVE-2026-19715": [
+    {
+      "source": "nuclei",
+      "name": "WP OAuth Server <= 6.3.0 - Unauthenticated Sensitive Data Exposure via Legacy Debug Log",
+      "description": "WP OAuth Server versions through 6.2.1 write a fixed-name debug log in the public uploads directory when debugging is enabled; installations upgraded to 6.3.0 can retain that legacy log. The file can disclose OAuth tokens, authorization codes, and user records without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-19715.yaml"
     }
   ],
   "CVE-2026-1980": [
@@ -4397,6 +4453,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39468.yaml"
     }
   ],
+  "CVE-2026-39732": [
+    {
+      "source": "nuclei",
+      "name": "Transliterator < 2.5.14 - Unauthenticated SQL Injection",
+      "description": "Transliterator <= 2.5.13 contains an SQL injection caused by unsanitized input in database queries, letting unauthenticated attackers execute arbitrary SQL commands remotely, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39732.yaml"
+    }
+  ],
   "CVE-2026-39808": [
     {
       "source": "nuclei",
@@ -4541,6 +4605,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41179.yaml"
     }
   ],
+  "CVE-2026-41428": [
+    {
+      "source": "nuclei",
+      "name": "Budibase <= 3.35.3 - Authentication Bypass",
+      "description": "Budibase 3.35.3 and earlier compiles public endpoint patterns without anchors and tests them against the full request URL, including its query string. A public path in a query parameter can mark a protected request with the same HTTP method as public, bypassing the global authentication check for worker routes without their own role checks.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41428.yaml"
+    }
+  ],
   "CVE-2026-41432": [
     {
       "source": "nuclei",
@@ -4667,6 +4739,14 @@
       "name": "Gotenberg < 8.31.0 - Server-Side Request Forgery",
       "description": "Gotenberg before 8.31.0 is vulnerable to server-side request forgery (SSRF) due to insufficient validation of URLs in the downloadFrom API. An unauthenticated attacker can exploit the flaw by providing specially crafted IPv4-mapped IPv6 addresses (such as http://[::ffff:127.0.0.1]) that bypass the deny-list and allow access to internal resources. Fixed versions properly recognize these addresses and prevent such requests.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42596.yaml"
+    }
+  ],
+  "CVE-2026-42608": [
+    {
+      "source": "nuclei",
+      "name": "Grav CMS < 1.7.53.4 - Unauthenticated Path Traversal via FormFlash",
+      "description": "Grav < 1.7.53.4 contains a path traversal caused by manipulation of session_id (__form-flash-id) in FormFlash core component, letting unauthenticated attackers create directories and write files, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42608.yaml"
     }
   ],
   "CVE-2026-42647": [
@@ -4891,6 +4971,14 @@
       "name": "ColdFusion - Path Traversal",
       "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read and limited write access. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploitation of this issue does not require user interaction. Scope is changed.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48313.yaml"
+    }
+  ],
+  "CVE-2026-48356": [
+    {
+      "source": "nuclei",
+      "name": "Adobe Commerce & Magento Open Source - Unrestricted File Upload",
+      "description": "Adobe Commerce contains an unrestricted file upload vulnerability that allows attackers to upload dangerous file types, leading to arbitrary code execution in the context of the current user, exploit requires victim interaction with a malicious URL or page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48356.yaml"
     }
   ],
   "CVE-2026-48611": [
@@ -5525,6 +5613,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6203.yaml"
     }
   ],
+  "CVE-2026-62032": [
+    {
+      "source": "nuclei",
+      "name": "DirectoryPress <= 3.6.27 - Unauthenticated Local File Inclusion",
+      "description": "The DirectoryPress plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.6.27. The directorypress_listings_handler class merges user-supplied GET parameters into shortcode attributes when include_get_params is enabled (default). The template parameter is passed unsanitized through directorypress_display_template() into directorypress_has_template(), which checks is_file() on the raw user input and includes it directly via PHP include(). This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. Exploitation requires a page with a DirectoryPress shortcode to exist.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62032.yaml"
+    }
+  ],
   "CVE-2026-62382": [
     {
       "source": "nuclei",
@@ -5781,6 +5877,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-75650.yaml"
     }
   ],
+  "CVE-2026-75918": [
+    {
+      "source": "nuclei",
+      "name": "phpMyFAQ < 4.1.7 - Password Reset Token Exposure via Public Tracking File",
+      "description": "phpMyFAQ < 4.1.7 contains an information disclosure vulnerability caused by storing password reset tokens in a publicly accessible tracking file, letting unauthenticated attackers read tokens and take over user accounts, exploit requires user tracking enabled.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-75918.yaml"
+    }
+  ],
   "CVE-2026-76268": [
     {
       "source": "nuclei",
@@ -5859,6 +5963,14 @@
       "name": "WordPress weMail < 2.1.3 - Cross-Site Scripting",
       "description": "The weMail plugin for WordPress < 2.1.3 is vulnerable to reflected cross-site scripting. The plugin does not properly escape a user-supplied parameter before reflecting it into an HTML attribute on a non-nonce-protected AJAX response.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-8089.yaml"
+    }
+  ],
+  "CVE-2026-81197": [
+    {
+      "source": "nuclei",
+      "name": "MasterStudy LMS < 3.7.46 - Unauthenticated Unpublished Course Disclosure",
+      "description": "The MasterStudy LMS WordPress Plugin before 3.7.46 does not restrict access to a REST route that lists an author's courses, nor does it filter that listing by publication status, allowing unauthenticated users to read the titles and IDs of unpublished (draft, pending and private) courses.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-81197.yaml"
     }
   ],
   "CVE-2026-81199": [
@@ -6045,6 +6157,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86426.yaml"
     }
   ],
+  "CVE-2026-86538": [
+    {
+      "source": "nuclei",
+      "name": "knowns <= 0.29.1 - Unauthenticated Arbitrary File Read via Template Preview Path Traversal",
+      "description": "Knowns versions through 0.29.1 allow unauthenticated file reads through the template preview endpoint when no server password is configured. The templateFile parameter is joined to a template directory without a path containment check, allowing traversal outside that directory; version 0.30.0 rejects such paths.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-86538.yaml"
+    }
+  ],
   "CVE-2026-8679": [
     {
       "source": "nuclei",
@@ -6075,6 +6195,14 @@
       "name": "CyberPanel 2.4.3-2.4.5 - AI Scanner Debug Disclosure",
       "description": "CyberPanel versions 2.4.3 through 2.4.5 expose unauthenticated AI Scanner debugging endpoints that disclose administrator usernames, API-key prefixes, scan identifiers, target domains, and account metadata. Unauthenticated attackers can enumerate panel administrators and recent scanner activity to inventory multi-tenant installations and facilitate follow-on attacks.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87820.yaml"
+    }
+  ],
+  "CVE-2026-87916": [
+    {
+      "source": "nuclei",
+      "name": "WPBot - Unauthenticated Chat Session Data Disclosure",
+      "description": "WPBot versions 8.4.9 through 8.5.9 expose the chat-session date-filter AJAX action to unauthenticated visitors without a capability or nonce check, allowing them to retrieve stored visitor names, email addresses, and phone numbers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-87916.yaml"
     }
   ],
   "CVE-2026-88062": [

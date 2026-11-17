@@ -5901,6 +5901,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-31862.yaml"
     }
   ],
+  "CVE-2021-3199": [
+    {
+      "source": "nuclei",
+      "name": "ONLYOFFICE Document Server < 5.6.3 - Path Traversal to Arbitrary File Write",
+      "description": "ONLYOFFICE Document Server 5.1.5 - 5.6.2 contains a directory traversal with remote code execution caused by /.. sequence in image upload parameter when JWT is used, letting remote attackers execute arbitrary code, exploit requires JWT authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-3199.yaml"
+    }
+  ],
   "CVE-2021-32030": [
     {
       "source": "nuclei",
@@ -7187,6 +7195,14 @@
       "name": "Longjing Technology BEMS API 1.21 - Unauthenticated Arbitrary File Download",
       "description": "Longjing Technology BEMS API 1.21 is vulnerable to local file inclusion. Input passed through the fileName parameter through the downloads API endpoint is not properly verified before being used to download files. This can be exploited to disclose the contents of arbitrary and sensitive files through directory traversal attacks.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-4463.yaml"
+    }
+  ],
+  "CVE-2021-4473": [
+    {
+      "source": "nuclei",
+      "name": "Tianxin Internet Behavior Management System - Command Injection",
+      "description": "Tianxin Internet Behavior Management System contains a command injection caused by crafted objClass parameter in Reporter component endpoint, letting unauthenticated attackers execute arbitrary commands and write malicious PHP files, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2021/CVE-2021-4473.yaml"
     }
   ],
   "CVE-2021-44868": [

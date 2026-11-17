@@ -963,6 +963,12 @@
       "name": "Oracle Forms and Reports - Remote Code Execution (Metasploit)",
       "description": "Oracle Forms and Reports - Remote Code Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/31737.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Oracle Reports rwservlet - Arbitrary File Read",
+      "description": "Oracle Reports Developer in Oracle Fusion Middleware 11.1.1.4, 11.1.1.6, and 11.1.2.0 (and earlier 10g/11g releases discussed by the original researcher) allows unauthenticated attackers to read and write arbitrary files through the reports/rwservlet URLPARAMETER feature. A GET with JOBTYPE=rwurl and URLPARAMETER set to a file:// URL returns the file contents in the response (OSVDB-86395, EDB 31253). Combined with CVE-2012-3153 this has been used to upload a JSP shell; this template only performs a safe file:// read of /etc/passwd or Windows win.ini and does not write files. Patched in the October 2012 Oracle CPU. CVE-2012-3152 is in the CISA Known Exploited Vulnerabilities catalog.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2012/CVE-2012-3152.yaml"
     }
   ],
   "CVE-2012-3153": [

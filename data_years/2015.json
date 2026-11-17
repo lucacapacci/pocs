@@ -5529,6 +5529,12 @@
       "name": "WordPress Plugin Gwolle Guestbook 1.5.3 - Remote File Inclusion",
       "description": "WordPress Plugin Gwolle Guestbook 1.5.3 - Remote File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38861.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Gwolle Guestbook <= 1.5.3 - Remote File Inclusion",
+      "description": "Gwolle Guestbook plugin before 1.5.4 for WordPress contains a remote file inclusion caused by allow_url_include being enabled, letting remote authenticated users execute arbitrary PHP code via URL in abspath parameter, exploit requires user authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-8351.yaml"
     }
   ],
   "CVE-2015-2321": [
