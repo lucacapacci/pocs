@@ -2381,6 +2381,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102878.yaml"
     }
   ],
+  "CVE-2026-102895": [
+    {
+      "source": "nuclei",
+      "name": "GPUStack < 2.2.0 - Authentication Bypass",
+      "description": "GPUStack before 2.2.0 may treat requests with a forged X-GPUStack-Real-IP: 127.0.0.1 header, or requests forwarded by a same-host reverse proxy, as trusted localhost requests and grant unauthenticated administrator access when force_auth_localhost is disabled.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-102895.yaml"
+    }
+  ],
   "CVE-2026-103956": [
     {
       "source": "nuclei",
@@ -6331,6 +6339,14 @@
       "name": "Palo Alto Networks PAN-OS - Authentication Bypass",
       "description": "Palo Alto Networks PAN-OS contains an authentication bypass caused by flaws in the GlobalProtect portal and gateway, letting attackers establish unauthorized VPN connections, exploit requires network access to the portal or gateway.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-0257.yaml"
+    }
+  ],
+  "CVE-2026-116779": [
+    {
+      "source": "nuclei",
+      "name": "SignalWire FreeSWITCH < 1.11.3 - SIP MESSAGE api-proto OS Command Injection",
+      "description": "SignalWire FreeSWITCH before 1.11.3 is vulnerable to OS command injection via an inbound SIP MESSAGE (CVE-2026-116779). sofia_presence_handle_sip_i_message splits the recipient user on '+' and treats the left side as a chat protocol selector; selecting the built-in \"api\" chat interface passes the remainder to switch_api_execute(), so a recipient of the form api+system <cmd> runs <cmd> as an OS command with the FreeSWITCH process privileges (typically root). The chat path requires the inbound MESSAGE to authenticate, but FreeSWITCH ships well-known default credentials (extension 1000 / password 1234 on stock vanilla) and empty-password users. This template authenticates with those defaults over SIP digest, injects api+system ping <interactsh> (firing an out-of-band callback for real RCE evidence), and keys on the in-band differential: a vulnerable server accepts the api-proto MESSAGE (202 Accepted) and executes it, whereas 1.11.3+ disables the api chat proto by default and returns 403.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-116779.yaml"
     }
   ],
   "CVE-2026-27886": [
