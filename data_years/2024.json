@@ -455,6 +455,20 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/beyondtrust_pra_rs_unauth_rce.rb"
     }
   ],
+  "CVE-2024-32651": [
+    {
+      "source": "metasploit",
+      "name": "changedetection.io Notification Jinja2 SSTI RCE",
+      "description": "This module exploits Remote Code Execution (RCE) vulnerability (CVE-2024-32651) in changedetection.io which is a service for detecting and monitoring changes in web pages. Versions prior to 0.45.21 are vulnerable.\n\n          The vulnerability occurs when the application renders user-controlled notification fields (title and body) using a non-sandboxed Jinja2 environment. The default configuration does not require login credentials, so an unauthenticated attacker is able to create a watch and send a test notification containing a command-injected template. This allows the attacker to execute a payload as the user running the service.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/changedetection_rce_cve_2024_32651.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Change Detection - Server Side Template Injection",
+      "description": "A Server Side Template Injection in changedetection.io caused by usage of unsafe functions of Jinja2 allows Remote Command Execution on the server host.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-32651.yaml"
+    }
+  ],
   "CVE-2024-31839": [
     {
       "source": "metasploit",
@@ -4811,14 +4825,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-32640.yaml"
     }
   ],
-  "CVE-2024-32651": [
-    {
-      "source": "nuclei",
-      "name": "Change Detection - Server Side Template Injection",
-      "description": "A Server Side Template Injection in changedetection.io caused by usage of unsafe functions of Jinja2 allows Remote Command Execution on the server host.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-32651.yaml"
-    }
-  ],
   "CVE-2024-32709": [
     {
       "source": "nuclei",
@@ -6715,6 +6721,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-6646.yaml"
     }
   ],
+  "CVE-2024-6648": [
+    {
+      "source": "nuclei",
+      "name": "AP Page Builder < 4.0.0 - Unauthenticated Absolute Path Traversal",
+      "description": "AP Page Builder < 4.0.0 contains a path traversal caused by modification of 'product_item_path' in 'config' JSON file, letting unauthenticated remote attackers read arbitrary files on the system, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-6648.yaml"
+    }
+  ],
   "CVE-2024-6651": [
     {
       "source": "nuclei",
@@ -7297,14 +7311,6 @@
       "name": "Crypto <= 2.15 - Authentication Bypass",
       "description": "The Crypto plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.15. This is due a to limited arbitrary method call to 'crypto_connect_ajax_process::log_in' function in the 'crypto_connect_ajax_process' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-9989.yaml"
-    }
-  ],
-  "CVE-2024-6648": [
-    {
-      "source": "nuclei",
-      "name": "AP Page Builder < 4.0.0 - Unauthenticated Absolute Path Traversal",
-      "description": "AP Page Builder < 4.0.0 contains a path traversal caused by modification of 'product_item_path' in 'config' JSON file, letting unauthenticated remote attackers read arbitrary files on the system, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2024-6648.yaml"
     }
   ],
   "CVE-2024-23108": [
