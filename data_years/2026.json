@@ -471,6 +471,12 @@
       "name": "openDCIM install.php SQL Injection to RCE",
       "description": "This module exploits a SQL injection vulnerability in openDCIM's install.php\n          endpoint (CVE-2026-28515) to achieve remote code execution. The install.php\n          script remains accessible after installation and processes LDAP configuration\n          parameters via UpdateParameter() without authentication or input sanitization,\n          allowing stacked SQL queries.\n\n          The exploit chain works by injecting SQL through the LDAP configuration form\n          to overwrite the Graphviz dot binary path in fac_Config, then triggering\n          report_network_map.php which calls exec() with the poisoned value. A backup\n          of the original configuration is created before exploitation and restored\n          after payload delivery.\n\n          Tested against openDCIM 23.04 through 25.01 on Ubuntu with Apache.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/opendcim_install_sqli_rce.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "openDCIM - Unauthenticated SQL Injection to Remote Code Execution",
+      "description": "openDCIM through commit 4467e9c4 (tested on v23.04) exposes install.php without a post-installation lock or authorization check. The unauthenticated LDAP configuration handler passes request values directly into a SQL UPDATE via Config::UpdateParameter() without prepared statements, allowing a stacked-query injection that overwrites the 'dot' configuration parameter (the Graphviz binary path) with an attacker-controlled command. report_network_map.php then passes that value to exec(), resulting in remote code execution as the web server user on Docker deployments that run with REMOTE_USER set to dcim.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-28516.yaml"
     }
   ],
   "CVE-2026-28517": [
@@ -2715,6 +2721,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116690.yaml"
     }
   ],
+  "CVE-2026-116692": [
+    {
+      "source": "nuclei",
+      "name": "MLflow < 3.17.0 - Third-Party Scorer Deserialization Remote Code Execution",
+      "description": "MLflow 3.12.0rc0 to < 3.17.0 contains a remote code execution caused by insecure third-party scorer deserialization in mlflow/genai/scorers/base.py, letting attackers execute arbitrary code via writable allowed packages, exploit requires writable allowed scorer package and appropriate privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116692.yaml"
+    }
+  ],
   "CVE-2026-116747": [
     {
       "source": "nuclei",
@@ -2851,6 +2865,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1207.yaml"
     }
   ],
+  "CVE-2026-121853": [
+    {
+      "source": "nuclei",
+      "name": "AppPresser < 5.0.0 - Unauthenticated Installed Plugin Version Disclosure",
+      "description": "The plugin does not restrict access to two of its REST API endpoints, allowing unauthenticated visitors to retrieve the installed versions of AppPresser, its add-ons, several third-party plugins and its theme.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-121853.yaml"
+    }
+  ],
   "CVE-2026-12227": [
     {
       "source": "nuclei",
@@ -2875,6 +2897,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123488.yaml"
     }
   ],
+  "CVE-2026-123655": [
+    {
+      "source": "nuclei",
+      "name": "Moodle < 5.1.8 - Unauthenticated H5P Content File Disclosure",
+      "description": "Moodle before 5.2.4, 5.1.8, 5.0.11 and 4.5.15 contains a missing access control (CWE-862) in the H5P subsystem. H5P content files are stored in the system context and served through pluginfile.php without any authorization check, allowing a remote unauthenticated attacker to read H5P content.json files belonging to the site.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123655.yaml"
+    }
+  ],
+  "CVE-2026-123751": [
+    {
+      "source": "nuclei",
+      "name": "WP Duplicate <= 1.1.11 - Unauthenticated File Upload to RCE",
+      "description": "WP Duplicate (local-sync) through 1.1.11 accepts a JSON boolean in place of its stored request key because of a loose comparison, then permits an unauthenticated request to upload a PHP file into the executable local_sync backups directory when the plugin is configured.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123751.yaml"
+    }
+  ],
   "CVE-2026-123807": [
     {
       "source": "nuclei",
@@ -2897,6 +2935,14 @@
       "name": "ChatWiki < 2.10.0 - Cross-Tenant Document Page Disclosure",
       "description": "ChatWiki before 2.10.0 exposes /manage/getLibRawFileOnePage without authentication and trusts a caller-supplied admin_user_id, allowing document-page access across tenants.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124027.yaml"
+    }
+  ],
+  "CVE-2026-124450": [
+    {
+      "source": "nuclei",
+      "name": "OpenEMR FaxSMS Module - Authenticated Arbitrary File Read via disposeDocument",
+      "description": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials and write arbitrary files as the web user, enabling remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124450.yaml"
     }
   ],
   "CVE-2026-125357": [
@@ -2961,6 +3007,14 @@
       "name": "All-in-One WP Migration and Backup < 7.106 - Arbitrary Log File Write",
       "description": "The All-in-One WP Migration and Backup WordPress plugin before 7.106 does not properly sanitise a user-supplied value before using it to build a file path. This makes it possible for unauthenticated attackers to create or append a log file in arbitrary locations outside the intended storage directory.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12898.yaml"
+    }
+  ],
+  "CVE-2026-129131": [
+    {
+      "source": "nuclei",
+      "name": "Gameyfin < 2.6.2 - Missing Authorization in Synchronous Hilla Endpoints",
+      "description": "Gameyfin before 2.6.2 allows unauthenticated attackers to bypass login-required mode by calling synchronous methods of Hilla endpoints annotated with @AnonymousAllowed. The LiveSubscriptionSecurity aspect only guarded methods returning a Flux, so synchronous methods such as PlatformEndpoint.getStats returned catalog data (platforms, libraries, plugin and game request metadata) without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-129131.yaml"
     }
   ],
   "CVE-2026-1296": [
@@ -4123,6 +4177,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32596.yaml"
     }
   ],
+  "CVE-2026-32609": [
+    {
+      "source": "nuclei",
+      "name": "Glances < 4.5.2 - Information Disclosure",
+      "description": "Glances before 4.5.2 exposes the full command line arguments namespace through the unauthenticated /api/4/args REST API endpoint when it runs without --password, which is the default. The response includes the SNMP community string, SNMP v3 user and authentication key, the Glances username, the password hash when one is configured, and the configuration file path.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32609.yaml"
+    }
+  ],
   "CVE-2026-3296": [
     {
       "source": "nuclei",
@@ -5035,6 +5097,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49060.yaml"
     }
   ],
+  "CVE-2026-49352": [
+    {
+      "source": "nuclei",
+      "name": "9router 0.2.21-0.4.41 - Hardcoded JWT Secret Authentication Bypass",
+      "description": "9Router 0.2.21 to 0.4.44 contains a broken authentication caused by a hardcoded fallback JWT secret in authentication components, letting attackers forge auth_token cookies, exploit requires JWT_SECRET to be unset.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49352.yaml"
+    }
+  ],
   "CVE-2026-49468": [
     {
       "source": "nuclei",
@@ -5371,6 +5441,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5562.yaml"
     }
   ],
+  "CVE-2026-55641": [
+    {
+      "source": "nuclei",
+      "name": "9router < 0.5.2 - Authentication Bypass via Host Header Spoofing",
+      "description": "9router before 0.5.2 decides whether a request to the /v1 LLM proxy is local by reading the client-controlled Host header in isLocalRequest (src/dashboardGuard.js). A remote unauthenticated attacker can send Host: localhost to be treated as a local client and bypass the API key check on the /v1, /v1beta, /api/v1 and /api/v1beta routes.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-55641.yaml"
+    }
+  ],
   "CVE-2026-55864": [
     {
       "source": "nuclei",
@@ -5523,6 +5601,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58644.yaml"
     }
   ],
+  "CVE-2026-59148": [
+    {
+      "source": "nuclei",
+      "name": "Mockoon < 9.7.0 - Unauthenticated Admin API",
+      "description": "Mockoon CLI and commons-server before 9.7.0 enable the admin API by default on the same listener as the mock routes. The /mockoon-admin endpoints do not require any token and answer every origin with Access-Control-Allow-Origin set to a wildcard.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59148.yaml"
+    }
+  ],
   "CVE-2026-59177": [
     {
       "source": "nuclei",
@@ -5657,6 +5743,14 @@
       "name": "FileGator < 7.14.2 - Privilege Escalation",
       "description": "FileGator accepts arbitrary Unix permission values via the '/chmoditems' API endpoint and passes the value directly to PHP's native 'chmod()' function through 'octdec()' conversion, with no validation. This allows an authenticated user with 'chmod' permission to upgrade their privileges to root.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63358.yaml"
+    }
+  ],
+  "CVE-2026-63445": [
+    {
+      "source": "nuclei",
+      "name": "Perses < 0.54.0-rc.0 - Path Traversal Arbitrary File Read",
+      "description": "Perses before 0.54.0-rc.0 contains a path traversal vulnerability in the list endpoints when the file system database is used. The project query parameter is bound into the resource Query struct without validation and is joined into the database folder path, which is then walked and every file with the configured extension is returned. An attacker can leave the database folder and read arbitrary JSON or YAML files that the Perses process can access. Authentication is disabled in the default configuration, so default deployments are exposed without credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63445.yaml"
     }
   ],
   "CVE-2026-63645": [
@@ -6243,6 +6337,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-88804.yaml"
     }
   ],
+  "CVE-2026-88995": [
+    {
+      "source": "nuclei",
+      "name": "Bookit < 2.6.0.1 - Unauthenticated Appointment Data Disclosure via Availability Check",
+      "description": "Bookit Booking & Appointment Calendar WordPress plugin < 2.6.0.1 contains an information disclosure caused by improper restriction of data in availability-check requests, letting unauthenticated users retrieve other customers' appointment details.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-88995.yaml"
+    }
+  ],
   "CVE-2026-89013": [
     {
       "source": "nuclei",
@@ -6457,6 +6559,14 @@
       "name": "Mailpit < 1.28.2 - SMTP CRLF Injection",
       "description": "Mailpit < 1.28 contains a header injection caused by insufficient regex validation of `RCPT TO` and `MAIL FROM` addresses in the SMTP server, letting attackers inject arbitrary SMTP headers, exploit requires crafted email addresses\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-23829.yaml"
+    }
+  ],
+  "CVE-2026-6664": [
+    {
+      "source": "nuclei",
+      "name": "PgBouncer < 1.25.2 - Unauthenticated Denial of Service",
+      "description": "PgBouncer before 1.25.2 contains an integer overflow in the SCRAM authentication packet parser that bypasses a boundary check, allowing an unauthenticated remote attacker to crash the process with a malformed packet. This template passively identifies the running PgBouncer version over the PostgreSQL wire protocol - the server_version parameter (reported as X.Y.Z/bouncer) returned on the admin database when the pooler accepts unauthenticated connections (auth_type any/trust) - and flags instances older than 1.25.2 without sending the crash payload.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-6664.yaml"
     }
   ],
   "CVE-2026-73570": [

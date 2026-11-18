@@ -6413,6 +6413,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-6171.yaml"
     }
   ],
+  "CVE-2020-6286": [
+    {
+      "source": "nuclei",
+      "name": "SAP NetWeaver AS JAVA - Path Traversal",
+      "description": "SAP NetWeaver AS JAVA (LM Configuration Wizard) versions 7.30, 7.31, 7.40, 7.50 contain a path traversal caused by insufficient input path validation in a web service parameter, letting unauthenticated attackers download zip files to arbitrary directories, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2020/CVE-2020-6286.yaml"
+    }
+  ],
   "CVE-2020-6308": [
     {
       "source": "nuclei",
@@ -6691,6 +6699,14 @@
       "name": "Pure-FTPd 1.0.48 - Denial of Service",
       "description": "Pure-FTPd 1.0.48 is vulnerable to Denial of Service via exhaustion of connections due to lack of proper connection limits.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2020/CVE-2020-35359.yaml"
+    }
+  ],
+  "CVE-2020-4450": [
+    {
+      "source": "nuclei",
+      "name": "IBM WebSphere Application Server - IIOP Insecure Deserialization",
+      "description": "IBM WebSphere Application Server 8.5 and 9.0 traditional could allow a remote attacker to execute arbitrary code on the system with a specially-crafted sequence of serialized objects. IBM X-Force ID: 181231.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2020/CVE-2020-4450.yaml"
     }
   ],
   "CVE-2020-9274": [

@@ -5011,6 +5011,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-34061.yaml"
     }
   ],
+  "CVE-2024-34193": [
+    {
+      "source": "nuclei",
+      "name": "Smanga 3.2.7 - Arbitrary File Read",
+      "description": "Smanga 3.2.7 contains a path traversal caused by unsanitized 'file' parameter in PHP/get file flow.php, letting attackers read arbitrary files, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-34193.yaml"
+    }
+  ],
   "CVE-2024-34257": [
     {
       "source": "nuclei",

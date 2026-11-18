@@ -8413,6 +8413,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2019/CVE-2019-1898.yaml"
     }
   ],
+  "CVE-2019-19006": [
+    {
+      "source": "nuclei",
+      "name": "Sangoma FreePBX - Authentication Bypass (Broken Access Control)",
+      "description": "Sangoma FreePBX 13.x before 13.0.197.14, 14.x before 14.0.13.12 and 15.x before 15.0.16.27 contains an authentication bypass in the admin interface (admin/config.php). The login handler sets the `$_SESSION['AMP_user']` session for the submitted username before validating the password and only clears it if the password check returns false; because the password value is not sanitized, supplying the password as an array (e.g. `password[0]=x`) makes the password check throw before the session-clear is reached, leaving an authenticated administrator session. A remote, unauthenticated attacker gains full admin access to the FreePBX GUI.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2019/CVE-2019-19006.yaml"
+    }
+  ],
   "CVE-2019-19134": [
     {
       "source": "nuclei",
