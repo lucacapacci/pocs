@@ -8921,6 +8921,12 @@
       "name": "Indusoft Web Studio - Directory Traversal Information Disclosure (Metasploit)",
       "description": "Indusoft Web Studio - Directory Traversal Information Disclosure (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/42699.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "InduSoft Web Studio NTWebServer - Directory Traversal",
+      "description": "InduSoft Web Studio 7.1 before Service Pack 2 Patch 4 allows unauthenticated directory traversal through NTWebServer, which can expose files outside the web root, including project APP files containing administrative passwords.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2014/CVE-2014-0780.yaml"
     }
   ],
   "CVE-2014-3878": [

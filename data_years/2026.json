@@ -1,4 +1,18 @@
 {
+  "CVE-2026-21589": [
+    {
+      "source": "metasploit",
+      "name": "Atlassian Data Center CVE-2026-21589 Arbitrary File Read and Crowd Privilege Escalation",
+      "description": "This module exploits an unauthenticated path traversal in the web resource\n          component used by Jira, Confluence, and Bitbucket Data Center. The check\n          safely reads a protected application file to confirm CVE-2026-21589.\n\n          Jira Software fixes are 9.12.40, 10.3.26, and 11.3.12. Jira Service\n          Management fixes are 5.12.40, 10.3.26, and 11.3.12. Confluence fixes\n          are 9.2.26 and 10.2.19. Bitbucket fixes are 9.4.26, 10.2.8, and 10.5.1.\n\n          The default action reads an operator-selected file within the application\n          root. Jira and Confluence can also use disclosed Crowd settings to create\n          or select a user and add target access and administrator memberships.\n          Crowd must be reachable from Metasploit. The Crowd application must allow\n          user creation, membership changes, and optional group creation.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/atlassian_data_center_cve_2026_21589.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Atlassian Jira/Confluence/Bitbucket - Pre-Auth Arbitrary File Read",
+      "description": "Atlassian products including Jira, Confluence, and Bitbucket Data Center contain a pre-authentication arbitrary file read vulnerability in the shared atlassian-plugins-webresource library. The library improperly handles double colons (::) as path separators in the resource routing, allowing unauthenticated attackers to traverse the filesystem and read arbitrary files within the application server's webroot, including sensitive configuration files such as web.xml and crowd.properties containing plaintext credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21589.yaml"
+    }
+  ],
   "CVE-2026-73571": [
     {
       "source": "metasploit",
@@ -3489,14 +3503,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21484.yaml"
     }
   ],
-  "CVE-2026-21589": [
-    {
-      "source": "nuclei",
-      "name": "Atlassian Jira/Confluence/Bitbucket - Pre-Auth Arbitrary File Read",
-      "description": "Atlassian products including Jira, Confluence, and Bitbucket Data Center contain a pre-authentication arbitrary file read vulnerability in the shared atlassian-plugins-webresource library. The library improperly handles double colons (::) as path separators in the resource routing, allowing unauthenticated attackers to traverse the filesystem and read arbitrary files within the application server's webroot, including sensitive configuration files such as web.xml and crowd.properties containing plaintext credentials.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-21589.yaml"
-    }
-  ],
   "CVE-2026-21643": [
     {
       "source": "nuclei",
@@ -5175,6 +5181,14 @@
       "name": "SureForms <= 2.5.2 - Unauthenticated Payment Amount Validation Bypass via form_id",
       "description": "The SureForms plugin for WordPress is vulnerable to payment amount validation bypass in versions up to, and including, 2.5.2.\nThe create_payment_intent AJAX handler checks `if ($form_id > 0 && !empty($block_id))` before calling validate_payment_amount().\nBy sending form_id=0 (the default intval of a missing/zero value), an unauthenticated attacker completely skips the server-side\namount validation and can create Stripe payment intents with arbitrary amounts, bypassing configured pricing.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-4987.yaml"
+    }
+  ],
+  "CVE-2026-49980": [
+    {
+      "source": "nuclei",
+      "name": "Rclone 1.46.0 - 1.74.2 - Unauthenticated Arbitrary File Read via --rc-serve",
+      "description": "Rclone 1.46.0 through 1.74.2 accepts unauthenticated GET and HEAD requests of the form /[remote:path]/object when the remote control server runs with --rc-serve and without HTTP authentication. The remote value is taken from the URL and passed to normal backend initialization, so an inline remote such as :local: reads any file on the host, and from 1.55.0 on backend options that run local commands lead to command execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49980.yaml"
     }
   ],
   "CVE-2026-50160": [
