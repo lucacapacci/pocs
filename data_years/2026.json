@@ -2937,6 +2937,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12394.yaml"
     }
   ],
+  "CVE-2026-124002": [
+    {
+      "source": "nuclei",
+      "name": "Copeland/Dixell XWEB EVO - Pre-Auth OS Command Injection via Username",
+      "description": "XWEB EVO versions 5.2.3 through before 5.7.0 contain a pre-authentication OS command injection vulnerability. The login.lua CGI splices the submitted username directly into an io.popen() shell command (via find) before any password check occurs. Injecting shell metacharacters closes the find argument and executes arbitrary OS commands as www-data, escalatable to root via the setuid-root wlua interpreter (CVE-2026-124003). The product is End-of-Software-Support (EOL March 2026) and will not receive patches.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124002.yaml"
+    }
+  ],
   "CVE-2026-124027": [
     {
       "source": "nuclei",
@@ -3047,6 +3055,14 @@
       "name": "Podlove Podcast Publisher <= 4.5.1 - Arbitrary File Upload",
       "description": "Podlove Podcast Publisher plugin for WordPress through 4.5.1 is vulnerable to arbitrary file uploads due to missing file type validation in the podlove_handle_cache_files function. The image cache derives the stored file extension from the path of the attacker supplied source URL, while the image validation is performed against a different file name taken from the full source URL, so a source URL whose path carries a dangerous extension is written to the cache with that extension.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-13001.yaml"
+    }
+  ],
+  "CVE-2026-130352": [
+    {
+      "source": "nuclei",
+      "name": "phpMyFAQ < 4.1.12 - Unauthenticated Private Editor Notes Disclosure via FAQ API",
+      "description": "phpMyFAQ < 4.1.12 and 4.2.0-alpha \\u003C 4.2.0-RC.2 contain an information disclosure vulnerability caused by improper access control in the public FAQ list API, letting unauthenticated attackers read editor-only Private Notes by querying GET /api/v4.0/faqs or /api/v3.1/faqs endpoints.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-130352.yaml"
     }
   ],
   "CVE-2026-1306": [
@@ -3319,6 +3335,14 @@
       "name": "TrueBooker <= 1.2.6 - Unauthenticated Authorization Bypass",
       "description": "TrueBooker \u2013 Appointment Booking and Scheduler System WordPress plugin <= 1.2.6 contains an authorization bypass through user-controlled key caused by lack of authentication in admin_user_create_cus AJAX handler, letting unauthenticated attackers take over any user account by overwriting email and using lost-password flow, exploit requires no authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18315.yaml"
+    }
+  ],
+  "CVE-2026-18351": [
+    {
+      "source": "nuclei",
+      "name": "Drag and Drop File Upload for Elementor Forms <= 1.6.0 - Unauthenticated PHP File Upload",
+      "description": "Drag and Drop File Upload for Elementor Forms through 1.6.0 accepts a crafted type value and PHP filename through the unauthenticated elementor_file_upload AJAX action; a binary-prefixed payload can pass WordPress MIME validation and be saved as an executable .php file.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-18351.yaml"
     }
   ],
   "CVE-2026-18577": [
@@ -4729,6 +4753,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41641.yaml"
     }
   ],
+  "CVE-2026-41661": [
+    {
+      "source": "nuclei",
+      "name": "Admidio <= 5.0.8 - Cross-Site Scripting",
+      "description": "Admidio < 5.0.9 contains a reflected XSS caused by improper encoding of square brackets in system/msg_window.php, letting unauthenticated attackers execute arbitrary JavaScript in users' browsers, exploit requires crafted input.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41661.yaml"
+    }
+  ],
   "CVE-2026-41948": [
     {
       "source": "nuclei",
@@ -5585,6 +5617,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58191.yaml"
     }
   ],
+  "CVE-2026-58400": [
+    {
+      "source": "nuclei",
+      "name": "GeoNetwork < 4.4.12 / < 4.2.17 - Unauthenticated RCE",
+      "description": "GeoNetwork < 4.4.12 and < 4.2.17 contains a command injection caused by insecure Saxon XSLT processor configuration allowing Java extension functions, letting privileged users execute arbitrary OS commands as GeoNetwork process user, exploit requires upload privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-58400.yaml"
+    }
+  ],
   "CVE-2026-58455": [
     {
       "source": "nuclei",
@@ -5951,6 +5991,14 @@
       "name": "DB-GPT <= 0.8.1 - Arbitrary File Write",
       "description": "DB-GPT through 0.8.1 allows unauthenticated arbitrary file writes via a path traversal in the user_id HTTP header of the POST /api/v1/python/file/upload endpoint, letting attackers escape the intended upload directory and write files anywhere, as confirmed by the reflected upload path in the JSON response.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-73034.yaml"
+    }
+  ],
+  "CVE-2026-73969": [
+    {
+      "source": "nuclei",
+      "name": "AnsibleForms <= 6.2.0 - Authentication Bypass via Hard-coded Default JWT Signing Secret",
+      "description": "AnsibleForms < 6.2.1 contains an authentication bypass caused by use of a hard-coded fallback JWT signing secret and improper token verification, letting unauthenticated attackers gain administrator privileges, exploit requires ACCESS_TOKEN_SECRET unset.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-73969.yaml"
     }
   ],
   "CVE-2026-7467": [
