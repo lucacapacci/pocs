@@ -4055,6 +4055,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-21136.yaml"
     }
   ],
+  "CVE-2024-21410": [
+    {
+      "source": "nuclei",
+      "name": "Microsoft Exchange Server - NTLM Relay Privilege Elevation",
+      "description": "Microsoft Exchange Server is affected by an elevation-of-privilege vulnerability (CVE-2024-21410, CISA KEV) involving NTLM relay and Extended Protection for Authentication (EPA) gaps. There is no safe unauthenticated remote PoC that proves the relay condition without participating in an NTLM authentication flow, so this template is VERSION-BASED: it fingerprints Exchange via Outlook Web App (/owa/auth/logon.aspx), extracts the build (X-OWA-Version or /owa/auth/<build>/), and flags builds below the February 2024 security-update floor published by MSRC (Exchange 2016 CU23 < 15.1.2507.37; Exchange 2019 < 15.2.1544.4). Note: for some CU23 deployments, EPA must also be enabled; build alone is necessary but not always sufficient. A match means the host appears to be an unpatched Exchange build in the affected range.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2024/CVE-2024-21410.yaml"
+    }
+  ],
   "CVE-2024-21485": [
     {
       "source": "nuclei",
