@@ -2343,6 +2343,12 @@
       "name": "SAP NetWeaver AS JAVA 7.1 < 7.5 - Directory Traversal",
       "description": "SAP NetWeaver AS JAVA 7.1 < 7.5 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/39996.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "SAP NetWeaver AS Java (CrashFileDownloadServlet) - Directory Traversal",
+      "description": "A directory traversal vulnerability in SAP NetWeaver AS Java 7.10 through 7.50 (SAP Security Note 2234971, ERPScan ERPSCAN-16-012) allows a remote attacker to read arbitrary files via a ..\\ (dot-dot-backslash) sequence in the fileName parameter of CrashFileDownloadServlet (EDB 39996). CVE-2016-3976 is in the CISA Known Exploited Vulnerabilities catalog. This template performs a safe read-only traversal to Windows win.ini and /etc/passwd and matches well-known file markers. The original ERPScan advisory redacted the servlet's deployment prefix (shown as /XXX/); this template probes the servlet at the common application root, so operators of non-root deployments may need to adjust the path.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-3976.yaml"
     }
   ],
   "CVE-2016-2389": [
