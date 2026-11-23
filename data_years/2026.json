@@ -943,6 +943,12 @@
       "name": "Langflow AI Custom Component Eval Injection Unauth RCE",
       "description": "Langflow version 1.3.2 is susceptible to\n          unauthenticated remote code execution due to improper\n          input validation in the eval_custom_component_code() function.\n\n          Arbitrary code executes under the context of the backend\n          Langflow process.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/langflow_unauth_rce_cve_2026_0769.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Langflow - Remote Code Execution via custom_component eval_custom_component_code",
+      "description": "Langflow exposes an API endpoint (/api/v1/custom_component) that evaluates attacker-supplied Python component code via eval_custom_component_code without adequate sandboxing or validation. A remote attacker can submit crafted component code that executes arbitrary commands when the code is evaluated by the server. On deployments where AUTO_LOGIN is enabled (the default in many releases), a valid session token can be obtained from /api/v1/auto_login without credentials, making the issue remotely exploitable without authentication. The affected version range spans a broad set of 1.x releases; consult the vendor advisory for the exact fixed version applicable to a given deployment.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0769.yaml"
     }
   ],
   "CVE-2026-10134": [

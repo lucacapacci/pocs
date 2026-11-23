@@ -1059,6 +1059,12 @@
       "name": "Apache CouchDB < 2.1.0 - Remote Code Execution",
       "description": "Apache CouchDB < 2.1.0 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/44913.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Apache CouchDB < 1.7.0 / 2.x < 2.1.1 - Query Server Remote Code Execution",
+      "description": "Apache CouchDB before 1.7.0 and 2.x before 2.1.1 allows database administrators to configure the query server to execute arbitrary OS commands via the _config/query_servers endpoint, and such a configuration is then triggered by running a view/temp view using the configured query server language. When combined with CVE-2017-12635 (which allows a non-admin user to grant themselves the _admin role due to a JSON parser discrepancy), this becomes effectively unauthenticated remote code execution. This template chains the CVE-2017-12635 privilege-escalation primitive to create an admin-capable session, registers a malicious query server command that performs an out-of-band interaction, and triggers it via a temporary view (CouchDB 1.x _temp_view flow; CouchDB 2.x uses /_node/<node>/_config/query_servers/ and persisted design documents instead of _temp_view, but the same query-server-command primitive applies).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2017/CVE-2017-12636.yaml"
     }
   ],
   "CVE-2017-1000002": [
