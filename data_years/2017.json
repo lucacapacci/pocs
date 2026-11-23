@@ -1030,8 +1030,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apple macOS/iOS - Kernel Double Free due to IOSurfaceRootUserClient not Respecting MIG Ownership Rules",
-      "description": "Apple macOS/iOS - Kernel Double Free due to IOSurfaceRootUserClient not Respecting MIG Ownership Rules",
+      "name": "Apple macOS/iOS - Kernel Double Free Due to IOSurfaceRootUserClient Not Respecting MIG Ownership Rules",
+      "description": "Apple macOS/iOS - Kernel Double Free Due to IOSurfaceRootUserClient Not Respecting MIG Ownership Rules",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/43320.txt"
     }
   ],
@@ -1276,8 +1276,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Supervisor 3.0a1 < 3.3.2 - XML-RPC (Authenticated) Remote Code Execution (Metasploit)",
-      "description": "Supervisor 3.0a1 < 3.3.2 - XML-RPC (Authenticated) Remote Code Execution (Metasploit)",
+      "name": "Supervisor 3.0a1 < 3.3.2 - XML-RPC Remote Code Execution (Authenticated) (Metasploit)",
+      "description": "Supervisor 3.0a1 < 3.3.2 - XML-RPC Remote Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/42779.rb"
     },
     {
@@ -1795,6 +1795,12 @@
       "name": "Monstra CMS Authenticated Arbitrary File Upload",
       "description": "MonstraCMS 3.0.4 allows users to upload Arbitrary files which leads to remote command execution on the remote server.\n          An attacker may choose to upload a file containing PHP code and run this code by accessing the resulting PHP file.\n          This module was tested against MonstraCMS 3.0.4.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/monstra_fileupload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Monstra CMS 3.0.4 - Arbitrary File Upload / Remote Code Execution (Authenticated)",
+      "description": "Monstra CMS 3.0.4 - Arbitrary File Upload / Remote Code Execution (Authenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43348.txt"
     }
   ],
   "CVE-2017-1000119": [
@@ -1878,8 +1884,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "PlaySMS 1.4 - 'sendfromfile.php?Filename' (Authenticated) 'Code Execution (Metasploit)",
-      "description": "PlaySMS 1.4 - 'sendfromfile.php?Filename' (Authenticated) 'Code Execution (Metasploit)",
+      "name": "PlaySMS 1.4 - 'sendfromfile.php?Filename' 'Code Execution (Authenticated) (Metasploit)",
+      "description": "PlaySMS 1.4 - 'sendfromfile.php?Filename' 'Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/44599.rb"
     }
   ],
@@ -1892,8 +1898,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "PlaySMS - 'import.php' (Authenticated) CSV File Upload Code Execution (Metasploit)",
-      "description": "PlaySMS - 'import.php' (Authenticated) CSV File Upload Code Execution (Metasploit)",
+      "name": "PlaySMS - 'import.php' CSV File Upload Code Execution (Authenticated) (Metasploit)",
+      "description": "PlaySMS - 'import.php' CSV File Upload Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/44598.rb"
     },
     {
@@ -2210,8 +2216,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "PHP Laravel Framework 5.5.40 / 5.6.x < 5.6.30 - token Unserialize Remote Command Execution (Metasploit)",
-      "description": "PHP Laravel Framework 5.5.40 / 5.6.x < 5.6.30 - token Unserialize Remote Command Execution (Metasploit)",
+      "name": "PHP Laravel Framework 5.5.40 / 5.6.x < 5.6.30 - Token Unserialize Remote Command Execution (Metasploit)",
+      "description": "PHP Laravel Framework 5.5.40 / 5.6.x < 5.6.30 - Token Unserialize Remote Command Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/47129.rb"
     },
     {
@@ -2555,6 +2561,24 @@
       "name": "LabF nfsAxe 3.7 FTP Client Stack Buffer Overflow",
       "description": "This module exploits a buffer overflow in the LabF nfsAxe 3.7 FTP Client allowing remote\n          code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/labf_nfsaxe.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "LabF nfsAxe 3.7 FTP Client - Remote Buffer Overflow (SEH)",
+      "description": "LabF nfsAxe 3.7 FTP Client - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42011.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "LabF nfsAxe 3.7 FTP Client - Stack Buffer Overflow (Metasploit)",
+      "description": "LabF nfsAxe 3.7 FTP Client - Stack Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/43518.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "LabF nfsAxe FTP Client 3.7 - Remote Buffer Overflow (DEP Bypass)",
+      "description": "LabF nfsAxe FTP Client 3.7 - Remote Buffer Overflow (DEP Bypass)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/43236.py"
     }
   ],
   "CVE-2017-13696": [
@@ -2575,6 +2599,30 @@
       "name": "Dup Scout Enterprise GET Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability\n          in the web interface of Dup Scout Enterprise versions <= 10.0.18,\n          caused by improper bounds checking of the request path in HTTP GET\n          requests sent to the built-in web server which can be leveraged\n          to execute arbitrary code in the context of NT AUTHORITY\\SYSTEM.\n\n          This module supports x86 versions of Dup Scout Enterprise and x86\n          Windows operating systems only and has been tested successfully on\n          Windows 7 SP1 (x86) and Windows XP SP0 (x86).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/dupscts_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Disk Pulse Enterprise 9.9.16 - Remote Buffer Overflow (SEH)",
+      "description": "Disk Pulse Enterprise 9.9.16 - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42560.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Disk Savvy Enterprise 9.9.14 - Remote Buffer Overflow (SEH)",
+      "description": "Disk Savvy Enterprise 9.9.14 - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42558.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Dup Scout Enterprise 9.9.14 - Remote Buffer Overflow (SEH)",
+      "description": "Dup Scout Enterprise 9.9.14 - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42557.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sync Breeze Enterprise 9.9.16 - Remote Buffer Overflow (SEH)",
+      "description": "Sync Breeze Enterprise 9.9.16 - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42559.py"
     }
   ],
   "CVE-2017-6187": [
@@ -2597,6 +2645,12 @@
       "name": "Disk Sorter Enterprise GET Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability\n          in the web interface of Disk Sorter Enterprise v9.5.12, caused by\n          improper bounds checking of the request path in HTTP GET requests\n          sent to the built-in web server. This module has been tested\n          successfully on Windows 7 SP1 x86.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/disksorter_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Disk Sorter Enterprise 9.5.12 - 'GET' Remote Buffer Overflow (SEH)",
+      "description": "Disk Sorter Enterprise 9.5.12 - 'GET' Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/41666.py"
     }
   ],
   "CVE-2017-9822": [
@@ -2625,6 +2679,12 @@
       "name": "Easy Chat Server User Registeration Buffer Overflow (SEH)",
       "description": "This module exploits a buffer overflow during user registration in Easy Chat Server software.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/easychatserver_seh.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "EFS Easy Chat Server 3.1 - Remote Buffer Overflow (SEH)",
+      "description": "EFS Easy Chat Server 3.1 - Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42155.py"
     }
   ],
   "CVE-2017-11517": [
@@ -2882,16 +2942,16 @@
   "CVE-2017-13209": [
     {
       "source": "exploitdb",
-      "name": "Android - Hardware Service Manager Arbitrary Service Replacement due to getpidcon",
-      "description": "Android - Hardware Service Manager Arbitrary Service Replacement due to getpidcon",
+      "name": "Android - Hardware Service Manager Arbitrary Service Replacement Due to getpidcon",
+      "description": "Android - Hardware Service Manager Arbitrary Service Replacement Due to getpidcon",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/android/dos/43513.txt"
     }
   ],
   "CVE-2017-13216": [
     {
       "source": "exploitdb",
-      "name": "Android - Inter-Process munmap due to Race Condition in ashmem",
-      "description": "Android - Inter-Process munmap due to Race Condition in ashmem",
+      "name": "Android - Inter-Process munmap Due to Race Condition in ashmem",
+      "description": "Android - Inter-Process munmap Due to Race Condition in ashmem",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/android/dos/43464.txt"
     }
   ],
@@ -3021,6 +3081,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/android/webapps/47722.py"
     }
   ],
+  "CVE-2017-18486": [
+    {
+      "source": "exploitdb",
+      "name": "JitBit HelpDesk < 9.0.2 - Authentication Bypass",
+      "description": "JitBit HelpDesk < 9.0.2 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/42776.txt"
+    }
+  ],
+  "CVE-2017-18639": [
+    {
+      "source": "exploitdb",
+      "name": "Sitefinity CMS 9.2 - Cross-Site Scripting",
+      "description": "Sitefinity CMS 9.2 - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/42792.txt"
+    }
+  ],
   "CVE-2017-9602": [
     {
       "source": "exploitdb",
@@ -3113,6 +3189,14 @@
       "name": "dnaLIMS DNA Sequencing - Directory Traversal / Session Hijacking / Cross-Site Scripting",
       "description": "dnaLIMS DNA Sequencing - Directory Traversal / Session Hijacking / Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/41578.txt"
+    }
+  ],
+  "CVE-2017-18025": [
+    {
+      "source": "exploitdb",
+      "name": "ITGuard-Manager 0.0.0.1 - Remote Code Execution",
+      "description": "ITGuard-Manager 0.0.0.1 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/43343.py"
     }
   ],
   "CVE-2017-16787": [
@@ -3378,8 +3462,8 @@
   "CVE-2017-6444": [
     {
       "source": "exploitdb",
-      "name": "MikroTik Router - ARP Table OverFlow Denial Of Service",
-      "description": "MikroTik Router - ARP Table OverFlow Denial Of Service",
+      "name": "MikroTik Router - ARP Table OverFlow Denial of Service",
+      "description": "MikroTik Router - ARP Table OverFlow Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/41601.c"
     }
   ],
@@ -3421,6 +3505,14 @@
       "name": "Smiths Medical Medfusion 4000 - 'DHCP' Denial of Service",
       "description": "Smiths Medical Medfusion 4000 - 'DHCP' Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/43776.py"
+    }
+  ],
+  "CVE-2017-20222": [
+    {
+      "source": "exploitdb",
+      "name": "Telesquare SKT LTE Router SDT-CS3B1 - Denial of Service",
+      "description": "Telesquare SKT LTE Router SDT-CS3B1 - Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/43401.py"
     }
   ],
   "CVE-2017-16902": [
@@ -3487,6 +3579,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/47888.py"
     }
   ],
+  "CVE-2017-20214": [
+    {
+      "source": "exploitdb",
+      "name": "FLIR Thermal Camera F/FC/PT/D - SSH Backdoor Access",
+      "description": "FLIR Thermal Camera F/FC/PT/D - SSH Backdoor Access",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/42787.txt"
+    }
+  ],
   "CVE-2017-17761": [
     {
       "source": "exploitdb",
@@ -3509,6 +3609,22 @@
       "name": "Miele Professional PG 8528 - Directory Traversal",
       "description": "Miele Professional PG 8528 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/41718.txt"
+    }
+  ],
+  "CVE-2017-16522": [
+    {
+      "source": "exploitdb",
+      "name": "MitraStar DSL-100HN-T1/GPT-2541GNAC - Privilege Escalation",
+      "description": "MitraStar DSL-100HN-T1/GPT-2541GNAC - Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/43061.txt"
+    }
+  ],
+  "CVE-2017-16523": [
+    {
+      "source": "exploitdb",
+      "name": "MitraStar DSL-100HN-T1/GPT-2541GNAC - Privilege Escalation",
+      "description": "MitraStar DSL-100HN-T1/GPT-2541GNAC - Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/43061.txt"
     }
   ],
   "CVE-2017-14459": [
@@ -3536,8 +3652,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "TP-Link WR940N - (Authenticated) Remote Code",
-      "description": "TP-Link WR940N - (Authenticated) Remote Code",
+      "name": "TP-Link WR940N - Remote Code (Authenticated)",
+      "description": "TP-Link WR940N - Remote Code (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43022.py"
     }
   ],
@@ -3715,6 +3831,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42581.txt"
     }
   ],
+  "CVE-2017-9100": [
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-600M Wireless N 150 - Authentication Bypass",
+      "description": "D-Link DIR-600M Wireless N 150 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42039.txt"
+    }
+  ],
   "CVE-2017-7398": [
     {
       "source": "exploitdb",
@@ -3821,6 +3945,38 @@
       "name": "FiberHome LM53Q1 - Multiple Vulnerabilities",
       "description": "FiberHome LM53Q1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43460.py"
+    }
+  ],
+  "CVE-2017-20212": [
+    {
+      "source": "exploitdb",
+      "name": "FLIR Thermal Camera F/FC/PT/D - Information Disclosure",
+      "description": "FLIR Thermal Camera F/FC/PT/D - Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42786.txt"
+    }
+  ],
+  "CVE-2017-20213": [
+    {
+      "source": "exploitdb",
+      "name": "FLIR Thermal Camera F/FC/PT/D - Stream Disclosure",
+      "description": "FLIR Thermal Camera F/FC/PT/D - Stream Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42789.txt"
+    }
+  ],
+  "CVE-2017-20215": [
+    {
+      "source": "exploitdb",
+      "name": "FLIR Thermal Camera FC-S/PT - Command Injection",
+      "description": "FLIR Thermal Camera FC-S/PT - Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42788.txt"
+    }
+  ],
+  "CVE-2017-20216": [
+    {
+      "source": "exploitdb",
+      "name": "FLIR Thermal Camera PT-Series (PT-334 200562) - Root Remote Code Execution",
+      "description": "FLIR Thermal Camera PT-Series (PT-334 200562) - Root Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42785.sh"
     }
   ],
   "CVE-2017-3133": [
@@ -3948,8 +4104,8 @@
   "CVE-2017-3898": [
     {
       "source": "exploitdb",
-      "name": "McAfee LiveSafe 16.0.3 - Man In The Middle Registry Modification Leading to Remote Command Execution",
-      "description": "McAfee LiveSafe 16.0.3 - Man In The Middle Registry Modification Leading to Remote Command Execution",
+      "name": "McAfee LiveSafe 16.0.3 - Man in the Middle Registry Modification Leading to Remote Command Execution",
+      "description": "McAfee LiveSafe 16.0.3 - Man in the Middle Registry Modification Leading to Remote Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/44062.md"
     }
   ],
@@ -3967,6 +4123,30 @@
       "name": "Netgear DGN2200v1/v2/v3/v4 - Cross-Site Request Forgery",
       "description": "Netgear DGN2200v1/v2/v3/v4 - Cross-Site Request Forgery",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/41472.html"
+    }
+  ],
+  "CVE-2017-18378": [
+    {
+      "source": "exploitdb",
+      "name": "Netgear ReadyNAS Surveillance 1.4.3-16 - Remote Command Execution",
+      "description": "Netgear ReadyNAS Surveillance 1.4.3-16 - Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42956.txt"
+    }
+  ],
+  "CVE-2017-9243": [
+    {
+      "source": "exploitdb",
+      "name": "QWR-1104 Wireless-N Router - Cross-Site Scripting",
+      "description": "QWR-1104 Wireless-N Router - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42075.txt"
+    }
+  ],
+  "CVE-2017-12853": [
+    {
+      "source": "exploitdb",
+      "name": "RealTime RWR-3G-100 Router - Cross-Site Request Forgery (Change Admin Password)",
+      "description": "RealTime RWR-3G-100 Router - Cross-Site Request Forgery (Change Admin Password)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42449.html"
     }
   ],
   "CVE-2017-14219": [
@@ -4047,6 +4227,22 @@
       "name": "Technicolor TC7337 - 'SSID' Persistent Cross-Site Scripting",
       "description": "Technicolor TC7337 - 'SSID' Persistent Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42427.html"
+    }
+  ],
+  "CVE-2017-20221": [
+    {
+      "source": "exploitdb",
+      "name": "Telesquare SKT LTE Router SDT-CS3B1 - Cross-Site Request Forgery",
+      "description": "Telesquare SKT LTE Router SDT-CS3B1 - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43400.html"
+    }
+  ],
+  "CVE-2017-20223": [
+    {
+      "source": "exploitdb",
+      "name": "Telesquare SKT LTE Router SDT-CS3B1 - Information Disclosure",
+      "description": "Telesquare SKT LTE Router SDT-CS3B1 - Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43402.txt"
     }
   ],
   "CVE-2017-15236": [
@@ -4228,8 +4424,8 @@
   "CVE-2017-11120": [
     {
       "source": "exploitdb",
-      "name": "Apple iOS 10.2 - Broadcom Out-of-Bounds Write when Handling 802.11k Neighbor Report Response",
-      "description": "Apple iOS 10.2 - Broadcom Out-of-Bounds Write when Handling 802.11k Neighbor Report Response",
+      "name": "Apple iOS 10.2 - Broadcom Out-of-Bounds Write When Handling 802.11k Neighbor Report Response",
+      "description": "Apple iOS 10.2 - Broadcom Out-of-Bounds Write When Handling 802.11k Neighbor Report Response",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/ios/remote/42784.txt"
     }
   ],
@@ -4292,8 +4488,8 @@
   "CVE-2017-3548": [
     {
       "source": "exploitdb",
-      "name": "Oracle PeopleSoft Enterprise PeopleTools < 8.55 - Remote Code Execution Via Blind XML External Entity",
-      "description": "Oracle PeopleSoft Enterprise PeopleTools < 8.55 - Remote Code Execution Via Blind XML External Entity",
+      "name": "Oracle PeopleSoft Enterprise PeopleTools < 8.55 - Remote Code Execution via Blind XML External Entity",
+      "description": "Oracle PeopleSoft Enterprise PeopleTools < 8.55 - Remote Code Execution via Blind XML External Entity",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/43114.py"
     },
     {
@@ -4301,6 +4497,22 @@
       "name": "Oracle PeopleSoft - 'PeopleSoftServiceListeningConnector' XML External Entity via DOCTYPE",
       "description": "Oracle PeopleSoft - 'PeopleSoftServiceListeningConnector' XML External Entity via DOCTYPE",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/xml/webapps/41925.txt"
+    }
+  ],
+  "CVE-2017-20220": [
+    {
+      "source": "exploitdb",
+      "name": "Serviio PRO 1.8 DLNA Media Streaming Server - REST API Arbitrary Password Change",
+      "description": "Serviio PRO 1.8 DLNA Media Streaming Server - REST API Arbitrary Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/41960.py"
+    }
+  ],
+  "CVE-2017-20217": [
+    {
+      "source": "exploitdb",
+      "name": "Serviio PRO 1.8 DLNA Media Streaming Server - REST API Information Disclosure",
+      "description": "Serviio PRO 1.8 DLNA Media Streaming Server - REST API Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/41958.py"
     }
   ],
   "CVE-2017-8046": [
@@ -4800,14 +5012,14 @@
   "CVE-2017-1000405": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel - 'The Huge Dirty Cow' Overwriting The Huge Zero Page (1)",
-      "description": "Linux Kernel - 'The Huge Dirty Cow' Overwriting The Huge Zero Page (1)",
+      "name": "Linux Kernel - 'The Huge Dirty Cow' Overwriting the Huge Zero Page (1)",
+      "description": "Linux Kernel - 'The Huge Dirty Cow' Overwriting the Huge Zero Page (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/43199.c"
     },
     {
       "source": "exploitdb",
-      "name": "Linux Kernel - 'The Huge Dirty Cow' Overwriting The Huge Zero Page (2)",
-      "description": "Linux Kernel - 'The Huge Dirty Cow' Overwriting The Huge Zero Page (2)",
+      "name": "Linux Kernel - 'The Huge Dirty Cow' Overwriting the Huge Zero Page (2)",
+      "description": "Linux Kernel - 'The Huge Dirty Cow' Overwriting the Huge Zero Page (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/44305.c"
     }
   ],
@@ -4871,6 +5083,14 @@
       "name": "Linux Kernel < 4.14.rc3 - Local Denial of Service",
       "description": "Linux Kernel < 4.14.rc3 - Local Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/42932.c"
+    }
+  ],
+  "CVE-2017-17833": [
+    {
+      "source": "exploitdb",
+      "name": "OpenSLP 2.0.0 - Double-Free",
+      "description": "OpenSLP 2.0.0 - Double-Free",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/44972.py"
     }
   ],
   "CVE-2017-6542": [
@@ -5033,6 +5253,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/43359.c"
     }
   ],
+  "CVE-2017-20228": [
+    {
+      "source": "exploitdb",
+      "name": "Flat Assembler 1.7.21 - Local Buffer Overflow",
+      "description": "Flat Assembler 1.7.21 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/42265.py"
+    }
+  ],
   "CVE-2017-1000409": [
     {
       "source": "exploitdb",
@@ -5047,6 +5275,14 @@
       "name": "GNU C Library Dynamic Loader glibc ld.so - Memory Leak / Buffer Overflow",
       "description": "GNU C Library Dynamic Loader glibc ld.so - Memory Leak / Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/43331.txt"
+    }
+  ],
+  "CVE-2017-20227": [
+    {
+      "source": "exploitdb",
+      "name": "JAD Java Decompiler 1.5.8e - Local Buffer Overflow (NX Enabled)",
+      "description": "JAD Java Decompiler 1.5.8e - Local Buffer Overflow (NX Enabled)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/42255.py"
     }
   ],
   "CVE-2017-8849": [
@@ -5405,6 +5641,12 @@
       "name": "WordPress Core < 4.7.4 - Unauthorized Password Reset",
       "description": "WordPress Core < 4.7.4 - Unauthorized Password Reset",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/41963.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress < 5.5 - Password Reset Poisoning via Host Header Injection",
+      "description": "WordPress before 5.5 derives the password-reset email's From/Return-Path address from $_SERVER['SERVER_NAME'] in wp_mail() (wp-includes/pluggable.php). On servers where SERVER_NAME follows the client Host header (e.g. Apache with UseCanonicalName Off, or a default/IP-based vhost), an unauthenticated attacker can POST to wp-login.php?action=lostpassword with a crafted Host header so the reset email's From/Return-Path points at an attacker-controlled domain. If that message bounces or is auto-replied, the secret reset link is delivered to the attacker, enabling account takeover. The injected host is never reflected in the HTTP response and triggers no out-of-band callback, so this detection is version-based (the SERVER_NAME sender was replaced with network_home_url() in 5.5).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2017/CVE-2017-8295.yaml"
     }
   ],
   "CVE-2017-1000370": [
@@ -5506,8 +5748,8 @@
   "CVE-2017-13875": [
     {
       "source": "exploitdb",
-      "name": "Apple macOS - Kernel Code Execution due to Lack of Bounds Checking in AppleIntelCapriController::GetLinkConfig",
-      "description": "Apple macOS - Kernel Code Execution due to Lack of Bounds Checking in AppleIntelCapriController::GetLinkConfig",
+      "name": "Apple macOS - Kernel Code Execution Due to Lack of Bounds Checking in AppleIntelCapriController::GetLinkConfig",
+      "description": "Apple macOS - Kernel Code Execution Due to Lack of Bounds Checking in AppleIntelCapriController::GetLinkConfig",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/macos/dos/43327.c"
     }
   ],
@@ -5562,8 +5804,8 @@
   "CVE-2017-13865": [
     {
       "source": "exploitdb",
-      "name": "Apple macOS XNU Kernel - Memory Disclosure due to bug in Kernel API for Detecting Kernel Memory Disclosures",
-      "description": "Apple macOS XNU Kernel - Memory Disclosure due to bug in Kernel API for Detecting Kernel Memory Disclosures",
+      "name": "Apple macOS XNU Kernel - Memory Disclosure Due to bug in Kernel API for Detecting Kernel Memory Disclosures",
+      "description": "Apple macOS XNU Kernel - Memory Disclosure Due to bug in Kernel API for Detecting Kernel Memory Disclosures",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/macos/dos/43321.c"
     }
   ],
@@ -5578,8 +5820,8 @@
   "CVE-2017-13878": [
     {
       "source": "exploitdb",
-      "name": "macOS 10.13 (17A365) - Kernel Memory Disclosure due to Lack of Bounds Checking in 'AppleIntelCapriController::getDisplayPipeCapability'",
-      "description": "macOS 10.13 (17A365) - Kernel Memory Disclosure due to Lack of Bounds Checking in 'AppleIntelCapriController::getDisplayPipeCapability'",
+      "name": "macOS 10.13 (17A365) - Kernel Memory Disclosure Due to Lack of Bounds Checking in 'AppleIntelCapriController::getDisplayPipeCapability'",
+      "description": "macOS 10.13 (17A365) - Kernel Memory Disclosure Due to Lack of Bounds Checking in 'AppleIntelCapriController::getDisplayPipeCapability'",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/macos/dos/43780.c"
     }
   ],
@@ -5974,8 +6216,8 @@
   "CVE-2017-13867": [
     {
       "source": "exploitdb",
-      "name": "Apple macOS/iOS - Kernel Double Free due to Incorrect API Usage in Flow Divert Socket Option Handling",
-      "description": "Apple macOS/iOS - Kernel Double Free due to Incorrect API Usage in Flow Divert Socket Option Handling",
+      "name": "Apple macOS/iOS - Kernel Double Free Due to Incorrect API Usage in Flow Divert Socket Option Handling",
+      "description": "Apple macOS/iOS - Kernel Double Free Due to Incorrect API Usage in Flow Divert Socket Option Handling",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/43328.c"
     }
   ],
@@ -5990,8 +6232,8 @@
   "CVE-2017-13847": [
     {
       "source": "exploitdb",
-      "name": "Apple macOS/iOS - Multiple Kernel Use-After-Frees due to Incorrect IOKit Object Lifetime Management in IOTimeSyncClockManagerUserClient",
-      "description": "Apple macOS/iOS - Multiple Kernel Use-After-Frees due to Incorrect IOKit Object Lifetime Management in IOTimeSyncClockManagerUserClient",
+      "name": "Apple macOS/iOS - Multiple Kernel Use-After-Frees Due to Incorrect IOKit Object Lifetime Management in IOTimeSyncClockManagerUserClient",
+      "description": "Apple macOS/iOS - Multiple Kernel Use-After-Frees Due to Incorrect IOKit Object Lifetime Management in IOTimeSyncClockManagerUserClient",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/43326.c"
     }
   ],
@@ -6082,8 +6324,8 @@
   "CVE-2017-2447": [
     {
       "source": "exploitdb",
-      "name": "Apple Safari - Out-of-Bounds Read when Calling Bound Function",
-      "description": "Apple Safari - Out-of-Bounds Read when Calling Bound Function",
+      "name": "Apple Safari - Out-of-Bounds Read When Calling Bound Function",
+      "description": "Apple Safari - Out-of-Bounds Read When Calling Bound Function",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/41743.html"
     }
   ],
@@ -6230,8 +6472,8 @@
   "CVE-2017-13876": [
     {
       "source": "exploitdb",
-      "name": "Apple XNU Kernel - Memory Corruption due to Integer Overflow in __offsetof Usage in posix_spawn on 32-bit Platforms",
-      "description": "Apple XNU Kernel - Memory Corruption due to Integer Overflow in __offsetof Usage in posix_spawn on 32-bit Platforms",
+      "name": "Apple XNU Kernel - Memory Corruption Due to Integer Overflow in __offsetof Usage in posix_spawn on 32-bit Platforms",
+      "description": "Apple XNU Kernel - Memory Corruption Due to Integer Overflow in __offsetof Usage in posix_spawn on 32-bit Platforms",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/43325.txt"
     }
   ],
@@ -6396,8 +6638,8 @@
   "CVE-2017-3241": [
     {
       "source": "exploitdb",
-      "name": "Oracle OpenJDK Runtime Environment 1.8.0_112-b15 - Java Serialization Denial Of Service",
-      "description": "Oracle OpenJDK Runtime Environment 1.8.0_112-b15 - Java Serialization Denial Of Service",
+      "name": "Oracle OpenJDK Runtime Environment 1.8.0_112-b15 - Java Serialization Denial of Service",
+      "description": "Oracle OpenJDK Runtime Environment 1.8.0_112-b15 - Java Serialization Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/41145.py"
     }
   ],
@@ -6636,8 +6878,8 @@
   "CVE-2017-6980": [
     {
       "source": "exploitdb",
-      "name": "WebKit JSC - arrayProtoFuncSplice does not Initialize all Indices",
-      "description": "WebKit JSC - arrayProtoFuncSplice does not Initialize all Indices",
+      "name": "WebKit JSC - arrayProtoFuncSplice does Not Initialize all Indices",
+      "description": "WebKit JSC - arrayProtoFuncSplice does Not Initialize all Indices",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/42189.html"
     }
   ],
@@ -7096,8 +7338,8 @@
   "CVE-2017-6478": [
     {
       "source": "exploitdb",
-      "name": "MaNGOSWebV4  4.0.6 - Reflected XSS",
-      "description": "MaNGOSWebV4  4.0.6 - Reflected XSS",
+      "name": "MaNGOSWebV4 4.0.6 - Reflected XSS",
+      "description": "MaNGOSWebV4 4.0.6 - Reflected XSS",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52457.txt"
     },
     {
@@ -7246,8 +7488,8 @@
   "CVE-2017-2528": [
     {
       "source": "exploitdb",
-      "name": "WebKit - CachedFrame does not Detach Openers Universal Cross-Site Scripting",
-      "description": "WebKit - CachedFrame does not Detach Openers Universal Cross-Site Scripting",
+      "name": "WebKit - CachedFrame does Not Detach Openers Universal Cross-Site Scripting",
+      "description": "WebKit - CachedFrame does Not Detach Openers Universal Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/42105.html"
     }
   ],
@@ -7601,6 +7843,14 @@
       "name": "CMS Made Simple 2.1.6 - Multiple Vulnerabilities",
       "description": "CMS Made Simple 2.1.6 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41997.txt"
+    }
+  ],
+  "CVE-2017-18346": [
+    {
+      "source": "exploitdb",
+      "name": "CMS Web-Gooroo < 1.141 - Multiple Vulnerabilities",
+      "description": "CMS Web-Gooroo < 1.141 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42577.txt"
     }
   ],
   "CVE-2017-15984": [
@@ -8051,6 +8301,126 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41824.txt"
     }
   ],
+  "CVE-2017-20067": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20068": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20069": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20070": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20071": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20072": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20073": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20074": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20075": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20076": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20077": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20078": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20079": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20080": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
+  "CVE-2017-20081": [
+    {
+      "source": "exploitdb",
+      "name": "Hindu Matrimonial Script - Authentication Bypass",
+      "description": "Hindu Matrimonial Script - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41044.txt"
+    }
+  ],
   "CVE-2017-15235": [
     {
       "source": "exploitdb",
@@ -8089,6 +8459,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43102.txt"
     }
   ],
+  "CVE-2017-16561": [
+    {
+      "source": "exploitdb",
+      "name": "Ingenious School Management System 2.3.0 - 'friend_index' SQL Injection",
+      "description": "Ingenious School Management System 2.3.0 - 'friend_index' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43108.txt"
+    }
+  ],
   "CVE-2017-14322": [
     {
       "source": "exploitdb",
@@ -8113,12 +8491,76 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43097.txt"
     }
   ],
+  "CVE-2017-20137": [
+    {
+      "source": "exploitdb",
+      "name": "Itech B2B Script 4.28 - SQL Injection",
+      "description": "Itech B2B Script 4.28 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41188.txt"
+    }
+  ],
+  "CVE-2017-12757": [
+    {
+      "source": "exploitdb",
+      "name": "iTech Caregiver Script 2.71 - SQL Injection",
+      "description": "iTech Caregiver Script 2.71 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42507.txt"
+    }
+  ],
+  "CVE-2017-20136": [
+    {
+      "source": "exploitdb",
+      "name": "Itech Classifieds Script 7.27 - 'scat' SQL Injection",
+      "description": "Itech Classifieds Script 7.27 - 'scat' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41189.txt"
+    }
+  ],
+  "CVE-2017-20135": [
+    {
+      "source": "exploitdb",
+      "name": "Itech Dating Script 3.26 - SQL Injection",
+      "description": "Itech Dating Script 3.26 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41190.txt"
+    }
+  ],
+  "CVE-2017-20134": [
+    {
+      "source": "exploitdb",
+      "name": "Itech Freelancer Script 5.13 - SQL Injection",
+      "description": "Itech Freelancer Script 5.13 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41191.txt"
+    }
+  ],
   "CVE-2017-15963": [
     {
       "source": "exploitdb",
       "name": "iTech Gigs Script 1.21 - SQL Injection",
       "description": "iTech Gigs Script 1.21 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43096.txt"
+    }
+  ],
+  "CVE-2017-20132": [
+    {
+      "source": "exploitdb",
+      "name": "Itech Multi Vendor Script 6.49 - 'pl' SQL Injection",
+      "description": "Itech Multi Vendor Script 6.49 - 'pl' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41193.txt"
+    }
+  ],
+  "CVE-2017-20131": [
+    {
+      "source": "exploitdb",
+      "name": "Itech News Portal Script 6.28 - 'inf' SQL Injection",
+      "description": "Itech News Portal Script 6.28 - 'inf' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41194.txt"
+    }
+  ],
+  "CVE-2017-20130": [
+    {
+      "source": "exploitdb",
+      "name": "Itech Real Estate Script 3.12 - SQL Injection",
+      "description": "Itech Real Estate Script 3.12 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41195.txt"
     }
   ],
   "CVE-2017-15964": [
@@ -8137,12 +8579,92 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42795.txt"
     }
   ],
+  "CVE-2017-20262": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Ajax Quiz 1.8 - SQL Injection",
+      "description": "Joomla! Component Ajax Quiz 1.8 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42532.txt"
+    }
+  ],
+  "CVE-2017-12758": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Appointment 1.1 - SQL Injection",
+      "description": "Joomla! Component Appointment 1.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42492.txt"
+    }
+  ],
+  "CVE-2017-20261": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Bargain Product VM3 1.0 - 'product_id' SQL Injection",
+      "description": "Joomla! Component Bargain Product VM3 1.0 - 'product_id' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42552.txt"
+    }
+  ],
+  "CVE-2017-20267": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Calendar Planner 1.0.1 - SQL Injection",
+      "description": "Joomla! Component Calendar Planner 1.0.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42501.txt"
+    }
+  ],
+  "CVE-2017-20273": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Event Registration Pro Calendar 4.1.3 - SQL Injection",
+      "description": "Joomla! Component Event Registration Pro Calendar 4.1.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42416.txt"
+    }
+  ],
+  "CVE-2017-20281": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Extra Search 2.2.8 - 'establename' SQL Injection",
+      "description": "Joomla! Component Extra Search 2.2.8 - 'establename' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41663.txt"
+    }
+  ],
+  "CVE-2017-20265": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Flip Wall 8.0 - 'wallid' SQL Injection",
+      "description": "Joomla! Component Flip Wall 8.0 - 'wallid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42524.txt"
+    }
+  ],
+  "CVE-2017-20263": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component FocalPoint 1.2.3 - SQL Injection",
+      "description": "Joomla! Component FocalPoint 1.2.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42530.txt"
+    }
+  ],
+  "CVE-2017-20255": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component JB Visa 1.0 - 'visatype' SQL Injection",
+      "description": "Joomla! Component JB Visa 1.0 - 'visatype' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43350.txt"
+    }
+  ],
   "CVE-2017-17870": [
     {
       "source": "exploitdb",
       "name": "Joomla! Component JBuildozer 1.4.1 - 'appid' SQL Injection",
       "description": "Joomla! Component JBuildozer 1.4.1 - 'appid' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43323.txt"
+    }
+  ],
+  "CVE-2017-20282": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component jCart for OpenCart 2.0 - 'product_id' SQL Injection",
+      "description": "Joomla! Component jCart for OpenCart 2.0 - 'product_id' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41642.txt"
     }
   ],
   "CVE-2017-17875": [
@@ -8169,12 +8691,76 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43330.txt"
     }
   ],
+  "CVE-2017-18345": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Joomanager 2.0.0 - 'com_Joomanager' Arbitrary File Download",
+      "description": "Joomla! Component Joomanager 2.0.0 - 'com_Joomanager' Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/44252.py"
+    }
+  ],
+  "CVE-2017-20278": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component JoomRecipe 1.0.3 - SQL Injection",
+      "description": "Joomla! Component JoomRecipe 1.0.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42185.txt"
+    }
+  ],
+  "CVE-2017-20277": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component JoomRecipe 1.0.4 - 'search_author' SQL Injection",
+      "description": "Joomla! Component JoomRecipe 1.0.4 - 'search_author' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42347.txt"
+    }
+  ],
+  "CVE-2017-20269": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component KissGallery 1.0.0 - SQL Injection",
+      "description": "Joomla! Component KissGallery 1.0.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42494.txt"
+    }
+  ],
   "CVE-2017-16356": [
     {
       "source": "exploitdb",
       "name": "Joomla! Component Kubik-Rubik Simple Image Gallery Extended (SIGE) 3.2.3 - Cross-Site Scripting",
       "description": "Joomla! Component Kubik-Rubik Simple Image Gallery Extended (SIGE) 3.2.3 - Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/44104.txt"
+    }
+  ],
+  "CVE-2017-20274": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component LMS King Professional 3.2.4.0 - SQL Injection",
+      "description": "Joomla! Component LMS King Professional 3.2.4.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42415.txt"
+    }
+  ],
+  "CVE-2017-20253": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component My Projects 2.0 - SQL Injection",
+      "description": "Joomla! Component My Projects 2.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43358.txt"
+    }
+  ],
+  "CVE-2017-20280": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Myportfolio 3.0.2 - 'pid' SQL Injection",
+      "description": "Joomla! Component Myportfolio 3.0.2 - 'pid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41930.txt"
+    }
+  ],
+  "CVE-2017-20252": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component NextGen Editor 2.1.0 - 'plname' SQL Injection",
+      "description": "Joomla! Component NextGen Editor 2.1.0 - 'plname' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43365.txt"
     }
   ],
   "CVE-2017-15965": [
@@ -8185,12 +8771,156 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43094.txt"
     }
   ],
+  "CVE-2017-20259": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component OSDownloads 1.7.4 - SQL Injection",
+      "description": "Joomla! Component OSDownloads 1.7.4 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42561.txt"
+    }
+  ],
+  "CVE-2017-20279": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Payage 2.05 - 'aid' SQL Injection",
+      "description": "Joomla! Component Payage 2.05 - 'aid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42113.txt"
+    }
+  ],
+  "CVE-2017-20275": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component PHP-Bridge 1.2.3 - SQL Injection",
+      "description": "Joomla! Component PHP-Bridge 1.2.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42414.txt"
+    }
+  ],
+  "CVE-2017-20260": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Price Alert 3.0.2 - 'product_id' SQL Injection",
+      "description": "Joomla! Component Price Alert 3.0.2 - 'product_id' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42553.txt"
+    }
+  ],
+  "CVE-2017-20257": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Quiz Deluxe 3.7.4 - SQL Injection",
+      "description": "Joomla! Component Quiz Deluxe 3.7.4 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42589.txt"
+    }
+  ],
+  "CVE-2017-20258": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Responsive Portfolio 1.6.1 - SQL Injection",
+      "description": "Joomla! Component Responsive Portfolio 1.6.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42564.txt"
+    }
+  ],
+  "CVE-2017-20276": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component SIMGenealogy 2.1.5 - SQL Injection",
+      "description": "Joomla! Component SIMGenealogy 2.1.5 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42413.txt"
+    }
+  ],
+  "CVE-2017-20266": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component SP Movie Database 1.3 - SQL Injection",
+      "description": "Joomla! Component SP Movie Database 1.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42502.txt"
+    }
+  ],
+  "CVE-2017-20264": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Sponsor Wall 8.0 - SQL Injection",
+      "description": "Joomla! Component Sponsor Wall 8.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42525.txt"
+    }
+  ],
+  "CVE-2017-20271": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component StreetGuessr Game 1.1.8 - SQL Injection",
+      "description": "Joomla! Component StreetGuessr Game 1.1.8 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42423.txt"
+    }
+  ],
+  "CVE-2017-20256": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Survey Force Deluxe 3.2.4 - 'invite' SQL Injection",
+      "description": "Joomla! Component Survey Force Deluxe 3.2.4 - 'invite' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42606.txt"
+    }
+  ],
+  "CVE-2017-20270": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Twitch Tv 1.1 - SQL Injection",
+      "description": "Joomla! Component Twitch Tv 1.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42493.txt"
+    }
+  ],
+  "CVE-2017-20272": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Ultimate Property Listing 1.0.2 - SQL Injection",
+      "description": "Joomla! Component Ultimate Property Listing 1.0.2 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42417.txt"
+    }
+  ],
+  "CVE-2017-20254": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component User Bench 1.0 - 'userid' SQL Injection",
+      "description": "Joomla! Component User Bench 1.0 - 'userid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43357.txt"
+    }
+  ],
+  "CVE-2017-20268": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component Zap Calendar Lite 4.3.4 - SQL Injection",
+      "description": "Joomla! Component Zap Calendar Lite 4.3.4 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42500.txt"
+    }
+  ],
   "CVE-2017-15966": [
     {
       "source": "exploitdb",
       "name": "Joomla! Component Zh YandexMap 6.1.1.0 - 'placemarklistid' SQL Injection",
       "description": "Joomla! Component Zh YandexMap 6.1.1.0 - 'placemarklistid' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43093.txt"
+    }
+  ],
+  "CVE-2017-20126": [
+    {
+      "source": "exploitdb",
+      "name": "KB Affiliate Referral Script 1.0 - Authentication Bypass",
+      "description": "KB Affiliate Referral Script 1.0 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41166.txt"
+    }
+  ],
+  "CVE-2017-20127": [
+    {
+      "source": "exploitdb",
+      "name": "KB Login Authentication Script 1.1 - Authentication Bypass",
+      "description": "KB Login Authentication Script 1.1 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41167.txt"
+    }
+  ],
+  "CVE-2017-20128": [
+    {
+      "source": "exploitdb",
+      "name": "KB Messages PHP Script 1.0 - Authentication Bypass",
+      "description": "KB Messages PHP Script 1.0 - Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41168.txt"
     }
   ],
   "CVE-2017-17618": [
@@ -8285,6 +9015,46 @@
       "name": "Moodle 2.x/3.x - SQL Injection",
       "description": "Moodle 2.x/3.x - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41828.php"
+    }
+  ],
+  "CVE-2017-20139": [
+    {
+      "source": "exploitdb",
+      "name": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "description": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41155.txt"
+    }
+  ],
+  "CVE-2017-20140": [
+    {
+      "source": "exploitdb",
+      "name": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "description": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41155.txt"
+    }
+  ],
+  "CVE-2017-20141": [
+    {
+      "source": "exploitdb",
+      "name": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "description": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41155.txt"
+    }
+  ],
+  "CVE-2017-20142": [
+    {
+      "source": "exploitdb",
+      "name": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "description": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41155.txt"
+    }
+  ],
+  "CVE-2017-20143": [
+    {
+      "source": "exploitdb",
+      "name": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "description": "Movie Portal Script 7.36 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41155.txt"
     }
   ],
   "CVE-2017-1002003": [
@@ -8415,6 +9185,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43077.txt"
     }
   ],
+  "CVE-2017-5971": [
+    {
+      "source": "exploitdb",
+      "name": "NewsBee CMS - SQL Injection",
+      "description": "NewsBee CMS - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41261.txt"
+    }
+  ],
   "CVE-2017-15981": [
     {
       "source": "exploitdb",
@@ -8469,6 +9247,14 @@
       "name": "Online Exam Test Application Script 1.6 - 'exams.php?sort' SQL Injection",
       "description": "Online Exam Test Application Script 1.6 - 'exams.php?sort' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43291.txt"
+    }
+  ],
+  "CVE-2017-20125": [
+    {
+      "source": "exploitdb",
+      "name": "Online Hotel Booking System Pro 1.2 - SQL Injection",
+      "description": "Online Hotel Booking System Pro 1.2 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41181.txt"
     }
   ],
   "CVE-2017-9380": [
@@ -8629,14 +9415,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/45284.txt"
     }
   ],
-  "CVE-2017-15735": [
-    {
-      "source": "exploitdb",
-      "name": "phpMyFAQ  2.9.8 - Cross-Site Request Forgery (CSRF)",
-      "description": "phpMyFAQ  2.9.8 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52458.txt"
-    }
-  ],
   "CVE-2017-15808": [
     {
       "source": "exploitdb",
@@ -8651,6 +9429,14 @@
       "name": "phpMyFAQ 2.9.8 - Cross-Site Request Forgery",
       "description": "phpMyFAQ 2.9.8 - Cross-Site Request Forgery",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43064.txt"
+    }
+  ],
+  "CVE-2017-15735": [
+    {
+      "source": "exploitdb",
+      "name": "phpMyFAQ 2.9.8 - Cross-Site Request Forgery (CSRF)",
+      "description": "phpMyFAQ 2.9.8 - Cross-Site Request Forgery (CSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52458.txt"
     }
   ],
   "CVE-2017-15734": [
@@ -8699,6 +9485,22 @@
       "name": "Piwigo 2.9.1 - 'cat_true' / 'cat_false' SQL Injection",
       "description": "Piwigo 2.9.1 - 'cat_true' / 'cat_false' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43337.txt"
+    }
+  ],
+  "CVE-2017-9425": [
+    {
+      "source": "exploitdb",
+      "name": "Piwigo Plugin Facetag 0.0.3 - Cross-Site Scripting",
+      "description": "Piwigo Plugin Facetag 0.0.3 - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42098.txt"
+    }
+  ],
+  "CVE-2017-9426": [
+    {
+      "source": "exploitdb",
+      "name": "Piwigo Plugin Facetag 0.0.3 - SQL Injection",
+      "description": "Piwigo Plugin Facetag 0.0.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42094.txt"
     }
   ],
   "CVE-2017-7402": [
@@ -8813,6 +9615,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43088.txt"
     }
   ],
+  "CVE-2017-20196": [
+    {
+      "source": "exploitdb",
+      "name": "School Management Software 2.75 - SQL Injection",
+      "description": "School Management Software 2.75 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41034.txt"
+    }
+  ],
   "CVE-2017-17629": [
     {
       "source": "exploitdb",
@@ -8851,6 +9661,14 @@
       "name": "SMSmaster - SQL Injection",
       "description": "SMSmaster - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42798.txt"
+    }
+  ],
+  "CVE-2017-12759": [
+    {
+      "source": "exploitdb",
+      "name": "SOA School Management 3.0 - SQL Injection",
+      "description": "SOA School Management 3.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42499.txt"
     }
   ],
   "CVE-2017-15972": [
@@ -8953,6 +9771,70 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2017/CVE-2017-14535.yaml"
     }
   ],
+  "CVE-2017-20113": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20114": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20115": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20116": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20117": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20118": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20119": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
+  "CVE-2017-20120": [
+    {
+      "source": "exploitdb",
+      "name": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "description": "TrueConf Server 4.3.7 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41184.txt"
+    }
+  ],
   "CVE-2017-7981": [
     {
       "source": "exploitdb",
@@ -9033,6 +9915,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41967.md"
     }
   ],
+  "CVE-2017-12761": [
+    {
+      "source": "exploitdb",
+      "name": "WebFile Explorer 1.0 - Arbitrary File Download",
+      "description": "WebFile Explorer 1.0 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42440.txt"
+    }
+  ],
   "CVE-2017-17592": [
     {
       "source": "exploitdb",
@@ -9073,6 +9963,30 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41497.php"
     }
   ],
+  "CVE-2017-20248": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Apptha Slider Gallery 1.0 - Arbitrary File Download",
+      "description": "WordPress Plugin Apptha Slider Gallery 1.0 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41568.txt"
+    }
+  ],
+  "CVE-2017-20249": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Apptha Slider Gallery 1.0 - SQL Injection",
+      "description": "WordPress Plugin Apptha Slider Gallery 1.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41567.txt"
+    }
+  ],
+  "CVE-2017-20243": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Car Park Booking - SQL Injection",
+      "description": "WordPress Plugin Car Park Booking - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43012.txt"
+    }
+  ],
   "CVE-2017-14507": [
     {
       "source": "exploitdb",
@@ -9109,6 +10023,38 @@
       "name": "WordPress Plugin Hospital Management System - SQL Injection",
       "description": "WordPress Plugin Hospital Management System - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42802.txt"
+    }
+  ],
+  "CVE-2017-18601": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin IBPS Online Exam 1.0 - SQL Injection / Cross-Site Scripting",
+      "description": "WordPress Plugin IBPS Online Exam 1.0 - SQL Injection / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42351.txt"
+    }
+  ],
+  "CVE-2017-20251": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Insert PHP 3.3.1 - PHP Code Injection",
+      "description": "WordPress Plugin Insert PHP 3.3.1 - PHP Code Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41308.txt"
+    }
+  ],
+  "CVE-2017-20246": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin KittyCatfish 2.2 - SQL Injection",
+      "description": "WordPress Plugin KittyCatfish 2.2 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41919.txt"
+    }
+  ],
+  "CVE-2017-20250": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Mac Photo Gallery 3.0 - Arbitrary File Download",
+      "description": "WordPress Plugin Mac Photo Gallery 3.0 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41566.txt"
     }
   ],
   "CVE-2017-6098": [
@@ -9151,12 +10097,36 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41622.py"
     }
   ],
+  "CVE-2017-20124": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Online Hotel Booking System Pro 1.0 - SQL Injection",
+      "description": "WordPress Plugin Online Hotel Booking System Pro 1.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41182.txt"
+    }
+  ],
   "CVE-2017-14126": [
     {
       "source": "exploitdb",
       "name": "WordPress Plugin Participants Database < 1.7.5.10 - Cross-Site Scripting",
       "description": "WordPress Plugin Participants Database < 1.7.5.10 - Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/42618.txt"
+    }
+  ],
+  "CVE-2017-20247": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin PICA Photo Gallery 1.0 - SQL Injection",
+      "description": "WordPress Plugin PICA Photo Gallery 1.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41569.txt"
+    }
+  ],
+  "CVE-2017-20065": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Popup by Supsystic 1.7.6 - Cross-Site Request Forgery",
+      "description": "WordPress Plugin Popup by Supsystic 1.7.6 - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41485.html"
     }
   ],
   "CVE-2017-14843": [
@@ -9195,6 +10165,22 @@
       "name": "WordPress Plugin WooCommerce 2.0/3.0 - Directory Traversal",
       "description": "WordPress Plugin WooCommerce 2.0/3.0 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43196.txt"
+    }
+  ],
+  "CVE-2017-20244": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Wow Forms 2.1 - SQL Injection",
+      "description": "WordPress Plugin Wow Forms 2.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41922.txt"
+    }
+  ],
+  "CVE-2017-20245": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Wow Viral Signups 2.1 - SQL Injection",
+      "description": "WordPress Plugin Wow Viral Signups 2.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41921.txt"
     }
   ],
   "CVE-2017-9603": [
@@ -9379,6 +10365,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/43454.py"
     }
   ],
+  "CVE-2017-8367": [
+    {
+      "source": "exploitdb",
+      "name": "Easy MOV Converter 1.4.24 - Local Buffer Overflow (SEH)",
+      "description": "Easy MOV Converter 1.4.24 - Local Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/41911.py"
+    }
+  ],
   "CVE-2017-5358": [
     {
       "source": "exploitdb",
@@ -9516,8 +10510,8 @@
   "CVE-2017-8657": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge - Out-of-Bounds Access when Fetching Source",
-      "description": "Microsoft Edge - Out-of-Bounds Access when Fetching Source",
+      "name": "Microsoft Edge - Out-of-Bounds Access When Fetching Source",
+      "description": "Microsoft Edge - Out-of-Bounds Access When Fetching Source",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/42481.js"
     }
   ],
@@ -9592,8 +10586,8 @@
   "CVE-2017-8641": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge Chakra - 'chakra!Js::GlobalObject' Integer overflow",
-      "description": "Microsoft Edge Chakra - 'chakra!Js::GlobalObject' Integer overflow",
+      "name": "Microsoft Edge Chakra - 'chakra!Js::GlobalObject' Integer Overflow",
+      "description": "Microsoft Edge Chakra - 'chakra!Js::GlobalObject' Integer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/42465.html"
     }
   ],
@@ -9754,8 +10748,8 @@
   "CVE-2017-11841": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge Chakra JIT - 'Inline::InlineCallApplyTarget_Shared' does not Return the return Instruction",
-      "description": "Microsoft Edge Chakra JIT - 'Inline::InlineCallApplyTarget_Shared' does not Return the return Instruction",
+      "name": "Microsoft Edge Chakra JIT - 'Inline::InlineCallApplyTarget_Shared' does Not Return the return Instruction",
+      "description": "Microsoft Edge Chakra JIT - 'Inline::InlineCallApplyTarget_Shared' does Not Return the return Instruction",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/43181.js"
     }
   ],
@@ -9770,8 +10764,8 @@
   "CVE-2017-11909": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge Chakra JIT - BackwardPass::RemoveEmptyLoopAfterMemOp Does not Insert Branches",
-      "description": "Microsoft Edge Chakra JIT - BackwardPass::RemoveEmptyLoopAfterMemOp Does not Insert Branches",
+      "name": "Microsoft Edge Chakra JIT - BackwardPass::RemoveEmptyLoopAfterMemOp Does Not Insert Branches",
+      "description": "Microsoft Edge Chakra JIT - BackwardPass::RemoveEmptyLoopAfterMemOp Does Not Insert Branches",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/43467.js"
     }
   ],
@@ -9802,8 +10796,8 @@
   "CVE-2017-11893": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge Chakra JIT - Op_MaxInAnArray and Op_MinInAnArray can Explicitly call User-Defined JavaScript Functions",
-      "description": "Microsoft Edge Chakra JIT - Op_MaxInAnArray and Op_MinInAnArray can Explicitly call User-Defined JavaScript Functions",
+      "name": "Microsoft Edge Chakra JIT - Op_MaxInAnArray and Op_MinInAnArray Can Explicitly Call User-Defined JavaScript Functions",
+      "description": "Microsoft Edge Chakra JIT - Op_MaxInAnArray and Op_MinInAnArray Can Explicitly Call User-Defined JavaScript Functions",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/43466.js"
     }
   ],
@@ -10574,8 +11568,8 @@
   "CVE-2017-8483": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Windows Kernel - 'ATMFD.DLL' Out-of-Bounds Read due to Malformed Name INDEX in the CFF Table",
-      "description": "Microsoft Windows Kernel - 'ATMFD.DLL' Out-of-Bounds Read due to Malformed Name INDEX in the CFF Table",
+      "name": "Microsoft Windows Kernel - 'ATMFD.DLL' Out-of-Bounds Read Due to Malformed Name INDEX in the CFF Table",
+      "description": "Microsoft Windows Kernel - 'ATMFD.DLL' Out-of-Bounds Read Due to Malformed Name INDEX in the CFF Table",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/42243.txt"
     }
   ],
@@ -10705,6 +11699,14 @@
       "name": "NVIDIA Driver 375.70 - DxgkDdiEscape 0x100008b Out-of-Bounds Read/Write",
       "description": "NVIDIA Driver 375.70 - DxgkDdiEscape 0x100008b Out-of-Bounds Read/Write",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/41364.txt"
+    }
+  ],
+  "CVE-2017-8339": [
+    {
+      "source": "exploitdb",
+      "name": "Panda Free Antivirus - 'PSKMAD.sys' Denial of Service",
+      "description": "Panda Free Antivirus - 'PSKMAD.sys' Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/41945.c"
     }
   ],
   "CVE-2017-15271": [
@@ -11059,6 +12061,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/41933.txt"
     }
   ],
+  "CVE-2017-20218": [
+    {
+      "source": "exploitdb",
+      "name": "Serviio PRO 1.8 DLNA Media Streaming Server - Local Privilege Escalation",
+      "description": "Serviio PRO 1.8 DLNA Media Streaming Server - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/41959.txt"
+    }
+  ],
   "CVE-2017-9355": [
     {
       "source": "exploitdb",
@@ -11231,6 +12241,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/44055.md"
     }
   ],
+  "CVE-2017-14742": [
+    {
+      "source": "exploitdb",
+      "name": "LabF nfsAxe FTP Client 3.7 - Remote Buffer Overflow (DEP Bypass)",
+      "description": "LabF nfsAxe FTP Client 3.7 - Remote Buffer Overflow (DEP Bypass)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/43236.py"
+    }
+  ],
   "CVE-2017-1274": [
     {
       "source": "exploitdb",
@@ -11344,8 +12362,8 @@
   "CVE-2017-14084": [
     {
       "source": "exploitdb",
-      "name": "Trend Micro OfficeScan 11.0/XG (12.0) - Man In The Middle Remote Code Execution",
-      "description": "Trend Micro OfficeScan 11.0/XG (12.0) - Man In The Middle Remote Code Execution",
+      "name": "Trend Micro OfficeScan 11.0/XG (12.0) - Man in the Middle Remote Code Execution",
+      "description": "Trend Micro OfficeScan 11.0/XG (12.0) - Man in the Middle Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42891.txt"
     }
   ],
@@ -11401,6 +12419,30 @@
       "name": "BEIMS ContractorWeb 5.18.0.0 - SQL Injection",
       "description": "BEIMS ContractorWeb 5.18.0.0 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/43379.txt"
+    }
+  ],
+  "CVE-2017-20184": [
+    {
+      "source": "exploitdb",
+      "name": "Carlo Gavazzi Powersoft 2.1.1.1 - Directory Traversal File Disclosure (Metasploit)",
+      "description": "Carlo Gavazzi Powersoft 2.1.1.1 - Directory Traversal File Disclosure (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/42705.rb"
+    }
+  ],
+  "CVE-2017-9557": [
+    {
+      "source": "exploitdb",
+      "name": "EFS Easy Chat Server 3.1 - Password Disclosure",
+      "description": "EFS Easy Chat Server 3.1 - Password Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/42153.py"
+    }
+  ],
+  "CVE-2017-9543": [
+    {
+      "source": "exploitdb",
+      "name": "EFS Easy Chat Server 3.1 - Password Reset",
+      "description": "EFS Easy Chat Server 3.1 - Password Reset",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/42154.py"
     }
   ],
   "CVE-2017-11471": [

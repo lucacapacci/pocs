@@ -40,8 +40,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "FortiWeb  8.0.2 - Remote Code Execution",
-      "description": "FortiWeb  8.0.2 - Remote Code Execution",
+      "name": "FortiWeb 8.0.2 - Remote Code Execution",
+      "description": "FortiWeb 8.0.2 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52502.py"
     },
     {
@@ -267,6 +267,12 @@
       "name": "ColoradoFTP Server 1.3 Build 8 Directory Traversal Information Disclosure",
       "description": "This module exploits a directory traversal vulnerability found in ColoradoFTP server\n          version <= 1.3 Build 8. This vulnerability allows an attacker to download and upload arbitrary files\n          from the server GET/PUT command including file system traversal strings starting with '\\'.\n          The server is written in Java and therefore platform independent, however this vulnerability is only\n          exploitable on the Windows version.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/ftp/colorado_ftp_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ColoradoFTP 1.3 Prime Edition (Build 8) - Directory Traversal",
+      "description": "ColoradoFTP 1.3 Prime Edition (Build 8) - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/40231.txt"
     }
   ],
   "CVE-2025-25205": [
@@ -350,8 +356,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Next.js Middleware 15.2.2 -  Authorization Bypass",
-      "description": "Next.js Middleware 15.2.2 -  Authorization Bypass",
+      "name": "Next.js Middleware 15.2.2 - Authorization Bypass",
+      "description": "Next.js Middleware 15.2.2 - Authorization Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52124.txt"
     },
     {
@@ -375,6 +381,12 @@
       "name": "Riverbed SteelHead VCX File Read",
       "description": "This module exploits an authenticated arbitrary file read in the log module's filter engine.\n          SteelHead VCX (VCX255U) version 9.6.0a was confirmed as vulnerable.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/riverbed_steelhead_vcx_file_read.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Riverbed SteelHead VCX 9.6.0a - Arbitrary File Read",
+      "description": "Riverbed SteelHead VCX 9.6.0a - Arbitrary File Read",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/42101.py"
     }
   ],
   "CVE-2025-47608": [
@@ -407,6 +419,12 @@
       "name": "EasyCafe Server Remote File Access",
       "description": "This module exploits a file retrieval vulnerability in\n          EasyCafe Server. The vulnerability can be triggered by\n          sending a specially crafted packet (opcode 0x43) to the\n          831/TCP port.\n          This module has been successfully tested on EasyCafe Server\n          version 2.2.14 (Trial mode and Demo mode) on Windows XP SP3\n          and Windows 7 SP1.\n          Note that the server will throw a popup messagebox if the\n          specified file does not exist.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/misc/easycafe_server_fileaccess.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "EasyCafe Server 2.2.14 - Remote File Read",
+      "description": "EasyCafe Server 2.2.14 - Remote File Read",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/39102.py"
     }
   ],
   "CVE-2025-14847": [
@@ -517,6 +535,18 @@
       "name": "Crypttech CryptoLog Remote Code Execution",
       "description": "This module exploits a SQL injection and command injection vulnerability in the PHP version of CryptoLog.\n          An unauthenticated user can execute a terminal command under the context of the web user. These vulnerabilities\n          are no longer present in the ASP.NET version CryptoLog, available since 2009.\n\n          CryptoLog's login.php endpoint is responsible for the login process. One of the user supplied parameters is\n          used by the application without input validation and parameter binding, which leads to SQL injection\n          vulnerability. Successfully exploiting this vulnerability gives a valid session.\n\n          CryptoLog's logshares_ajax.php endpoint is responsible for executing an operation system command. It's not\n          possible to access this endpoint without having a valid session. One user parameter is used by the\n          application while executing an operating system command, which causes a command injection issue.\n\n          Combining these vulnerabilities gives the opportunity execute operation system commands under the context\n          of the web user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/crypttech_cryptolog_login_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "description": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/41980.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "description": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/41980.rb"
     }
   ],
   "CVE-2025-34125": [
@@ -585,6 +615,12 @@
       "name": "IPFire proxy.cgi RCE",
       "description": "IPFire, a free linux based open source firewall distribution,\n          version < 2.19 Update Core 101 contains a remote command execution\n          vulnerability in the proxy.cgi page.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/ipfire_proxy_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IPFire < 2.19 Core Update 101 - Remote Command Execution",
+      "description": "IPFire < 2.19 Core Update 101 - Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/39765.txt"
     }
   ],
   "CVE-2025-22457": [
@@ -601,6 +637,12 @@
       "name": "Linksys E-Series TheMoon Remote Command Injection",
       "description": "Some Linksys E-Series Routers are vulnerable to an unauthenticated OS command\n          injection. This vulnerability was used from the so-called \"TheMoon\" worm. There\n          are many Linksys systems that are potentially vulnerable, including E4200, E3200, E3000,\n          E2500, E2100L, E2000, E1550, E1500, E1200, E1000, and E900. This module was tested\n          successfully against an E1500 v1.0.5.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/linksys_themoon_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linksys E-series - Remote Code Execution",
+      "description": "Linksys E-series - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/31683.php"
     }
   ],
   "CVE-2025-60787": [
@@ -647,6 +689,12 @@
       "name": "Pandora FMS Ping Authenticated Remote Code Execution",
       "description": "This module exploits a vulnerability found in Pandora FMS 7.0NG and lower.\n          net_tools.php in Pandora FMS 7.0NG allows remote attackers to execute arbitrary OS commands.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pandora_ping_cmd_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Pandora FMS - Ping Authenticated Remote Code Execution (Metasploit)",
+      "description": "Pandora FMS - Ping Authenticated Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/48334.rb"
     }
   ],
   "CVE-2025-52367": [
@@ -689,6 +737,12 @@
       "name": "Riverbed SteelCentral NetProfiler/NetExpress Remote Code Execution",
       "description": "This module exploits three separate vulnerabilities found in the Riverbed SteelCentral NetProfiler/NetExpress\n          virtual appliances to obtain remote command execution as the root user. A SQL injection in the login form\n          can be exploited to add a malicious user into the application's database. An attacker can then exploit a\n          command injection vulnerability in the web interface to obtain arbitrary code execution. Finally, an insecure\n          configuration of the sudoers file can be abused to escalate privileges to root.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/riverbed_netprofiler_netexpress_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (Metasploit)",
+      "description": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/40108.rb"
     }
   ],
   "CVE-2025-49619": [
@@ -719,6 +773,12 @@
       "name": "Tiki-Wiki CMS Calendar Command Execution",
       "description": "Tiki-Wiki CMS's calendar module contains a remote code execution\n          vulnerability within the viewmode GET parameter.\n          The calendar module is NOT enabled by default.  If enabled,\n          the default permissions are set to NOT allow anonymous users\n          to access.\n\n          Vulnerable versions: <=14.1, <=12.4 LTS, <=9.10 LTS and <=6.14\n          Verified/Tested against 14.1",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/tiki_calendar_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution",
+      "description": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39965.txt"
     }
   ],
   "CVE-2025-24016": [
@@ -741,6 +801,12 @@
       "name": "WePresent WiPG-1000 Command Injection",
       "description": "This module exploits a command injection vulnerability in an undocumented\n          CGI file in several versions of the WePresent WiPG-1000 devices.\n          Version 2.0.0.7 was confirmed vulnerable, 2.2.3.0 patched this vulnerability.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/wipg1000_cmd_injection.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WePresent WiPG-1000 - Command Injection (Metasploit)",
+      "description": "WePresent WiPG-1000 - Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/41935.rb"
     }
   ],
   "CVE-2025-30004": [
@@ -779,6 +845,12 @@
       "name": "Netcore Router Udp 53413 Backdoor",
       "description": "Routers manufactured by Netcore, a popular brand for networking\n          equipment in China, have a wide-open backdoor that can be fairly\n          easily exploited by attackers. These products are also sold under\n          the Netis brand name outside of China. This backdoor allows\n          cyber criminals to easily run arbitrary code on these routers,\n          rendering it vulnerable as a security device.\n          Some models include a non-standard echo command which doesn't\n          honor -e, and are therefore not currently exploitable with\n          Metasploit.  See URLs or module markdown for additional options.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/misc/netcore_udp_53413_backdoor.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netcore / Netis Routers - UDP Backdoor Access",
+      "description": "Netcore / Netis Routers - UDP Backdoor Access",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/43387.py"
     }
   ],
   "CVE-2025-32433": [
@@ -974,8 +1046,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Langflow 1.3.0 -  Remote Code Execution (RCE)",
-      "description": "Langflow 1.3.0 -  Remote Code Execution (RCE)",
+      "name": "Langflow 1.3.0 - Remote Code Execution (RCE)",
+      "description": "Langflow 1.3.0 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52262.txt"
     },
     {
@@ -1033,6 +1105,12 @@
       "name": "Mako Server v2.5, 2.6 OS Command Injection RCE",
       "description": "This module exploits a vulnerability found in Mako Server v2.5, 2.6.\n          It's possible to inject arbitrary OS commands in the Mako Server\n          tutorial page through a PUT request to save.lsp.\n\n          Attacker input will be saved on the victims machine and can\n          be executed by sending a GET request to manage.lsp.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/makoserver_cmd_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Mako Server 2.5 - OS Command Injection Remote Command Execution (Metasploit)",
+      "description": "Mako Server 2.5 - OS Command Injection Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/43132.rb"
     }
   ],
   "CVE-2025-34299": [
@@ -1247,6 +1325,12 @@
       "name": "Idera Up.Time Monitoring Station 7.0 post2file.php Arbitrary File Upload",
       "description": "This module exploits an arbitrary file upload vulnerability found within the Up.Time\n          monitoring server 7.2 and below. A malicious entity can upload a PHP file into the\n          webroot without authentication, leading to arbitrary code execution.\n\n          Although the vendor fixed Up.Time to prevent this vulnerability, it was not properly\n          mitigated. To exploit against a newer version of Up.Time (such as 7.4), please use\n          exploits/multi/http/uptime_file_upload_2.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/uptime_file_upload_1.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Idera Up.Time Monitoring Station 7.0 - 'post2file.php' Arbitrary File Upload (Metasploit)",
+      "description": "Idera Up.Time Monitoring Station 7.0 - 'post2file.php' Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/38732.rb"
     }
   ],
   "CVE-2025-48827": [
@@ -1314,8 +1398,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Wing FTP Server 7.4.3 - Unauthenticated Remote Code Execution  (RCE)",
-      "description": "Wing FTP Server 7.4.3 - Unauthenticated Remote Code Execution  (RCE)",
+      "name": "Wing FTP Server 7.4.3 - Remote Code Execution (RCE) (Unauthenticated)",
+      "description": "Wing FTP Server 7.4.3 - Remote Code Execution (RCE) (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52347.py"
     },
     {
@@ -1488,8 +1572,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "FreePBX  17.0.2 - Remote Code Execution (RCE)",
-      "description": "FreePBX  17.0.2 - Remote Code Execution (RCE)",
+      "name": "FreePBX 17.0.2 - Remote Code Execution (RCE)",
+      "description": "FreePBX 17.0.2 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52681.py"
     },
     {
@@ -1527,6 +1611,12 @@
       "name": "Polycom Shell HDX Series Traceroute Command Execution",
       "description": "Within Polycom command shell, a command execution flaw exists in\n          lan traceroute, one of the dev commands, which allows for an\n          attacker to execute arbitrary payloads with telnet or openssl.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/misc/polycom_hdx_traceroute_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Polycom HDX - Telnet Authentication Bypass (Metasploit)",
+      "description": "Polycom HDX - Telnet Authentication Bypass (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/24494.rb"
     }
   ],
   "CVE-2025-34086": [
@@ -1535,6 +1625,12 @@
       "name": "Bolt CMS 3.7.0 - Authenticated Remote Code Execution",
       "description": "This module exploits multiple vulnerabilities in Bolt CMS version 3.7.0\n          and 3.6.* in order to execute arbitrary commands as the user running Bolt.\n\n          This module first takes advantage of a vulnerability that allows an\n          authenticated user to change the username in /bolt/profile to a PHP\n          `system($_GET[\"\"])` variable. Next, the module obtains a list of tokens\n          from `/async/browse/cache/.sessions` and uses these to create files with\n          the blacklisted `.php` extention via HTTP POST requests to\n          `/async/folder/rename`. For each created file, the module checks the HTTP\n          response for evidence that the file can be used to execute arbitrary\n          commands via the created PHP $_GET variable. If the response is negative,\n          the file is deleted, otherwise the payload is executed via an HTTP\n          get request in this format: `/files/<rogue_PHP_file>?<$_GET_var>=<payload>`\n\n          Valid credentials for a Bolt CMS user are required. This module has been\n          successfully tested against Bolt CMS 3.7.0 running on CentOS 7.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/bolt_authenticated_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Bolt CMS 3.7.0 - Remote Code Execution (Authenticated)",
+      "description": "Bolt CMS 3.7.0 - Remote Code Execution (Authenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/48296.py"
     }
   ],
   "CVE-2025-34104": [
@@ -1565,6 +1661,12 @@
       "name": "Tiki Wiki Unauthenticated File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability in Tiki Wiki <= 15.1\n          which could be abused to allow unauthenticated users to execute arbitrary code\n          under the context of the web server user.\n\n          The issue comes with one of the 3rd party components. Name of that component is\n          ELFinder -version 2.0-. This component comes with default example page which\n          demonstrates file operations such as upload, remove, rename, create directory etc.\n          Default configuration does not force validations such as file extension, content-type etc.\n          Thus, unauthenticated user can upload PHP file.\n\n          The exploit has been tested on Debian 8.x 64-bit and Tiki Wiki 15.1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/tikiwiki_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Tiki Wiki 15.1 - File Upload (Metasploit)",
+      "description": "Tiki Wiki 15.1 - File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40091.rb"
     }
   ],
   "CVE-2025-34099": [
@@ -1573,6 +1675,12 @@
       "name": "VICIdial user_authorization Unauthenticated Command Execution",
       "description": "This module exploits a vulnerability in VICIdial versions\n          2.9 RC 1 to 2.13 RC1 which allows unauthenticated users\n          to execute arbitrary operating system commands as the web\n          server user if password encryption is enabled (disabled\n          by default).\n\n          When password encryption is enabled the user's password\n          supplied using HTTP basic authentication is used in a call\n          to exec().\n\n          This module has been tested successfully on version 2.11 RC2\n          and 2.13 RC1 on CentOS.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/vicidial_user_authorization_unauth_cmd_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "VICIdial 2.9 RC 1 < 2.13 RC1 - 'user_authorization' Command Execution (Metasploit)",
+      "description": "VICIdial 2.9 RC 1 < 2.13 RC1 - 'user_authorization' Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/42370.rb"
     }
   ],
   "CVE-2025-34077": [
@@ -1589,6 +1697,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52370.py"
     },
     {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Pie Register 3.7.1.4 - Admin Privilege Escalation (Unauthenticated)",
+      "description": "WordPress Plugin Pie Register 3.7.1.4 - Admin Privilege Escalation (Unauthenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50395.txt"
+    },
+    {
       "source": "nuclei",
       "name": "WordPress Pie Register <= 3.7.1.4 - Authentication Bypass",
       "description": "An authentication bypass vulnerability exists in the WordPress Pie Register plugin \u2264 3.7.1.4 that allows unauthenticated attackers to impersonate arbitrary users by submitting a crafted POST request to the login endpoint. By setting social_site=true and manipulating the user_id_social_site parameter, an attacker can generate a valid WordPress session cookie for any user ID, including administrators.Once authenticated, the attacker may exploit plugin upload functionality to install a malicious plugin containing arbitrary PHP code, resulting in remote code execution on the underlying server.\n",
@@ -1601,6 +1715,18 @@
       "name": "X360 VideoPlayer ActiveX Control Buffer Overflow",
       "description": "This module exploits a buffer overflow in the VideoPlayer.ocx ActiveX installed with the\n          X360 Software. By setting an overly long value to 'ConvertFile()', an attacker can overrun\n          a .data buffer to bypass ASLR/DEP and finally execute arbitrary code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/x360_video_player_set_text_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "X360 VideoPlayer - ActiveX Control Buffer Overflow (Metasploit)",
+      "description": "X360 VideoPlayer - ActiveX Control Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/36100.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "X360 VideoPlayer ActiveX Control 2.6 - ASLR + DEP Bypass",
+      "description": "X360 VideoPlayer ActiveX Control 2.6 - ASLR + DEP Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/35948.html"
     }
   ],
   "CVE-2025-34124": [
@@ -1609,6 +1735,12 @@
       "name": "Heroes of Might and Magic III .h3m Map file Buffer Overflow",
       "description": "This module embeds an exploit into an uncompressed map file (.h3m) for\n          Heroes of Might and Magic III. Once the map is started in-game, a\n          buffer overflow occurring when loading object sprite names leads to\n          shellcode execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/homm3_h3m.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Heroes of Might and Magic III - Map Parsing Arbitrary Code Execution",
+      "description": "Heroes of Might and Magic III - Map Parsing Arbitrary Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/37716.c"
     }
   ],
   "CVE-2025-34106": [
@@ -1617,6 +1749,12 @@
       "name": "PDF Shaper Buffer Overflow",
       "description": "PDF Shaper is prone to a security vulnerability when processing PDF files.\n          The vulnerability appears when we use Convert PDF to Image and use a specially\n          crafted PDF file. This module has been tested successfully on Win XP, Win 7,\n          Win 8, Win 10.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/shaper_pdf_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PDF Shaper 3.5 - Local Buffer Overflow (Metasploit)",
+      "description": "PDF Shaper 3.5 - Local Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/37760.rb"
     }
   ],
   "CVE-2025-33053": [
@@ -1633,6 +1771,12 @@
       "name": "VideoCharge Studio Buffer Overflow (SEH)",
       "description": "This module exploits a stack based buffer overflow in VideoCharge Studio 2.12.3.685 when\n          processing a specially crafted .VSC file. This vulnerability could be\n          exploited by a remote attacker to execute arbitrary code on the target\n          machine by enticing a user of VideoCharge Studio to open a malicious .VSC file.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/videocharge_studio.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "VideoCharge Studio 2.12.3.685 - Local Buffer Overflow (SEH)",
+      "description": "VideoCharge Studio 2.12.3.685 - Local Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/29234.py"
     }
   ],
   "CVE-2025-34107": [
@@ -1641,6 +1785,12 @@
       "name": "WinaXe 7.7 FTP Client Remote Buffer Overflow",
       "description": "This module exploits a buffer overflow in the WinaXe 7.7 FTP client.\n          This issue is triggered when a client connects to the server and is\n          expecting the Server Ready response.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/winaxe_server_ready.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WinaXe 7.7 FTP Client - Remote Buffer Overflow (Metasploit)",
+      "description": "WinaXe 7.7 FTP Client - Remote Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/40767.rb"
     }
   ],
   "CVE-2025-57790": [
@@ -1679,6 +1829,12 @@
       "name": "Disk Pulse Enterprise Login Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Disk Pulse Enterprise\n          9.0.34. If a malicious user sends a malicious HTTP login request,\n          it is possible to execute a payload that would run under the Windows\n          NT AUTHORITY\\SYSTEM account. Due to size constraints, this module\n          uses the Egghunter technique.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/disk_pulse_enterprise_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Disk Pulse Enterprise 9.0.34 - 'Login' Remote Buffer Overflow",
+      "description": "Disk Pulse Enterprise 9.0.34 - 'Login' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/40452.py"
     }
   ],
   "CVE-2025-34105": [
@@ -1687,6 +1843,18 @@
       "name": "DiskBoss Enterprise GET Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability\n          in the web interface of DiskBoss Enterprise v7.5.12, v7.4.28, and v8.2.14,\n          caused by improper bounds checking of the request path in HTTP GET\n          requests sent to the built-in web server. This module has been\n          tested successfully on Windows XP SP3 and Windows 7 SP1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/diskboss_get_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "DiskBoss Enterprise 7.4.28 - 'GET' Remote Buffer Overflow",
+      "description": "DiskBoss Enterprise 7.4.28 - 'GET' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/40869.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "DiskBoss Enterprise 8.2.14 - Remote Buffer Overflow",
+      "description": "DiskBoss Enterprise 8.2.14 - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42395.py"
     }
   ],
   "CVE-2025-34096": [
@@ -1695,6 +1863,12 @@
       "name": "Easy File Sharing HTTP Server 7.2 POST Buffer Overflow",
       "description": "This module exploits a POST buffer overflow in the Easy File Sharing FTP Server 7.2 software.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/easyfilesharing_post.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Easy File Sharing Web Server 7.2 - 'POST' Remote Buffer Overflow (DEP Bypass)",
+      "description": "Easy File Sharing Web Server 7.2 - 'POST' Remote Buffer Overflow (DEP Bypass)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42186.py"
     }
   ],
   "CVE-2025-30406": [
@@ -1725,6 +1899,12 @@
       "name": "Serviio Media Server checkStreamUrl Command Execution",
       "description": "This module exploits an unauthenticated remote command execution vulnerability\n          in the console component of Serviio Media Server versions 1.4 to 1.8 on\n          Windows operating systems.\n\n          The console service (on port 23423 by default) exposes a REST API which\n          which does not require authentication.\n\n          The 'action' API endpoint does not sufficiently sanitize user-supplied data\n          in the 'VIDEO' parameter of the 'checkStreamUrl' method. This parameter is\n          used in a call to cmd.exe resulting in execution of arbitrary commands.\n\n          This module has been tested successfully on Serviio Media Server versions\n          1.4.0, 1.5.0, 1.6.0 and 1.8.0 on Windows 7.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/serviio_checkstreamurl_cmd_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Serviio Media Server - checkStreamUrl Command Execution (Metasploit)",
+      "description": "Serviio Media Server - checkStreamUrl Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/42023.rb"
     }
   ],
   "CVE-2025-49704": [
@@ -1847,6 +2027,12 @@
       "name": "Panda Security PSEvents Privilege Escalation",
       "description": "PSEvents.exe within several Panda Security products runs hourly with SYSTEM privileges.\n          When run, it checks a user writable folder for certain DLL files, and if any are found\n          they are automatically run.\n          Vulnerable Products:\n          Panda Global Protection 2016 (<=16.1.2)\n          Panda Antivirus Pro 2016 (<=16.1.2)\n          Panda Small Business Protection (<=16.1.2)\n          Panda Internet Security 2016 (<=16.1.2)",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/local/panda_psevents.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Panda Security (Multiple Products) - Local Privilege Escalation",
+      "description": "Panda Security (Multiple Products) - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40020.txt"
     }
   ],
   "CVE-2025-21293": [
@@ -1865,12 +2051,190 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/achat_bof.rb"
     }
   ],
+  "CVE-2025-34050": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34053": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34054": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34055": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34056": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34065": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34066": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-34051": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2025-56241": [
+    {
+      "source": "exploitdb",
+      "name": "Aztech DSL5005EN Router - 'sysAccess.asp' Admin Password Change (Unauthenticated)",
+      "description": "Aztech DSL5005EN Router - 'sysAccess.asp' Admin Password Change (Unauthenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/52093.txt"
+    }
+  ],
+  "CVE-2025-34048": [
+    {
+      "source": "exploitdb",
+      "name": "D-Link DSL-2730U/2750U/2750E ADSL Router - Remote File Disclosure",
+      "description": "D-Link DSL-2730U/2750U/2750E ADSL Router - Remote File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/40735.sh"
+    }
+  ],
+  "CVE-2025-34036": [
+    {
+      "source": "exploitdb",
+      "name": "Multiple CCTV-DVR Vendors - Remote Code Execution",
+      "description": "Multiple CCTV-DVR Vendors - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/39596.py"
+    }
+  ],
+  "CVE-2025-25037": [
+    {
+      "source": "exploitdb",
+      "name": "Aquatronica Control System 5.1.6 - Information Disclosure",
+      "description": "Aquatronica Control System 5.1.6 - Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/52028.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Aquatronica Controller System <= 5.1.6 - Information Disclosure",
+      "description": "Aquatronica Controller System firmware 5.1.6 and earlier and web interface 2.0 and earlier contain an information disclosure vulnerability caused by unauthenticated access to tcp.php endpoint, letting remote attackers retrieve sensitive configuration data including plaintext credentials, exploit requires no authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25037.yaml"
+    }
+  ],
+  "CVE-2025-34024": [
+    {
+      "source": "exploitdb",
+      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/48377.txt"
+    }
+  ],
+  "CVE-2025-34029": [
+    {
+      "source": "exploitdb",
+      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/48377.txt"
+    }
+  ],
+  "CVE-2025-34035": [
+    {
+      "source": "exploitdb",
+      "name": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution",
+      "description": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42114.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 Root Remote Code Execution",
+      "description": "An OS command injection vulnerability exists in EnGenius EnShare Cloud Service version 1.4.11 and earlier.The usbinteract.cgi script fails to properly sanitize user input passed to the path parameter, allowing unauthenticated remote attackers to inject arbitrary shell commands.The injected commands are executed with root privileges, leading to full system compromise.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34035.yaml"
+    }
+  ],
+  "CVE-2025-34023": [
+    {
+      "source": "exploitdb",
+      "name": "Karel IP Phone IP1211 Web Management Panel - Directory Traversal",
+      "description": "Karel IP Phone IP1211 Web Management Panel - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/48857.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Karel IP Phone IP1211 Web Management Panel - Local File Inclusion",
+      "description": "Karel IP Phone IP1211 Web Management Panel is vulnerable to local file inclusion and can allow remote attackers to access arbitrary files stored on the remote device via the 'cgiServer.exx' endpoint and the 'page' parameter.",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34023.yaml"
+    }
+  ],
   "CVE-2025-60689": [
     {
       "source": "exploitdb",
-      "name": "Linksys E1200_2.0.04 - Unauthenticated OS Command Injection",
-      "description": "Linksys E1200_2.0.04 - Unauthenticated OS Command Injection",
+      "name": "Linksys E1200_2.0.04 - OS Command Injection (Unauthenticated)",
+      "description": "Linksys E1200_2.0.04 - OS Command Injection (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/52660.py"
+    }
+  ],
+  "CVE-2025-34049": [
+    {
+      "source": "exploitdb",
+      "name": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Remote Code Execution (Authenticated)",
+      "description": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Remote Code Execution (Authenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49955.py"
+    }
+  ],
+  "CVE-2025-34022": [
+    {
+      "source": "exploitdb",
+      "name": "Selea Targa IP OCR-ANPR Camera - Directory Traversal File Disclosure (Unauthenticated)",
+      "description": "Selea Targa IP OCR-ANPR Camera - Directory Traversal File Disclosure (Unauthenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49456.txt"
+    }
+  ],
+  "CVE-2025-34021": [
+    {
+      "source": "exploitdb",
+      "name": "Selea Targa IP OCR-ANPR Camera - Multiple SSRF (Unauthenticated)",
+      "description": "Selea Targa IP OCR-ANPR Camera - Multiple SSRF (Unauthenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49457.txt"
+    }
+  ],
+  "CVE-2025-66555": [
+    {
+      "source": "exploitdb",
+      "name": "AirKeyboard iOS App 1.0.5 - Remote Input Injection",
+      "description": "AirKeyboard iOS App 1.0.5 - Remote Input Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/ios/remote/52333.py"
     }
   ],
   "CVE-2025-46822": [
@@ -1919,6 +2283,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52354.txt"
     }
   ],
+  "CVE-2025-34033": [
+    {
+      "source": "exploitdb",
+      "name": "Blue Angel Software Suite - Command Execution",
+      "description": "Blue Angel Software Suite - Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/46792.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Blue Angel Software Suite (5V Technologies) - OS Command Injection",
+      "description": "Blue Angel 5V Technologies Blue Angel Software Suite through 20230920, as used in Analog Telephone Adapter (ATA) and Voice over IP (VoIP) devices, allows remote authenticated attackers to execute arbitrary OS commands as root via shell metacharacters in the ping_addr parameter to webctrl.cgi?action=pingtest_update.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34033.yaml"
+    }
+  ],
+  "CVE-2025-34034": [
+    {
+      "source": "exploitdb",
+      "name": "Blue Angel Software Suite - Command Execution",
+      "description": "Blue Angel Software Suite - Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/46792.py"
+    }
+  ],
   "CVE-2025-32023": [
     {
       "source": "exploitdb",
@@ -1954,8 +2340,8 @@
   "CVE-2025-60690": [
     {
       "source": "exploitdb",
-      "name": "Linksys E1200 2.0.04 - Authenticated Stack Buffer Overflow (RCE)",
-      "description": "Linksys E1200 2.0.04 - Authenticated Stack Buffer Overflow (RCE)",
+      "name": "Linksys E1200 2.0.04 - Stack Buffer Overflow (RCE) (Authenticated)",
+      "description": "Linksys E1200 2.0.04 - Stack Buffer Overflow (RCE) (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52548.py"
     }
   ],
@@ -1978,8 +2364,8 @@
   "CVE-2025-9074": [
     {
       "source": "exploitdb",
-      "name": "Docker Desktop 4.44.3 - Unauthenticated  API Exposure",
-      "description": "Docker Desktop 4.44.3 - Unauthenticated  API Exposure",
+      "name": "Docker Desktop 4.44.3 - API Exposure (Unauthenticated)",
+      "description": "Docker Desktop 4.44.3 - API Exposure (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52472.txt"
     }
   ],
@@ -2272,16 +2658,16 @@
   "CVE-2025-55315": [
     {
       "source": "exploitdb",
-      "name": "ASP.net  8.0.10 - Bypass",
-      "description": "ASP.net  8.0.10 - Bypass",
+      "name": "ASP.net 8.0.10 - Bypass",
+      "description": "ASP.net 8.0.10 - Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52492.py"
     }
   ],
   "CVE-2025-60188": [
     {
       "source": "exploitdb",
-      "name": "Atarim WordPress Plugin  4.2.2 - Sensitive Information Exposure",
-      "description": "Atarim WordPress Plugin  4.2.2 - Sensitive Information Exposure",
+      "name": "Atarim WordPress Plugin 4.2.2 - Sensitive Information Exposure",
+      "description": "Atarim WordPress Plugin 4.2.2 - Sensitive Information Exposure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52628.py"
     },
     {
@@ -2318,8 +2704,8 @@
   "CVE-2025-10493": [
     {
       "source": "exploitdb",
-      "name": "Chained Quiz  1.3.5 - Unauthenticated Insecure Direct Object Reference via Cookie",
-      "description": "Chained Quiz  1.3.5 - Unauthenticated Insecure Direct Object Reference via Cookie",
+      "name": "Chained Quiz 1.3.5 - Insecure Direct Object Reference via Cookie (Unauthenticated)",
+      "description": "Chained Quiz 1.3.5 - Insecure Direct Object Reference via Cookie (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52464.txt"
     }
   ],
@@ -2356,16 +2742,16 @@
   "CVE-2025-8311": [
     {
       "source": "exploitdb",
-      "name": "dotCMS 25.07.02-1 - Authenticated Blind SQL Injection",
-      "description": "dotCMS 25.07.02-1 - Authenticated Blind SQL Injection",
+      "name": "dotCMS 25.07.02-1 - Blind SQL Injection (Authenticated)",
+      "description": "dotCMS 25.07.02-1 - Blind SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52431.py"
     }
   ],
   "CVE-2025-50455": [
     {
       "source": "exploitdb",
-      "name": "EasyAppointments  1.5.1 - Blind SQL Injection",
-      "description": "EasyAppointments  1.5.1 - Blind SQL Injection",
+      "name": "EasyAppointments 1.5.1 - Blind SQL Injection",
+      "description": "EasyAppointments 1.5.1 - Blind SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52667.py"
     }
   ],
@@ -2416,8 +2802,8 @@
   "CVE-2025-29306": [
     {
       "source": "exploitdb",
-      "name": "FoxCMS 1.2.5 - Remote Code Execution  (RCE)",
-      "description": "FoxCMS 1.2.5 - Remote Code Execution  (RCE)",
+      "name": "FoxCMS 1.2.5 - Remote Code Execution (RCE)",
+      "description": "FoxCMS 1.2.5 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52267.bash"
     },
     {
@@ -2452,8 +2838,8 @@
   "CVE-2025-60751": [
     {
       "source": "exploitdb",
-      "name": "GeographicLib v2.5.1 - stack buffer overflow",
-      "description": "GeographicLib v2.5.1 - stack buffer overflow",
+      "name": "GeographicLib v2.5.1 - Stack Buffer Overflow",
+      "description": "GeographicLib v2.5.1 - Stack Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52522.py"
     }
   ],
@@ -2557,6 +2943,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52385.txt"
     }
   ],
+  "CVE-2025-44823": [
+    {
+      "source": "exploitdb",
+      "name": "Nagios Log Server 2024R1.3.1 - API Key Exposure",
+      "description": "Nagios Log Server 2024R1.3.1 - API Key Exposure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52177.md"
+    }
+  ],
   "CVE-2025-29471": [
     {
       "source": "exploitdb",
@@ -2592,8 +2986,8 @@
   "CVE-2025-65027": [
     {
       "source": "exploitdb",
-      "name": "RomM  4.4.0 -  XSS_CSRF Chain",
-      "description": "RomM  4.4.0 -  XSS_CSRF Chain",
+      "name": "RomM 4.4.0 - XSS_CSRF Chain",
+      "description": "RomM 4.4.0 - XSS_CSRF Chain",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52505.txt"
     }
   ],
@@ -2640,8 +3034,8 @@
   "CVE-2025-40677": [
     {
       "source": "exploitdb",
-      "name": "Summar Employee Portal  3.98.0 - Authenticated SQL Injection",
-      "description": "Summar Employee Portal  3.98.0 - Authenticated SQL Injection",
+      "name": "Summar Employee Portal 3.98.0 - SQL Injection (Authenticated)",
+      "description": "Summar Employee Portal 3.98.0 - SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52462.txt"
     }
   ],
@@ -2677,12 +3071,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52545.py"
     }
   ],
+  "CVE-2025-66571": [
+    {
+      "source": "exploitdb",
+      "name": "UNA CMS 14.0.0-RC - PHP Object Injection",
+      "description": "UNA CMS 14.0.0-RC - PHP Object Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52139.txt"
+    }
+  ],
   "CVE-2025-41228": [
     {
       "source": "exploitdb",
       "name": "VMware vSphere Client 8.0.3.0 - Reflected Cross-Site Scripting (XSS)",
       "description": "VMware vSphere Client 8.0.3.0 - Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52406.txt"
+    }
+  ],
+  "CVE-2025-34506": [
+    {
+      "source": "exploitdb",
+      "name": "WBCE CMS 1.6.3 - Remote Code Execution (RCE) (Authenticated)",
+      "description": "WBCE CMS 1.6.3 - Remote Code Execution (RCE) (Authenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52132.sh"
     }
   ],
   "CVE-2025-44177": [
@@ -2697,20 +3107,6 @@
       "name": "White Star Software ProTop - Directory Traversal",
       "description": "A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-44177.yaml"
-    }
-  ],
-  "CVE-2025-4524": [
-    {
-      "source": "exploitdb",
-      "name": "WordPress  Madara - Local File Inclusion",
-      "description": "WordPress  Madara - Local File Inclusion",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52487.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "WordPress Madara Theme < 2.2.2.1 - Local File Inclusion",
-      "description": "Madara WordPress theme <= 2.2.2 contains a local file inclusion vulnerability caused by improper sanitization of the 'template' parameter, letting unauthenticated attackers execute arbitrary files on the server, exploit requires crafted request.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4524.yaml"
     }
   ],
   "CVE-2025-4094": [
@@ -2735,6 +3131,20 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-3605.yaml"
     }
   ],
+  "CVE-2025-4524": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Madara - Local File Inclusion",
+      "description": "WordPress Madara - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52487.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress Madara Theme < 2.2.2.1 - Local File Inclusion",
+      "description": "Madara WordPress theme <= 2.2.2 contains a local file inclusion vulnerability caused by improper sanitization of the 'template' parameter, letting unauthenticated attackers execute arbitrary files on the server, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-4524.yaml"
+    }
+  ],
   "CVE-2025-10162": [
     {
       "source": "exploitdb",
@@ -2752,8 +3162,8 @@
   "CVE-2025-67586": [
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin  5.2.0 - Broken Access Control",
-      "description": "WordPress Plugin  5.2.0 - Broken Access Control",
+      "name": "WordPress Plugin 5.2.0 - Broken Access Control",
+      "description": "WordPress Plugin 5.2.0 - Broken Access Control",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52511.go"
     }
   ],
@@ -2776,8 +3186,8 @@
   "CVE-2025-62639": [
     {
       "source": "exploitdb",
-      "name": "Xibo CMS  4.3.0 - RCE via SSTI",
-      "description": "Xibo CMS  4.3.0 - RCE via SSTI",
+      "name": "Xibo CMS 4.3.0 - RCE via SSTI",
+      "description": "Xibo CMS 4.3.0 - RCE via SSTI",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52516.py"
     }
   ],
@@ -2798,8 +3208,8 @@
   "CVE-2025-31131": [
     {
       "source": "exploitdb",
-      "name": "YesWiki 4.5.1 - Unauthenticated Path Traversal",
-      "description": "YesWiki 4.5.1 - Unauthenticated Path Traversal",
+      "name": "YesWiki 4.5.1 - Path Traversal (Unauthenticated)",
+      "description": "YesWiki 4.5.1 - Path Traversal (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52135.txt"
     },
     {
@@ -2812,8 +3222,8 @@
   "CVE-2025-34040": [
     {
       "source": "exploitdb",
-      "name": "Zhiyuan OA - arbitrary file upload leading",
-      "description": "Zhiyuan OA - arbitrary file upload leading",
+      "name": "Zhiyuan OA - Arbitrary File Upload leading",
+      "description": "Zhiyuan OA - Arbitrary File Upload leading",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52490.txt"
     },
     {
@@ -2839,12 +3249,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/52272.txt"
     }
   ],
+  "CVE-2025-71179": [
+    {
+      "source": "exploitdb",
+      "name": "Academy LMS 6.0 - Reflected XSS",
+      "description": "Academy LMS 6.0 - Reflected XSS",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51654.txt"
+    }
+  ],
   "CVE-2025-46041": [
     {
       "source": "exploitdb",
       "name": "Anchor CMS 0.12.7 - Stored Cross Site Scripting (XSS)",
       "description": "Anchor CMS 0.12.7 - Stored Cross Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52327.txt"
+    }
+  ],
+  "CVE-2025-3146": [
+    {
+      "source": "exploitdb",
+      "name": "Bus Pass Management System 1.0 - 'viewid' SQL Injection",
+      "description": "Bus Pass Management System 1.0 - 'viewid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50235.txt"
     }
   ],
   "CVE-2025-45542": [
@@ -2866,8 +3292,8 @@
   "CVE-2025-49484": [
     {
       "source": "exploitdb",
-      "name": "Joomla JS Jobs plugin 1.4.2 - SQL injection",
-      "description": "Joomla JS Jobs plugin 1.4.2 - SQL injection",
+      "name": "Joomla JS Jobs plugin 1.4.2 - SQL Injection",
+      "description": "Joomla JS Jobs plugin 1.4.2 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52373.txt"
     }
   ],
@@ -2927,6 +3353,62 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52380.txt"
     }
   ],
+  "CVE-2025-66572": [
+    {
+      "source": "exploitdb",
+      "name": "Loaded Commerce 6.6 - Client-Side Template Injection(CSTI)",
+      "description": "Loaded Commerce 6.6 - Client-Side Template Injection(CSTI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52084.txt"
+    }
+  ],
+  "CVE-2025-34031": [
+    {
+      "source": "exploitdb",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Moodle Jmol Filter 6.1 - Local File Inclusion",
+      "description": "Moodle Jmol Filter 6.1 is vulnerable to local file inclusion through the jsmol.php file, allowing attackers to read arbitrary files on the server.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34031.yaml"
+    }
+  ],
+  "CVE-2025-34032": [
+    {
+      "source": "exploitdb",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Moodle LMS Jmol Plugin <= 6.1 - Cross-Site Scripting",
+      "description": "A reflected cross-site scripting (XSS) vulnerability exists in the Moodle LMS Jmol plugin version 6.1 and prior via the data parameter in jsmol.php. The application fails to properly sanitize user input before embedding it into the HTTP response, allowing an attacker to execute arbitrary JavaScript in the victim's browser by crafting a malicious link. This can be used to hijack user sessions or manipulate page content.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34032.yaml"
+    }
+  ],
+  "CVE-2025-5553": [
+    {
+      "source": "exploitdb",
+      "name": "Rail Pass Management System 1.0 - Time-Based SQL Injection",
+      "description": "Rail Pass Management System 1.0 - Time-Based SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51790.txt"
+    }
+  ],
   "CVE-2025-62360": [
     {
       "source": "exploitdb",
@@ -2965,6 +3447,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52283.txt"
     }
   ],
+  "CVE-2025-71326": [
+    {
+      "source": "exploitdb",
+      "name": "AVAST Antivirus 25.11 - Unquoted Service Path",
+      "description": "AVAST Antivirus 25.11 - Unquoted Service Path",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52510.txt"
+    }
+  ],
   "CVE-2025-59254": [
     {
       "source": "exploitdb",
@@ -2981,6 +3471,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52423.txt"
     }
   ],
+  "CVE-2025-57227": [
+    {
+      "source": "exploitdb",
+      "name": "Kingo ROOT 1.5.8 - Unquoted Service Path",
+      "description": "Kingo ROOT 1.5.8 - Unquoted Service Path",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51707.txt"
+    }
+  ],
   "CVE-2025-24054": [
     {
       "source": "exploitdb",
@@ -2990,8 +3488,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Windows 10.0.17763.7009 - spoofing vulnerability",
-      "description": "Windows 10.0.17763.7009 - spoofing vulnerability",
+      "name": "Windows 10.0.17763.7009 - Spoofing Vulnerability",
+      "description": "Windows 10.0.17763.7009 - Spoofing Vulnerability",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52480.py"
     },
     {
@@ -3071,6 +3569,14 @@
       "name": "Microsoft Windows Server 2025 Hyper-V NT Kernel Integration VSP - Elevation of Privilege",
       "description": "Microsoft Windows Server 2025 Hyper-V NT Kernel Integration VSP - Elevation of Privilege",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52436.c"
+    }
+  ],
+  "CVE-2025-66573": [
+    {
+      "source": "exploitdb",
+      "name": "Solstice Pod 6.2 - API Session Key Extraction via API Endpoint",
+      "description": "Solstice Pod 6.2 - API Session Key Extraction via API Endpoint",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52104.txt"
     }
   ],
   "CVE-2025-6965": [
@@ -3183,6 +3689,14 @@
       "name": "PCMan FTP Server 2.0.7 - Buffer Overflow",
       "description": "PCMan FTP Server 2.0.7 - Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52326.txt"
+    }
+  ],
+  "CVE-2025-66576": [
+    {
+      "source": "exploitdb",
+      "name": "Remote Keyboard Desktop 1.0.1 - Remote Code Execution (RCE)",
+      "description": "Remote Keyboard Desktop 1.0.1 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52299.py"
     }
   ],
   "CVE-2025-33073": [
@@ -3567,6 +4081,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13801.yaml"
     }
   ],
+  "CVE-2025-13877": [
+    {
+      "source": "nuclei",
+      "name": "NocoBase - Default JWT Secret Authentication Bypass",
+      "description": "NocoBase @nocobase/auth 1.9.21 and earlier and 2.0.0-alpha.51 and earlier sign and verify JWT tokens with the APP_KEY value. The official docker-compose files ship APP_KEY=your-secret-key, so deployments that keep this value accept tokens forged with the public key for any userId.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-13877.yaml"
+    }
+  ],
   "CVE-2025-13920": [
     {
       "source": "nuclei",
@@ -3853,14 +4375,6 @@
       "name": "Vitest Browser Mode - Local File Read",
       "description": "Vitest is a testing framework powered by Vite. The `__screenshot-error` handler on the browser mode HTTP server that responds any file on the file system. Especially if the server is exposed on the network by `browser.api.host- true`, an attacker can send a request to that handler from remote to get the content of arbitrary files.This `__screenshot-error` handler on the browser mode HTTP server responds any file on the file system. This code was added by commit `2d62051`. Users explicitly exposing the browser mode server to the network by `browser.api.host- true` may get any files exposed. This issue has been addressed in versions 2.1.9 and 3.0.4. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-24963.yaml"
-    }
-  ],
-  "CVE-2025-25037": [
-    {
-      "source": "nuclei",
-      "name": "Aquatronica Controller System <= 5.1.6 - Information Disclosure",
-      "description": "Aquatronica Controller System firmware 5.1.6 and earlier and web interface 2.0 and earlier contain an information disclosure vulnerability caused by unauthenticated access to tcp.php endpoint, letting remote attackers retrieve sensitive configuration data including plaintext credentials, exploit requires no authentication.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-25037.yaml"
     }
   ],
   "CVE-2025-2505": [
@@ -4327,14 +4841,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-32970.yaml"
     }
   ],
-  "CVE-2025-34023": [
-    {
-      "source": "nuclei",
-      "name": "Karel IP Phone IP1211 Web Management Panel - Local File Inclusion",
-      "description": "Karel IP Phone IP1211 Web Management Panel is vulnerable to local file inclusion and can allow remote attackers to access arbitrary files stored on the remote device via the 'cgiServer.exx' endpoint and the 'page' parameter.",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34023.yaml"
-    }
-  ],
   "CVE-2025-34026": [
     {
       "source": "nuclei",
@@ -4365,38 +4871,6 @@
       "name": "sar2html <=3.2.2 Plot Parameter - Remote Code Execution",
       "description": "sar2html version 3.2.2 and prior contains an OS command injection vulnerability in the plot parameter of index.php. A remote, unauthenticated attacker can append shell metacharacters to the plot parameter and execute arbitrary operating system commands.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34030.yaml"
-    }
-  ],
-  "CVE-2025-34031": [
-    {
-      "source": "nuclei",
-      "name": "Moodle Jmol Filter 6.1 - Local File Inclusion",
-      "description": "Moodle Jmol Filter 6.1 is vulnerable to local file inclusion through the jsmol.php file, allowing attackers to read arbitrary files on the server.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34031.yaml"
-    }
-  ],
-  "CVE-2025-34032": [
-    {
-      "source": "nuclei",
-      "name": "Moodle LMS Jmol Plugin <= 6.1 - Cross-Site Scripting",
-      "description": "A reflected cross-site scripting (XSS) vulnerability exists in the Moodle LMS Jmol plugin version 6.1 and prior via the data parameter in jsmol.php. The application fails to properly sanitize user input before embedding it into the HTTP response, allowing an attacker to execute arbitrary JavaScript in the victim's browser by crafting a malicious link. This can be used to hijack user sessions or manipulate page content.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34032.yaml"
-    }
-  ],
-  "CVE-2025-34033": [
-    {
-      "source": "nuclei",
-      "name": "Blue Angel Software Suite (5V Technologies) - OS Command Injection",
-      "description": "Blue Angel 5V Technologies Blue Angel Software Suite through 20230920, as used in Analog Telephone Adapter (ATA) and Voice over IP (VoIP) devices, allows remote authenticated attackers to execute arbitrary OS commands as root via shell metacharacters in the ping_addr parameter to webctrl.cgi?action=pingtest_update.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34033.yaml"
-    }
-  ],
-  "CVE-2025-34035": [
-    {
-      "source": "nuclei",
-      "name": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 Root Remote Code Execution",
-      "description": "An OS command injection vulnerability exists in EnGenius EnShare Cloud Service version 1.4.11 and earlier.The usbinteract.cgi script fails to properly sanitize user input passed to the path parameter, allowing unauthenticated remote attackers to inject arbitrary shell commands.The injected commands are executed with root privileges, leading to full system compromise.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-34035.yaml"
     }
   ],
   "CVE-2025-34038": [

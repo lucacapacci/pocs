@@ -202,8 +202,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "hplip - 'hpssd.py' From Address Arbitrary Command Execution (Metasploit)",
-      "description": "hplip - 'hpssd.py' From Address Arbitrary Command Execution (Metasploit)",
+      "name": "hplip - 'hpssd.py' from Address Arbitrary Command Execution (Metasploit)",
+      "description": "hplip - 'hpssd.py' from Address Arbitrary Command Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/16837.rb"
     }
   ],
@@ -4666,8 +4666,8 @@
   "CVE-2007-5962": [
     {
       "source": "exploitdb",
-      "name": "vsftpd 2.0.5 - 'CWD' (Authenticated) Remote Memory Consumption",
-      "description": "vsftpd 2.0.5 - 'CWD' (Authenticated) Remote Memory Consumption",
+      "name": "vsftpd 2.0.5 - 'CWD' Remote Memory Consumption (Authenticated)",
+      "description": "vsftpd 2.0.5 - 'CWD' Remote Memory Consumption (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/5814.pl"
     },
     {
@@ -5057,6 +5057,12 @@
       "name": "Apache Tomcat Connector jk2-2.0.2 mod_jk2 - Remote Overflow",
       "description": "Apache Tomcat Connector jk2-2.0.2 mod_jk2 - Remote Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/5386.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Apache 2.0 mod_jk2 2.0.2 (Windows x86) - Remote Buffer Overflow",
+      "description": "Apache 2.0 mod_jk2 2.0.2 (Windows x86) - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows_x86/remote/5330.c"
     }
   ],
   "CVE-2007-0389": [
@@ -6398,8 +6404,8 @@
   "CVE-2007-6359": [
     {
       "source": "exploitdb",
-      "name": "Apple Mac OSX xnu 1228.0 - 'super_blob' Local kernel Denial of Service (PoC)",
-      "description": "Apple Mac OSX xnu 1228.0 - 'super_blob' Local kernel Denial of Service (PoC)",
+      "name": "Apple Mac OSX xnu 1228.0 - 'super_blob' Local Kernel Denial of Service (PoC)",
+      "description": "Apple Mac OSX xnu 1228.0 - 'super_blob' Local Kernel Denial of Service (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/osx/dos/4723.c"
     }
   ],
@@ -6630,8 +6636,8 @@
   "CVE-2007-6039": [
     {
       "source": "exploitdb",
-      "name": "PHP 5.2.5 - Multiple GetText functions Denial of Service Vulnerabilities",
-      "description": "PHP 5.2.5 - Multiple GetText functions Denial of Service Vulnerabilities",
+      "name": "PHP 5.2.5 - Multiple GetText Functions Denial of Service Vulnerabilities",
+      "description": "PHP 5.2.5 - Multiple GetText Functions Denial of Service Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/dos/30760.txt"
     }
   ],
@@ -8773,6 +8779,18 @@
       "name": "Coppermine Photo Gallery 1.3.x - Blind SQL Injection",
       "description": "Coppermine Photo Gallery 1.3.x - Blind SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3371.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Coppermine Photo Gallery 1.4.10 - 'cpg1410_xek.php' SQL Injection",
+      "description": "Coppermine Photo Gallery 1.4.10 - 'cpg1410_xek.php' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/4950.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Coppermine Photo Gallery 1.4.10 - SQL Injection",
+      "description": "Coppermine Photo Gallery 1.4.10 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/4961.php"
     }
   ],
   "CVE-2007-4283": [
@@ -8791,20 +8809,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3085.php"
     }
   ],
+  "CVE-2007-0122": [
+    {
+      "source": "exploitdb",
+      "name": "Coppermine Photo Gallery 1.4.10 - 'xpl.php' SQL Injection",
+      "description": "Coppermine Photo Gallery 1.4.10 - 'xpl.php' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3085.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Coppermine Photo Gallery 1.4.11 - SQL Injection",
+      "description": "Coppermine Photo Gallery 1.4.11 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/29397.php"
+    }
+  ],
   "CVE-2007-0836": [
     {
       "source": "exploitdb",
       "name": "Coppermine Photo Gallery 1.4.10 - Multiple Local/Remote File Inclusions",
       "description": "Coppermine Photo Gallery 1.4.10 - Multiple Local/Remote File Inclusions",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/29568.txt"
-    }
-  ],
-  "CVE-2007-0122": [
-    {
-      "source": "exploitdb",
-      "name": "Coppermine Photo Gallery 1.4.11 - SQL Injection",
-      "description": "Coppermine Photo Gallery 1.4.11 - SQL Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/29397.php"
     }
   ],
   "CVE-2007-4976": [
@@ -9033,6 +9057,12 @@
       "name": "deeemm CMS (dmcms) 0.7 - 'index.php' SQL Injection",
       "description": "deeemm CMS (dmcms) 0.7 - 'index.php' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/30700.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "deeemm CMS (dmcms) 0.7.4 - Multiple Vulnerabilities",
+      "description": "deeemm CMS (dmcms) 0.7.4 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/6250.txt"
     }
   ],
   "CVE-2007-6237": [
@@ -11031,6 +11061,12 @@
       "name": "Insanely Simple Blog 0.4/0.5 - 'index.php' SQL Injection",
       "description": "Insanely Simple Blog 0.4/0.5 - 'index.php' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/30317.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Insanely Simple Blog 0.5 - SQL Injection",
+      "description": "Insanely Simple Blog 0.5 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/5774.txt"
     }
   ],
   "CVE-2007-3888": [
@@ -15811,6 +15847,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3250.txt"
     }
   ],
+  "CVE-2007-0700": [
+    {
+      "source": "exploitdb",
+      "name": "Portail Web PHP 2.5.1.1 - Multiple Inclusion Vulnerabilities",
+      "description": "Portail Web PHP 2.5.1.1 - Multiple Inclusion Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/5182.txt"
+    }
+  ],
   "CVE-2007-0820": [
     {
       "source": "exploitdb",
@@ -16687,6 +16731,12 @@
       "name": "SerWeb 2.0.0 dev1 2007-02-20 - Multiple Local/Remote File Inclusion Vulnerabilities",
       "description": "SerWeb 2.0.0 dev1 2007-02-20 - Multiple Local/Remote File Inclusion Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/4696.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "SerWeb 2.1.0-dev1 2009-07-02 - Multiple Remote File Inclusions",
+      "description": "SerWeb 2.1.0-dev1 2009-07-02 - Multiple Remote File Inclusions",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9284.txt"
     }
   ],
   "CVE-2007-6391": [
@@ -19972,8 +20022,8 @@
   "CVE-2007-2726": [
     {
       "source": "exploitdb",
-      "name": "BitsCast 0.13.0 - invalid string Remote Denial of Service",
-      "description": "BitsCast 0.13.0 - invalid string Remote Denial of Service",
+      "name": "BitsCast 0.13.0 - Invalid String Remote Denial of Service",
+      "description": "BitsCast 0.13.0 - Invalid String Remote Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/3929.txt"
     }
   ],
@@ -20750,8 +20800,8 @@
   "CVE-2007-6236": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Windows Media Player - '.AIFF' Divide By Zero Exception Denial of Service (PoC)",
-      "description": "Microsoft Windows Media Player - '.AIFF' Divide By Zero Exception Denial of Service (PoC)",
+      "name": "Microsoft Windows Media Player - '.AIFF' Divide by Zero Exception Denial of Service (PoC)",
+      "description": "Microsoft Windows Media Player - '.AIFF' Divide by Zero Exception Denial of Service (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/4682.c"
     }
   ],
@@ -20882,8 +20932,8 @@
   "CVE-2007-2722": [
     {
       "source": "exploitdb",
-      "name": "NewzCrawler 1.8 - invalid string Remote Denial of Service",
-      "description": "NewzCrawler 1.8 - invalid string Remote Denial of Service",
+      "name": "NewzCrawler 1.8 - Invalid String Remote Denial of Service",
+      "description": "NewzCrawler 1.8 - Invalid String Remote Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/3930.txt"
     }
   ],
@@ -21029,6 +21079,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/3254.py"
     }
   ],
+  "CVE-2007-6478": [
+    {
+      "source": "exploitdb",
+      "name": "Rosoft Media Player 4.1.8 - '.m3u' File Remote Buffer Overflow (PoC)",
+      "description": "Rosoft Media Player 4.1.8 - '.m3u' File Remote Buffer Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/5122.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Rosoft Media Player 4.1.7 - '.m3u' Local Stack Overflow",
+      "description": "Rosoft Media Player 4.1.7 - '.m3u' Local Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/4749.c"
+    }
+  ],
   "CVE-2007-3157": [
     {
       "source": "exploitdb",
@@ -21046,8 +21110,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sami HTTP Server 2.0.1 - HTTP 404 Object not found Denial of Service",
-      "description": "Sami HTTP Server 2.0.1 - HTTP 404 Object not found Denial of Service",
+      "name": "Sami HTTP Server 2.0.1 - HTTP 404 Object Not found Denial of Service",
+      "description": "Sami HTTP Server 2.0.1 - HTTP 404 Object Not found Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/3182.py"
     }
   ],
@@ -21126,8 +21190,8 @@
   "CVE-2007-6457": [
     {
       "source": "exploitdb",
-      "name": "Surgemail 38k4 - webmail Host header Denial of Service",
-      "description": "Surgemail 38k4 - webmail Host header Denial of Service",
+      "name": "Surgemail 38k4 - webmail Host Header Denial of Service",
+      "description": "Surgemail 38k4 - webmail Host Header Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/4748.php"
     }
   ],
@@ -21553,6 +21617,12 @@
       "name": "Kantaris 0.3.4 - SSA Subtitle Local Buffer Overflow",
       "description": "Kantaris 0.3.4 - SSA Subtitle Local Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/5498.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "VideoLAN VLC Media Player 0.8.6d SSA Parsing Double Sh311 - Universal",
+      "description": "VideoLAN VLC Media Player 0.8.6d SSA Parsing Double Sh311 - Universal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/5667.py"
     }
   ],
   "CVE-2007-1881": [
@@ -21956,8 +22026,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "PHP 5.2.3 - 'snmpget()' object id Local Buffer Overflow (EDI)",
-      "description": "PHP 5.2.3 - 'snmpget()' object id Local Buffer Overflow (EDI)",
+      "name": "PHP 5.2.3 - 'snmpget()' Object id Local Buffer Overflow (EDI)",
+      "description": "PHP 5.2.3 - 'snmpget()' Object id Local Buffer Overflow (EDI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/4274.php"
     }
   ],
@@ -22019,14 +22089,6 @@
       "name": "PHP 5.x COM - Safe Mode / disable_functions Bypass",
       "description": "PHP 5.x COM - Safe Mode / disable_functions Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/4553.php"
-    }
-  ],
-  "CVE-2007-6478": [
-    {
-      "source": "exploitdb",
-      "name": "Rosoft Media Player 4.1.7 - '.m3u' Local Stack Overflow",
-      "description": "Rosoft Media Player 4.1.7 - '.m3u' Local Stack Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/4749.c"
     }
   ],
   "CVE-2007-5709": [
@@ -22566,8 +22628,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Frontbase 4.2.7 - (Authenticated) Remote Buffer Overflow (2.2)",
-      "description": "Frontbase 4.2.7 - (Authenticated) Remote Buffer Overflow (2.2)",
+      "name": "Frontbase 4.2.7 - Remote Buffer Overflow (2.2) (Authenticated)",
+      "description": "Frontbase 4.2.7 - Remote Buffer Overflow (2.2) (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/3650.c"
     }
   ],
@@ -22824,8 +22886,8 @@
   "CVE-2007-5018": [
     {
       "source": "exploitdb",
-      "name": "Mercury/32 4.52 IMAPD - 'SEARCH' (Authenticated) Overflow",
-      "description": "Mercury/32 4.52 IMAPD - 'SEARCH' (Authenticated) Overflow",
+      "name": "Mercury/32 4.52 IMAPD - 'SEARCH' Overflow (Authenticated)",
+      "description": "Mercury/32 4.52 IMAPD - 'SEARCH' Overflow (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/4429.pl"
     }
   ],
@@ -23232,8 +23294,8 @@
   "CVE-2007-4517": [
     {
       "source": "exploitdb",
-      "name": "Oracle - xdb.xdb_pitrig_pkg.PITRIG_DROPMETADATA procedure",
-      "description": "Oracle - xdb.xdb_pitrig_pkg.PITRIG_DROPMETADATA procedure",
+      "name": "Oracle - xdb.xdb_pitrig_pkg.PITRIG_DROPMETADATA Procedure",
+      "description": "Oracle - xdb.xdb_pitrig_pkg.PITRIG_DROPMETADATA Procedure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18093.txt"
     }
   ],

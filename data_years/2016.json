@@ -525,6 +525,12 @@
       "name": "D-Link DCS-930L Authenticated Remote Command Execution",
       "description": "The D-Link DCS-930L Network Video Camera is vulnerable\n          to OS Command Injection via the web interface.  The vulnerability\n          exists at /setSystemCommand, which is accessible with credentials.\n          This vulnerability was present in firmware version 2.01 and fixed\n          by 2.12.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dcs_930l_authenticated_remote_command_execution.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DCS-930L - Remote Command Execution (Authenticated) (Metasploit)",
+      "description": "D-Link DCS-930L - Remote Command Execution (Authenticated) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/39437.rb"
     }
   ],
   "CVE-2016-20017": [
@@ -533,6 +539,18 @@
       "name": "D-Link DSL-2750B OS Command Injection",
       "description": "This module exploits a remote command injection vulnerability in D-Link DSL-2750B devices.\n          Vulnerability can be exploited through \"cli\" parameter that is directly used to invoke\n          \"ayecli\" binary. Vulnerable firmwares are from 1.01 up to 1.03.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dsl2750b_exec_noauth.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DSL-2750B - OS Command Injection (Metasploit)",
+      "description": "D-Link DSL-2750B - OS Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/44760.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DSL-2750B - OS Command Injection (Metasploit)",
+      "description": "D-Link DSL-2750B - OS Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/44760.rb"
     }
   ],
   "CVE-2016-6563": [
@@ -575,6 +593,18 @@
       "name": "Kaltura Remote PHP Code Execution",
       "description": "This module exploits an Object Injection vulnerability in Kaltura.\n          By exploiting this vulnerability, unauthenticated users can execute\n          arbitrary code under the context of the web server user.\n\n          Kaltura has a module named keditorservices that takes user input\n          and then uses it as an unserialized function parameter. The constructed\n          object is based on the SektionEins Zend code execution POP chain PoC,\n          with a minor modification to ensure Kaltura processes it and the\n          Zend_Log function's __destruct() method is called. Kaltura versions\n          prior to 11.1.0-2 are affected by this issue.\n\n          This module was tested against Kaltura 11.1.0 installed on CentOS 6.8.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/kaltura_unserialize_rce.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kaltura 11.1.0-2 - Remote Code Execution (Metasploit)",
+      "description": "Kaltura 11.1.0-2 - Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/40404.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kaltura Community Edition < 11.1.0-2 - Multiple Vulnerabilities",
+      "description": "Kaltura Community Edition < 11.1.0-2 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39563.txt"
     }
   ],
   "CVE-2016-20016": [
@@ -583,6 +613,12 @@
       "name": "MVPower DVR Shell Unauthenticated Command Execution",
       "description": "This module exploits an unauthenticated remote command execution\n          vulnerability in MVPower digital video recorders. The 'shell' file\n          on the web interface executes arbitrary operating system commands in\n          the query string.\n\n          This module was tested successfully on a MVPower model TV-7104HE with\n          firmware version 1.8.4 115215B9 (Build 2014/11/17).\n\n          The TV-7108HE model is also reportedly affected, but untested.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/mvpower_dvr_shell_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MVPower DVR TV-7104HE 1.8.4 115215B9 - Shell Command Execution (Metasploit)",
+      "description": "MVPower DVR TV-7104HE 1.8.4 115215B9 - Shell Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/arm/remote/41471.rb"
     }
   ],
   "CVE-2016-6277": [
@@ -626,14 +662,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Netgear Devices - (Unauthenticated) Remote Command Execution (Metasploit)",
-      "description": "Netgear Devices - (Unauthenticated) Remote Command Execution (Metasploit)",
+      "name": "Netgear Devices - Remote Command Execution (Unauthenticated) (Metasploit)",
+      "description": "Netgear Devices - Remote Command Execution (Unauthenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/45909.rb"
     },
     {
       "source": "exploitdb",
-      "name": "Netgear Devices - (Unauthenticated) Remote Command Execution (Metasploit)",
-      "description": "Netgear Devices - (Unauthenticated) Remote Command Execution (Metasploit)",
+      "name": "Netgear Devices - Remote Command Execution (Unauthenticated) (Metasploit)",
+      "description": "Netgear Devices - Remote Command Execution (Unauthenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/45909.rb"
     },
     {
@@ -785,6 +821,18 @@
       "name": "lastore-daemon D-Bus Privilege Escalation",
       "description": "This module attempts to gain root privileges on Deepin Linux systems\n          by using lastore-daemon to install a package.\n\n          The lastore-daemon D-Bus configuration on Deepin Linux permits any\n          user in the sudo group to install arbitrary system packages without\n          providing a password, resulting in code execution as root. By default,\n          the first user created on the system is a member of the sudo group.\n\n          This module has been tested successfully with lastore-daemon versions\n          0.9.53-1 on Deepin Linux 15.5 (x64); and\n          0.9.66-1 on Deepin Linux 15.7 (x64).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/lastore_daemon_dbus_priv_esc.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Deepin Linux 15 - 'lastore-daemon' Local Privilege Escalation",
+      "description": "Deepin Linux 15 - 'lastore-daemon' Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39433.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "lastore-daemon D-Bus - Privilege Escalation (Metasploit)",
+      "description": "lastore-daemon D-Bus - Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44523.rb"
     }
   ],
   "CVE-2016-4997": [
@@ -1018,8 +1066,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Novell ServiceDesk - (Authenticated) Arbitrary File Upload (Metasploit)",
-      "description": "Novell ServiceDesk - (Authenticated) Arbitrary File Upload (Metasploit)",
+      "name": "Novell ServiceDesk - Arbitrary File Upload (Authenticated) (Metasploit)",
+      "description": "Novell ServiceDesk - Arbitrary File Upload (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/39708.rb"
     }
   ],
@@ -1081,6 +1129,12 @@
       "name": "WordPress Core 4.6 - Remote Code Execution",
       "description": "WordPress Core 4.6 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/41962.sh"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHPMailer < 5.2.19 - Sendmail Argument Injection (Metasploit)",
+      "description": "PHPMailer < 5.2.19 - Sendmail Argument Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/41688.rb"
     },
     {
       "source": "exploitdb",
@@ -1172,8 +1226,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "phpMyAdmin 4.6.2 - (Authenticated) Remote Code Execution",
-      "description": "phpMyAdmin 4.6.2 - (Authenticated) Remote Code Execution",
+      "name": "phpMyAdmin 4.6.2 - Remote Code Execution (Authenticated)",
+      "description": "phpMyAdmin 4.6.2 - Remote Code Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40185.py"
     },
     {
@@ -1260,14 +1314,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Struts - REST Plugin With Dynamic Method Invocation Remote Code Execution",
-      "description": "Apache Struts - REST Plugin With Dynamic Method Invocation Remote Code Execution",
+      "name": "Apache Struts - REST Plugin with Dynamic Method Invocation Remote Code Execution",
+      "description": "Apache Struts - REST Plugin with Dynamic Method Invocation Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/43382.py"
     },
     {
       "source": "exploitdb",
-      "name": "Apache Struts - REST Plugin With Dynamic Method Invocation Remote Code Execution (Metasploit)",
-      "description": "Apache Struts - REST Plugin With Dynamic Method Invocation Remote Code Execution (Metasploit)",
+      "name": "Apache Struts - REST Plugin with Dynamic Method Invocation Remote Code Execution (Metasploit)",
+      "description": "Apache Struts - REST Plugin with Dynamic Method Invocation Remote Code Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/39919.rb"
     }
   ],
@@ -1302,14 +1356,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Vtiger CRM 6.3.0 - (Authenticated) Arbitrary File Upload (Metasploit)",
-      "description": "Vtiger CRM 6.3.0 - (Authenticated) Arbitrary File Upload (Metasploit)",
+      "name": "Vtiger CRM 6.3.0 - Arbitrary File Upload (Authenticated) (Metasploit)",
+      "description": "Vtiger CRM 6.3.0 - Arbitrary File Upload (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/44379.rb"
     },
     {
       "source": "exploitdb",
-      "name": "vTiger CRM 6.3.0 - (Authenticated) Remote Code Execution",
-      "description": "vTiger CRM 6.3.0 - (Authenticated) Remote Code Execution",
+      "name": "vTiger CRM 6.3.0 - Remote Code Execution (Authenticated)",
+      "description": "vTiger CRM 6.3.0 - Remote Code Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38345.txt"
     }
   ],
@@ -1457,6 +1511,12 @@
       "name": "pfSense authenticated group member RCE",
       "description": "pfSense, a free BSD based open source firewall distribution,\n          version <= 2.3.1_1 contains a remote command execution\n          vulnerability post authentication in the system_groupmanager.php page.\n          Verified against 2.2.6 and 2.3.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/pfsense_group_member_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "pfSense Community Edition 2.2.6 - Multiple Vulnerabilities",
+      "description": "pfSense Community Edition 2.2.6 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39709.txt"
     }
   ],
   "CVE-2016-1531": [
@@ -1832,8 +1892,8 @@
   "CVE-2016-0846": [
     {
       "source": "exploitdb",
-      "name": "Google Android - IMemory Native Interface is Insecure for IPC Use",
-      "description": "Google Android - IMemory Native Interface is Insecure for IPC Use",
+      "name": "Google Android - IMemory Native Interface Is Insecure for IPC Use",
+      "description": "Google Android - IMemory Native Interface Is Insecure for IPC Use",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/android/dos/39686.txt"
     }
   ],
@@ -1949,6 +2009,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cfm/webapps/47392.txt"
     }
   ],
+  "CVE-2016-15047": [
+    {
+      "source": "exploitdb",
+      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
+    }
+  ],
+  "CVE-2016-15055": [
+    {
+      "source": "exploitdb",
+      "name": "JVC IP-Camera VN-T216VPRU - Local File Disclosure",
+      "description": "JVC IP-Camera VN-T216VPRU - Local File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40282.txt"
+    }
+  ],
   "CVE-2016-10043": [
     {
       "source": "exploitdb",
@@ -1963,6 +2039,14 @@
       "name": "Sonicwall Secure Remote Access 8.1.0.2-14sv - Command Injection",
       "description": "Sonicwall Secure Remote Access 8.1.0.2-14sv - Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/42342.txt"
+    }
+  ],
+  "CVE-2016-15056": [
+    {
+      "source": "exploitdb",
+      "name": "Ubee EVW3226 Modem/Router 1.0.20 - Multiple Vulnerabilities",
+      "description": "Ubee EVW3226 Modem/Router 1.0.20 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40156.py"
     }
   ],
   "CVE-2016-1879": [
@@ -2158,8 +2242,8 @@
   "CVE-2016-9834": [
     {
       "source": "exploitdb",
-      "name": "Sophos Cyberoam - Cross-site scripting",
-      "description": "Sophos Cyberoam - Cross-site scripting",
+      "name": "Sophos Cyberoam - Cross-site Scripting",
+      "description": "Sophos Cyberoam - Cross-site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42062.txt"
     }
   ],
@@ -2507,6 +2591,46 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40239.txt"
     }
   ],
+  "CVE-2016-20032": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKAccess Security System 5.3.1 - Persistent Cross-Site Scripting",
+      "description": "ZKTeco ZKAccess Security System 5.3.1 - Persistent Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40328.html"
+    }
+  ],
+  "CVE-2016-20031": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKBioSecurity 3.0 - 'visLogin.jsp' Local Authentication Bypass",
+      "description": "ZKTeco ZKBioSecurity 3.0 - 'visLogin.jsp' Local Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40327.txt"
+    }
+  ],
+  "CVE-2016-20028": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKBioSecurity 3.0 - Cross-Site Request Forgery (Add Superadmin)",
+      "description": "ZKTeco ZKBioSecurity 3.0 - Cross-Site Request Forgery (Add Superadmin)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40325.html"
+    }
+  ],
+  "CVE-2016-20029": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKBioSecurity 3.0 - Directory Traversal",
+      "description": "ZKTeco ZKBioSecurity 3.0 - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40326.txt"
+    }
+  ],
+  "CVE-2016-20026": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKBioSecurity 3.0 - Hard-Coded Credentials SYSTEM Remote Code Execution",
+      "description": "ZKTeco ZKBioSecurity 3.0 - Hard-Coded Credentials SYSTEM Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/40324.txt"
+    }
+  ],
   "CVE-2016-8740": [
     {
       "source": "exploitdb",
@@ -2723,6 +2847,30 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/44721.py"
     }
   ],
+  "CVE-2016-20038": [
+    {
+      "source": "exploitdb",
+      "name": "yTree 1.94-1.1 - Local Buffer Overflow (PoC)",
+      "description": "yTree 1.94-1.1 - Local Buffer Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/39406.py"
+    }
+  ],
+  "CVE-2016-10730": [
+    {
+      "source": "exploitdb",
+      "name": "Amanda 3.3.1 - 'amstar' Command Injection Privilege Escalation",
+      "description": "Amanda 3.3.1 - 'amstar' Command Injection Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39244.txt"
+    }
+  ],
+  "CVE-2016-10729": [
+    {
+      "source": "exploitdb",
+      "name": "Amanda 3.3.1 - Local Privilege Escalation",
+      "description": "Amanda 3.3.1 - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39217.c"
+    }
+  ],
   "CVE-2016-9951": [
     {
       "source": "exploitdb",
@@ -2783,6 +2931,38 @@
       "name": "Cisco Firepower Threat Management Console 6.0.1 - Hard-Coded MySQL Credentials",
       "description": "Cisco Firepower Threat Management Console 6.0.1 - Hard-Coded MySQL Credentials",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40465.txt"
+    }
+  ],
+  "CVE-2016-20047": [
+    {
+      "source": "exploitdb",
+      "name": "EKG Gadu 1.9~pre+r2855-3+b1 - Local Buffer Overflow",
+      "description": "EKG Gadu 1.9~pre+r2855-3+b1 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40392.py"
+    }
+  ],
+  "CVE-2016-20045": [
+    {
+      "source": "exploitdb",
+      "name": "HNB 1.9.18-10 - Local Buffer Overflow",
+      "description": "HNB 1.9.18-10 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40025.py"
+    }
+  ],
+  "CVE-2016-20048": [
+    {
+      "source": "exploitdb",
+      "name": "iSelect v1.4 - Local Buffer Overflow",
+      "description": "iSelect v1.4 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/41076.py"
+    }
+  ],
+  "CVE-2016-20049": [
+    {
+      "source": "exploitdb",
+      "name": "JAD Java Decompiler 1.5.8e - Local Buffer Overflow",
+      "description": "JAD Java Decompiler 1.5.8e - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/42076.py"
     }
   ],
   "CVE-2016-1583": [
@@ -2863,6 +3043,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40003.c"
     }
   ],
+  "CVE-2016-20039": [
+    {
+      "source": "exploitdb",
+      "name": "Mess Emulator 0.154-3.1 - Local Buffer Overflow",
+      "description": "Mess Emulator 0.154-3.1 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39673.py"
+    }
+  ],
   "CVE-2016-6662": [
     {
       "source": "exploitdb",
@@ -2927,6 +3115,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40768.sh"
     }
   ],
+  "CVE-2016-20043": [
+    {
+      "source": "exploitdb",
+      "name": "NRSS Reader 0.3.9 - Local Stack Overflow",
+      "description": "NRSS Reader 0.3.9 - Local Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39810.py"
+    }
+  ],
   "CVE-2016-0727": [
     {
       "source": "exploitdb",
@@ -2965,6 +3161,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40788.txt"
     }
   ],
+  "CVE-2016-20044": [
+    {
+      "source": "exploitdb",
+      "name": "PInfo 0.6.9-5.1 - Local Buffer Overflow",
+      "description": "PInfo 0.6.9-5.1 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40023.py"
+    }
+  ],
   "CVE-2016-10081": [
     {
       "source": "exploitdb",
@@ -2989,6 +3193,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/41171.txt"
     }
   ],
+  "CVE-2016-20040": [
+    {
+      "source": "exploitdb",
+      "name": "Texas Instrument Emulator 3.03 - Local Buffer Overflow",
+      "description": "Texas Instrument Emulator 3.03 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39692.py"
+    }
+  ],
+  "CVE-2016-20042": [
+    {
+      "source": "exploitdb",
+      "name": "TRN Threaded USENET News Reader 3.6-23 - Local Stack Overflow",
+      "description": "TRN Threaded USENET News Reader 3.6-23 - Local Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39764.py"
+    }
+  ],
   "CVE-2016-1575": [
     {
       "source": "exploitdb",
@@ -3008,8 +3228,8 @@
   "CVE-2016-2856": [
     {
       "source": "exploitdb",
-      "name": "Ubuntu < 15.10 - PT Chown Arbitrary PTs Access Via User Namespace Privilege Escalation",
-      "description": "Ubuntu < 15.10 - PT Chown Arbitrary PTs Access Via User Namespace Privilege Escalation",
+      "name": "Ubuntu < 15.10 - PT Chown Arbitrary PTs Access via User Namespace Privilege Escalation",
+      "description": "Ubuntu < 15.10 - PT Chown Arbitrary PTs Access via User Namespace Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/41760.txt"
     }
   ],
@@ -3021,12 +3241,36 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40270.txt"
     }
   ],
+  "CVE-2016-20037": [
+    {
+      "source": "exploitdb",
+      "name": "xWPE 1.5.30a-2.1 - Local Buffer Overflow",
+      "description": "xWPE 1.5.30a-2.1 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39285.py"
+    }
+  ],
+  "CVE-2016-20041": [
+    {
+      "source": "exploitdb",
+      "name": "Yasr Screen Reader 0.6.9 - Local Buffer Overflow",
+      "description": "Yasr Screen Reader 0.6.9 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39734.py"
+    }
+  ],
   "CVE-2016-4338": [
     {
       "source": "exploitdb",
       "name": "Zabbix Agent 3.0.1 - 'mysql.size' Shell Command Injection",
       "description": "Zabbix Agent 3.0.1 - 'mysql.size' Shell Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/39769.txt"
+    }
+  ],
+  "CVE-2016-20046": [
+    {
+      "source": "exploitdb",
+      "name": "zFTP Client 20061220 - 'Connection Name' Local Buffer Overflow",
+      "description": "zFTP Client 20061220 - 'Connection Name' Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/40203.py"
     }
   ],
   "CVE-2016-9587": [
@@ -3532,8 +3776,8 @@
   "CVE-2016-1104": [
     {
       "source": "exploitdb",
-      "name": "Adobe Flash - Out-of-Bounds Read when Placing Object",
-      "description": "Adobe Flash - Out-of-Bounds Read when Placing Object",
+      "name": "Adobe Flash - Out-of-Bounds Read When Placing Object",
+      "description": "Adobe Flash - Out-of-Bounds Read When Placing Object",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/39825.txt"
     }
   ],
@@ -3955,11 +4199,19 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/39656.py"
     }
   ],
+  "CVE-2016-5537": [
+    {
+      "source": "exploitdb",
+      "name": "Oracle Netbeans IDE 8.1 - Directory Traversal",
+      "description": "Oracle Netbeans IDE 8.1 - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/40588.txt"
+    }
+  ],
   "CVE-2016-0772": [
     {
       "source": "exploitdb",
-      "name": "Python smtplib 2.7.11 / 3.4.4 / 3.5.1 - Man In The Middle StartTLS Stripping",
-      "description": "Python smtplib 2.7.11 / 3.4.4 / 3.5.1 - Man In The Middle StartTLS Stripping",
+      "name": "Python smtplib 2.7.11 / 3.4.4 / 3.5.1 - Man in the Middle StartTLS Stripping",
+      "description": "Python smtplib 2.7.11 / 3.4.4 / 3.5.1 - Man in the Middle StartTLS Stripping",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/43500.txt"
     }
   ],
@@ -4018,8 +4270,8 @@
   "CVE-2016-3115": [
     {
       "source": "exploitdb",
-      "name": "OpenSSH 7.2p1 - (Authenticated) xauth Command Injection",
-      "description": "OpenSSH 7.2p1 - (Authenticated) xauth Command Injection",
+      "name": "OpenSSH 7.2p1 - xauth Command Injection (Authenticated)",
+      "description": "OpenSSH 7.2p1 - xauth Command Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/39569.py"
     }
   ],
@@ -4066,8 +4318,8 @@
   "CVE-2016-3542": [
     {
       "source": "exploitdb",
-      "name": "Oracle Knowledge Management 12.1.1 < 12.2.5 - XML External Entity Leading To Remote Code Execution",
-      "description": "Oracle Knowledge Management 12.1.1 < 12.2.5 - XML External Entity Leading To Remote Code Execution",
+      "name": "Oracle Knowledge Management 12.1.1 < 12.2.5 - XML External Entity Leading to Remote Code Execution",
+      "description": "Oracle Knowledge Management 12.1.1 < 12.2.5 - XML External Entity Leading to Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/44041.txt"
     }
   ],
@@ -4127,6 +4379,30 @@
       "name": "SAP NetWeaver J2EE Engine 7.40 - SQL Injection",
       "description": "SAP NetWeaver J2EE Engine 7.40 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/43495.py"
+    }
+  ],
+  "CVE-2016-20035": [
+    {
+      "source": "exploitdb",
+      "name": "Wowza Streaming Engine 4.5.0 - Cross-Site Request Forgery (Add Advanced Admin)",
+      "description": "Wowza Streaming Engine 4.5.0 - Cross-Site Request Forgery (Add Advanced Admin)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/40134.html"
+    }
+  ],
+  "CVE-2016-20036": [
+    {
+      "source": "exploitdb",
+      "name": "Wowza Streaming Engine 4.5.0 - Multiple Cross-Site Scripting Vulnerabilities",
+      "description": "Wowza Streaming Engine 4.5.0 - Multiple Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/40135.txt"
+    }
+  ],
+  "CVE-2016-20034": [
+    {
+      "source": "exploitdb",
+      "name": "Wowza Streaming Engine 4.5.0 - Remote Privilege Escalation",
+      "description": "Wowza Streaming Engine 4.5.0 - Remote Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/40133.html"
     }
   ],
   "CVE-2016-1720": [
@@ -4281,6 +4557,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/osx/local/44239.md"
     }
   ],
+  "CVE-2016-11017": [
+    {
+      "source": "exploitdb",
+      "name": "AKIPS Network Monitor 15.37 through 16.5 - OS Command Injection",
+      "description": "AKIPS Network Monitor 15.37 through 16.5 - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/perl/webapps/39564.txt"
+    }
+  ],
   "CVE-2016-5399": [
     {
       "source": "exploitdb",
@@ -4351,6 +4635,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39816.php"
     }
   ],
+  "CVE-2016-20104": [
+    {
+      "source": "exploitdb",
+      "name": "EyeLock nano NXT 3.5 - Local File Disclosure",
+      "description": "EyeLock nano NXT 3.5 - Local File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40227.txt"
+    }
+  ],
   "CVE-2016-7508": [
     {
       "source": "exploitdb",
@@ -4373,6 +4665,14 @@
       "name": "Joomla! < 3.6.4 - Admin Takeover",
       "description": "Joomla! < 3.6.4 - Admin Takeover",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/41157.py"
+    }
+  ],
+  "CVE-2016-10114": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component aWeb Cart Watching System for Virtuemart 2.6.0 - SQL Injection",
+      "description": "Joomla! Component aWeb Cart Watching System for Virtuemart 2.6.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40973.txt"
     }
   ],
   "CVE-2016-1000124": [
@@ -4413,6 +4713,30 @@
       "name": "modified eCommerce Shopsoftware 2.0.0.0 rev 9678 - Blind SQL Injection",
       "description": "modified eCommerce Shopsoftware 2.0.0.0 rev 9678 - Blind SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39710.txt"
+    }
+  ],
+  "CVE-2016-20054": [
+    {
+      "source": "exploitdb",
+      "name": "nodCMS - Cross-Site Request Forgery",
+      "description": "nodCMS - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40707.html"
+    }
+  ],
+  "CVE-2016-15038": [
+    {
+      "source": "exploitdb",
+      "name": "NUUO NVRmini 2 3.0.8 - Arbitrary File Deletion",
+      "description": "NUUO NVRmini 2 3.0.8 - Arbitrary File Deletion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40214.txt"
+    }
+  ],
+  "CVE-2016-20106": [
+    {
+      "source": "exploitdb",
+      "name": "NUUO NVRmini 2 3.0.8 - Local File Disclosure",
+      "description": "NUUO NVRmini 2 3.0.8 - Local File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40211.txt"
     }
   ],
   "CVE-2016-6175": [
@@ -4461,6 +4785,38 @@
       "name": "Zend Framework / zend-mail < 2.4.11 - Remote Code Execution",
       "description": "Zend Framework / zend-mail < 2.4.11 - Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40979.php"
+    }
+  ],
+  "CVE-2016-20053": [
+    {
+      "source": "exploitdb",
+      "name": "Redaxo 5.2.0 - Cross-Site Request Forgery",
+      "description": "Redaxo 5.2.0 - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40708.html"
+    }
+  ],
+  "CVE-2016-10737": [
+    {
+      "source": "exploitdb",
+      "name": "S9Y Serendipity 2.0.4 - Cross-Site Scripting",
+      "description": "S9Y Serendipity 2.0.4 - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40650.txt"
+    }
+  ],
+  "CVE-2016-20052": [
+    {
+      "source": "exploitdb",
+      "name": "sNews 1.7.1 - Arbitrary File Upload",
+      "description": "sNews 1.7.1 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40706.txt"
+    }
+  ],
+  "CVE-2016-20051": [
+    {
+      "source": "exploitdb",
+      "name": "sNews 1.7.1 - Cross-Site Request Forgery",
+      "description": "sNews 1.7.1 - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40705.html"
     }
   ],
   "CVE-2016-9553": [
@@ -4555,6 +4911,228 @@
       "name": "WordPress Core 4.5.3 - Directory Traversal / Denial of Service",
       "description": "WordPress Core 4.5.3 - Directory Traversal / Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40288.txt"
+    }
+  ],
+  "CVE-2016-20071": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin 404 Redirection Manager 1.0 - SQL Injection",
+      "description": "WordPress Plugin 404 Redirection Manager 1.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40941.txt"
+    }
+  ],
+  "CVE-2016-20082": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Abtest - Local File Inclusion",
+      "description": "WordPress Plugin Abtest - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39577.txt"
+    }
+  ],
+  "CVE-2016-20073": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Answer My Question 1.3 - SQL Injection",
+      "description": "WordPress Plugin Answer My Question 1.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40771.txt"
+    }
+  ],
+  "CVE-2016-20072": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin BBS e-Franchise 1.1.1 - SQL Injection",
+      "description": "WordPress Plugin BBS e-Franchise 1.1.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40782.txt"
+    }
+  ],
+  "CVE-2016-20068": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39423.txt"
+    }
+  ],
+  "CVE-2016-20069": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39423.txt"
+    }
+  ],
+  "CVE-2016-20070": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin Booking Calendar Contact Form 1.0.23 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39423.txt"
+    }
+  ],
+  "CVE-2016-20084": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Booking Calendar Contact Form 1.1.24 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin Booking Calendar Contact Form 1.1.24 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39341.txt"
+    }
+  ],
+  "CVE-2016-20080": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Brandfolder 3.0 - Local/Remote File Inclusion",
+      "description": "WordPress Plugin Brandfolder 3.0 - Local/Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39591.txt"
+    }
+  ],
+  "CVE-2016-20066": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin CP Polls 1.0.8 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin CP Polls 1.0.8 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39513.txt"
+    }
+  ],
+  "CVE-2016-20067": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin CP Polls 1.0.8 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin CP Polls 1.0.8 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39513.txt"
+    }
+  ],
+  "CVE-2016-20079": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Dharma Booking 2.38.3 - Remote File Inclusion",
+      "description": "WordPress Plugin Dharma Booking 2.38.3 - Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39592.txt"
+    }
+  ],
+  "CVE-2016-20081": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin HB Audio Gallery Lite 1.0.0 - Arbitrary File Download",
+      "description": "WordPress Plugin HB Audio Gallery Lite 1.0.0 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39589.txt"
+    }
+  ],
+  "CVE-2016-20078": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin IMDb Profile Widget 1.0.8 - Local File Inclusion",
+      "description": "WordPress Plugin IMDb Profile Widget 1.0.8 - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39621.txt"
+    }
+  ],
+  "CVE-2016-20074": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Lazy Content Slider 3.4 - Cross-Site Request Forgery (Add Catetory)",
+      "description": "WordPress Plugin Lazy Content Slider 3.4 - Cross-Site Request Forgery (Add Catetory)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40070.txt"
+    }
+  ],
+  "CVE-2016-20100": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Memphis Document Library 3.1.5 - Arbitrary File Download",
+      "description": "WordPress Plugin Memphis Document Library 3.1.5 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39593.txt"
+    }
+  ],
+  "CVE-2016-20083": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin More Fields 2.1 - Cross-Site Request Forgery",
+      "description": "WordPress Plugin More Fields 2.1 - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39507.txt"
+    }
+  ],
+  "CVE-2016-20077": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Photocart Link 1.6 - Local File Inclusion",
+      "description": "WordPress Plugin Photocart Link 1.6 - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39623.txt"
+    }
+  ],
+  "CVE-2016-20065": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Product Catalog 8 1.2.0 - SQL Injection",
+      "description": "WordPress Plugin Product Catalog 8 1.2.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40783.txt"
+    }
+  ],
+  "CVE-2016-20076": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Simple Backup 2.7.11 - Multiple Vulnerabilities",
+      "description": "WordPress Plugin Simple Backup 2.7.11 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39883.txt"
+    }
+  ],
+  "CVE-2016-20062": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Simply Poll 1.4.1 - SQL Injection",
+      "description": "WordPress Plugin Simply Poll 1.4.1 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40971.txt"
+    }
+  ],
+  "CVE-2016-20063": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Single Personal Message 1.0.3 - SQL Injection",
+      "description": "WordPress Plugin Single Personal Message 1.0.3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40870.txt"
+    }
+  ],
+  "CVE-2016-20075": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Ultimate Product Catalog 3.8.6 - Arbitrary File Upload",
+      "description": "WordPress Plugin Ultimate Product Catalog 3.8.6 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40012.txt"
+    }
+  ],
+  "CVE-2016-20064": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin WP Vault 0.8.6.6 - Local File Inclusion",
+      "description": "WordPress Plugin WP Vault 0.8.6.6 - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40850.txt"
+    }
+  ],
+  "CVE-2016-10997": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Theme Beauty & Clean 1.0.8 - Arbitrary File Upload",
+      "description": "WordPress Theme Beauty & Clean 1.0.8 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39552.txt"
+    }
+  ],
+  "CVE-2016-10972": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Theme Newspaper 6.7.1 - Privilege Escalation",
+      "description": "WordPress Theme Newspaper 6.7.1 - Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39894.php"
+    },
+    {
+      "source": "nuclei",
+      "name": "Newspaper Theme 6.4\u20136.7.1 - Privilege Escalation",
+      "description": "Newspaper Theme versions 6.4 to 6.7.1 for WordPress lacked proper options access control through td_ajax_update_panel, which led to a Privilege Escalation vulnerability.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10972.yaml"
+    }
+  ],
+  "CVE-2016-10738": [
+    {
+      "source": "exploitdb",
+      "name": "Zenbership 107 - Multiple Vulnerabilities",
+      "description": "Zenbership 107 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40620.txt"
     }
   ],
   "CVE-2016-3411": [
@@ -4755,6 +5333,14 @@
       "name": "Micro Focus Rumba 9.3 - ActiveX Stack Buffer Overflow (PoC)",
       "description": "Micro Focus Rumba 9.3 - ActiveX Stack Buffer Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/40649.html"
+    }
+  ],
+  "CVE-2016-9176": [
+    {
+      "source": "exploitdb",
+      "name": "Micro Focus Rumba 9.4 - Local Denial of Service",
+      "description": "Micro Focus Rumba 9.4 - Local Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/40648.txt"
     }
   ],
   "CVE-2016-1606": [
@@ -5195,6 +5781,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/41042.html"
     }
   ],
+  "CVE-2016-20050": [
+    {
+      "source": "exploitdb",
+      "name": "NetSchedScan 1.0 - Crash (PoC)",
+      "description": "NetSchedScan 1.0 - Crash (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/39242.py"
+    }
+  ],
   "CVE-2016-7391": [
     {
       "source": "exploitdb",
@@ -5331,6 +5925,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/40398.txt"
     }
   ],
+  "CVE-2016-20094": [
+    {
+      "source": "exploitdb",
+      "name": "AnyDesk 2.5.0 - Unquoted Service Path Privilege Escalation",
+      "description": "AnyDesk 2.5.0 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40410.txt"
+    }
+  ],
   "CVE-2016-8742": [
     {
       "source": "exploitdb",
@@ -5347,12 +5949,84 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/39630.g"
     }
   ],
+  "CVE-2016-20088": [
+    {
+      "source": "exploitdb",
+      "name": "Comodo Chromodo Browser - Unquoted Service Path Privilege Escalation",
+      "description": "Comodo Chromodo Browser - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40473.txt"
+    }
+  ],
+  "CVE-2016-20090": [
+    {
+      "source": "exploitdb",
+      "name": "Comodo Dragon Browser - Unquoted Service Path Privilege Escalation",
+      "description": "Comodo Dragon Browser - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40471.txt"
+    }
+  ],
+  "CVE-2016-15003": [
+    {
+      "source": "exploitdb",
+      "name": "FileZilla FTP Client 3.17.0.0 - Unquoted Path Privilege Escalation",
+      "description": "FileZilla FTP Client 3.17.0.0 - Unquoted Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/39803.txt"
+    }
+  ],
+  "CVE-2016-20087": [
+    {
+      "source": "exploitdb",
+      "name": "Fortitude HTTP 1.0.4.0 - Unquoted Service Path Privilege Escalation",
+      "description": "Fortitude HTTP 1.0.4.0 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40461.txt"
+    }
+  ],
+  "CVE-2016-20060": [
+    {
+      "source": "exploitdb",
+      "name": "Hotspot Shield 6.0.3 - Unquoted Service Path Privilege Escalation",
+      "description": "Hotspot Shield 6.0.3 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40528.txt"
+    }
+  ],
   "CVE-2016-8769": [
     {
       "source": "exploitdb",
       "name": "Huawei UTPS - Unquoted Service Path Privilege Escalation",
       "description": "Huawei UTPS - Unquoted Service Path Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40807.txt"
+    }
+  ],
+  "CVE-2016-20055": [
+    {
+      "source": "exploitdb",
+      "name": "IObit Advanced SystemCare 10.0.2 - Unquoted Service Path Privilege Escalation",
+      "description": "IObit Advanced SystemCare 10.0.2 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40577.txt"
+    }
+  ],
+  "CVE-2016-20059": [
+    {
+      "source": "exploitdb",
+      "name": "IObit Malware Fighter 4.3.1 - Unquoted Service Path Privilege Escalation",
+      "description": "IObit Malware Fighter 4.3.1 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40525.txt"
+    }
+  ],
+  "CVE-2016-20089": [
+    {
+      "source": "exploitdb",
+      "name": "Iperius Remote 1.7.0 - Unquoted Service Path Privilege Escalation",
+      "description": "Iperius Remote 1.7.0 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40427.txt"
+    }
+  ],
+  "CVE-2016-20095": [
+    {
+      "source": "exploitdb",
+      "name": "Matrix42 Remote Control Host 3.20.0031 - Unquoted Path Privilege Escalation",
+      "description": "Matrix42 Remote Control Host 3.20.0031 - Unquoted Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/39908.txt"
     }
   ],
   "CVE-2016-3984": [
@@ -5513,6 +6187,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40606.cpp"
     }
   ],
+  "CVE-2016-20091": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Windows Firewall Control - Unquoted Service Path Privilege Escalation",
+      "description": "Microsoft Windows Firewall Control - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40443.txt"
+    }
+  ],
   "CVE-2016-3237": [
     {
       "source": "exploitdb",
@@ -5527,6 +6209,30 @@
       "name": "Microsoft Word 2007/2010/2013/2016 - Out-of-Bounds Read Code Execution (MS16-099)",
       "description": "Microsoft Word 2007/2010/2013/2016 - Out-of-Bounds Read Code Execution (MS16-099)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40224.txt"
+    }
+  ],
+  "CVE-2016-20092": [
+    {
+      "source": "exploitdb",
+      "name": "NetDrive 2.6.12 - Unquoted Service Path Privilege Escalation",
+      "description": "NetDrive 2.6.12 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40422.txt"
+    }
+  ],
+  "CVE-2016-20058": [
+    {
+      "source": "exploitdb",
+      "name": "NETGATE AMITI Antivirus 23.0.305 - Unquoted Service Path Privilege Escalation",
+      "description": "NETGATE AMITI Antivirus 23.0.305 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40540.txt"
+    }
+  ],
+  "CVE-2016-20057": [
+    {
+      "source": "exploitdb",
+      "name": "NETGATE Registry Cleaner 16.0.205 - Unquoted Service Path Privilege Escalation",
+      "description": "NETGATE Registry Cleaner 16.0.205 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40539.txt"
     }
   ],
   "CVE-2016-8812": [
@@ -5553,6 +6259,30 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/39671.txt"
     }
   ],
+  "CVE-2016-20085": [
+    {
+      "source": "exploitdb",
+      "name": "Realtek High Definition Audio Driver 6.0.1.6730 - Unquoted Service Path Privilege Escalation",
+      "description": "Realtek High Definition Audio Driver 6.0.1.6730 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40587.txt"
+    }
+  ],
+  "CVE-2016-20061": [
+    {
+      "source": "exploitdb",
+      "name": "Sheed AntiVirus 2.3 - Unquoted Service Path Privilege Escalation",
+      "description": "Sheed AntiVirus 2.3 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40497.txt"
+    }
+  ],
+  "CVE-2016-20056": [
+    {
+      "source": "exploitdb",
+      "name": "Spy Emergency 23.0.205 - Unquoted Service Path Privilege Escalation",
+      "description": "Spy Emergency 23.0.205 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40550.txt"
+    }
+  ],
   "CVE-2016-6914": [
     {
       "source": "exploitdb",
@@ -5569,12 +6299,52 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/39888.txt"
     }
   ],
+  "CVE-2016-20086": [
+    {
+      "source": "exploitdb",
+      "name": "Vembu StoreGrid 4.0 - Unquoted Service Path Privilege Escalation",
+      "description": "Vembu StoreGrid 4.0 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40582.txt"
+    }
+  ],
   "CVE-2016-10031": [
     {
       "source": "exploitdb",
       "name": "Wampserver 3.0.6 - Insecure File Permissions Privilege Escalation",
       "description": "Wampserver 3.0.6 - Insecure File Permissions Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40967.txt"
+    }
+  ],
+  "CVE-2016-20093": [
+    {
+      "source": "exploitdb",
+      "name": "Wise Care 365 4.27 / Wise Disk Cleaner 9.29 - Unquoted Service Path Privilege Escalation",
+      "description": "Wise Care 365 4.27 / Wise Disk Cleaner 9.29 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40417.txt"
+    }
+  ],
+  "CVE-2016-20033": [
+    {
+      "source": "exploitdb",
+      "name": "Wowza Streaming Engine 4.5.0 - Local Privilege Escalation",
+      "description": "Wowza Streaming Engine 4.5.0 - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40132.txt"
+    }
+  ],
+  "CVE-2016-20025": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKAccess Professional 3.5.3 - Insecure File Permissions Privilege Escalation",
+      "description": "ZKTeco ZKAccess Professional 3.5.3 - Insecure File Permissions Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40323.txt"
+    }
+  ],
+  "CVE-2016-20024": [
+    {
+      "source": "exploitdb",
+      "name": "ZKTeco ZKTime.Net 3.0.1.6 - Insecure File Permissions Privilege Escalation",
+      "description": "ZKTeco ZKTime.Net 3.0.1.6 - Insecure File Permissions Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40322.txt"
     }
   ],
   "CVE-2016-9796": [
@@ -5631,6 +6401,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/39805.txt"
     }
   ],
+  "CVE-2016-15060": [
+    {
+      "source": "exploitdb",
+      "name": "PCMan FTP Server 2.0.7 - 'PORT' Remote Buffer Overflow",
+      "description": "PCMan FTP Server 2.0.7 - 'PORT' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/40714.py"
+    }
+  ],
   "CVE-2016-5764": [
     {
       "source": "exploitdb",
@@ -5674,8 +6452,8 @@
   "CVE-2016-4004": [
     {
       "source": "exploitdb",
-      "name": "Dell OpenManage Server Administrator 8.2 - (Authenticated) Directory Traversal",
-      "description": "Dell OpenManage Server Administrator 8.2 - (Authenticated) Directory Traversal",
+      "name": "Dell OpenManage Server Administrator 8.2 - Directory Traversal (Authenticated)",
+      "description": "Dell OpenManage Server Administrator 8.2 - Directory Traversal (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/39486.txt"
     }
   ],
@@ -6059,14 +6837,6 @@
       "name": "WordPress wSecure Lite < 2.4 - Remote Code Execution",
       "description": "WordPress wsecure plugin before 2.4 is susceptible to remote code execution via shell metacharacters in the wsecure-config.php publish parameter.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10960.yaml"
-    }
-  ],
-  "CVE-2016-10972": [
-    {
-      "source": "nuclei",
-      "name": "Newspaper Theme 6.4\u20136.7.1 - Privilege Escalation",
-      "description": "Newspaper Theme versions 6.4 to 6.7.1 for WordPress lacked proper options access control through td_ajax_update_panel, which led to a Privilege Escalation vulnerability.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2016/CVE-2016-10972.yaml"
     }
   ],
   "CVE-2016-10973": [

@@ -143,6 +143,12 @@
       "name": "ClanSphere 2011.3 Local File Inclusion Vulnerability",
       "description": "This module exploits a directory traversal flaw found in Clansphere 2011.3.\n          The application fails to handle the cs_lang parameter properly, which can be\n          used to read any file outside the virtual directory.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/clansphere_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ClanSphere 2011.3 - 'cs_lang' Cookie Local File Inclusion",
+      "description": "ClanSphere 2011.3 - 'cs_lang' Cookie Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/22181.txt"
     }
   ],
   "CVE-2012-0419": [
@@ -237,6 +243,12 @@
       "name": "Sockso Music Host Server 1.5 Directory Traversal",
       "description": "This module exploits a directory traversal bug in Sockso on port\n          4444.  This is done by using \"../\" in the path to retrieve a file on\n          a vulnerable machine.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/sockso_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "sockso 1.5 - Directory Traversal",
+      "description": "sockso 1.5 - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/18605.txt"
     }
   ],
   "CVE-2012-4347": [
@@ -388,8 +400,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "libupnp 1.6.18 - Stack-based buffer overflow (DoS)",
-      "description": "libupnp 1.6.18 - Stack-based buffer overflow (DoS)",
+      "name": "libupnp 1.6.18 - Stack-based Buffer Overflow (DoS)",
+      "description": "libupnp 1.6.18 - Stack-based Buffer Overflow (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/49119.py"
     },
     {
@@ -465,6 +477,12 @@
       "name": "D-Link DIR-605L Captcha Handling Buffer Overflow",
       "description": "This module exploits an anonymous remote code execution vulnerability on D-Link DIR-605L routers. The\n          vulnerability exists while handling user supplied captcha information, and is due to the\n          insecure usage of sprintf on the getAuthCode() function. This module has been tested\n          successfully on D-Link DIR-605L firmware 1.13 (emulated) and firmware 1.12 (real).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dir605l_captcha_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-605L - Captcha Handling Buffer Overflow (Metasploit)",
+      "description": "D-Link DIR-605L - Captcha Handling Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/29127.rb"
     }
   ],
   "CVE-2012-10059": [
@@ -473,6 +491,18 @@
       "name": "Dolibarr ERP/CRM Post-Auth OS Command Injection",
       "description": "This module exploits a vulnerability found in Dolibarr ERP/CRM 3's\n          backup feature.  This software is used to manage a company's business\n          information such as contacts, invoices, orders, stocks, agenda, etc.\n          When processing a database backup request, the export.php function\n          does not check the input given to the sql_compat parameter, which allows\n          a remote authenticated attacker to inject system commands into it,\n          and then gain arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dolibarr_cmd_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Dolibarr ERP/CRM 3 - OS Command Injection (Authenticated) (Metasploit)",
+      "description": "Dolibarr ERP/CRM 3 - OS Command Injection (Authenticated) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18724.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Dolibarr ERP/CRM < 3.2.0 / < 3.1.1 - OS Command Injection",
+      "description": "Dolibarr ERP/CRM < 3.2.0 / < 3.1.1 - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18725.txt"
     }
   ],
   "CVE-2012-10046": [
@@ -481,6 +511,18 @@
       "name": "E-Mail Security Virtual Appliance learn-msg.cgi Command Injection",
       "description": "This module exploits a command injection vulnerability found in E-Mail Security\n          Virtual Appliance. This module abuses the learn-msg.cgi file to execute arbitrary\n          OS commands without authentication. This module has been successfully tested on the\n          ESVA_2057 appliance.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/esva_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "E-Mail Security Virtual Appliance - 'learn-msg.cgi' Command Injection (Metasploit)",
+      "description": "E-Mail Security Virtual Appliance - 'learn-msg.cgi' Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/20712.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "E-Mail Security Virtual Appliance (ESVA) - Remote Execution",
+      "description": "E-Mail Security Virtual Appliance (ESVA) - Remote Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/20551.pl"
     }
   ],
   "CVE-2012-10040": [
@@ -489,6 +531,12 @@
       "name": "Openfiler v2.x NetworkCard Command Execution",
       "description": "This module exploits a vulnerability in Openfiler v2.x\n          which could be abused to allow authenticated users to execute arbitrary\n          code under the context of the 'openfiler' user. The 'system.html' file\n          uses user controlled data from the 'device' parameter to create a new\n          'NetworkCard' object. The class constructor in 'network.inc' calls exec()\n          with the supplied data. The 'openfiler' user may 'sudo /bin/bash' without\n          providing a system password.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/openfiler_networkcard_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "OpenFiler 2.x - NetworkCard Command Execution (Metasploit)",
+      "description": "OpenFiler 2.x - NetworkCard Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/21191.rb"
     }
   ],
   "CVE-2012-0297": [
@@ -569,6 +617,12 @@
       "name": "WAN Emulator v2.3 Command Execution",
       "description": "This module exploits a command execution vulnerability in WAN Emulator\n          version 2.3 which can be abused to allow unauthenticated users to execute\n          arbitrary commands under the context of the 'www-data' user.\n          The 'result.php' script calls shell_exec() with user controlled data\n          from the 'pc' parameter. This module also exploits a command execution\n          vulnerability to gain root privileges. The 'dosu' binary is suid 'root'\n          and vulnerable to command execution in argument one.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/wanem_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WAN Emulator 2.3 - Command Execution (Metasploit)",
+      "description": "WAN Emulator 2.3 - Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/21190.rb"
     }
   ],
   "CVE-2012-1495": [
@@ -597,6 +651,12 @@
       "name": "ZEN Load Balancer Filelog Command Execution",
       "description": "This module exploits a vulnerability in ZEN Load Balancer\n          version 2.0 and 3.0-rc1 which could be abused to allow authenticated users\n          to execute arbitrary code under the context of the 'root' user.\n          The 'content2-2.cgi' file uses user controlled data from the 'filelog'\n          parameter within backticks.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/zen_load_balancer_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ZEN Load Balancer Filelog - Command Execution (Metasploit)",
+      "description": "ZEN Load Balancer Filelog - Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/21849.rb"
     }
   ],
   "CVE-2012-10048": [
@@ -605,6 +665,18 @@
       "name": "Zenoss 3 showDaemonXMLConfig Command Execution",
       "description": "This module exploits a command execution vulnerability in Zenoss 3.x\n          which could be abused to allow authenticated users to execute arbitrary\n          code under the context of the 'zenoss' user. The show_daemon_xml_configs()\n          function in the 'ZenossInfo.py' script calls Popen() with user\n          controlled data from the 'daemon' parameter.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/zenoss_showdaemonxmlconfig_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Zenoss 3.2.1 - Multiple Vulnerabilities",
+      "description": "Zenoss 3.2.1 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/37571.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Zenoss 3 - showDaemonXMLConfig Command Execution (Metasploit)",
+      "description": "Zenoss 3 - showDaemonXMLConfig Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20205.rb"
     }
   ],
   "CVE-2012-10022": [
@@ -613,6 +685,12 @@
       "name": "Kloxo Local Privilege Escalation",
       "description": "Version 6.1.12 and earlier of Kloxo contain two setuid root binaries such as\n            lxsuexec and lxrestart, allow local privilege escalation to root from uid 48,\n            Apache by default on CentOS 5.8, the operating system supported by Kloxo.\n            This module has been tested successfully with Kloxo 6.1.12 and 6.1.6.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/kloxo_lxsuexec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kloxo 6.1.6 - Local Privilege Escalation",
+      "description": "Kloxo 6.1.6 - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/25406.sh"
     }
   ],
   "CVE-2012-0432": [
@@ -825,6 +903,18 @@
       "name": "Auxilium RateMyPet Arbitrary File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in Auxilium RateMyPet's. The site\n          banner uploading feature can be abused to upload an arbitrary file to the web\n          server, which is accessible in the 'banner' directory, thus allowing remote code\n          execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/auxilium_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Auxilium RateMyPet - Arbitrary File Upload (Metasploit)",
+      "description": "Auxilium RateMyPet - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/21836.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Auxilium PetRatePro - Multiple Vulnerabilities",
+      "description": "Auxilium PetRatePro - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/21329.txt"
     }
   ],
   "CVE-2012-10050": [
@@ -833,6 +923,12 @@
       "name": "CuteFlow v2.11.2 Arbitrary File Upload Vulnerability",
       "description": "This module exploits a vulnerability in CuteFlow version 2.11.2 or prior.\n          This application has an upload feature that allows an unauthenticated\n          user to upload arbitrary files to the 'upload/___1/' directory\n          and then execute it.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/cuteflow_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "CuteFlow 2.11.2 - Arbitrary File Upload (Metasploit)",
+      "description": "CuteFlow 2.11.2 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20111.rb"
     }
   ],
   "CVE-2012-6710": [
@@ -879,6 +975,18 @@
       "name": "MobileCartly 1.0 Arbitrary File Creation Vulnerability",
       "description": "This module exploits a vulnerability in MobileCartly.  The savepage.php file\n          does not do any permission checks before using file_put_contents(), which\n          allows any user to have direct control of that function to create files\n          under the 'pages' directory by default, or anywhere else as long as the user\n          has WRITE permission.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/mobilecartly_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MobileCartly 1.0 - Arbitrary File Creation (Metasploit)",
+      "description": "MobileCartly 1.0 - Arbitrary File Creation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/21079.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MobileCartly 1.0 - Arbitrary File Write",
+      "description": "MobileCartly 1.0 - Arbitrary File Write",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20422.txt"
     }
   ],
   "CVE-2012-6315": [
@@ -915,6 +1023,18 @@
       "name": "Netwin SurgeFTP Remote Command Execution",
       "description": "This module exploits a vulnerability found in Netwin SurgeFTP, version 23c8\n          or prior.  In order to execute commands via the FTP service, please note that\n          you must have a valid credential to the web-based administrative console.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/netwin_surgeftp_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "NetWin SurgeFTP - Admin Command Injection (Authenticated) (Metasploit)",
+      "description": "NetWin SurgeFTP - Admin Command Injection (Authenticated) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/23522.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netwin SurgeFTP - Remote Command Execution (Metasploit)",
+      "description": "Netwin SurgeFTP - Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/23601.rb"
     }
   ],
   "CVE-2012-0261": [
@@ -1035,6 +1155,18 @@
       "name": "PHP Volunteer Management System v1.0.2 Arbitrary File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in PHP Volunteer Management System,\n          version v1.0.2 or prior.  This application has an upload feature that allows an\n          authenticated user to upload anything to the 'uploads' directory, which is actually\n          reachable by anyone without a credential.  An attacker can easily abuse this upload\n          functionality first by logging in with the default credential (admin:volunteer),\n          upload a malicious payload, and then execute it by sending another GET request.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/php_volunteer_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHP Volunteer Management System 1.0.2 - Arbitrary File Upload (Metasploit)",
+      "description": "PHP Volunteer Management System 1.0.2 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18957.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHP Volunteer Management System 1.0.2 - Multiple Vulnerabilities",
+      "description": "PHP Volunteer Management System 1.0.2 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18941.txt"
     }
   ],
   "CVE-2012-5159": [
@@ -1057,6 +1189,18 @@
       "name": "PhpTax pfilez Parameter Exec Remote Code Injection",
       "description": "This module exploits a vulnerability found in PhpTax, an income tax report\n          generator.  When generating a PDF, the icondrawpng() function in drawimage.php\n          does not properly handle the pfilez parameter, which will be used in an exec()\n          statement, and then results in arbitrary remote code execution under the context\n          of the web server.  Please note: authentication is not required to exploit this\n          vulnerability.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/phptax_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PhpTax - 'pfilez' Execution Remote Code Injection (Metasploit)",
+      "description": "PhpTax - 'pfilez' Execution Remote Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/21833.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "phptax 0.8 - Remote Code Execution",
+      "description": "phptax 0.8 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/21665.txt"
     }
   ],
   "CVE-2012-10042": [
@@ -1065,6 +1209,12 @@
       "name": "Sflog! CMS 1.0 Arbitrary File Upload Vulnerability",
       "description": "This module exploits multiple design flaws in Sflog 1.0.  By default, the CMS has\n          a default admin credential of \"admin:secret\", which can be abused to access\n          administrative features such as blogs management.  Through the management\n          interface, we can upload a backdoor that's accessible by any remote user, and then\n          gain arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/sflog_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "sflog! 1.00 - Multiple Vulnerabilities",
+      "description": "sflog! 1.00 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/19626.txt"
     }
   ],
   "CVE-2012-0391": [
@@ -1141,6 +1291,12 @@
       "name": "WebDAV PHP Upload",
       "description": "This module exploits WebDAV which also has PHP enabled,\n          such as found on XAMPP servers.\n          It can use do by using any supplied credentials to upload via WebDAV,\n          a PHP payload and then execute it.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/webdav_upload_php.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "XAMPP - WebDAV PHP Upload (Metasploit)",
+      "description": "XAMPP - WebDAV PHP Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18367.rb"
     }
   ],
   "CVE-2012-10049": [
@@ -1149,6 +1305,18 @@
       "name": "WebPageTest Arbitrary PHP File Upload",
       "description": "This module exploits a vulnerability found in WebPageTest's Upload Feature. By\n          default, the resultimage.php file does not verify the user-supplied item before\n          saving it to disk, and then places this item in the web directory accessible by\n          remote users.  This flaw can be abused to gain remote code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/webpagetest_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WebPageTest - Arbitrary '.PHP' File Upload (Metasploit)",
+      "description": "WebPageTest - Arbitrary '.PHP' File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20173.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "webpagetest 2.6 - Multiple Vulnerabilities",
+      "description": "webpagetest 2.6 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/19790.txt"
     }
   ],
   "CVE-2012-4361": [
@@ -1285,6 +1453,12 @@
       "name": "EGallery PHP File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in EGallery 1.2 By abusing the\n          uploadify.php file, a malicious user can upload a file to the egallery/ directory\n          without any authentication, which results in arbitrary code execution. The module\n          has been tested successfully on Ubuntu 10.04.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/egallery_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "EGallery - Arbitrary '.PHP' File Upload (Metasploit)",
+      "description": "EGallery - Arbitrary '.PHP' File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20029.rb"
     }
   ],
   "CVE-2012-6329": [
@@ -1385,6 +1559,12 @@
       "name": "Nagios XI Network Monitor Graph Explorer Component Command Injection",
       "description": "This module exploits a vulnerability found in Nagios XI Network Monitor's\n          component 'Graph Explorer'.  An authenticated user can execute system commands\n          by injecting it in several parameters, such as in visApi.php's 'host' parameter,\n          which results in remote code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/nagios_graph_explorer.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Nagios XI Network Monitor Graph Explorer Component - Command Injection (Metasploit)",
+      "description": "Nagios XI Network Monitor Graph Explorer Component - Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/23227.rb"
     }
   ],
   "CVE-2012-10033": [
@@ -1393,6 +1573,18 @@
       "name": "Narcissus Image Configuration Passthru Vulnerability",
       "description": "This module exploits a vulnerability found in Narcissus image configuration\n          function.  This is due to the backend.php file not handling the $release parameter\n          properly, and then passes it on to the configure_image() function.  In this\n          function, the $release parameter can be used to inject system commands for\n          passthru (a PHP function that's meant to be used to run a bash script by the\n          vulnerable application), which allows remote code execution under the context\n          of the web server.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/narcissus_backend_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Narcissus Image Configuration - Passthru (Metasploit)",
+      "description": "Narcissus Image Configuration - Passthru (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/22856.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Narcissus - Remote Command Execution",
+      "description": "Narcissus - Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/22709.txt"
     }
   ],
   "CVE-2012-10036": [
@@ -1401,6 +1593,12 @@
       "name": "Project Pier Arbitrary File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in Project Pier.  The application's\n          uploading tool does not require any authentication, which allows a malicious user\n          to upload an arbitrary file onto the web server, and then cause remote code\n          execution by simply requesting it. This module is known to work against Apache\n          servers due to the way it handles an extension name, but the vulnerability may\n          not be exploitable on others.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/projectpier_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Project Pier - Arbitrary File Upload (Metasploit)",
+      "description": "Project Pier - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/21929.rb"
     }
   ],
   "CVE-2012-0694": [
@@ -1463,6 +1661,18 @@
       "name": "WordPress Plugin Advanced Custom Fields Remote File Inclusion",
       "description": "This module exploits a remote file inclusion flaw in the WordPress blogging\n          software plugin known as Advanced Custom Fields. The vulnerability allows for remote\n          file inclusion and remote code execution via the export.php script. The Advanced\n          Custom Fields plug-in versions 3.5.1 and below are vulnerable. This exploit only\n          works when the php option allow_url_include is set to On (Default Off).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/wp_advanced_custom_fields_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Advanced Custom Fields - Remote File Inclusion (Metasploit)",
+      "description": "WordPress Plugin Advanced Custom Fields - Remote File Inclusion (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/23856.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Advanced Custom Fields - Remote File Inclusion (Metasploit)",
+      "description": "WordPress Plugin Advanced Custom Fields - Remote File Inclusion (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/23856.rb"
     }
   ],
   "CVE-2012-10026": [
@@ -1471,6 +1681,18 @@
       "name": "WordPress Asset-Manager PHP File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in Asset-Manager <= 2.0 WordPress\n          plugin. By abusing the upload.php file, a malicious user can upload a file to a\n          temp directory without authentication, which results in arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/wp_asset_manager_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Asset-Manager - Arbitrary '.PHP' File Upload (Metasploit)",
+      "description": "WordPress Plugin Asset-Manager - Arbitrary '.PHP' File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/23652.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Asset Manager 0.2 - Arbitrary File Upload",
+      "description": "WordPress Plugin Asset Manager 0.2 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18993.php"
     }
   ],
   "CVE-2012-10020": [
@@ -1515,6 +1737,18 @@
       "name": "WordPress WP-Property PHP File Upload Vulnerability",
       "description": "This module exploits a vulnerability found in WP-Property <= 1.35.0 WordPress\n          plugin. By abusing the uploadify.php file, a malicious user can upload a file to a\n          temp directory without authentication, which results in arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/wp_property_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin WP-Property - Arbitrary '.PHP' File Upload (Metasploit)",
+      "description": "WordPress Plugin WP-Property - Arbitrary '.PHP' File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/23651.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin WP-Property 1.35.0 - Arbitrary File Upload",
+      "description": "WordPress Plugin WP-Property 1.35.0 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18987.php"
     }
   ],
   "CVE-2012-10045": [
@@ -1523,6 +1757,18 @@
       "name": "XODA 0.4.5 Arbitrary PHP File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability found in XODA 0.4.5. Attackers\n          can abuse the \"upload\" command in order to upload a malicious PHP file without any\n          authentication, which results in arbitrary code execution. The module has been\n          tested successfully on XODA 0.4.5 and Ubuntu 10.04.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/xoda_file_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "XODA 0.4.5 - Arbitrary '.PHP' File Upload (Metasploit)",
+      "description": "XODA 0.4.5 - Arbitrary '.PHP' File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20713.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "XODA Document Management System 0.4.5 - Cross-Site Scripting / Arbitrary File Upload",
+      "description": "XODA Document Management System 0.4.5 - Cross-Site Scripting / Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20703.txt"
     }
   ],
   "CVE-2012-0754": [
@@ -1630,8 +1876,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Cisco Linksys PlayerPT - ActiveX Control SetSource sURL argument Buffer Overflow (Metasploit)",
-      "description": "Cisco Linksys PlayerPT - ActiveX Control SetSource sURL argument Buffer Overflow (Metasploit)",
+      "name": "Cisco Linksys PlayerPT - ActiveX Control SetSource sURL Argument Buffer Overflow (Metasploit)",
+      "description": "Cisco Linksys PlayerPT - ActiveX Control SetSource sURL Argument Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20202.rb"
     }
   ],
@@ -1793,6 +2039,12 @@
       "name": "Maxthon3 about:history XCS Trusted Zone Code Execution",
       "description": "Cross Context Scripting (XCS) is possible in the Maxthon about:history page.\n          Injection in such privileged/trusted browser zone can be used to modify\n          configuration settings and execute arbitrary commands.\n\n          Please note this module only works against specific versions of XCS. Currently,\n          we've only successfully tested on Maxthon 3.1.7 build 600 up to 3.2.2 build 1000.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/maxthon_history_xcs.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Maxthon3 - about:history XCS Trusted Zone Code Execution (Metasploit)",
+      "description": "Maxthon3 - about:history XCS Trusted Zone Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23225.rb"
     }
   ],
   "CVE-2012-4598": [
@@ -2093,6 +2345,12 @@
       "name": "ActiveFax (ActFax) 4.3 Client Importer Buffer Overflow",
       "description": "This module exploits a vulnerability in ActiveFax Server. The vulnerability is\n          a stack based buffer overflow in the \"Import Users from File\" function, due to the\n          insecure usage of strcpy while parsing the csv formatted file. The module creates a\n          .exp file that must be imported with ActiveFax Server. It must be imported with the\n          default character set 'ECMA-94 / Latin 1 (ISO 8859)'. The module has been tested\n          successfully on ActFax Server 4.32 over Windows XP SP3 and Windows 7 SP1. In the\n          Windows XP case, when ActFax runs as a service, it will execute as SYSTEM.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/actfax_import_users_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ActFax Server 4.31 Build 0225 - Local Privilege Escalation",
+      "description": "ActFax Server 4.31 Build 0225 - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/20915.py"
     }
   ],
   "CVE-2012-0663": [
@@ -2115,6 +2373,24 @@
       "name": "BlazeVideo HDTV Player Pro v6.6 Filename Handling Vulnerability",
       "description": "This module exploits a vulnerability found in BlazeVideo HDTV Player's filename\n          handling routine.  When supplying a string of input data embedded in a .plf file,\n          the MediaPlayerCtrl.dll component will try to extract a filename by using\n          PathFindFileNameA(), and then copies whatever the return value is on the stack by\n          using an inline strcpy.  As a result, if this input data is long enough, it can cause\n          a stack-based buffer overflow, which may lead to arbitrary code execution under the\n          context of the user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/blazedvd_hdtv_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "BlazeVideo HDTV Player 6.6 Professional - Direct RETN",
+      "description": "BlazeVideo HDTV Player 6.6 Professional - Direct RETN",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/22931.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "BlazeVideo HDTV Player 6.6 Professional - Local Overflow (SEH + ASLR + DEP Bypass)",
+      "description": "BlazeVideo HDTV Player 6.6 Professional - Local Overflow (SEH + ASLR + DEP Bypass)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/18693.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "BlazeVideo HDTV Player Pro 6.6 - Filename Handling (Metasploit)",
+      "description": "BlazeVideo HDTV Player Pro 6.6 - Filename Handling (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/23052.rb"
     }
   ],
   "CVE-2012-4914": [
@@ -2193,6 +2469,12 @@
       "name": "Lattice Semiconductor ispVM System XCF File Handling Overflow",
       "description": "This module exploits a vulnerability found in ispVM System 18.0.2.  Due to the way\n          ispVM handles .xcf files, it is possible to cause a buffer overflow with a specially\n          crafted file, when a long value is supplied for the version attribute of the ispXCF\n          tag. It results in arbitrary code execution under the context of the user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/ispvm_xcf_ispxcf.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ispVM System - '.XCF' File Handling Overflow (Metasploit)",
+      "description": "ispVM System - '.XCF' File Handling Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/18947.rb"
     }
   ],
   "CVE-2012-4711": [
@@ -2269,6 +2551,18 @@
       "name": "Photodex ProShow Producer 5.0.3256 load File Handling Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in Photodex ProShow Producer\n          v5.0.3256 in the handling of the plugins load list file. An attacker must send the\n          crafted \"load\" file to victim, who must store it in the installation directory. The\n          vulnerability will be triggered the next time ProShow is opened. The module has been\n          tested successfully on Windows XP SP3 and Windows 7 SP1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/proshow_load_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Photodex ProShow Producer 5.0.3256 - Buffer Overflow",
+      "description": "Photodex ProShow Producer 5.0.3256 - Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/19563.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Photodex ProShow Producer 5.0.3256 - load File Handling Buffer Overflow (Metasploit)",
+      "description": "Photodex ProShow Producer 5.0.3256 - load File Handling Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/20109.rb"
     }
   ],
   "CVE-2012-5691": [
@@ -2297,6 +2591,18 @@
       "name": "Simple Web Server Connection Header Buffer Overflow",
       "description": "This module exploits a vulnerability in Simple Web Server 2.2 rc2. A remote user\n          can send a long string data in the Connection Header to causes an overflow on the\n          stack when function vsprintf() is used, and gain arbitrary code execution. The\n          module has been tested successfully on Windows 7 SP1 and Windows XP SP3.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/sws_connection_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Simple Web Server - Connection Header Buffer Overflow (Metasploit)",
+      "description": "Simple Web Server - Connection Header Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20028.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Simple Web Server 2.2 rc2 - Remote Buffer Overflow",
+      "description": "Simple Web Server 2.2 rc2 - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/19937.pl"
     }
   ],
   "CVE-2012-10055": [
@@ -2305,6 +2611,18 @@
       "name": "ComSndFTP v1.3.7 Beta USER Format String (Write4) Vulnerability",
       "description": "This module exploits the ComSndFTP FTP Server version 1.3.7 beta by sending a specially\n          crafted format string specifier as a username. The crafted username is sent to the server to\n          overwrite the hardcoded function pointer from Ws2_32.dll!WSACleanup. Once this function pointer\n          is triggered, the code bypasses dep and then repairs the pointer to execute arbitrary code.\n          The SEH exit function is preferred so that the administrators are not left with an unhandled\n          exception message. When using the meterpreter payload, the process will never die, allowing\n          for continuous exploitation.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/comsnd_ftpd_fmtstr.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ComSndFTP Server 1.3.7 Beta - Remote Format String Overflow",
+      "description": "ComSndFTP Server 1.3.7 Beta - Remote Format String Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/19024.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ComSndFTP 1.3.7 Beta - USER Format String (Write4) (Metasploit)",
+      "description": "ComSndFTP 1.3.7 Beta - USER Format String (Write4) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/19177.rb"
     }
   ],
   "CVE-2012-10023": [
@@ -2313,6 +2631,18 @@
       "name": "Free Float FTP Server USER Command Buffer Overflow",
       "description": "Freefloat FTP Server is prone to an overflow condition. It\n          fails to properly sanitize user-supplied input resulting in a\n          stack-based buffer overflow. With a specially crafted 'USER'\n          command, a remote attacker can potentially have an unspecified\n          impact.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/freefloatftp_user.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Freefloat FTP Server - 'USER' Remote Buffer Overflow",
+      "description": "Freefloat FTP Server - 'USER' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23243.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Freefloat FTP Server - Remote Buffer Overflow",
+      "description": "Freefloat FTP Server - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15689.py"
     }
   ],
   "CVE-2012-10030": [
@@ -2321,6 +2651,12 @@
       "name": "FreeFloat FTP Server Arbitrary File Upload",
       "description": "This module abuses multiple issues in FreeFloat: 1. No credential is actually\n          needed to login; 2. User's default path is in C:\\, and this cannot be changed;\n          3. User can write to anywhere on the server's file system.  As a result of these\n          poor implementations, a malicious user can just log in and then upload files,\n          and let WMI (Management Instrumentation service) to execute the payload uploaded.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/freefloatftp_wbem.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Freefloat FTP Server - Arbitrary File Upload (Metasploit)",
+      "description": "Freefloat FTP Server - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23226.rb"
     }
   ],
   "CVE-2012-5002": [
@@ -2349,6 +2685,12 @@
       "name": "Turbo FTP Server 1.30.823 PORT Overflow",
       "description": "This module exploits a buffer overflow vulnerability found in the PORT\n          command in Turbo FTP Server 1.30.823 & 1.30.826, which results in remote\n          code execution under the context of SYSTEM.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/turboftp_port.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Turbo FTP Server 1.30.823 - PORT Overflow (Metasploit)",
+      "description": "Turbo FTP Server 1.30.823 - PORT Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/22161.rb"
     }
   ],
   "CVE-2012-3811": [
@@ -2371,6 +2713,18 @@
       "name": "Cyclope Employee Surveillance Solution v6 SQL Injection",
       "description": "This module exploits a SQL injection found in Cyclope Employee Surveillance\n          Solution.  Because the login script does not properly handle the user-supplied\n          username parameter, a malicious user can manipulate the SQL query, and allows\n          arbitrary code execution under the context of 'SYSTEM'.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/cyclope_ess_sqli.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Cyclope Employee Surveillance Solution 6.0 - SQL Injection (Metasploit)",
+      "description": "Cyclope Employee Surveillance Solution 6.0 - SQL Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20501.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Cyclope Employee Surveillance Solution 6.0/6.1.0/6.2.0/6.2.1/6.3.0 - SQL Injection",
+      "description": "Cyclope Employee Surveillance Solution 6.0/6.1.0/6.2.0/6.2.1/6.3.0 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/20393.py"
     }
   ],
   "CVE-2012-5357": [
@@ -2461,6 +2815,12 @@
       "name": "RabidHamster R4 Log Entry sprintf() Buffer Overflow",
       "description": "This module exploits a vulnerability found in RabidHamster R4's web server.\n          By supplying a malformed HTTP request, it is possible to trigger a stack-based\n          buffer overflow when generating a log, which may result in arbitrary code\n          execution under the context of the user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/rabidhamster_r4_log.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "RabidHamster R4 - Log Entry 'sprintf()' Remote Buffer Overflow (Metasploit)",
+      "description": "RabidHamster R4 - Log Entry 'sprintf()' Remote Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18929.rb"
     }
   ],
   "CVE-2012-2576": [
@@ -2475,6 +2835,12 @@
       "name": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
       "description": "SolarWinds Storage Manager 5.1.0 - Remote SYSTEM SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18818.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "SolarWinds Storage Manager 5.1.0 - SQL Injection (Metasploit)",
+      "description": "SolarWinds Storage Manager 5.1.0 - SQL Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18833.rb"
     }
   ],
   "CVE-2012-2962": [
@@ -2523,6 +2889,12 @@
       "name": "Umbraco CMS Remote Command Execution",
       "description": "This module can be used to execute a payload on Umbraco CMS 4.7.0.378.\n        The payload is uploaded as an ASPX script by sending a specially crafted\n        SOAP request to codeEditorSave.asmx, which permits unauthorized file upload\n        via the SaveDLRScript operation. SaveDLRScript is also subject to a path\n        traversal vulnerability, allowing code to be placed into the web-accessible\n        /umbraco/ directory.\n\n        The module writes, executes and then overwrites an ASPX script; note that\n        though the script content is removed, the file remains on the target. Automatic\n        cleanup of the file is intended if a meterpreter payload is used.\n\n        This module has been tested successfully on Umbraco CMS 4.7.0.378 on a Windows\n        7 32-bit SP1. In this scenario, the \"IIS APPPOOL\\ASP.NET v4.0\" user must have\n        write permissions on the Windows Temp folder.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/umbraco_upload_aspx.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Umbraco CMS - Remote Command Execution (Metasploit)",
+      "description": "Umbraco CMS - Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/19671.rb"
     }
   ],
   "CVE-2012-6274": [
@@ -2815,6 +3187,18 @@
       "name": "Sysax 5.53 SSH Username Buffer Overflow",
       "description": "This module exploits a vulnerability found in Sysax's SSH service.  By\n          supplying a long username, the SSH server will copy that data on the stack\n          without proper bounds checking, therefore allowing remote code execution\n          under the context of the user.  Please note that previous versions\n          (before 5.53) are also affected by this bug.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ssh/sysax_ssh_username.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sysax 5.53 - SSH 'Username' Remote Buffer Overflow (Metasploit)",
+      "description": "Sysax 5.53 - SSH 'Username' Remote Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18557.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sysax 5.53 - SSH 'Username' Remote Buffer Overflow Remote Code Execution (Egghunter)",
+      "description": "Sysax 5.53 - SSH 'Username' Remote Buffer Overflow Remote Code Execution (Egghunter)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18535.py"
     }
   ],
   "CVE-2012-6664": [
@@ -3584,8 +3968,8 @@
   "CVE-2012-0031": [
     {
       "source": "exploitdb",
-      "name": "Apache 2.2 - Scoreboard Invalid Free On Shutdown",
-      "description": "Apache 2.2 - Scoreboard Invalid Free On Shutdown",
+      "name": "Apache 2.2 - Scoreboard Invalid Free on Shutdown",
+      "description": "Apache 2.2 - Scoreboard Invalid Free on Shutdown",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/41768.txt"
     }
   ],
@@ -6697,6 +7081,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36651.txt"
     }
   ],
+  "CVE-2012-20008": [
+    {
+      "source": "exploitdb",
+      "name": "openSIS 5.1 - 'ajax.php' Local File Inclusion",
+      "description": "openSIS 5.1 - 'ajax.php' Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38039.txt"
+    }
+  ],
   "CVE-2012-4989": [
     {
       "source": "exploitdb",
@@ -8305,6 +8697,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18355.txt"
     }
   ],
+  "CVE-2012-20003": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin custom tables - 'key' Cross-Site Scripting",
+      "description": "WordPress Plugin custom tables - 'key' Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37482.txt"
+    }
+  ],
   "CVE-2012-4768": [
     {
       "source": "exploitdb",
@@ -8373,6 +8773,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18412.php"
     }
   ],
+  "CVE-2012-20004": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Knews Multilingual Newsletters - Cross-Site Scripting",
+      "description": "WordPress Plugin Knews Multilingual Newsletters - Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37484.txt"
+    }
+  ],
   "CVE-2012-2913": [
     {
       "source": "exploitdb",
@@ -8431,6 +8839,14 @@
       "name": "WordPress Plugin Nmedia WordPress Member Conversation 1.35.0 - 'doupload.php' Arbitrary File Upload",
       "description": "WordPress Plugin Nmedia WordPress Member Conversation 1.35.0 - 'doupload.php' Arbitrary File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37353.php"
+    }
+  ],
+  "CVE-2012-10064": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Omni Secure Files 0.1.13 - Arbitrary File Upload",
+      "description": "WordPress Plugin Omni Secure Files 0.1.13 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/19009.php"
     }
   ],
   "CVE-2012-5350": [
@@ -8513,6 +8929,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36631.txt"
     }
   ],
+  "CVE-2012-20005": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin SocialFit - 'msg' Cross-Site Scripting",
+      "description": "WordPress Plugin SocialFit - 'msg' Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37481.txt"
+    }
+  ],
   "CVE-2012-6624": [
     {
       "source": "exploitdb",
@@ -8527,6 +8951,14 @@
       "name": "WordPress Plugin ThreeWP Email Reflector 1.13 - Persistent Cross-Site Scripting",
       "description": "WordPress Plugin ThreeWP Email Reflector 1.13 - Persistent Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/20365.py"
+    }
+  ],
+  "CVE-2012-20002": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin TinyMCE Thumbnail Gallery 1.0.7 - Remote File Disclosure",
+      "description": "WordPress Plugin TinyMCE Thumbnail Gallery 1.0.7 - Remote File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/19022.txt"
     }
   ],
   "CVE-2012-6312": [
@@ -9162,8 +9594,8 @@
   "CVE-2012-1904": [
     {
       "source": "exploitdb",
-      "name": "RealPlayer - '.mp4' file handling memory Corruption",
-      "description": "RealPlayer - '.mp4' file handling memory Corruption",
+      "name": "RealPlayer - '.mp4' File Handling Memory Corruption",
+      "description": "RealPlayer - '.mp4' File Handling Memory Corruption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/18661.txt"
     }
   ],
@@ -9952,16 +10384,16 @@
   "CVE-2012-6658": [
     {
       "source": "exploitdb",
-      "name": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / (Authenticated) SQL Injection",
-      "description": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / (Authenticated) SQL Injection",
+      "name": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / SQL Injection (Authenticated)",
+      "description": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/20063.txt"
     }
   ],
   "CVE-2012-2956": [
     {
       "source": "exploitdb",
-      "name": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / (Authenticated) SQL Injection",
-      "description": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / (Authenticated) SQL Injection",
+      "name": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / SQL Injection (Authenticated)",
+      "description": "SpiceWorks 5.3.75941 - Persistent Cross-Site Scripting / SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/20063.txt"
     }
   ],
@@ -9976,8 +10408,8 @@
   "CVE-2012-2998": [
     {
       "source": "exploitdb",
-      "name": "Trend Micro Control Manager 5.5/6.0 AdHocQuery - (Authenticated) Blind SQL Injection",
-      "description": "Trend Micro Control Manager 5.5/6.0 AdHocQuery - (Authenticated) Blind SQL Injection",
+      "name": "Trend Micro Control Manager 5.5/6.0 AdHocQuery - Blind SQL Injection (Authenticated)",
+      "description": "Trend Micro Control Manager 5.5/6.0 AdHocQuery - Blind SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/21546.py"
     }
   ],

@@ -39,6 +39,12 @@
       "name": "Linksys WRT120N tmUnblock Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability in the WRT120N Linksys router\n          to reset the password of the management interface temporarily to an empty value.\n          This module has been tested successfully on a WRT120N device with firmware version\n          1.0.07.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/linksys_tmunblock_admin_reset_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WRT120N 1.0.0.7 - Remote Stack Overflow",
+      "description": "WRT120N 1.0.0.7 - Remote Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/31758.py"
     }
   ],
   "CVE-2014-7862": [
@@ -208,8 +214,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Alienvault Open Source SIEM (OSSIM) 4.6.1 - (Authenticated) SQL Injection (Metasploit)",
-      "description": "Alienvault Open Source SIEM (OSSIM) 4.6.1 - (Authenticated) SQL Injection (Metasploit)",
+      "name": "Alienvault Open Source SIEM (OSSIM) 4.6.1 - SQL Injection (Authenticated) (Metasploit)",
+      "description": "Alienvault Open Source SIEM (OSSIM) 4.6.1 - SQL Injection (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33317.txt"
     }
   ],
@@ -333,6 +339,12 @@
       "name": "A10 Networks AX Loadbalancer Directory Traversal",
       "description": "This module exploits a directory traversal flaw found in A10 Networks\n          (Soft) AX Loadbalancer version 2.6.1-GR1-P5/2.7.0 or less.  When\n          handling a file download request, the xml/downloads class fails to\n          properly check the 'filename' parameter, which can be abused to read\n          any file outside the virtual directory. Important files include SSL\n          certificates. This module works on both the hardware devices and the\n          Virtual Machine appliances. IMPORTANT NOTE: This module will also delete the\n          file on the device after downloading it. Because of this, the CONFIRM_DELETE\n          option must be set to 'true' either manually or by script.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/a10networks_ax_directory_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "A10 Networks Loadbalancer - Directory Traversal",
+      "description": "A10 Networks Loadbalancer - Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/31261.txt"
     }
   ],
   "CVE-2014-6271": [
@@ -422,8 +434,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -847,6 +859,12 @@
       "name": "eScan Web Management Console Command Injection",
       "description": "This module exploits a command injection vulnerability found in the eScan Web Management\n          Console. The vulnerability exists while processing CheckPass login requests. An attacker\n          with a valid username can use a malformed password to execute arbitrary commands. With\n          mwconf privileges, the runasroot utility can be abused to get root privileges. This module\n          has been tested successfully on eScan 5.5-2 on Ubuntu 12.04.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/antivirus/escan_password_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "eScan Web Management Console - Command Injection (Metasploit)",
+      "description": "eScan Web Management Console - Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/32869.rb"
     }
   ],
   "CVE-2014-1635": [
@@ -911,6 +929,12 @@
       "name": "D-Link info.cgi POST Request Buffer Overflow",
       "description": "This module exploits an anonymous remote code execution vulnerability on different D-Link\n          devices. The vulnerability is a stack based buffer overflow in the my_cgi.cgi component,\n          when handling specially crafted POST HTTP requests addresses to the /common/info.cgi\n          handler. This module has been successfully tested on D-Link DSP-W215 in an emulated\n          environment.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dspw215_info_cgi_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link Devices - 'info.cgi' POST Buffer Overflow (Metasploit)",
+      "description": "D-Link Devices - 'info.cgi' POST Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/34063.rb"
     }
   ],
   "CVE-2014-3936": [
@@ -1001,6 +1025,12 @@
       "name": "Kloxo SQL Injection and Remote Code Execution",
       "description": "This module exploits an unauthenticated SQL injection vulnerability affecting Kloxo, as\n          exploited in the wild on January 2014. The SQL injection issue can be abused in order to\n          retrieve the Kloxo admin cleartext password from the database. With admin access to the\n          web control panel, remote PHP code execution can be achieved by abusing the Command Center\n          function. The module tries to find the first server in the tree view, unless the server\n          information is provided, in which case it executes the payload there.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/kloxo_sqli.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kloxo - SQL Injection / Remote Code Execution (Metasploit)",
+      "description": "Kloxo - SQL Injection / Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/31577.rb"
     }
   ],
   "CVE-2014-125124": [
@@ -1009,6 +1039,12 @@
       "name": "Pandora FMS Remote Code Execution",
       "description": "This module exploits a vulnerability found in Pandora FMS 5.0RC1 and lower.\n          It will leverage an unauthenticated command injection in the Anyterm service on\n          port 8023/TCP. Commands are executed as the user \"pandora\". In Pandora FMS 4.1 and 5.0RC1\n          the user \"artica\" is not assigned a password by default, which makes it possible to su\n          to this user from the \"pandora\" user. The \"artica\" user has access to sudo without a\n          password, which makes it possible to escalate privileges to root. However, Pandora FMS 4.0\n          and lower force a password for the \"artica\" user during installation.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pandora_fms_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Pandora Fms - Remote Code Execution (Metasploit)",
+      "description": "Pandora Fms - Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/31518.rb"
     }
   ],
   "CVE-2014-125115": [
@@ -1017,6 +1053,12 @@
       "name": "Pandora FMS Default Credential / SQLi Remote Code Execution",
       "description": "This module attempts to exploit multiple issues in order to gain remote\n          code execution under Pandora FMS version <= 5.0 SP2.  First, an attempt\n          to authenticate using default credentials is performed.  If this method\n          fails, a SQL injection vulnerability is leveraged in order to extract\n          the \"Auto Login\" password hash.  If this value is not set, the module\n          will then extract the administrator account's MD5 password hash.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/pandora_fms_sqli.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Pandora Fms - SQL Injection Remote Code Execution (Metasploit)",
+      "description": "Pandora Fms - SQL Injection Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/35380.rb"
     }
   ],
   "CVE-2014-5468": [
@@ -1090,8 +1132,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sophos Web Protection Appliance Interface - (Authenticated) Arbitrary Command Execution (Metasploit)",
-      "description": "Sophos Web Protection Appliance Interface - (Authenticated) Arbitrary Command Execution (Metasploit)",
+      "name": "Sophos Web Protection Appliance Interface - Arbitrary Command Execution (Authenticated) (Metasploit)",
+      "description": "Sophos Web Protection Appliance Interface - Arbitrary Command Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/32789.rb"
     }
   ],
@@ -1104,8 +1146,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sophos Web Protection Appliance Interface - (Authenticated) Arbitrary Command Execution (Metasploit)",
-      "description": "Sophos Web Protection Appliance Interface - (Authenticated) Arbitrary Command Execution (Metasploit)",
+      "name": "Sophos Web Protection Appliance Interface - Arbitrary Command Execution (Authenticated) (Metasploit)",
+      "description": "Sophos Web Protection Appliance Interface - Arbitrary Command Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/32789.rb"
     }
   ],
@@ -1118,8 +1160,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Symantec Web Gateway 5 - 'restore.php' (Authenticated) Command Injection (Metasploit)",
-      "description": "Symantec Web Gateway 5 - 'restore.php' (Authenticated) Command Injection (Metasploit)",
+      "name": "Symantec Web Gateway 5 - 'restore.php' Command Injection (Authenticated) (Metasploit)",
+      "description": "Symantec Web Gateway 5 - 'restore.php' Command Injection (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/36263.rb"
     }
   ],
@@ -1456,8 +1498,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "ManageEngine (Multiple Products) - (Authenticated) Arbitrary File Upload (Metasploit)",
-      "description": "ManageEngine (Multiple Products) - (Authenticated) Arbitrary File Upload (Metasploit)",
+      "name": "ManageEngine (Multiple Products) - Arbitrary File Upload (Authenticated) (Metasploit)",
+      "description": "ManageEngine (Multiple Products) - Arbitrary File Upload (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/remote/35845.rb"
     }
   ],
@@ -1719,6 +1761,12 @@
       "name": "Dell KACE K1000 File Upload",
       "description": "This module exploits a file upload vulnerability in Kace K1000\n          versions 5.0 to 5.3, 5.4 prior to 5.4.76849 and 5.5 prior to 5.5.90547\n          which allows unauthenticated users to execute arbitrary commands\n          under the context of the 'www' user.\n\n          This module also abuses the 'KSudoClient::RunCommandWait' function\n          to gain root privileges.\n\n          This module has been tested successfully with Dell KACE K1000\n          version 5.3.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/dell_kace_k1000_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Dell KACE K1000 - Arbitrary File Upload (Metasploit)",
+      "description": "Dell KACE K1000 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/39693.rb"
     }
   ],
   "CVE-2014-8517": [
@@ -1803,6 +1851,12 @@
       "name": "Array Networks vAPV and vxAG Private Key Privilege Escalation Code Execution",
       "description": "This module exploits a default hardcoded private SSH key or default hardcoded\n          login and password in the vAPV 8.3.2.17 and vxAG 9.2.0.34 appliances made\n          by Array Networks. After logged in as the unprivileged user, it's possible to modify\n          the world-writable file /ca/bin/monitor.sh with attacker-supplied arbitrary code.\n          Execution is possible by using the backend tool, running setuid, to turn the debug\n          monitoring on. This makes it possible to trigger a payload with root privileges.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/ssh/array_vxag_vapv_privkey_privesc.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Array Networks vAPV and vxAG - Private Key Privilege Escalation / Code Execution (Metasploit)",
+      "description": "Array Networks vAPV and vxAG - Private Key Privilege Escalation / Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/32440.rb"
     }
   ],
   "CVE-2014-5470": [
@@ -1859,6 +1913,18 @@
       "name": "HybridAuth install.php PHP Code Execution",
       "description": "This module exploits a PHP code execution vulnerability in\n          HybridAuth versions 2.0.9 to 2.2.2. The install file 'install.php'\n          is not removed after installation allowing unauthenticated users to\n          write PHP code to the application configuration file 'config.php'.\n\n          Note: This exploit will overwrite the application configuration file\n          rendering the application unusable.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/hybridauth_install_php_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HybridAuth - 'install.php' PHP Code Execution (Metasploit)",
+      "description": "HybridAuth - 'install.php' PHP Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/34390.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HybridAuth 2.2.2 - Remote Code Execution",
+      "description": "HybridAuth 2.2.2 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34273.txt"
     }
   ],
   "CVE-2014-7228": [
@@ -1901,6 +1967,12 @@
       "name": "Simple E-Document Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability found in Simple\n          E-Document versions 3.0 to 3.1. Attackers can bypass authentication and\n          abuse the upload feature in order to upload malicious PHP files which\n          results in arbitrary remote code execution as the web server user. File\n          uploads are disabled by default.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/simple_e_document_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Simple E-document - Arbitrary File Upload (Metasploit)",
+      "description": "Simple E-document - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/31264.rb"
     }
   ],
   "CVE-2014-1683": [
@@ -1955,6 +2027,12 @@
       "name": "WordPress Plugin 0.9.7 / Joomla! Component 2.0.0 Creative Contact Form - Arbitrary File Upload",
       "description": "WordPress Plugin 0.9.7 / Joomla! Component 2.0.0 Creative Contact Form - Arbitrary File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35057.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Creative Contact Form 0.9.7 - Arbitrary File Upload",
+      "description": "WordPress Plugin Creative Contact Form 0.9.7 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34922.txt"
     },
     {
       "source": "nuclei",
@@ -2337,6 +2415,18 @@
       "name": "i-FTP Schedule Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          i-Ftp v2.20, caused by a long time value set for scheduled download.\n\n          By persuading the victim to place a specially-crafted Schedule.xml file\n          in the i-FTP folder, a remote attacker could execute arbitrary code on\n          the system or cause the application to crash. This module has been\n          tested successfully on Windows XP SP3.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/iftp_schedule_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "i-FTP 2.20 - Local Buffer Overflow (SEH)",
+      "description": "i-FTP 2.20 - Local Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/35177.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "i-FTP Schedule - Local Buffer Overflow (Metasploit)",
+      "description": "i-FTP Schedule - Local Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/35671.rb"
     }
   ],
   "CVE-2014-1761": [
@@ -3054,8 +3144,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3125,6 +3215,104 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35146.txt"
     }
   ],
+  "CVE-2014-7169": [
+    {
+      "source": "exploitdb",
+      "name": "Advantech Switch - 'Shellshock' Bash Environment Variable Command Injection (Metasploit)",
+      "description": "Advantech Switch - 'Shellshock' Bash Environment Variable Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/remote/38849.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU Bash - Environment Variable Command Injection (Metasploit)",
+      "description": "GNU Bash - Environment Variable Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/remote/34777.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Bash CGI - 'Shellshock' Remote Command Injection (Metasploit)",
+      "description": "Bash CGI - 'Shellshock' Remote Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34895.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "QNAP - Admin Shell via Bash Environment Variable Code Injection (Metasploit)",
+      "description": "QNAP - Admin Shell via Bash Environment Variable Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/36503.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "QNAP - Web Server Remote Code Execution via Bash Environment Variable Code Injection (Metasploit)",
+      "description": "QNAP - Web Server Remote Code Execution via Bash Environment Variable Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/36504.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Bash - 'Shellshock' Environment Variables Command Injection",
+      "description": "Bash - 'Shellshock' Environment Variables Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34766.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
+      "description": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/35115.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "dhclient 4.1 - Bash Environment Variable Command Injection (Shellshock)",
+      "description": "dhclient 4.1 - Bash Environment Variable Command Injection (Shellshock)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/36933.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU Bash - 'Shellshock' Environment Variable Command Injection",
+      "description": "GNU Bash - 'Shellshock' Environment Variable Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34765.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU bash 4.3.11 - Environment Variable dhclient",
+      "description": "GNU bash 4.3.11 - Environment Variable dhclient",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34860.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "OpenVPN 2.2.29 - 'Shellshock' Remote Command Injection",
+      "description": "OpenVPN 2.2.29 - 'Shellshock' Remote Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34879.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection",
+      "description": "Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34896.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Pure-FTPd - External Authentication Bash Environment Variable Code Injection (Metasploit)",
+      "description": "Pure-FTPd - External Authentication Bash Environment Variable Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34862.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kemp Load Master 7.1.16 - Multiple Vulnerabilities",
+      "description": "Kemp Load Master 7.1.16 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/36609.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHP < 5.6.2 - 'Shellshock' Safe Mode / disable_functions Bypass / Command Injection",
+      "description": "PHP < 5.6.2 - 'Shellshock' Safe Mode / disable_functions Bypass / Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35146.txt"
+    }
+  ],
   "CVE-2014-7910": [
     {
       "source": "exploitdb",
@@ -3140,8 +3328,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3226,8 +3414,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3253,98 +3441,6 @@
       "name": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
       "description": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/35115.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "GNU Bash - 'Shellshock' Environment Variable Command Injection",
-      "description": "GNU Bash - 'Shellshock' Environment Variable Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34765.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "GNU bash 4.3.11 - Environment Variable dhclient",
-      "description": "GNU bash 4.3.11 - Environment Variable dhclient",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34860.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "OpenVPN 2.2.29 - 'Shellshock' Remote Command Injection",
-      "description": "OpenVPN 2.2.29 - 'Shellshock' Remote Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34879.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection",
-      "description": "Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34896.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Pure-FTPd - External Authentication Bash Environment Variable Code Injection (Metasploit)",
-      "description": "Pure-FTPd - External Authentication Bash Environment Variable Code Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34862.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Kemp Load Master 7.1.16 - Multiple Vulnerabilities",
-      "description": "Kemp Load Master 7.1.16 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/36609.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "PHP < 5.6.2 - 'Shellshock' Safe Mode / disable_functions Bypass / Command Injection",
-      "description": "PHP < 5.6.2 - 'Shellshock' Safe Mode / disable_functions Bypass / Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35146.txt"
-    }
-  ],
-  "CVE-2014-7169": [
-    {
-      "source": "exploitdb",
-      "name": "GNU Bash - Environment Variable Command Injection (Metasploit)",
-      "description": "GNU Bash - Environment Variable Command Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/remote/34777.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Bash CGI - 'Shellshock' Remote Command Injection (Metasploit)",
-      "description": "Bash CGI - 'Shellshock' Remote Command Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34895.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "QNAP - Admin Shell via Bash Environment Variable Code Injection (Metasploit)",
-      "description": "QNAP - Admin Shell via Bash Environment Variable Code Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/36503.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "QNAP - Web Server Remote Code Execution via Bash Environment Variable Code Injection (Metasploit)",
-      "description": "QNAP - Web Server Remote Code Execution via Bash Environment Variable Code Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/36504.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Bash - 'Shellshock' Environment Variables Command Injection",
-      "description": "Bash - 'Shellshock' Environment Variables Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34766.php"
-    },
-    {
-      "source": "exploitdb",
-      "name": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
-      "description": "CUPS Filter - Bash Environment Variable Code Injection (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/35115.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "dhclient 4.1 - Bash Environment Variable Command Injection (Shellshock)",
-      "description": "dhclient 4.1 - Bash Environment Variable Command Injection (Shellshock)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/36933.py"
     },
     {
       "source": "exploitdb",
@@ -3404,8 +3500,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3490,8 +3586,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3576,8 +3672,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
-      "description": "IPFire - CGI Web Interface (Authenticated) Bash Environment Variable Code Injection",
+      "name": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
+      "description": "IPFire - CGI Web Interface Bash Environment Variable Code Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/34839.py"
     },
     {
@@ -3802,8 +3898,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "WebKitGTK 2.1.2 (Ubuntu 14.04) - Heap based Buffer Overflow",
-      "description": "WebKitGTK 2.1.2 (Ubuntu 14.04) - Heap based Buffer Overflow",
+      "name": "WebKitGTK 2.1.2 (Ubuntu 14.04) - Heap Based Buffer Overflow",
+      "description": "WebKitGTK 2.1.2 (Ubuntu 14.04) - Heap Based Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44204.md"
     }
   ],
@@ -4061,20 +4157,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/33792.txt"
     }
   ],
-  "CVE-2014-2922": [
+  "CVE-2014-3205": [
     {
       "source": "exploitdb",
-      "name": "Pimcore CMS 1.4.9 <2.1.0 - Multiple Vulnerabilities",
-      "description": "Pimcore CMS 1.4.9 <2.1.0 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43886.txt"
+      "name": "Seagate BlackArmor NAS - Multiple Vulnerabilities",
+      "description": "Seagate BlackArmor NAS - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/33159.txt"
     }
   ],
-  "CVE-2014-2921": [
+  "CVE-2014-3206": [
     {
       "source": "exploitdb",
-      "name": "Pimcore CMS 1.4.9 <2.1.0 - Multiple Vulnerabilities",
-      "description": "Pimcore CMS 1.4.9 <2.1.0 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/43886.txt"
+      "name": "Seagate BlackArmor NAS - Multiple Vulnerabilities",
+      "description": "Seagate BlackArmor NAS - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/33159.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Seagate BlackArmor NAS - Command Injection",
+      "description": "Seagate BlackArmor NAS allows remote attackers to execute arbitrary code via the session parameter to localhost/backupmgt/localJob.php or the auth_name parameter to localhost/backupmgmt/pre_connect_check.php.",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2014/CVE-2014-3206.yaml"
     }
   ],
   "CVE-2014-2976": [
@@ -4689,6 +4791,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/34923.c"
     }
   ],
+  "CVE-2014-4701": [
+    {
+      "source": "exploitdb",
+      "name": "Nagios Plugins check_dhcp 2.0.1 - Arbitrary Option File Read",
+      "description": "Nagios Plugins check_dhcp 2.0.1 - Arbitrary Option File Read",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/33387.txt"
+    }
+  ],
   "CVE-2014-4703": [
     {
       "source": "exploitdb",
@@ -5028,8 +5138,8 @@
   "CVE-2014-5380": [
     {
       "source": "exploitdb",
-      "name": "Granding MA300 - Traffic Sniffing Man In The Middle Fingerprint PIN Disclosure",
-      "description": "Granding MA300 - Traffic Sniffing Man In The Middle Fingerprint PIN Disclosure",
+      "name": "Granding MA300 - Traffic Sniffing Man in the Middle Fingerprint PIN Disclosure",
+      "description": "Granding MA300 - Traffic Sniffing Man in the Middle Fingerprint PIN Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/39292.pl"
     }
   ],
@@ -5613,6 +5723,72 @@
       "name": "Cart Engine 3.0 - Multiple Vulnerabilities",
       "description": "Cart Engine 3.0 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34764.txt"
+    }
+  ],
+  "CVE-2014-125137": [
+    {
+      "source": "exploitdb",
+      "name": "Cart Engine 3.0.0 - 'task.php' Local File Inclusion",
+      "description": "Cart Engine 3.0.0 - 'task.php' Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32504.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kemana Directory 1.5.6 - 'task.php' Local File Inclusion",
+      "description": "Kemana Directory 1.5.6 - 'task.php' Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32508.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "qEngine 4.1.6/6.0.0 - 'task.php' Local File Inclusion",
+      "description": "qEngine 4.1.6/6.0.0 - 'task.php' Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39129.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "description": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32511.txt"
+    }
+  ],
+  "CVE-2014-125136": [
+    {
+      "source": "exploitdb",
+      "name": "Cart Engine 3.0.0 - Database Backup Disclosure",
+      "description": "Cart Engine 3.0.0 - Database Backup Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32505.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kemana Directory 1.5.6 - Database Backup Disclosure",
+      "description": "Kemana Directory 1.5.6 - Database Backup Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32509.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "description": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32511.txt"
+    }
+  ],
+  "CVE-2014-125138": [
+    {
+      "source": "exploitdb",
+      "name": "Cart Engine 3.0.0 - Remote Code Execution",
+      "description": "Cart Engine 3.0.0 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32503.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kemana Directory 1.5.6 - Remote Code Execution",
+      "description": "Kemana Directory 1.5.6 - Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32507.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "description": "qEngine CMS 6.0.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/32511.txt"
     }
   ],
   "CVE-2014-6030": [
@@ -6869,6 +7045,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35198.txt"
     }
   ],
+  "CVE-2014-2922": [
+    {
+      "source": "exploitdb",
+      "name": "Pimcore CMS 1.4.9 <= 2.1.0 - Remote Code Execution / Arbitrary File Deletion",
+      "description": "Pimcore CMS 1.4.9 <= 2.1.0 - Remote Code Execution / Arbitrary File Deletion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43886.txt"
+    }
+  ],
+  "CVE-2014-2921": [
+    {
+      "source": "exploitdb",
+      "name": "Pimcore CMS 1.4.9 <= 2.1.0 - Remote Code Execution / Arbitrary File Deletion",
+      "description": "Pimcore CMS 1.4.9 <= 2.1.0 - Remote Code Execution / Arbitrary File Deletion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43886.txt"
+    }
+  ],
   "CVE-2014-9115": [
     {
       "source": "exploitdb",
@@ -6893,6 +7085,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35583.txt"
     }
   ],
+  "CVE-2014-2388": [
+    {
+      "source": "exploitdb",
+      "name": "Piwigo 2.7.2 - Multiple Vulnerabilities",
+      "description": "Piwigo 2.7.2 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35583.txt"
+    }
+  ],
   "CVE-2014-9096": [
     {
       "source": "exploitdb",
@@ -6904,16 +7104,16 @@
   "CVE-2014-2223": [
     {
       "source": "exploitdb",
-      "name": "Plogger 1.0-RC1 - (Authenticated) Arbitrary File Upload",
-      "description": "Plogger 1.0-RC1 - (Authenticated) Arbitrary File Upload",
+      "name": "Plogger 1.0-RC1 - Arbitrary File Upload (Authenticated)",
+      "description": "Plogger 1.0-RC1 - Arbitrary File Upload (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34447.py"
     }
   ],
   "CVE-2014-9457": [
     {
       "source": "exploitdb",
-      "name": "PMB 4.1.3 - (Authenticated) SQL Injection",
-      "description": "PMB 4.1.3 - (Authenticated) SQL Injection",
+      "name": "PMB 4.1.3 - SQL Injection (Authenticated)",
+      "description": "PMB 4.1.3 - SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35625.txt"
     }
   ],
@@ -7402,16 +7602,16 @@
   "CVE-2014-2022": [
     {
       "source": "exploitdb",
-      "name": "vBulletin 4.x - breadcrumbs via xmlrpc API (Authenticated) SQL Injection",
-      "description": "vBulletin 4.x - breadcrumbs via xmlrpc API (Authenticated) SQL Injection",
+      "name": "vBulletin 4.x - breadcrumbs via xmlrpc API SQL Injection (Authenticated)",
+      "description": "vBulletin 4.x - breadcrumbs via xmlrpc API SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40115.py"
     }
   ],
   "CVE-2014-2021": [
     {
       "source": "exploitdb",
-      "name": "vBulletin 4.x/5.x - AdminCP/ApiLog via xmlrpc API (Authenticated) Persistent Cross-Site Scripting",
-      "description": "vBulletin 4.x/5.x - AdminCP/ApiLog via xmlrpc API (Authenticated) Persistent Cross-Site Scripting",
+      "name": "vBulletin 4.x/5.x - AdminCP/ApiLog via xmlrpc API Persistent Cross-Site Scripting (Authenticated)",
+      "description": "vBulletin 4.x/5.x - AdminCP/ApiLog via xmlrpc API Persistent Cross-Site Scripting (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/40114.py"
     }
   ],
@@ -7677,6 +7877,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35324.txt"
     }
   ],
+  "CVE-2014-125130": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin CodeArt Google MP3 Player - File Disclosure Download",
+      "description": "WordPress Plugin CodeArt Google MP3 Player - File Disclosure Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35460.txt"
+    }
+  ],
   "CVE-2014-7969": [
     {
       "source": "exploitdb",
@@ -7818,8 +8026,8 @@
   "CVE-2014-7153": [
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin Huge-IT Image Gallery 1.0.1 - (Authenticated) SQL Injection",
-      "description": "WordPress Plugin Huge-IT Image Gallery 1.0.1 - (Authenticated) SQL Injection",
+      "name": "WordPress Plugin Huge-IT Image Gallery 1.0.1 - SQL Injection (Authenticated)",
+      "description": "WordPress Plugin Huge-IT Image Gallery 1.0.1 - SQL Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34524.txt"
     }
   ],
@@ -8910,8 +9118,8 @@
   "CVE-2014-2612": [
     {
       "source": "exploitdb",
-      "name": "HP Release Control - (Authenticated) XML External Entity (Metasploit)",
-      "description": "HP Release Control - (Authenticated) XML External Entity (Metasploit)",
+      "name": "HP Release Control - XML External Entity (Authenticated) (Metasploit)",
+      "description": "HP Release Control - XML External Entity (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/33434.rb"
     }
   ],
@@ -9551,14 +9759,6 @@
       "name": "Lighttpd 1.4.34 SQL Injection and Path Traversal",
       "description": "A SQL injection vulnerability in mod_mysql_vhost.c in lighttpd before 1.4.35 allows remote attackers to execute arbitrary SQL commands via the host name (related to request_check_hostname).",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2014/CVE-2014-2323.yaml"
-    }
-  ],
-  "CVE-2014-3206": [
-    {
-      "source": "nuclei",
-      "name": "Seagate BlackArmor NAS - Command Injection",
-      "description": "Seagate BlackArmor NAS allows remote attackers to execute arbitrary code via the session parameter to localhost/backupmgt/localJob.php or the auth_name parameter to localhost/backupmgmt/pre_connect_check.php.",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2014/CVE-2014-3206.yaml"
     }
   ],
   "CVE-2014-3744": [

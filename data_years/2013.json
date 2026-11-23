@@ -21,6 +21,12 @@
       "name": "D-Link DIR-600 / DIR-300 Unauthenticated Remote Command Execution",
       "description": "This module exploits an OS Command Injection vulnerability in some D-Link\n          Routers like the DIR-600 rev B and the DIR-300 rev B. The vulnerability exists in\n          command.php, which is accessible without authentication. This module has been\n          tested with the versions DIR-600 2.14b01 and below, DIR-300 rev B 2.13 and below.\n          In order to get a remote shell the telnetd could be started without any\n          authentication.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/dlink_dir_300_600_exec_noauth.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-600 / DIR-300 (Rev B) - Multiple Vulnerabilities",
+      "description": "D-Link DIR-600 / DIR-300 (Rev B) - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24453.txt"
     }
   ],
   "CVE-2013-2113": [
@@ -377,6 +383,12 @@
       "name": "Linksys E1500 Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability which is present in\n        different Linksys home routers, like the E1500.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/linksys_e1500_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linksys E1500/E2500 - Multiple Vulnerabilities",
+      "description": "Linksys E1500/E2500 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24475.txt"
     }
   ],
   "CVE-2013-10063": [
@@ -385,6 +397,12 @@
       "name": "Netgear SPH200D Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability which is present in\n        Netgear SPH200D Skype telephone.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/netgear_sph200d_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netgear SPH200D - Multiple Vulnerabilities",
+      "description": "Netgear SPH200D - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24441.txt"
     }
   ],
   "CVE-2013-1081": [
@@ -833,6 +851,12 @@
       "name": "Astium Remote Code Execution",
       "description": "This module exploits vulnerabilities found in Astium astium-confweb-2.1-25399 RPM and\n          lower. A SQL Injection vulnerability is used to achieve authentication bypass and gain\n          admin access. From an admin session arbitrary PHP code upload is possible. It is used\n          to add the final PHP payload to \"/usr/local/astium/web/php/config.php\" and execute the\n          \"sudo /sbin/service astcfgd reload\" command to reload the configuration and achieve\n          remote root code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/astium_sqli_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Astium VoIP PBX 2.1 build 25399 - Multiple Vulnerabilities/Remote Command Execution",
+      "description": "Astium VoIP PBX 2.1 build 25399 - Multiple Vulnerabilities/Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/23831.py"
     }
   ],
   "CVE-2013-2068": [
@@ -875,6 +899,18 @@
       "name": "D-Link Devices Unauthenticated Remote Command Execution",
       "description": "Various D-Link Routers are vulnerable to OS command injection via the web\n          interface. The vulnerability exists in command.php, which is accessible without\n          authentication. This module has been tested with the versions DIR-600 2.14b01,\n          DIR-300 rev B 2.13.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_command_php_exec_noauth.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link Devices - 'command.php' Remote Command Execution (Metasploit)",
+      "description": "D-Link Devices - 'command.php' Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/27528.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-600 / DIR-300 (Rev B) - Multiple Vulnerabilities",
+      "description": "D-Link DIR-600 / DIR-300 (Rev B) - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24453.txt"
     }
   ],
   "CVE-2013-10050": [
@@ -883,6 +919,18 @@
       "name": "D-Link Devices Unauthenticated Remote Command Execution",
       "description": "Various D-Link Routers are vulnerable to OS command injection via the web\n          interface. The vulnerability exists in tools_vct.xgi, which is accessible with\n          credentials. According to the vulnerability discoverer, more D-Link devices may\n          be affected.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dir300_exec_telnet.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link Devices - 'tools_vct.xgi' Remote Command Execution (Metasploit)",
+      "description": "D-Link Devices - 'tools_vct.xgi' Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/27428.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-635 - Multiple Vulnerabilities",
+      "description": "D-Link DIR-635 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/25024.txt"
     }
   ],
   "CVE-2013-10059": [
@@ -891,6 +939,18 @@
       "name": "D-Link DIR615h OS Command Injection",
       "description": "Some D-Link Routers are vulnerable to an authenticated OS command injection on\n          their web interface, where default credentials are admin/admin or admin/password.\n          Since it is a blind os command injection vulnerability, there is no output for the\n          executed command when using the cmd generic payload. This module was tested against\n          a DIR-615 hardware revision H1 - firmware version 8.04. A ping command against a\n          controlled system could be used for testing purposes. The exploit uses the wget\n          client from the device to convert the command injection into an arbitrary payload\n          execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/dlink_dir615_up_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-615H - OS Command Injection (Metasploit)",
+      "description": "D-Link DIR-615H - OS Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/25609.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DIR-615 Rev H - Multiple Vulnerabilities",
+      "description": "D-Link DIR-615 Rev H - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24477.txt"
     }
   ],
   "CVE-2013-2121": [
@@ -941,6 +1001,18 @@
       "name": "Linksys WRT160nv2 apply.cgi Remote Command Injection",
       "description": "Some Linksys Routers are vulnerable to an authenticated OS command injection on\n          their web interface where default credentials are admin/admin or admin/password.\n          Since it is a blind OS command injection vulnerability, there is no output for the\n          executed command when using the cmd generic payload. This module has been tested on\n          a Linksys WRT160n version 2 - firmware version v2.0.03. A ping command against a\n          controlled system could be used for testing purposes. The exploit uses the tftp\n          client from the device to stage to native payloads from the command injection.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/linksys_wrt160nv2_apply_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linksys WRT160N v2 - 'apply.cgi' Remote Command Injection (Metasploit)",
+      "description": "Linksys WRT160N v2 - 'apply.cgi' Remote Command Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/25608.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Linksys WRT160N - Multiple Vulnerabilities",
+      "description": "Linksys WRT160N - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24478.txt"
     }
   ],
   "CVE-2013-10061": [
@@ -949,6 +1021,18 @@
       "name": "Netgear DGN1000B setup.cgi Remote Command Execution",
       "description": "Some Netgear Routers are vulnerable to authenticated OS Command injection. The\n          vulnerability exists in the web interface, specifically in the setup.cgi component,\n          when handling the TimeToLive parameter. Default credentials are always a good\n          starting point, admin/admin or admin/password could be a first try. Since it is a\n          blind os command injection vulnerability, there is no output for the executed\n          command when using the cmd generic payload. A ping command against a controlled\n          system could be used for testing purposes.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/netgear_dgn1000b_setup_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netgear DGN1000B - 'setup.cgi' Remote Command Execution (Metasploit)",
+      "description": "Netgear DGN1000B - 'setup.cgi' Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/24931.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netgear DGN1000B - Multiple Vulnerabilities",
+      "description": "Netgear DGN1000B - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24464.txt"
     }
   ],
   "CVE-2013-10060": [
@@ -957,6 +1041,18 @@
       "name": "Netgear DGN2200B pppoe.cgi Remote Command Execution",
       "description": "Some Netgear Routers are vulnerable to an authenticated OS command injection\n          on their web interface. Default credentials for the web interface are admin/admin\n          or admin/password. Since it is a blind os command injection vulnerability, there\n          is no output for the executed command when using the cmd generic payload. A ping\n          command against a controlled system could be used for testing purposes. This module\n          overwrites parts of the PPOE configuration, while the module tries to restore it\n          after exploitation configuration backup is recommended.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/netgear_dgn2200b_pppoe_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netgear DGN2200B - 'pppoe.cgi' Remote Command Execution (Metasploit)",
+      "description": "Netgear DGN2200B - 'pppoe.cgi' Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/24974.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Netgear DGN2200B - Multiple Vulnerabilities",
+      "description": "Netgear DGN2200B - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24513.txt"
     }
   ],
   "CVE-2013-2751": [
@@ -1025,6 +1121,18 @@
       "name": "Raidsonic NAS Devices Unauthenticated Remote Command Execution",
       "description": "Different Raidsonic NAS devices are vulnerable to OS command injection via the web\n          interface. The vulnerability exists in timeHandler.cgi, which is accessible without\n          authentication. This module has been tested with the versions IB-NAS5220 and\n          IB-NAS4220. Since this module is adding a new user and modifying the inetd daemon\n          configuration, this module is set to ManualRanking and could cause target instability.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/raidsonic_nas_ib5220_exec_noauth.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Raidsonic NAS Devices - Remote Command Execution (Metasploit)",
+      "description": "Raidsonic NAS Devices - Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/28508.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Raidsonic IB-NAS5220 and IB-NAS4220-B - Multiple Vulnerabilities",
+      "description": "Raidsonic IB-NAS5220 and IB-NAS4220-B - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24499.txt"
     }
   ],
   "CVE-2013-4983": [
@@ -1135,6 +1243,12 @@
       "name": "ZPanel zsudo Local Privilege Escalation Exploit",
       "description": "This module abuses the zsudo binary, installed with zpanel, to escalate\n            privileges. In order to work, a session with access to zsudo on the sudoers\n            configuration is needed. This module is useful for post exploitation of ZPanel\n            vulnerabilities, where typically web server privileges are acquired, and this\n            user is allowed to execute zsudo on the sudoers file.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/local/zpanel_zsudo.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ZPanel zsudo - Local Privilege Escalation (Metasploit)",
+      "description": "ZPanel zsudo - Local Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/26451.rb"
     }
   ],
   "CVE-2013-2343": [
@@ -1425,6 +1539,18 @@
       "name": "Glossword v1.8.8 - 1.8.12 Arbitrary File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability in Glossword\n          versions 1.8.8 to 1.8.12 when run as a standalone application.\n          This application has an upload feature that allows an authenticated user\n          with administrator roles to upload arbitrary files to the 'gw_temp/a/'\n          directory.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/glossword_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Glossword 1.8.8 < 1.8.12 - Arbitrary File Upload (Metasploit)",
+      "description": "Glossword 1.8.8 < 1.8.12 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/24548.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "glossword 1.8.12 - Multiple Vulnerabilities",
+      "description": "glossword 1.8.12 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24456.txt"
     }
   ],
   "CVE-2013-5696": [
@@ -1484,8 +1610,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "ISPConfig - (Authenticated) Arbitrary PHP Code Execution (Metasploit)",
-      "description": "ISPConfig - (Authenticated) Arbitrary PHP Code Execution (Metasploit)",
+      "name": "ISPConfig - Arbitrary PHP Code Execution (Authenticated) (Metasploit)",
+      "description": "ISPConfig - Arbitrary PHP Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/29322.rb"
     }
   ],
@@ -1495,6 +1621,12 @@
       "name": "Kordil EDMS v2.2.60rc3 Unauthenticated Arbitrary File Upload Vulnerability",
       "description": "This module exploits a vulnerability in Kordil EDMS v2.2.60rc3.\n          This application has an upload feature that allows an unauthenticated user\n          to upload arbitrary files to the '/kordil_edms/userpictures/' directory.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/kordil_edms_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kordil EDms 2.2.60rc3 - Arbitrary File Upload (Metasploit)",
+      "description": "Kordil EDms 2.2.60rc3 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/24547.rb"
     }
   ],
   "CVE-2013-3630": [
@@ -1576,8 +1708,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "phpMyAdmin - 'preg_replace' (Authenticated) Remote Code Execution (Metasploit)",
-      "description": "phpMyAdmin - 'preg_replace' (Authenticated) Remote Code Execution (Metasploit)",
+      "name": "phpMyAdmin - 'preg_replace' Remote Code Execution (Authenticated) (Metasploit)",
+      "description": "phpMyAdmin - 'preg_replace' Remote Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/25136.rb"
     },
     {
@@ -1607,6 +1739,12 @@
       "name": "ProcessMaker Open Source Authenticated PHP Code Execution",
       "description": "This module exploits a PHP code execution vulnerability in the\n          'neoclassic' skin for ProcessMaker Open Source which allows any\n          authenticated user to execute PHP code. The vulnerable skin is\n          installed by default in version 2.x and cannot be removed via\n          the web interface.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/processmaker_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ProcessMaker Open Source - PHP Code Execution (Authenticated) (Metasploit)",
+      "description": "ProcessMaker Open Source - PHP Code Execution (Authenticated) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/29325.rb"
     }
   ],
   "CVE-2013-1359": [
@@ -1700,8 +1838,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "vTiger CRM 5.3.0 5.4.0 - (Authenticated) Remote Code Execution (Metasploit)",
-      "description": "vTiger CRM 5.3.0 5.4.0 - (Authenticated) Remote Code Execution (Metasploit)",
+      "name": "vTiger CRM 5.3.0 5.4.0 - Remote Code Execution (Authenticated) (Metasploit)",
+      "description": "vTiger CRM 5.3.0 5.4.0 - Remote Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/29319.rb"
     }
   ],
@@ -1748,8 +1886,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Zabbix - (Authenticated) Remote Command Execution (Metasploit)",
-      "description": "Zabbix - (Authenticated) Remote Command Execution (Metasploit)",
+      "name": "Zabbix - Remote Command Execution (Authenticated) (Metasploit)",
+      "description": "Zabbix - Remote Command Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/29321.rb"
     }
   ],
@@ -1796,8 +1934,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Tincd - (Authenticated) Remote TCP Stack Buffer Overflow (Metasploit)",
-      "description": "Tincd - (Authenticated) Remote TCP Stack Buffer Overflow (Metasploit)",
+      "name": "Tincd - Remote TCP Stack Buffer Overflow (Authenticated) (Metasploit)",
+      "description": "Tincd - Remote TCP Stack Buffer Overflow (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/35441.rb"
     }
   ],
@@ -1855,6 +1993,12 @@
       "name": "FlashChat Arbitrary File Upload",
       "description": "This module exploits a file upload vulnerability found in FlashChat\n          versions 6.0.2 and 6.0.4 to 6.0.8. Attackers can abuse the upload\n          feature in order to upload malicious PHP files without authentication\n          which results in arbitrary remote code execution as the web server user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/flashchat_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "FlashChat 6.0.2 < 6.0.8 - Arbitrary File Upload",
+      "description": "FlashChat 6.0.2 < 6.0.8 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/28709.txt"
     }
   ],
   "CVE-2013-10032": [
@@ -1863,6 +2007,12 @@
       "name": "GetSimpleCMS PHP File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability in GetSimple CMS. By abusing the\n          upload.php file, a malicious authenticated user can upload an arbitrary file,\n          including PHP code, which results in arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/get_simple_cms_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Getsimple CMS 3.2.1 - Arbitrary File Upload",
+      "description": "Getsimple CMS 3.2.1 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/25405.txt"
     }
   ],
   "CVE-2013-5093": [
@@ -1885,6 +2035,12 @@
       "name": "Havalite CMS Arbitary File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability found in Havalite CMS 1.1.7, and\n          possibly prior.  Attackers can abuse the upload feature in order to upload a\n          malicious PHP file without authentication, which results in arbitrary remote code\n          execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/havalite_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Havalite CMS 1.1.7 - Unrestricted Arbitrary File Upload",
+      "description": "Havalite CMS 1.1.7 - Unrestricted Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/26243.txt"
     }
   ],
   "CVE-2013-10051": [
@@ -1893,6 +2049,12 @@
       "name": "InstantCMS 1.6 Remote PHP Code Execution",
       "description": "This module exploits an arbitrary PHP command execution vulnerability because of a\n          dangerous use of eval() in InstantCMS in versions 1.6 and prior.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/instantcms_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "InstantCMS 1.6 - PHP Remote Code Execution (Metasploit)",
+      "description": "InstantCMS 1.6 - PHP Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/26622.rb"
     }
   ],
   "CVE-2013-5576": [
@@ -1915,6 +2077,18 @@
       "name": "Kimai v0.9.2 'db_restore.php' SQL Injection",
       "description": "This module exploits a SQL injection vulnerability in Kimai version\n          0.9.2.x. The 'db_restore.php' file allows unauthenticated users to\n          execute arbitrary SQL queries. This module writes a PHP payload to\n          disk if the following conditions are met: The PHP configuration must\n          have 'display_errors' enabled, Kimai must be configured to use a\n          MySQL database running on localhost; and the MySQL user must have\n          write permission to the Kimai 'temporary' directory.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/kimai_sqli.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kimai 0.9.2 - 'db_restore.php' SQL Injection (Metasploit)",
+      "description": "Kimai 0.9.2 - 'db_restore.php' SQL Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/30010.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kimai 0.9.2.1306-3 - SQL Injection",
+      "description": "Kimai 0.9.2.1306-3 - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/25606.py"
     }
   ],
   "CVE-2013-10054": [
@@ -1923,6 +2097,18 @@
       "name": "LibrettoCMS File Manager Arbitary File Upload Vulnerability",
       "description": "This module exploits a file upload vulnerability found in LibrettoCMS 1.1.7, and\n          possibly prior.  Attackers can bypass the file extension check and abuse the upload\n          feature in order to upload a malicious PHP file without authentication, which\n          results in arbitrary remote code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/libretto_upload_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "LibrettoCMS File Manager - Arbitrary File Upload (Metasploit)",
+      "description": "LibrettoCMS File Manager - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/26421.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "LibrettoCMS 2.2.2 - Arbitrary File Upload",
+      "description": "LibrettoCMS 2.2.2 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/26213.txt"
     }
   ],
   "CVE-2013-10044": [
@@ -1931,6 +2117,18 @@
       "name": "OpenEMR 4.1.1 Patch 14 SQLi Privilege Escalation Remote Code Execution",
       "description": "This module exploits a vulnerability found in OpenEMR version 4.1.1 Patch 14 and lower.\n          When logging in as any non-admin user, it's possible to retrieve the admin SHA1 password\n          hash from the database through SQL injection. The SQL injection vulnerability exists\n          in the \"new_comprehensive_save.php\" page. This hash can be used to log in as the admin\n          user. After logging in, the \"manage_site_files.php\" page will be used to upload arbitrary\n          code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/openemr_sqli_privesc_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "OpenEMR 4.1.1 Patch 14 - SQL Injection / Privilege Escalation / Remote Code Execution (Metasploit)",
+      "description": "OpenEMR 4.1.1 Patch 14 - SQL Injection / Privilege Escalation / Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/28408.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "OpenEMR 4.1.1 Patch 14 - Multiple Vulnerabilities",
+      "description": "OpenEMR 4.1.1 Patch 14 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/28329.txt"
     }
   ],
   "CVE-2013-3632": [
@@ -1967,6 +2165,18 @@
       "name": "PHP-Charts v1.0 PHP Code Execution Vulnerability",
       "description": "This module exploits a PHP code execution vulnerability in php-Charts\n          version 1.0 which could be abused to allow users to execute arbitrary\n          PHP code under the context of the webserver user. The 'url.php' script\n          calls eval() with user controlled data from any HTTP GET parameter name.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/php_charts_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHP-Charts 1.0 - PHP Code Execution (Metasploit)",
+      "description": "PHP-Charts 1.0 - PHP Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/24273.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PHP-Charts - Arbitrary PHP Code Execution",
+      "description": "PHP-Charts - Arbitrary PHP Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24201.txt"
     }
   ],
   "CVE-2013-5036": [
@@ -2017,6 +2227,12 @@
       "name": "WebTester 5.x Command Execution",
       "description": "This module exploits a command execution vulnerability in WebTester\n          version 5.x. The 'install2.php' file allows unauthenticated users to\n          execute arbitrary commands in the 'cpusername', 'cppassword' and\n          'cpdomain' parameters.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/webtester_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WebTester 5.x - Command Execution (Metasploit)",
+      "description": "WebTester 5.x - Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/29132.rb"
     }
   ],
   "CVE-2013-7102": [
@@ -2203,6 +2419,18 @@
       "name": "Foxit Reader Plugin URL Processing Buffer Overflow",
       "description": "This module exploits a vulnerability in the Foxit Reader Plugin, it exists in\n          the npFoxitReaderPlugin.dll module. When loading PDF files from remote hosts,\n          overly long query strings within URLs can cause a stack-based buffer overflow,\n          which can be exploited to execute arbitrary code. This exploit has been tested\n          on Windows 7 SP1 with Firefox 18.0 and Foxit Reader version 5.4.4.11281\n          (npFoxitReaderPlugin.dll version 2.2.1.530).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/foxit_reader_plugin_url_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Foxit Reader 5.4.4.1128 Firefox Plugin - 'npFoxitReaderPlugin.dll' Stack Buffer Overflow (PoC)",
+      "description": "Foxit Reader 5.4.4.1128 Firefox Plugin - 'npFoxitReaderPlugin.dll' Stack Buffer Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23944.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Foxit Reader Plugin - URL Processing Buffer Overflow (Metasploit)",
+      "description": "Foxit Reader Plugin - URL Processing Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24502.rb"
     }
   ],
   "CVE-2013-0108": [
@@ -2555,6 +2783,12 @@
       "name": "Beetel Connection Manager NetConfig.ini Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in Beetel Connection\n          Manager. The vulnerability exists in the parsing of the UserName\n          parameter in the NetConfig.ini file.\n\n          The module has been tested successfully against version\n          PCW_BTLINDV1.0.0B04 on Windows XP SP3 and Windows 7 SP1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/beetel_netconfig_ini_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Beetel Connection Manager PCW_BTLINDV1.0.0B04 - Local Buffer Overflow (SEH)",
+      "description": "Beetel Connection Manager PCW_BTLINDV1.0.0B04 - Local Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/28969.py"
     }
   ],
   "CVE-2013-3928": [
@@ -2648,8 +2882,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "IcoFX 2.6 - '.ico' Buffer Overflow SEH + DEP Bypass using JOP",
-      "description": "IcoFX 2.6 - '.ico' Buffer Overflow SEH + DEP Bypass using JOP",
+      "name": "IcoFX 2.6 - '.ico' Buffer Overflow SEH + DEP Bypass Using JOP",
+      "description": "IcoFX 2.6 - '.ico' Buffer Overflow SEH + DEP Bypass Using JOP",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/49959.py"
     }
   ],
@@ -2715,6 +2949,12 @@
       "name": "freeFTPd PASS Command Buffer Overflow",
       "description": "freeFTPd 1.0.10 and below contains an overflow condition that is triggered as\n          user-supplied input is not properly validated when handling a specially crafted\n          PASS command. This may allow a remote attacker to cause a buffer overflow,\n          resulting in a denial of service or allow the execution of arbitrary code.\n\n          freeFTPd must have an account set to authorization anonymous user account.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/freeftpd_pass.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "freeFTPd 1.0.10 - 'PASS' Remote Buffer Overflow (SEH)",
+      "description": "freeFTPd 1.0.10 - 'PASS' Remote Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/27747.pl"
     }
   ],
   "CVE-2013-4730": [
@@ -2915,6 +3155,12 @@
       "name": "Kaseya uploadImage Arbitrary File Upload",
       "description": "This module exploits an arbitrary file upload vulnerability found in Kaseya versions below\n          6.3.0.2. A malicious user can upload an ASP file to an arbitrary directory without previous\n          authentication, leading to arbitrary code execution with IUSR privileges.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/kaseya_uploadimage_file_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kaseya < 6.3.0.2 - Arbitrary File Upload",
+      "description": "Kaseya < 6.3.0.2 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/29675.txt"
     }
   ],
   "CVE-2013-10047": [
@@ -2923,6 +3169,12 @@
       "name": "MiniWeb (Build 300) Arbitrary File Upload",
       "description": "This module exploits a vulnerability in MiniWeb HTTP server (build 300).\n          The software contains a file upload vulnerability that allows an\n          unauthenticated remote attacker to write arbitrary files to the file system.\n\n          Code execution can be achieved by first uploading the payload to the remote\n          machine as an exe file, and then upload another mof file, which enables\n          WMI (Management Instrumentation service) to execute the uploaded payload.\n          Please note that this module currently only works for Windows before Vista.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/miniweb_upload_wbem.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MiniWeb 300 - Arbitrary File Upload (Metasploit)",
+      "description": "MiniWeb 300 - Arbitrary File Upload (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/27607.rb"
     }
   ],
   "CVE-2013-3763": [
@@ -3011,6 +3263,18 @@
       "name": "Agnitum Outpost Internet Security Local Privilege Escalation",
       "description": "This module exploits a directory traversal vulnerability on Agnitum Outpost Internet\n            Security 8.1. The vulnerability exists in the acs.exe component, allowing the user to load\n            arbitrary DLLs through the acsipc_server named pipe, and finally execute arbitrary\n            code with SYSTEM privileges. This module has been tested successfully on Windows 7 SP1 with\n            Agnitum Outpost Internet Security 8.1 (32 bits and 64 bits versions).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/local/agnitum_outpost_acs.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Agnitum Outpost Internet Security - Local Privilege Escalation (Metasploit)",
+      "description": "Agnitum Outpost Internet Security - Local Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/28335.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Agnitum Outpost Security Suite 8.1 - Local Privilege Escalation",
+      "description": "Agnitum Outpost Security Suite 8.1 - Local Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/27282.txt"
     }
   ],
   "CVE-2013-0008": [
@@ -3167,6 +3431,12 @@
       "name": "ActFax 5.01 RAW Server Buffer Overflow",
       "description": "This module exploits a vulnerability in ActFax Server 5.01 RAW server. The RAW\n          Server can be used to transfer fax messages without any underlying protocols. To\n          note significant fields in the fax being transferred, like the fax number or the\n          recipient, ActFax data fields can be used. This module exploits a buffer overflow\n          in the handling of the @F506 fields due to the insecure usage of strcpy. This\n          module has been tested successfully on ActFax 5.01 over Windows XP SP3 (English).",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/actfax_raw_server_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ActFax 5.01 - RAW Server (Metasploit)",
+      "description": "ActFax 5.01 - RAW Server (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24467.rb"
     }
   ],
   "CVE-2013-2492": [
@@ -3278,8 +3548,8 @@
   "CVE-2013-4787": [
     {
       "source": "exploitdb",
-      "name": "Google Android - 'APK' code Remote Security Bypass",
-      "description": "Google Android - 'APK' code Remote Security Bypass",
+      "name": "Google Android - 'APK' Code Remote Security Bypass",
+      "description": "Google Android - 'APK' Code Remote Security Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/android/remote/38627.sh"
     }
   ],
@@ -3585,6 +3855,14 @@
       "name": "D-Link / PLANEX COMMUNICATIONS - 'RuntimeDiagnosticPing()' Remote Stack Buffer Overflow",
       "description": "D-Link / PLANEX COMMUNICATIONS - 'RuntimeDiagnosticPing()' Remote Stack Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/38810.py"
+    }
+  ],
+  "CVE-2013-7471": [
+    {
+      "source": "exploitdb",
+      "name": "D-Link Devices - UPnP SOAP Command Execution (Metasploit)",
+      "description": "D-Link Devices - UPnP SOAP Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/27044.rb"
     }
   ],
   "CVE-2013-3095": [
@@ -4147,6 +4425,30 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/27284.txt"
     }
   ],
+  "CVE-2013-20007": [
+    {
+      "source": "exploitdb",
+      "name": "Linksys WAG200G - Multiple Vulnerabilities",
+      "description": "Linksys WAG200G - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24476.txt"
+    }
+  ],
+  "CVE-2013-20008": [
+    {
+      "source": "exploitdb",
+      "name": "Linksys WAG200G - Multiple Vulnerabilities",
+      "description": "Linksys WAG200G - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24476.txt"
+    }
+  ],
+  "CVE-2013-20009": [
+    {
+      "source": "exploitdb",
+      "name": "Linksys WAG200G - Multiple Vulnerabilities",
+      "description": "Linksys WAG200G - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/24476.txt"
+    }
+  ],
   "CVE-2013-3307": [
     {
       "source": "exploitdb",
@@ -4156,6 +4458,30 @@
     }
   ],
   "CVE-2013-3314": [
+    {
+      "source": "exploitdb",
+      "name": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "description": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/27878.txt"
+    }
+  ],
+  "CVE-2013-3311": [
+    {
+      "source": "exploitdb",
+      "name": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "description": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/27878.txt"
+    }
+  ],
+  "CVE-2013-3312": [
+    {
+      "source": "exploitdb",
+      "name": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "description": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/27878.txt"
+    }
+  ],
+  "CVE-2013-3313": [
     {
       "source": "exploitdb",
       "name": "Loftek Nexus 543 IP Cameras - Multiple Vulnerabilities",
@@ -4986,8 +5312,8 @@
   "CVE-2013-1950": [
     {
       "source": "exploitdb",
-      "name": "rpcbind - CALLIT procedure UDP Crash (PoC)",
-      "description": "rpcbind - CALLIT procedure UDP Crash (PoC)",
+      "name": "rpcbind - CALLIT Procedure UDP Crash (PoC)",
+      "description": "rpcbind - CALLIT Procedure UDP Crash (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/26887.rb"
     }
   ],
@@ -6240,8 +6566,8 @@
   "CVE-2013-3081": [
     {
       "source": "exploitdb",
-      "name": "Jojo CMS - 'x-forwarded-for' HTTP header SQL Injection",
-      "description": "Jojo CMS - 'x-forwarded-for' HTTP header SQL Injection",
+      "name": "Jojo CMS - 'x-forwarded-for' HTTP Header SQL Injection",
+      "description": "Jojo CMS - 'x-forwarded-for' HTTP Header SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38519.txt"
     }
   ],
@@ -6752,9 +7078,25 @@
   "CVE-2013-6227": [
     {
       "source": "exploitdb",
-      "name": "Pydio / AjaXplorer < 5.0.4 - (Unauthenticated) Arbitrary File Upload",
-      "description": "Pydio / AjaXplorer < 5.0.4 - (Unauthenticated) Arbitrary File Upload",
+      "name": "Pydio / AjaXplorer < 5.0.4 - Arbitrary File Upload (Unauthenticated)",
+      "description": "Pydio / AjaXplorer < 5.0.4 - Arbitrary File Upload (Unauthenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46206.txt"
+    }
+  ],
+  "CVE-2013-20005": [
+    {
+      "source": "exploitdb",
+      "name": "Qool CMS 2.0 RC2 - Multiple Vulnerabilities",
+      "description": "Qool CMS 2.0 RC2 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24627.txt"
+    }
+  ],
+  "CVE-2013-20006": [
+    {
+      "source": "exploitdb",
+      "name": "Qool CMS 2.0 RC2 - Multiple Vulnerabilities",
+      "description": "Qool CMS 2.0 RC2 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24627.txt"
     }
   ],
   "CVE-2013-3531": [
@@ -7529,6 +7871,14 @@
       "name": "Xibo 1.2.2/1.4.1 - Directory Traversal",
       "description": "A directory traversal vulnerability in Spring Signage Xibo 1.2.x before 1.2.3 and 1.4.x before 1.4.2 allows remote attackers to read arbitrary files via a .. (dot dot) in the p parameter to index.php.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2013/CVE-2013-5979.yaml"
+    }
+  ],
+  "CVE-2013-0237": [
+    {
+      "source": "exploitdb",
+      "name": "Yeager CMS 1.2.1 - Multiple Vulnerabilities",
+      "description": "Yeager CMS 1.2.1 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39436.txt"
     }
   ],
   "CVE-2013-5572": [

@@ -1472,8 +1472,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "vTiger CRM 6.3.0 - (Authenticated) Remote Code Execution",
-      "description": "vTiger CRM 6.3.0 - (Authenticated) Remote Code Execution",
+      "name": "vTiger CRM 6.3.0 - Remote Code Execution (Authenticated)",
+      "description": "vTiger CRM 6.3.0 - Remote Code Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38345.txt"
     }
   ],
@@ -1483,6 +1483,12 @@
       "name": "WordPress Responsive Thumbnail Slider Arbitrary File Upload",
       "description": "This module exploits an arbitrary file upload vulnerability in Responsive Thumbnail Slider\n          Plugin v1.0 for WordPress post authentication.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_responsive_thumbnail_slider_upload.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Responsive Thumbnail Slider 1.0 - Arbitrary File Upload",
+      "description": "WordPress Plugin Responsive Thumbnail Slider 1.0 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37998.txt"
     }
   ],
   "CVE-2015-0779": [
@@ -1699,6 +1705,12 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/http/xdebug_unauth_exec.rb"
     },
     {
+      "source": "exploitdb",
+      "name": "xdebug < 2.5.5 - OS Command Execution (Metasploit)",
+      "description": "xdebug < 2.5.5 - OS Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/44568.rb"
+    },
+    {
       "source": "nuclei",
       "name": "Xdebug <= 2.5.5 - Command Injection",
       "description": "Xdebug <= 2.5.5 contains an unauthenticated command injection caused by accepting debugger protocol commands without authentication when remote debugging is enabled, letting remote attackers execute arbitrary PHP code and system commands, exploit requires remote debugging enabled.\n",
@@ -1886,8 +1898,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Adobe Flash Player - ByteArray With Workers Use-After-Free (Metasploit)",
-      "description": "Adobe Flash Player - ByteArray With Workers Use-After-Free (Metasploit)",
+      "name": "Adobe Flash Player - ByteArray with Workers Use-After-Free (Metasploit)",
+      "description": "Adobe Flash Player - ByteArray with Workers Use-After-Free (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/36579.rb"
     }
   ],
@@ -2040,15 +2052,15 @@
     },
     {
       "source": "exploitdb",
-      "name": "Konica Minolta FTP Utility 1.00 - (Authenticated) CWD Command Overflow (SEH) (Metasploit)",
-      "description": "Konica Minolta FTP Utility 1.00 - (Authenticated) CWD Command Overflow (SEH) (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/38254.rb"
-    },
-    {
-      "source": "exploitdb",
       "name": "Konica Minolta FTP Utility 1.00 - CWD Command Overflow (SEH)",
       "description": "Konica Minolta FTP Utility 1.00 - CWD Command Overflow (SEH)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/39215.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Konica Minolta FTP Utility 1.00 - CWD Command Overflow (SEH) (Authenticated) (Metasploit)",
+      "description": "Konica Minolta FTP Utility 1.00 - CWD Command Overflow (SEH) (Authenticated) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/38254.rb"
     }
   ],
   "CVE-2015-1830": [
@@ -2470,8 +2482,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Kaseya Virtual System Administrator (VSA) 7.0 < 9.1 - (Authenticated) Arbitrary File Upload",
-      "description": "Kaseya Virtual System Administrator (VSA) 7.0 < 9.1 - (Authenticated) Arbitrary File Upload",
+      "name": "Kaseya Virtual System Administrator (VSA) 7.0 < 9.1 - Arbitrary File Upload (Authenticated)",
+      "description": "Kaseya Virtual System Administrator (VSA) 7.0 < 9.1 - Arbitrary File Upload (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/43882.rb"
     }
   ],
@@ -2765,6 +2777,14 @@
       "name": "ADB/Pirelli ADSL2/2+ Wireless Router P.DGA4001N - Information Disclosure",
       "description": "ADB (formerly Pirelli Broadband Solutions) P.DGA4001N router with firmware PDG_TEF_SP_4.06L.6 does not properly restrict access to the web interface, which allows remote attackers to obtain sensitive information or cause a denial of service (device restart) as demonstrated by a direct request to (1) wlsecurity.html or (2) resetrouter.html.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-0554.yaml"
+    }
+  ],
+  "CVE-2015-0558": [
+    {
+      "source": "exploitdb",
+      "name": "Pirelli ADSL2/2+ Wireless Router P.DGA4001N - Information Disclosure",
+      "description": "Pirelli ADSL2/2+ Wireless Router P.DGA4001N - Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/35721.txt"
     }
   ],
   "CVE-2015-4685": [
@@ -3241,6 +3261,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/39229.cpp"
     }
   ],
+  "CVE-2015-9101": [
+    {
+      "source": "exploitdb",
+      "name": "LAME 3.99.5 - Multiple Vulnerabilities",
+      "description": "LAME 3.99.5 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/42390.txt"
+    }
+  ],
+  "CVE-2015-9100": [
+    {
+      "source": "exploitdb",
+      "name": "LAME 3.99.5 - Multiple Vulnerabilities",
+      "description": "LAME 3.99.5 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/42390.txt"
+    }
+  ],
   "CVE-2015-3205": [
     {
       "source": "exploitdb",
@@ -3276,8 +3312,8 @@
   "CVE-2015-5621": [
     {
       "source": "exploitdb",
-      "name": "net-snmp 5.7.3 - (Authenticated) Denial of Service (PoC)",
-      "description": "net-snmp 5.7.3 - (Authenticated) Denial of Service (PoC)",
+      "name": "net-snmp 5.7.3 - Denial of Service (Authenticated) (PoC)",
+      "description": "net-snmp 5.7.3 - Denial of Service (Authenticated) (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/45547.txt"
     }
   ],
@@ -3456,8 +3492,8 @@
   "CVE-2015-8257": [
     {
       "source": "exploitdb",
-      "name": "AXIS (Multiple Products) - 'devtools ' (Authenticated) Remote Command Execution",
-      "description": "AXIS (Multiple Products) - 'devtools ' (Authenticated) Remote Command Execution",
+      "name": "AXIS (Multiple Products) - 'devtools ' Remote Command Execution (Authenticated)",
+      "description": "AXIS (Multiple Products) - 'devtools ' Remote Command Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/40171.txt"
     }
   ],
@@ -3481,6 +3517,14 @@
       "name": "Ericsson Drutt MSDP - Local File Inclusion",
       "description": "Ericsson Drutt Mobile Service Delivery Platform (MSDP) 4, 5, and 6 allows remote attackers to read arbitrary files via a ..%2f (dot dot encoded slash) in the default URI in the Instance Monitor.",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-2166.yaml"
+    }
+  ],
+  "CVE-2015-5698": [
+    {
+      "source": "exploitdb",
+      "name": "Siemens SIMATIC S7-1200 CPU - Cross-Site Request Forgery",
+      "description": "Siemens SIMATIC S7-1200 CPU - Cross-Site Request Forgery",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/44667.txt"
     }
   ],
   "CVE-2015-6541": [
@@ -3834,8 +3878,8 @@
   "CVE-2015-4870": [
     {
       "source": "exploitdb",
-      "name": "MySQL 5.5.45 - procedure analyse Function Denial of Service",
-      "description": "MySQL 5.5.45 - procedure analyse Function Denial of Service",
+      "name": "MySQL 5.5.45 - Procedure analyse Function Denial of Service",
+      "description": "MySQL 5.5.45 - Procedure analyse Function Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/39867.py"
     }
   ],
@@ -4030,8 +4074,8 @@
   "CVE-2015-2080": [
     {
       "source": "exploitdb",
-      "name": "Inductive Automation Ignition 7.8.1 - Remote Leakage Of Shared Buffers",
-      "description": "Inductive Automation Ignition 7.8.1 - Remote Leakage Of Shared Buffers",
+      "name": "Inductive Automation Ignition 7.8.1 - Remote Leakage of Shared Buffers",
+      "description": "Inductive Automation Ignition 7.8.1 - Remote Leakage of Shared Buffers",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/39455.txt"
     },
     {
@@ -4071,6 +4115,14 @@
       "name": "Ansible Tower 2.0.2 - Multiple Vulnerabilities",
       "description": "Ansible Tower 2.0.2 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/35786.txt"
+    }
+  ],
+  "CVE-2015-20129": [
+    {
+      "source": "exploitdb",
+      "name": "CrushFTP 7.2.0 - Multiple Vulnerabilities",
+      "description": "CrushFTP 7.2.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/36126.txt"
     }
   ],
   "CVE-2015-2878": [
@@ -5025,6 +5077,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-1579.yaml"
     }
   ],
+  "CVE-2015-20130": [
+    {
+      "source": "exploitdb",
+      "name": "Netsweeper 4.0.9 - Arbitrary File Upload / Execution",
+      "description": "Netsweeper 4.0.9 - Arbitrary File Upload / Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37930.txt"
+    }
+  ],
   "CVE-2015-5354": [
     {
       "source": "exploitdb",
@@ -5173,6 +5233,78 @@
       "name": "ProjectSend r561 - SQL Injection",
       "description": "ProjectSend r561 - SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36303.txt"
+    }
+  ],
+  "CVE-2015-20120": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Blind SQL Injections",
+      "description": "RealtyScript 4.0.2 - Multiple Blind SQL Injections",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38497.txt"
+    }
+  ],
+  "CVE-2015-20121": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Blind SQL Injections",
+      "description": "RealtyScript 4.0.2 - Multiple Blind SQL Injections",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38497.txt"
+    }
+  ],
+  "CVE-2015-20113": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20114": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20115": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20116": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20117": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20118": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
+    }
+  ],
+  "CVE-2015-20119": [
+    {
+      "source": "exploitdb",
+      "name": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "description": "RealtyScript 4.0.2 - Multiple Cross-Site Request Forgery / Persistent Cross-Site Scripting Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38496.txt"
     }
   ],
   "CVE-2015-1518": [
@@ -5399,6 +5531,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9323.yaml"
     }
   ],
+  "CVE-2015-20123": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin aspose-doc-exporter 1.0 - Arbitrary File Download",
+      "description": "WordPress Plugin aspose-doc-exporter 1.0 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36559.txt"
+    }
+  ],
   "CVE-2015-4455": [
     {
       "source": "exploitdb",
@@ -5515,6 +5655,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37132.txt"
     }
   ],
+  "CVE-2015-9496": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Freshmail 1.5.8 - 'shortcode.php' SQL Injection",
+      "description": "WordPress Plugin Freshmail 1.5.8 - 'shortcode.php' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36942.txt"
+    }
+  ],
   "CVE-2015-4066": [
     {
       "source": "exploitdb",
@@ -5629,6 +5777,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35846.txt"
     }
   ],
+  "CVE-2015-9480": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin RobotCPA V5 - Local File Inclusion",
+      "description": "WordPress Plugin RobotCPA V5 - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37252.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress RobotCPA 5 - Directory Traversal",
+      "description": "The RobotCPA plugin 5 for WordPress has directory traversal via the f.php l parameter.",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9480.yaml"
+    }
+  ],
+  "CVE-2015-9464": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin S3Bubble Cloud Video With Adverts & Analytics 0.7 - Arbitrary File Download",
+      "description": "WordPress Plugin S3Bubble Cloud Video With Adverts & Analytics 0.7 - Arbitrary File Download",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37494.txt"
+    }
+  ],
   "CVE-2015-4414": [
     {
       "source": "exploitdb",
@@ -5673,6 +5843,20 @@
       "name": "WordPress Plugin Simple Ads Manager 2.5.94 - Arbitrary File Upload",
       "description": "WordPress Plugin Simple Ads Manager 2.5.94 - Arbitrary File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36614.txt"
+    }
+  ],
+  "CVE-2015-9499": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Slider REvolution 3.0.95 / Showbiz Pro 1.7.1 - Arbitrary File Upload",
+      "description": "WordPress Plugin Slider REvolution 3.0.95 / Showbiz Pro 1.7.1 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35385.pl"
+    },
+    {
+      "source": "nuclei",
+      "name": "WordPress ShowBiz Pro <= 1.7.1 - Authenticated Arbitrary File Upload to RCE",
+      "description": "The WordPress ShowBiz Pro plugin version <= 1.7.1 allows arbitrary PHP file upload via the `admin-ajax.php` endpoint.This leads to unauthenticated remote code execution.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9499.yaml"
     }
   ],
   "CVE-2015-2090": [
@@ -5781,6 +5965,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-5468.yaml"
     }
   ],
+  "CVE-2015-9316": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin WP Fastest Cache 0.8.4.8 - Blind SQL Injection",
+      "description": "WordPress Plugin WP Fastest Cache 0.8.4.8 - Blind SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/38678.txt"
+    }
+  ],
   "CVE-2015-4039": [
     {
       "source": "exploitdb",
@@ -5843,6 +6035,14 @@
       "name": "WordPress Plugin zM Ajax Login & Register 1.0.9 - Local File Inclusion",
       "description": "WordPress Plugin zM Ajax Login & Register 1.0.9 - Local File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/37200.txt"
+    }
+  ],
+  "CVE-2015-10087": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Theme DesignFolio Plus 1.2 - Arbitrary File Upload",
+      "description": "WordPress Theme DesignFolio Plus 1.2 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36372.txt"
     }
   ],
   "CVE-2015-2216": [
@@ -6124,8 +6324,8 @@
   "CVE-2015-5563": [
     {
       "source": "exploitdb",
-      "name": "Adobe Flash - Heap Use-After-Free in SurfaceFilterList::C\u200breateFromScriptAtom",
-      "description": "Adobe Flash - Heap Use-After-Free in SurfaceFilterList::C\u200breateFromScriptAtom",
+      "name": "Adobe Flash - Heap Use-After-Free in SurfaceFilterList::CreateFromScriptAtom",
+      "description": "Adobe Flash - Heap Use-After-Free in SurfaceFilterList::CreateFromScriptAtom",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/37884.txt"
     }
   ],
@@ -7290,8 +7490,8 @@
   "CVE-2015-4107": [
     {
       "source": "exploitdb",
-      "name": "Wing FTP Server - (Authenticated) Command Execution (Metasploit)",
-      "description": "Wing FTP Server - (Authenticated) Command Execution (Metasploit)",
+      "name": "Wing FTP Server - Command Execution (Authenticated) (Metasploit)",
+      "description": "Wing FTP Server - Command Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/34517.rb"
     }
   ],
@@ -7368,8 +7568,8 @@
   "CVE-2015-2511": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Windows Kernel - 'FlashWindowEx\u200b' Memory Corruption (MS15-097)",
-      "description": "Microsoft Windows Kernel - 'FlashWindowEx\u200b' Memory Corruption (MS15-097)",
+      "name": "Microsoft Windows Kernel - 'FlashWindowEx' Memory Corruption (MS15-097)",
+      "description": "Microsoft Windows Kernel - 'FlashWindowEx' Memory Corruption (MS15-097)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows_x86/dos/38276.txt"
     }
   ],
@@ -7847,22 +8047,6 @@
       "name": "BJ Lazy Load (Timthumb) <= 0.7.5 - Remote File Inclusion",
       "description": "The BJ Lazy Load plugin v0.7.5 for WordPress has a Remote File Inclusion vulnerability via TimThumb.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9415.yaml"
-    }
-  ],
-  "CVE-2015-9480": [
-    {
-      "source": "nuclei",
-      "name": "WordPress RobotCPA 5 - Directory Traversal",
-      "description": "The RobotCPA plugin 5 for WordPress has directory traversal via the f.php l parameter.",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9480.yaml"
-    }
-  ],
-  "CVE-2015-9499": [
-    {
-      "source": "nuclei",
-      "name": "WordPress ShowBiz Pro <= 1.7.1 - Authenticated Arbitrary File Upload to RCE",
-      "description": "The WordPress ShowBiz Pro plugin version <= 1.7.1 allows arbitrary PHP file upload via the `admin-ajax.php` endpoint.This leads to unauthenticated remote code execution.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2015/CVE-2015-9499.yaml"
     }
   ],
   "CVE-2015-1419": [

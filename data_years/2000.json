@@ -1119,19 +1119,29 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/20396.sh"
     }
   ],
-  "CVE-2000-0702": [
-    {
-      "source": "exploitdb",
-      "name": "HP-UX 11.0 - net.init RC Script",
-      "description": "HP-UX 11.0 - net.init RC Script",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/20162.txt"
-    }
-  ],
   "CVE-2000-0844": [
     {
       "source": "exploitdb",
-      "name": "Immunix OS 6.2 - LC glibc format string",
-      "description": "Immunix OS 6.2 - LC glibc format string",
+      "name": "HP-UX 10/11 - NLSPATH Environment Variable Format String (1)",
+      "description": "HP-UX 10/11 - NLSPATH Environment Variable Format String (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/23341.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP-UX 10/11 - NLSPATH Environment Variable Format String (2)",
+      "description": "HP-UX 10/11 - NLSPATH Environment Variable Format String (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/23342.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP-UX B11.11 - '/usr/bin/ct' Format String Privilege Escalation",
+      "description": "HP-UX B11.11 - '/usr/bin/ct' Format String Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/134.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Immunix OS 6.2 - LC glibc Format String",
+      "description": "Immunix OS 6.2 - LC glibc Format String",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/immunix/local/20187.c"
     },
     {
@@ -1166,8 +1176,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 2.6/7.0 - 'locale' Format Strings noexec stack Overflow",
-      "description": "Solaris 2.6/7.0 - 'locale' Format Strings noexec stack Overflow",
+      "name": "Solaris 2.6/7.0 - 'locale' Format Strings noexec Stack Overflow",
+      "description": "Solaris 2.6/7.0 - 'locale' Format Strings noexec Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/210.c"
     },
     {
@@ -1193,6 +1203,14 @@
       "name": "Libc locale - Local Privilege Escalation (2)",
       "description": "Libc locale - Local Privilege Escalation (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/local/20190.c"
+    }
+  ],
+  "CVE-2000-0702": [
+    {
+      "source": "exploitdb",
+      "name": "HP-UX 11.0 - net.init RC Script",
+      "description": "HP-UX 11.0 - net.init RC Script",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hp-ux/local/20162.txt"
     }
   ],
   "CVE-2000-1199": [
@@ -4170,8 +4188,8 @@
   "CVE-2000-0185": [
     {
       "source": "exploitdb",
-      "name": "GameHouse dldisplay - ActiveX control 0 / Real Server 5.0/7.0 Internal IP Address Disclosure",
-      "description": "GameHouse dldisplay - ActiveX control 0 / Real Server 5.0/7.0 Internal IP Address Disclosure",
+      "name": "GameHouse dldisplay - ActiveX Control 0 / Real Server 5.0/7.0 Internal IP Address Disclosure",
+      "description": "GameHouse dldisplay - ActiveX Control 0 / Real Server 5.0/7.0 Internal IP Address Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/19805.txt"
     }
   ],
@@ -4632,8 +4650,8 @@
   "CVE-2000-0169": [
     {
       "source": "exploitdb",
-      "name": "Oracle Web Listener 4.0.x - for NT Batch File",
-      "description": "Oracle Web Listener 4.0.x - for NT Batch File",
+      "name": "Oracle Web Listener 4.0.x - For NT Batch File",
+      "description": "Oracle Web Listener 4.0.x - For NT Batch File",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/19809.txt"
     }
   ],

@@ -225,6 +225,12 @@
       "name": "Solar FTP Server Malformed USER Denial of Service",
       "description": "This module will send a format string as USER to Solar FTP, causing a\n          READ violation in function \"__output_1()\" found in \"sfsservice.exe\"\n          while trying to calculate the length of the string. This vulnerability\n          affects versions 2.1.1 and earlier.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/ftp/solarftp_user.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Solar FTP Server 2.1 - Denial of Service",
+      "description": "Solar FTP Server 2.1 - Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/16204.pl"
     }
   ],
   "CVE-2011-10020": [
@@ -233,6 +239,12 @@
       "name": "Kaillera 0.86 Server Denial of Service",
       "description": "The Kaillera 0.86 server can be shut down by sending any malformed packet\n          after the initial \"hello\" packet.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/dos/windows/games/kaillera.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kaillera - Multiple Clients Buffer Overflow Vulnerabilities",
+      "description": "Kaillera - Multiple Clients Buffer Overflow Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17460.pl"
     }
   ],
   "CVE-2011-0657": [
@@ -288,8 +300,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sun/Oracle GlassFish Server - (Authenticated) Code Execution (Metasploit)",
-      "description": "Sun/Oracle GlassFish Server - (Authenticated) Code Execution (Metasploit)",
+      "name": "Sun/Oracle GlassFish Server - Code Execution (Authenticated) (Metasploit)",
+      "description": "Sun/Oracle GlassFish Server - Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/17615.rb"
     }
   ],
@@ -347,6 +359,12 @@
       "name": "S40 0.4.2 CMS Directory Traversal Vulnerability",
       "description": "This module exploits a directory traversal vulnerability found in S40 CMS.\n          The flaw is due to the 'page' function not properly handling the $pid parameter,\n          which allows a malicious user to load an arbitrary file path.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/s40_traversal.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "S40 CMS 0.4.2b - Local File Inclusion",
+      "description": "S40 CMS 0.4.2b - Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/17129.txt"
     }
   ],
   "CVE-2011-2757": [
@@ -533,6 +551,18 @@
       "name": "WeBid converter.php Remote PHP Code Injection",
       "description": "This module exploits a vulnerability found in WeBid version 1.0.2.\n          By abusing the converter.php file, a malicious user can inject PHP code\n          in the includes/currencies.php script without any authentication, which\n          results in arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/webid_converter.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WeBid - 'converter.php' Remote PHP Code Injection (Metasploit)",
+      "description": "WeBid - 'converter.php' Remote PHP Code Injection (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18934.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WeBid 1.0.2 - 'converter.php' Remote Code Execution",
+      "description": "WeBid 1.0.2 - 'converter.php' Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/17487.php"
     }
   ],
   "CVE-2011-2921": [
@@ -809,6 +839,12 @@
       "name": "Spreecommerce 0.60.1 Arbitrary Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in the\n          Spreecommerce search. Unvalidated input is called via the\n          Ruby send method allowing command execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spree_search_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Spreecommerce 0.60.1 - Arbitrary Command Execution (Metasploit)",
+      "description": "Spreecommerce 0.60.1 - Arbitrary Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/webapps/17941.rb"
     }
   ],
   "CVE-2011-10026": [
@@ -817,6 +853,12 @@
       "name": "Spreecommerce Arbitrary Command Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          the Spreecommerce API searchlogic for versions 0.50.0 and earlier.\n          Unvalidated input is called via the Ruby send method allowing command\n          execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/spree_searchlogic_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Spreecommerce < 0.50.0 - Arbitrary Command Execution (Metasploit)",
+      "description": "Spreecommerce < 0.50.0 - Arbitrary Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/17199.rb"
     }
   ],
   "CVE-2011-3923": [
@@ -839,6 +881,18 @@
       "name": "Traq admincp/common.php Remote Code Execution",
       "description": "This module exploits an arbitrary command execution vulnerability in\n          Traq 2.0 to 2.3. It's in the admincp/common.php script.\n\n          This function is called in each script located in the /admicp/ directory to\n          make sure the user has admin rights. This is a broken authorization schema\n          because the header() function doesn't stop the execution flow.\n          This can be exploited by malicious users to execute admin functionality,\n          e.g. execution of arbitrary PHP code leveraging of plugins.php functionality.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/traq_plugin_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Traq 2.3 - Authentication Bypass / Remote Code Execution",
+      "description": "Traq 2.3 - Authentication Bypass / Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18213.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Traq 2.3 - Authentication Bypass / Remote Code Execution (Metasploit)",
+      "description": "Traq 2.3 - Authentication Bypass / Remote Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18239.rb"
     }
   ],
   "CVE-2011-4451": [
@@ -1001,6 +1055,12 @@
       "name": "myBB 1.6.4 Backdoor Arbitrary Command Execution",
       "description": "myBB is a popular open source PHP forum software. Version 1.6.4 contained an\n          unauthorized backdoor, distributed as part of the vendor's source package.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/mybb_backdoor.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MyBB 1.6.4 - Backdoor Access (Metasploit)",
+      "description": "MyBB 1.6.4 - Backdoor Access (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/17949.rb"
     }
   ],
   "CVE-2011-4929": [
@@ -1297,6 +1357,12 @@
       "name": "Real Networks Arcade Games StubbyUtil.ProcessMgr ActiveX Arbitrary Code Execution",
       "description": "This module exploits a vulnerability in Real Networks Arcade Game's ActiveX control. The \"exec\"\n          function found in InstallerDlg.dll (v2.6.0.445) allows remote attackers to run arbitrary commands\n          on the victim machine.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/real_arcade_installerdlg.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "RealNetworks RealGames StubbyUtil.ProcessMgr.1 - ActiveX Control Multiple Remote Command Executions",
+      "description": "RealNetworks RealGames StubbyUtil.ProcessMgr.1 - ActiveX Control Multiple Remote Command Executions",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17105.txt"
     }
   ],
   "CVE-2011-2950": [
@@ -1397,6 +1463,24 @@
       "name": "AOL Desktop 9.6 RTX Buffer Overflow",
       "description": "This module exploits a vulnerability found in AOL Desktop 9.6's Tool\\rich.rct\n          component. By supplying a long string of data in the hyperlink tag, rich.rct copies\n          this data into a buffer using a strcpy function, which causes an overflow, and\n          results arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/aol_desktop_linktag.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "AOL 9.5 - '.rtx' Local Buffer Overflow",
+      "description": "AOL 9.5 - '.rtx' Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/16085.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "AOL Desktop 9.6 - '.rtx' Local Buffer Overflow",
+      "description": "AOL Desktop 9.6 - '.rtx' Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/16107.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "AOL Desktop 9.6 - RTX Buffer Overflow (Metasploit)",
+      "description": "AOL Desktop 9.6 - RTX Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17150.rb"
     }
   ],
   "CVE-2011-0257": [
@@ -1467,6 +1551,18 @@
       "name": "Cytel Studio 9.0 (CY3 File) Stack Buffer Overflow",
       "description": "This module exploits a stack based buffer overflow found\n          in Cytel Studio <= 9.0. The overflow is triggered during the\n          copying of strings to a stack buffer of 256 bytes.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/cytel_studio_cy3.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Cytel Studio 9.0.0 - Multiple Vulnerabilities",
+      "description": "Cytel Studio 9.0.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/17930.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Cytel Studio 9.0 - '.CY3' Local Stack Buffer Overflow (Metasploit)",
+      "description": "Cytel Studio 9.0 - '.CY3' Local Stack Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/18027.rb"
     }
   ],
   "CVE-2011-3494": [
@@ -1495,6 +1591,12 @@
       "name": "Foxit PDF Reader 4.2 Javascript File Write",
       "description": "This module exploits an unsafe Javascript API implemented in Foxit PDF Reader\n          version 4.2. The createDataObject() Javascript API function allows for writing\n          arbitrary files to the file system. This issue was fixed in version 4.3.1.0218.\n\n          Note: This exploit uses the All Users directory currently, which required\n          administrator privileges to write to. This means an administrative user has to\n          open the file to be successful. Kind of lame but thats how it goes sometimes in\n          the world of file write bugs.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/foxit_reader_filewrite.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Foxit PDF Reader 4.2 - JavaScript File Write (Metasploit)",
+      "description": "Foxit PDF Reader 4.2 - JavaScript File Write (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/16978.rb"
     }
   ],
   "CVE-2011-5165": [
@@ -1559,6 +1661,18 @@
       "name": "GTA SA-MP server.cfg Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in GTA SA-MP Server.\n          This buffer overflow occurs when the application attempts to open a malformed\n          server.cfg file.  To exploit this vulnerability, an attacker must send the\n          victim a server.cfg file and have them run samp-server.exe.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/gta_samp.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GTA SA-MP - 'server.cfg' Local Buffer Overflow (Metasploit)",
+      "description": "GTA SA-MP - 'server.cfg' Local Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/18038.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GTA SA-MP server.cfg - Local Buffer Overflow",
+      "description": "GTA SA-MP server.cfg - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17893.pl"
     }
   ],
   "CVE-2011-1213": [
@@ -1587,6 +1701,18 @@
       "name": "Magix Musik Maker 16 .mmm Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Magix Musik Maker 16.\n          When opening a specially crafted arrangement file (.mmm) in the application, an\n          unsafe strcpy() will allow you to overwrite a SEH handler.  This exploit\n          bypasses DEP & ASLR, and works on XP, Vista & Windows 7.  Egghunter is used, and\n          might require up to several seconds to receive a shell.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/magix_musikmaker_16_mmm.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Magix Musik Maker 16 - '.mmm' Local Stack Buffer Overflow (Metasploit)",
+      "description": "Magix Musik Maker 16 - '.mmm' Local Stack Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17313.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Magix Musik Maker 16 - '.mmm' Local Stack Buffer Overflow (Without EggHunter) (Metasploit)",
+      "description": "Magix Musik Maker 16 - '.mmm' Local Stack Buffer Overflow (Without EggHunter) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17329.rb"
     }
   ],
   "CVE-2011-10024": [
@@ -1595,6 +1721,12 @@
       "name": "MJM Core Player 2011 .s3m Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in MJM Core Player 2011\n          When opening a malicious s3m file in this application, a stack buffer overflow can be\n          triggered, resulting in arbitrary code execution.\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mjm_coreplayer2011_s3m.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MJM Core Player 2011 - '.s3m' Local Stack Buffer Overflow (Metasploit)",
+      "description": "MJM Core Player 2011 - '.s3m' Local Stack Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17230.rb"
     }
   ],
   "CVE-2011-10023": [
@@ -1603,6 +1735,12 @@
       "name": "MJM QuickPlayer 1.00 Beta 60a / QuickPlayer 2010 .s3m Stack Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in MJM QuickPlayer 1.00 beta 60a\n          and QuickPlayer 2010 (Multi-target exploit).  When opening a malicious s3m file in\n          one of these 2 applications, a stack buffer overflow can be triggered, resulting in\n          arbitrary code execution.\n\n          This exploit bypasses DEP & ASLR, and works on XP, Vista & Windows 7.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mjm_quickplayer_s3m.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MJM QuickPlayer 1.00 Beta 60a / QuickPlayer 2010 - '.s3m' Local Stack Buffer Overflow (Metasploit)",
+      "description": "MJM QuickPlayer 1.00 Beta 60a / QuickPlayer 2010 - '.s3m' Local Stack Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17229.rb"
     }
   ],
   "CVE-2011-10008": [
@@ -1611,6 +1749,12 @@
       "name": "MPlayer Lite M3U Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          MPlayer Lite r33064, caused by improper bounds checking of an URL entry.\n\n          By persuading the victim to open a specially-crafted .M3U file, specifically by\n          drag-and-dropping it to the player, a remote attacker can execute arbitrary\n          code on the system.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/mplayer_m3u_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "MPlayer Lite r33064 - '.m3u' Local Overflow (SEH)",
+      "description": "MPlayer Lite r33064 - '.m3u' Local Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17013.pl"
     }
   ],
   "CVE-2011-3625": [
@@ -1647,6 +1791,18 @@
       "name": "NetOp Remote Control Client 9.5 Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in NetOp Remote Control 9.5.\n          When opening a .dws file containing a specially crafted string longer then 520\n          characters will allow an attacker to execute arbitrary code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/netop.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "NetOp Remote Control 8.0/9.1/9.2/9.5 - Local Buffer Overflow",
+      "description": "NetOp Remote Control 8.0/9.1/9.2/9.5 - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17223.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "NetOp Remote Control Client 9.5 - Remote Buffer Overflow (Metasploit)",
+      "description": "NetOp Remote Control Client 9.5 - Remote Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18697.rb"
     }
   ],
   "CVE-2011-10016": [
@@ -1655,6 +1811,18 @@
       "name": "Real Networks Netzip Classic 7.5.1 86 File Parsing Buffer Overflow Vulnerability",
       "description": "This module exploits a stack-based buffer overflow vulnerability in\n          version 7.5.1 86 of Real Networks Netzip Classic.\n          In order for the command to be executed, an attacker must convince someone to\n          load a specially crafted zip file with NetZip Classic.\n          By doing so, an attacker can execute arbitrary code as the victim user.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/real_networks_netzip_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "NetZip - Classic Buffer Overflow (SEH)",
+      "description": "NetZip - Classic Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/16083.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Real Networks Netzip Classic 7.5.1 86 - File Parsing Buffer Overflow (Metasploit)",
+      "description": "Real Networks Netzip Classic 7.5.1 86 - File Parsing Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17985.rb"
     }
   ],
   "CVE-2011-4535": [
@@ -1683,6 +1851,18 @@
       "name": "Subtitle Processor 7.7.1 .M3U SEH Unicode Buffer Overflow",
       "description": "This module exploits a vulnerability found in Subtitle Processor 7.  By\n          supplying a long string of data as a .m3u file, Subtitle Processor first converts\n          this input in Unicode, which expands the string size, and then attempts to copy it\n          inline on the stack.  This results a buffer overflow with SEH overwritten, allowing\n          arbitrary code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/subtitle_processor_m3u_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Subtitle Processor 7.7.1 - '.m3u' File Buffer Overflow (SEH Unicode) (Metasploit)",
+      "description": "Subtitle Processor 7.7.1 - '.m3u' File Buffer Overflow (SEH Unicode) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17225.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Subtitle Processor 7.7.1 - Local Buffer Overflow (SEH Unicode)",
+      "description": "Subtitle Processor 7.7.1 - Local Buffer Overflow (SEH Unicode)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/17217.py"
     }
   ],
   "CVE-2011-0499": [
@@ -1825,6 +2005,12 @@
       "name": "EasyFTP Server MKD Command Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in EasyFTP Server 1.7.0.11\n          and earlier. EasyFTP fails to check input size when parsing 'MKD' commands, which\n          leads to a stack based buffer overflow.\n\n          NOTE: EasyFTP allows anonymous access by default. However, in order to access the\n          'MKD' command, you must have access to an account that can create directories.\n\n          After version 1.7.0.12, this package was renamed \"UplusFtp\".\n\n          This exploit utilizes a small piece of code that I\\'ve referred to as 'fixRet'.\n          This code allows us to inject of payload of ~500 bytes into a 264 byte buffer by\n          'fixing' the return address post-exploitation.  See references for more information.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/easyftp_mkd_fixret.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "EasyFTP Server 1.7.0.2 - Buffer Overflow (Authenticated) (2)",
+      "description": "EasyFTP Server 1.7.0.2 - Buffer Overflow (Authenticated) (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17354.py"
     }
   ],
   "CVE-2011-10010": [
@@ -1833,6 +2019,18 @@
       "name": "QuickShare File Server 1.2.1 Directory Traversal Vulnerability",
       "description": "This module exploits a vulnerability found in QuickShare File Server's FTP\n          service.  By supplying \"../\" in the file path, it is possible to trigger a\n          directory traversal flaw, allowing the attacker to read a file outside the\n          virtual directory.  By default, the \"Writable\" option is enabled during account\n          creation, therefore this makes it possible to create a file at an arbitrary\n          location, which leads to remote code execution.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/ftp/quickshare_traversal_write.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "quickshare file share 1.2.1 - Directory Traversal (1)",
+      "description": "quickshare file share 1.2.1 - Directory Traversal (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16105.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "quickshare file share 1.2.1 - Directory Traversal (Metasploit) (2)",
+      "description": "quickshare file share 1.2.1 - Directory Traversal (Metasploit) (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18933.rb"
     }
   ],
   "CVE-2011-3976": [
@@ -1884,8 +2082,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "CA Total Defense Suite - reGenerateReports Stored procedure SQL Injection (Metasploit)",
-      "description": "CA Total Defense Suite - reGenerateReports Stored procedure SQL Injection (Metasploit)",
+      "name": "CA Total Defense Suite - reGenerateReports Stored Procedure SQL Injection (Metasploit)",
+      "description": "CA Total Defense Suite - reGenerateReports Stored Procedure SQL Injection (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/17922.rb"
     }
   ],
@@ -2141,6 +2339,18 @@
       "name": "SPlayer 3.7 Content-Type Buffer Overflow",
       "description": "This module exploits a vulnerability in SPlayer v3.7 or prior.  When SPlayer\n          requests the URL of a media file (video or audio), it is possible to gain arbitrary\n          remote code execution due to a buffer overflow caused by an exceeding length of data\n          as the 'Content-Type' parameter.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/splayer_content_type.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "SPlayer 3.7 (build 2055) - Remote Buffer Overflow",
+      "description": "SPlayer 3.7 (build 2055) - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17243.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "SPlayer 3.7 - Content-Type Buffer Overflow (Metasploit)",
+      "description": "SPlayer 3.7 - Content-Type Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17268.rb"
     }
   ],
   "CVE-2011-5052": [
@@ -2425,6 +2635,12 @@
       "name": "Sunway Forcecontrol SNMP NetDBServer.exe Opcode 0x57",
       "description": "This module exploits a stack based buffer overflow found in the SNMP\n          NetDBServer service of Sunway Forcecontrol <= 6.1 sp3. The overflow is\n          triggered when sending an overly long string to the listening service\n          on port 2001.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/scada/sunway_force_control_netdbsrv.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sunway ForceControl - SNMP 'NetDBServer.exe' Opcode 0x57 (Metasploit)",
+      "description": "Sunway ForceControl - SNMP 'NetDBServer.exe' Opcode 0x57 (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/18448.rb"
     }
   ],
   "CVE-2011-0517": [
@@ -2618,16 +2834,16 @@
   "CVE-2011-4062": [
     {
       "source": "exploitdb",
-      "name": "FreeBSD - UIPC socket heap Overflow (PoC)",
-      "description": "FreeBSD - UIPC socket heap Overflow (PoC)",
+      "name": "FreeBSD - UIPC socket Heap Overflow (PoC)",
+      "description": "FreeBSD - UIPC socket Heap Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/freebsd/dos/17908.sh"
     }
   ],
   "CVE-2011-3633": [
     {
       "source": "exploitdb",
-      "name": "FreeBSD - UIPC socket heap Overflow (PoC)",
-      "description": "FreeBSD - UIPC socket heap Overflow (PoC)",
+      "name": "FreeBSD - UIPC socket Heap Overflow (PoC)",
+      "description": "FreeBSD - UIPC socket Heap Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/freebsd/dos/17908.sh"
     }
   ],
@@ -3241,6 +3457,22 @@
       "name": "Apache 7.0.x mod_proxy - Reverse Proxy Security Bypass",
       "description": "Apache 7.0.x mod_proxy - Reverse Proxy Security Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/36352.txt"
+    }
+  ],
+  "CVE-2011-5331": [
+    {
+      "source": "exploitdb",
+      "name": "Distributed Ruby - Send instance_eval/syscall Code Execution (Metasploit)",
+      "description": "Distributed Ruby - Send instance_eval/syscall Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/17058.rb"
+    }
+  ],
+  "CVE-2011-5330": [
+    {
+      "source": "exploitdb",
+      "name": "Distributed Ruby - send syscall (Metasploit)",
+      "description": "Distributed Ruby - send syscall (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/17031.rb"
     }
   ],
   "CVE-2011-1930": [
@@ -4714,8 +4946,8 @@
   "CVE-2011-4713": [
     {
       "source": "exploitdb",
-      "name": "osCSS2 - '_ID' Local file Inclusion",
-      "description": "osCSS2 - '_ID' Local file Inclusion",
+      "name": "osCSS2 - '_ID' Local File Inclusion",
+      "description": "osCSS2 - '_ID' Local File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/18099.txt"
     }
   ],
@@ -5641,6 +5873,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/16235.txt"
     }
   ],
+  "CVE-2011-10033": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin Is-human 1.4.2 - Remote Command Execution",
+      "description": "WordPress Plugin Is-human 1.4.2 - Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/17299.txt"
+    }
+  ],
   "CVE-2011-4673": [
     {
       "source": "exploitdb",
@@ -6135,6 +6375,14 @@
       "name": "ImgBurn 2.4 - 'dwmapi.dll' DLL Loading Arbitrary Code Execution",
       "description": "ImgBurn 2.4 - 'dwmapi.dll' DLL Loading Arbitrary Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/35163.c"
+    }
+  ],
+  "CVE-2011-10034": [
+    {
+      "source": "exploitdb",
+      "name": "IRAI AUTOMGEN 8.0.0.7 - Use-After-Free",
+      "description": "IRAI AUTOMGEN 8.0.0.7 - Use-After-Free",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/17964.txt"
     }
   ],
   "CVE-2011-5233": [
@@ -6874,8 +7122,8 @@
   "CVE-2011-0546": [
     {
       "source": "exploitdb",
-      "name": "Symantec Backup Exec 12.5 - Man In The Middle",
-      "description": "Symantec Backup Exec 12.5 - Man In The Middle",
+      "name": "Symantec Backup Exec 12.5 - Man in the Middle",
+      "description": "Symantec Backup Exec 12.5 - Man in the Middle",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/17517.txt"
     }
   ],

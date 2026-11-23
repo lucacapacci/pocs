@@ -1578,6 +1578,12 @@
     },
     {
       "source": "exploitdb",
+      "name": "Novell Messenger Server 2.0 - 'Accept-Language' Remote Overflow (Metasploit)",
+      "description": "Novell Messenger Server 2.0 - 'Accept-Language' Remote Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/novell/remote/1679.pm"
+    },
+    {
+      "source": "exploitdb",
       "name": "Novell Messenger Server 2.0 - Accept-Language Overflow (Metasploit)",
       "description": "Novell Messenger Server 2.0 - Accept-Language Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16757.rb"
@@ -2163,6 +2169,18 @@
       "name": "UltraVNC 1.0.1 Client Buffer Overflow",
       "description": "This module exploits a buffer overflow in UltraVNC Win32\n          Viewer 1.0.1 Release.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/vnc/ultravnc_client.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Ultr@VNC 1.0.1 - 'client Log::ReallyPrint' Buffer Overflow (PoC)",
+      "description": "Ultr@VNC 1.0.1 - 'client Log::ReallyPrint' Buffer Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/1643.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Ultr@VNC 1.0.1 - VNCLog::ReallyPrint Remote Buffer Overflow (PoC)",
+      "description": "Ultr@VNC 1.0.1 - VNCLog::ReallyPrint Remote Buffer Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/1642.c"
     },
     {
       "source": "exploitdb",
@@ -3153,6 +3171,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/29197.txt"
     }
   ],
+  "CVE-2006-1541": [
+    {
+      "source": "exploitdb",
+      "name": "EzASPSite 2.0 RC3 - 'Scheme' SQL Injection",
+      "description": "EzASPSite 2.0 RC3 - 'Scheme' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/1623.pl"
+    }
+  ],
   "CVE-2006-1413": [
     {
       "source": "exploitdb",
@@ -3365,20 +3391,34 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/27932.txt"
     }
   ],
+  "CVE-2006-1620": [
+    {
+      "source": "exploitdb",
+      "name": "hosting controller 6.1 hot fix 3.3 - Multiple Vulnerabilities",
+      "description": "hosting controller 6.1 hot fix 3.3 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/4730.txt"
+    }
+  ],
+  "CVE-2006-5629": [
+    {
+      "source": "exploitdb",
+      "name": "hosting controller 6.1 hot fix 3.3 - Multiple Vulnerabilities",
+      "description": "hosting controller 6.1 hot fix 3.3 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/4730.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Hosting Controller 6.1 Hotfix 3.2 - Access",
+      "description": "Hosting Controller 6.1 Hotfix 3.2 - Access",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/2662.txt"
+    }
+  ],
   "CVE-2006-3147": [
     {
       "source": "exploitdb",
       "name": "Hosting Controller 6.1 Hotfix 3.1 - Privilege Escalation",
       "description": "Hosting Controller 6.1 Hotfix 3.1 - Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/1987.txt"
-    }
-  ],
-  "CVE-2006-5629": [
-    {
-      "source": "exploitdb",
-      "name": "Hosting Controller 6.1 Hotfix 3.2 - Access",
-      "description": "Hosting Controller 6.1 Hotfix 3.2 - Access",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/2662.txt"
     }
   ],
   "CVE-2006-6814": [
@@ -4983,6 +5023,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/1718.pl"
     }
   ],
+  "CVE-2006-4131": [
+    {
+      "source": "exploitdb",
+      "name": "PocketPC Mms Composer - 'WAPPush' Denial of Service",
+      "description": "PocketPC Mms Composer - 'WAPPush' Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/2156.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ArcSoft Mms Composer 1.5.5/2.0 - Multiple Vulnerabilities",
+      "description": "ArcSoft Mms Composer 1.5.5/2.0 - Multiple Vulnerabilities",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/28368.txt"
+    }
+  ],
+  "CVE-2006-4132": [
+    {
+      "source": "exploitdb",
+      "name": "PocketPC Mms Composer - 'WAPPush' Denial of Service",
+      "description": "PocketPC Mms Composer - 'WAPPush' Denial of Service",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/2156.c"
+    }
+  ],
   "CVE-2006-0671": [
     {
       "source": "exploitdb",
@@ -5002,8 +5064,8 @@
   "CVE-2006-2043": [
     {
       "source": "exploitdb",
-      "name": "NetAccess IP3 - (Authenticated) Ping Option Command Injection",
-      "description": "NetAccess IP3 - (Authenticated) Ping Option Command Injection",
+      "name": "NetAccess IP3 - Ping Option Command Injection (Authenticated)",
+      "description": "NetAccess IP3 - Ping Option Command Injection (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/local/9688.txt"
     }
   ],
@@ -5619,6 +5681,12 @@
       "name": "Mozilla Firefox 1.0.x - JavaScript Handler Race Condition Memory Corruption",
       "description": "Mozilla Firefox 1.0.x - JavaScript Handler Race Condition Memory Corruption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/28380.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Mozilla Firefox 1.x - XML Handler Race Condition Memory Corruption",
+      "description": "Mozilla Firefox 1.x - XML Handler Race Condition Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/28391.html"
     }
   ],
   "CVE-2006-4261": [
@@ -5806,8 +5874,8 @@
   "CVE-2006-4438": [
     {
       "source": "exploitdb",
-      "name": "Dr.Web AntiVirus 4.33 - LHA long Directory name Local Overflow",
-      "description": "Dr.Web AntiVirus 4.33 - LHA long Directory name Local Overflow",
+      "name": "Dr.Web AntiVirus 4.33 - LHA Long Directory name Local Overflow",
+      "description": "Dr.Web AntiVirus 4.33 - LHA Long Directory name Local Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/2404.c"
     }
   ],
@@ -6626,8 +6694,8 @@
   "CVE-2006-3199": [
     {
       "source": "exploitdb",
-      "name": "Opera 9 - long href Remote Denial of Service",
-      "description": "Opera 9 - long href Remote Denial of Service",
+      "name": "Opera 9 - Long href Remote Denial of Service",
+      "description": "Opera 9 - Long href Remote Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/1937.html"
     }
   ],
@@ -6851,14 +6919,6 @@
       "name": "Apache Tomcat 5 - Information Disclosure",
       "description": "Apache Tomcat 5 - Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/28254.txt"
-    }
-  ],
-  "CVE-2006-4131": [
-    {
-      "source": "exploitdb",
-      "name": "ArcSoft Mms Composer 1.5.5/2.0 - Multiple Vulnerabilities",
-      "description": "ArcSoft Mms Composer 1.5.5/2.0 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/28368.txt"
     }
   ],
   "CVE-2006-2020": [
@@ -7641,6 +7701,12 @@
       "name": "Advanced Guestbook 2.4.0 - 'phpBB' File Inclusion",
       "description": "Advanced Guestbook 2.4.0 - 'phpBB' File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/1723.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Advanced Guestbook 2.4.0 - 'phpBB' Remote File Inclusion",
+      "description": "Advanced Guestbook 2.4.0 - 'phpBB' Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/1725.pl"
     }
   ],
   "CVE-2006-4870": [
@@ -8104,6 +8170,12 @@
     }
   ],
   "CVE-2006-0944": [
+    {
+      "source": "exploitdb",
+      "name": "Archangel Weblog 0.90.02 - Local File Inclusion / Authentication Bypass",
+      "description": "Archangel Weblog 0.90.02 - Local File Inclusion / Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3859.txt"
+    },
     {
       "source": "exploitdb",
       "name": "Archangel Weblog 0.90.2 - Authentication Bypass",
@@ -10597,6 +10669,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/28573.txt"
     }
   ],
+  "CVE-2006-4837": [
+    {
+      "source": "exploitdb",
+      "name": "DCP-Portal 6.1.x - 'root' Remote File Inclusion",
+      "description": "DCP-Portal 6.1.x - 'root' Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/1905.txt"
+    }
+  ],
   "CVE-2006-5251": [
     {
       "source": "exploitdb",
@@ -11935,6 +12015,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3027.txt"
     }
   ],
+  "CVE-2006-1154": [
+    {
+      "source": "exploitdb",
+      "name": "Fantastic News 2.1.4 - Multiple Remote File Inclusions",
+      "description": "Fantastic News 2.1.4 - Multiple Remote File Inclusions",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3027.txt"
+    }
+  ],
   "CVE-2006-5637": [
     {
       "source": "exploitdb",
@@ -12199,6 +12287,12 @@
       "name": "Free File Hosting 1.1 - 'forgot_pass.php' File Inclusion",
       "description": "Free File Hosting 1.1 - 'forgot_pass.php' File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2670.php"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Free Image Hosting 2.0 - 'AD_BODY_TEMP' Remote File Inclusion",
+      "description": "Free Image Hosting 2.0 - 'AD_BODY_TEMP' Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3568.txt"
     }
   ],
   "CVE-2006-5764": [
@@ -12221,6 +12315,12 @@
       "name": "Free File Hosting System 1.1 - 'register.php?AD_BODY_TEMP' Remote File Inclusion",
       "description": "Free File Hosting System 1.1 - 'register.php?AD_BODY_TEMP' Remote File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/29774.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Free Image Hosting 2.0 - 'AD_BODY_TEMP' Remote File Inclusion",
+      "description": "Free Image Hosting 2.0 - 'AD_BODY_TEMP' Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3568.txt"
     }
   ],
   "CVE-2006-5670": [
@@ -14151,6 +14251,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2744.txt"
     }
   ],
+  "CVE-2006-6161": [
+    {
+      "source": "exploitdb",
+      "name": "Liberum Help Desk 0.97.3 - SQL Injection / File Disclosure",
+      "description": "Liberum Help Desk 0.97.3 - SQL Injection / File Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/7493.txt"
+    }
+  ],
   "CVE-2006-1808": [
     {
       "source": "exploitdb",
@@ -15129,6 +15237,12 @@
       "name": "Micro CMS 0.3.5 - 'microcms_path' Remote File Inclusion",
       "description": "Micro CMS 0.3.5 - 'microcms_path' Remote File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/1929.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Micro CMS 3.5 - SQL Injection / Local File Inclusion",
+      "description": "Micro CMS 3.5 - SQL Injection / Local File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9699.txt"
     }
   ],
   "CVE-2006-0234": [
@@ -17595,6 +17709,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/3524.txt"
     }
   ],
+  "CVE-2006-3598": [
+    {
+      "source": "exploitdb",
+      "name": "PHP-Nuke Module Sections - 'artid' SQL Injection",
+      "description": "PHP-Nuke Module Sections - 'artid' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/5154.txt"
+    }
+  ],
   "CVE-2006-4563": [
     {
       "source": "exploitdb",
@@ -17633,6 +17755,14 @@
       "name": "PHP-Post 1.0 - Cookie Modification Privilege Escalation",
       "description": "PHP-Post 1.0 - Cookie Modification Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2036.txt"
+    }
+  ],
+  "CVE-2006-4878": [
+    {
+      "source": "exploitdb",
+      "name": "PHP-Post 1.01 - 'template' Remote Code Execution",
+      "description": "PHP-Post 1.01 - 'template' Remote Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2593.php"
     }
   ],
   "CVE-2006-4881": [
@@ -22579,6 +22709,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/27298.txt"
     }
   ],
+  "CVE-2006-5905": [
+    {
+      "source": "exploitdb",
+      "name": "Web Directory PRO - Remote Database Backup",
+      "description": "Web Directory PRO - Remote Database Backup",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8878.txt"
+    }
+  ],
   "CVE-2006-4746": [
     {
       "source": "exploitdb",
@@ -24172,8 +24310,8 @@
   "CVE-2006-3899": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Internet Explorer 6 - String To Binary Function Denial of Service",
-      "description": "Microsoft Internet Explorer 6 - String To Binary Function Denial of Service",
+      "name": "Microsoft Internet Explorer 6 - String to Binary Function Denial of Service",
+      "description": "Microsoft Internet Explorer 6 - String to Binary Function Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/28252.txt"
     }
   ],
@@ -25656,8 +25794,8 @@
   "CVE-2006-3280": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Internet Explorer 5.0.1 - OuterHTML redirection Handling Information Disclosure",
-      "description": "Microsoft Internet Explorer 5.0.1 - OuterHTML redirection Handling Information Disclosure",
+      "name": "Microsoft Internet Explorer 5.0.1 - OuterHTML Redirection Handling Information Disclosure",
+      "description": "Microsoft Internet Explorer 5.0.1 - OuterHTML Redirection Handling Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/28118.html"
     }
   ],

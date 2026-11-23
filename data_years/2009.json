@@ -19,6 +19,12 @@
       "name": "ContentKeeper Web Appliance mimencode File Access",
       "description": "This module abuses the 'mimencode' binary present within\n        ContentKeeper Web filtering appliances to retrieve arbitrary\n        files outside of the webroot.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/admin/http/contentkeeper_fileaccess.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ContentKeeper Web - Remote Command Execution (Metasploit)",
+      "description": "ContentKeeper Web - Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/16923.rb"
     }
   ],
   "CVE-2009-2367": [
@@ -320,8 +326,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
-      "description": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
+      "name": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
+      "description": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16317.rb"
     }
   ],
@@ -346,8 +352,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
-      "description": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
+      "name": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
+      "description": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16317.rb"
     }
   ],
@@ -372,8 +378,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
-      "description": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
+      "name": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
+      "description": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16317.rb"
     },
     {
@@ -404,14 +410,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
-      "description": "Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit)",
+      "name": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
+      "description": "Apache Tomcat Manager - Application Deployer Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16317.rb"
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat Manager - Application Upload (Authenticated) Code Execution (Metasploit)",
-      "description": "Apache Tomcat Manager - Application Upload (Authenticated) Code Execution (Metasploit)",
+      "name": "Apache Tomcat Manager - Application Upload Code Execution (Authenticated) (Metasploit)",
+      "description": "Apache Tomcat Manager - Application Upload Code Execution (Authenticated) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/31433.rb"
     }
   ],
@@ -710,6 +716,12 @@
     },
     {
       "source": "exploitdb",
+      "name": "Mozilla Firefox 3.5 - 'Font tags' Remote HeapSpray (1)",
+      "description": "Mozilla Firefox 3.5 - 'Font tags' Remote HeapSpray (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/9181.py"
+    },
+    {
+      "source": "exploitdb",
       "name": "Mozilla Firefox 3.5 - 'Font tags' Remote HeapSpray (2)",
       "description": "Mozilla Firefox 3.5 - 'Font tags' Remote HeapSpray (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/9214.pl"
@@ -865,6 +877,18 @@
       "name": "UFO: Alien Invasion IRC Client Buffer Overflow",
       "description": "This module exploits a buffer overflow in the IRC client component of\n          UFO: Alien Invasion 2.2.1.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/ufo_ai.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "UFO: Alien Invasion IRC Client (OSX) - Remote Buffer Overflow (Metasploit)",
+      "description": "UFO: Alien Invasion IRC Client (OSX) - Remote Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/osx/remote/16864.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "UFO: Alien Invasion 2.2.1 - Arbitrary Code Execution",
+      "description": "UFO: Alien Invasion 2.2.1 - Arbitrary Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/14013.txt"
     }
   ],
   "CVE-2009-20011": [
@@ -901,6 +925,12 @@
       "name": "Dogfood CRM spell.php Remote Command Execution",
       "description": "This module exploits a previously unpublished vulnerability in the\n          Dogfood CRM mail function which is vulnerable to command injection\n          in the spell check feature.  Because of character restrictions, this\n          exploit works best with the double-reverse telnet payload. This\n          vulnerability was discovered by LSO and affects v2.0.10.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/dogfood_spell_exec.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Dogfood CRM - 'spell.php' Remote Command Execution (Metasploit)",
+      "description": "Dogfood CRM - 'spell.php' Remote Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/16917.rb"
     }
   ],
   "CVE-2009-2288": [
@@ -999,6 +1029,18 @@
       "name": "osCommerce 2.2 Arbitrary PHP Code Execution",
       "description": "osCommerce is a popular open source E-Commerce application.\n          The admin console contains a file management utility that\n          allows administrators to upload, download, and edit files.\n          This could be abused to allow unauthenticated attackers to\n          execute arbitrary code with the permissions of the\n          webserver.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/unix/webapp/oscommerce_filemanager.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "osCommerce 2.2 - Arbitrary PHP Code Execution (Metasploit)",
+      "description": "osCommerce 2.2 - Arbitrary PHP Code Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/16899.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "osCommerce Online Merchant 2.2 RC2a - Code Execution",
+      "description": "osCommerce Online Merchant 2.2 RC2a - Code Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9556.php"
     }
   ],
   "CVE-2009-1151": [
@@ -1323,6 +1365,18 @@
       "name": "Green Dam URL Processing Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in Green Dam Youth Escort\n          version 3.17 in the way it handles overly long URLs.\n          By setting an overly long URL, an attacker can overrun a buffer and execute\n          arbitrary code. This module uses the .NET DLL memory technique by Alexander\n          Sotirov and Mark Dowd and should bypass DEP, NX and ASLR.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/browser/greendam_url.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Green Dam 3.17 (Windows XP SP2) - 'URL' Remote Buffer Overflow",
+      "description": "Green Dam 3.17 (Windows XP SP2) - 'URL' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/8938.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Green Dam 3.17 - URL Processing Buffer Overflow (Metasploit)",
+      "description": "Green Dam 3.17 - URL Processing Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/8969.rb"
     }
   ],
   "CVE-2009-0215": [
@@ -1488,8 +1542,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "HP LoadRunner 9.5 - Remote file creation (PoC)",
-      "description": "HP LoadRunner 9.5 - Remote file creation (PoC)",
+      "name": "HP LoadRunner 9.5 - Remote File Creation (PoC)",
+      "description": "HP LoadRunner 9.5 - Remote File Creation (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/9806.html"
     },
     {
@@ -1869,6 +1923,24 @@
       "name": "gAlan 0.2.1 Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in gAlan 0.2.1\n          by creating a specially crafted galan file.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/galan_fileformat_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "gAlan - '.galan' Universal Buffer Overflow",
+      "description": "gAlan - '.galan' Universal Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/10345.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "gAlan 0.2.1 - Local Buffer Overflow (1)",
+      "description": "gAlan 0.2.1 - Local Buffer Overflow (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/10339.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "gAlan 0.2.1 - Local Buffer Overflow (Metasploit) (2)",
+      "description": "gAlan 0.2.1 - Local Buffer Overflow (Metasploit) (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/16664.rb"
     }
   ],
   "CVE-2009-0133": [
@@ -2005,6 +2077,18 @@
       "name": "Millenium MP3 Studio 2.0 (PLS File) Stack Buffer Overflow",
       "description": "This module exploits a stack-based buffer overflow in Millenium MP3 Studio 2.0.\n          An attacker must send the file to victim and the victim must open the file.\n          Alternatively it may be possible to execute code remotely via an embedded\n          PLS file within a browser, when the PLS extension is registered to Millenium MP3 Studio.\n          This functionality has not been tested in this module.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/millenium_mp3_pls.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Millenium MP3 Studio - '.pls' / '.mpf' / '.m3u' Universal Local Buffer Overflow (SEH)",
+      "description": "Millenium MP3 Studio - '.pls' / '.mpf' / '.m3u' Universal Local Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/9618.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Millenium MP3 Studio 2.0 - 'pls' Local Buffer Overflow",
+      "description": "Millenium MP3 Studio 2.0 - 'pls' Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/10240.py"
     }
   ],
   "CVE-2009-3129": [
@@ -2219,6 +2303,18 @@
       "name": "Xenorate 2.50 (.xpl) Universal Local Buffer Overflow (SEH)",
       "description": "This module exploits a stack buffer overflow in Xenorate 2.50\n          by creating a specially crafted xpl file.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/xenorate_xpl_bof.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Xenorate 2.50 - '.xpl' Universal Local Buffer Overflow (SEH) (1)",
+      "description": "Xenorate 2.50 - '.xpl' Universal Local Buffer Overflow (SEH) (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/10371.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Xenorate 2.50 - '.xpl' Universal Local Buffer Overflow (SEH) (Metasploit)",
+      "description": "Xenorate 2.50 - '.xpl' Universal Local Buffer Overflow (SEH) (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/10373.rb"
     }
   ],
   "CVE-2009-1675": [
@@ -2333,6 +2429,12 @@
       "name": "Belkin Bulldog Plus Web Service Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Belkin Bulldog Plus\n          4.0.2 build 1219. When sending a specially crafted http request,\n          an attacker may be able to execute arbitrary code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/belkin_bulldog.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Belkin BullDog Plus - UPS-Service Buffer Overflow",
+      "description": "Belkin BullDog Plus - UPS-Service Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/8173.txt"
     }
   ],
   "CVE-2009-2265": [
@@ -2503,6 +2605,12 @@
       "name": "InterSystems Cache UtilConfigHome.csp Argument Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in InterSystems Cache 2009.1.\n          By sending a specially crafted GET request, an attacker may be able to execute\n          arbitrary code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/http/intersystems_cache.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "InterSystems Cache - UtilConfigHome.csp Argument Buffer Overflow (Metasploit)",
+      "description": "InterSystems Cache - UtilConfigHome.csp Argument Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16807.rb"
     }
   ],
   "CVE-2009-4006": [
@@ -2741,6 +2849,18 @@
       "name": "Talkative IRC v0.4.4.16 Response Buffer Overflow",
       "description": "This module exploits a stack buffer overflow in Talkative IRC v0.4.4.16.\n          When a specially crafted response string is sent to a client,\n          an attacker may be able to execute arbitrary code.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/misc/talkative_response.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Talkative IRC 0.4.4.16 - Remote Stack Overflow (SEH)",
+      "description": "Talkative IRC 0.4.4.16 - Remote Stack Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/8227.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Talkative IRC 0.4.4.16 - Response Buffer Overflow (Metasploit)",
+      "description": "Talkative IRC 0.4.4.16 - Response Buffer Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16459.rb"
     }
   ],
   "CVE-2009-1979": [
@@ -2803,6 +2923,20 @@
       "name": "SafeNet SoftRemote - IKE Service Buffer Overflow (Metasploit)",
       "description": "SafeNet SoftRemote - IKE Service Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16831.rb"
+    }
+  ],
+  "CVE-2009-1786": [
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 5.3 - 'libc' MALLOCDEBUG File Overwrite",
+      "description": "IBM AIX 5.3 - 'libc' MALLOCDEBUG File Overwrite",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/9306.sh"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Kingsoft Webshield 1.1.0.62 - Cross-Site Scripting / Remote Command Execution",
+      "description": "Kingsoft Webshield 1.1.0.62 - Cross-Site Scripting / Remote Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33001.txt"
     }
   ],
   "CVE-2009-2669": [
@@ -3500,8 +3634,8 @@
   "CVE-2009-1088": [
     {
       "source": "exploitdb",
-      "name": "Hannon Hill Cascade Server - (Authenticated) Command Execution",
-      "description": "Hannon Hill Cascade Server - (Authenticated) Command Execution",
+      "name": "Hannon Hill Cascade Server - Command Execution (Authenticated)",
+      "description": "Hannon Hill Cascade Server - Command Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/8247.txt"
     }
   ],
@@ -3618,8 +3752,8 @@
   "CVE-2009-3271": [
     {
       "source": "exploitdb",
-      "name": "Apple Safari IPhone - using tel: Remote Crash",
-      "description": "Apple Safari IPhone - using tel: Remote Crash",
+      "name": "Apple Safari IPhone - Using tel: Remote Crash",
+      "description": "Apple Safari IPhone - Using tel: Remote Crash",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/9666.php"
     }
   ],
@@ -4602,8 +4736,8 @@
   "CVE-2009-3242": [
     {
       "source": "exploitdb",
-      "name": "Wireshark 1.2.1 - GSM A RR Dissector packet.c Remote Denial of Service",
-      "description": "Wireshark 1.2.1 - GSM A RR Dissector packet.c Remote Denial of Service",
+      "name": "Wireshark 1.2.1 - GSM a RR Dissector packet.c Remote Denial of Service",
+      "description": "Wireshark 1.2.1 - GSM a RR Dissector packet.c Remote Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/33224.txt"
     }
   ],
@@ -4997,6 +5131,12 @@
       "name": "WebKit - XML External Entity Information Disclosure",
       "description": "WebKit - XML External Entity Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/33034.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Apple Safari 3.2.x - XML External Entity Local File Theft",
+      "description": "Apple Safari 3.2.x - XML External Entity Local File Theft",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/8907.txt"
     }
   ],
   "CVE-2009-0367": [
@@ -5122,8 +5262,8 @@
   "CVE-2009-1827": [
     {
       "source": "exploitdb",
-      "name": "Mozilla Firefox - unclamped loop Denial of Service",
-      "description": "Mozilla Firefox - unclamped loop Denial of Service",
+      "name": "Mozilla Firefox - unclamped Loop Denial of Service",
+      "description": "Mozilla Firefox - unclamped Loop Denial of Service",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/8794.html"
     }
   ],
@@ -5149,6 +5289,12 @@
       "name": "Mozilla Firefox 3.0.6 - BODY onload Remote Crash",
       "description": "Mozilla Firefox 3.0.6 - BODY onload Remote Crash",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/8091.html"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Mozilla Firefox 3.0.7 - OnbeforeUnLoad DesignMode Dereference Crash",
+      "description": "Mozilla Firefox 3.0.7 - OnbeforeUnLoad DesignMode Dereference Crash",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/8219.html"
     }
   ],
   "CVE-2009-1169": [
@@ -5328,8 +5474,8 @@
   "CVE-2009-0981": [
     {
       "source": "exploitdb",
-      "name": "Oracle APEX 3.2 - Unprivileged DB users can see APEX Password hashes",
-      "description": "Oracle APEX 3.2 - Unprivileged DB users can see APEX Password hashes",
+      "name": "Oracle APEX 3.2 - Unprivileged DB Users Can see APEX Password hashes",
+      "description": "Oracle APEX 3.2 - Unprivileged DB Users Can see APEX Password hashes",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/8456.txt"
     }
   ],
@@ -5444,8 +5590,8 @@
   "CVE-2009-2275": [
     {
       "source": "exploitdb",
-      "name": "cPanel - (Authenticated) 'lastvisit.html Domain' Arbitrary File Disclosure",
-      "description": "cPanel - (Authenticated) 'lastvisit.html Domain' Arbitrary File Disclosure",
+      "name": "cPanel - 'lastvisit.html Domain' Arbitrary File Disclosure (Authenticated)",
+      "description": "cPanel - 'lastvisit.html Domain' Arbitrary File Disclosure (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/9039.txt"
     }
   ],
@@ -7573,6 +7719,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9069.txt"
     }
   ],
+  "CVE-2009-4887": [
+    {
+      "source": "exploitdb",
+      "name": "cms s.builder 3.7 - Remote File Inclusion",
+      "description": "cms s.builder 3.7 - Remote File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8172.txt"
+    }
+  ],
   "CVE-2009-4892": [
     {
       "source": "exploitdb",
@@ -7691,6 +7845,14 @@
       "name": "Creasito E-Commerce 1.3.16 - Authentication Bypass",
       "description": "Creasito E-Commerce 1.3.16 - Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8497.txt"
+    }
+  ],
+  "CVE-2009-4891": [
+    {
+      "source": "exploitdb",
+      "name": "CS-Cart 2.0.0 Beta 3 - 'Product_ID' SQL Injection",
+      "description": "CS-Cart 2.0.0 Beta 3 - 'Product_ID' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8184.txt"
     }
   ],
   "CVE-2009-2579": [
@@ -8154,6 +8316,12 @@
   "CVE-2009-0445": [
     {
       "source": "exploitdb",
+      "name": "DreamPics Builder - 'exhibition_id' SQL Injection",
+      "description": "DreamPics Builder - 'exhibition_id' SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9451.txt"
+    },
+    {
+      "source": "exploitdb",
       "name": "DreamPics Photo/Video Gallery - Blind SQL Injection",
       "description": "DreamPics Photo/Video Gallery - Blind SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/7968.php"
@@ -8232,8 +8400,8 @@
   "CVE-2009-3444": [
     {
       "source": "exploitdb",
-      "name": "e107 0.7.16 - Referer header Cross-Site Scripting",
-      "description": "e107 0.7.16 - Referer header Cross-Site Scripting",
+      "name": "e107 0.7.16 - Referer Header Cross-Site Scripting",
+      "description": "e107 0.7.16 - Referer Header Cross-Site Scripting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9825.txt"
     }
   ],
@@ -9234,16 +9402,16 @@
   "CVE-2009-1278": [
     {
       "source": "exploitdb",
-      "name": "Gravity Board X 2.0 Beta - SQL Injection / (Authenticated) Code Execution",
-      "description": "Gravity Board X 2.0 Beta - SQL Injection / (Authenticated) Code Execution",
+      "name": "Gravity Board X 2.0 Beta - SQL Injection / Code Execution (Authenticated)",
+      "description": "Gravity Board X 2.0 Beta - SQL Injection / Code Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8350.txt"
     }
   ],
   "CVE-2009-1277": [
     {
       "source": "exploitdb",
-      "name": "Gravity Board X 2.0 Beta - SQL Injection / (Authenticated) Code Execution",
-      "description": "Gravity Board X 2.0 Beta - SQL Injection / (Authenticated) Code Execution",
+      "name": "Gravity Board X 2.0 Beta - SQL Injection / Code Execution (Authenticated)",
+      "description": "Gravity Board X 2.0 Beta - SQL Injection / Code Execution (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8350.txt"
     },
     {
@@ -9366,8 +9534,8 @@
   "CVE-2009-0932": [
     {
       "source": "exploitdb",
-      "name": "Horde - Horde_Image::factory driver Argument Local File Inclusion",
-      "description": "Horde - Horde_Image::factory driver Argument Local File Inclusion",
+      "name": "Horde - Horde_Image::factory Driver Argument Local File Inclusion",
+      "description": "Horde - Horde_Image::factory Driver Argument Local File Inclusion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/16154.txt"
     },
     {
@@ -9601,6 +9769,14 @@
       "name": "Interspire Knowledge Manager 5 - 'p' Directory Traversal",
       "description": "Interspire Knowledge Manager 5 - 'p' Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33262.txt"
+    }
+  ],
+  "CVE-2009-5159": [
+    {
+      "source": "exploitdb",
+      "name": "Invision Power Board (IP.Board) 3.0.3 - '.txt' MIME-Type Cross-Site Scripting",
+      "description": "Invision Power Board (IP.Board) 3.0.3 - '.txt' MIME-Type Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33394.txt"
     }
   ],
   "CVE-2009-4982": [
@@ -10473,6 +10649,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8968.txt"
     }
   ],
+  "CVE-2009-4938": [
+    {
+      "source": "exploitdb",
+      "name": "Joomla! Component JVideo 0.3.x - SQL Injection",
+      "description": "Joomla! Component JVideo 0.3.x - SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8821.txt"
+    }
+  ],
   "CVE-2009-4550": [
     {
       "source": "exploitdb",
@@ -10755,14 +10939,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9566.txt"
     }
   ],
-  "CVE-2009-1786": [
-    {
-      "source": "exploitdb",
-      "name": "Kingsoft Webshield 1.1.0.62 - Cross-Site Scripting / Remote Command Execution",
-      "description": "Kingsoft Webshield 1.1.0.62 - Cross-Site Scripting / Remote Command Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33001.txt"
-    }
-  ],
   "CVE-2009-0767": [
     {
       "source": "exploitdb",
@@ -10856,6 +11032,14 @@
     }
   ],
   "CVE-2009-4961": [
+    {
+      "source": "exploitdb",
+      "name": "Lanai Core 0.6 - Remote File Disclosure / Info Disclosure",
+      "description": "Lanai Core 0.6 - Remote File Disclosure / Info Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9490.txt"
+    }
+  ],
+  "CVE-2009-4960": [
     {
       "source": "exploitdb",
       "name": "Lanai Core 0.6 - Remote File Disclosure / Info Disclosure",
@@ -14583,6 +14767,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8819.txt"
     }
   ],
+  "CVE-2009-4937": [
+    {
+      "source": "exploitdb",
+      "name": "small pirate 2.1 - Cross-Site Scripting / SQL Injection",
+      "description": "small pirate 2.1 - Cross-Site Scripting / SQL Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/8819.txt"
+    }
+  ],
   "CVE-2009-4359": [
     {
       "source": "exploitdb",
@@ -15730,8 +15922,8 @@
   "CVE-2009-3787": [
     {
       "source": "exploitdb",
-      "name": "Vivvo CMS 4.1.5.1 - file Disclosure",
-      "description": "Vivvo CMS 4.1.5.1 - file Disclosure",
+      "name": "Vivvo CMS 4.1.5.1 - File Disclosure",
+      "description": "Vivvo CMS 4.1.5.1 - File Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9979.txt"
     }
   ],
@@ -16407,6 +16599,12 @@
       "name": "XOOPS Celepar Module Qas - 'codigo' SQL Injection",
       "description": "XOOPS Celepar Module Qas - 'codigo' SQL Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9249.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "XOOPS Celepar Module Qas - Blind SQL Injection / Cross-Site Scripting",
+      "description": "XOOPS Celepar Module Qas - Blind SQL Injection / Cross-Site Scripting",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/9261.txt"
     }
   ],
   "CVE-2009-4698": [
@@ -16853,6 +17051,12 @@
       "name": "Easy RM to MP3 Converter - Universal Stack Overflow",
       "description": "Easy RM to MP3 Converter - Universal Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/8427.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Shadow Stream Recorder - '.m3u' Universal Stack Overflow",
+      "description": "Shadow Stream Recorder - '.m3u' Universal Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/8426.pl"
     }
   ],
   "CVE-2009-1328": [
@@ -17081,6 +17285,12 @@
       "name": "ASX to MP3 Converter 3.0.0.100 - Local Stack Overflow",
       "description": "ASX to MP3 Converter 3.0.0.100 - Local Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/11958.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "ASX to MP3 converter < 3.1.3.7 - '.asx' Local Stack Overflow (DEP Bypass)",
+      "description": "ASX to MP3 converter < 3.1.3.7 - '.asx' Local Stack Overflow (DEP Bypass)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/42963.py"
     },
     {
       "source": "exploitdb",
@@ -17398,8 +17608,8 @@
   "CVE-2009-3545": [
     {
       "source": "exploitdb",
-      "name": "FtpXQ FTP Server 3.0 - (Authenticated) Remote Denial of Service",
-      "description": "FtpXQ FTP Server 3.0 - (Authenticated) Remote Denial of Service",
+      "name": "FtpXQ FTP Server 3.0 - Remote Denial of Service (Authenticated)",
+      "description": "FtpXQ FTP Server 3.0 - Remote Denial of Service (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/9664.py"
     }
   ],
@@ -17433,6 +17643,14 @@
       "name": "Gretech GOM Encoder 1.0.0.11 - '.Subtitle' Buffer Overflow (PoC)",
       "description": "Gretech GOM Encoder 1.0.0.11 - '.Subtitle' Buffer Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/8225.py"
+    }
+  ],
+  "CVE-2009-4931": [
+    {
+      "source": "exploitdb",
+      "name": "Groovy Media Player 1.1.0 - '.m3u' Local Stack Overflow (PoC)",
+      "description": "Groovy Media Player 1.1.0 - '.m3u' Local Stack Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/8485.pl"
     }
   ],
   "CVE-2009-2550": [
@@ -17974,8 +18192,8 @@
   "CVE-2009-0967": [
     {
       "source": "exploitdb",
-      "name": "RhinoSoft Serv-U FTP Server 7.4.0.1 - 'SMNT' (Authenticated) Denial of Service",
-      "description": "RhinoSoft Serv-U FTP Server 7.4.0.1 - 'SMNT' (Authenticated) Denial of Service",
+      "name": "RhinoSoft Serv-U FTP Server 7.4.0.1 - 'SMNT' Denial of Service (Authenticated)",
+      "description": "RhinoSoft Serv-U FTP Server 7.4.0.1 - 'SMNT' Denial of Service (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/8212.pl"
     }
   ],
@@ -18803,6 +19021,12 @@
       "name": "Mercury Audio Player 1.21 - '.b4s' Local Stack Overflow",
       "description": "Mercury Audio Player 1.21 - '.b4s' Local Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/8580.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Mercury Audio Player 1.21 - '.pls' Overwrite (SEH)",
+      "description": "Mercury Audio Player 1.21 - '.pls' Overwrite (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/8582.py"
     }
   ],
   "CVE-2009-0080": [
@@ -18885,6 +19109,12 @@
       "name": "MP3-Nator 2.0 - '.plf' Universal Buffer Overflow (SEH)",
       "description": "MP3-Nator 2.0 - '.plf' Universal Buffer Overflow (SEH)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/9060.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Mp3-Nator 2.0 - 'ListData.dat' Universal Buffer Overflow (SEH)",
+      "description": "Mp3-Nator 2.0 - 'ListData.dat' Universal Buffer Overflow (SEH)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/9136.pl"
     },
     {
       "source": "exploitdb",
@@ -19082,16 +19312,16 @@
   "CVE-2009-1873": [
     {
       "source": "exploitdb",
-      "name": "Adobe JRun 4 - 'logfile' (Authenticated) Directory Traversal",
-      "description": "Adobe JRun 4 - 'logfile' (Authenticated) Directory Traversal",
+      "name": "Adobe JRun 4 - 'logfile' Directory Traversal (Authenticated)",
+      "description": "Adobe JRun 4 - 'logfile' Directory Traversal (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/9443.txt"
     }
   ],
   "CVE-2009-3658": [
     {
       "source": "exploitdb",
-      "name": "AOL 9.1 SuperBuddy - ActiveX Control Remote code Execution",
-      "description": "AOL 9.1 SuperBuddy - ActiveX Control Remote code Execution",
+      "name": "AOL 9.1 SuperBuddy - ActiveX Control Remote Code Execution",
+      "description": "AOL 9.1 SuperBuddy - ActiveX Control Remote Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/9992.txt"
     }
   ],
@@ -19282,8 +19512,8 @@
   "CVE-2009-3518": [
     {
       "source": "exploitdb",
-      "name": "IBM Installation Manager 1.3.0 - 'iim://' URI handler",
-      "description": "IBM Installation Manager 1.3.0 - 'iim://' URI handler",
+      "name": "IBM Installation Manager 1.3.0 - 'iim://' URI Handler",
+      "description": "IBM Installation Manager 1.3.0 - 'iim://' URI Handler",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/9802.html"
     }
   ],
@@ -19640,8 +19870,8 @@
   "CVE-2009-0351": [
     {
       "source": "exploitdb",
-      "name": "WinFTP Server 2.3.0 - 'LIST' (Authenticated) Remote Buffer Overflow",
-      "description": "WinFTP Server 2.3.0 - 'LIST' (Authenticated) Remote Buffer Overflow",
+      "name": "WinFTP Server 2.3.0 - 'LIST' Remote Buffer Overflow (Authenticated)",
+      "description": "WinFTP Server 2.3.0 - 'LIST' Remote Buffer Overflow (Authenticated)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/7875.pl"
     }
   ],
