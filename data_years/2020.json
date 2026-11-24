@@ -273,6 +273,12 @@
       "name": "Saltstack 3000.1 - Remote Code Execution (RCE)",
       "description": "Saltstack 3000.1 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/48421.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "SaltStack Salt < 2019.2.4/3000.2 - Directory Traversal Arbitrary File Read",
+      "description": "SaltStack Salt before 2019.2.4 and 3000 before 3000.2 does not confine the path passed to wheel.file_roots.read to configured file_roots. An absolute path can therefore read a file elsewhere on the salt-master. Combined with CVE-2020-11651, which discloses the master root key to unauthenticated clients on TCP 4506, this permits an unauthenticated arbitrary file read.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2020/CVE-2020-11652.yaml"
     }
   ],
   "CVE-2020-12720": [
@@ -1972,20 +1978,20 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (1)",
-      "description": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (1)",
+      "name": "Solaris SunSSH 11.0 x86 - libpam Remote Root (1)",
+      "description": "Solaris SunSSH 11.0 x86 - libpam Remote Root (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/49261.c"
     },
     {
       "source": "exploitdb",
-      "name": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (2)",
-      "description": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (2)",
+      "name": "Solaris SunSSH 11.0 x86 - libpam Remote Root (2)",
+      "description": "Solaris SunSSH 11.0 x86 - libpam Remote Root (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/49896.py"
     },
     {
       "source": "exploitdb",
-      "name": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (3)",
-      "description": "Solaris SunSSH 11.0 (x86) - libpam Remote Root (3)",
+      "name": "Solaris SunSSH 11.0 x86 - libpam Remote Root (3)",
+      "description": "Solaris SunSSH 11.0 x86 - libpam Remote Root (3)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/50039.py"
     }
   ],
@@ -4404,8 +4410,8 @@
   "CVE-2020-29238": [
     {
       "source": "exploitdb",
-      "name": "ExpressVPN VPN Router 1.0 - Login Panel's Integer Overflow",
-      "description": "ExpressVPN VPN Router 1.0 - Login Panel's Integer Overflow",
+      "name": "ExpressVPN VPN Router 1.0 - Router Login Panel's Integer Overflow",
+      "description": "ExpressVPN VPN Router 1.0 - Router Login Panel's Integer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/49760.txt"
     }
   ],
@@ -8478,8 +8484,8 @@
   "CVE-2020-37070": [
     {
       "source": "exploitdb",
-      "name": "CloudMe 1.11.2 - SEH Buffer Overflow + DEP/ASLR Bypass",
-      "description": "CloudMe 1.11.2 - SEH Buffer Overflow + DEP/ASLR Bypass",
+      "name": "CloudMe 1.11.2 - Buffer Overflow (SEH_DEP_ASLR)",
+      "description": "CloudMe 1.11.2 - Buffer Overflow (SEH_DEP_ASLR)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/48499.txt"
     }
   ],
@@ -8822,15 +8828,15 @@
   "CVE-2020-0674": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Internet Explorer 11 (32-bit) - Use-After-Free (UAF)",
-      "description": "Microsoft Internet Explorer 11 (32-bit) - Use-After-Free (UAF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/49541.html"
-    },
-    {
-      "source": "exploitdb",
       "name": "Microsoft Internet Explorer 11 - Use-After-Free (UAF)",
       "description": "Microsoft Internet Explorer 11 - Use-After-Free (UAF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/49062.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Internet Explorer 11 32-bit - Use-After-Free (UAF)",
+      "description": "Microsoft Internet Explorer 11 32-bit - Use-After-Free (UAF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/49541.html"
     },
     {
       "source": "exploitdb",

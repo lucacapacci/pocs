@@ -1522,8 +1522,8 @@
   "CVE-2026-86060": [
     {
       "source": "exploitdb",
-      "name": "MikroTik RouterOS 6.0.0/6.49.21/7.0.0/7.23.4/7.24/7.24.2 - Remote Code Execution (RCE)",
-      "description": "MikroTik RouterOS 6.0.0/6.49.21/7.0.0/7.23.4/7.24/7.24.2 - Remote Code Execution (RCE)",
+      "name": "MikroTrick_ 7.24_ 7.24.2_ 7.0.0_ 7.23.4_ 6.0.0_ 6.49.21 - Remote Code Execution (RCE)",
+      "description": "MikroTrick_ 7.24_ 7.24.2_ 7.0.0_ 7.23.4_ 6.0.0_ 6.49.21 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52683.py"
     }
   ],
@@ -2489,6 +2489,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-103956.yaml"
     }
   ],
+  "CVE-2026-104129": [
+    {
+      "source": "nuclei",
+      "name": "pREST 2.3.0 - SQL Injection via _groupby",
+      "description": "pREST 2.3.0 contains a SQL injection vulnerability in the _groupby query parameter of the table select endpoint. GroupByClause in adapters/postgres/postgres.go treats any _groupby field that contains parentheses as a raw SQL expression and only checks it with isSafeSQLExpression. This check validates the outer function name against a small allowlist but accepts nested subqueries, inner function calls and trailing UNION syntax, and the expression is concatenated into the GROUP BY clause. The advisory lists versions up to and including 2.3.0, but the function expression branch was added in 2.3.0 and earlier releases accept only quoted identifiers in _groupby. Authentication is disabled in the default configuration, so default deployments are exposed without credentials. This is an incomplete fix of CVE-2025-58450.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-104129.yaml"
+    }
+  ],
   "CVE-2026-104476": [
     {
       "source": "nuclei",
@@ -3063,6 +3071,14 @@
       "name": "Munin munin-httpd 2.99.1-2.999.18 - Unauthenticated Path Traversal",
       "description": "Munin munin-httpd 2.99.1 through 2.999.18 contains a path traversal caused by improper '/../' substring check in static file handler Munin::Master::HTML::handle_request, letting unauthenticated attackers read files outside the static directory.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-125357.yaml"
+    }
+  ],
+  "CVE-2026-125444": [
+    {
+      "source": "nuclei",
+      "name": "King Addons for Elementor <= 51.1.87 - Unauthenticated Arbitrary Widget Rendering via Faceted Filters AJAX",
+      "description": "King Addons for Elementor through 51.1.87 registers the Faceted Filters AJAX handler for unauthenticated callers and checks only a public nonce. The handler accepts a caller-selected Elementor document and widget without checking publication status or permissions, allowing rendered widgets from unpublished or private documents to be returned.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-125444.yaml"
     }
   ],
   "CVE-2026-12583": [
@@ -3879,6 +3895,14 @@
       "name": "OpenEMR < 8.0.0 - MedEx Callback Unauthenticated Token Disclosure",
       "description": "OpenEMR < 8.0.0 contains an unauthenticated token disclosure caused by bypassing authentication in the MedEx callback endpoint, letting unauthenticated visitors obtain MedEx API tokens and perform unauthorized actions, exploit requires crafted POST request with callback_key.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24898.yaml"
+    }
+  ],
+  "CVE-2026-25123": [
+    {
+      "source": "nuclei",
+      "name": "Homarr <= 1.51.0 - Unauthenticated Server-Side Request Forgery",
+      "description": "Homarr through 1.51.0 exposes widget.app.ping as a public tRPC procedure that fetches an attacker-supplied URL and returns the result. An unauthenticated caller can make the server contact loopback or internal addresses and distinguish reachable ports.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25123.yaml"
     }
   ],
   "CVE-2026-25231": [
@@ -4705,6 +4729,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35616.yaml"
     }
   ],
+  "CVE-2026-35672": [
+    {
+      "source": "nuclei",
+      "name": "phpMyFAQ <= 4.1.2 - Authentication Bypass via Empty API Token",
+      "description": "phpMyFAQ 4.0.0 through 4.1.2 seeds the api.apiClientToken setting with an empty string during installation. The REST API checks the x-pmf-token header with a strict comparison against this setting, so a request that sends the header with an empty value passes the token check on the category, FAQ and question write endpoints.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35672.yaml"
+    }
+  ],
   "CVE-2026-3584": [
     {
       "source": "nuclei",
@@ -4943,6 +4975,14 @@
       "name": "RClone RC - Command Injection",
       "description": "Rclone >= 1.48.0 and < 1.73.5 contains an unauthenticated local command execution caused by unauthenticated access to the RC endpoint operations/fsinfo with attacker-controlled fs input, letting unauthenticated attackers execute local commands, exploit requires reachable RC deployment without global HTTP authentication.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41179.yaml"
+    }
+  ],
+  "CVE-2026-41327": [
+    {
+      "source": "nuclei",
+      "name": "Dgraph < 25.3.3 / < 24.1.8 - DQL Injection",
+      "description": "Dgraph v25 before 25.3.3 and v24 before 24.1.8 concatenate the cond field of upsert mutations sent to /mutate into generated DQL without structural validation. When ACL is disabled, as in the default configuration, an unauthenticated attacker can append a query block and read database content through the mutation response.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-41327.yaml"
     }
   ],
   "CVE-2026-41428": [
@@ -7055,6 +7095,14 @@
       "name": "SignalWire FreeSWITCH < 1.11.3 - SIP MESSAGE api-proto OS Command Injection",
       "description": "SignalWire FreeSWITCH before 1.11.3 is vulnerable to OS command injection via an inbound SIP MESSAGE (CVE-2026-116779). sofia_presence_handle_sip_i_message splits the recipient user on '+' and treats the left side as a chat protocol selector; selecting the built-in \"api\" chat interface passes the remainder to switch_api_execute(), so a recipient of the form api+system <cmd> runs <cmd> as an OS command with the FreeSWITCH process privileges (typically root). The chat path requires the inbound MESSAGE to authenticate, but FreeSWITCH ships well-known default credentials (extension 1000 / password 1234 on stock vanilla) and empty-password users. This template authenticates with those defaults over SIP digest, injects api+system ping <interactsh> (firing an out-of-band callback for real RCE evidence), and keys on the in-band differential: a vulnerable server accepts the api-proto MESSAGE (202 Accepted) and executes it, whereas 1.11.3+ disables the api chat proto by default and returns 403.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-116779.yaml"
+    }
+  ],
+  "CVE-2026-127027": [
+    {
+      "source": "nuclei",
+      "name": "Poste.io < 2.5.22 - Remote Code Execution (DMARC Report Processing)",
+      "description": "Poste.io before 2.5.22 accepts mail addressed to dmarc-reports@<domain> without sender verification and passes attachments to a root-run extraction script that uses unsafe shell commands. A crafted ZIP symlink followed by another attachment can write a PHP file in the web root, allowing unauthenticated command execution when SMTP port 25 is reachable and the domain accepts DMARC reports.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/javascript/cves/2026/CVE-2026-127027.yaml"
     }
   ],
   "CVE-2026-27886": [
