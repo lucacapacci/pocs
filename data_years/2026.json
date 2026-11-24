@@ -168,8 +168,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Drupal Core 10.5.5 - Error-Based SQL Injection (SQLi)",
-      "description": "Drupal Core 10.5.5 - Error-Based SQL Injection (SQLi)",
+      "name": "Drupal Core 10.5.5 - 'filter' Error-Based SQL Injection (SQLi)",
+      "description": "Drupal Core 10.5.5 - 'filter' Error-Based SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52608.py"
     },
     {
@@ -592,7 +592,7 @@
       "source": "exploitdb",
       "name": "Linux Kernel 6.8 - Local Privilege Escalation (LPE)",
       "description": "Linux Kernel 6.8 - Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52573.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52573.rs"
     }
   ],
   "CVE-2026-3888": [
@@ -724,8 +724,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "cPanel - CRLF Injection",
-      "description": "cPanel - CRLF Injection",
+      "name": "cPanel - Unauthenticated CRLF Injection / Authentication Bypass",
+      "description": "cPanel - Unauthenticated CRLF Injection / Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52574.txt"
     },
     {
@@ -778,7 +778,7 @@
       "source": "exploitdb",
       "name": "Ghost_CMS 6.19.0 - Remote Code Execution (RCE) (Metasploit)",
       "description": "Ghost_CMS 6.19.0 - Remote Code Execution (RCE) (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52676.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52676.rb"
     }
   ],
   "CVE-2026-22594": [
@@ -792,7 +792,7 @@
       "source": "exploitdb",
       "name": "Ghost_CMS 6.19.0 - Remote Code Execution (RCE) (Metasploit)",
       "description": "Ghost_CMS 6.19.0 - Remote Code Execution (RCE) (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52676.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52676.rb"
     }
   ],
   "CVE-2026-97229": [
@@ -980,8 +980,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Langflow 1.9.0 - Remote Code Execution (RCE)",
-      "description": "Langflow 1.9.0 - Remote Code Execution (RCE)",
+      "name": "Langflow 1.9.0 - 'build_public_tmp' Remote Code Execution (RCE)",
+      "description": "Langflow 1.9.0 - 'build_public_tmp' Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52627.py"
     },
     {
@@ -1300,8 +1300,8 @@
   "CVE-2026-6815": [
     {
       "source": "exploitdb",
-      "name": "Casdoor 3.54.1 - Arbitrary File Write via Path Traversal",
-      "description": "Casdoor 3.54.1 - Arbitrary File Write via Path Traversal",
+      "name": "Casdoor 3.54.1 - 'pathPrefix' Authenticated Arbitrary File Write via Directory Traversal",
+      "description": "Casdoor 3.54.1 - 'pathPrefix' Authenticated Arbitrary File Write via Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/52584.py"
     }
   ],
@@ -1326,7 +1326,7 @@
       "source": "exploitdb",
       "name": "Linux nf_tables 6.19.3 - Local Privilege Escalation (LPE)",
       "description": "Linux nf_tables 6.19.3 - Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52549.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52549.c"
     }
   ],
   "CVE-2026-36355": [
@@ -1340,17 +1340,9 @@
   "CVE-2026-56766": [
     {
       "source": "exploitdb",
-      "name": "Hydra - Stack Buffer Overflow",
-      "description": "Hydra - Stack Buffer Overflow",
+      "name": "THC Hydra <= 9.7 - Stack Buffer Overflow",
+      "description": "THC Hydra <= 9.7 - Stack Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52622.py"
-    }
-  ],
-  "CVE-2026-55584": [
-    {
-      "source": "exploitdb",
-      "name": "phpSysInfo 3.4.5 - IP Allowlist Bypass",
-      "description": "phpSysInfo 3.4.5 - IP Allowlist Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52648.py"
     }
   ],
   "CVE-2026-61876": [
@@ -1364,24 +1356,24 @@
   "CVE-2026-55781": [
     {
       "source": "exploitdb",
-      "name": "NanaZip 6.5 - Denial of Service (DoS) (2)",
-      "description": "NanaZip 6.5 - Denial of Service (DoS) (2)",
+      "name": "M2Team NanaZip 6.5 - Denial of Service (DoS) (2)",
+      "description": "M2Team NanaZip 6.5 - Denial of Service (DoS) (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52656.txt"
     }
   ],
   "CVE-2026-58058": [
     {
       "source": "exploitdb",
-      "name": "Nmap 7.99 - Extension Header Integer Underflow",
-      "description": "Nmap 7.99 - Extension Header Integer Underflow",
+      "name": "Nmap 7.99 - 'ipv6_get_data_primitive' IPv6 Extension Header Integer Underflow (PoC)",
+      "description": "Nmap 7.99 - 'ipv6_get_data_primitive' IPv6 Extension Header Integer Underflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52647.py"
     }
   ],
   "CVE-2026-35333": [
     {
       "source": "exploitdb",
-      "name": "strongSwan 5.9.13 - Denial of Service (DoS)",
-      "description": "strongSwan 5.9.13 - Denial of Service (DoS)",
+      "name": "strongSwan 5.9.13 - 'attribute_enumerate()' Unauthenticated Denial of Service (DoS)",
+      "description": "strongSwan 5.9.13 - 'attribute_enumerate()' Unauthenticated Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52586.py"
     }
   ],
@@ -1390,7 +1382,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-51406": [
@@ -1398,7 +1390,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-51405": [
@@ -1406,7 +1398,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-51404": [
@@ -1414,7 +1406,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-51403": [
@@ -1422,7 +1414,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-51402": [
@@ -1430,7 +1422,7 @@
       "source": "exploitdb",
       "name": "Fullhan FH8626V100 - Multiple Vulnerabilities",
       "description": "Fullhan FH8626V100 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52674.py"
     }
   ],
   "CVE-2026-2441": [
@@ -1446,14 +1438,14 @@
       "source": "exploitdb",
       "name": "ImageMagick - MIFF Decoder Infinite Loop Denial of Service (DoS)",
       "description": "ImageMagick - MIFF Decoder Infinite Loop Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52595.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52595.py"
     }
   ],
   "CVE-2026-34156": [
     {
       "source": "exploitdb",
-      "name": "NocoBase 2.0.27 - VM Sandbox Escape",
-      "description": "NocoBase 2.0.27 - VM Sandbox Escape",
+      "name": "NocoBase 2.0.27 - Authenticated VM Sandbox Escape",
+      "description": "NocoBase 2.0.27 - Authenticated VM Sandbox Escape",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52552.py"
     },
     {
@@ -1463,20 +1455,12 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-34156.yaml"
     }
   ],
-  "CVE-2026-46368": [
-    {
-      "source": "exploitdb",
-      "name": "OpenWrt 23.05 - Authenticated Remote Code Execution (RCE)",
-      "description": "OpenWrt 23.05 - Authenticated Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52521.py"
-    }
-  ],
   "CVE-2026-34474": [
     {
       "source": "exploitdb",
       "name": "ZTE H298A/H108N - Unauthenticated Credential Exposure",
       "description": "ZTE H298A/H108N - Unauthenticated Credential Exposure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52592.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52592.py"
     }
   ],
   "CVE-2026-34473": [
@@ -1484,7 +1468,7 @@
       "source": "exploitdb",
       "name": "ZTE Routers - Unauthenticated Denial of Service (DoS)",
       "description": "ZTE Routers - Unauthenticated Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52594.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52594.py"
     }
   ],
   "CVE-2026-34472": [
@@ -1492,7 +1476,7 @@
       "source": "exploitdb",
       "name": "ZTE ZXHN H188A V6 - Authentication Bypass",
       "description": "ZTE ZXHN H188A V6 - Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52593.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52593.py"
     }
   ],
   "CVE-2026-80428": [
@@ -1506,9 +1490,17 @@
   "CVE-2026-61459": [
     {
       "source": "exploitdb",
-      "name": "mcp-server-kubernetes 3.8.x - Argument Injection",
-      "description": "mcp-server-kubernetes 3.8.x - Argument Injection",
+      "name": "mcp-server-kubernetes 3.8.x - 'resourceType' Argument Injection",
+      "description": "mcp-server-kubernetes 3.8.x - 'resourceType' Argument Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52638.py"
+    }
+  ],
+  "CVE-2026-61447": [
+    {
+      "source": "exploitdb",
+      "name": "MervinPraison PraisonAI praisonaiagents 1.6.77 - 'CodeAgent._execute_python()' Remote Code Execution (RCE)",
+      "description": "MervinPraison PraisonAI praisonaiagents 1.6.77 - 'CodeAgent._execute_python()' Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52639.py"
     }
   ],
   "CVE-2026-58289": [
@@ -1522,17 +1514,9 @@
   "CVE-2026-86060": [
     {
       "source": "exploitdb",
-      "name": "MikroTrick_ 7.24_ 7.24.2_ 7.0.0_ 7.23.4_ 6.0.0_ 6.49.21 - Remote Code Execution (RCE)",
-      "description": "MikroTrick_ 7.24_ 7.24.2_ 7.0.0_ 7.23.4_ 6.0.0_ 6.49.21 - Remote Code Execution (RCE)",
+      "name": "MikroTik RouterOS 6.0.0/6.49.21/7.0.0/7.23.4/7.24/7.24.2 - Remote Code Execution (RCE)",
+      "description": "MikroTik RouterOS 6.0.0/6.49.21/7.0.0/7.23.4/7.24/7.24.2 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52683.py"
-    }
-  ],
-  "CVE-2026-61447": [
-    {
-      "source": "exploitdb",
-      "name": "PraisonAI praisonaiagents 1.6.77 - Remote Code Execution (RCE)",
-      "description": "PraisonAI praisonaiagents 1.6.77 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52639.py"
     }
   ],
   "CVE-2026-42167": [
@@ -1552,8 +1536,8 @@
   "CVE-2026-35330": [
     {
       "source": "exploitdb",
-      "name": "strongSwan 5.9.13 - libsimaka EAP-SIM/AKA Heap Buffer Overflow",
-      "description": "strongSwan 5.9.13 - libsimaka EAP-SIM/AKA Heap Buffer Overflow",
+      "name": "strongSwan 5.9.13 - 'parse_attributes()' Unauthenticated libsimaka EAP-SIM/AKA Heap Buffer Overflow (PoC)",
+      "description": "strongSwan 5.9.13 - 'parse_attributes()' Unauthenticated libsimaka EAP-SIM/AKA Heap Buffer Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52587.c"
     }
   ],
@@ -1570,14 +1554,14 @@
       "source": "exploitdb",
       "name": "Wing FTP Server 8.1.3 - Authenticated Remote Code Execution (RCE)",
       "description": "Wing FTP Server 8.1.3 - Authenticated Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52589.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52589.py"
     }
   ],
   "CVE-2026-49876": [
     {
       "source": "exploitdb",
-      "name": "Apache Gravitino 1.2.1 - Server-Side Request Forgery (SSRF)",
-      "description": "Apache Gravitino 1.2.1 - Server-Side Request Forgery (SSRF)",
+      "name": "Apache Gravitino 1.2.1 - 'fetchFileFromUri()' Authenticated Server-Side Request Forgery (SSRF)",
+      "description": "Apache Gravitino 1.2.1 - 'fetchFileFromUri()' Authenticated Server-Side Request Forgery (SSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52641.py"
     }
   ],
@@ -1587,22 +1571,6 @@
       "name": "Apache HTTP Server 2.4.66 - 'mod_http2' Double-Free Denial of Service (DoS)",
       "description": "Apache HTTP Server 2.4.66 - 'mod_http2' Double-Free Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52577.py"
-    }
-  ],
-  "CVE-2026-58480": [
-    {
-      "source": "exploitdb",
-      "name": "Blocksy Companion 2.1.46 - Remote Code Execution (RCE)",
-      "description": "Blocksy Companion 2.1.46 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52640.py"
-    }
-  ],
-  "CVE-2026-25099": [
-    {
-      "source": "exploitdb",
-      "name": "Bludit CMS 3.18.4 - Remote Code Execution (RCE)",
-      "description": "Bludit CMS 3.18.4 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52553.py"
     }
   ],
   "CVE-2026-41456": [
@@ -1657,44 +1625,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52558.py"
     }
   ],
-  "CVE-2026-54644": [
+  "CVE-2026-58480": [
     {
       "source": "exploitdb",
-      "name": "CubeCart 6.7.4 - Cross-Site Scripting (XSS)",
-      "description": "CubeCart 6.7.4 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52661.txt"
-    }
-  ],
-  "CVE-2026-54646": [
-    {
-      "source": "exploitdb",
-      "name": "CubeCart 6.7.4 - SQL",
-      "description": "CubeCart 6.7.4 - SQL",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52663.txt"
-    }
-  ],
-  "CVE-2026-54647": [
-    {
-      "source": "exploitdb",
-      "name": "CubeCart 6.7.4 - SQL Injection (SQLi)",
-      "description": "CubeCart 6.7.4 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52664.txt"
-    }
-  ],
-  "CVE-2026-54645": [
-    {
-      "source": "exploitdb",
-      "name": "CubeCart 6.7.4 - Stored Cross-Site Scripting (XSS)",
-      "description": "CubeCart 6.7.4 - Stored Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52662.txt"
-    }
-  ],
-  "CVE-2026-44376": [
-    {
-      "source": "exploitdb",
-      "name": "CubeCart < 6.7.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
-      "description": "CubeCart < 6.7.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52588.txt"
+      "name": "Creative Themes Blocksy Companion 2.1.46 - Remote Code Execution (RCE)",
+      "description": "Creative Themes Blocksy Companion 2.1.46 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52640.py"
     }
   ],
   "CVE-2026-25130": [
@@ -1713,18 +1649,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52528.py"
     }
   ],
-  "CVE-2026-49952": [
+  "CVE-2026-54644": [
     {
       "source": "exploitdb",
-      "name": "Discuz! X5.0 - Authentication Bypass",
-      "description": "Discuz! X5.0 - Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52621.py"
-    },
+      "name": "Devellion CubeCart 6.7.4 - Cross-Site Scripting (XSS)",
+      "description": "Devellion CubeCart 6.7.4 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52661.txt"
+    }
+  ],
+  "CVE-2026-54646": [
     {
-      "source": "nuclei",
-      "name": "Discuz! X5.0 - Authentication Bypass",
-      "description": "Discuz! X5.0 20260320 through 20260501 contains an authentication bypass caused by exploitation of a shared cryptographic key and encryption oracle in dbbak.php and logging_ctl::logging_more(), letting unauthenticated remote attackers access database backup and restore functions, exploit requires crafted payload injection via username parameter.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49952.yaml"
+      "source": "exploitdb",
+      "name": "Devellion CubeCart 6.7.4 - SQL",
+      "description": "Devellion CubeCart 6.7.4 - SQL",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52663.txt"
+    }
+  ],
+  "CVE-2026-44376": [
+    {
+      "source": "exploitdb",
+      "name": "Devellion CubeCart < 6.7.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
+      "description": "Devellion CubeCart < 6.7.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52588.txt"
     }
   ],
   "CVE-2026-2624": [
@@ -1732,7 +1678,7 @@
       "source": "exploitdb",
       "name": "ePati Antikor NGFW 2.0.1301 - Authentication Bypass",
       "description": "ePati Antikor NGFW 2.0.1301 - Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52562.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52562.py"
     }
   ],
   "CVE-2026-24897": [
@@ -1741,20 +1687,6 @@
       "name": "Erugo 0.2.14 - Remote Code Execution (RCE)",
       "description": "Erugo 0.2.14 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52529.py"
-    }
-  ],
-  "CVE-2026-33534": [
-    {
-      "source": "exploitdb",
-      "name": "EspoCRM 9.3.3 - Server-Side Request Forgery (SSRF)",
-      "description": "EspoCRM 9.3.3 - Server-Side Request Forgery (SSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52583.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
-      "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
     }
   ],
   "CVE-2026-58057": [
@@ -1776,8 +1708,8 @@
   "CVE-2026-25895": [
     {
       "source": "exploitdb",
-      "name": "FUXA 1.2.9 - Remote Code Execution (RCE)",
-      "description": "FUXA 1.2.9 - Remote Code Execution (RCE)",
+      "name": "FUXA 1.2.9 - 'destination' Unauthenticated Directory Traversal / Remote Code Execution (RCE)",
+      "description": "FUXA 1.2.9 - 'destination' Unauthenticated Directory Traversal / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52568.py"
     },
     {
@@ -1790,9 +1722,9 @@
   "CVE-2026-26980": [
     {
       "source": "exploitdb",
-      "name": "Ghost CMS 6.19.0 - SQL Injection (SQLi)",
-      "description": "Ghost CMS 6.19.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52555.txt"
+      "name": "Ghost CMS 6.19.0 - 'filter' Unauthenticated SQL Injection (SQLi)",
+      "description": "Ghost CMS 6.19.0 - 'filter' Unauthenticated SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52555.py"
     },
     {
       "source": "nuclei",
@@ -1807,14 +1739,6 @@
       "name": "glances 4.5.2 - Command Injection",
       "description": "glances 4.5.2 - Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52559.py"
-    }
-  ],
-  "CVE-2026-65008": [
-    {
-      "source": "exploitdb",
-      "name": "Grav CMS 2.0.7 - Remote Code Execution (RCE)",
-      "description": "Grav CMS 2.0.7 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52669.py"
     }
   ],
   "CVE-2026-22241": [
@@ -1934,7 +1858,7 @@
       "source": "exploitdb",
       "name": "Metabase 0.61.0 - Authenticated Remote Code Execution (RCE)",
       "description": "Metabase 0.61.0 - Authenticated Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52680.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52680.py"
     }
   ],
   "CVE-2026-44680": [
@@ -1989,12 +1913,12 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-0740.yaml"
     }
   ],
-  "CVE-2026-24849": [
+  "CVE-2026-46368": [
     {
       "source": "exploitdb",
-      "name": "OpenEMR 7.0.2 - Arbitrary File Read",
-      "description": "OpenEMR 7.0.2 - Arbitrary File Read",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52610.py"
+      "name": "OpenWrt 23.05 - Authenticated Remote Code Execution (RCE)",
+      "description": "OpenWrt 23.05 - Authenticated Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52521.py"
     }
   ],
   "CVE-2026-58138": [
@@ -2030,8 +1954,8 @@
   "CVE-2026-63505": [
     {
       "source": "exploitdb",
-      "name": "Probo 0.222.2 - Insecure Direct Object Reference (IDOR)",
-      "description": "Probo 0.222.2 - Insecure Direct Object Reference (IDOR)",
+      "name": "Probo 0.222.2 - 'riskId' Insecure Direct Object Reference (IDOR)",
+      "description": "Probo 0.222.2 - 'riskId' Insecure Direct Object Reference (IDOR)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52650.txt"
     }
   ],
@@ -2052,8 +1976,8 @@
   "CVE-2026-44225": [
     {
       "source": "exploitdb",
-      "name": "Pulpy 0.1.1-Beta - Filesystem Sandbox Bypass",
-      "description": "Pulpy 0.1.1-Beta - Filesystem Sandbox Bypass",
+      "name": "Pulpy 0.1.1-Beta - 'validateFsPath()' Filesystem Sandbox Bypass",
+      "description": "Pulpy 0.1.1-Beta - 'validateFsPath()' Filesystem Sandbox Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52616.txt"
     }
   ],
@@ -2117,14 +2041,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52649.txt"
     }
   ],
-  "CVE-2026-67206": [
-    {
-      "source": "exploitdb",
-      "name": "Wolf CMS 0.8.3.1 - Remote Code Execution (RCE) v",
-      "description": "Wolf CMS 0.8.3.1 - Remote Code Execution (RCE) v",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52672.py"
-    }
-  ],
   "CVE-2026-87902": [
     {
       "source": "exploitdb",
@@ -2147,49 +2063,35 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52609.py"
     }
   ],
-  "CVE-2026-49069": [
-    {
-      "source": "exploitdb",
-      "name": "WordPress Plugin WPZOOM Portfolio 1.4.21 - Reflected Cross-Site Scripting (XSS)",
-      "description": "WordPress Plugin WPZOOM Portfolio 1.4.21 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52611.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "WPZOOM Portfolio <= 1.4.21 - Reflected Cross-Site Scripting",
-      "description": "WPZOOM Portfolio <= 1.4.21 contains a reflected XSS caused by improper neutralization of input during web page generation, letting attackers execute scripts in victim's browser, exploit requires crafted request.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49069.yaml"
-    }
-  ],
   "CVE-2026-7567": [
     {
       "source": "exploitdb",
       "name": "Wordpress Temporary Login Plugin 1.0.0 - 'temp-login-token' Authentication Bypass to Account Takeover",
       "description": "Wordpress Temporary Login Plugin 1.0.0 - 'temp-login-token' Authentication Bypass to Account Takeover",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52575.txt"
-    }
-  ],
-  "CVE-2026-42568": [
-    {
-      "source": "exploitdb",
-      "name": "YAMCS yamcs-core 5.12.7 - LDAP Injection",
-      "description": "YAMCS yamcs-core 5.12.7 - LDAP Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52603.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52575.py"
     }
   ],
   "CVE-2026-44596": [
     {
       "source": "exploitdb",
-      "name": "YAMCS yamcs-core 5.12.7 - No Rate Limiting",
-      "description": "YAMCS yamcs-core 5.12.7 - No Rate Limiting",
+      "name": "YAMCS yamcs-core 5.12.7 - '/auth/token' Unauthenticated No Rate Limiting",
+      "description": "YAMCS yamcs-core 5.12.7 - '/auth/token' Unauthenticated No Rate Limiting",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52605.sh"
+    }
+  ],
+  "CVE-2026-42568": [
+    {
+      "source": "exploitdb",
+      "name": "YAMCS yamcs-core 5.12.7 - 'username' LDAP Injection",
+      "description": "YAMCS yamcs-core 5.12.7 - 'username' LDAP Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52603.py"
     }
   ],
   "CVE-2026-44595": [
     {
       "source": "exploitdb",
-      "name": "YAMCS yamcs-core 5.12.7 - User Enumeration",
-      "description": "YAMCS yamcs-core 5.12.7 - User Enumeration",
+      "name": "YAMCS yamcs-core 5.12.7 - Authenticated User Enumeration",
+      "description": "YAMCS yamcs-core 5.12.7 - Authenticated User Enumeration",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52604.py"
     }
   ],
@@ -2207,12 +2109,80 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109618.yaml"
     }
   ],
+  "CVE-2026-55584": [
+    {
+      "source": "exploitdb",
+      "name": "phpSysInfo 3.4.5 - 'X-Forwarded-For' IP Allowlist Bypass",
+      "description": "phpSysInfo 3.4.5 - 'X-Forwarded-For' IP Allowlist Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/52648.py"
+    }
+  ],
+  "CVE-2026-25099": [
+    {
+      "source": "exploitdb",
+      "name": "Bludit CMS 3.18.4 - Authenticated Remote Code Execution (RCE)",
+      "description": "Bludit CMS 3.18.4 - Authenticated Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52553.py"
+    }
+  ],
+  "CVE-2026-54647": [
+    {
+      "source": "exploitdb",
+      "name": "Devellion CubeCart 6.7.4 - 'download_expire' Authenticated SQL Injection (SQLi)",
+      "description": "Devellion CubeCart 6.7.4 - 'download_expire' Authenticated SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52664.txt"
+    }
+  ],
+  "CVE-2026-54645": [
+    {
+      "source": "exploitdb",
+      "name": "Devellion CubeCart 6.7.4 - 'products.index.inc.php' Authenticated Stored Cross-Site Scripting (XSS)",
+      "description": "Devellion CubeCart 6.7.4 - 'products.index.inc.php' Authenticated Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52662.txt"
+    }
+  ],
+  "CVE-2026-49952": [
+    {
+      "source": "exploitdb",
+      "name": "Discuz! X5.0 - 'dbbak.php' Authentication Bypass",
+      "description": "Discuz! X5.0 - 'dbbak.php' Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52621.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Discuz! X5.0 - Authentication Bypass",
+      "description": "Discuz! X5.0 20260320 through 20260501 contains an authentication bypass caused by exploitation of a shared cryptographic key and encryption oracle in dbbak.php and logging_ctl::logging_more(), letting unauthenticated remote attackers access database backup and restore functions, exploit requires crafted payload injection via username parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49952.yaml"
+    }
+  ],
+  "CVE-2026-33534": [
+    {
+      "source": "exploitdb",
+      "name": "EspoCRM 9.3.3 - 'fromImageUrl' Authenticated Server-Side Request Forgery (SSRF)",
+      "description": "EspoCRM 9.3.3 - 'fromImageUrl' Authenticated Server-Side Request Forgery (SSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52583.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "EspoCRM <= 9.3.3 - Server-Side Request Forgery",
+      "description": "EspoCRM <= 9.3.3 contains an authenticated server-side request forgery caused by improper internal-host validation using alternative IPv4 formats in HostCheck::isNotInternalHost(), letting authenticated users access internal resources via /api/v1/Attachment/fromImageUrl endpoint.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33534.yaml"
+    }
+  ],
   "CVE-2026-42607": [
     {
       "source": "exploitdb",
-      "name": "Grav CMS 2.0.0-beta.2 - Remote Code Execution (RCE)",
-      "description": "Grav CMS 2.0.0-beta.2 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52578.py"
+      "name": "Grav CMS 2.0.0-beta.2 - 'direct-install' Authenticated Remote Code Execution (RCE)",
+      "description": "Grav CMS 2.0.0-beta.2 - 'direct-install' Authenticated Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52578.txt"
+    }
+  ],
+  "CVE-2026-65008": [
+    {
+      "source": "exploitdb",
+      "name": "Grav CMS 2.0.7 - 'Blueprint::dynamicData()' Authenticated Remote Code Execution (RCE)",
+      "description": "Grav CMS 2.0.7 - 'Blueprint::dynamicData()' Authenticated Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52669.py"
     }
   ],
   "CVE-2026-48909": [
@@ -2220,7 +2190,7 @@
       "source": "exploitdb",
       "name": "Joomla Extension 4.1.4 - PHP Object Injection",
       "description": "Joomla Extension 4.1.4 - PHP Object Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52617.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52617.py"
     },
     {
       "source": "nuclei",
@@ -2235,6 +2205,14 @@
       "name": "MixPHP Framework 2.2.17 - Unsafe Deserialization Remote Code Execution (RCE)",
       "description": "MixPHP Framework 2.2.17 - Unsafe Deserialization Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52590.py"
+    }
+  ],
+  "CVE-2026-24849": [
+    {
+      "source": "exploitdb",
+      "name": "OpenEMR 7.0.2 - 'file_path' Authenticated Arbitrary File Read",
+      "description": "OpenEMR 7.0.2 - 'file_path' Authenticated Arbitrary File Read",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52610.py"
     }
   ],
   "CVE-2026-24421": [
@@ -2257,6 +2235,28 @@
       "name": "Scramble Laravel - Remote Code Execution",
       "description": "Scramble for Laravel >= 0.13.2 and < 0.13.22 contains a remote code execution caused by evaluation of user-controlled input in validation rules during documentation generation, letting remote attackers execute arbitrary PHP code, exploit requires publicly accessible documentation endpoints.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44262.yaml"
+    }
+  ],
+  "CVE-2026-67206": [
+    {
+      "source": "exploitdb",
+      "name": "Wolf CMS 0.8.3.1 - 'file_manager' Authenticated Remote Code Execution (RCE)",
+      "description": "Wolf CMS 0.8.3.1 - 'file_manager' Authenticated Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52672.py"
+    }
+  ],
+  "CVE-2026-49069": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin WPZOOM Portfolio 1.4.21 - 'posts_data' Unauthenticated Reflected Cross-Site Scripting (XSS)",
+      "description": "WordPress Plugin WPZOOM Portfolio 1.4.21 - 'posts_data' Unauthenticated Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52611.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "WPZOOM Portfolio <= 1.4.21 - Reflected Cross-Site Scripting",
+      "description": "WPZOOM Portfolio <= 1.4.21 contains a reflected XSS caused by improper neutralization of input during web page generation, letting attackers execute scripts in victim's browser, exploit requires crafted request.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-49069.yaml"
     }
   ],
   "CVE-2026-59726": [
@@ -2284,8 +2284,8 @@
   "CVE-2026-55780": [
     {
       "source": "exploitdb",
-      "name": "NanaZip 6.5 - Denial of Service (DoS) (1)",
-      "description": "NanaZip 6.5 - Denial of Service (DoS) (1)",
+      "name": "M2Team NanaZip 6.5 - Denial of Service (DoS) (1)",
+      "description": "M2Team NanaZip 6.5 - Denial of Service (DoS) (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/52652.txt"
     }
   ],
@@ -2300,32 +2300,32 @@
   "CVE-2026-21250": [
     {
       "source": "exploitdb",
-      "name": "Windows 11 24H2 - Local Privilege Escalation (LPE)",
-      "description": "Windows 11 24H2 - Local Privilege Escalation (LPE)",
+      "name": "Microsoft Windows 11 24H2 - Local Privilege Escalation (LPE)",
+      "description": "Microsoft Windows 11 24H2 - Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52546.c"
     }
   ],
   "CVE-2026-21248": [
     {
       "source": "exploitdb",
-      "name": "Windows 11 25H2 - Heap Overflow",
-      "description": "Windows 11 25H2 - Heap Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.txt"
+      "name": "Microsoft Windows 11 25H2 - Heap Overflow",
+      "description": "Microsoft Windows 11 25H2 - Heap Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.py"
     }
   ],
   "CVE-2026-21244": [
     {
       "source": "exploitdb",
-      "name": "Windows 11 25H2 - Heap Overflow",
-      "description": "Windows 11 25H2 - Heap Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.txt"
+      "name": "Microsoft Windows 11 25H2 - Heap Overflow",
+      "description": "Microsoft Windows 11 25H2 - Heap Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52537.py"
     }
   ],
   "CVE-2026-33829": [
     {
       "source": "exploitdb",
-      "name": "Windows Snipping Tool - NTLMv2 Hash Hijack",
-      "description": "Windows Snipping Tool - NTLMv2 Hash Hijack",
+      "name": "Microsoft Windows Snipping Tool - NTLMv2 Hash Hijack",
+      "description": "Microsoft Windows Snipping Tool - NTLMv2 Hash Hijack",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52567.txt"
     }
   ],
@@ -2340,8 +2340,8 @@
   "CVE-2026-48778": [
     {
       "source": "exploitdb",
-      "name": "Notepad++ 8.9.6 - Arbitrary Code Execution",
-      "description": "Notepad++ 8.9.6 - Arbitrary Code Execution",
+      "name": "Notepad++ 8.9.6 - 'commandLineInterpreter' Arbitrary Code Execution",
+      "description": "Notepad++ 8.9.6 - 'commandLineInterpreter' Arbitrary Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52606.py"
     }
   ],

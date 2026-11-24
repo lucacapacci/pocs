@@ -98,8 +98,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Berlios GPSD 1.91-1 < 2.7-2 - Format String (Metasploit)",
-      "description": "Berlios GPSD 1.91-1 < 2.7-2 - Format String (Metasploit)",
+      "name": "Berlios GPSD 1.91-1 <= 2.7-2 - Format String (Metasploit)",
+      "description": "Berlios GPSD 1.91-1 <= 2.7-2 - Format String (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/10029.rb"
     },
     {
@@ -270,7 +270,7 @@
       "source": "exploitdb",
       "name": "phpBB 2.0.x - 'viewtopic.php' PHP Script Injection",
       "description": "phpBB 2.0.x - 'viewtopic.php' PHP Script Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24274.pl"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24274.php"
     }
   ],
   "CVE-2004-1037": [
@@ -550,7 +550,7 @@
       "source": "exploitdb",
       "name": "Ipswitch WS_FTP Server 5.03 - MKD Remote Buffer Overflow",
       "description": "Ipswitch WS_FTP Server 5.03 - MKD Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/664.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/664.txt"
     },
     {
       "source": "exploitdb",
@@ -600,8 +600,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Easy Chat Server 3.1 - Remote Stack Buffer Overflow (SEH)",
-      "description": "Easy Chat Server 3.1 - Remote Stack Buffer Overflow (SEH)",
+      "name": "Easy Chat Server 3.1 - 'username' Remote SEH Stack Buffer Overflow",
+      "description": "Easy Chat Server 3.1 - 'username' Remote SEH Stack Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/50999.py"
     },
     {
@@ -652,14 +652,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch WhatsUp Gold 8.03 - Remote Buffer Overflow",
-      "description": "IPSwitch WhatsUp Gold 8.03 - Remote Buffer Overflow",
+      "name": "Ipswitch WhatsUp Gold 8.03 - Remote Buffer Overflow",
+      "description": "Ipswitch WhatsUp Gold 8.03 - Remote Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/566.pl"
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch WhatsUp Gold 8.03 - Remote Buffer Overflow (Metasploit)",
-      "description": "IPSwitch WhatsUp Gold 8.03 - Remote Buffer Overflow (Metasploit)",
+      "name": "Ipswitch WhatsUp Gold 8.03 - Remote Buffer Overflow (Metasploit)",
+      "description": "Ipswitch WhatsUp Gold 8.03 - Remote Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16787.rb"
     }
   ],
@@ -674,7 +674,7 @@
       "source": "exploitdb",
       "name": "MiniShare 1.4.1 - Remote Buffer Overflow (1)",
       "description": "MiniShare 1.4.1 - Remote Buffer Overflow (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/616.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/616.cpp"
     },
     {
       "source": "exploitdb",
@@ -762,8 +762,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "SHOUTcast 1.9.4 (Windows) - File Request Format String Remote Overflow",
-      "description": "SHOUTcast 1.9.4 (Windows) - File Request Format String Remote Overflow",
+      "name": "Nullsoft SHOUTcast 1.9.4 (Windows) - File Request Format String Remote Overflow",
+      "description": "Nullsoft SHOUTcast 1.9.4 (Windows) - File Request Format String Remote Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/830.c"
     },
     {
@@ -788,21 +788,21 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch IMail 8.13 - 'DELETE' Remote Stack Overflow",
-      "description": "IPSwitch IMail 8.13 - 'DELETE' Remote Stack Overflow",
+      "name": "Alt-N MDaemon 8.0.3 - IMAPD CRAM-MD5 Authentication Overflow (Metasploit)",
+      "description": "Alt-N MDaemon 8.0.3 - IMAPD CRAM-MD5 Authentication Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/1151.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Ipswitch IMail 8.13 - 'DELETE' Remote Stack Overflow",
+      "description": "Ipswitch IMail 8.13 - 'DELETE' Remote Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/627.pl"
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch IMail IMAP4D - Delete Overflow (Metasploit)",
-      "description": "IPSwitch IMail IMAP4D - Delete Overflow (Metasploit)",
+      "name": "Ipswitch IMail IMAP4D - Delete Overflow (Metasploit)",
+      "description": "Ipswitch IMail IMAP4D - Delete Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16479.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "MDaemon 8.0.3 - IMAPD CRAM-MD5 Authentication Overflow (Metasploit)",
-      "description": "MDaemon 8.0.3 - IMAPD CRAM-MD5 Authentication Overflow (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/1151.pm"
     }
   ],
   "CVE-2004-1211": [
@@ -878,14 +878,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch IMail LDAP Daemon/Service - Remote Buffer Overflow",
-      "description": "IPSwitch IMail LDAP Daemon/Service - Remote Buffer Overflow",
+      "name": "Ipswitch IMail LDAP Daemon/Service - Remote Buffer Overflow",
+      "description": "Ipswitch IMail LDAP Daemon/Service - Remote Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/157.c"
     },
     {
       "source": "exploitdb",
-      "name": "IPSwitch IMail LDAP Daemon/Service - Remote Buffer Overflow (Metasploit)",
-      "description": "IPSwitch IMail LDAP Daemon/Service - Remote Buffer Overflow (Metasploit)",
+      "name": "Ipswitch IMail LDAP Daemon/Service - Remote Buffer Overflow (Metasploit)",
+      "description": "Ipswitch IMail LDAP Daemon/Service - Remote Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16824.rb"
     }
   ],
@@ -926,7 +926,7 @@
       "source": "exploitdb",
       "name": "ShixxNOTE 6.net - Remote Buffer Overflow",
       "description": "ShixxNOTE 6.net - Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/590.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/590.cpp"
     }
   ],
   "CVE-2004-2416": [
@@ -938,15 +938,15 @@
     },
     {
       "source": "exploitdb",
-      "name": "CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
-      "description": "CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/4360.rb"
-    },
-    {
-      "source": "exploitdb",
       "name": "CCProxy Log - Remote Stack Overflow",
       "description": "CCProxy Log - Remote Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/619.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "YoungZSoft CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
+      "description": "YoungZSoft CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/4360.rb"
     }
   ],
   "CVE-2004-0326": [
@@ -972,7 +972,7 @@
       "source": "exploitdb",
       "name": "Proxy-Pro Professional GateKeeper Pro 4.7 - Web proxy Remote Buffer Overflow",
       "description": "Proxy-Pro Professional GateKeeper Pro 4.7 - Web proxy Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/155.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/155.txt"
     }
   ],
   "CVE-2004-0206": [
@@ -1038,7 +1038,7 @@
       "source": "exploitdb",
       "name": "YahooPOPs 1.6 - SMTP Port Buffer Overflow",
       "description": "YahooPOPs 1.6 - SMTP Port Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/577.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/577.cpp"
     },
     {
       "source": "exploitdb",
@@ -1067,47 +1067,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16359.rb"
     }
   ],
-  "CVE-2004-2697": [
-    {
-      "source": "exploitdb",
-      "name": "AIX 4.3.3/5.1 - Invscoutd Symbolic Link",
-      "description": "AIX 4.3.3/5.1 - Invscoutd Symbolic Link",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23883.pl"
-    }
-  ],
-  "CVE-2004-0544": [
-    {
-      "source": "exploitdb",
-      "name": "AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (1)",
-      "description": "AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23840.pl"
-    },
-    {
-      "source": "exploitdb",
-      "name": "AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (2)",
-      "description": "AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (2)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23841.c"
-    }
-  ],
-  "CVE-2004-1054": [
-    {
-      "source": "exploitdb",
-      "name": "AIX 4.3/5.1 < 5.3 - 'lsmcode' Execution Privilege Escalation",
-      "description": "AIX 4.3/5.1 < 5.3 - 'lsmcode' Execution Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/701.sh"
-    },
-    {
-      "source": "exploitdb",
-      "name": "AIX 5.3.0 - 'invscout' Local Command Execution",
-      "description": "AIX 5.3.0 - 'invscout' Local Command Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/898.sh"
-    }
-  ],
   "CVE-2004-1330": [
     {
       "source": "exploitdb",
-      "name": "AIX 5.1 < 5.3 - paginit Local Stack Overflow",
-      "description": "AIX 5.1 < 5.3 - paginit Local Stack Overflow",
+      "name": "AIX 5.1 <= 5.3 - paginit Local Stack Overflow",
+      "description": "AIX 5.1 <= 5.3 - paginit Local Stack Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/699.c"
     }
   ],
@@ -1119,12 +1083,48 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23838.pl"
     }
   ],
+  "CVE-2004-2697": [
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 4.3.3/5.1 - Invscoutd Symbolic Link",
+      "description": "IBM AIX 4.3.3/5.1 - Invscoutd Symbolic Link",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23883.pl"
+    }
+  ],
+  "CVE-2004-0544": [
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (1)",
+      "description": "IBM AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23840.pl"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (2)",
+      "description": "IBM AIX 4.3.3/5.x - Getlvcb Command Line Argument Buffer Overflow (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/23841.c"
+    }
+  ],
+  "CVE-2004-1054": [
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 4.3/5.1 < 5.3 - 'lsmcode' Execution Privilege Escalation",
+      "description": "IBM AIX 4.3/5.1 < 5.3 - 'lsmcode' Execution Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/701.sh"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IBM AIX 5.3.0 - 'invscout' Local Command Execution",
+      "description": "IBM AIX 5.3.0 - 'invscout' Local Command Execution",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/898.sh"
+    }
+  ],
   "CVE-2004-1329": [
     {
       "source": "exploitdb",
       "name": "IBM AIX 5.x - 'Diag' Local Privilege Escalation (LPE)",
       "description": "IBM AIX 5.x - 'Diag' Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/25039.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/25039.sh"
     }
   ],
   "CVE-2004-1400": [
@@ -1212,9 +1212,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "Web Calendar System 3.12/3.30 - Multiple Vulnerabilities",
-      "description": "Web Calendar System 3.12/3.30 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/7242.txt"
+      "name": "Web Calendar System 3.12/3.30 - Authentication Bypass / Cross-Site Scripting (XSS)",
+      "description": "Web Calendar System 3.12/3.30 - Authentication Bypass / Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/7242.txt"
     }
   ],
   "CVE-2004-1882": [
@@ -1268,29 +1268,37 @@
   "CVE-2004-2198": [
     {
       "source": "exploitdb",
-      "name": "DUclassmate 1.x - 'account.asp?MM-recordId' Arbitrary Password Modification",
-      "description": "DUclassmate 1.x - 'account.asp?MM-recordId' Arbitrary Password Modification",
+      "name": "DUware DUclassmate 1.x - 'account.asp?MM-recordId' Arbitrary Password Modification",
+      "description": "DUware DUclassmate 1.x - 'account.asp?MM-recordId' Arbitrary Password Modification",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/24672.txt"
     }
   ],
   "CVE-2004-2201": [
     {
       "source": "exploitdb",
-      "name": "DUforum 3.x - 'messageDetail.asp?MSG_ID' SQL Injection (SQLi)",
-      "description": "DUforum 3.x - 'messageDetail.asp?MSG_ID' SQL Injection (SQLi)",
+      "name": "DUware DUforum 3.x - 'messageDetail.asp?MSG_ID' SQL Injection (SQLi)",
+      "description": "DUware DUforum 3.x - 'messageDetail.asp?MSG_ID' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/24675.txt"
     },
     {
       "source": "exploitdb",
-      "name": "DUforum 3.x - 'messages.asp?FOR_ID' SQL Injection (SQLi)",
-      "description": "DUforum 3.x - 'messages.asp?FOR_ID' SQL Injection (SQLi)",
+      "name": "DUware DUforum 3.x - 'messages.asp?FOR_ID' SQL Injection (SQLi)",
+      "description": "DUware DUforum 3.x - 'messages.asp?FOR_ID' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/24674.txt"
     },
     {
       "source": "exploitdb",
-      "name": "DUforum 3.x - Login Form 'Password' SQL Injection (SQLi)",
-      "description": "DUforum 3.x - Login Form 'Password' SQL Injection (SQLi)",
+      "name": "DUware DUforum 3.x - Login Form 'Password' SQL Injection (SQLi)",
+      "description": "DUware DUforum 3.x - Login Form 'Password' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/24673.txt"
+    }
+  ],
+  "CVE-2004-2172": [
+    {
+      "source": "exploitdb",
+      "name": "Early Impact ProductCart 1.x/2.x - Weak Cryptography",
+      "description": "Early Impact ProductCart 1.x/2.x - Weak Cryptography",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/23702.txt"
     }
   ],
   "CVE-2004-1844": [
@@ -1461,14 +1469,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/24302.pl"
     }
   ],
-  "CVE-2004-2172": [
-    {
-      "source": "exploitdb",
-      "name": "ProductCart 1.x/2.x - Weak Cryptography",
-      "description": "ProductCart 1.x/2.x - Weak Cryptography",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/23702.txt"
-    }
-  ],
   "CVE-2004-1687": [
     {
       "source": "exploitdb",
@@ -1480,8 +1480,8 @@
   "CVE-2004-0348": [
     {
       "source": "exploitdb",
-      "name": "SpiderSales 2.0 Shopping Cart - Multiple Vulnerabilities",
-      "description": "SpiderSales 2.0 Shopping Cart - Multiple Vulnerabilities",
+      "name": "SpiderSales 2.0 Shopping Cart - Information Disclosure / SQL Injection (SQLi)",
+      "description": "SpiderSales 2.0 Shopping Cart - Information Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/23791.txt"
     }
   ],
@@ -2216,16 +2216,16 @@
   "CVE-2004-1540": [
     {
       "source": "exploitdb",
-      "name": "ZYXEL 3 Prestige Router - HTTP Remote Administration Configuration Reset",
-      "description": "ZYXEL 3 Prestige Router - HTTP Remote Administration Configuration Reset",
+      "name": "Zyxel 3 Prestige Router - HTTP Remote Administration Configuration Reset",
+      "description": "Zyxel 3 Prestige Router - HTTP Remote Administration Configuration Reset",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/24760.txt"
     }
   ],
   "CVE-2004-1789": [
     {
       "source": "exploitdb",
-      "name": "ZYXEL ZyWALL 10 Management Interface - Cross-Site Scripting (XSS)",
-      "description": "ZYXEL ZyWALL 10 Management Interface - Cross-Site Scripting (XSS)",
+      "name": "Zyxel ZyWALL 10 Management Interface - Cross-Site Scripting (XSS)",
+      "description": "Zyxel ZyWALL 10 Management Interface - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/23527.txt"
     }
   ],
@@ -2240,8 +2240,8 @@
   "CVE-2004-1257": [
     {
       "source": "exploitdb",
-      "name": "ABC2MTEX 1.6.1 - Command Line Stack Overflow",
-      "description": "ABC2MTEX 1.6.1 - Command Line Stack Overflow",
+      "name": "ABC2MTEX 1.6.1 - 'openIn' Command Line Stack Overflow (PoC)",
+      "description": "ABC2MTEX 1.6.1 - 'openIn' Command Line Stack Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/47254.txt"
     }
   ],
@@ -2540,7 +2540,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows XP/2000 - TCP Connection Reset",
       "description": "Microsoft Windows XP/2000 - TCP Connection Reset",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/276.delphi"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/276.dpr"
     }
   ],
   "CVE-2004-0084": [
@@ -2682,7 +2682,7 @@
       "source": "exploitdb",
       "name": "Microsoft MSN Messenger 6.2.0137 - '.png' Remote Buffer Overflow",
       "description": "Microsoft MSN Messenger 6.2.0137 - '.png' Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/25094.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/25094.cpp"
     }
   ],
   "CVE-2004-0110": [
@@ -2834,7 +2834,7 @@
       "source": "exploitdb",
       "name": "SoX - Local Buffer Overflow",
       "description": "SoX - Local Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/369.pl"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/369.py"
     }
   ],
   "CVE-2004-0524": [
@@ -3078,8 +3078,8 @@
   "CVE-2004-1915": [
     {
       "source": "exploitdb",
-      "name": "lcdproc lcdd 0.x/4.x - Multiple Vulnerabilities",
-      "description": "lcdproc lcdd 0.x/4.x - Multiple Vulnerabilities",
+      "name": "lcdproc lcdd 0.x/4.x - Buffer Overflow / Format String",
+      "description": "lcdproc lcdd 0.x/4.x - Buffer Overflow / Format String",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/23936.pl"
     }
   ],
@@ -3302,8 +3302,8 @@
   "CVE-2004-1602": [
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.2.10 - Remote Users Enumeration",
-      "description": "ProFTPd 1.2.10 - Remote Users Enumeration",
+      "name": "ProFTPD 1.2.10 - Remote Users Enumeration",
+      "description": "ProFTPD 1.2.10 - Remote Users Enumeration",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/581.c"
     },
     {
@@ -3356,8 +3356,8 @@
   "CVE-2004-0393": [
     {
       "source": "exploitdb",
-      "name": "Rlpr 2.0 - 'msg()' Multiple Vulnerabilities",
-      "description": "Rlpr 2.0 - 'msg()' Multiple Vulnerabilities",
+      "name": "Rlpr 2.0 - 'msg()' Format String / Buffer Overflow",
+      "description": "Rlpr 2.0 - 'msg()' Format String / Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/24223.py"
     },
     {
@@ -3532,7 +3532,7 @@
       "source": "exploitdb",
       "name": "Call of Duty 1.4 - Denial of Service (DoS)",
       "description": "Call of Duty 1.4 - Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/433.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/433.txt"
     }
   ],
   "CVE-2004-0247": [
@@ -4000,7 +4000,7 @@
       "source": "exploitdb",
       "name": "Trend Micro ScanMail for Domino 2.51/2.6 - Remote File Disclosure",
       "description": "Trend Micro ScanMail for Domino 2.51/2.6 - Remote File Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/24725.php"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/24725.nasl"
     }
   ],
   "CVE-2004-1299": [
@@ -4092,7 +4092,7 @@
       "source": "exploitdb",
       "name": "Apple Safari 1.2 Web Browser - TABLE Status Bar URI Obfuscation",
       "description": "Apple Safari 1.2 Web Browser - TABLE Status Bar URI Obfuscation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/osx/remote/24716.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/osx/remote/24716.html"
     }
   ],
   "CVE-2004-1018": [
@@ -4426,40 +4426,40 @@
   "CVE-2004-0660": [
     {
       "source": "exploitdb",
-      "name": "CuteNews 0.88/1.3 - 'example1.php' Cross-Site Scripting (XSS)",
-      "description": "CuteNews 0.88/1.3 - 'example1.php' Cross-Site Scripting (XSS)",
+      "name": "CutePHP CuteNews 0.88/1.3 - 'example1.php' Cross-Site Scripting (XSS)",
+      "description": "CutePHP CuteNews 0.88/1.3 - 'example1.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24238.txt"
     },
     {
       "source": "exploitdb",
-      "name": "CuteNews 0.88/1.3 - 'example2.php' Cross-Site Scripting (XSS)",
-      "description": "CuteNews 0.88/1.3 - 'example2.php' Cross-Site Scripting (XSS)",
+      "name": "CutePHP CuteNews 0.88/1.3 - 'example2.php' Cross-Site Scripting (XSS)",
+      "description": "CutePHP CuteNews 0.88/1.3 - 'example2.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24239.txt"
     },
     {
       "source": "exploitdb",
-      "name": "CuteNews 0.88/1.3 - 'show_archives.php' Cross-Site Scripting (XSS)",
-      "description": "CuteNews 0.88/1.3 - 'show_archives.php' Cross-Site Scripting (XSS)",
+      "name": "CutePHP CuteNews 0.88/1.3 - 'show_archives.php' Cross-Site Scripting (XSS)",
+      "description": "CutePHP CuteNews 0.88/1.3 - 'show_archives.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24240.txt"
     },
     {
       "source": "exploitdb",
-      "name": "CuteNews 1.3 - Comment HTML Injection",
-      "description": "CuteNews 1.3 - Comment HTML Injection",
+      "name": "CutePHP CuteNews 1.3 - Comment HTML Injection",
+      "description": "CutePHP CuteNews 1.3 - Comment HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24290.txt"
     },
     {
       "source": "exploitdb",
-      "name": "CuteNews 1.3.1 - 'show_archives.php' Cross-Site Scripting (XSS)",
-      "description": "CuteNews 1.3.1 - 'show_archives.php' Cross-Site Scripting (XSS)",
+      "name": "CutePHP CuteNews 1.3.1 - 'show_archives.php' Cross-Site Scripting (XSS)",
+      "description": "CutePHP CuteNews 1.3.1 - 'show_archives.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24372.txt"
     }
   ],
   "CVE-2004-1659": [
     {
       "source": "exploitdb",
-      "name": "CuteNews 0.88/1.3.x - 'index.php' Cross-Site Scripting (XSS)",
-      "description": "CuteNews 0.88/1.3.x - 'index.php' Cross-Site Scripting (XSS)",
+      "name": "CutePHP CuteNews 0.88/1.3.x - 'index.php' Cross-Site Scripting (XSS)",
+      "description": "CutePHP CuteNews 0.88/1.3.x - 'index.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24566.txt"
     }
   ],
@@ -4696,7 +4696,7 @@
       "source": "exploitdb",
       "name": "Gallery 1.4.4 - Remote Server-Side Script Execution",
       "description": "Gallery 1.4.4 - Remote Server-Side Script Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24383.php"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24383.txt"
     }
   ],
   "CVE-2004-1934": [
@@ -4743,6 +4743,48 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/23517.txt"
     }
   ],
+  "CVE-2004-1719": [
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - 'address.html' Multiple Cross-Site Scripting (XSS)",
+      "description": "IceWarp Merak Mail Server 7.4.5 - 'address.html' Multiple Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24377.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - 'attachment.html?attachmentpage_text_error' Cross-Site Scripting (XSS)",
+      "description": "IceWarp Merak Mail Server 7.4.5 - 'attachment.html?attachmentpage_text_error' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24379.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - 'settings.html' Multiple Cross-Site Scripting (XSS)",
+      "description": "IceWarp Merak Mail Server 7.4.5 - 'settings.html' Multiple Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24378.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - HTML Message Body Cross-Site Scripting (XSS)",
+      "description": "IceWarp Merak Mail Server 7.4.5 - HTML Message Body Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24380.txt"
+    }
+  ],
+  "CVE-2004-1722": [
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - 'calendar.html?schedule' SQL Injection (SQLi)",
+      "description": "IceWarp Merak Mail Server 7.4.5 - 'calendar.html?schedule' SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24382.txt"
+    }
+  ],
+  "CVE-2004-1720": [
+    {
+      "source": "exploitdb",
+      "name": "IceWarp Merak Mail Server 7.4.5 - address.html Full Path Disclosure",
+      "description": "IceWarp Merak Mail Server 7.4.5 - address.html Full Path Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24381.txt"
+    }
+  ],
   "CVE-2004-1835": [
     {
       "source": "exploitdb",
@@ -4768,8 +4810,8 @@
   "CVE-2004-1531": [
     {
       "source": "exploitdb",
-      "name": "Invision Power Board 2.0.0 < 2.0.2 - SQL Injection (SQLi)",
-      "description": "Invision Power Board 2.0.0 < 2.0.2 - SQL Injection (SQLi)",
+      "name": "Invision Power Board 2.0.0 <= 2.0.2 - SQL Injection (SQLi)",
+      "description": "Invision Power Board 2.0.0 <= 2.0.2 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/648.pl"
     }
   ],
@@ -4969,48 +5011,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24994.txt"
     }
   ],
-  "CVE-2004-1719": [
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - 'address.html' Multiple Cross-Site Scripting (XSS)",
-      "description": "Merak Mail Server 7.4.5 - 'address.html' Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24377.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - 'attachment.html?attachmentpage_text_error' Cross-Site Scripting (XSS)",
-      "description": "Merak Mail Server 7.4.5 - 'attachment.html?attachmentpage_text_error' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24379.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - 'settings.html' Multiple Cross-Site Scripting (XSS)",
-      "description": "Merak Mail Server 7.4.5 - 'settings.html' Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24378.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - HTML Message Body Cross-Site Scripting (XSS)",
-      "description": "Merak Mail Server 7.4.5 - HTML Message Body Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24380.txt"
-    }
-  ],
-  "CVE-2004-1722": [
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - 'calendar.html?schedule' SQL Injection (SQLi)",
-      "description": "Merak Mail Server 7.4.5 - 'calendar.html?schedule' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24382.txt"
-    }
-  ],
-  "CVE-2004-1720": [
-    {
-      "source": "exploitdb",
-      "name": "Merak Mail Server 7.4.5 - address.html Full Path Disclosure",
-      "description": "Merak Mail Server 7.4.5 - address.html Full Path Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24381.txt"
-    }
-  ],
   "CVE-2004-2456": [
     {
       "source": "exploitdb",
@@ -5112,8 +5112,8 @@
   "CVE-2004-1937": [
     {
       "source": "exploitdb",
-      "name": "Nuked-klaN 1.x - Multiple Vulnerabilities",
-      "description": "Nuked-klaN 1.x - Multiple Vulnerabilities",
+      "name": "Nuked-klaN 1.x - Local File Inclusion (LFI) / Configuration File Corruption / SQL Injection (SQLi)",
+      "description": "Nuked-klaN 1.x - Local File Inclusion (LFI) / Configuration File Corruption / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/23988.txt"
     }
   ],
@@ -5178,8 +5178,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "OpenBB < 1.0.6 - Multiple Vulnerabilities",
-      "description": "OpenBB < 1.0.6 - Multiple Vulnerabilities",
+      "name": "OpenBB <= 1.0.6 - Multiple Vulnerabilities",
+      "description": "OpenBB <= 1.0.6 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43811.txt"
     },
     {
@@ -5317,20 +5317,6 @@
       "name": "PHP Code Snippet Library 0.8 - Multiple Cross-Site Scripting (XSS)",
       "description": "PHP Code Snippet Library 0.8 - Multiple Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24410.txt"
-    }
-  ],
-  "CVE-2004-1423": [
-    {
-      "source": "exploitdb",
-      "name": "PHP-Calendar < 0.10.1 - Arbitrary File Inclusion",
-      "description": "PHP-Calendar < 0.10.1 - Arbitrary File Inclusion",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43819.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Virtual Law Office - 'phpc_root_path' Remote File Inclusion (RFI)",
-      "description": "Virtual Law Office - 'phpc_root_path' Remote File Inclusion (RFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2608.txt"
     }
   ],
   "CVE-2004-1724": [
@@ -5526,8 +5512,8 @@
   "CVE-2004-1519": [
     {
       "source": "exploitdb",
-      "name": "phpBugTracker 1.6.0 - Multiple Vulnerabilities",
-      "description": "phpBugTracker 1.6.0 - Multiple Vulnerabilities",
+      "name": "phpBugTracker 1.6.0 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
+      "description": "phpBugTracker 1.6.0 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36160.txt"
     }
   ],
@@ -5802,8 +5788,8 @@
   "CVE-2004-0249": [
     {
       "source": "exploitdb",
-      "name": "PHPX 3.2.3 - Multiple Vulnerabilities",
-      "description": "PHPX 3.2.3 - Multiple Vulnerabilities",
+      "name": "PHPX 3.2.3 - Cross-Site Scripting (XSS) / HTML Injection / Account Hijacking",
+      "description": "PHPX 3.2.3 - Cross-Site Scripting (XSS) / HTML Injection / Account Hijacking",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/23644.php"
     }
   ],
@@ -5958,7 +5944,7 @@
       "source": "exploitdb",
       "name": "S9Y Serendipity 0.7-beta1 - SQL Injection (SQLi)",
       "description": "S9Y Serendipity 0.7-beta1 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/561.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/561.txt"
     }
   ],
   "CVE-2004-1620": [
@@ -5974,7 +5960,21 @@
       "source": "exploitdb",
       "name": "SCT Campus Pipeline 1.0/2.x/3.x - Email Attachment Script Injection",
       "description": "SCT Campus Pipeline 1.0/2.x/3.x - Email Attachment Script Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24008.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24008.txt"
+    }
+  ],
+  "CVE-2004-1423": [
+    {
+      "source": "exploitdb",
+      "name": "Sean Proctor PHP-Calendar < 0.10.1 - Arbitrary File Inclusion",
+      "description": "Sean Proctor PHP-Calendar < 0.10.1 - Arbitrary File Inclusion",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43819.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Virtual Law Office - 'phpc_root_path' Remote File Inclusion (RFI)",
+      "description": "Virtual Law Office - 'phpc_root_path' Remote File Inclusion (RFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/2608.txt"
     }
   ],
   "CVE-2004-1567": [
@@ -6050,8 +6050,8 @@
   "CVE-2004-2702": [
     {
       "source": "exploitdb",
-      "name": "SWsoft Plesk Reloaded 7.1 - 'Login_name' Cross-Site Scripting (XSS)",
-      "description": "SWsoft Plesk Reloaded 7.1 - 'Login_name' Cross-Site Scripting (XSS)",
+      "name": "SWSoft Plesk Reloaded 7.1 - 'Login_name' Cross-Site Scripting (XSS)",
+      "description": "SWSoft Plesk Reloaded 7.1 - 'Login_name' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/24405.txt"
     }
   ],
@@ -6066,8 +6066,8 @@
   "CVE-2004-1923": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6080,8 +6080,8 @@
   "CVE-2004-1924": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6154,8 +6154,8 @@
   "CVE-2004-1925": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6252,8 +6252,8 @@
   "CVE-2004-1926": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6272,8 +6272,8 @@
   "CVE-2004-1927": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6286,8 +6286,8 @@
   "CVE-2004-1928": [
     {
       "source": "exploitdb",
-      "name": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
-      "description": "TikiWiki < 1.8.1 - Multiple Vulnerabilities",
+      "name": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
+      "description": "TikiWiki <= 1.8.1 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/43809.txt"
     },
     {
@@ -6682,8 +6682,8 @@
   "CVE-2004-0511": [
     {
       "source": "exploitdb",
-      "name": "SCO Multi-channel Memorandum Distribution Facility - Multiple Vulnerabilities",
-      "description": "SCO Multi-channel Memorandum Distribution Facility - Multiple Vulnerabilities",
+      "name": "SCO Multi-channel Memorandum Distribution Facility - Multiple Buffer Overflows",
+      "description": "SCO Multi-channel Memorandum Distribution Facility - Multiple Buffer Overflows",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/sco/local/24293.c"
     }
   ],
@@ -6730,8 +6730,8 @@
   "CVE-2004-1326": [
     {
       "source": "exploitdb",
-      "name": "Ultrix 4.5/MIPS - dxterm 0 Local Buffer Overflow",
-      "description": "Ultrix 4.5/MIPS - dxterm 0 Local Buffer Overflow",
+      "name": "Digital Ultrix 4.5/MIPS - dxterm 0 Local Buffer Overflow",
+      "description": "Digital Ultrix 4.5/MIPS - dxterm 0 Local Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/ultrix/local/698.c"
     }
   ],
@@ -6796,7 +6796,7 @@
       "source": "exploitdb",
       "name": "Oracle9i Database - Default Library Directory Privilege Escalation",
       "description": "Oracle9i Database - Default Library Directory Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/local/24335.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/local/24335.c"
     }
   ],
   "CVE-2004-1621": [
@@ -6842,8 +6842,8 @@
   "CVE-2004-2675": [
     {
       "source": "exploitdb",
-      "name": "ArGoSoft FTP Server 1.0/1.2/1.4 - Multiple Vulnerabilities",
-      "description": "ArGoSoft FTP Server 1.0/1.2/1.4 - Multiple Vulnerabilities",
+      "name": "ArGoSoft FTP Server 1.0/1.2/1.4 - Buffer Overflow / Directory Traversal / Denial of Service (DoS)",
+      "description": "ArGoSoft FTP Server 1.0/1.2/1.4 - Buffer Overflow / Directory Traversal / Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23769.pl"
     }
   ],
@@ -7011,20 +7011,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/24770.py"
     }
   ],
-  "CVE-2004-1907": [
+  "CVE-2004-2081": [
     {
       "source": "exploitdb",
-      "name": "Kerio Personal Firewall 4.0.x - Web Filtering Remote Denial of Service (DoS)",
-      "description": "Kerio Personal Firewall 4.0.x - Web Filtering Remote Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23925.txt"
+      "name": "KarjaSoft Sami FTP Server 1.1.3 - Invalid Command Argument Local Denial of Service (DoS)",
+      "description": "KarjaSoft Sami FTP Server 1.1.3 - Invalid Command Argument Local Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23692.txt"
     }
   ],
-  "CVE-2004-1109": [
+  "CVE-2004-2082": [
     {
       "source": "exploitdb",
-      "name": "Kerio Personal Firewall 4.1.1 - Multiple IP Options Denial of Service (DoS)",
-      "description": "Kerio Personal Firewall 4.1.1 - Multiple IP Options Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/626.c"
+      "name": "KarjaSoft Sami FTP Server 1.1.3 - Library Crafted GET Remote Denial of Service (DoS)",
+      "description": "KarjaSoft Sami FTP Server 1.1.3 - Library Crafted GET Remote Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23693.txt"
     }
   ],
   "CVE-2004-1216": [
@@ -7094,8 +7094,8 @@
   "CVE-2004-1906": [
     {
       "source": "exploitdb",
-      "name": "Mcafee FreeScan CoMcFreeScan Browser - Object Buffer Overflow (PoC)",
-      "description": "Mcafee FreeScan CoMcFreeScan Browser - Object Buffer Overflow (PoC)",
+      "name": "McAfee FreeScan CoMcFreeScan Browser - Object Buffer Overflow (PoC)",
+      "description": "McAfee FreeScan CoMcFreeScan Browser - Object Buffer Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23920.txt"
     }
   ],
@@ -7186,7 +7186,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows - JPEG GDI+ Overflow Download Shellcode (MS04-028)",
       "description": "Microsoft Windows - JPEG GDI+ Overflow Download Shellcode (MS04-028)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/478.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/478.cpp"
     },
     {
       "source": "exploitdb",
@@ -7214,7 +7214,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows NNTP Service (XPAT) - Denial of Service (DoS) (MS04-036)",
       "description": "Microsoft Windows NNTP Service (XPAT) - Denial of Service (DoS) (MS04-036)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/578.pl"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/578.py"
     }
   ],
   "CVE-2004-0728": [
@@ -7286,22 +7286,14 @@
       "source": "exploitdb",
       "name": "Need for Speed 2 - Remote Client Buffer Overflow (PoC)",
       "description": "Need for Speed 2 - Remote Client Buffer Overflow (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/147.c"
-    }
-  ],
-  "CVE-2004-0683": [
-    {
-      "source": "exploitdb",
-      "name": "Norton AntiVirus - Denial of Service (DoS)",
-      "description": "Norton AntiVirus - Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/312.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/147.txt"
     }
   ],
   "CVE-2004-1150": [
     {
       "source": "exploitdb",
-      "name": "NullSoft Winamp 5.0.x - Variant 'IN_CDDA.dll' Remote Buffer Overflow (PoC)",
-      "description": "NullSoft Winamp 5.0.x - Variant 'IN_CDDA.dll' Remote Buffer Overflow (PoC)",
+      "name": "Nullsoft Winamp 5.0.x - Variant 'IN_CDDA.dll' Remote Buffer Overflow (PoC)",
+      "description": "Nullsoft Winamp 5.0.x - Variant 'IN_CDDA.dll' Remote Buffer Overflow (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/25061.txt"
     }
   ],
@@ -7310,7 +7302,7 @@
       "source": "exploitdb",
       "name": "OpenText FirstClass 8.0 - HTTP Daemon '/Search' Remote Denial of Service (DoS)",
       "description": "OpenText FirstClass 8.0 - HTTP Daemon '/Search' Remote Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/687.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/687.cpp"
     }
   ],
   "CVE-2004-1208": [
@@ -7346,7 +7338,7 @@
       "source": "exploitdb",
       "name": "Painkiller 1.3.1 - Denial of Service (DoS)",
       "description": "Painkiller 1.3.1 - Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/422.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/422.txt"
     }
   ],
   "CVE-2004-1904": [
@@ -7370,7 +7362,7 @@
       "source": "exploitdb",
       "name": "PopMessenger 1.60 - Remote Denial of Service (DoS)",
       "description": "PopMessenger 1.60 - Remote Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/477.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/477.txt"
     }
   ],
   "CVE-2004-1944": [
@@ -7384,8 +7376,8 @@
   "CVE-2004-0389": [
     {
       "source": "exploitdb",
-      "name": "Real Networks Helix Universal Server 9.0.x - Denial of Service (DoS)",
-      "description": "Real Networks Helix Universal Server 9.0.x - Denial of Service (DoS)",
+      "name": "RealNetworks Helix Universal Server 9.0.x - Denial of Service (DoS)",
+      "description": "RealNetworks Helix Universal Server 9.0.x - Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/24010.txt"
     }
   ],
@@ -7394,7 +7386,7 @@
       "source": "exploitdb",
       "name": "Red Faction 1.20 - Server Reply Remote Buffer Overflow (PoC)",
       "description": "Red Faction 1.20 - Server Reply Remote Buffer Overflow (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/161.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/161.txt"
     }
   ],
   "CVE-2004-1992": [
@@ -7425,22 +7417,6 @@
       "name": "RobotFTP Server 1.0/2.0 - 'Username' Buffer Overflow (2)",
       "description": "RobotFTP Server 1.0/2.0 - 'Username' Buffer Overflow (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23709.c"
-    }
-  ],
-  "CVE-2004-2081": [
-    {
-      "source": "exploitdb",
-      "name": "Sami FTP Server 1.1.3 - Invalid Command Argument Local Denial of Service (DoS)",
-      "description": "Sami FTP Server 1.1.3 - Invalid Command Argument Local Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23692.txt"
-    }
-  ],
-  "CVE-2004-2082": [
-    {
-      "source": "exploitdb",
-      "name": "Sami FTP Server 1.1.3 - Library Crafted GET Remote Denial of Service (DoS)",
-      "description": "Sami FTP Server 1.1.3 - Library Crafted GET Remote Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23693.txt"
     }
   ],
   "CVE-2004-0264": [
@@ -7483,6 +7459,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/655.c"
     }
   ],
+  "CVE-2004-1907": [
+    {
+      "source": "exploitdb",
+      "name": "Sunbelt Kerio Personal Firewall 4.0.x - Web Filtering Remote Denial of Service (DoS)",
+      "description": "Sunbelt Kerio Personal Firewall 4.0.x - Web Filtering Remote Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/23925.txt"
+    }
+  ],
+  "CVE-2004-1109": [
+    {
+      "source": "exploitdb",
+      "name": "Sunbelt Kerio Personal Firewall 4.1.1 - Multiple IP Options Denial of Service (DoS)",
+      "description": "Sunbelt Kerio Personal Firewall 4.1.1 - Multiple IP Options Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/626.c"
+    }
+  ],
   "CVE-2004-1781": [
     {
       "source": "exploitdb",
@@ -7505,6 +7497,14 @@
       "name": "Symantec Multiple Firewall - DNS Response Denial of Service (DoS)",
       "description": "Symantec Multiple Firewall - DNS Response Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/299.c"
+    }
+  ],
+  "CVE-2004-0683": [
+    {
+      "source": "exploitdb",
+      "name": "Symantec Norton AntiVirus - Denial of Service (DoS)",
+      "description": "Symantec Norton AntiVirus - Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/312.txt"
     }
   ],
   "CVE-2004-1910": [
@@ -7722,7 +7722,7 @@
       "source": "exploitdb",
       "name": "OllyDbg 1.10 - Local Format String",
       "description": "OllyDbg 1.10 - Local Format String",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/3757.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/3757.c"
     }
   ],
   "CVE-2004-1417": [
@@ -7854,7 +7854,7 @@
       "source": "exploitdb",
       "name": "Alt-N MDaemon 6.5.1 - IMAP/SMTP Remote Buffer Overflow",
       "description": "Alt-N MDaemon 6.5.1 - IMAP/SMTP Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/473.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/473.txt"
     },
     {
       "source": "exploitdb",
@@ -7926,8 +7926,8 @@
   "CVE-2004-2121": [
     {
       "source": "exploitdb",
-      "name": "borland Web server for corel paradox 1.0 b3 - Directory Traversal",
-      "description": "borland Web server for corel paradox 1.0 b3 - Directory Traversal",
+      "name": "Borland Web server for corel paradox 1.0 b3 - Directory Traversal",
+      "description": "Borland Web server for corel paradox 1.0 b3 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23597.txt"
     }
   ],
@@ -7947,18 +7947,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24077.txt"
     }
   ],
-  "CVE-2004-2685": [
+  "CVE-2004-1666": [
     {
       "source": "exploitdb",
-      "name": "CCProxy 6.2 - 'ping' Remote Buffer Overflow",
-      "description": "CCProxy 6.2 - 'ping' Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/621.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
-      "description": "CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/4360.rb"
+      "name": "Cerulean Studios Trillian 0.74i MSN Module - Remote Buffer Overflow",
+      "description": "Cerulean Studios Trillian 0.74i MSN Module - Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/435.c"
     }
   ],
   "CVE-2004-2309": [
@@ -7999,14 +7993,6 @@
       "name": "eSignal 7.6 - STREAMQUOTE Remote Buffer Overflow",
       "description": "eSignal 7.6 - STREAMQUOTE Remote Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/166.pl"
-    }
-  ],
-  "CVE-2004-1521": [
-    {
-      "source": "exploitdb",
-      "name": "Eudora 6.0.3 (Windows) - Attachment Spoofing",
-      "description": "Eudora 6.0.3 (Windows) - Attachment Spoofing",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/163.pl"
     }
   ],
   "CVE-2004-1223": [
@@ -8054,7 +8040,7 @@
       "source": "exploitdb",
       "name": "Gaucho 1.4 - Mail Client Buffer Overflow",
       "description": "Gaucho 1.4 - Mail Client Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/421.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/421.cpp"
     }
   ],
   "CVE-2004-2475": [
@@ -8156,7 +8142,7 @@
       "source": "exploitdb",
       "name": "Ipswitch WS_FTP Server 4.0.2 - ALLO Remote Buffer Overflow",
       "description": "Ipswitch WS_FTP Server 4.0.2 - ALLO Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/165.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/165.cpp"
     }
   ],
   "CVE-2004-0292": [
@@ -8186,8 +8172,8 @@
   "CVE-2004-1908": [
     {
       "source": "exploitdb",
-      "name": "Mcafee FreeScan CoMcFreeScan Browser - Information Disclosure",
-      "description": "Mcafee FreeScan CoMcFreeScan Browser - Information Disclosure",
+      "name": "McAfee FreeScan CoMcFreeScan Browser - Information Disclosure",
+      "description": "McAfee FreeScan CoMcFreeScan Browser - Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23926.txt"
     }
   ],
@@ -8264,7 +8250,7 @@
       "source": "exploitdb",
       "name": "Microsoft Internet Explorer 5.0.1 - JavaScript Method Assignment Cross-Domain Scripting",
       "description": "Microsoft Internet Explorer 5.0.1 - JavaScript Method Assignment Cross-Domain Scripting",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24265.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24265.txt"
     }
   ],
   "CVE-2004-2090": [
@@ -8443,12 +8429,36 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23877.txt"
     }
   ],
+  "CVE-2004-0820": [
+    {
+      "source": "exploitdb",
+      "name": "Nullsoft Winamp 5.04 - '.wsz' Skin File Remote Code Execution (RCE)",
+      "description": "Nullsoft Winamp 5.04 - '.wsz' Skin File Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/418.txt"
+    }
+  ],
+  "CVE-2004-1119": [
+    {
+      "source": "exploitdb",
+      "name": "Nullsoft Winamp 5.06 - 'IN_CDDA.dll' Remote Buffer Overflow",
+      "description": "Nullsoft Winamp 5.06 - 'IN_CDDA.dll' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/654.c"
+    }
+  ],
   "CVE-2004-2299": [
     {
       "source": "exploitdb",
       "name": "Omnicron OmniHTTPd 2.x/3.0 - GET Buffer Overflow",
       "description": "Omnicron OmniHTTPd 2.x/3.0 - GET Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/24129.bat"
+    }
+  ],
+  "CVE-2004-1521": [
+    {
+      "source": "exploitdb",
+      "name": "Qualcomm Eudora 6.0.3 (Windows) - Attachment Spoofing",
+      "description": "Qualcomm Eudora 6.0.3 (Windows) - Attachment Spoofing",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/163.pl"
     }
   ],
   "CVE-2004-2649": [
@@ -8494,7 +8504,7 @@
       "source": "exploitdb",
       "name": "SlimFTPd 3.15 - Remote Buffer Overflow",
       "description": "SlimFTPd 3.15 - Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/623.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/623.cpp"
     }
   ],
   "CVE-2004-0046": [
@@ -8581,14 +8591,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2004/CVE-2004-1641.yaml"
     }
   ],
-  "CVE-2004-1666": [
-    {
-      "source": "exploitdb",
-      "name": "Trillian 0.74i MSN Module - Remote Buffer Overflow",
-      "description": "Trillian 0.74i MSN Module - Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/435.c"
-    }
-  ],
   "CVE-2004-1784": [
     {
       "source": "exploitdb",
@@ -8610,23 +8612,7 @@
       "source": "exploitdb",
       "name": "WFTPD Server 3.21 - Remote Buffer Overflow",
       "description": "WFTPD Server 3.21 - Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/159.c"
-    }
-  ],
-  "CVE-2004-0820": [
-    {
-      "source": "exploitdb",
-      "name": "Winamp 5.04 - '.wsz' Skin File Remote Code Execution (RCE)",
-      "description": "Winamp 5.04 - '.wsz' Skin File Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/418.c"
-    }
-  ],
-  "CVE-2004-1119": [
-    {
-      "source": "exploitdb",
-      "name": "Winamp 5.06 - 'IN_CDDA.dll' Remote Buffer Overflow",
-      "description": "Winamp 5.06 - 'IN_CDDA.dll' Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/654.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/159.cpp"
     }
   ],
   "CVE-2004-1645": [
@@ -8657,6 +8643,20 @@
       "name": "YaSoft Switch Off 2.3 - 'swnet.dll' Remote Buffer Overflow",
       "description": "YaSoft Switch Off 2.3 - 'swnet.dll' Remote Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/23509.c"
+    }
+  ],
+  "CVE-2004-2685": [
+    {
+      "source": "exploitdb",
+      "name": "YoungZSoft CCProxy 6.2 - 'ping' Remote Buffer Overflow",
+      "description": "YoungZSoft CCProxy 6.2 - 'ping' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/621.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "YoungZSoft CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
+      "description": "YoungZSoft CCProxy 6.2 - Telnet Proxy Ping Overflow (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/4360.rb"
     }
   ],
   "CVE-2004-1859": [

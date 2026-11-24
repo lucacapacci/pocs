@@ -160,8 +160,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Adobe ColdFusion versions 2018_15 (and earlier) and 2021_5 and earlier - Arbitrary File Read",
-      "description": "Adobe ColdFusion versions 2018_15 (and earlier) and 2021_5 and earlier - Arbitrary File Read",
+      "name": "Adobe ColdFusion <= 2018 Update 15 / <= 2021 Update 5 - Arbitrary File Read",
+      "description": "Adobe ColdFusion <= 2018 Update 15 / <= 2021 Update 5 - Arbitrary File Read",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51875.py"
     },
     {
@@ -332,7 +332,7 @@
       "source": "exploitdb",
       "name": "Joomla! 4.2.8 - Unauthenticated Information Disclosure",
       "description": "Joomla! 4.2.8 - Unauthenticated Information Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51334.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51334.rb"
     },
     {
       "source": "nuclei",
@@ -550,8 +550,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Chamilo LMS 1.11.24 - Remote Code Execution (RCE)",
-      "description": "Chamilo LMS 1.11.24 - Remote Code Execution (RCE)",
+      "name": "Chamilo LMS <= 1.11.24 - Remote Code Execution (RCE)",
+      "description": "Chamilo LMS <= 1.11.24 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52083.py"
     },
     {
@@ -728,9 +728,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "MagnusSolution magnusbilling 7.3.0 - Command Injection",
-      "description": "MagnusSolution magnusbilling 7.3.0 - Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52170.txt"
+      "name": "MagnusSolution magnusbilling 7.3.0 - 'democ' Command Injection",
+      "description": "MagnusSolution magnusbilling 7.3.0 - 'democ' Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52170.txt"
     },
     {
       "source": "nuclei",
@@ -868,9 +868,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "Ray OS 2.6.3 - Unauthenticated Command Injection / Remote Code Execution (RCE)",
-      "description": "Ray OS 2.6.3 - Unauthenticated Command Injection / Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/51978.txt"
+      "name": "Ray 2.6.3 - Unauthenticated Command Injection / Remote Code Execution (RCE)",
+      "description": "Ray 2.6.3 - Unauthenticated Command Injection / Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/51978.py"
     }
   ],
   "CVE-2023-23333": [
@@ -986,9 +986,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "glibc 2.38 - Buffer Overflow",
-      "description": "glibc 2.38 - Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52479.txt"
+      "name": "GNU glibc 2.38 - 'Looney Tunables' Local Privilege Escalation (LPE)",
+      "description": "GNU glibc 2.38 - 'Looney Tunables' Local Privilege Escalation (LPE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52479.c"
     }
   ],
   "CVE-2023-22809": [
@@ -1442,8 +1442,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "WonderCMS 3.4.2 - Remote Code Execution (RCE)",
-      "description": "WonderCMS 3.4.2 - Remote Code Execution (RCE)",
+      "name": "WonderCMS 3.4.2 - Reflected Cross-Site Scripting (XSS) / Remote Code Execution (RCE)",
+      "description": "WonderCMS 3.4.2 - Reflected Cross-Site Scripting (XSS) / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/remote/52271.py"
     }
   ],
@@ -1458,7 +1458,7 @@
       "source": "exploitdb",
       "name": "WordPress Backup Migration 1.3.7 - Remote Command Execution (Metasploit)",
       "description": "WordPress Backup Migration 1.3.7 - Remote Command Execution (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52486.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52486.rb"
     },
     {
       "source": "nuclei",
@@ -1590,8 +1590,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "ZoneMinder Snapshots < 1.37.33 - Unauthenticated Remote Code Execution (RCE)",
-      "description": "ZoneMinder Snapshots < 1.37.33 - Unauthenticated Remote Code Execution (RCE)",
+      "name": "ZoneMinder Snapshots < 1.36.33 / < 1.37.33 - Unauthenticated Remote Code Execution (RCE)",
+      "description": "ZoneMinder Snapshots < 1.36.33 / < 1.37.33 - Unauthenticated Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51902.py"
     },
     {
@@ -1632,8 +1632,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "WinRAR 6.22 - Remote Code Execution (RCE) via ZIP archive",
-      "description": "WinRAR 6.22 - Remote Code Execution (RCE) via ZIP archive",
+      "name": "RARLAB WinRAR 6.22 - Remote Code Execution (RCE) via ZIP archive",
+      "description": "RARLAB WinRAR 6.22 - Remote Code Execution (RCE) via ZIP archive",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51935.c"
     }
   ],
@@ -1853,6 +1853,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/post/linux/gather/rancher_audit_log_leak.rb"
     }
   ],
+  "CVE-2023-27823": [
+    {
+      "source": "exploitdb",
+      "name": "Optoma 1080PSTX Firmware C02 - 'atop' Authentication Bypass",
+      "description": "Optoma 1080PSTX Firmware C02 - 'atop' Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/remote/51444.txt"
+    }
+  ],
   "CVE-2023-53950": [
     {
       "source": "exploitdb",
@@ -1873,6 +1881,30 @@
       "name": "Sitecore - Remote Code Execution",
       "description": "Multiple Sitecore products allow remote code execution. This affects Experience Manager, Experience Platform, and Experience Commerce through 10.3.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-35813.yaml"
+    }
+  ],
+  "CVE-2023-24709": [
+    {
+      "source": "exploitdb",
+      "name": "Paradox Security Systems IPR512 - 'log_user' Unauthenticated Denial of Service (DoS)",
+      "description": "Paradox Security Systems IPR512 - 'log_user' Unauthenticated Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/dos/51356.sh"
+    }
+  ],
+  "CVE-2023-7329": [
+    {
+      "source": "exploitdb",
+      "name": "Tinycontrol LAN Controller v3 (LK3) 1.58a - 'stm.cgi' Unauthenticated Remote Denial of Service (DoS)",
+      "description": "Tinycontrol LAN Controller v3 (LK3) 1.58a - 'stm.cgi' Unauthenticated Remote Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/dos/51730.txt"
+    }
+  ],
+  "CVE-2023-54327": [
+    {
+      "source": "exploitdb",
+      "name": "Tinycontrol LAN Controller v3 (LK3) 1.58a - 'stm.cgi' Unauthenticated Remote Admin Password Change",
+      "description": "Tinycontrol LAN Controller v3 (LK3) 1.58a - 'stm.cgi' Unauthenticated Remote Admin Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/remote/51732.sh"
     }
   ],
   "CVE-2023-26692": [
@@ -1900,15 +1932,23 @@
     },
     {
       "source": "exploitdb",
-      "name": "Casdoor 2.55.0 - Cross-Site Request Forgery (CSRF)",
-      "description": "Casdoor 2.55.0 - Cross-Site Request Forgery (CSRF)",
+      "name": "Casdoor 2.55.0 - '/api/set-password' Cross-Site Request Forgery (CSRF)",
+      "description": "Casdoor 2.55.0 - '/api/set-password' Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52432.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Casdoor 2.95.0 - Cross-Site Request Forgery (CSRF)",
-      "description": "Casdoor 2.95.0 - Cross-Site Request Forgery (CSRF)",
+      "name": "Casdoor 2.95.0 - '/api/set-password' Cross-Site Request Forgery (CSRF)",
+      "description": "Casdoor 2.95.0 - '/api/set-password' Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52439.txt"
+    }
+  ],
+  "CVE-2023-32750": [
+    {
+      "source": "exploitdb",
+      "name": "Pydio Cells 4.1.2 - 'remote-download' Authenticated Server-Side Request Forgery (SSRF)",
+      "description": "Pydio Cells 4.1.2 - 'remote-download' Authenticated Server-Side Request Forgery (SSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/51498.txt"
     }
   ],
   "CVE-2023-32751": [
@@ -1919,14 +1959,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/51497.txt"
     }
   ],
-  "CVE-2023-32750": [
-    {
-      "source": "exploitdb",
-      "name": "Pydio Cells 4.1.2 - Server-Side Request Forgery (SSRF)",
-      "description": "Pydio Cells 4.1.2 - Server-Side Request Forgery (SSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/51498.txt"
-    }
-  ],
   "CVE-2023-32749": [
     {
       "source": "exploitdb",
@@ -1935,36 +1967,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/go/webapps/51496.txt"
     }
   ],
-  "CVE-2023-24709": [
-    {
-      "source": "exploitdb",
-      "name": "Paradox Security Systems IPR512 - Denial of Service (DoS)",
-      "description": "Paradox Security Systems IPR512 - Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/51356.sh"
-    }
-  ],
-  "CVE-2023-7329": [
-    {
-      "source": "exploitdb",
-      "name": "Tinycontrol LAN Controller v3 (LK3) 1.58a - Remote Denial of Service (DoS)",
-      "description": "Tinycontrol LAN Controller v3 (LK3) 1.58a - Remote Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/51730.txt"
-    }
-  ],
   "CVE-2023-36355": [
     {
       "source": "exploitdb",
       "name": "TP-Link TL-WR940N V4 - Buffer OverFlow",
       "description": "TP-Link TL-WR940N V4 - Buffer OverFlow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/51561.py"
-    }
-  ],
-  "CVE-2023-45887": [
-    {
-      "source": "exploitdb",
-      "name": "DS Wireless Communication - Remote Code Execution (RCE)",
-      "description": "DS Wireless Communication - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/local/51798.py"
     }
   ],
   "CVE-2023-30350": [
@@ -1978,8 +1986,8 @@
   "CVE-2023-26609": [
     {
       "source": "exploitdb",
-      "name": "ABUS Security Camera TVIP 20000-21150 - Local File Inclusion (LFI)_ Remote Code Execution (RCE) and SSH Root Access",
-      "description": "ABUS Security Camera TVIP 20000-21150 - Local File Inclusion (LFI)_ Remote Code Execution (RCE) and SSH Root Access",
+      "name": "ABUS Security Camera TVIP 20000-21150 - Local File Inclusion (LFI) / Remote Code Execution (RCE) / SSH Root Access",
+      "description": "ABUS Security Camera TVIP 20000-21150 - Local File Inclusion (LFI) / Remote Code Execution (RCE) / SSH Root Access",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51294.txt"
     }
   ],
@@ -1994,24 +2002,104 @@
   "CVE-2023-53974": [
     {
       "source": "exploitdb",
-      "name": "DSL-124 Wireless N300 ADSL2+ - Backup File Disclosure",
-      "description": "DSL-124 Wireless N300 ADSL2+ - Backup File Disclosure",
+      "name": "D-Link DSL-124 Wireless N300 ADSL2+ ME_1.00 - Backup File Disclosure",
+      "description": "D-Link DSL-124 Wireless N300 ADSL2+ ME_1.00 - Backup File Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51129.txt"
+    }
+  ],
+  "CVE-2023-53740": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51458.py"
+    }
+  ],
+  "CVE-2023-53967": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51458.py"
+    }
+  ],
+  "CVE-2023-53741": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Erase Account",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Erase Account",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51457.py"
+    }
+  ],
+  "CVE-2023-53968": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Erase Account",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Erase Account",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51457.py"
+    }
+  ],
+  "CVE-2023-53775": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Password Change",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51456.py"
+    }
+  ],
+  "CVE-2023-53969": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Password Change",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Password Change",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51456.py"
+    }
+  ],
+  "CVE-2023-53776": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51459.py"
+    }
+  ],
+  "CVE-2023-53970": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51459.py"
+    }
+  ],
+  "CVE-2023-7328": [
+    {
+      "source": "exploitdb",
+      "name": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Unauthenticated Information Disclosure (userManager.cgx)",
+      "description": "DB Elettronica Telecomunicazioni SpA Screen SFT DAB 600/C - Unauthenticated Information Disclosure (userManager.cgx)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51460.txt"
+    }
+  ],
+  "CVE-2023-45887": [
+    {
+      "source": "exploitdb",
+      "name": "DS Wireless Communication - Remote Code Execution (RCE)",
+      "description": "DS Wireless Communication - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51798.py"
     }
   ],
   "CVE-2023-0830": [
     {
       "source": "exploitdb",
-      "name": "EasyNas 1.1.0 - OS Command Injection",
-      "description": "EasyNas 1.1.0 - OS Command Injection",
+      "name": "EasyNas 1.1.0 - Authenticated OS Command Injection",
+      "description": "EasyNas 1.1.0 - Authenticated OS Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51266.py"
     }
   ],
   "CVE-2023-7326": [
     {
       "source": "exploitdb",
-      "name": "Epson Stylus SX510W Printer Remote Power Off - Denial of Service (DoS)",
-      "description": "Epson Stylus SX510W Printer Remote Power Off - Denial of Service (DoS)",
+      "name": "EPSON Stylus SX510W - Remote Power Off Denial of Service (DoS)",
+      "description": "EPSON Stylus SX510W - Remote Power Off Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51441.txt"
     }
   ],
@@ -2048,8 +2136,8 @@
   "CVE-2023-6538": [
     {
       "source": "exploitdb",
-      "name": "HNAS SMU 14.8.7825 - Information Disclosure",
-      "description": "HNAS SMU 14.8.7825 - Information Disclosure",
+      "name": "Hitachi Vantara HNAS SMU 14.8.7825 - Information Disclosure",
+      "description": "Hitachi Vantara HNAS SMU 14.8.7825 - Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51915.py"
     }
   ],
@@ -2070,16 +2158,16 @@
   "CVE-2023-46916": [
     {
       "source": "exploitdb",
-      "name": "Maxima Max Pro Power - Unauthenticated BLE Traffic Replay",
-      "description": "Maxima Max Pro Power - Unauthenticated BLE Traffic Replay",
+      "name": "Maxima Max Pro Power 1.0 486A - Unauthenticated BLE Traffic Replay",
+      "description": "Maxima Max Pro Power 1.0 486A - Unauthenticated BLE Traffic Replay",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51850.txt"
     }
   ],
   "CVE-2023-43261": [
     {
       "source": "exploitdb",
-      "name": "Milesight Routers UR5X_ UR32L_ UR32_ UR35_ UR41 - Credential Leakage Through Unprotected System Logs and Weak Password Encryption",
-      "description": "Milesight Routers UR5X_ UR32L_ UR32_ UR35_ UR41 - Credential Leakage Through Unprotected System Logs and Weak Password Encryption",
+      "name": "Milesight Routers UR5X/UR32L/UR32/UR35/UR41 - Credential Leakage Through Unprotected System Logs / Weak Password Encryption",
+      "description": "Milesight Routers UR5X/UR32L/UR32/UR35/UR41 - Credential Leakage Through Unprotected System Logs / Weak Password Encryption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51784.py"
     },
     {
@@ -2100,17 +2188,9 @@
   "CVE-2023-25187": [
     {
       "source": "exploitdb",
-      "name": "Nokia ASIKA 7.13.52 - Hard-coded private Key Disclosure",
-      "description": "Nokia ASIKA 7.13.52 - Hard-coded private Key Disclosure",
+      "name": "Nokia ASIKA 7.13.52 - Hard-coded Private Key Disclosure",
+      "description": "Nokia ASIKA 7.13.52 - Hard-coded Private Key Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51535.c"
-    }
-  ],
-  "CVE-2023-27823": [
-    {
-      "source": "exploitdb",
-      "name": "Optoma 1080PSTX Firmware C02 - Authentication Bypass",
-      "description": "Optoma 1080PSTX Firmware C02 - Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51444.txt"
     }
   ],
   "CVE-2023-27100": [
@@ -2121,92 +2201,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51352.py"
     }
   ],
-  "CVE-2023-53740": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51458.py"
-    }
-  ],
-  "CVE-2023-53967": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Admin Password Change",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51458.py"
-    }
-  ],
-  "CVE-2023-53741": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Erase Account",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Erase Account",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51457.py"
-    }
-  ],
-  "CVE-2023-53968": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Erase Account",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Erase Account",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51457.py"
-    }
-  ],
-  "CVE-2023-53775": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Password Change",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Password Change",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51456.py"
-    }
-  ],
-  "CVE-2023-53969": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Password Change",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Password Change",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51456.py"
-    }
-  ],
-  "CVE-2023-53776": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51459.py"
-    }
-  ],
-  "CVE-2023-53970": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
-      "description": "Screen SFT DAB 600/C - Authentication Bypass Reset Board Config",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51459.py"
-    }
-  ],
-  "CVE-2023-7328": [
-    {
-      "source": "exploitdb",
-      "name": "Screen SFT DAB 600/C - Unauthenticated Information Disclosure (userManager.cgx)",
-      "description": "Screen SFT DAB 600/C - Unauthenticated Information Disclosure (userManager.cgx)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51460.txt"
-    }
-  ],
   "CVE-2023-33383": [
     {
       "source": "exploitdb",
       "name": "Shelly PRO 4PM 0.11.0 - Authentication Bypass",
       "description": "Shelly PRO 4PM 0.11.0 - Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51657.txt"
-    }
-  ],
-  "CVE-2023-53966": [
-    {
-      "source": "exploitdb",
-      "name": "SOUND4 LinkAndShare Transmitter 1.1.2 - Format String Stack Buffer Overflow",
-      "description": "SOUND4 LinkAndShare Transmitter 1.1.2 - Format String Stack Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51259.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51657.sh"
     }
   ],
   "CVE-2023-34723": [
@@ -2215,14 +2215,6 @@
       "name": "Techview LA-5570 Wireless Gateway Home Automation Controller - Multiple Vulnerabilities",
       "description": "Techview LA-5570 Wireless Gateway Home Automation Controller - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51720.py"
-    }
-  ],
-  "CVE-2023-54327": [
-    {
-      "source": "exploitdb",
-      "name": "Tinycontrol LAN Controller v3 (LK3) 1.58a - Remote Admin Password Change",
-      "description": "Tinycontrol LAN Controller v3 (LK3) 1.58a - Remote Admin Password Change",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/51732.txt"
     }
   ],
   "CVE-2023-53739": [
@@ -2285,20 +2277,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51603.py"
     }
   ],
-  "CVE-2023-28343": [
-    {
-      "source": "exploitdb",
-      "name": "Altenergy Power Control Software C1.2.5 - OS Command Injection",
-      "description": "Altenergy Power Control Software C1.2.5 - OS Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51325.py"
-    },
-    {
-      "source": "nuclei",
-      "name": "Altenergy Power Control Software C1.2.5 - Remote Command Injection",
-      "description": "Altenergy Power Control Software C1.2.5 is susceptible to remote command injection via shell metacharacters in the index.php/management/set_timezone parameter, because of set_timezone in models/management_model.php. An attacker can potentially obtain sensitive information, modify data, and/or execute unauthorized operations without entering necessary credentials.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-28343.yaml"
-    }
-  ],
   "CVE-2023-53893": [
     {
       "source": "exploitdb",
@@ -2326,8 +2304,8 @@
   "CVE-2023-43960": [
     {
       "source": "exploitdb",
-      "name": "DLINK DPH-400SE - Exposure of Sensitive Information",
-      "description": "DLINK DPH-400SE - Exposure of Sensitive Information",
+      "name": "D-Link DPH-400SE - Exposure of Sensitive Information",
+      "description": "D-Link DPH-400SE - Exposure of Sensitive Information",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51709.txt"
     }
   ],
@@ -2336,7 +2314,7 @@
       "source": "exploitdb",
       "name": "GLiNet - Router Authentication Bypass",
       "description": "GLiNet - Router Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51865.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51865.txt"
     }
   ],
   "CVE-2023-5808": [
@@ -2347,19 +2325,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51872.py"
     }
   ],
-  "CVE-2023-34834": [
-    {
-      "source": "exploitdb",
-      "name": "MCL-Net 4.3.5.8788 - Information Disclosure",
-      "description": "MCL-Net 4.3.5.8788 - Information Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51542.txt"
-    }
-  ],
   "CVE-2023-1934": [
     {
       "source": "exploitdb",
-      "name": "PnPSCADA v2.x - Unauthenticated PostgreSQL Injection",
-      "description": "PnPSCADA v2.x - Unauthenticated PostgreSQL Injection",
+      "name": "PnPSCADA 2.x - Unauthenticated SQL Injection (SQLi)",
+      "description": "PnPSCADA 2.x - Unauthenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51448.txt"
     }
   ],
@@ -2369,14 +2339,6 @@
       "name": "Solar-Log 200 PM+ 3.6.0 Build 99 - 15.10.2019 - Stored Cross-Site Scripting (XSS)",
       "description": "Solar-Log 200 PM+ 3.6.0 Build 99 - 15.10.2019 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51857.txt"
-    }
-  ],
-  "CVE-2023-23956": [
-    {
-      "source": "exploitdb",
-      "name": "Symantec SiteMinder WebAgent 12.52 - Cross-Site Scripting (XSS)",
-      "description": "Symantec SiteMinder WebAgent 12.52 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/51530.txt"
     }
   ],
   "CVE-2023-31904": [
@@ -2390,24 +2352,32 @@
   "CVE-2023-37602": [
     {
       "source": "exploitdb",
-      "name": "Alkacon OpenCMS 15.0 - Multiple Cross-Site Scripting (XSS)",
-      "description": "Alkacon OpenCMS 15.0 - Multiple Cross-Site Scripting (XSS)",
+      "name": "Alkacon OpenCMS 15.0 - Authenticated Multiple Cross-Site Scripting (XSS)",
+      "description": "Alkacon OpenCMS 15.0 - Authenticated Multiple Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/51564.txt"
     }
   ],
   "CVE-2023-38904": [
     {
       "source": "exploitdb",
-      "name": "Netlify CMS 2.10.192 - Stored Cross-Site Scripting (XSS)",
-      "description": "Netlify CMS 2.10.192 - Stored Cross-Site Scripting (XSS)",
+      "name": "Netlify CMS 2.10.192 - 'body' Stored Cross-Site Scripting (XSS)",
+      "description": "Netlify CMS 2.10.192 - 'body' Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/java/webapps/51576.txt"
+    }
+  ],
+  "CVE-2023-40278": [
+    {
+      "source": "exploitdb",
+      "name": "OpenClinic GA 5.247.01 - 'printAppointmentPdf.jsp' Information Disclosure",
+      "description": "OpenClinic GA 5.247.01 - 'printAppointmentPdf.jsp' Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/51994.md"
     }
   ],
   "CVE-2023-33243": [
     {
       "source": "exploitdb",
-      "name": "STARFACE 7.3.0.10 - Authentication with Password Hash Possible",
-      "description": "STARFACE 7.3.0.10 - Authentication with Password Hash Possible",
+      "name": "STARFACE <= 7.3.0.10 - Authentication with Password Hash Possible",
+      "description": "STARFACE <= 7.3.0.10 - Authentication with Password Hash Possible",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/jsp/webapps/51503.txt"
     }
   ],
@@ -2416,7 +2386,7 @@
       "source": "exploitdb",
       "name": "Dell Security Management Server < 1.9.0 - Local Privilege Escalation (LPE)",
       "description": "Dell Security Management Server < 1.9.0 - Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/51934.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/51934.txt"
     }
   ],
   "CVE-2023-24626": [
@@ -2448,14 +2418,14 @@
       "source": "exploitdb",
       "name": "Elasticsearch - StackOverflow Denial of Service (DoS)",
       "description": "Elasticsearch - StackOverflow Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/51787.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/51787.py"
     }
   ],
   "CVE-2023-53940": [
     {
       "source": "exploitdb",
-      "name": "Codigo Markdown Editor 1.0.1 (Electron) - Remote Code Execution (RCE)",
-      "description": "Codigo Markdown Editor 1.0.1 (Electron) - Remote Code Execution (RCE)",
+      "name": "Codigo Markdown Editor 1.0.1 (Electron) - Arbitrary Code Execution",
+      "description": "Codigo Markdown Editor 1.0.1 (Electron) - Arbitrary Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51432.txt"
     }
   ],
@@ -2470,16 +2440,16 @@
   "CVE-2023-36266": [
     {
       "source": "exploitdb",
-      "name": "Keeper Security desktop 16.10.2 & Browser Extension 16.5.4 - Password Dumping",
-      "description": "Keeper Security desktop 16.10.2 & Browser Extension 16.5.4 - Password Dumping",
+      "name": "Keeper Security Desktop 16.10.2/Browser Extension 16.5.4 - Password Dumping",
+      "description": "Keeper Security Desktop 16.10.2/Browser Extension 16.5.4 - Password Dumping",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51623.cs"
     }
   ],
   "CVE-2023-24892": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Edge (Chromium-based) Webview2 1.0.1661.34 - Spoofing",
-      "description": "Microsoft Edge (Chromium-based) Webview2 1.0.1661.34 - Spoofing",
+      "name": "Microsoft Edge (Chromium-based) Webview2 1.0.1661.34 - Spoofing Vulnerability",
+      "description": "Microsoft Edge (Chromium-based) Webview2 1.0.1661.34 - Spoofing Vulnerability",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51359.txt"
     }
   ],
@@ -2494,8 +2464,8 @@
   "CVE-2023-47268": [
     {
       "source": "exploitdb",
-      "name": "PrusaSlicer 2.6.1 - Arbitrary Code Execution",
-      "description": "PrusaSlicer 2.6.1 - Arbitrary Code Execution",
+      "name": "PrusaSlicer 2.6.1 - 'post_process' Arbitrary Code Execution",
+      "description": "PrusaSlicer 2.6.1 - 'post_process' Arbitrary Code Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51983.txt"
     }
   ],
@@ -2504,7 +2474,7 @@
       "source": "exploitdb",
       "name": "vm2 - sandbox escape",
       "description": "vm2 - sandbox escape",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51898.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/51898.js"
     }
   ],
   "CVE-2023-31874": [
@@ -2550,24 +2520,24 @@
   "CVE-2023-33137": [
     {
       "source": "exploitdb",
-      "name": "Microsoft 365 MSO (Version 2305 Build 16.0.16501.20074) 32-bit - Remote Code Execution (RCE)",
-      "description": "Microsoft 365 MSO (Version 2305 Build 16.0.16501.20074) 32-bit - Remote Code Execution (RCE)",
+      "name": "Microsoft 365 MSO (2305 Build 16.0.16501.20074) (32-bit) - Remote Code Execution (RCE)",
+      "description": "Microsoft 365 MSO (2305 Build 16.0.16501.20074) (32-bit) - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/51555.txt"
     }
   ],
   "CVE-2023-28285": [
     {
       "source": "exploitdb",
-      "name": "Microsoft 365 MSO (Version 2305 Build 16.0.16501.20074) 64-bit - Remote Code Execution (RCE)",
-      "description": "Microsoft 365 MSO (Version 2305 Build 16.0.16501.20074) 64-bit - Remote Code Execution (RCE)",
+      "name": "Microsoft 365 MSO (2305 Build 16.0.16501.20074) (64-bit) - Remote Code Execution (RCE)",
+      "description": "Microsoft 365 MSO (2305 Build 16.0.16501.20074) (64-bit) - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/51552.txt"
     }
   ],
   "CVE-2023-23399": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Excel 365 MSO (Version 2302 Build 16.0.16130.20186) 64-bit - Remote Code Execution (RCE)",
-      "description": "Microsoft Excel 365 MSO (Version 2302 Build 16.0.16130.20186) 64-bit - Remote Code Execution (RCE)",
+      "name": "Microsoft Excel 365 MSO (2302 Build 16.0.16130.20186) (64-bit) - Remote Code Execution (RCE)",
+      "description": "Microsoft Excel 365 MSO (2302 Build 16.0.16130.20186) (64-bit) - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/51328.txt"
     }
   ],
@@ -2582,16 +2552,16 @@
   "CVE-2023-33140": [
     {
       "source": "exploitdb",
-      "name": "Microsoft OneNote (Version 2305 Build 16.0.16501.20074) 64-bit - Spoofing",
-      "description": "Microsoft OneNote (Version 2305 Build 16.0.16501.20074) 64-bit - Spoofing",
+      "name": "Microsoft OneNote (2305 Build 16.0.16501.20074) (64-bit) - Spoofing",
+      "description": "Microsoft OneNote (2305 Build 16.0.16501.20074) (64-bit) - Spoofing",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/51538.txt"
     }
   ],
   "CVE-2023-33131": [
     {
       "source": "exploitdb",
-      "name": "Microsoft Outlook Microsoft 365 MSO (Version 2306 Build 16.0.16529.20100) 32-bit - Remote Code Execution (RCE)",
-      "description": "Microsoft Outlook Microsoft 365 MSO (Version 2306 Build 16.0.16529.20100) 32-bit - Remote Code Execution (RCE)",
+      "name": "Microsoft Outlook Microsoft 365 MSO (2306 Build 16.0.16529.20100) (32-bit) - Remote Code Execution (RCE)",
+      "description": "Microsoft Outlook Microsoft 365 MSO (2306 Build 16.0.16529.20100) (32-bit) - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/51574.txt"
     }
   ],
@@ -2620,8 +2590,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Adobe Connect 11.4.5 - Local File Disclosure",
-      "description": "Adobe Connect 11.4.5 - Local File Disclosure",
+      "name": "Adobe Connect <= 11.4.5 / <= 12.1.5 - Local File Disclosure",
+      "description": "Adobe Connect <= 11.4.5 / <= 12.1.5 - Local File Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51327.txt"
     },
     {
@@ -2667,6 +2637,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52375.rb"
     }
   ],
+  "CVE-2023-54344": [
+    {
+      "source": "exploitdb",
+      "name": "Eclipse Equinox OSGi Console <= 3.7.2 - Remote Code Execution (RCE)",
+      "description": "Eclipse Equinox OSGi Console <= 3.7.2 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51879.py"
+    }
+  ],
+  "CVE-2023-54342": [
+    {
+      "source": "exploitdb",
+      "name": "Eclipse OSGi 3.8-3.18 Console - Remote Code Execution (RCE)",
+      "description": "Eclipse OSGi 3.8-3.18 Console - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51878.py"
+    }
+  ],
   "CVE-2023-39026": [
     {
       "source": "exploitdb",
@@ -2689,19 +2675,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51550.py"
     }
   ],
-  "CVE-2023-25439": [
-    {
-      "source": "exploitdb",
-      "name": "FusionInvoice 2023-1.0 - Stored Cross-Site Scripting (XSS) (Cross-Site Scripting)",
-      "description": "FusionInvoice 2023-1.0 - Stored Cross-Site Scripting (XSS) (Cross-Site Scripting)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51480.txt"
-    }
-  ],
   "CVE-2023-32235": [
     {
       "source": "exploitdb",
-      "name": "Ghost CMS 5.42.1 - Path Traversal",
-      "description": "Ghost CMS 5.42.1 - Path Traversal",
+      "name": "Ghost CMS < 5.42.1 - Path Traversal",
+      "description": "Ghost CMS < 5.42.1 - Path Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52408.py"
     },
     {
@@ -2714,8 +2692,8 @@
   "CVE-2023-40028": [
     {
       "source": "exploitdb",
-      "name": "Ghost CMS 5.59.1 - Arbitrary File Read",
-      "description": "Ghost CMS 5.59.1 - Arbitrary File Read",
+      "name": "Ghost CMS < 5.59.1 - Arbitrary File Read",
+      "description": "Ghost CMS < 5.59.1 - Arbitrary File Read",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52409.py"
     }
   ],
@@ -2725,22 +2703,6 @@
       "name": "Microsoft SharePoint Enterprise Server 2016 - Spoofing",
       "description": "Microsoft SharePoint Enterprise Server 2016 - Spoofing",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51543.c"
-    }
-  ],
-  "CVE-2023-54342": [
-    {
-      "source": "exploitdb",
-      "name": "OSGi 3.8-3.18 Console - Remote Code Execution (RCE)",
-      "description": "OSGi 3.8-3.18 Console - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51878.py"
-    }
-  ],
-  "CVE-2023-54344": [
-    {
-      "source": "exploitdb",
-      "name": "OSGi Console <= 3.7.2 - Remote Code Execution (RCE)",
-      "description": "OSGi Console <= 3.7.2 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51879.py"
     }
   ],
   "CVE-2023-7327": [
@@ -2757,6 +2719,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-7327.yaml"
     }
   ],
+  "CVE-2023-27636": [
+    {
+      "source": "exploitdb",
+      "name": "Progress Sitefinity 15.0 - Cross-Site Scripting (XSS)",
+      "description": "Progress Sitefinity 15.0 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52035.txt"
+    }
+  ],
+  "CVE-2023-35759": [
+    {
+      "source": "exploitdb",
+      "name": "Progress WhatsUp Gold 22.1.0 Build 39 - Cross-Site Scripting (XSS)",
+      "description": "Progress WhatsUp Gold 22.1.0 Build 39 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51781.txt"
+    }
+  ],
   "CVE-2023-23286": [
     {
       "source": "exploitdb",
@@ -2768,8 +2746,8 @@
   "CVE-2023-38357": [
     {
       "source": "exploitdb",
-      "name": "RWS WorldServer 11.7.3 - Session Token Enumeration",
-      "description": "RWS WorldServer 11.7.3 - Session Token Enumeration",
+      "name": "RWS WorldServer <= 11.7.3 - Session Token Enumeration",
+      "description": "RWS WorldServer <= 11.7.3 - Session Token Enumeration",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51619.txt"
     }
   ],
@@ -2781,14 +2759,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51488.py"
     }
   ],
-  "CVE-2023-0214": [
-    {
-      "source": "exploitdb",
-      "name": "Secure Web Gateway 10.2.11 - Cross-Site Scripting (XSS)",
-      "description": "Secure Web Gateway 10.2.11 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51237.txt"
-    }
-  ],
   "CVE-2023-36085": [
     {
       "source": "exploitdb",
@@ -2797,12 +2767,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51796.txt"
     }
   ],
-  "CVE-2023-27636": [
+  "CVE-2023-0214": [
     {
       "source": "exploitdb",
-      "name": "Sitefinity 15.0 - Cross-Site Scripting (XSS)",
-      "description": "Sitefinity 15.0 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52035.txt"
+      "name": "Skyhigh Security Secure Web Gateway 10.2.11 - Cross-Site Scripting (XSS)",
+      "description": "Skyhigh Security Secure Web Gateway 10.2.11 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51237.txt"
+    }
+  ],
+  "CVE-2023-25439": [
+    {
+      "source": "exploitdb",
+      "name": "Square Pig FusionInvoice 2023-1.0 - Stored Cross-Site Scripting (XSS)",
+      "description": "Square Pig FusionInvoice 2023-1.0 - Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51480.txt"
     }
   ],
   "CVE-2023-27167": [
@@ -2816,9 +2794,17 @@
   "CVE-2023-3897": [
     {
       "source": "exploitdb",
-      "name": "SureMDM On-premise < 6.31 - CAPTCHA Bypass User Enumeration",
-      "description": "SureMDM On-premise < 6.31 - CAPTCHA Bypass User Enumeration",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51804.txt"
+      "name": "SureMDM On-premise <= 6.31 - CAPTCHA Bypass User Enumeration",
+      "description": "SureMDM On-premise <= 6.31 - CAPTCHA Bypass User Enumeration",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51804.py"
+    }
+  ],
+  "CVE-2023-23956": [
+    {
+      "source": "exploitdb",
+      "name": "Symantec SiteMinder WebAgent 12.52 - Cross-Site Scripting (XSS)",
+      "description": "Symantec SiteMinder WebAgent 12.52 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51530.txt"
     }
   ],
   "CVE-2023-3460": [
@@ -2843,14 +2829,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51142.txt"
     }
   ],
-  "CVE-2023-35759": [
-    {
-      "source": "exploitdb",
-      "name": "WhatsUp Gold 2022 (22.1.0 Build 39) - Cross-Site Scripting (XSS)",
-      "description": "WhatsUp Gold 2022 (22.1.0 Build 39) - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/51781.txt"
-    }
-  ],
   "CVE-2023-34096": [
     {
       "source": "exploitdb",
@@ -2859,41 +2837,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/perl/webapps/51509.py"
     }
   ],
-  "CVE-2023-4119": [
-    {
-      "source": "exploitdb",
-      "name": "Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51654.txt"
-    }
-  ],
-  "CVE-2023-53876": [
-    {
-      "source": "exploitdb",
-      "name": "Academy LMS 6.1 - Arbitrary File Upload",
-      "description": "Academy LMS 6.1 - Arbitrary File Upload",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51702.txt"
-    }
-  ],
-  "CVE-2023-4974": [
-    {
-      "source": "exploitdb",
-      "name": "Academy LMS 6.2 - SQL Injection (SQLi)",
-      "description": "Academy LMS 6.2 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51758.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "Academy LMS 6.2 - SQL Injection",
-      "description": "A vulnerability was found in Academy LMS 6.2. It has been rated as critical. Affected by this issue is some unknown functionality of the file /academy/tutor/filter of the component GET Parameter Handler. The manipulation of the argument price_min/price_max leads to sql injection. The attack may be launched remotely. VDB-239750 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4974.yaml"
-    }
-  ],
   "CVE-2023-36306": [
     {
       "source": "exploitdb",
-      "name": "Adiscon LogAnalyzer v.4.1.13 - Cross-Site Scripting (XSS)",
-      "description": "Adiscon LogAnalyzer v.4.1.13 - Cross-Site Scripting (XSS)",
+      "name": "Adiscon LogAnalyzer <= 4.1.13 - Cross-Site Scripting (XSS)",
+      "description": "Adiscon LogAnalyzer <= 4.1.13 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51643.txt"
     },
     {
@@ -2901,20 +2849,6 @@
       "name": "Adiscon LogAnalyzer v.4.1.13 - Cross-Site Scripting",
       "description": "A Cross Site Scripting (XSS) vulnerability in Adiscon Aiscon LogAnalyzer through 4.1.13 allows a remote attacker to execute arbitrary code via the asktheoracle.php\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-36306.yaml"
-    }
-  ],
-  "CVE-2023-4168": [
-    {
-      "source": "exploitdb",
-      "name": "Adlisting Classified Ads 2.14.0 - WebPage Content Information Disclosure",
-      "description": "Adlisting Classified Ads 2.14.0 - WebPage Content Information Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51667.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "Adlisting Classified Ads 2.14.0 - Information Disclosure",
-      "description": "Information disclosure issue in the redirect responses, When accessing any page on the website, Sensitive data, such as API keys, server keys, and app IDs, is being exposed in the body of these redirects.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4168.yaml"
     }
   ],
   "CVE-2023-24217": [
@@ -2925,57 +2859,33 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51307.py"
     }
   ],
-  "CVE-2023-54349": [
+  "CVE-2023-28343": [
     {
       "source": "exploitdb",
-      "name": "AmazCart CMS 3.4 - Cross-Site Scripting (XSS)",
-      "description": "AmazCart CMS 3.4 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51219.txt"
+      "name": "Altenergy Power Control Software C1.2.5 - OS Command Injection",
+      "description": "Altenergy Power Control Software C1.2.5 - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51325.py"
+    },
+    {
+      "source": "nuclei",
+      "name": "Altenergy Power Control Software C1.2.5 - Remote Command Injection",
+      "description": "Altenergy Power Control Software C1.2.5 is susceptible to remote command injection via shell metacharacters in the index.php/management/set_timezone parameter, because of set_timezone in models/management_model.php. An attacker can potentially obtain sensitive information, modify data, and/or execute unauthorized operations without entering necessary credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-28343.yaml"
     }
   ],
   "CVE-2023-6710": [
     {
       "source": "exploitdb",
-      "name": "Apache mod_proxy_cluster 1.2.6 - Stored Cross-Site Scripting (XSS)",
-      "description": "Apache mod_proxy_cluster 1.2.6 - Stored Cross-Site Scripting (XSS)",
+      "name": "Apache mod_proxy_cluster 1.2.6 - 'Alias' Stored Cross-Site Scripting (XSS)",
+      "description": "Apache mod_proxy_cluster 1.2.6 - 'Alias' Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52010.py"
-    }
-  ],
-  "CVE-2023-23162": [
-    {
-      "source": "exploitdb",
-      "name": "Art Gallery Management System Project 1.0 - 'cid' Unauthenticated SQL Injection (SQLi)",
-      "description": "Art Gallery Management System Project 1.0 - 'cid' Unauthenticated SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51215.txt"
-    }
-  ],
-  "CVE-2023-23163": [
-    {
-      "source": "exploitdb",
-      "name": "Art Gallery Management System Project 1.0 - 'editid' Authenticated SQL Injection (SQLi)",
-      "description": "Art Gallery Management System Project 1.0 - 'editid' Authenticated SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51216.txt"
-    }
-  ],
-  "CVE-2023-23161": [
-    {
-      "source": "exploitdb",
-      "name": "Art Gallery Management System Project 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "Art Gallery Management System Project 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51214.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "Art Gallery Management System Project v1.0 - Cross-Site Scripting",
-      "description": "A reflected cross-site scripting (XSS) vulnerability in Art Gallery Management System Project v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the artname parameter under ART TYPE option in the navigation bar.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-23161.yaml"
     }
   ],
   "CVE-2023-23156": [
     {
       "source": "exploitdb",
-      "name": "Art Gallery Management System Project in PHP v 1.0 - SQL Injection (SQLi)",
-      "description": "Art Gallery Management System Project in PHP v 1.0 - SQL Injection (SQLi)",
+      "name": "Art Gallery Management System 1.0 - 'pid' SQL Injection (SQLi)",
+      "description": "Art Gallery Management System 1.0 - 'pid' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51272.py"
     }
   ],
@@ -2992,7 +2902,7 @@
       "source": "exploitdb",
       "name": "Auto Dealer Management System 1.0 - 'manage_user.php' SQL Injection (SQLi)",
       "description": "Auto Dealer Management System 1.0 - 'manage_user.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51284.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51284.md"
     }
   ],
   "CVE-2023-0913": [
@@ -3000,7 +2910,7 @@
       "source": "exploitdb",
       "name": "Auto Dealer Management System 1.0 - 'sell_vehicle.php' SQL Injection (SQLi)",
       "description": "Auto Dealer Management System 1.0 - 'sell_vehicle.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51283.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51283.md"
     }
   ],
   "CVE-2023-0916": [
@@ -3008,7 +2918,7 @@
       "source": "exploitdb",
       "name": "Auto Dealer Management System 1.0 - Broken Access Control Exploit",
       "description": "Auto Dealer Management System 1.0 - Broken Access Control Exploit",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51281.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51281.md"
     }
   ],
   "CVE-2023-0912": [
@@ -3016,22 +2926,22 @@
       "source": "exploitdb",
       "name": "Auto Dealer Management System 1.0 - SQL Injection (SQLi)",
       "description": "Auto Dealer Management System 1.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51282.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51282.md"
     }
   ],
   "CVE-2023-37607": [
     {
       "source": "exploitdb",
-      "name": "Automatic-Systems SOC FL9600 FastLine - Directory Transversal",
-      "description": "Automatic-Systems SOC FL9600 FastLine - Directory Transversal",
+      "name": "Automatic Systems SOC FL9600 FirstLane V06 - Directory Transversal",
+      "description": "Automatic Systems SOC FL9600 FirstLane V06 - Directory Transversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51823.txt"
     }
   ],
   "CVE-2023-37608": [
     {
       "source": "exploitdb",
-      "name": "Automatic-Systems SOC FL9600 FastLine - The device contains Hardcoded login and Password for super Admin",
-      "description": "Automatic-Systems SOC FL9600 FastLine - The device contains Hardcoded login and Password for super Admin",
+      "name": "Automatic Systems SOC FL9600 FirstLane V06 - The device contains Hardcoded login and Password for super Admin",
+      "description": "Automatic Systems SOC FL9600 FirstLane V06 - The device contains Hardcoded login and Password for super Admin",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51824.txt"
     }
   ],
@@ -3078,16 +2988,16 @@
   "CVE-2023-53892": [
     {
       "source": "exploitdb",
-      "name": "Blackcat Cms 1.4 - Remote Code Execution (RCE)",
-      "description": "Blackcat Cms 1.4 - Remote Code Execution (RCE)",
+      "name": "BlackCat CMS 1.4 - Remote Code Execution (RCE)",
+      "description": "BlackCat CMS 1.4 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51605.txt"
     }
   ],
   "CVE-2023-53891": [
     {
       "source": "exploitdb",
-      "name": "Blackcat Cms 1.4 - Stored Cross-Site Scripting (XSS)",
-      "description": "Blackcat Cms 1.4 - Stored Cross-Site Scripting (XSS)",
+      "name": "BlackCat CMS 1.4 - Stored Cross-Site Scripting (XSS)",
+      "description": "BlackCat CMS 1.4 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51604.txt"
     }
   ],
@@ -3150,8 +3060,8 @@
   "CVE-2023-36163": [
     {
       "source": "exploitdb",
-      "name": "BuildaGate5library v5 - Reflected Cross-Site Scripting (XSS)",
-      "description": "BuildaGate5library v5 - Reflected Cross-Site Scripting (XSS)",
+      "name": "BuildaGate5library 5 - 'mc' Reflected Cross-Site Scripting (XSS)",
+      "description": "BuildaGate5library 5 - 'mc' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51581.txt"
     }
   ],
@@ -3214,25 +3124,17 @@
   "CVE-2023-25440": [
     {
       "source": "exploitdb",
-      "name": "CiviCRM 5.59.alpha1 - Stored Cross-Site Scripting (XSS) (Cross-Site Scripting)",
-      "description": "CiviCRM 5.59.alpha1 - Stored Cross-Site Scripting (XSS) (Cross-Site Scripting)",
+      "name": "CiviCRM 5.59.alpha1 - Stored Cross-Site Scripting (XSS)",
+      "description": "CiviCRM 5.59.alpha1 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51478.txt"
-    }
-  ],
-  "CVE-2023-4708": [
-    {
-      "source": "exploitdb",
-      "name": "Clcknshop 1.0.0 - SQL Injection (SQLi)",
-      "description": "Clcknshop 1.0.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51729.txt"
     }
   ],
   "CVE-2023-7137": [
     {
       "source": "exploitdb",
-      "name": "Client Details System 1.0 - SQL Injection (SQLi)",
-      "description": "Client Details System 1.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51880.txt"
+      "name": "Client Details System 1.0 - 'uemail' Unauthenticated SQL Injection (SQLi)",
+      "description": "Client Details System 1.0 - 'uemail' Unauthenticated SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51880.md"
     }
   ],
   "CVE-2023-29809": [
@@ -3240,14 +3142,14 @@
       "source": "exploitdb",
       "name": "Cmaps 8.0 - SQL Injection (SQLi)",
       "description": "Cmaps 8.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51422.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51422.md"
     }
   ],
   "CVE-2023-3244": [
     {
       "source": "exploitdb",
-      "name": "comments-like-dislike < 1.2.0 - Authenticated (Subscriber+) Plugin Setting Reset",
-      "description": "comments-like-dislike < 1.2.0 - Authenticated (Subscriber+) Plugin Setting Reset",
+      "name": "comments-like-dislike <= 1.2.0 - Authenticated (Subscriber+) Plugin Setting Reset",
+      "description": "comments-like-dislike <= 1.2.0 - Authenticated (Subscriber+) Plugin Setting Reset",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51809.py"
     }
   ],
@@ -3262,9 +3164,39 @@
   "CVE-2023-53868": [
     {
       "source": "exploitdb",
-      "name": "Coppermine Gallery 1.6.25 - Remote Code Execution (RCE)",
-      "description": "Coppermine Gallery 1.6.25 - Remote Code Execution (RCE)",
+      "name": "Coppermine Gallery 1.6.25 - 'pluginmgr.php' Authenticated Arbitrary File Upload / Remote Code Execution (RCE)",
+      "description": "Coppermine Gallery 1.6.25 - 'pluginmgr.php' Authenticated Arbitrary File Upload / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51738.txt"
+    }
+  ],
+  "CVE-2023-4119": [
+    {
+      "source": "exploitdb",
+      "name": "Creativeitem Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
+      "description": "Creativeitem Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51654.txt"
+    }
+  ],
+  "CVE-2023-53876": [
+    {
+      "source": "exploitdb",
+      "name": "Creativeitem Academy LMS 6.1 - Arbitrary File Upload",
+      "description": "Creativeitem Academy LMS 6.1 - Arbitrary File Upload",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51702.txt"
+    }
+  ],
+  "CVE-2023-4974": [
+    {
+      "source": "exploitdb",
+      "name": "Creativeitem Academy LMS 6.2 - SQL Injection (SQLi)",
+      "description": "Creativeitem Academy LMS 6.2 - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51758.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Academy LMS 6.2 - SQL Injection",
+      "description": "A vulnerability was found in Academy LMS 6.2. It has been rated as critical. Affected by this issue is some unknown functionality of the file /academy/tutor/filter of the component GET Parameter Handler. The manipulation of the argument price_min/price_max leads to sql injection. The attack may be launched remotely. VDB-239750 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4974.yaml"
     }
   ],
   "CVE-2023-4407": [
@@ -3294,9 +3226,17 @@
   "CVE-2023-38911": [
     {
       "source": "exploitdb",
-      "name": "CSZ CMS 1.3.0 - Stored Cross-Site Scripting (XSS) (Plugin 'Gallery')",
-      "description": "CSZ CMS 1.3.0 - Stored Cross-Site Scripting (XSS) (Plugin 'Gallery')",
+      "name": "CSZ CMS 1.3.0 - 'youtube_url' Authenticated Stored Cross-Site Scripting (XSS)",
+      "description": "CSZ CMS 1.3.0 - 'youtube_url' Authenticated Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51704.txt"
+    }
+  ],
+  "CVE-2023-49976": [
+    {
+      "source": "exploitdb",
+      "name": "Customer Support System 1.0 - 'subject' Authenticated Stored Cross-Site Scripting (XSS)",
+      "description": "Customer Support System 1.0 - 'subject' Authenticated Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52057.txt"
     }
   ],
   "CVE-2023-50071": [
@@ -3305,14 +3245,6 @@
       "name": "Customer Support System 1.0 - Multiple SQL Injections (SQLi)",
       "description": "Customer Support System 1.0 - Multiple SQL Injections (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51862.txt"
-    }
-  ],
-  "CVE-2023-49976": [
-    {
-      "source": "exploitdb",
-      "name": "Customer Support System 1.0 - Stored Cross-Site Scripting (XSS)",
-      "description": "Customer Support System 1.0 - Stored Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52057.txt"
     }
   ],
   "CVE-2023-34666": [
@@ -3334,24 +3266,24 @@
   "CVE-2023-37164": [
     {
       "source": "exploitdb",
-      "name": "Diafan CMS 6.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "Diafan CMS 6.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "Diafan CMS 6.0 - 'a' Reflected Cross-Site Scripting (XSS)",
+      "description": "Diafan CMS 6.0 - 'a' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51529.txt"
     }
   ],
   "CVE-2023-53941": [
     {
       "source": "exploitdb",
-      "name": "EasyPHP Webserver 14.1 - Multiple Vulnerabilities (RCE and Path Traversal)",
-      "description": "EasyPHP Webserver 14.1 - Multiple Vulnerabilities (RCE and Path Traversal)",
+      "name": "EasyPHP Webserver 14.1 - Remote Code Execution (RCE) / Directory Traversal",
+      "description": "EasyPHP Webserver 14.1 - Remote Code Execution (RCE) / Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51430.txt"
     }
   ],
   "CVE-2023-53944": [
     {
       "source": "exploitdb",
-      "name": "EasyPHP Webserver 14.1 - Multiple Vulnerabilities (RCE and Path Traversal)",
-      "description": "EasyPHP Webserver 14.1 - Multiple Vulnerabilities (RCE and Path Traversal)",
+      "name": "EasyPHP Webserver 14.1 - Remote Code Execution (RCE) / Directory Traversal",
+      "description": "EasyPHP Webserver 14.1 - Remote Code Execution (RCE) / Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51430.txt"
     }
   ],
@@ -3363,26 +3295,18 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51956.py"
     }
   ],
-  "CVE-2023-37569": [
-    {
-      "source": "exploitdb",
-      "name": "Emagic Data Center Management Suite 6.0 - OS Command Injection",
-      "description": "Emagic Data Center Management Suite 6.0 - OS Command Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51673.sh"
-    }
-  ],
   "CVE-2023-0902": [
     {
       "source": "exploitdb",
       "name": "Employee Task Management System 1.0 - 'edit-task.php' SQL Injection (SQLi)",
       "description": "Employee Task Management System 1.0 - 'edit-task.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51287.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51287.md"
     },
     {
       "source": "exploitdb",
       "name": "Simple Food Ordering System 1.0 - Cross-Site Scripting (XSS)",
       "description": "Simple Food Ordering System 1.0 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51292.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51292.md"
     }
   ],
   "CVE-2023-0904": [
@@ -3390,7 +3314,7 @@
       "source": "exploitdb",
       "name": "Employee Task Management System 1.0 - 'task_id' SQL Injection (SQLi)",
       "description": "Employee Task Management System 1.0 - 'task_id' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51286.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51286.md"
     }
   ],
   "CVE-2023-0905": [
@@ -3398,7 +3322,7 @@
       "source": "exploitdb",
       "name": "Employee Task Management System 1.0 - Broken Authentication",
       "description": "Employee Task Management System 1.0 - Broken Authentication",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51285.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51285.md"
     }
   ],
   "CVE-2023-33584": [
@@ -3409,12 +3333,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51501.txt"
     }
   ],
-  "CVE-2023-54348": [
+  "CVE-2023-37569": [
     {
       "source": "exploitdb",
-      "name": "ERPGo SaaS 3.9 - CSV Injection",
-      "description": "ERPGo SaaS 3.9 - CSV Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51220.txt"
+      "name": "ESDS Emagic Data Center Management Suite 6.0 - OS Command Injection",
+      "description": "ESDS Emagic Data Center Management Suite 6.0 - OS Command Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51673.sh"
     }
   ],
   "CVE-2023-0159": [
@@ -3422,7 +3346,7 @@
       "source": "exploitdb",
       "name": "Extensive VC Addons for WPBakery page builder 1.9.0 - Remote Code Execution (RCE)",
       "description": "Extensive VC Addons for WPBakery page builder 1.9.0 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52085.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52085.txt"
     },
     {
       "source": "nuclei",
@@ -3448,8 +3372,8 @@
   "CVE-2023-27179": [
     {
       "source": "exploitdb",
-      "name": "GDidees CMS 3.9.1 - Local File Disclosure",
-      "description": "GDidees CMS 3.9.1 - Local File Disclosure",
+      "name": "GDidees CMS <= 3.9.1 - Local File Disclosure",
+      "description": "GDidees CMS <= 3.9.1 - Local File Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51381.txt"
     },
     {
@@ -3472,15 +3396,7 @@
       "source": "exploitdb",
       "name": "GuppY CMS 6.00.10 - Remote Code Execution (RCE)",
       "description": "GuppY CMS 6.00.10 - Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51052.txt"
-    }
-  ],
-  "CVE-2023-36375": [
-    {
-      "source": "exploitdb",
-      "name": "Hostel Management System 2.1 - Cross-Site Scripting (XSS)",
-      "description": "Hostel Management System 2.1 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50628.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51052.php"
     }
   ],
   "CVE-2023-4382": [
@@ -3489,6 +3405,22 @@
       "name": "Hyip Rio 2.1 - Arbitrary File Upload",
       "description": "Hyip Rio 2.1 - Arbitrary File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51698.txt"
+    }
+  ],
+  "CVE-2023-4987": [
+    {
+      "source": "exploitdb",
+      "name": "Infinitie Technologies taskhub 2.8.7 - SQL Injection (SQLi)",
+      "description": "Infinitie Technologies taskhub 2.8.7 - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51810.txt"
+    }
+  ],
+  "CVE-2023-4708": [
+    {
+      "source": "exploitdb",
+      "name": "Infosoftbd Clcknshop 1.0.0 - SQL Injection (SQLi)",
+      "description": "Infosoftbd Clcknshop 1.0.0 - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51729.txt"
     }
   ],
   "CVE-2023-53882": [
@@ -3609,118 +3541,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51710.txt"
     }
   ],
-  "CVE-2023-0084": [
-    {
-      "source": "exploitdb",
-      "name": "Metform Elementor Contact Form Builder 3.1.2 - Unauthenticated Stored Cross-Site Scripting (XSS)",
-      "description": "Metform Elementor Contact Form Builder 3.1.2 - Unauthenticated Stored Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51204.txt"
-    }
-  ],
   "CVE-2023-37307": [
     {
       "source": "exploitdb",
-      "name": "MISP 2.4.171 - Stored Cross-Site Scripting (XSS)",
-      "description": "MISP 2.4.171 - Stored Cross-Site Scripting (XSS)",
+      "name": "MISP 2.4.171 - 'Name' Authenticated Stored Cross-Site Scripting (XSS)",
+      "description": "MISP 2.4.171 - 'Name' Authenticated Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51780.txt"
-    }
-  ],
-  "CVE-2023-3849": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "mooDating 1.2 - Cross-site scripting",
-      "description": "A vulnerability, which was classified as problematic, was found in mooSocial mooDating 1.2. Affected is an unknown function of the file /find-a-match of the component URL Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3849.yaml"
-    }
-  ],
-  "CVE-2023-3848": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "MooDating 1.2 - Cross-site scripting",
-      "description": "A vulnerability, which was classified as problematic, has been found in mooSocial mooDating 1.2. This issue affects some unknown processing of the file /users/view of the component URL Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3848.yaml"
-    }
-  ],
-  "CVE-2023-3847": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "MooDating 1.2 - Cross-Site scripting",
-      "description": "A vulnerability classified as problematic was found in mooSocial mooDating 1.2. This vulnerability affects unknown code of the file /users of the component URL Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3847.yaml"
-    }
-  ],
-  "CVE-2023-3846": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "MooDating 1.2 - Cross-Site Scripting",
-      "description": "A vulnerability classified as problematic has been found in mooSocial mooDating 1.2. This affects an unknown part of the file /pages of the component URL Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3846.yaml"
-    }
-  ],
-  "CVE-2023-3845": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "MooDating 1.2 - Cross-Site Scripting",
-      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /friends/ajax_invite of the component URL Handler. The manipulation leads to cross site scripting. The attack may be launched remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3845.yaml"
-    }
-  ],
-  "CVE-2023-3844": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "MooDating 1.2 - Cross-Site Scripting",
-      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /friends of the component URL Handler. The manipulation leads to cross site scripting. The attack can be launched remotely.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3844.yaml"
-    }
-  ],
-  "CVE-2023-3843": [
-    {
-      "source": "exploitdb",
-      "name": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "description": "mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
-    },
-    {
-      "source": "nuclei",
-      "name": "mooDating 1.2 - Cross-site scripting",
-      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been classified as problematic. Affected is an unknown function of the file /matchmakings/question of the component URL Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. VDB-235194 is the identifier assigned to this vulnerability. NOTE: We tried to contact the vendor early about the disclosure but the official mail address was not working properly.\n",
-      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3843.yaml"
     }
   ],
   "CVE-2023-4173": [
@@ -3737,12 +3563,110 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4173.yaml"
     }
   ],
+  "CVE-2023-3849": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "mooDating 1.2 - Cross-site scripting",
+      "description": "A vulnerability, which was classified as problematic, was found in mooSocial mooDating 1.2. Affected is an unknown function of the file /find-a-match of the component URL Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3849.yaml"
+    }
+  ],
+  "CVE-2023-3848": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "MooDating 1.2 - Cross-site scripting",
+      "description": "A vulnerability, which was classified as problematic, has been found in mooSocial mooDating 1.2. This issue affects some unknown processing of the file /users/view of the component URL Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3848.yaml"
+    }
+  ],
+  "CVE-2023-3847": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "MooDating 1.2 - Cross-Site scripting",
+      "description": "A vulnerability classified as problematic was found in mooSocial mooDating 1.2. This vulnerability affects unknown code of the file /users of the component URL Handler. The manipulation leads to cross site scripting. The attack can be initiated remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3847.yaml"
+    }
+  ],
+  "CVE-2023-3846": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "MooDating 1.2 - Cross-Site Scripting",
+      "description": "A vulnerability classified as problematic has been found in mooSocial mooDating 1.2. This affects an unknown part of the file /pages of the component URL Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3846.yaml"
+    }
+  ],
+  "CVE-2023-3845": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "MooDating 1.2 - Cross-Site Scripting",
+      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /friends/ajax_invite of the component URL Handler. The manipulation leads to cross site scripting. The attack may be launched remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3845.yaml"
+    }
+  ],
+  "CVE-2023-3844": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "MooDating 1.2 - Cross-Site Scripting",
+      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /friends of the component URL Handler. The manipulation leads to cross site scripting. The attack can be launched remotely.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3844.yaml"
+    }
+  ],
+  "CVE-2023-3843": [
+    {
+      "source": "exploitdb",
+      "name": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "description": "mooSocial mooDating 1.2 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51628.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "mooDating 1.2 - Cross-site scripting",
+      "description": "A vulnerability was found in mooSocial mooDating 1.2. It has been classified as problematic. Affected is an unknown function of the file /matchmakings/question of the component URL Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. VDB-235194 is the identifier assigned to this vulnerability. NOTE: We tried to contact the vendor early about the disclosure but the official mail address was not working properly.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-3843.yaml"
+    }
+  ],
   "CVE-2023-0962": [
     {
       "source": "exploitdb",
       "name": "Music Gallery Site 1.0 - 'Master.php' SQL Injection (SQLi)",
       "description": "Music Gallery Site 1.0 - 'Master.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51291.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51291.md"
     }
   ],
   "CVE-2023-0938": [
@@ -3750,7 +3674,7 @@
       "source": "exploitdb",
       "name": "Music Gallery Site 1.0 - 'music_list.php' SQL Injection (SQLi)",
       "description": "Music Gallery Site 1.0 - 'music_list.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51288.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51288.md"
     }
   ],
   "CVE-2023-0961": [
@@ -3758,7 +3682,7 @@
       "source": "exploitdb",
       "name": "Music Gallery Site 1.0 - 'view_music_details.php' SQL Injection (SQLi)",
       "description": "Music Gallery Site 1.0 - 'view_music_details.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51290.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51290.md"
     }
   ],
   "CVE-2023-0963": [
@@ -3766,7 +3690,7 @@
       "source": "exploitdb",
       "name": "Music Gallery Site 1.0 - Broken Access Control",
       "description": "Music Gallery Site 1.0 - Broken Access Control",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51289.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51289.md"
     }
   ],
   "CVE-2023-53976": [
@@ -3828,8 +3752,8 @@
   "CVE-2023-1826": [
     {
       "source": "exploitdb",
-      "name": "Online Computer and Laptop Store 1.0 - Remote Code Execution (RCE)",
-      "description": "Online Computer and Laptop Store 1.0 - Remote Code Execution (RCE)",
+      "name": "Online Computer and Laptop Store 1.0 - 'img' Arbitrary File Upload / Remote Code Execution (RCE)",
+      "description": "Online Computer and Laptop Store 1.0 - 'img' Arbitrary File Upload / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51358.py"
     }
   ],
@@ -3866,8 +3790,8 @@
   "CVE-2023-0527": [
     {
       "source": "exploitdb",
-      "name": "Online Security Guards Hiring System 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "Online Security Guards Hiring System 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "Online Security Guards Hiring System 1.0 - 'adminname'/'searchdata' Authenticated Reflected Cross-Site Scripting (XSS)",
+      "description": "Online Security Guards Hiring System 1.0 - 'adminname'/'searchdata' Authenticated Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51494.py"
     },
     {
@@ -3893,27 +3817,73 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51995.md"
     }
   ],
-  "CVE-2023-40278": [
-    {
-      "source": "exploitdb",
-      "name": "OpenClinic GA 5.247.01 - Information Disclosure",
-      "description": "OpenClinic GA 5.247.01 - Information Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51994.md"
-    }
-  ],
   "CVE-2023-44088": [
     {
       "source": "exploitdb",
-      "name": "PandoraFMS 7.0NG.772 - SQL Injection (SQLi)",
-      "description": "PandoraFMS 7.0NG.772 - SQL Injection (SQLi)",
+      "name": "Pandora FMS 7.0NG.772 - 'background_image' Authenticated SQL Injection (SQLi)",
+      "description": "Pandora FMS 7.0NG.772 - 'background_image' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52157.py"
+    }
+  ],
+  "CVE-2023-23162": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Art Gallery Management System Project 1.0 - 'cid' Unauthenticated SQL Injection (SQLi)",
+      "description": "PHPGurukul Art Gallery Management System Project 1.0 - 'cid' Unauthenticated SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51215.txt"
+    }
+  ],
+  "CVE-2023-23163": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Art Gallery Management System Project 1.0 - 'editid' Authenticated SQL Injection (SQLi)",
+      "description": "PHPGurukul Art Gallery Management System Project 1.0 - 'editid' Authenticated SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51216.txt"
+    }
+  ],
+  "CVE-2023-23161": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Art Gallery Management System Project 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPGurukul Art Gallery Management System Project 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51214.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Art Gallery Management System Project v1.0 - Cross-Site Scripting",
+      "description": "A reflected cross-site scripting (XSS) vulnerability in Art Gallery Management System Project v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the artname parameter under ART TYPE option in the navigation bar.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-23161.yaml"
+    }
+  ],
+  "CVE-2023-36375": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Hostel Management System 2.1 - Cross-Site Scripting (XSS)",
+      "description": "PHPGurukul Hostel Management System 2.1 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50628.txt"
+    }
+  ],
+  "CVE-2023-33580": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Student Study Center Management System 1.0 - Stored Cross-Site Scripting (XSS)",
+      "description": "PHPGurukul Student Study Center Management System 1.0 - Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51528.txt"
+    }
+  ],
+  "CVE-2023-3187": [
+    {
+      "source": "exploitdb",
+      "name": "PHPGurukul Teachers Record Management System 1.0 - File Upload Type Validation",
+      "description": "PHPGurukul Teachers Record Management System 1.0 - File Upload Type Validation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51512.txt"
     }
   ],
   "CVE-2023-1211": [
     {
       "source": "exploitdb",
-      "name": "phpIPAM 1.5.1 - SQL Injection (SQLi)",
-      "description": "phpIPAM 1.5.1 - SQL Injection (SQLi)",
+      "name": "phpIPAM 1.5.1 - 'fieldSize' Authenticated SQL Injection (SQLi)",
+      "description": "phpIPAM 1.5.1 - 'fieldSize' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52444.txt"
     }
   ],
@@ -3934,8 +3904,8 @@
   "CVE-2023-4115": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Cleaning Business 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "PHPJabbers Cleaning Business 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "PHPJabbers Cleaning Business 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPJabbers Cleaning Business 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51651.txt"
     },
     {
@@ -3948,8 +3918,8 @@
   "CVE-2023-4114": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Night Club Booking 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "PHPJabbers Night Club Booking 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "PHPJabbers Night Club Booking 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPJabbers Night Club Booking 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51650.txt"
     },
     {
@@ -3962,16 +3932,16 @@
   "CVE-2023-4117": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Rental Property Booking 2.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "PHPJabbers Rental Property Booking 2.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "PHPJabbers Rental Property Booking 2.0 - 'index' Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPJabbers Rental Property Booking 2.0 - 'index' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51653.txt"
     }
   ],
   "CVE-2023-4113": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Service Booking Script 1.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "PHPJabbers Service Booking Script 1.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "PHPJabbers Service Booking Script 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPJabbers Service Booking Script 1.0 - 'index' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51649.txt"
     },
     {
@@ -3998,8 +3968,8 @@
   "CVE-2023-53926": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Simple CMS 5.0 - SQL Injection (SQLi)",
-      "description": "PHPJabbers Simple CMS 5.0 - SQL Injection (SQLi)",
+      "name": "PHPJabbers Simple CMS 5.0 - 'column' SQL Injection (SQLi)",
+      "description": "PHPJabbers Simple CMS 5.0 - 'column' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51416.txt"
     }
   ],
@@ -4014,8 +3984,8 @@
   "CVE-2023-4116": [
     {
       "source": "exploitdb",
-      "name": "PHPJabbers Taxi Booking 2.0 - Reflected Cross-Site Scripting (XSS)",
-      "description": "PHPJabbers Taxi Booking 2.0 - Reflected Cross-Site Scripting (XSS)",
+      "name": "PHPJabbers Taxi Booking 2.0 - 'index' Reflected Cross-Site Scripting (XSS)",
+      "description": "PHPJabbers Taxi Booking 2.0 - 'index' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51652.txt"
     },
     {
@@ -4028,8 +3998,8 @@
   "CVE-2023-33362": [
     {
       "source": "exploitdb",
-      "name": "Piwigo 13.6.0 - SQL Injection (SQLi)",
-      "description": "Piwigo 13.6.0 - SQL Injection (SQLi)",
+      "name": "Piwigo 13.6.0 - 'user_id' Authenticated SQL Injection (SQLi)",
+      "description": "Piwigo 13.6.0 - 'user_id' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52443.txt"
     }
   ],
@@ -4052,48 +4022,56 @@
   "CVE-2023-53905": [
     {
       "source": "exploitdb",
-      "name": "projectSend r1605 - CSV Injection",
-      "description": "projectSend r1605 - CSV Injection",
+      "name": "ProjectSend r1605 - CSV Injection",
+      "description": "ProjectSend r1605 - CSV Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51517.txt"
     }
   ],
   "CVE-2023-53930": [
     {
       "source": "exploitdb",
-      "name": "projectSend r1605 - Private File Download",
-      "description": "projectSend r1605 - Private File Download",
+      "name": "ProjectSend r1605 - Private File Download",
+      "description": "ProjectSend r1605 - Private File Download",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51400.txt"
     }
   ],
   "CVE-2023-53980": [
     {
       "source": "exploitdb",
-      "name": "projectSend r1605 - Remote Code Exectution Remote Code Execution (RCE)",
-      "description": "projectSend r1605 - Remote Code Exectution Remote Code Execution (RCE)",
+      "name": "ProjectSend r1605 - Remote Code Exectution Remote Code Execution (RCE)",
+      "description": "ProjectSend r1605 - Remote Code Exectution Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51238.txt"
     }
   ],
   "CVE-2023-53906": [
     {
       "source": "exploitdb",
-      "name": "projectSend r1605 - Stored Cross-Site Scripting (XSS)",
-      "description": "projectSend r1605 - Stored Cross-Site Scripting (XSS)",
+      "name": "ProjectSend r1605 - Stored Cross-Site Scripting (XSS)",
+      "description": "ProjectSend r1605 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51518.txt"
+    }
+  ],
+  "CVE-2023-54348": [
+    {
+      "source": "exploitdb",
+      "name": "Rajodiya ERPGo SaaS 3.9 - CSV Injection",
+      "description": "Rajodiya ERPGo SaaS 3.9 - CSV Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51220.txt"
     }
   ],
   "CVE-2023-53931": [
     {
       "source": "exploitdb",
-      "name": "revive-adserver 5.4.1 - Cross-Site Scripting (XSS)",
-      "description": "revive-adserver 5.4.1 - Cross-Site Scripting (XSS)",
+      "name": "Revive Ad Server 5.4.1 - Cross-Site Scripting (XSS)",
+      "description": "Revive Ad Server 5.4.1 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51401.txt"
     }
   ],
   "CVE-2023-29918": [
     {
       "source": "exploitdb",
-      "name": "RosarioSIS 10.8.4 - CSV Injection",
-      "description": "RosarioSIS 10.8.4 - CSV Injection",
+      "name": "RosarioSIS 10.8.4 - 'Title' Authenticated CSV Injection",
+      "description": "RosarioSIS 10.8.4 - 'Title' Authenticated CSV Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51622.txt"
     }
   ],
@@ -4138,8 +4116,8 @@
   "CVE-2023-46023": [
     {
       "source": "exploitdb",
-      "name": "Simple Task List 1.0 - 'status' SQL Injection (SQLi)",
-      "description": "Simple Task List 1.0 - 'status' SQL Injection (SQLi)",
+      "name": "Simple Task List 1.0 - 'status' Authenticated SQL Injection (SQLi)",
+      "description": "Simple Task List 1.0 - 'status' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51913.txt"
     }
   ],
@@ -4176,8 +4154,8 @@
   "CVE-2023-30330": [
     {
       "source": "exploitdb",
-      "name": "SoftExpert (SE) Suite 2.1.3 - Local File Inclusion (LFI)",
-      "description": "SoftExpert (SE) Suite 2.1.3 - Local File Inclusion (LFI)",
+      "name": "SoftExpert SE Suite 2.0 < 2.1.3 - Local File Inclusion (LFI)",
+      "description": "SoftExpert SE Suite 2.0 < 2.1.3 - Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51404.sh"
     }
   ],
@@ -4195,11 +4173,19 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-1671.yaml"
     }
   ],
+  "CVE-2023-4548": [
+    {
+      "source": "exploitdb",
+      "name": "SPA-Cart eCommerce CMS 1.9.0.3 - 'filter[brandid]' SQL Injection (SQLi)",
+      "description": "SPA-Cart eCommerce CMS 1.9.0.3 - 'filter[brandid]' SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51714.txt"
+    }
+  ],
   "CVE-2023-4547": [
     {
       "source": "exploitdb",
-      "name": "SPA-Cart eCommerce CMS 1.9.0.3 - Reflected Cross-Site Scripting (XSS)",
-      "description": "SPA-Cart eCommerce CMS 1.9.0.3 - Reflected Cross-Site Scripting (XSS)",
+      "name": "SPA-Cart eCommerce CMS 1.9.0.3 - 'filter[brandid]'/'filter[price]' Reflected Cross-Site Scripting (XSS)",
+      "description": "SPA-Cart eCommerce CMS 1.9.0.3 - 'filter[brandid]'/'filter[price]' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51713.txt"
     },
     {
@@ -4209,12 +4195,12 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4547.yaml"
     }
   ],
-  "CVE-2023-4548": [
+  "CVE-2023-54349": [
     {
       "source": "exploitdb",
-      "name": "SPA-Cart eCommerce CMS 1.9.0.3 - SQL Injection (SQLi)",
-      "description": "SPA-Cart eCommerce CMS 1.9.0.3 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51714.txt"
+      "name": "Spondonit AmazCart CMS 3.4 - Cross-Site Scripting (XSS)",
+      "description": "Spondonit AmazCart CMS 3.4 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51219.txt"
     }
   ],
   "CVE-2023-51951": [
@@ -4223,14 +4209,6 @@
       "name": "Stock Management System 1.0 - Unauthenticated SQL Injection (SQLi)",
       "description": "Stock Management System 1.0 - Unauthenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51990.py"
-    }
-  ],
-  "CVE-2023-33580": [
-    {
-      "source": "exploitdb",
-      "name": "Student Study Center Management System 1.0 - Stored Cross-Site Scripting (XSS)",
-      "description": "Student Study Center Management System 1.0 - Stored Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51528.txt"
     }
   ],
   "CVE-2023-2779": [
@@ -4247,14 +4225,6 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-2779.yaml"
     }
   ],
-  "CVE-2023-4987": [
-    {
-      "source": "exploitdb",
-      "name": "taskhub 2.8.7 - SQL Injection (SQLi)",
-      "description": "taskhub 2.8.7 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51810.txt"
-    }
-  ],
   "CVE-2023-46024": [
     {
       "source": "exploitdb",
@@ -4263,20 +4233,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51914.txt"
     }
   ],
-  "CVE-2023-3187": [
-    {
-      "source": "exploitdb",
-      "name": "Teachers Record Management System 1.0 - File Upload Type Validation",
-      "description": "Teachers Record Management System 1.0 - File Upload Type Validation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51512.txt"
-    }
-  ],
   "CVE-2023-1545": [
     {
       "source": "exploitdb",
       "name": "TeamPass 3.0.0.21 - SQL Injection (SQLi)",
       "description": "TeamPass 3.0.0.21 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52094.py"
+    }
+  ],
+  "CVE-2023-4168": [
+    {
+      "source": "exploitdb",
+      "name": "Templatecookie Adlisting Classified Ads 2.14.0 - WebPage Content Information Disclosure",
+      "description": "Templatecookie Adlisting Classified Ads 2.14.0 - WebPage Content Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51667.txt"
+    },
+    {
+      "source": "nuclei",
+      "name": "Adlisting Classified Ads 2.14.0 - Information Disclosure",
+      "description": "Information disclosure issue in the redirect responses, When accessing any page on the website, Sensitive data, such as API keys, server keys, and app IDs, is being exposed in the body of these redirects.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-4168.yaml"
     }
   ],
   "CVE-2023-53911": [
@@ -4290,16 +4266,16 @@
   "CVE-2023-37165": [
     {
       "source": "exploitdb",
-      "name": "thrsrossi Millhouse-Project 1.414 - Remote Code Execution (RCE)",
-      "description": "thrsrossi Millhouse-Project 1.414 - Remote Code Execution (RCE)",
+      "name": "thrsrossi Millhouse-Project 1.414 - 'add_post_sql.php' Arbitrary File Upload / Remote Code Execution (RCE)",
+      "description": "thrsrossi Millhouse-Project 1.414 - 'add_post_sql.php' Arbitrary File Upload / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51450.php"
     }
   ],
   "CVE-2023-36212": [
     {
       "source": "exploitdb",
-      "name": "Total CMS 1.7.4 - Remote Code Execution (RCE)",
-      "description": "Total CMS 1.7.4 - Remote Code Execution (RCE)",
+      "name": "Total CMS 1.7.4 - Arbitrary File Upload / Remote Code Execution (RCE)",
+      "description": "Total CMS 1.7.4 - Arbitrary File Upload / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51500.txt"
     }
   ],
@@ -4328,16 +4304,16 @@
   "CVE-2023-53924": [
     {
       "source": "exploitdb",
-      "name": "Ulicms-2023.1 sniffing-vicuna - Remote Code Execution (RCE)",
-      "description": "Ulicms-2023.1 sniffing-vicuna - Remote Code Execution (RCE)",
+      "name": "UliCMS 2023.1-sniffing-vicuna - Remote Code Execution (RCE)",
+      "description": "UliCMS 2023.1-sniffing-vicuna - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51434.txt"
     }
   ],
   "CVE-2023-0455": [
     {
       "source": "exploitdb",
-      "name": "unilogies/bumsys 1.0.3 beta - Unrestricted File Upload",
-      "description": "unilogies/bumsys 1.0.3 beta - Unrestricted File Upload",
+      "name": "unilogies/bumsys 1.0.3-beta - Unrestricted File Upload",
+      "description": "unilogies/bumsys 1.0.3-beta - Unrestricted File Upload",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51492.txt"
     }
   ],
@@ -4379,51 +4355,51 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2023/CVE-2023-39796.yaml"
     }
   ],
+  "CVE-2023-53901": [
+    {
+      "source": "exploitdb",
+      "name": "WBCE CMS 1.6.1 - 'url' Open Redirect / Cross-Site Request Forgery (CSRF)",
+      "description": "WBCE CMS 1.6.1 - 'url' Open Redirect / Cross-Site Request Forgery (CSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51566.txt"
+    }
+  ],
   "CVE-2023-53909": [
     {
       "source": "exploitdb",
-      "name": "WBCE CMS 1.6.1 - Multiple Stored Cross-Site Scripting (XSS)",
-      "description": "WBCE CMS 1.6.1 - Multiple Stored Cross-Site Scripting (XSS)",
+      "name": "WBCE CMS 1.6.1 - Authenticated Multiple Stored Cross-Site Scripting (XSS)",
+      "description": "WBCE CMS 1.6.1 - Authenticated Multiple Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51484.txt"
     }
   ],
   "CVE-2023-53910": [
     {
       "source": "exploitdb",
-      "name": "WBCE CMS 1.6.1 - Multiple Stored Cross-Site Scripting (XSS)",
-      "description": "WBCE CMS 1.6.1 - Multiple Stored Cross-Site Scripting (XSS)",
+      "name": "WBCE CMS 1.6.1 - Authenticated Multiple Stored Cross-Site Scripting (XSS)",
+      "description": "WBCE CMS 1.6.1 - Authenticated Multiple Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51484.txt"
-    }
-  ],
-  "CVE-2023-53901": [
-    {
-      "source": "exploitdb",
-      "name": "WBCE CMS 1.6.1 - Open Redirect / Cross-Site Request Forgery (CSRF)",
-      "description": "WBCE CMS 1.6.1 - Open Redirect / Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51566.txt"
     }
   ],
   "CVE-2023-53935": [
     {
       "source": "exploitdb",
-      "name": "WBiz Desk 1.2 - SQL Injection (SQLi)",
-      "description": "WBiz Desk 1.2 - SQL Injection (SQLi)",
+      "name": "WBiz Desk 1.2 - 'tk' Authenticated SQL Injection (SQLi)",
+      "description": "WBiz Desk 1.2 - 'tk' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51451.txt"
     }
   ],
   "CVE-2023-53883": [
     {
       "source": "exploitdb",
-      "name": "Webedition CMS 2.9.8.8 - Remote Code Execution (RCE)",
-      "description": "Webedition CMS 2.9.8.8 - Remote Code Execution (RCE)",
+      "name": "webEdition CMS 2.9.8.8 - Remote Code Execution (RCE)",
+      "description": "webEdition CMS 2.9.8.8 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51661.txt"
     }
   ],
   "CVE-2023-53884": [
     {
       "source": "exploitdb",
-      "name": "Webedition CMS 2.9.8.8 - Stored Cross-Site Scripting (XSS)",
-      "description": "Webedition CMS 2.9.8.8 - Stored Cross-Site Scripting (XSS)",
+      "name": "webEdition CMS 2.9.8.8 - Stored Cross-Site Scripting (XSS)",
+      "description": "webEdition CMS 2.9.8.8 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51662.txt"
     }
   ],
@@ -4452,8 +4428,8 @@
   "CVE-2023-34635": [
     {
       "source": "exploitdb",
-      "name": "Wifi Soft Unibox Administration 3.0 & 3.1 - SQL Injection (SQLi)",
-      "description": "Wifi Soft Unibox Administration 3.0 & 3.1 - SQL Injection (SQLi)",
+      "name": "Wifi Soft Unibox Administration 3.0/3.1 - 'username' Unauthenticated SQL Injection (SQLi) / Authentication Bypass",
+      "description": "Wifi Soft Unibox Administration 3.0/3.1 - 'username' Unauthenticated SQL Injection (SQLi) / Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51610.txt"
     }
   ],
@@ -4492,8 +4468,8 @@
   "CVE-2023-2745": [
     {
       "source": "exploitdb",
-      "name": "WordPress Core 6.2 - Directory Traversal",
-      "description": "WordPress Core 6.2 - Directory Traversal",
+      "name": "WordPress Core 6.2 - 'wp_lang' Directory Traversal",
+      "description": "WordPress Core 6.2 - 'wp_lang' Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52274.py"
     },
     {
@@ -4514,8 +4490,8 @@
   "CVE-2023-2636": [
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin AN_Gradebook 5.0.1 - SQL Injection (SQLi)",
-      "description": "WordPress Plugin AN_Gradebook 5.0.1 - SQL Injection (SQLi)",
+      "name": "WordPress Plugin AN_Gradebook 5.0.1 - 'id' Authenticated SQL Injection (SQLi)",
+      "description": "WordPress Plugin AN_Gradebook 5.0.1 - 'id' Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51632.py"
     }
   ],
@@ -4546,7 +4522,7 @@
       "source": "exploitdb",
       "name": "WordPress Plugin Duplicator < 1.5.7.1 - Unauthenticated Sensitive Data Exposure to Account Takeover",
       "description": "WordPress Plugin Duplicator < 1.5.7.1 - Unauthenticated Sensitive Data Exposure to Account Takeover",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51874.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51874.txt"
     },
     {
       "source": "nuclei",
@@ -4605,11 +4581,19 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51735.py"
     }
   ],
+  "CVE-2023-0084": [
+    {
+      "source": "exploitdb",
+      "name": "WordPress Plugin MetForm Elementor Contact Form Builder <= 3.1.2 - Unauthenticated Stored Cross-Site Scripting (XSS)",
+      "description": "WordPress Plugin MetForm Elementor Contact Form Builder <= 3.1.2 - Unauthenticated Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51204.txt"
+    }
+  ],
   "CVE-2023-37979": [
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin Ninja Forms 3.6.25 - Reflected Cross-Site Scripting (XSS)",
-      "description": "WordPress Plugin Ninja Forms 3.6.25 - Reflected Cross-Site Scripting (XSS)",
+      "name": "WordPress Plugin Ninja Forms 3.6.25 - 'data' Reflected Cross-Site Scripting (XSS)",
+      "description": "WordPress Plugin Ninja Forms 3.6.25 - 'data' Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51644.py"
     },
     {
@@ -4638,8 +4622,8 @@
   "CVE-2023-54340": [
     {
       "source": "exploitdb",
-      "name": "WorkOrder CMS 0.1.0 - SQL Injection (SQLi)",
-      "description": "WorkOrder CMS 0.1.0 - SQL Injection (SQLi)",
+      "name": "WorkOrder CMS 0.1.0 - 'userName'/'password' Unauthenticated SQL Injection (SQLi) / Authentication Bypass",
+      "description": "WorkOrder CMS 0.1.0 - 'userName'/'password' Unauthenticated SQL Injection (SQLi) / Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51038.txt"
     }
   ],
@@ -4678,8 +4662,8 @@
   "CVE-2023-37474": [
     {
       "source": "exploitdb",
-      "name": "copyparty 1.8.2 - Directory Traversal",
-      "description": "copyparty 1.8.2 - Directory Traversal",
+      "name": "copyparty 1.8.2 - '.cpr' Directory Traversal",
+      "description": "copyparty 1.8.2 - '.cpr' Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/51636.txt"
     },
     {
@@ -4730,7 +4714,7 @@
       "source": "exploitdb",
       "name": "Pyro CMS 3.9 - Authenticated Server-Side Template Injection (SSTI)",
       "description": "Pyro CMS 3.9 - Authenticated Server-Side Template Injection (SSTI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/51669.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/51669.py"
     }
   ],
   "CVE-2023-30145": [
@@ -4770,7 +4754,7 @@
       "source": "exploitdb",
       "name": "Sysax Multi Server 6.95 - 'Password' Denial of Service (DoS) (PoC)",
       "description": "Sysax Multi Server 6.95 - 'Password' Denial of Service (DoS) (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/51066.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/51066.py"
     }
   ],
   "CVE-2023-53886": [
@@ -4800,9 +4784,17 @@
   "CVE-2023-36167": [
     {
       "source": "exploitdb",
-      "name": "AVG Anti Spyware 7.5 - Unquoted Service Path _AVG Anti-Spyware Guard_",
-      "description": "AVG Anti Spyware 7.5 - Unquoted Service Path _AVG Anti-Spyware Guard_",
+      "name": "AVG Anti-Spyware 7.5 - 'AVG Anti-Spyware Guard' Unquoted Service Path",
+      "description": "AVG Anti-Spyware 7.5 - 'AVG Anti-Spyware Guard' Unquoted Service Path",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51583.txt"
+    }
+  ],
+  "CVE-2023-53912": [
+    {
+      "source": "exploitdb",
+      "name": "BiniSoft USB Flash Drives Control 4.1.0.0 - Unquoted Service Path",
+      "description": "BiniSoft USB Flash Drives Control 4.1.0.0 - Unquoted Service Path",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51508.txt"
     }
   ],
   "CVE-2023-37734": [
@@ -4824,17 +4816,9 @@
   "CVE-2023-53959": [
     {
       "source": "exploitdb",
-      "name": "FileZilla Client 3.63.1 - 'TextShaping.dl' DLL Hijacking",
-      "description": "FileZilla Client 3.63.1 - 'TextShaping.dl' DLL Hijacking",
+      "name": "FileZilla Client 3.63.1 - 'TextShaping.dll' DLL Hijacking",
+      "description": "FileZilla Client 3.63.1 - 'TextShaping.dll' DLL Hijacking",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51267.txt"
-    }
-  ],
-  "CVE-2023-31747": [
-    {
-      "source": "exploitdb",
-      "name": "Filmora 12 Build 1.0.0.7 - Unquoted Service Path Privilege Escalation",
-      "description": "Filmora 12 Build 1.0.0.7 - Unquoted Service Path Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51483.txt"
     }
   ],
   "CVE-2023-36166": [
@@ -4848,8 +4832,8 @@
   "CVE-2023-43131": [
     {
       "source": "exploitdb",
-      "name": "General Device Manager 2.5.2.2 - Buffer Overflow (SEH)",
-      "description": "General Device Manager 2.5.2.2 - Buffer Overflow (SEH)",
+      "name": "General Device Manager 2.5.2.2 - 'IP Address' SEH Buffer Overflow",
+      "description": "General Device Manager 2.5.2.2 - 'IP Address' SEH Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51641.py"
     }
   ],
@@ -4872,9 +4856,25 @@
   "CVE-2023-31468": [
     {
       "source": "exploitdb",
-      "name": "Inosoft VisiWin 7 2022-2.1 - Insecure Folders Permissions",
-      "description": "Inosoft VisiWin 7 2022-2.1 - Insecure Folders Permissions",
+      "name": "Inosoft VisiWin 7 2022-2.1 - Insecure Folder Permissions / Local Privilege Escalation (LPE)",
+      "description": "Inosoft VisiWin 7 2022-2.1 - Insecure Folder Permissions / Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51682.txt"
+    }
+  ],
+  "CVE-2023-21752": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Windows 11 10.0.22000 - Backup Service Privilege Escalation",
+      "description": "Microsoft Windows 11 10.0.22000 - Backup Service Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51203.txt"
+    }
+  ],
+  "CVE-2023-28293": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Windows 11 22h2 - Kernel Privilege Elevation",
+      "description": "Microsoft Windows 11 22h2 - Kernel Privilege Elevation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51544.c"
     }
   ],
   "CVE-2023-29336": [
@@ -4882,7 +4882,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows Server 2016 - Win32k Elevation of Privilege",
       "description": "Microsoft Windows Server 2016 - Win32k Elevation of Privilege",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52301.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52301.cpp"
     }
   ],
   "CVE-2023-25438": [
@@ -4896,25 +4896,17 @@
   "CVE-2023-36164": [
     {
       "source": "exploitdb",
-      "name": "MiniTool Partition Wizard ShadowMaker v.12.7 - Unquoted Service Path _MTAgentService_",
-      "description": "MiniTool Partition Wizard ShadowMaker v.12.7 - Unquoted Service Path _MTAgentService_",
+      "name": "MiniTool Partition Wizard ShadowMaker 12.7 - 'MTAgentService' Unquoted Service Path",
+      "description": "MiniTool Partition Wizard ShadowMaker 12.7 - 'MTAgentService' Unquoted Service Path",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51578.txt"
     }
   ],
   "CVE-2023-36165": [
     {
       "source": "exploitdb",
-      "name": "MiniTool Partition Wizard ShadowMaker v.12.7 - Unquoted Service Path _MTSchedulerService_",
-      "description": "MiniTool Partition Wizard ShadowMaker v.12.7 - Unquoted Service Path _MTSchedulerService_",
+      "name": "MiniTool Partition Wizard ShadowMaker 12.7 - 'MTSchedulerService' Unquoted Service Path",
+      "description": "MiniTool Partition Wizard ShadowMaker 12.7 - 'MTSchedulerService' Unquoted Service Path",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51579.txt"
-    }
-  ],
-  "CVE-2023-31748": [
-    {
-      "source": "exploitdb",
-      "name": "MobileTrans 4.0.11 - Weak Service Privilege Escalation",
-      "description": "MobileTrans 4.0.11 - Weak Service Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51479.txt"
     }
   ],
   "CVE-2023-30367": [
@@ -4922,7 +4914,7 @@
       "source": "exploitdb",
       "name": "mRemoteNG 1.77.3.1784-NB - Cleartext Storage of Sensitive Information in Memory",
       "description": "mRemoteNG 1.77.3.1784-NB - Cleartext Storage of Sensitive Information in Memory",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51637.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51637.cs"
     }
   ],
   "CVE-2023-53947": [
@@ -4936,73 +4928,49 @@
   "CVE-2023-53960": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Authentication Bypass",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Authentication Bypass",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Authentication Bypass",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51171.txt"
     }
   ],
   "CVE-2023-53955": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Authorization Bypass (IDOR)",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Authorization Bypass (IDOR)",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Authorization Bypass (IDOR)",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Authorization Bypass (IDOR)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51169.txt"
     }
   ],
   "CVE-2023-53961": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Cross-Site Request Forgery (CSRF)",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Cross-Site Request Forgery (CSRF)",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Cross-Site Request Forgery (CSRF)",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51168.txt"
     }
   ],
   "CVE-2023-53962": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Directory Traversal File Write Exploit",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Directory Traversal File Write Exploit",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Directory Traversal File Write Exploit",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Directory Traversal File Write Exploit",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51172.txt"
     }
   ],
   "CVE-2023-53964": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Unauthenticated Factory Reset",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Unauthenticated Factory Reset",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Unauthenticated Factory Reset",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Unauthenticated Factory Reset",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51174.txt"
     }
   ],
   "CVE-2023-53965": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 Server Service 4.1.102 - Local Privilege Escalation (LPE)",
-      "description": "SOUND4 Server Service 4.1.102 - Local Privilege Escalation (LPE)",
+      "name": "SOUND4 Server Service 4.1.102 - 'SOUND4 Server' Unquoted Service Path / Local Privilege Escalation (LPE)",
+      "description": "SOUND4 Server Service 4.1.102 - 'SOUND4 Server' Unquoted Service Path / Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51167.txt"
-    }
-  ],
-  "CVE-2023-53912": [
-    {
-      "source": "exploitdb",
-      "name": "USB Flash Drives Control 4.1.0.0 - Unquoted Service Path",
-      "description": "USB Flash Drives Control 4.1.0.0 - Unquoted Service Path",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51508.txt"
-    }
-  ],
-  "CVE-2023-21752": [
-    {
-      "source": "exploitdb",
-      "name": "Windows 11 10.0.22000 - Backup Service Privilege Escalation",
-      "description": "Windows 11 10.0.22000 - Backup Service Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51203.txt"
-    }
-  ],
-  "CVE-2023-28293": [
-    {
-      "source": "exploitdb",
-      "name": "Windows 11 22h2 - Kernel Privilege Elevation",
-      "description": "Windows 11 22h2 - Kernel Privilege Elevation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51544.c"
     }
   ],
   "CVE-2023-27010": [
@@ -5011,6 +4979,22 @@
       "name": "Wondershare Dr Fone 12.9.6 - Privilege Escalation",
       "description": "Wondershare Dr Fone 12.9.6 - Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51324.txt"
+    }
+  ],
+  "CVE-2023-31747": [
+    {
+      "source": "exploitdb",
+      "name": "Wondershare Filmora 12 Build 12.2.1.2088 - Unquoted Service Path Privilege Escalation",
+      "description": "Wondershare Filmora 12 Build 12.2.1.2088 - Unquoted Service Path Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51483.txt"
+    }
+  ],
+  "CVE-2023-31748": [
+    {
+      "source": "exploitdb",
+      "name": "Wondershare MobileTrans 4.0.11 - Weak Service Privilege Escalation",
+      "description": "Wondershare MobileTrans 4.0.11 - Weak Service Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/51479.txt"
     }
   ],
   "CVE-2023-53973": [
@@ -5053,11 +5037,19 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51239.py"
     }
   ],
+  "CVE-2023-53966": [
+    {
+      "source": "exploitdb",
+      "name": "SOUND4 LinkAndShare Transmitter 1.1.2 - 'username' Format String / Stack Buffer Overflow",
+      "description": "SOUND4 LinkAndShare Transmitter 1.1.2 - 'username' Format String / Stack Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51259.txt"
+    }
+  ],
   "CVE-2023-22629": [
     {
       "source": "exploitdb",
-      "name": "TitanFTP 2.0.1.2102 - Path Traversal to Remote Code Execution (RCE)",
-      "description": "TitanFTP 2.0.1.2102 - Path Traversal to Remote Code Execution (RCE)",
+      "name": "TitanFTP 2.0.1.2102 - Directory Traversal / Remote Code Execution (RCE)",
+      "description": "TitanFTP 2.0.1.2102 - Directory Traversal / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51268.txt"
     },
     {
@@ -5075,20 +5067,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51681.txt"
     }
   ],
-  "CVE-2023-31068": [
-    {
-      "source": "exploitdb",
-      "name": "TSplus 16.0.0.0 - Remote Work Insecure Files and Folders",
-      "description": "TSplus 16.0.0.0 - Remote Work Insecure Files and Folders",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51680.txt"
-    }
-  ],
   "CVE-2023-31067": [
     {
       "source": "exploitdb",
       "name": "TSplus 16.0.2.14 - Remote Access Insecure Files and Folders Permissions",
       "description": "TSplus 16.0.2.14 - Remote Access Insecure Files and Folders Permissions",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51679.txt"
+    }
+  ],
+  "CVE-2023-31068": [
+    {
+      "source": "exploitdb",
+      "name": "TSplus Remote Work 16.0.0.0 - Insecure File and Folder Permissions",
+      "description": "TSplus Remote Work 16.0.0.0 - Insecure File and Folder Permissions",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/51680.txt"
     }
   ],
   "CVE-2023-42222": [
@@ -5118,16 +5110,24 @@
   "CVE-2023-31492": [
     {
       "source": "exploitdb",
-      "name": "ManageEngine ADManager Plus Build < 7183 - Recovery Password Disclosure",
-      "description": "ManageEngine ADManager Plus Build < 7183 - Recovery Password Disclosure",
+      "name": "ManageEngine ADManager Plus Build < 7183 - Authenticated Recovery Password Disclosure",
+      "description": "ManageEngine ADManager Plus Build < 7183 - Authenticated Recovery Password Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/51794.py"
+    }
+  ],
+  "CVE-2023-34834": [
+    {
+      "source": "exploitdb",
+      "name": "MCL-Net 4.3.5.8788 - Information Disclosure",
+      "description": "MCL-Net 4.3.5.8788 - Information Disclosure",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/51542.txt"
     }
   ],
   "CVE-2023-53963": [
     {
       "source": "exploitdb",
-      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Remote Command Execution (RCE)",
-      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco v2.x - Remote Command Execution (RCE)",
+      "name": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Remote Command Execution (RCE)",
+      "description": "SOUND4 IMPACT/FIRST/PULSE/Eco 2.x - Remote Command Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/51173.txt"
     }
   ],

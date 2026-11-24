@@ -8,8 +8,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "RedHat Linux 7.0 Apache - Remote Username Enumeration",
-      "description": "RedHat Linux 7.0 Apache - Remote Username Enumeration",
+      "name": "Red Hat Linux 7.0 Apache - Remote Username Enumeration",
+      "description": "Red Hat Linux 7.0 Apache - Remote Username Enumeration",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/21112.php"
     }
   ],
@@ -138,21 +138,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris /bin/login (SPARC/x86) - Remote Code Execution (RCE)",
-      "description": "Solaris /bin/login (SPARC/x86) - Remote Code Execution (RCE)",
+      "name": "Sun Solaris /bin/login (SPARC/x86) - Remote Code Execution (RCE)",
+      "description": "Sun Solaris /bin/login (SPARC/x86) - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux_sparc/remote/346.c"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5.1/2.6/7/8 rlogin (SPARC) - '/bin/login' Remote Buffer Overflow",
-      "description": "Solaris 2.5.1/2.6/7/8 rlogin (SPARC) - '/bin/login' Remote Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/716.c"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remote Authentication Bypass",
-      "description": "Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remote Authentication Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/57.txt"
     },
     {
       "source": "exploitdb",
@@ -174,6 +162,18 @@
     },
     {
       "source": "exploitdb",
+      "name": "Sun Solaris 2.5.1/2.6/7/8 rlogin (SPARC) - '/bin/login' Remote Buffer Overflow",
+      "description": "Sun Solaris 2.5.1/2.6/7/8 rlogin (SPARC) - '/bin/login' Remote Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/716.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remote Authentication Bypass",
+      "description": "Sun Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remote Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/57.txt"
+    },
+    {
+      "source": "exploitdb",
       "name": "System V Derived /bin/login - Extraneous Arguments Buffer Overflow (modem based) (Metasploit)",
       "description": "System V Derived /bin/login - Extraneous Arguments Buffer Overflow (modem based) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/10036.rb"
@@ -188,8 +188,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 8 dtspcd - Remote Heap Overflow (Metasploit)",
-      "description": "Solaris 8 dtspcd - Remote Heap Overflow (Metasploit)",
+      "name": "Sun Solaris 8 dtspcd - Remote Heap Overflow (Metasploit)",
+      "description": "Sun Solaris 8 dtspcd - Remote Heap Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/9923.rb"
     },
     {
@@ -208,27 +208,27 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 10 LPD - Arbitrary File Delete (Metasploit)",
-      "description": "Solaris 10 LPD - Arbitrary File Delete (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/1167.pm"
-    },
-    {
-      "source": "exploitdb",
       "name": "Solaris 2.x/7.0/8 LPD - Remote Command Execution",
       "description": "Solaris 2.x/7.0/8 LPD - Remote Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/21097.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 8.0 LPD - Command Execution (Metasploit)",
-      "description": "Solaris 8.0 LPD - Command Execution (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/9921.rb"
-    },
-    {
-      "source": "exploitdb",
       "name": "Solaris LPD - Command Execution (Metasploit)",
       "description": "Solaris LPD - Command Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/16322.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 10 LPD - Arbitrary File Delete (Metasploit)",
+      "description": "Sun Solaris 10 LPD - Arbitrary File Delete (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/1167.pm"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 8.0 LPD - Command Execution (Metasploit)",
+      "description": "Sun Solaris 8.0 LPD - Command Execution (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/9921.rb"
     }
   ],
   "CVE-2001-0241": [
@@ -454,8 +454,8 @@
   "CVE-2001-1080": [
     {
       "source": "exploitdb",
-      "name": "AIX 4.3/5.1 - diagrpt Arbitrary Privileged Program Execution",
-      "description": "AIX 4.3/5.1 - diagrpt Arbitrary Privileged Program Execution",
+      "name": "IBM AIX 4.3/5.1 - diagrpt Arbitrary Privileged Program Execution",
+      "description": "IBM AIX 4.3/5.1 - diagrpt Arbitrary Privileged Program Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aix/local/20965.sh"
     }
   ],
@@ -938,8 +938,8 @@
   "CVE-2001-1196": [
     {
       "source": "exploitdb",
-      "name": "webmin 0.91 - Directory Traversal",
-      "description": "webmin 0.91 - Directory Traversal",
+      "name": "Webmin 0.91 - Directory Traversal",
+      "description": "Webmin 0.91 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/remote/21183.txt"
     }
   ],
@@ -1166,8 +1166,8 @@
   "CVE-2001-1194": [
     {
       "source": "exploitdb",
-      "name": "ZYXEL Prestige 681 SDSL Router - IP Fragment Reassembly",
-      "description": "ZYXEL Prestige 681 SDSL Router - IP Fragment Reassembly",
+      "name": "Zyxel Prestige 681 SDSL Router - IP Fragment Reassembly",
+      "description": "Zyxel Prestige 681 SDSL Router - IP Fragment Reassembly",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/21186.txt"
     }
   ],
@@ -1188,14 +1188,14 @@
   "CVE-2001-0485": [
     {
       "source": "exploitdb",
-      "name": "IRIX 5.3/6.2/6.3/6.4/6.5/6.5.11 - '/usr/lib/print/netprint' Local Privilege Escalation (LPE)",
-      "description": "IRIX 5.3/6.2/6.3/6.4/6.5/6.5.11 - '/usr/lib/print/netprint' Local Privilege Escalation (LPE)",
+      "name": "SGI IRIX 5.3/6.2/6.3/6.4/6.5/6.5.11 - '/usr/lib/print/netprint' Local Privilege Escalation (LPE)",
+      "description": "SGI IRIX 5.3/6.2/6.3/6.4/6.5/6.5.11 - '/usr/lib/print/netprint' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/irix/local/270.sh"
     },
     {
       "source": "exploitdb",
-      "name": "IRIX 5.3/6.x - 'netprint' Arbitrary Shared Library Usage",
-      "description": "IRIX 5.3/6.x - 'netprint' Arbitrary Shared Library Usage",
+      "name": "SGI IRIX 5.3/6.x - 'netprint' Arbitrary Shared Library Usage",
+      "description": "SGI IRIX 5.3/6.x - 'netprint' Arbitrary Shared Library Usage",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/irix/local/20804.c"
     }
   ],
@@ -1268,36 +1268,36 @@
   "CVE-2001-0136": [
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.2 - 'SIZE' Remote Denial of Service (DoS)",
-      "description": "ProFTPd 1.2 - 'SIZE' Remote Denial of Service (DoS)",
+      "name": "ProFTPD 1.2 - 'SIZE' Remote Denial of Service (DoS)",
+      "description": "ProFTPD 1.2 - 'SIZE' Remote Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/20536.java"
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.2.0 pre10 - Remote Denial of Service (DoS)",
-      "description": "ProFTPd 1.2.0 pre10 - Remote Denial of Service (DoS)",
+      "name": "ProFTPD 1.2.0 pre10 - Remote Denial of Service (DoS)",
+      "description": "ProFTPD 1.2.0 pre10 - Remote Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/244.java"
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.2.0 rc2 - Memory Leakage",
-      "description": "ProFTPd 1.2.0 rc2 - Memory Leakage",
+      "name": "ProFTPD 1.2.0 rc2 - Memory Leakage",
+      "description": "ProFTPD 1.2.0 rc2 - Memory Leakage",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/241.c"
     }
   ],
   "CVE-2001-0026": [
     {
       "source": "exploitdb",
-      "name": "RedHat Linux 7.0 - Roaring Penguin PPPoE Denial of Service (DoS)",
-      "description": "RedHat Linux 7.0 - Roaring Penguin PPPoE Denial of Service (DoS)",
+      "name": "Red Hat Linux 7.0 - Roaring Penguin PPPoE Denial of Service (DoS)",
+      "description": "Red Hat Linux 7.0 - Roaring Penguin PPPoE Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/20494.pl"
     }
   ],
   "CVE-2001-0852": [
     {
       "source": "exploitdb",
-      "name": "RedHat TUX 2.1.0-2 - HTTP Server Oversized Host Denial of Service (DoS)",
-      "description": "RedHat TUX 2.1.0-2 - HTTP Server Oversized Host Denial of Service (DoS)",
+      "name": "Red Hat TUX 2.1.0-2 - HTTP Server Oversized Host Denial of Service (DoS)",
+      "description": "Red Hat TUX 2.1.0-2 - HTTP Server Oversized Host Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/21141.txt"
     }
   ],
@@ -1387,14 +1387,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/20691.txt"
     }
   ],
-  "CVE-2001-0169": [
-    {
-      "source": "exploitdb",
-      "name": "GLIBC 2.1.3 - 'LD_PRELOAD' Local Privilege Escalation (LPE)",
-      "description": "GLIBC 2.1.3 - 'LD_PRELOAD' Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/290.tcsh"
-    }
-  ],
   "CVE-2001-0170": [
     {
       "source": "exploitdb",
@@ -1417,11 +1409,19 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/21043.c"
     }
   ],
+  "CVE-2001-0169": [
+    {
+      "source": "exploitdb",
+      "name": "GNU GLIBC 2.1.3 - 'LD_PRELOAD' Local Privilege Escalation (LPE)",
+      "description": "GNU GLIBC 2.1.3 - 'LD_PRELOAD' Local Privilege Escalation (LPE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/290.tcsh"
+    }
+  ],
   "CVE-2001-0641": [
     {
       "source": "exploitdb",
-      "name": "Immunix OS 6.2/7.0 / RedHat 5.2/6.2/7.0 / SuSE Linux 6.x/7.0/7.1 - 'Man -S' Heap Overflow",
-      "description": "Immunix OS 6.2/7.0 / RedHat 5.2/6.2/7.0 / SuSE Linux 6.x/7.0/7.1 - 'Man -S' Heap Overflow",
+      "name": "Immunix OS 6.2/7.0 / Red Hat 5.2/6.2/7.0 / SuSE Linux 6.x/7.0/7.1 - 'Man -S' Heap Overflow",
+      "description": "Immunix OS 6.2/7.0 / Red Hat 5.2/6.2/7.0 / SuSE Linux 6.x/7.0/7.1 - 'Man -S' Heap Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/20843.txt"
     }
   ],
@@ -1458,14 +1458,14 @@
   "CVE-2001-0317": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.2.18 (RedHat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (1)",
-      "description": "Linux Kernel 2.2.18 (RedHat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (1)",
+      "name": "Linux Kernel 2.2.18 (Red Hat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (1)",
+      "description": "Linux Kernel 2.2.18 (Red Hat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/20720.c"
     },
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.2.18 (RedHat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (2)",
-      "description": "Linux Kernel 2.2.18 (RedHat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (2)",
+      "name": "Linux Kernel 2.2.18 (Red Hat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (2)",
+      "description": "Linux Kernel 2.2.18 (Red Hat 6.2/7.0 / 2.2.14/2.2.18/2.2.18ow4) - ptrace/execve Race Condition Privilege Escalation (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/20721.c"
     }
   ],
@@ -1868,8 +1868,8 @@
   "CVE-2001-1002": [
     {
       "source": "exploitdb",
-      "name": "RedHat 6.2/7.0/7.1 Lpd - Remote Command Execution via DVI Printfilter Configuration Error",
-      "description": "RedHat 6.2/7.0/7.1 Lpd - Remote Command Execution via DVI Printfilter Configuration Error",
+      "name": "Red Hat 6.2/7.0/7.1 Lpd - Remote Command Execution via DVI Printfilter Configuration Error",
+      "description": "Red Hat 6.2/7.0/7.1 Lpd - Remote Command Execution via DVI Printfilter Configuration Error",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/21095.txt"
     }
   ],
@@ -1892,8 +1892,8 @@
   "CVE-2001-1501": [
     {
       "source": "exploitdb",
-      "name": "WU-FTPD 2.4/2.5/2.6 / Trolltech ftpd 1.2 / ProFTPd 1.2 / BeroFTPD 1.3.4 FTP - glob Expansion",
-      "description": "WU-FTPD 2.4/2.5/2.6 / Trolltech ftpd 1.2 / ProFTPd 1.2 / BeroFTPD 1.3.4 FTP - glob Expansion",
+      "name": "WU-FTPD 2.4/2.5/2.6 / Trolltech ftpd 1.2 / ProFTPD 1.2 / BeroFTPD 1.3.4 FTP - glob Expansion",
+      "description": "WU-FTPD 2.4/2.5/2.6 / Trolltech ftpd 1.2 / ProFTPD 1.2 / BeroFTPD 1.3.4 FTP - glob Expansion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/20690.sh"
     }
   ],
@@ -2032,8 +2032,8 @@
   "CVE-2001-0697": [
     {
       "source": "exploitdb",
-      "name": "Netwin SurgeFTP 1.0b - Denial of Service (DoS)",
-      "description": "Netwin SurgeFTP 1.0b - Denial of Service (DoS)",
+      "name": "NetWin SurgeFTP 1.0b - Denial of Service (DoS)",
+      "description": "NetWin SurgeFTP 1.0b - Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/20659.txt"
     }
   ],
@@ -2250,7 +2250,7 @@
       "source": "exploitdb",
       "name": "eSafe Gateway 2.1 - Script-filtering Bypass",
       "description": "eSafe Gateway 2.1 - Script-filtering Bypass",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/20869.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/20869.txt"
     }
   ],
   "CVE-2001-0615": [
@@ -2406,7 +2406,7 @@
       "source": "exploitdb",
       "name": "SSH 1.2.x - CRC-32 Compensation Attack Detector",
       "description": "SSH 1.2.x - CRC-32 Compensation Attack Detector",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20617.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20617.txt"
     }
   ],
   "CVE-2001-0486": [
@@ -2676,8 +2676,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 2.7/2.8 Catman - Local Insecure tmp Symlink",
-      "description": "Solaris 2.7/2.8 Catman - Local Insecure tmp Symlink",
+      "name": "Sun Solaris 2.7/2.8 Catman - Local Insecure tmp Symlink",
+      "description": "Sun Solaris 2.7/2.8 Catman - Local Insecure tmp Symlink",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/233.pl"
     }
   ],
@@ -2689,94 +2689,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20715.txt"
     }
   ],
-  "CVE-2001-0059": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5.1/2.6/7.0/8 - patchadd Race Condition",
-      "description": "Solaris 2.5.1/2.6/7.0/8 - patchadd Race Condition",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20514.pl"
-    }
-  ],
-  "CVE-2001-0565": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (1)",
-      "description": "Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20772.c"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (2)",
-      "description": "Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (2)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20773.c"
-    }
-  ],
-  "CVE-2001-0595": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (1)",
-      "description": "Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20767.c"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (2)",
-      "description": "Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (2)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20768.c"
-    }
-  ],
-  "CVE-2001-0401": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.5/2.6/7.0/8 tip - Local Buffer Overflow",
-      "description": "Solaris 2.5/2.6/7.0/8 tip - Local Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20684.c"
-    }
-  ],
-  "CVE-2001-1076": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.6/2.6/7.0/8 whodo - Local Buffer Overflow",
-      "description": "Solaris 2.6/2.6/7.0/8 whodo - Local Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20974.c"
-    }
-  ],
-  "CVE-2001-0548": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.6/7.0 - DTMail Mail Environment Variable Buffer Overflow",
-      "description": "Solaris 2.6/7.0 - DTMail Mail Environment Variable Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21024.c"
-    }
-  ],
-  "CVE-2001-0652": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 2.6/7/8 (SPARC) - xlock Heap Overflow",
-      "description": "Solaris 2.6/7/8 (SPARC) - xlock Heap Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21058.c"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Solaris 8 - x86 xlock Heap Overflow",
-      "description": "Solaris 8 - x86 xlock Heap Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21059.c"
-    }
-  ],
   "CVE-2001-0422": [
     {
       "source": "exploitdb",
       "name": "Solaris 2.x/7.0/8 - Xsun HOME Buffer Overflow",
       "description": "Solaris 2.x/7.0/8 - Xsun HOME Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20743.c"
-    }
-  ],
-  "CVE-2001-0423": [
-    {
-      "source": "exploitdb",
-      "name": "Solaris 7.0/8 - IPCS Timezone Buffer Overflow",
-      "description": "Solaris 7.0/8 - IPCS Timezone Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20751.txt"
     }
   ],
   "CVE-2001-0594": [
@@ -2809,25 +2727,107 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/250.c"
     }
   ],
+  "CVE-2001-0059": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5.1/2.6/7.0/8 - patchadd Race Condition",
+      "description": "Sun Solaris 2.5.1/2.6/7.0/8 - patchadd Race Condition",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20514.pl"
+    }
+  ],
+  "CVE-2001-0565": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (1)",
+      "description": "Sun Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20772.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (2)",
+      "description": "Sun Solaris 2.5/2.6/7.0/8 - 'mailx -F' Local Buffer Overflow (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20773.c"
+    }
+  ],
+  "CVE-2001-0595": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (1)",
+      "description": "Sun Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20767.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (2)",
+      "description": "Sun Solaris 2.5/2.6/7.0/8 - kcms_configure KCMS_PROFILES Buffer Overflow (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20768.c"
+    }
+  ],
+  "CVE-2001-0401": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.5/2.6/7.0/8 tip - Local Buffer Overflow",
+      "description": "Sun Solaris 2.5/2.6/7.0/8 tip - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20684.c"
+    }
+  ],
+  "CVE-2001-1076": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.6/2.6/7.0/8 whodo - Local Buffer Overflow",
+      "description": "Sun Solaris 2.6/2.6/7.0/8 whodo - Local Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20974.c"
+    }
+  ],
+  "CVE-2001-0548": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.6/7.0 - DTMail Mail Environment Variable Buffer Overflow",
+      "description": "Sun Solaris 2.6/7.0 - DTMail Mail Environment Variable Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21024.c"
+    }
+  ],
+  "CVE-2001-0652": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 2.6/7/8 (SPARC) - xlock Heap Overflow",
+      "description": "Sun Solaris 2.6/7/8 (SPARC) - xlock Heap Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21058.c"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 8 - x86 xlock Heap Overflow",
+      "description": "Sun Solaris 8 - x86 xlock Heap Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/21059.c"
+    }
+  ],
+  "CVE-2001-0423": [
+    {
+      "source": "exploitdb",
+      "name": "Sun Solaris 7.0/8 - IPCS Timezone Buffer Overflow",
+      "description": "Sun Solaris 7.0/8 - IPCS Timezone Buffer Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20751.txt"
+    }
+  ],
   "CVE-2001-1582": [
     {
       "source": "exploitdb",
-      "name": "Solaris 8 libsldap - Local Buffer Overflow (1)",
-      "description": "Solaris 8 libsldap - Local Buffer Overflow (1)",
+      "name": "Sun Solaris 8 libsldap - Local Buffer Overflow (1)",
+      "description": "Sun Solaris 8 libsldap - Local Buffer Overflow (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20969.c"
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 8 libsldap - Local Buffer Overflow (2)",
-      "description": "Solaris 8 libsldap - Local Buffer Overflow (2)",
+      "name": "Sun Solaris 8 libsldap - Local Buffer Overflow (2)",
+      "description": "Sun Solaris 8 libsldap - Local Buffer Overflow (2)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20970.c"
     }
   ],
   "CVE-2001-0526": [
     {
       "source": "exploitdb",
-      "name": "Solaris 8 mailtool - Local Buffer Overflow",
-      "description": "Solaris 8 mailtool - Local Buffer Overflow",
+      "name": "Sun Solaris 8 mailtool - Local Buffer Overflow",
+      "description": "Sun Solaris 8 mailtool - Local Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20885.c"
     }
   ],
@@ -2842,22 +2842,22 @@
   "CVE-2001-0421": [
     {
       "source": "exploitdb",
-      "name": "Solaris 2.6 - FTP Core Dump Shadow Password Recovery",
-      "description": "Solaris 2.6 - FTP Core Dump Shadow Password Recovery",
+      "name": "Sun Solaris 2.6 - FTP Core Dump Shadow Password Recovery",
+      "description": "Sun Solaris 2.6 - FTP Core Dump Shadow Password Recovery",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/20764.txt"
     }
   ],
   "CVE-2001-0236": [
     {
       "source": "exploitdb",
-      "name": "Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow",
-      "description": "Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow",
+      "name": "Sun Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow",
+      "description": "Sun Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/20648.c"
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow (Metasploit)",
-      "description": "Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow (Metasploit)",
+      "name": "Sun Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow (Metasploit)",
+      "description": "Sun Solaris 2.6/7.0/8 - snmpXdmid Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/remote/20649.pm"
     }
   ],
@@ -3155,19 +3155,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/21128.c"
     }
   ],
-  "CVE-2001-0779": [
-    {
-      "source": "exploitdb",
-      "name": "OpenServer 5.0.5/5.0.6 / HP-UX 10/11 / Solaris 2.6/7.0/8 - rpc.yppasswdd Buffer Overrun",
-      "description": "OpenServer 5.0.5/5.0.6 / HP-UX 10/11 / Solaris 2.6/7.0/8 - rpc.yppasswdd Buffer Overrun",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20879.txt"
-    }
-  ],
   "CVE-2001-1487": [
     {
       "source": "exploitdb",
-      "name": "QPopper 4.0.x - PopAuth Trace File Shell Command Execution",
-      "description": "QPopper 4.0.x - PopAuth Trace File Shell Command Execution",
+      "name": "Qualcomm QPopper 4.0.x - PopAuth Trace File Shell Command Execution",
+      "description": "Qualcomm QPopper 4.0.x - PopAuth Trace File Shell Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/21185.sh"
     }
   ],
@@ -3177,6 +3169,14 @@
       "name": "Samba 2.0.x/2.2 - Arbitrary File Creation",
       "description": "Samba 2.0.x/2.2 - Arbitrary File Creation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20968.txt"
+    }
+  ],
+  "CVE-2001-0779": [
+    {
+      "source": "exploitdb",
+      "name": "SCO OpenServer 5.0.5/5.0.6 / HP-UX 10/11 / Solaris 2.6/7.0/8 - rpc.yppasswdd Buffer Overrun",
+      "description": "SCO OpenServer 5.0.5/5.0.6 / HP-UX 10/11 / Solaris 2.6/7.0/8 - rpc.yppasswdd Buffer Overrun",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20879.txt"
     }
   ],
   "CVE-2001-0554": [
@@ -3192,7 +3192,7 @@
       "source": "exploitdb",
       "name": "SSH 1.2.30 - Daemon Logging Failure",
       "description": "SSH 1.2.30 - Daemon Logging Failure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20615.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/unix/remote/20615.exp"
     }
   ],
   "CVE-2001-0553": [
@@ -3502,7 +3502,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows XP/2000 - GDI Denial of Service (DoS)",
       "description": "Microsoft Windows XP/2000 - GDI Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/21131.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/21131.c"
     }
   ],
   "CVE-2001-0647": [
@@ -3614,7 +3614,7 @@
       "source": "exploitdb",
       "name": "McKesson Pathways Homecare 6.5 - Weak 'Username' and Password Encryption",
       "description": "McKesson Pathways Homecare 6.5 - Weak 'Username' and Password Encryption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/21173.pl"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/21173.txt"
     }
   ],
   "CVE-2001-0506": [
@@ -3687,6 +3687,14 @@
       "name": "ACLogic CesarFTP 0.98b - Directory Traversal",
       "description": "ACLogic CesarFTP 0.98b - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20884.txt"
+    }
+  ],
+  "CVE-2001-1586": [
+    {
+      "source": "exploitdb",
+      "name": "AnalogX SimpleServer:WWW 1.0.7/1.0.8/1.13 - Hex Encoded URL Directory Traversal",
+      "description": "AnalogX SimpleServer:WWW 1.0.7/1.0.8/1.13 - Hex Encoded URL Directory Traversal",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/21039.pl"
     }
   ],
   "CVE-2001-0205": [
@@ -3918,7 +3926,7 @@
       "source": "exploitdb",
       "name": "Microsoft Internet Explorer 5.0.1/5.5/6.0 - Telnet Client File Overwrite",
       "description": "Microsoft Internet Explorer 5.0.1/5.5/6.0 - Telnet Client File Overwrite",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20680.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20680.txt"
     }
   ],
   "CVE-2001-1325": [
@@ -4038,7 +4046,7 @@
       "source": "exploitdb",
       "name": "Microsoft Windows Script Host 5.1/5.5 - 'GetObject()' File Disclosure",
       "description": "Microsoft Windows Script Host 5.1/5.5 - 'GetObject()' File Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20243.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20243.txt"
     }
   ],
   "CVE-2001-0262": [
@@ -4052,8 +4060,8 @@
   "CVE-2001-0490": [
     {
       "source": "exploitdb",
-      "name": "NullSoft Winamp 2.x - AIP Buffer Overflow",
-      "description": "NullSoft Winamp 2.x - AIP Buffer Overflow",
+      "name": "Nullsoft Winamp 2.x - AIP Buffer Overflow",
+      "description": "Nullsoft Winamp 2.x - AIP Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20820.c"
     }
   ],
@@ -4159,14 +4167,6 @@
       "name": "RobTex Viking Server 1.0.7 - Relative Path Webroot Escaping",
       "description": "RobTex Viking Server 1.0.7 - Relative Path Webroot Escaping",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/20793.txt"
-    }
-  ],
-  "CVE-2001-1586": [
-    {
-      "source": "exploitdb",
-      "name": "SimpleServer:WWW 1.0.7/1.0.8/1.13 - Hex Encoded URL Directory Traversal",
-      "description": "SimpleServer:WWW 1.0.7/1.0.8/1.13 - Hex Encoded URL Directory Traversal",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/21039.pl"
     }
   ],
   "CVE-2001-1108": [

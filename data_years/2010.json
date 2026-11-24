@@ -198,7 +198,7 @@
       "source": "exploitdb",
       "name": "Apache 2.2.14 mod_isapi - Dangling Pointer Remote SYSTEM",
       "description": "Apache 2.2.14 mod_isapi - Dangling Pointer Remote SYSTEM",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/11650.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/11650.cpp"
     }
   ],
   "CVE-2010-2227": [
@@ -362,14 +362,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Axis2 - Authenticated Code Execution (via REST) (Metasploit)",
-      "description": "Axis2 - Authenticated Code Execution (via REST) (Metasploit)",
+      "name": "Apache Axis2 - Authenticated Code Execution (via REST) (Metasploit)",
+      "description": "Apache Axis2 - Authenticated Code Execution (via REST) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16312.rb"
     },
     {
       "source": "exploitdb",
-      "name": "Axis2 / SAP BusinessObjects - Authenticated Code Execution (via SOAP) (Metasploit)",
-      "description": "Axis2 / SAP BusinessObjects - Authenticated Code Execution (via SOAP) (Metasploit)",
+      "name": "Apache Axis2 / SAP BusinessObjects - Authenticated Code Execution (via SOAP) (Metasploit)",
+      "description": "Apache Axis2 / SAP BusinessObjects - Authenticated Code Execution (via SOAP) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16315.rb"
     },
     {
@@ -436,7 +436,7 @@
       "source": "exploitdb",
       "name": "httpdasm 0.92 - Directory Traversal",
       "description": "httpdasm 0.92 - Directory Traversal",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15861.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15861.py"
     }
   ],
   "CVE-2010-1429": [
@@ -484,7 +484,7 @@
       "source": "exploitdb",
       "name": "Litespeed Technologies - Web Server Remote Poison Null Byte",
       "description": "Litespeed Technologies - Web Server Remote Poison Null Byte",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/13850.pl"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/13850.txt"
     }
   ],
   "CVE-2010-2263": [
@@ -616,20 +616,20 @@
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet IAC Buffer Overflow (Metasploit)",
-      "description": "ProFTPd 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet IAC Buffer Overflow (Metasploit)",
+      "name": "ProFTPD 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet IAC Buffer Overflow (Metasploit)",
+      "description": "ProFTPD 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet IAC Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/16878.rb"
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.3.2 rc3 < 1.3.3b (Linux) - Telnet IAC Buffer Overflow (Metasploit)",
-      "description": "ProFTPd 1.3.2 rc3 < 1.3.3b (Linux) - Telnet IAC Buffer Overflow (Metasploit)",
+      "name": "ProFTPD 1.3.2 rc3 < 1.3.3b (Linux) - Telnet IAC Buffer Overflow (Metasploit)",
+      "description": "ProFTPD 1.3.2 rc3 < 1.3.3b (Linux) - Telnet IAC Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/16851.rb"
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd IAC 1.3.x - Remote Command Execution",
-      "description": "ProFTPd IAC 1.3.x - Remote Command Execution",
+      "name": "ProFTPD IAC 1.3.x - Remote Command Execution",
+      "description": "ProFTPD IAC 1.3.x - Remote Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/15449.pl"
     }
   ],
@@ -648,30 +648,6 @@
     },
     {
       "source": "exploitdb",
-      "name": "glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
-      "description": "glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44024.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
-      "description": "glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44024.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "description": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "description": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
-    },
-    {
-      "source": "exploitdb",
       "name": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
       "description": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15304.txt"
@@ -681,6 +657,30 @@
       "name": "GNU C library dynamic linker - '$ORIGIN' Expansion",
       "description": "GNU C library dynamic linker - '$ORIGIN' Expansion",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15274.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44024.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - '$ORIGIN' Expansion Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44024.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
     }
   ],
   "CVE-2010-3856": [
@@ -692,27 +692,27 @@
     },
     {
       "source": "exploitdb",
-      "name": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation",
-      "description": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation",
+      "name": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
+      "description": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15304.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation",
+      "description": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/18105.sh"
     },
     {
       "source": "exploitdb",
-      "name": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "description": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "name": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
     },
     {
       "source": "exploitdb",
-      "name": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
-      "description": "glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "name": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
+      "description": "GNU glibc - 'LD_AUDIT' Arbitrary DSO Load Privilege Escalation (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/44025.rb"
-    },
-    {
-      "source": "exploitdb",
-      "name": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
-      "description": "GNU C Library 2.x (libc6) - Dynamic Linker LD_AUDIT Arbitrary DSO Load Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15304.txt"
     }
   ],
   "CVE-2010-3904": [
@@ -752,7 +752,7 @@
       "source": "exploitdb",
       "name": "SystemTap - Local Privilege Escalation (LPE)",
       "description": "SystemTap - Local Privilege Escalation (LPE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15620.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15620.txt"
     },
     {
       "source": "exploitdb",
@@ -790,8 +790,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Java - RMIConnectionImpl Deserialization Privilege Escalation (Metasploit)",
-      "description": "Java - RMIConnectionImpl Deserialization Privilege Escalation (Metasploit)",
+      "name": "Oracle Java - RMIConnectionImpl Deserialization Privilege Escalation (Metasploit)",
+      "description": "Oracle Java - RMIConnectionImpl Deserialization Privilege Escalation (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16305.rb"
     }
   ],
@@ -804,8 +804,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Java - 'Statement.invoke()' Trusted Method Chain (Metasploit)",
-      "description": "Java - 'Statement.invoke()' Trusted Method Chain (Metasploit)",
+      "name": "Oracle Java - 'Statement.invoke()' Trusted Method Chain (Metasploit)",
+      "description": "Oracle Java - 'Statement.invoke()' Trusted Method Chain (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/16297.rb"
     }
   ],
@@ -996,14 +996,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd 1.3.3c - Compromised Source Backdoor Remote Code Execution (RCE)",
-      "description": "ProFTPd 1.3.3c - Compromised Source Backdoor Remote Code Execution (RCE)",
+      "name": "ProFTPD 1.3.3c - Compromised Source Backdoor Remote Code Execution (RCE)",
+      "description": "ProFTPD 1.3.3c - Compromised Source Backdoor Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/15662.txt"
     },
     {
       "source": "exploitdb",
-      "name": "ProFTPd-1.3.3c - Backdoor Command Execution (Metasploit)",
-      "description": "ProFTPd-1.3.3c - Backdoor Command Execution (Metasploit)",
+      "name": "ProFTPD-1.3.3c - Backdoor Command Execution (Metasploit)",
+      "description": "ProFTPD-1.3.3c - Backdoor Command Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/16921.rb"
     },
     {
@@ -1392,14 +1392,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "JAVA Web Start - Arbitrary Command-Line Injection",
-      "description": "JAVA Web Start - Arbitrary Command-Line Injection",
+      "name": "Sun JAVA Web Start - Arbitrary Command-Line Injection",
+      "description": "Sun JAVA Web Start - Arbitrary Command-Line Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12122.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Sun Java Web Start Plugin - Command Line Argument Injection (Metasploit)",
-      "description": "Sun Java Web Start Plugin - Command Line Argument Injection (Metasploit)",
+      "name": "Sun Java Web Start Plugin - Command Line Argument Injection / Remote Code Execution (RCE) (Metasploit)",
+      "description": "Sun Java Web Start Plugin - Command Line Argument Injection / Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/41700.rb"
     },
     {
@@ -1424,8 +1424,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sun Java Web Start Plugin - Command Line Argument Injection (Metasploit)",
-      "description": "Sun Java Web Start Plugin - Command Line Argument Injection (Metasploit)",
+      "name": "Sun Java Web Start Plugin - Command Line Argument Injection / Remote Code Execution (RCE) (Metasploit)",
+      "description": "Sun Java Web Start Plugin - Command Line Argument Injection / Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/41700.rb"
     }
   ],
@@ -1446,7 +1446,7 @@
       "source": "exploitdb",
       "name": "Mozilla Firefox - Simplified Memory Corruption (PoC)",
       "description": "Mozilla Firefox - Simplified Memory Corruption (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/15342.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/15342.txt"
     },
     {
       "source": "exploitdb",
@@ -1456,8 +1456,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Mozilla Firefox 3.6.8 < 3.6.11 - Interleaving 'document.write' / 'appendChild' Remote Overflow",
-      "description": "Mozilla Firefox 3.6.8 < 3.6.11 - Interleaving 'document.write' / 'appendChild' Remote Overflow",
+      "name": "Mozilla Firefox 3.6.8 <= 3.6.11 - Interleaving 'document.write' / 'appendChild' Remote Overflow",
+      "description": "Mozilla Firefox 3.6.8 <= 3.6.11 - Interleaving 'document.write' / 'appendChild' Remote Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15352.html"
     }
   ],
@@ -1670,7 +1670,7 @@
       "source": "exploitdb",
       "name": "Microsoft Internet Explorer 8 - CSS Parser Denial of Service (DoS)",
       "description": "Microsoft Internet Explorer 8 - CSS Parser Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/15708.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/15708.txt"
     },
     {
       "source": "exploitdb",
@@ -2026,8 +2026,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Easy CD-DA Recorder - '.pls' Local Buffer Overflow (Metasploit)",
-      "description": "Easy CD-DA Recorder - '.pls' Local Buffer Overflow (Metasploit)",
+      "name": "Easy CD-DA Recorder 2007 - '.pls' Local Buffer Overflow (Metasploit)",
+      "description": "Easy CD-DA Recorder 2007 - '.pls' Local Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/31643.rb"
     },
     {
@@ -2432,8 +2432,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "LeapFTP 3.0.1 - Remote Stack Buffer Overflow (Metasploit)",
-      "description": "LeapFTP 3.0.1 - Remote Stack Buffer Overflow (Metasploit)",
+      "name": "LeapWare LeapFTP 3.0.1 - Remote Stack Buffer Overflow (Metasploit)",
+      "description": "LeapWare LeapFTP 3.0.1 - Remote Stack Buffer Overflow (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16704.rb"
     }
   ],
@@ -2880,8 +2880,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "HP Mercury LoadRunner Agent magentproc.exe - Remote Command Execution (Metasploit)",
-      "description": "HP Mercury LoadRunner Agent magentproc.exe - Remote Command Execution (Metasploit)",
+      "name": "HP Mercury LoadRunner Agent - 'magentproc.exe' Remote Command Execution (Metasploit)",
+      "description": "HP Mercury LoadRunner Agent - 'magentproc.exe' Remote Command Execution (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/43411.rb"
     }
   ],
@@ -3215,26 +3215,18 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/13843.txt"
     }
   ],
-  "CVE-2010-3267": [
-    {
-      "source": "exploitdb",
-      "name": "BugTracker.NET 3.4.4 - Multiple Vulnerabilities",
-      "description": "BugTracker.NET 3.4.4 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15653.txt"
-    }
-  ],
   "CVE-2010-3266": [
-    {
-      "source": "exploitdb",
-      "name": "BugTracker.NET 3.4.4 - Multiple Vulnerabilities",
-      "description": "BugTracker.NET 3.4.4 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15653.txt"
-    },
     {
       "source": "exploitdb",
       "name": "BugTracker.NET 3.4.4 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "description": "BugTracker.NET 3.4.4 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/35031.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "BugTracker.NET 3.4.4 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "BugTracker.NET 3.4.4 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aspx/webapps/15653.txt"
     }
   ],
   "CVE-2010-1486": [
@@ -3261,6 +3253,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/34034.txt"
     }
   ],
+  "CVE-2010-0936": [
+    {
+      "source": "exploitdb",
+      "name": "D-Link DKVM-IP8 - Cross-Site Scripting (XSS)",
+      "description": "D-Link DKVM-IP8 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/11030.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "D-Link DKVM-IP8 - 'auth.asp' Cross-Site Scripting (XSS)",
+      "description": "D-Link DKVM-IP8 - 'auth.asp' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/33471.txt"
+    }
+  ],
   "CVE-2010-5023": [
     {
       "source": "exploitdb",
@@ -3280,8 +3286,8 @@
   "CVE-2010-4921": [
     {
       "source": "exploitdb",
-      "name": "DMXready Polling Booth Manager - SQL Injection (SQLi)",
-      "description": "DMXready Polling Booth Manager - SQL Injection (SQLi)",
+      "name": "DMXReady Polling Booth Manager - SQL Injection (SQLi)",
+      "description": "DMXReady Polling Booth Manager - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/14908.txt"
     }
   ],
@@ -3360,16 +3366,16 @@
   "CVE-2010-4145": [
     {
       "source": "exploitdb",
-      "name": "Kisisel Radyo Script - Multiple Vulnerabilities",
-      "description": "Kisisel Radyo Script - Multiple Vulnerabilities",
+      "name": "Kisisel Radyo Script - SQL Injection (SQLi) / Remote Database Disclosure",
+      "description": "Kisisel Radyo Script - SQL Injection (SQLi) / Remote Database Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15270.txt"
     }
   ],
   "CVE-2010-4144": [
     {
       "source": "exploitdb",
-      "name": "Kisisel Radyo Script - Multiple Vulnerabilities",
-      "description": "Kisisel Radyo Script - Multiple Vulnerabilities",
+      "name": "Kisisel Radyo Script - SQL Injection (SQLi) / Remote Database Disclosure",
+      "description": "Kisisel Radyo Script - SQL Injection (SQLi) / Remote Database Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15270.txt"
     }
   ],
@@ -3462,8 +3468,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Online Work Order Suite - Login SQL Injection (SQLi)",
-      "description": "Online Work Order Suite - Login SQL Injection (SQLi)",
+      "name": "Online Work Order Suite 2.10 - Login SQL Injection (SQLi)",
+      "description": "Online Work Order Suite 2.10 - Login SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34951.txt"
     }
   ],
@@ -3548,29 +3554,37 @@
   "CVE-2010-3486": [
     {
       "source": "exploitdb",
-      "name": "SmarterMail 7.3/7.4 - Multiple Vulnerabilities",
-      "description": "SmarterMail 7.3/7.4 - Multiple Vulnerabilities",
+      "name": "SmarterTools SmarterMail 7.3/7.4 - Multiple Vulnerabilities",
+      "description": "SmarterTools SmarterMail 7.3/7.4 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/16955.txt"
     },
     {
       "source": "exploitdb",
-      "name": "SmarterMail < 7.2.3925 - LDAP Injection",
-      "description": "SmarterMail < 7.2.3925 - LDAP Injection",
+      "name": "SmarterTools SmarterMail < 7.2.3925 - LDAP Injection",
+      "description": "SmarterTools SmarterMail < 7.2.3925 - LDAP Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15189.txt"
     },
     {
       "source": "exploitdb",
-      "name": "SmarterMail 7.1.3876 - Directory Traversal",
-      "description": "SmarterMail 7.1.3876 - Directory Traversal",
+      "name": "SmarterTools SmarterMail 7.1.3876 - Directory Traversal",
+      "description": "SmarterTools SmarterMail 7.1.3876 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15048.txt"
     }
   ],
   "CVE-2010-3425": [
     {
       "source": "exploitdb",
-      "name": "SmarterMail < 7.2.3925 - Stored Cross-Site Scripting (XSS)",
-      "description": "SmarterMail < 7.2.3925 - Stored Cross-Site Scripting (XSS)",
+      "name": "SmarterTools SmarterMail < 7.2.3925 - Stored Cross-Site Scripting (XSS)",
+      "description": "SmarterTools SmarterMail < 7.2.3925 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/15185.txt"
+    }
+  ],
+  "CVE-2010-0674": [
+    {
+      "source": "exploitdb",
+      "name": "statcountex 3.1 - Database Disclosure / Authentication Bypass",
+      "description": "statcountex 3.1 - Database Disclosure / Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/11434.txt"
     }
   ],
   "CVE-2010-4829": [
@@ -3629,6 +3643,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/asp/webapps/14192.txt"
     }
   ],
+  "CVE-2010-3267": [
+    {
+      "source": "exploitdb",
+      "name": "BugTracker.NET 3.4.4 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "BugTracker.NET 3.4.4 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/aspx/webapps/15653.txt"
+    }
+  ],
   "CVE-2010-4210": [
     {
       "source": "exploitdb",
@@ -3667,6 +3689,14 @@
       "name": "AWStats 6.x - Apache Tomcat Configuration File Arbitrary Command Execution",
       "description": "AWStats 6.x - Apache Tomcat Configuration File Arbitrary Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/35035.txt"
+    }
+  ],
+  "CVE-2010-4507": [
+    {
+      "source": "exploitdb",
+      "name": "Clear iSpot/Clearspot 2.0.0.0 - Cross-Site Request Forgery (CSRF)",
+      "description": "Clear iSpot/Clearspot 2.0.0.0 - Cross-Site Request Forgery (CSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/15728.txt"
     }
   ],
   "CVE-2010-3906": [
@@ -3723,6 +3753,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/freebsd/local/14688.c"
     }
   ],
+  "CVE-2010-1029": [
+    {
+      "source": "exploitdb",
+      "name": "Apple iPhone - 'WebCore::CSSSelector()' Remote Crash",
+      "description": "Apple iPhone - 'WebCore::CSSSelector()' Remote Crash",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/11574.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Apple Safari 4.0.4 / Google Chrome 4.0.249 - CSS style Stack Overflow Denial of Service (DoS) (PoC)",
+      "description": "Apple Safari 4.0.4 / Google Chrome 4.0.249 - CSS style Stack Overflow Denial of Service (DoS) (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/11567.txt"
+    }
+  ],
   "CVE-2010-4230": [
     {
       "source": "exploitdb",
@@ -3745,20 +3789,6 @@
       "name": "IBM Bladecenter Management Module - Denial of Service (DoS)",
       "description": "IBM Bladecenter Management Module - Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/12252.txt"
-    }
-  ],
-  "CVE-2010-1029": [
-    {
-      "source": "exploitdb",
-      "name": "iPhone - 'WebCore::CSSSelector()' Remote Crash",
-      "description": "iPhone - 'WebCore::CSSSelector()' Remote Crash",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/dos/11574.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Apple Safari 4.0.4 / Google Chrome 4.0.249 - CSS style Stack Overflow Denial of Service (DoS) (PoC)",
-      "description": "Apple Safari 4.0.4 / Google Chrome 4.0.249 - CSS style Stack Overflow Denial of Service (DoS) (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/11567.txt"
     }
   ],
   "CVE-2010-1226": [
@@ -3826,23 +3856,9 @@
   "CVE-2010-0470": [
     {
       "source": "exploitdb",
-      "name": "COMTREND CT-507 IT ADSL Router - 'scvrtsrv.cmd' Cross-Site Scripting (XSS)",
-      "description": "COMTREND CT-507 IT ADSL Router - 'scvrtsrv.cmd' Cross-Site Scripting (XSS)",
+      "name": "Comtrend CT-507 IT ADSL Router - 'scvrtsrv.cmd' Cross-Site Scripting (XSS)",
+      "description": "Comtrend CT-507 IT ADSL Router - 'scvrtsrv.cmd' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/33580.txt"
-    }
-  ],
-  "CVE-2010-0936": [
-    {
-      "source": "exploitdb",
-      "name": "D-Link DKVM-IP8 - 'auth.asp' Cross-Site Scripting (XSS)",
-      "description": "D-Link DKVM-IP8 - 'auth.asp' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/33471.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "D-Link DKVM-IP8 - Cross-Site Scripting (XSS)",
-      "description": "D-Link DKVM-IP8 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/11030.txt"
     }
   ],
   "CVE-2010-2860": [
@@ -3874,8 +3890,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "HP Laser Jet - JavaScript Stored Cross-Site Scripting (XSS) via PJL Directory Traversal",
-      "description": "HP Laser Jet - JavaScript Stored Cross-Site Scripting (XSS) via PJL Directory Traversal",
+      "name": "HP Laser Jet - Stored Cross-Site Scripting (XSS) via PJL Directory Traversal",
+      "description": "HP Laser Jet - Stored Cross-Site Scripting (XSS) via PJL Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/32990.pl"
     }
   ],
@@ -3943,19 +3959,11 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/15507.txt"
     }
   ],
-  "CVE-2010-4507": [
-    {
-      "source": "exploitdb",
-      "name": "Clear iSpot/Clearspot 2.0.0.0 - Cross-Site Request Forgery (CSRF)",
-      "description": "Clear iSpot/Clearspot 2.0.0.0 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/15728.txt"
-    }
-  ],
   "CVE-2010-0475": [
     {
       "source": "exploitdb",
-      "name": "Palo Alto Network Vulnerability - Cross-Site Scripting (XSS)",
-      "description": "Palo Alto Network Vulnerability - Cross-Site Scripting (XSS)",
+      "name": "Palo Alto Networks Vulnerability - Cross-Site Scripting (XSS)",
+      "description": "Palo Alto Networks Vulnerability - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/12660.txt"
     }
   ],
@@ -4128,7 +4136,7 @@
       "source": "exploitdb",
       "name": "GNU libc/regcomp(3) - Multiple Vulnerabilities",
       "description": "GNU libc/regcomp(3) - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/15935.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/15935.txt"
     }
   ],
   "CVE-2010-4051": [
@@ -4136,14 +4144,14 @@
       "source": "exploitdb",
       "name": "GNU libc/regcomp(3) - Multiple Vulnerabilities",
       "description": "GNU libc/regcomp(3) - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/15935.c"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/15935.txt"
     }
   ],
   "CVE-2010-0303": [
     {
       "source": "exploitdb",
-      "name": "Hybserv2 - ':help' Denial of Service (DoS)",
-      "description": "Hybserv2 - ':help' Denial of Service (DoS)",
+      "name": "Hybserv2 1.9.4 - ':help' Denial of Service (DoS)",
+      "description": "Hybserv2 1.9.4 - ':help' Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/33581.txt"
     }
   ],
@@ -4276,8 +4284,8 @@
   "CVE-2010-1677": [
     {
       "source": "exploitdb",
-      "name": "MHonArc 2.6.16 - Tag Nesting Remote Denial of Service (DoS)",
-      "description": "MHonArc 2.6.16 - Tag Nesting Remote Denial of Service (DoS)",
+      "name": "MHonArc <= 2.6.16 - Tag Nesting Remote Denial of Service (DoS)",
+      "description": "MHonArc <= 2.6.16 - Tag Nesting Remote Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/35478.txt"
     }
   ],
@@ -4294,15 +4302,7 @@
       "source": "exploitdb",
       "name": "Mozilla Firefox/Thunderbird/SeaMonkey - Multiple Memory Corruption Vulnerabilities",
       "description": "Mozilla Firefox/Thunderbird/SeaMonkey - Multiple Memory Corruption Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/33801.txt"
-    }
-  ],
-  "CVE-2010-3682": [
-    {
-      "source": "exploitdb",
-      "name": "MySQL 5.1.48 - 'EXPLAIN' Denial of Service (DoS)",
-      "description": "MySQL 5.1.48 - 'EXPLAIN' Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/34506.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/33801.html"
     }
   ],
   "CVE-2010-4717": [
@@ -4337,20 +4337,28 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/34348.txt"
     }
   ],
-  "CVE-2010-2939": [
-    {
-      "source": "exploitdb",
-      "name": "OpenSSL - 'ssl3_get_key_exchange()' Use-After-Free (UAF) Memory Corruption",
-      "description": "OpenSSL - 'ssl3_get_key_exchange()' Use-After-Free (UAF) Memory Corruption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/34427.txt"
-    }
-  ],
   "CVE-2010-0740": [
     {
       "source": "exploitdb",
       "name": "OpenSSL - Remote Denial of Service (DoS)",
       "description": "OpenSSL - Remote Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/12334.c"
+    }
+  ],
+  "CVE-2010-2939": [
+    {
+      "source": "exploitdb",
+      "name": "OpenSSL 1.0.0a - 'ssl3_get_key_exchange()' Use-After-Free (UAF) Memory Corruption",
+      "description": "OpenSSL 1.0.0a - 'ssl3_get_key_exchange()' Use-After-Free (UAF) Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/34427.txt"
+    }
+  ],
+  "CVE-2010-3682": [
+    {
+      "source": "exploitdb",
+      "name": "Oracle MySQL 5.1.48 - 'EXPLAIN' Denial of Service (DoS)",
+      "description": "Oracle MySQL 5.1.48 - 'EXPLAIN' Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/34506.txt"
     }
   ],
   "CVE-2010-3681": [
@@ -4388,8 +4396,8 @@
   "CVE-2010-0442": [
     {
       "source": "exploitdb",
-      "name": "PostgreSQL - 'bitsubstr' Buffer Overflow",
-      "description": "PostgreSQL - 'bitsubstr' Buffer Overflow",
+      "name": "PostgreSQL 8.0.23 - 'bitsubstr' Buffer Overflow",
+      "description": "PostgreSQL 8.0.23 - 'bitsubstr' Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/dos/33571.txt"
     }
   ],
@@ -4444,16 +4452,16 @@
   "CVE-2010-4258": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
-      "description": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "name": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "description": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15704.c"
     }
   ],
   "CVE-2010-3850": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
-      "description": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "name": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "description": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15704.c"
     },
     {
@@ -4466,8 +4474,8 @@
   "CVE-2010-3849": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
-      "description": "Linux Kernel 2.6.37 (RedHat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "name": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
+      "description": "Linux Kernel 2.6.37 (Red Hat / Ubuntu 10.04) - 'Full-Nelson.c' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15704.c"
     }
   ],
@@ -4498,8 +4506,8 @@
   "CVE-2010-3437": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel < 2.6.36-rc6 (RedHat / Ubuntu 10.04) - 'pktcdvd' Kernel Memory Disclosure",
-      "description": "Linux Kernel < 2.6.36-rc6 (RedHat / Ubuntu 10.04) - 'pktcdvd' Kernel Memory Disclosure",
+      "name": "Linux Kernel < 2.6.36-rc6 (Red Hat / Ubuntu 10.04) - 'pktcdvd' Kernel Memory Disclosure",
+      "description": "Linux Kernel < 2.6.36-rc6 (Red Hat / Ubuntu 10.04) - 'pktcdvd' Kernel Memory Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/15150.c"
     }
   ],
@@ -4560,8 +4568,8 @@
   "CVE-2010-1146": [
     {
       "source": "exploitdb",
-      "name": "ReiserFS (Linux Kernel 2.6.34-rc3 / RedHat / Ubuntu 9.10) - 'xattr' Local Privilege Escalation (LPE)",
-      "description": "ReiserFS (Linux Kernel 2.6.34-rc3 / RedHat / Ubuntu 9.10) - 'xattr' Local Privilege Escalation (LPE)",
+      "name": "ReiserFS (Linux Kernel 2.6.34-rc3 / Red Hat / Ubuntu 9.10) - 'xattr' Local Privilege Escalation (LPE)",
+      "description": "ReiserFS (Linux Kernel 2.6.34-rc3 / Red Hat / Ubuntu 9.10) - 'xattr' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/12130.py"
     }
   ],
@@ -4587,6 +4595,14 @@
       "name": "Apache Tomcat 7.0.4 - 'sort' / 'orderBy' Cross-Site Scripting (XSS)",
       "description": "Apache Tomcat 7.0.4 - 'sort' / 'orderBy' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/35011.txt"
+    }
+  ],
+  "CVE-2010-0049": [
+    {
+      "source": "exploitdb",
+      "name": "Apple WebKit 1.2.x - Right-to-Left Displayed Text Handling Memory Corruption",
+      "description": "Apple WebKit 1.2.x - Right-to-Left Displayed Text Handling Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/33752.html"
     }
   ],
   "CVE-2010-1748": [
@@ -4692,7 +4708,7 @@
       "source": "exploitdb",
       "name": "Mozilla Firefox 3.6.3 - XSLT Sort Remote Code Execution (RCE)",
       "description": "Mozilla Firefox 3.6.3 - XSLT Sort Remote Code Execution (RCE)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14949.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14949.txt"
     }
   ],
   "CVE-2010-4099": [
@@ -4704,8 +4720,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "NitroView ESM - 'ess.pm' Remote Command Execution",
-      "description": "NitroView ESM - 'ess.pm' Remote Command Execution",
+      "name": "NitroSecurity NitroView ESM 8.4.0a - 'ess.pm' Remote Command Execution",
+      "description": "NitroSecurity NitroView ESM 8.4.0a - 'ess.pm' Remote Command Execution",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34932.html"
     }
   ],
@@ -4725,14 +4741,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/34426.txt"
     }
   ],
-  "CVE-2010-0049": [
-    {
-      "source": "exploitdb",
-      "name": "WebKit 1.2.x - Right-to-Left Displayed Text Handling Memory Corruption",
-      "description": "WebKit 1.2.x - Right-to-Left Displayed Text Handling Memory Corruption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/33752.html"
-    }
-  ],
   "CVE-2010-3306": [
     {
       "source": "exploitdb",
@@ -4750,9 +4758,9 @@
     },
     {
       "source": "exploitdb",
-      "name": "Solaris 10 Patch 137097-01 - Symlink Privilege Escalation",
-      "description": "Solaris 10 Patch 137097-01 - Symlink Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20418.txt"
+      "name": "Oracle Solaris 10 Patch 137097-01 - Symlink Privilege Escalation",
+      "description": "Oracle Solaris 10 Patch 137097-01 - Symlink Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/20418.pl"
     },
     {
       "source": "exploitdb",
@@ -4772,8 +4780,8 @@
   "CVE-2010-3081": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel 2.6.27 < 2.6.36 (RedHat x86-64) - 'compat' Local Privilege Escalation (LPE)",
-      "description": "Linux Kernel 2.6.27 < 2.6.36 (RedHat x86-64) - 'compat' Local Privilege Escalation (LPE)",
+      "name": "Linux Kernel 2.6.27 < 2.6.36 (Red Hat x86-64) - 'compat' Local Privilege Escalation (LPE)",
+      "description": "Linux Kernel 2.6.27 < 2.6.36 (Red Hat x86-64) - 'compat' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux_x86-64/local/15024.c"
     }
   ],
@@ -4830,7 +4838,7 @@
       "source": "exploitdb",
       "name": "IBM OmniFind Crawler - Denial of Service (DoS)",
       "description": "IBM OmniFind Crawler - Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/15476.php"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/15476.txt"
     }
   ],
   "CVE-2010-4057": [
@@ -4916,8 +4924,8 @@
   "CVE-2010-0071": [
     {
       "source": "exploitdb",
-      "name": "Oracle Database - Remote Listener Memory Corruption",
-      "description": "Oracle Database - Remote Listener Memory Corruption",
+      "name": "Oracle Database 9.2.0.8/9.2.0.8DV/10.1.0.5/10.2.0.4/11.1.0.7 - Remote Listener Memory Corruption",
+      "description": "Oracle Database 9.2.0.8/9.2.0.8DV/10.1.0.5/10.2.0.4/11.1.0.7 - Remote Listener Memory Corruption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/33506.py"
     }
   ],
@@ -5062,13 +5070,13 @@
       "source": "exploitdb",
       "name": "Apache OFBiz - Admin Creator",
       "description": "Apache OFBiz - Admin Creator",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12264.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12264.js"
     },
     {
       "source": "exploitdb",
       "name": "Apache OFBiz - Remote Execution (via SQL Execution)",
       "description": "Apache OFBiz - Remote Execution (via SQL Execution)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12263.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12263.js"
     },
     {
       "source": "exploitdb",
@@ -5080,8 +5088,8 @@
   "CVE-2010-3863": [
     {
       "source": "exploitdb",
-      "name": "Apache Shiro - Directory Traversal",
-      "description": "Apache Shiro - Directory Traversal",
+      "name": "Apache Shiro 1.0.0 - Directory Traversal",
+      "description": "Apache Shiro 1.0.0 - Directory Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/34952.txt"
     }
   ],
@@ -5096,8 +5104,8 @@
   "CVE-2010-1157": [
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat 5.5.0 < 5.5.29 / 6.0.0 < 6.0.26 - Information Disclosure",
-      "description": "Apache Tomcat 5.5.0 < 5.5.29 / 6.0.0 < 6.0.26 - Information Disclosure",
+      "name": "Apache Tomcat 5.5.0 <= 5.5.29 / 6.0.0 <= 6.0.26 - Information Disclosure",
+      "description": "Apache Tomcat 5.5.0 <= 5.5.29 / 6.0.0 <= 6.0.26 - Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/12343.txt"
     }
   ],
@@ -5114,7 +5122,7 @@
       "source": "exploitdb",
       "name": "Google Chrome 3.0 - Style Sheet Redirection Information Disclosure",
       "description": "Google Chrome 3.0 - Style Sheet Redirection Information Disclosure",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/33562.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/33562.txt"
     }
   ],
   "CVE-2010-1586": [
@@ -5236,8 +5244,8 @@
   "CVE-2010-3449": [
     {
       "source": "exploitdb",
-      "name": "Apache Archiva 1.0 < 1.3.1 - Cross-Site Request Forgery (CSRF)",
-      "description": "Apache Archiva 1.0 < 1.3.1 - Cross-Site Request Forgery (CSRF)",
+      "name": "Apache Archiva 1.0 <= 1.3.1 - Cross-Site Request Forgery (CSRF)",
+      "description": "Apache Archiva 1.0 <= 1.3.1 - Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/15710.txt"
     }
   ],
@@ -5310,74 +5318,74 @@
       "source": "exploitdb",
       "name": "IBM OmniFind - Cross-Site Request Forgery (CSRF)",
       "description": "IBM OmniFind - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/15473.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/15473.txt"
     }
   ],
   "CVE-2010-4120": [
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/acl?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/acl?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/acl?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/acl?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34908.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/domain?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/domain?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/domain?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/domain?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34909.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/group?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/group?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/group?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/group?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34910.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/gso?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/gso?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/gso?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/gso?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34911.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/gsogroup?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/gsogroup?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/gsogroup?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/gsogroup?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34912.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/os?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/os?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/os?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/os?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34913.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/pop?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/pop?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/pop?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/pop?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34914.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/rule?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/rule?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/rule?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/rule?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34915.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/user?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/user?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/user?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/user?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34916.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/webseal?method' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ibm/wpm/webseal?method' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/webseal?method' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ibm/wpm/webseal?method' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34917.txt"
     },
     {
       "source": "exploitdb",
-      "name": "IBM Tivoli Access Manager for E-Business - '/ivt/ivtserver?parm1' Cross-Site Scripting (XSS)",
-      "description": "IBM Tivoli Access Manager for E-Business - '/ivt/ivtserver?parm1' Cross-Site Scripting (XSS)",
+      "name": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ivt/ivtserver?parm1' Cross-Site Scripting (XSS)",
+      "description": "IBM Tivoli Access Manager for e-business 6.1.0 - '/ivt/ivtserver?parm1' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/34907.txt"
     }
   ],
@@ -5437,14 +5445,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/netware/dos/16234.rb"
     }
   ],
-  "CVE-2010-2351": [
-    {
-      "source": "exploitdb",
-      "name": "Netware - SMB Remote Stack Overflow (PoC)",
-      "description": "Netware - SMB Remote Stack Overflow (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/novell/dos/13906.txt"
-    }
-  ],
   "CVE-2010-4715": [
     {
       "source": "exploitdb",
@@ -5456,17 +5456,25 @@
   "CVE-2010-1930": [
     {
       "source": "exploitdb",
-      "name": "Novell iManager - Multiple Vulnerabilities",
-      "description": "Novell iManager - Multiple Vulnerabilities",
+      "name": "Novell iManager - Stack-Based Buffer Overflow / Off-by-One Denial of Service (DoS)",
+      "description": "Novell iManager - Stack-Based Buffer Overflow / Off-by-One Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/novell/dos/14010.txt"
     }
   ],
   "CVE-2010-1929": [
     {
       "source": "exploitdb",
-      "name": "Novell iManager - Multiple Vulnerabilities",
-      "description": "Novell iManager - Multiple Vulnerabilities",
+      "name": "Novell iManager - Stack-Based Buffer Overflow / Off-by-One Denial of Service (DoS)",
+      "description": "Novell iManager - Stack-Based Buffer Overflow / Off-by-One Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/novell/dos/14010.txt"
+    }
+  ],
+  "CVE-2010-2351": [
+    {
+      "source": "exploitdb",
+      "name": "Novell Netware - SMB Remote Stack Overflow (PoC)",
+      "description": "Novell Netware - SMB Remote Stack Overflow (PoC)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/novell/dos/13906.txt"
     }
   ],
   "CVE-2010-3631": [
@@ -5512,8 +5520,8 @@
   "CVE-2010-3680": [
     {
       "source": "exploitdb",
-      "name": "MySQL 5.1.48 - 'Temporary InnoDB' Tables Denial of Service (DoS)",
-      "description": "MySQL 5.1.48 - 'Temporary InnoDB' Tables Denial of Service (DoS)",
+      "name": "Oracle MySQL 5.1.48 - 'Temporary InnoDB' Tables Denial of Service (DoS)",
+      "description": "Oracle MySQL 5.1.48 - 'Temporary InnoDB' Tables Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/dos/34505.txt"
     }
   ],
@@ -5709,6 +5717,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14018.txt"
     }
   ],
+  "CVE-2010-2459": [
+    {
+      "source": "exploitdb",
+      "name": "2DayBiz Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "2DayBiz Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13970.txt"
+    }
+  ],
+  "CVE-2010-2458": [
+    {
+      "source": "exploitdb",
+      "name": "2DayBiz Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "2DayBiz Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13970.txt"
+    }
+  ],
   "CVE-2010-5015": [
     {
       "source": "exploitdb",
@@ -5722,7 +5746,7 @@
       "source": "exploitdb",
       "name": "2DayBiz ybiz Polls Script - SQL Injection (SQLi)",
       "description": "2DayBiz ybiz Polls Script - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14074.rb"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14074.txt"
     }
   ],
   "CVE-2010-4152": [
@@ -5731,14 +5755,6 @@
       "name": "4Site CMS 2.6 - 'cat' SQL Injection (SQLi)",
       "description": "4Site CMS 2.6 - 'cat' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34883.txt"
-    }
-  ],
-  "CVE-2010-1951": [
-    {
-      "source": "exploitdb",
-      "name": "60cycleCMS 2.5.2 - 'DOCUMENT_ROOT' Multiple Local File Inclusions (LFI)",
-      "description": "60cycleCMS 2.5.2 - 'DOCUMENT_ROOT' Multiple Local File Inclusions (LFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12249.txt"
     }
   ],
   "CVE-2010-4930": [
@@ -5787,20 +5803,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15237.rb"
     }
   ],
-  "CVE-2010-1058": [
-    {
-      "source": "exploitdb",
-      "name": "Address Book Script 1.09 - Local File Inclusion (LFI)",
-      "description": "Address Book Script 1.09 - Local File Inclusion (LFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11754.txt"
-    }
-  ],
   "CVE-2010-2003": [
     {
       "source": "exploitdb",
       "name": "Advanced Poll 2.0 - 'mysql_host' Cross-Site Scripting (XSS)",
       "description": "Advanced Poll 2.0 - 'mysql_host' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33972.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33972.html"
     }
   ],
   "CVE-2010-1106": [
@@ -5817,14 +5825,6 @@
       "name": "Aigaion 1.3.4 - 'ID' SQL Injection (SQLi)",
       "description": "Aigaion 1.3.4 - 'ID' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35060.txt"
-    }
-  ],
-  "CVE-2010-2917": [
-    {
-      "source": "exploitdb",
-      "name": "AJ Article 3.0 - Cross-Site Scripting (XSS)",
-      "description": "AJ Article 3.0 - Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14354.txt"
     }
   ],
   "CVE-2010-2916": [
@@ -5849,6 +5849,14 @@
       "name": "AJ Shopping Cart 1.0 (maincatid) - SQL Injection (SQLi)",
       "description": "AJ Shopping Cart 1.0 (maincatid) - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12349.txt"
+    }
+  ],
+  "CVE-2010-2917": [
+    {
+      "source": "exploitdb",
+      "name": "AJ Square AJ Article 3.0 - Cross-Site Scripting (XSS)",
+      "description": "AJ Square AJ Article 3.0 - Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14354.txt"
     }
   ],
   "CVE-2010-4849": [
@@ -5891,6 +5899,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34141.txt"
     }
   ],
+  "CVE-2010-2313": [
+    {
+      "source": "exploitdb",
+      "name": "Anodyne Productions SIMM Management System (SMS) - Local File Inclusion (LFI)",
+      "description": "Anodyne Productions SIMM Management System (SMS) - Local File Inclusion (LFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12848.txt"
+    }
+  ],
   "CVE-2010-4955": [
     {
       "source": "exploitdb",
@@ -5902,16 +5918,16 @@
   "CVE-2010-0725": [
     {
       "source": "exploitdb",
-      "name": "Arab Cart 1.0.2.0 - Multiple Vulnerabilities",
-      "description": "Arab Cart 1.0.2.0 - Multiple Vulnerabilities",
+      "name": "Arab Cart 1.0.2.0 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "Arab Cart 1.0.2.0 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11524.txt"
     }
   ],
   "CVE-2010-0724": [
     {
       "source": "exploitdb",
-      "name": "Arab Cart 1.0.2.0 - Multiple Vulnerabilities",
-      "description": "Arab Cart 1.0.2.0 - Multiple Vulnerabilities",
+      "name": "Arab Cart 1.0.2.0 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "Arab Cart 1.0.2.0 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11524.txt"
     }
   ],
@@ -5929,6 +5945,14 @@
       "name": "ardeacore 2.2 - Remote File Inclusion (RFI)",
       "description": "ardeacore 2.2 - Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13832.txt"
+    }
+  ],
+  "CVE-2010-1727": [
+    {
+      "source": "exploitdb",
+      "name": "ASPSiteWare JobPost - SQL Injection (SQLi)",
+      "description": "ASPSiteWare JobPost - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12461.txt"
     }
   ],
   "CVE-2010-0971": [
@@ -6051,14 +6075,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15233.txt"
     }
   ],
-  "CVE-2010-4981": [
-    {
-      "source": "exploitdb",
-      "name": "Banner Management Script - SQL Injection (SQLi)",
-      "description": "Banner Management Script - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13929.txt"
-    }
-  ],
   "CVE-2010-0695": [
     {
       "source": "exploitdb",
@@ -6070,8 +6086,8 @@
   "CVE-2010-5315": [
     {
       "source": "exploitdb",
-      "name": "BEdita 3.0.1.2550 - Multiple Vulnerabilities",
-      "description": "BEdita 3.0.1.2550 - Multiple Vulnerabilities",
+      "name": "BEdita 3.0.1.2550 - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
+      "description": "BEdita 3.0.1.2550 - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15742.txt"
     }
   ],
@@ -6096,7 +6112,7 @@
       "source": "exploitdb",
       "name": "Bild Flirt System 1.0 - SQL Injection (SQLi)",
       "description": "Bild Flirt System 1.0 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12221.rb"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12221.txt"
     },
     {
       "source": "exploitdb",
@@ -6160,16 +6176,16 @@
   "CVE-2010-4750": [
     {
       "source": "exploitdb",
-      "name": "Blog:CMS 4.2.1e - Multiple Vulnerabilities",
-      "description": "Blog:CMS 4.2.1e - Multiple Vulnerabilities",
+      "name": "Blog:CMS 4.2.1e - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
+      "description": "Blog:CMS 4.2.1e - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15743.txt"
     }
   ],
   "CVE-2010-4749": [
     {
       "source": "exploitdb",
-      "name": "Blog:CMS 4.2.1e - Multiple Vulnerabilities",
-      "description": "Blog:CMS 4.2.1e - Multiple Vulnerabilities",
+      "name": "Blog:CMS 4.2.1e - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
+      "description": "Blog:CMS 4.2.1e - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15743.txt"
     }
   ],
@@ -6179,6 +6195,14 @@
       "name": "BloofoxCMS Registration Plugin - SQL Injection (SQLi)",
       "description": "BloofoxCMS Registration Plugin - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15328.txt"
+    }
+  ],
+  "CVE-2010-2858": [
+    {
+      "source": "exploitdb",
+      "name": "Boesch SimpNews 2.47.3 - Multiple Cross-Site Scripting (XSS)",
+      "description": "Boesch SimpNews 2.47.3 - Multiple Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34286.txt"
     }
   ],
   "CVE-2010-0761": [
@@ -6240,8 +6264,8 @@
   "CVE-2010-2544": [
     {
       "source": "exploitdb",
-      "name": "Cacti 0.8.7 (RedHat High Performance Computing [HPC]) - 'utilities.php?Filter' Cross-Site Scripting (XSS)",
-      "description": "Cacti 0.8.7 (RedHat High Performance Computing [HPC]) - 'utilities.php?Filter' Cross-Site Scripting (XSS)",
+      "name": "Cacti 0.8.7 (Red Hat High Performance Computing [HPC]) - 'utilities.php?Filter' Cross-Site Scripting (XSS)",
+      "description": "Cacti 0.8.7 (Red Hat High Performance Computing [HPC]) - 'utilities.php?Filter' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34504.txt"
     }
   ],
@@ -6320,16 +6344,16 @@
   "CVE-2010-4895": [
     {
       "source": "exploitdb",
-      "name": "ChillyCMS 1.1.3 - Multiple Vulnerabilities",
-      "description": "ChillyCMS 1.1.3 - Multiple Vulnerabilities",
+      "name": "ChillyCMS 1.1.3 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
+      "description": "ChillyCMS 1.1.3 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14897.txt"
     }
   ],
   "CVE-2010-4894": [
     {
       "source": "exploitdb",
-      "name": "ChillyCMS 1.1.3 - Multiple Vulnerabilities",
-      "description": "ChillyCMS 1.1.3 - Multiple Vulnerabilities",
+      "name": "ChillyCMS 1.1.3 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
+      "description": "ChillyCMS 1.1.3 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14897.txt"
     }
   ],
@@ -6370,7 +6394,7 @@
       "source": "exploitdb",
       "name": "CMS Ariadna 2009 - SQL Injection (SQLi)",
       "description": "CMS Ariadna 2009 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12301.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12301.pl"
     }
   ],
   "CVE-2010-5057": [
@@ -6378,7 +6402,7 @@
       "source": "exploitdb",
       "name": "CMS Ariadna 2009 - SQL Injection (SQLi)",
       "description": "CMS Ariadna 2009 - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12301.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12301.pl"
     }
   ],
   "CVE-2010-3884": [
@@ -6386,7 +6410,7 @@
       "source": "exploitdb",
       "name": "CMS Made Simple 1.7 - Cross-Site Request Forgery (CSRF)",
       "description": "CMS Made Simple 1.7 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12009.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12009.txt"
     }
   ],
   "CVE-2010-4899": [
@@ -6416,16 +6440,16 @@
   "CVE-2010-5285": [
     {
       "source": "exploitdb",
-      "name": "Collabtive 0.65 - Multiple Vulnerabilities",
-      "description": "Collabtive 0.65 - Multiple Vulnerabilities",
+      "name": "Collabtive 0.65 - Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
+      "description": "Collabtive 0.65 - Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15240.txt"
     }
   ],
   "CVE-2010-5284": [
     {
       "source": "exploitdb",
-      "name": "Collabtive 0.65 - Multiple Vulnerabilities",
-      "description": "Collabtive 0.65 - Multiple Vulnerabilities",
+      "name": "Collabtive 0.65 - Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
+      "description": "Collabtive 0.65 - Cross-Site Scripting (XSS) / Cross-Site Request Forgery (CSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15240.txt"
     }
   ],
@@ -6435,14 +6459,6 @@
       "name": "Collabtive 0.65 - SQL Injection (SQLi)",
       "description": "Collabtive 0.65 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15381.txt"
-    }
-  ],
-  "CVE-2010-5037": [
-    {
-      "source": "exploitdb",
-      "name": "CommonSense CMS - SQL Injection (SQLi)",
-      "description": "CommonSense CMS - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13762.txt"
     }
   ],
   "CVE-2010-1073": [
@@ -6481,6 +6497,30 @@
       "name": "Cornerstone CMS - SQL Injection (SQLi)",
       "description": "Cornerstone CMS - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13980.txt"
+    }
+  ],
+  "CVE-2010-2683": [
+    {
+      "source": "exploitdb",
+      "name": "Customer Paradigm PageDirector CMS - 'result.php' SQL Injection (SQLi)",
+      "description": "Customer Paradigm PageDirector CMS - 'result.php' SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14112.txt"
+    }
+  ],
+  "CVE-2010-2685": [
+    {
+      "source": "exploitdb",
+      "name": "Customer Paradigm PageDirector CMS - SQL Injection (SQLi) / Authentication Bypass",
+      "description": "Customer Paradigm PageDirector CMS - SQL Injection (SQLi) / Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14089.txt"
+    }
+  ],
+  "CVE-2010-2684": [
+    {
+      "source": "exploitdb",
+      "name": "Customer Paradigm PageDirector CMS - SQL Injection (SQLi) / Authentication Bypass",
+      "description": "Customer Paradigm PageDirector CMS - SQL Injection (SQLi) / Authentication Bypass",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14089.txt"
     }
   ],
   "CVE-2010-5024": [
@@ -6533,6 +6573,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33541.txt"
     }
   ],
+  "CVE-2010-1951": [
+    {
+      "source": "exploitdb",
+      "name": "Davidvg 60cycleCMS 2.5.2 - 'DOCUMENT_ROOT' Multiple Local File Inclusions (LFI)",
+      "description": "Davidvg 60cycleCMS 2.5.2 - 'DOCUMENT_ROOT' Multiple Local File Inclusions (LFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12249.txt"
+    }
+  ],
   "CVE-2010-2051": [
     {
       "source": "exploitdb",
@@ -6555,6 +6603,14 @@
       "name": "DBSite - SQL Injection (SQLi)",
       "description": "DBSite - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15512.py"
+    }
+  ],
+  "CVE-2010-4914": [
+    {
+      "source": "exploitdb",
+      "name": "DELTAScripts PHP Classifieds 7.3 - Remote File Inclusion (RFI)",
+      "description": "DELTAScripts PHP Classifieds 7.3 - Remote File Inclusion (RFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14893.txt"
     }
   ],
   "CVE-2010-4151": [
@@ -6592,14 +6648,14 @@
   "CVE-2010-3023": [
     {
       "source": "exploitdb",
-      "name": "DiamondList - '/user/main/update_category?category[description]' Cross-Site Scripting (XSS)",
-      "description": "DiamondList - '/user/main/update_category?category[description]' Cross-Site Scripting (XSS)",
+      "name": "DiamondList 0.1.6 - '/user/main/update_category?category[description]' Cross-Site Scripting (XSS)",
+      "description": "DiamondList 0.1.6 - '/user/main/update_category?category[description]' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34414.txt"
     },
     {
       "source": "exploitdb",
-      "name": "DiamondList - '/user/main/update_settings?setting[site_title]' Cross-Site Scripting (XSS)",
-      "description": "DiamondList - '/user/main/update_settings?setting[site_title]' Cross-Site Scripting (XSS)",
+      "name": "DiamondList 0.1.6 - '/user/main/update_settings?setting[site_title]' Cross-Site Scripting (XSS)",
+      "description": "DiamondList 0.1.6 - '/user/main/update_settings?setting[site_title]' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34413.txt"
     }
   ],
@@ -6608,7 +6664,7 @@
       "source": "exploitdb",
       "name": "DiamondList 0.1.6 - Cross-Site Request Forgery (CSRF)",
       "description": "DiamondList 0.1.6 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14565.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14565.txt"
     }
   ],
   "CVE-2010-4850": [
@@ -6616,7 +6672,7 @@
       "source": "exploitdb",
       "name": "Diferior 8.03 - Multiple Cross-Site Scripting (XSS)",
       "description": "Diferior 8.03 - Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15633.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15633.txt"
     }
   ],
   "CVE-2010-4633": [
@@ -6646,16 +6702,16 @@
   "CVE-2010-1498": [
     {
       "source": "exploitdb",
-      "name": "dl_stats - Multiple Vulnerabilities",
-      "description": "dl_stats - Multiple Vulnerabilities",
+      "name": "dl_stats - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "dl_stats - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12280.txt"
     }
   ],
   "CVE-2010-1497": [
     {
       "source": "exploitdb",
-      "name": "dl_stats - Multiple Vulnerabilities",
-      "description": "dl_stats - Multiple Vulnerabilities",
+      "name": "dl_stats - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "dl_stats - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12280.txt"
     }
   ],
@@ -6678,16 +6734,16 @@
   "CVE-2010-0287": [
     {
       "source": "exploitdb",
-      "name": "dokuwiki 2009-12-25 - Multiple Vulnerabilities",
-      "description": "dokuwiki 2009-12-25 - Multiple Vulnerabilities",
+      "name": "DokuWiki 2009-12-25 - Multiple Vulnerabilities",
+      "description": "DokuWiki 2009-12-25 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11141.txt"
     }
   ],
   "CVE-2010-0288": [
     {
       "source": "exploitdb",
-      "name": "dokuwiki 2009-12-25 - Multiple Vulnerabilities",
-      "description": "dokuwiki 2009-12-25 - Multiple Vulnerabilities",
+      "name": "DokuWiki 2009-12-25 - Multiple Vulnerabilities",
+      "description": "DokuWiki 2009-12-25 - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11141.txt"
     }
   ],
@@ -6718,38 +6774,38 @@
   "CVE-2010-4401": [
     {
       "source": "exploitdb",
-      "name": "DynPG 4.2.0 - Multiple Vulnerabilities",
-      "description": "DynPG 4.2.0 - Multiple Vulnerabilities",
+      "name": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
+      "description": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15646.txt"
     }
   ],
   "CVE-2010-4400": [
     {
       "source": "exploitdb",
-      "name": "DynPG 4.2.0 - Multiple Vulnerabilities",
-      "description": "DynPG 4.2.0 - Multiple Vulnerabilities",
+      "name": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
+      "description": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15646.txt"
     }
   ],
   "CVE-2010-4399": [
     {
       "source": "exploitdb",
-      "name": "DynPG 4.2.0 - Multiple Vulnerabilities",
-      "description": "DynPG 4.2.0 - Multiple Vulnerabilities",
+      "name": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
+      "description": "DynPG 4.2.0 - Local File Inclusion (LFI) / Full Path Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15646.txt"
     }
   ],
   "CVE-2010-1299": [
     {
       "source": "exploitdb",
-      "name": "DynPG CMS 4.1.0 - 'popup.php' / 'counter.php' Multiple Vulnerabilities",
-      "description": "DynPG CMS 4.1.0 - 'popup.php' / 'counter.php' Multiple Vulnerabilities",
+      "name": "DynPG CMS 4.1.0 - 'counter.php' Remote File Inclusion (RFI) / 'popup.php' Local File Inclusion (LFI)",
+      "description": "DynPG CMS 4.1.0 - 'counter.php' Remote File Inclusion (RFI) / 'popup.php' Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12018.txt"
     },
     {
       "source": "exploitdb",
-      "name": "DynPG CMS 4.1.0 - Multiple Vulnerabilities",
-      "description": "DynPG CMS 4.1.0 - Multiple Vulnerabilities",
+      "name": "DynPG CMS 4.1.0 - 'guestbookaction.php' Local File Inclusion (LFI) / 'popup.php' Remote File Inclusion (RFI)",
+      "description": "DynPG CMS 4.1.0 - 'guestbookaction.php' Local File Inclusion (LFI) / 'popup.php' Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11994.txt"
     }
   ],
@@ -6766,7 +6822,7 @@
       "source": "exploitdb",
       "name": "DZCP (deV!L_z Clanportal) 1.5.2 - Remote File Inclusion (RFI)",
       "description": "DZCP (deV!L_z Clanportal) 1.5.2 - Remote File Inclusion (RFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11735.php"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11735.txt"
     }
   ],
   "CVE-2010-4942": [
@@ -6774,7 +6830,7 @@
       "source": "exploitdb",
       "name": "E-Xoopport Samsara 3.1 (eCal Module) - Blind SQL Injection (SQLi)",
       "description": "E-Xoopport Samsara 3.1 (eCal Module) - Blind SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15110.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15110.pl"
     }
   ],
   "CVE-2010-3467": [
@@ -6834,16 +6890,16 @@
   "CVE-2010-4852": [
     {
       "source": "exploitdb",
-      "name": "Eclime 1.1.2b - Multiple Vulnerabilities",
-      "description": "Eclime 1.1.2b - Multiple Vulnerabilities",
+      "name": "Eclime 1.1.2b - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "Eclime 1.1.2b - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15644.txt"
     }
   ],
   "CVE-2010-4851": [
     {
       "source": "exploitdb",
-      "name": "Eclime 1.1.2b - Multiple Vulnerabilities",
-      "description": "Eclime 1.1.2b - Multiple Vulnerabilities",
+      "name": "Eclime 1.1.2b - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "Eclime 1.1.2b - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15644.txt"
     }
   ],
@@ -6898,16 +6954,16 @@
   "CVE-2010-3314": [
     {
       "source": "exploitdb",
-      "name": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Multiple Vulnerabilities",
-      "description": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Multiple Vulnerabilities",
+      "name": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Remote Command Execution / Reflected Cross-Site Scripting (XSS)",
+      "description": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Remote Command Execution / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11777.txt"
     }
   ],
   "CVE-2010-3313": [
     {
       "source": "exploitdb",
-      "name": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Multiple Vulnerabilities",
-      "description": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Multiple Vulnerabilities",
+      "name": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Remote Command Execution / Reflected Cross-Site Scripting (XSS)",
+      "description": "eGroupWare 1.6.002 and eGroupWare premium line 9.1 - Remote Command Execution / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11777.txt"
     }
   ],
@@ -6932,7 +6988,7 @@
       "source": "exploitdb",
       "name": "Elite Gaming Ladders 3.5 - 'match' SQL Injection (SQLi)",
       "description": "Elite Gaming Ladders 3.5 - 'match' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12158.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12158.txt"
     }
   ],
   "CVE-2010-2356": [
@@ -6962,24 +7018,24 @@
   "CVE-2010-0122": [
     {
       "source": "exploitdb",
-      "name": "Employee TimeClock Software 0.99 - SQL Injection (SQLi)",
-      "description": "Employee TimeClock Software 0.99 - SQL Injection (SQLi)",
+      "name": "Employee TimeClock Software 0.99 - 'username'/'password' SQL Injection (SQLi)",
+      "description": "Employee TimeClock Software 0.99 - 'username'/'password' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39427.txt"
     }
   ],
   "CVE-2010-4781": [
     {
       "source": "exploitdb",
-      "name": "enano CMS 1.1.7pl1 - Multiple Vulnerabilities",
-      "description": "enano CMS 1.1.7pl1 - Multiple Vulnerabilities",
+      "name": "enano CMS 1.1.7pl1 - SQL Injection (SQLi) / Full Path Disclosure",
+      "description": "enano CMS 1.1.7pl1 - SQL Injection (SQLi) / Full Path Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15645.txt"
     }
   ],
   "CVE-2010-4780": [
     {
       "source": "exploitdb",
-      "name": "enano CMS 1.1.7pl1 - Multiple Vulnerabilities",
-      "description": "enano CMS 1.1.7pl1 - Multiple Vulnerabilities",
+      "name": "enano CMS 1.1.7pl1 - SQL Injection (SQLi) / Full Path Disclosure",
+      "description": "enano CMS 1.1.7pl1 - SQL Injection (SQLi) / Full Path Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15645.txt"
     }
   ],
@@ -7086,8 +7142,8 @@
   "CVE-2010-4999": [
     {
       "source": "exploitdb",
-      "name": "Esoftpro Online Photo Pro 2 - Multiple Vulnerabilities",
-      "description": "Esoftpro Online Photo Pro 2 - Multiple Vulnerabilities",
+      "name": "Esoftpro Online Photo Pro 2 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
+      "description": "Esoftpro Online Photo Pro 2 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14205.txt"
     }
   ],
@@ -7292,16 +7348,16 @@
   "CVE-2010-0968": [
     {
       "source": "exploitdb",
-      "name": "GeekHelps ADMP 1.01 - Multiple Vulnerabilities",
-      "description": "GeekHelps ADMP 1.01 - Multiple Vulnerabilities",
+      "name": "GeekHelps ADMP 1.01 - Local File Inclusion (LFI) / SQL Injection (SQLi)",
+      "description": "GeekHelps ADMP 1.01 - Local File Inclusion (LFI) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11721.txt"
     }
   ],
   "CVE-2010-0967": [
     {
       "source": "exploitdb",
-      "name": "GeekHelps ADMP 1.01 - Multiple Vulnerabilities",
-      "description": "GeekHelps ADMP 1.01 - Multiple Vulnerabilities",
+      "name": "GeekHelps ADMP 1.01 - Local File Inclusion (LFI) / SQL Injection (SQLi)",
+      "description": "GeekHelps ADMP 1.01 - Local File Inclusion (LFI) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11721.txt"
     }
   ],
@@ -7324,16 +7380,16 @@
   "CVE-2010-4863": [
     {
       "source": "exploitdb",
-      "name": "Getsimple CMS 2.01 - 'changedata.php' Cross-Site Scripting (XSS)",
-      "description": "Getsimple CMS 2.01 - 'changedata.php' Cross-Site Scripting (XSS)",
+      "name": "GetSimple CMS 2.01 - 'changedata.php' Cross-Site Scripting (XSS)",
+      "description": "GetSimple CMS 2.01 - 'changedata.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34789.html"
     }
   ],
   "CVE-2010-5052": [
     {
       "source": "exploitdb",
-      "name": "Getsimple CMS 2.01 - 'components.php' Cross-Site Scripting (XSS)",
-      "description": "Getsimple CMS 2.01 - 'components.php' Cross-Site Scripting (XSS)",
+      "name": "GetSimple CMS 2.01 - 'components.php' Cross-Site Scripting (XSS)",
+      "description": "GetSimple CMS 2.01 - 'components.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34041.txt"
     }
   ],
@@ -7350,7 +7406,7 @@
       "source": "exploitdb",
       "name": "gpEasy 1.6.1 - Cross-Site Request Forgery (CSRF) (Add Admin)",
       "description": "gpEasy 1.6.1 - Cross-Site Request Forgery (CSRF) (Add Admin)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12441.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12441.txt"
     }
   ],
   "CVE-2010-2038": [
@@ -7366,7 +7422,7 @@
       "source": "exploitdb",
       "name": "Grafik CMS 1.1.2 - Multiple Cross-Site Request Forgery (CSRF)",
       "description": "Grafik CMS 1.1.2 - Multiple Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14342.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14342.txt"
     }
   ],
   "CVE-2010-3428": [
@@ -7452,8 +7508,8 @@
   "CVE-2010-3077": [
     {
       "source": "exploitdb",
-      "name": "Horde Application Framework 3.3.8 - 'icon_browser.php' Cross-Site Scripting (XSS)",
-      "description": "Horde Application Framework 3.3.8 - 'icon_browser.php' Cross-Site Scripting (XSS)",
+      "name": "Horde Application Framework <= 3.3.8 - 'icon_browser.php' Cross-Site Scripting (XSS)",
+      "description": "Horde Application Framework <= 3.3.8 - 'icon_browser.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34605.txt"
     }
   ],
@@ -7465,44 +7521,44 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34773.txt"
     }
   ],
-  "CVE-2010-3003": [
-    {
-      "source": "exploitdb",
-      "name": "HP Insight Diagnostics Online Edition 8.4 - 'custom.php?testmode' Cross-Site Scripting (XSS)",
-      "description": "HP Insight Diagnostics Online Edition 8.4 - 'custom.php?testmode' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34547.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "HP Insight Diagnostics Online Edition 8.4 - 'globals.php?tabpage' Cross-Site Scripting (XSS)",
-      "description": "HP Insight Diagnostics Online Edition 8.4 - 'globals.php?tabpage' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34546.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "HP Insight Diagnostics Online Edition 8.4 - 'idstatusframe.php' Multiple Cross-Site Scripting (XSS)",
-      "description": "HP Insight Diagnostics Online Edition 8.4 - 'idstatusframe.php' Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34544.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "HP Insight Diagnostics Online Edition 8.4 - 'parameters.php?device' Cross-Site Scripting (XSS)",
-      "description": "HP Insight Diagnostics Online Edition 8.4 - 'parameters.php?device' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34543.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "HP Insight Diagnostics Online Edition 8.4 - 'survey.php?category' Cross-Site Scripting (XSS)",
-      "description": "HP Insight Diagnostics Online Edition 8.4 - 'survey.php?category' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34545.txt"
-    }
-  ],
   "CVE-2010-4111": [
     {
       "source": "exploitdb",
       "name": "HP Insight Diagnostics Online Edition 8.4 - 'search.php' Cross-Site Scripting (XSS)",
       "description": "HP Insight Diagnostics Online Edition 8.4 - 'search.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35116.txt"
+    }
+  ],
+  "CVE-2010-3003": [
+    {
+      "source": "exploitdb",
+      "name": "HP Insight Diagnostics Online Edition <= 8.4 - 'custom.php?testmode' Cross-Site Scripting (XSS)",
+      "description": "HP Insight Diagnostics Online Edition <= 8.4 - 'custom.php?testmode' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34547.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP Insight Diagnostics Online Edition <= 8.4 - 'globals.php?tabpage' Cross-Site Scripting (XSS)",
+      "description": "HP Insight Diagnostics Online Edition <= 8.4 - 'globals.php?tabpage' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34546.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP Insight Diagnostics Online Edition <= 8.4 - 'idstatusframe.php' Multiple Cross-Site Scripting (XSS)",
+      "description": "HP Insight Diagnostics Online Edition <= 8.4 - 'idstatusframe.php' Multiple Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34544.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP Insight Diagnostics Online Edition <= 8.4 - 'parameters.php?device' Cross-Site Scripting (XSS)",
+      "description": "HP Insight Diagnostics Online Edition <= 8.4 - 'parameters.php?device' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34543.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "HP Insight Diagnostics Online Edition <= 8.4 - 'survey.php?category' Cross-Site Scripting (XSS)",
+      "description": "HP Insight Diagnostics Online Edition <= 8.4 - 'survey.php?category' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34545.txt"
     }
   ],
   "CVE-2010-4611": [
@@ -7585,22 +7641,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14237.txt"
     }
   ],
-  "CVE-2010-5020": [
-    {
-      "source": "exploitdb",
-      "name": "iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "description": "iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13945.txt"
-    }
-  ],
-  "CVE-2010-0804": [
-    {
-      "source": "exploitdb",
-      "name": "iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "description": "iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13945.txt"
-    }
-  ],
   "CVE-2010-3601": [
     {
       "source": "exploitdb",
@@ -7620,8 +7660,8 @@
   "CVE-2010-2319": [
     {
       "source": "exploitdb",
-      "name": "idevspot Text ads 2.08 - SQL Injection (SQLi)",
-      "description": "idevspot Text ads 2.08 - SQL Injection (SQLi)",
+      "name": "IDevSpot Text ads 2.08 - SQL Injection (SQLi)",
+      "description": "IDevSpot Text ads 2.08 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13749.txt"
     }
   ],
@@ -7722,8 +7762,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Reserve Logic 1.2 Booking CMS - Multiple Vulnerabilities",
-      "description": "Reserve Logic 1.2 Booking CMS - Multiple Vulnerabilities",
+      "name": "Reserve Logic 1.2 Booking CMS - SQL Injection (SQLi) / Arbitrary File Upload / Cross-Site Scripting (XSS)",
+      "description": "Reserve Logic 1.2 Booking CMS - SQL Injection (SQLi) / Arbitrary File Upload / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/19775.txt"
     }
   ],
@@ -7759,6 +7799,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11359.txt"
     }
   ],
+  "CVE-2010-2460": [
+    {
+      "source": "exploitdb",
+      "name": "JCE-Tech Shareasale Script - SQL Injection (SQLi)",
+      "description": "JCE-Tech Shareasale Script - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13949.txt"
+    }
+  ],
   "CVE-2010-2129": [
     {
       "source": "exploitdb",
@@ -7781,14 +7829,6 @@
       "name": "Job Search Engine Script - SQL Injection (SQLi)",
       "description": "Job Search Engine Script - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13978.txt"
-    }
-  ],
-  "CVE-2010-1727": [
-    {
-      "source": "exploitdb",
-      "name": "JobPost - SQL Injection (SQLi)",
-      "description": "JobPost - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12461.txt"
     }
   ],
   "CVE-2010-1217": [
@@ -7932,24 +7972,24 @@
   "CVE-2010-2848": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
-      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
+      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14263.txt"
     }
   ],
   "CVE-2010-2847": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
-      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
+      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14263.txt"
     }
   ],
   "CVE-2010-2846": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
-      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - Multiple Vulnerabilities",
+      "name": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component ArtForms 2.1b7.2 rc2 - SQL Injection (SQLi) / Directory Traversal / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14263.txt"
     }
   ],
@@ -8212,8 +8252,8 @@
   "CVE-2010-1345": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component com_ckforms - Multiple Vulnerabilities",
-      "description": "Joomla! Component com_ckforms - Multiple Vulnerabilities",
+      "name": "Joomla! Component com_ckforms - Local File Inclusion (LFI) / SQL Injection (SQLi)",
+      "description": "Joomla! Component com_ckforms - Local File Inclusion (LFI) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11785.txt"
     },
     {
@@ -8232,8 +8272,8 @@
   "CVE-2010-1344": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component com_ckforms - Multiple Vulnerabilities",
-      "description": "Joomla! Component com_ckforms - Multiple Vulnerabilities",
+      "name": "Joomla! Component com_ckforms - Local File Inclusion (LFI) / SQL Injection (SQLi)",
+      "description": "Joomla! Component com_ckforms - Local File Inclusion (LFI) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11785.txt"
     }
   ],
@@ -8494,16 +8534,16 @@
   "CVE-2010-5043": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component DJ-ArtGallery 0.9.1 - Multiple Vulnerabilities",
-      "description": "Joomla! Component DJ-ArtGallery 0.9.1 - Multiple Vulnerabilities",
+      "name": "Joomla! Component DJ-ArtGallery 0.9.1 - Cross-Site Scripting (XSS) / Blind SQL Injection (SQLi)",
+      "description": "Joomla! Component DJ-ArtGallery 0.9.1 - Cross-Site Scripting (XSS) / Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13737.txt"
     }
   ],
   "CVE-2010-5042": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component DJ-ArtGallery 0.9.1 - Multiple Vulnerabilities",
-      "description": "Joomla! Component DJ-ArtGallery 0.9.1 - Multiple Vulnerabilities",
+      "name": "Joomla! Component DJ-ArtGallery 0.9.1 - Cross-Site Scripting (XSS) / Blind SQL Injection (SQLi)",
+      "description": "Joomla! Component DJ-ArtGallery 0.9.1 - Cross-Site Scripting (XSS) / Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13737.txt"
     }
   ],
@@ -8808,8 +8848,8 @@
   "CVE-2010-5048": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component JComments 2.1 - 'ComntrNam' Cross-Site Scripting (XSS)",
-      "description": "Joomla! Component JComments 2.1 - 'ComntrNam' Cross-Site Scripting (XSS)",
+      "name": "Joomla! Component JComments < 2.2 - 'ComntrNam' Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component JComments < 2.2 - 'ComntrNam' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33998.html"
     }
   ],
@@ -8884,8 +8924,8 @@
   "CVE-2010-4865": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component JE Guestbook 1.0 - Multiple Vulnerabilities",
-      "description": "Joomla! Component JE Guestbook 1.0 - Multiple Vulnerabilities",
+      "name": "Joomla! Component JE Guestbook 1.0 - Local File Inclusion (LFI) / Blind SQL Injection (SQLi)",
+      "description": "Joomla! Component JE Guestbook 1.0 - Local File Inclusion (LFI) / Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15157.txt"
     }
   ],
@@ -9130,16 +9170,16 @@
   "CVE-2010-4795": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component JS Calendar 1.5.1 - Multiple Vulnerabilities",
-      "description": "Joomla! Component JS Calendar 1.5.1 - Multiple Vulnerabilities",
+      "name": "Joomla! Component JS Calendar 1.5.1 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component JS Calendar 1.5.1 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15224.txt"
     }
   ],
   "CVE-2010-4794": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component JS Calendar 1.5.1 - Multiple Vulnerabilities",
-      "description": "Joomla! Component JS Calendar 1.5.1 - Multiple Vulnerabilities",
+      "name": "Joomla! Component JS Calendar 1.5.1 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
+      "description": "Joomla! Component JS Calendar 1.5.1 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15224.txt"
     }
   ],
@@ -9370,16 +9410,16 @@
   "CVE-2010-2148": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component My Car 1.0 - Multiple Vulnerabilities",
-      "description": "Joomla! Component My Car 1.0 - Multiple Vulnerabilities",
+      "name": "Joomla! Component My Car 1.0 - Cross-Site Scripting (XSS) / Information Disclosure / SQL Injection (SQLi)",
+      "description": "Joomla! Component My Car 1.0 - Cross-Site Scripting (XSS) / Information Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12779.txt"
     }
   ],
   "CVE-2010-2147": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component My Car 1.0 - Multiple Vulnerabilities",
-      "description": "Joomla! Component My Car 1.0 - Multiple Vulnerabilities",
+      "name": "Joomla! Component My Car 1.0 - Cross-Site Scripting (XSS) / Information Disclosure / SQL Injection (SQLi)",
+      "description": "Joomla! Component My Car 1.0 - Cross-Site Scripting (XSS) / Information Disclosure / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12779.txt"
     }
   ],
@@ -9694,8 +9734,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Joomla! Component QPersonel 1.0.2 - SQL Injection (SQLi)",
-      "description": "Joomla! Component QPersonel 1.0.2 - SQL Injection (SQLi)",
+      "name": "Joomla! Component QPersonel 1.0.2 - 'katid' SQL Injection (SQLi)",
+      "description": "Joomla! Component QPersonel 1.0.2 - 'katid' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12200.txt"
     }
   ],
@@ -9774,16 +9814,16 @@
   "CVE-2010-4928": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component Restaurant Guide 1.0.0 - Multiple Vulnerabilities",
-      "description": "Joomla! Component Restaurant Guide 1.0.0 - Multiple Vulnerabilities",
+      "name": "Joomla! Component Restaurant Guide 1.0.0 - SQL Injection (SQLi) / HTML Injection",
+      "description": "Joomla! Component Restaurant Guide 1.0.0 - SQL Injection (SQLi) / HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15040.txt"
     }
   ],
   "CVE-2010-4927": [
     {
       "source": "exploitdb",
-      "name": "Joomla! Component Restaurant Guide 1.0.0 - Multiple Vulnerabilities",
-      "description": "Joomla! Component Restaurant Guide 1.0.0 - Multiple Vulnerabilities",
+      "name": "Joomla! Component Restaurant Guide 1.0.0 - SQL Injection (SQLi) / HTML Injection",
+      "description": "Joomla! Component Restaurant Guide 1.0.0 - SQL Injection (SQLi) / HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15040.txt"
     }
   ],
@@ -10346,8 +10386,8 @@
   "CVE-2010-0368": [
     {
       "source": "exploitdb",
-      "name": "LANDesk Management Gateway 4.x - Multiple Vulnerabilities",
-      "description": "LANDesk Management Gateway 4.x - Multiple Vulnerabilities",
+      "name": "LANDesk Management Gateway 4.x - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
+      "description": "LANDesk Management Gateway 4.x - Cross-Site Request Forgery (CSRF) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33603.html"
     }
   ],
@@ -10467,14 +10507,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/33781.txt"
     }
   ],
-  "CVE-2010-2721": [
-    {
-      "source": "exploitdb",
-      "name": "Lyrics 3.0 - Engine SQL Injection (SQLi)",
-      "description": "Lyrics 3.0 - Engine SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14244.txt"
-    }
-  ],
   "CVE-2010-4619": [
     {
       "source": "exploitdb",
@@ -10569,11 +10601,25 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14849.py"
     }
   ],
+  "CVE-2010-4909": [
+    {
+      "source": "exploitdb",
+      "name": "Mechanical Bunny Media PaysiteReviewCMS 1.1 - 'image.php' Cross-Site Scripting (XSS)",
+      "description": "Mechanical Bunny Media PaysiteReviewCMS 1.1 - 'image.php' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34620.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "PaysiteReviewCMS 1.1 - 'search.php' Cross-Site Scripting (XSS)",
+      "description": "PaysiteReviewCMS 1.1 - 'search.php' Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34619.txt"
+    }
+  ],
   "CVE-2010-4976": [
     {
       "source": "exploitdb",
-      "name": "Metinfo 3.0 - Multiple Vulnerabilities",
-      "description": "Metinfo 3.0 - Multiple Vulnerabilities",
+      "name": "Metinfo 3.0 - Source Code Disclosure / Cross-Site Scripting (XSS)",
+      "description": "Metinfo 3.0 - Source Code Disclosure / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15496.txt"
     }
   ],
@@ -10620,8 +10666,8 @@
   "CVE-2010-5278": [
     {
       "source": "exploitdb",
-      "name": "MODx manager - '/controllers/default/resource/tvs.php?class_key' Traversal Local File Inclusion (LFI)",
-      "description": "MODx manager - '/controllers/default/resource/tvs.php?class_key' Traversal Local File Inclusion (LFI)",
+      "name": "MODx Revolution 2.0.2-pl - '/controllers/default/resource/tvs.php?class_key' Traversal Local File Inclusion (LFI)",
+      "description": "MODx Revolution 2.0.2-pl - '/controllers/default/resource/tvs.php?class_key' Traversal Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34788.txt"
     },
     {
@@ -10706,16 +10752,16 @@
   "CVE-2010-4985": [
     {
       "source": "exploitdb",
-      "name": "My Kazaam Notes Management System - Multiple Vulnerabilities",
-      "description": "My Kazaam Notes Management System - Multiple Vulnerabilities",
+      "name": "My Kazaam Notes Management System - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
+      "description": "My Kazaam Notes Management System - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14325.txt"
     }
   ],
   "CVE-2010-4984": [
     {
       "source": "exploitdb",
-      "name": "My Kazaam Notes Management System - Multiple Vulnerabilities",
-      "description": "My Kazaam Notes Management System - Multiple Vulnerabilities",
+      "name": "My Kazaam Notes Management System - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
+      "description": "My Kazaam Notes Management System - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / HTML Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14325.txt"
     }
   ],
@@ -10749,14 +10795,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15154.txt"
     }
   ],
-  "CVE-2010-4901": [
-    {
-      "source": "exploitdb",
-      "name": "MySource Matrix - 'char_map.php' Multiple Cross-Site Scripting (XSS)",
-      "description": "MySource Matrix - 'char_map.php' Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34609.txt"
-    }
-  ],
   "CVE-2010-2358": [
     {
       "source": "exploitdb",
@@ -10779,6 +10817,22 @@
       "name": "NCT Jobs Portal Script - Cross-Site Scripting (XSS) / Authentication Bypass",
       "description": "NCT Jobs Portal Script - Cross-Site Scripting (XSS) / Authentication Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12370.txt"
+    }
+  ],
+  "CVE-2010-5020": [
+    {
+      "source": "exploitdb",
+      "name": "NetArt Media iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "NetArt Media iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13945.txt"
+    }
+  ],
+  "CVE-2010-0804": [
+    {
+      "source": "exploitdb",
+      "name": "NetArt Media iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "NetArt Media iBoutique - 'page' SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13945.txt"
     }
   ],
   "CVE-2010-3489": [
@@ -10920,16 +10974,16 @@
   "CVE-2010-4835": [
     {
       "source": "exploitdb",
-      "name": "OneOrZero AIms 2.6.0 Members Edition - Multiple Vulnerabilities",
-      "description": "OneOrZero AIms 2.6.0 Members Edition - Multiple Vulnerabilities",
+      "name": "OneOrZero AIms 2.6.0 Members Edition - Authenticated SQL Injection (SQLi) / Local File Inclusion (LFI)",
+      "description": "OneOrZero AIms 2.6.0 Members Edition - Authenticated SQL Injection (SQLi) / Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15519.txt"
     }
   ],
   "CVE-2010-4834": [
     {
       "source": "exploitdb",
-      "name": "OneOrZero AIms 2.6.0 Members Edition - Multiple Vulnerabilities",
-      "description": "OneOrZero AIms 2.6.0 Members Edition - Multiple Vulnerabilities",
+      "name": "OneOrZero AIms 2.6.0 Members Edition - Authenticated SQL Injection (SQLi) / Local File Inclusion (LFI)",
+      "description": "OneOrZero AIms 2.6.0 Members Edition - Authenticated SQL Injection (SQLi) / Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15519.txt"
     }
   ],
@@ -10938,7 +10992,7 @@
       "source": "exploitdb",
       "name": "Open Blog 1.2.1 - Cross-Site Request Forgery (CSRF)",
       "description": "Open Blog 1.2.1 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14562.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14562.txt"
     }
   ],
   "CVE-2010-3026": [
@@ -10946,7 +11000,7 @@
       "source": "exploitdb",
       "name": "Open Blog 1.2.1 - Cross-Site Request Forgery (CSRF)",
       "description": "Open Blog 1.2.1 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14562.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14562.txt"
     }
   ],
   "CVE-2010-4792": [
@@ -11125,14 +11179,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15636.txt"
     }
   ],
-  "CVE-2010-2462": [
-    {
-      "source": "exploitdb",
-      "name": "OroHYIP - SQL Injection (SQLi)",
-      "description": "OroHYIP - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13948.txt"
-    }
-  ],
   "CVE-2010-2856": [
     {
       "source": "exploitdb",
@@ -11152,8 +11198,8 @@
   "CVE-2010-0605": [
     {
       "source": "exploitdb",
-      "name": "osTicket 1.6 RC5 - Multiple Vulnerabilities",
-      "description": "osTicket 1.6 RC5 - Multiple Vulnerabilities",
+      "name": "osTicket 1.6 RC5 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
+      "description": "osTicket 1.6 RC5 - SQL Injection (SQLi) / Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11380.txt"
     }
   ],
@@ -11165,57 +11211,33 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13946.txt"
     }
   ],
-  "CVE-2010-2683": [
-    {
-      "source": "exploitdb",
-      "name": "PageDirector CMS - 'result.php' SQL Injection (SQLi)",
-      "description": "PageDirector CMS - 'result.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14112.txt"
-    }
-  ],
-  "CVE-2010-2685": [
-    {
-      "source": "exploitdb",
-      "name": "PageDirector CMS - Multiple Vulnerabilities",
-      "description": "PageDirector CMS - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14089.txt"
-    }
-  ],
-  "CVE-2010-2684": [
-    {
-      "source": "exploitdb",
-      "name": "PageDirector CMS - Multiple Vulnerabilities",
-      "description": "PageDirector CMS - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14089.txt"
-    }
-  ],
   "CVE-2010-4280": [
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - Blind SQL Injection (SQLi)",
-      "description": "Pandora Fms 3.1 - Blind SQL Injection (SQLi)",
+      "name": "Pandora FMS 3.1 - Blind SQL Injection (SQLi)",
+      "description": "Pandora FMS 3.1 - Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15642.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - SQL Injection (SQLi)",
-      "description": "Pandora Fms 3.1 - SQL Injection (SQLi)",
+      "name": "Pandora FMS 3.1 - SQL Injection (SQLi)",
+      "description": "Pandora FMS 3.1 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15641.txt"
     }
   ],
   "CVE-2010-4283": [
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
-      "description": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "name": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "description": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15643.txt"
     }
   ],
   "CVE-2010-4282": [
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
-      "description": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "name": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "description": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15643.txt"
     },
     {
@@ -11228,32 +11250,32 @@
   "CVE-2010-4281": [
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
-      "description": "Pandora Fms 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "name": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
+      "description": "Pandora FMS 3.1 - Directory Traversal / Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15643.txt"
     }
   ],
   "CVE-2010-4278": [
     {
       "source": "exploitdb",
-      "name": "Pandora Fms 3.1 - OS Command Injection",
-      "description": "Pandora Fms 3.1 - OS Command Injection",
+      "name": "Pandora FMS 3.1 - OS Command Injection",
+      "description": "Pandora FMS 3.1 - OS Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15640.txt"
     }
   ],
   "CVE-2010-2257": [
     {
       "source": "exploitdb",
-      "name": "Pay Per Minute Video Chat Script 2.0/2.1 - Multiple Vulnerabilities",
-      "description": "Pay Per Minute Video Chat Script 2.0/2.1 - Multiple Vulnerabilities",
+      "name": "Pay Per Minute Video Chat Script 2.0/2.1 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "Pay Per Minute Video Chat Script 2.0/2.1 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/10983.txt"
     }
   ],
   "CVE-2010-2256": [
     {
       "source": "exploitdb",
-      "name": "Pay Per Minute Video Chat Script 2.0/2.1 - Multiple Vulnerabilities",
-      "description": "Pay Per Minute Video Chat Script 2.0/2.1 - Multiple Vulnerabilities",
+      "name": "Pay Per Minute Video Chat Script 2.0/2.1 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
+      "description": "Pay Per Minute Video Chat Script 2.0/2.1 - Cross-Site Scripting (XSS) / SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/10983.txt"
     }
   ],
@@ -11271,20 +11293,6 @@
       "name": "PayPal Shop Digital - SQL Injection (SQLi)",
       "description": "PayPal Shop Digital - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15772.txt"
-    }
-  ],
-  "CVE-2010-4909": [
-    {
-      "source": "exploitdb",
-      "name": "PaysiteReviewCMS - 'image.php' Cross-Site Scripting (XSS)",
-      "description": "PaysiteReviewCMS - 'image.php' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34620.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "PaysiteReviewCMS 1.1 - 'search.php' Cross-Site Scripting (XSS)",
-      "description": "PaysiteReviewCMS 1.1 - 'search.php' Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34619.txt"
     }
   ],
   "CVE-2010-3204": [
@@ -11335,14 +11343,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11323.txt"
     }
   ],
-  "CVE-2010-4914": [
-    {
-      "source": "exploitdb",
-      "name": "PHP Classifieds 7.3 - Remote File Inclusion (RFI)",
-      "description": "PHP Classifieds 7.3 - Remote File Inclusion (RFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14893.txt"
-    }
-  ],
   "CVE-2010-4911": [
     {
       "source": "exploitdb",
@@ -11370,16 +11370,16 @@
   "CVE-2010-1662": [
     {
       "source": "exploitdb",
-      "name": "PHP Quick Arcade 3.0.21 - Multiple Vulnerabilities",
-      "description": "PHP Quick Arcade 3.0.21 - Multiple Vulnerabilities",
+      "name": "PHP Quick Arcade 3.0.21 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "PHP Quick Arcade 3.0.21 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12416.txt"
     }
   ],
   "CVE-2010-1661": [
     {
       "source": "exploitdb",
-      "name": "PHP Quick Arcade 3.0.21 - Multiple Vulnerabilities",
-      "description": "PHP Quick Arcade 3.0.21 - Multiple Vulnerabilities",
+      "name": "PHP Quick Arcade 3.0.21 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "PHP Quick Arcade 3.0.21 - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12416.txt"
     }
   ],
@@ -11412,7 +11412,7 @@
       "source": "exploitdb",
       "name": "PHP-Fusion - Local File Inclusion (LFI)",
       "description": "PHP-Fusion - Local File Inclusion (LFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14647.php"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14647.txt"
     }
   ],
   "CVE-2010-4791": [
@@ -11445,14 +11445,6 @@
       "name": "PHPaaCMS 0.3.1 - 'show.php?id' SQL Injection (SQLi)",
       "description": "PHPaaCMS 0.3.1 - 'show.php?id' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14199.txt"
-    }
-  ],
-  "CVE-2010-2315": [
-    {
-      "source": "exploitdb",
-      "name": "phpBazar 2.1.1 stable - Remote File Inclusion (RFI)",
-      "description": "phpBazar 2.1.1 stable - Remote File Inclusion (RFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12855.txt"
     }
   ],
   "CVE-2010-0380": [
@@ -11498,16 +11490,16 @@
   "CVE-2010-0975": [
     {
       "source": "exploitdb",
-      "name": "PhpCityPortal - Multiple Vulnerabilities",
-      "description": "PhpCityPortal - Multiple Vulnerabilities",
+      "name": "PhpCityPortal - SQL Injection (SQLi) / Remote File Inclusion (RFI)",
+      "description": "PhpCityPortal - SQL Injection (SQLi) / Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11678.txt"
     }
   ],
   "CVE-2010-0974": [
     {
       "source": "exploitdb",
-      "name": "PhpCityPortal - Multiple Vulnerabilities",
-      "description": "PhpCityPortal - Multiple Vulnerabilities",
+      "name": "PhpCityPortal - SQL Injection (SQLi) / Remote File Inclusion (RFI)",
+      "description": "PhpCityPortal - SQL Injection (SQLi) / Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11678.txt"
     }
   ],
@@ -11533,6 +11525,22 @@
       "name": "PHPKick 0.8 - 'Statistics.php' SQL Injection (SQLi)",
       "description": "PHPKick 0.8 - 'Statistics.php' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14578.php"
+    }
+  ],
+  "CVE-2010-1058": [
+    {
+      "source": "exploitdb",
+      "name": "Phpkobo Address Book Script 1.09 - Local File Inclusion (LFI)",
+      "description": "Phpkobo Address Book Script 1.09 - Local File Inclusion (LFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11754.txt"
+    }
+  ],
+  "CVE-2010-1060": [
+    {
+      "source": "exploitdb",
+      "name": "Phpkobo Short URL 1.01 - Local File Inclusion (LFI)",
+      "description": "Phpkobo Short URL 1.01 - Local File Inclusion (LFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11775.txt"
     }
   ],
   "CVE-2010-1071": [
@@ -11706,16 +11714,16 @@
   "CVE-2010-3483": [
     {
       "source": "exploitdb",
-      "name": "primitive CMS 1.0.9 - Multiple Vulnerabilities",
-      "description": "primitive CMS 1.0.9 - Multiple Vulnerabilities",
+      "name": "primitive CMS 1.0.9 - Unauthorized Access / HTML Injection / Blind SQL Injection (SQLi)",
+      "description": "primitive CMS 1.0.9 - Unauthorized Access / HTML Injection / Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15064.txt"
     }
   ],
   "CVE-2010-3482": [
     {
       "source": "exploitdb",
-      "name": "primitive CMS 1.0.9 - Multiple Vulnerabilities",
-      "description": "primitive CMS 1.0.9 - Multiple Vulnerabilities",
+      "name": "primitive CMS 1.0.9 - Unauthorized Access / HTML Injection / Blind SQL Injection (SQLi)",
+      "description": "primitive CMS 1.0.9 - Unauthorized Access / HTML Injection / Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15064.txt"
     }
   ],
@@ -11829,6 +11837,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/10967.txt"
     }
   ],
+  "CVE-2010-2721": [
+    {
+      "source": "exploitdb",
+      "name": "RightInPoint Lyrics 3.0 - Engine SQL Injection (SQLi)",
+      "description": "RightInPoint Lyrics 3.0 - Engine SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14244.txt"
+    }
+  ],
   "CVE-2010-1046": [
     {
       "source": "exploitdb",
@@ -11925,20 +11941,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14838.txt"
     }
   ],
+  "CVE-2010-5037": [
+    {
+      "source": "exploitdb",
+      "name": "SenseSites CommonSense CMS - SQL Injection (SQLi)",
+      "description": "SenseSites CommonSense CMS - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13762.txt"
+    }
+  ],
   "CVE-2010-4331": [
     {
       "source": "exploitdb",
-      "name": "Seo Panel 2.2.0 - Cookie-Rendered Stored Cross-Site Scripting (XSS)",
-      "description": "Seo Panel 2.2.0 - Cookie-Rendered Stored Cross-Site Scripting (XSS)",
+      "name": "SEO Panel 2.2.0 - Cookie-Rendered Stored Cross-Site Scripting (XSS)",
+      "description": "SEO Panel 2.2.0 - Cookie-Rendered Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/16000.txt"
-    }
-  ],
-  "CVE-2010-2460": [
-    {
-      "source": "exploitdb",
-      "name": "Shareasale Script - SQL Injection (SQLi)",
-      "description": "Shareasale Script - SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13949.txt"
     }
   ],
   "CVE-2010-2040": [
@@ -11947,14 +11963,6 @@
       "name": "Shopzilla Affiliate Script PHP - 'search.php' Cross-Site Scripting (XSS)",
       "description": "Shopzilla Affiliate Script PHP - 'search.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34011.txt"
-    }
-  ],
-  "CVE-2010-1060": [
-    {
-      "source": "exploitdb",
-      "name": "Short URL 1.01 - Local File Inclusion (LFI)",
-      "description": "Short URL 1.01 - Local File Inclusion (LFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11775.txt"
     }
   ],
   "CVE-2010-1711": [
@@ -11997,28 +12005,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14260.txt"
     }
   ],
-  "CVE-2010-2313": [
-    {
-      "source": "exploitdb",
-      "name": "SIMM Management System (SMS) - Local File Inclusion (LFI)",
-      "description": "SIMM Management System (SMS) - Local File Inclusion (LFI)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12848.txt"
-    }
-  ],
   "CVE-2010-4986": [
     {
       "source": "exploitdb",
       "name": "Simple Document Management System - SQL Injection (SQLi)",
       "description": "Simple Document Management System - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14262.txt"
-    }
-  ],
-  "CVE-2010-2858": [
-    {
-      "source": "exploitdb",
-      "name": "SimpNews 2.47.3 - Multiple Cross-Site Scripting (XSS)",
-      "description": "SimpNews 2.47.3 - Multiple Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34286.txt"
     }
   ],
   "CVE-2010-4357": [
@@ -12035,6 +12027,14 @@
       "name": "SiteX CMS 0.7.4 Beta - 'photo.php' SQL Injection (SQLi)",
       "description": "SiteX CMS 0.7.4 Beta - 'photo.php' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11881.php"
+    }
+  ],
+  "CVE-2010-2315": [
+    {
+      "source": "exploitdb",
+      "name": "SmartISoft phpBazar 2.1.1 stable - Remote File Inclusion (RFI)",
+      "description": "SmartISoft phpBazar 2.1.1 stable - Remote File Inclusion (RFI)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12855.txt"
     }
   ],
   "CVE-2010-1271": [
@@ -12094,17 +12094,17 @@
   "CVE-2010-20126": [
     {
       "source": "exploitdb",
-      "name": "SquirrelMail Virtual Keyboard Plugin - 'vkeyboard.php' Cross-Site Scripting (XSS)",
-      "description": "SquirrelMail Virtual Keyboard Plugin - 'vkeyboard.php' Cross-Site Scripting (XSS)",
+      "name": "SquirrelMail Virtual Keyboard Plugin <= 0.9.1 - 'vkeyboard.php' Cross-Site Scripting (XSS)",
+      "description": "SquirrelMail Virtual Keyboard Plugin <= 0.9.1 - 'vkeyboard.php' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34814.txt"
     }
   ],
-  "CVE-2010-0674": [
+  "CVE-2010-4901": [
     {
       "source": "exploitdb",
-      "name": "statcountex 3.1 - Multiple Vulnerabilities",
-      "description": "statcountex 3.1 - Multiple Vulnerabilities",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11434.txt"
+      "name": "Squiz MySource Matrix 3.28.3 - 'char_map.php' Multiple Cross-Site Scripting (XSS)",
+      "description": "Squiz MySource Matrix 3.28.3 - 'char_map.php' Multiple Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34609.txt"
     }
   ],
   "CVE-2010-0706": [
@@ -12150,16 +12150,16 @@
   "CVE-2010-3458": [
     {
       "source": "exploitdb",
-      "name": "symphony 2.0.7 - Multiple Vulnerabilities",
-      "description": "symphony 2.0.7 - Multiple Vulnerabilities",
+      "name": "symphony 2.0.7 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cookie Manipulation",
+      "description": "symphony 2.0.7 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cookie Manipulation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14968.txt"
     }
   ],
   "CVE-2010-3457": [
     {
       "source": "exploitdb",
-      "name": "symphony 2.0.7 - Multiple Vulnerabilities",
-      "description": "symphony 2.0.7 - Multiple Vulnerabilities",
+      "name": "symphony 2.0.7 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cookie Manipulation",
+      "description": "symphony 2.0.7 - SQL Injection (SQLi) / Cross-Site Scripting (XSS) / Cookie Manipulation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14968.txt"
     }
   ],
@@ -12182,16 +12182,16 @@
   "CVE-2010-4772": [
     {
       "source": "exploitdb",
-      "name": "S_CMS 2.5 - Multiple Vulnerabilities",
-      "description": "S_CMS 2.5 - Multiple Vulnerabilities",
+      "name": "S_CMS 2.5 - Full Path Disclosure / SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "S_CMS 2.5 - Full Path Disclosure / SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15588.txt"
     }
   ],
   "CVE-2010-4771": [
     {
       "source": "exploitdb",
-      "name": "S_CMS 2.5 - Multiple Vulnerabilities",
-      "description": "S_CMS 2.5 - Multiple Vulnerabilities",
+      "name": "S_CMS 2.5 - Full Path Disclosure / SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
+      "description": "S_CMS 2.5 - Full Path Disclosure / SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15588.txt"
     }
   ],
@@ -12238,8 +12238,8 @@
   "CVE-2010-3205": [
     {
       "source": "exploitdb",
-      "name": "textpattern CMS 4.2.0 - Remote File Inclusion (RFI)",
-      "description": "textpattern CMS 4.2.0 - Remote File Inclusion (RFI)",
+      "name": "Textpattern CMS 4.2.0 - Remote File Inclusion (RFI)",
+      "description": "Textpattern CMS 4.2.0 - Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14823.txt"
     }
   ],
@@ -12259,12 +12259,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11516.html"
     }
   ],
+  "CVE-2010-2462": [
+    {
+      "source": "exploitdb",
+      "name": "Toma Cero OroHYIP - SQL Injection (SQLi)",
+      "description": "Toma Cero OroHYIP - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13948.txt"
+    }
+  ],
   "CVE-2010-2282": [
     {
       "source": "exploitdb",
       "name": "TomatoCMS 2.0.5 - Multiple Cross-Site Request Forgery (CSRF)",
       "description": "TomatoCMS 2.0.5 - Multiple Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14331.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14331.txt"
     }
   ],
   "CVE-2010-1994": [
@@ -12340,8 +12348,8 @@
   "CVE-2010-3027": [
     {
       "source": "exploitdb",
-      "name": "Tycoon CMS Record Script 1.0.9 - SQL Injection (SQLi)",
-      "description": "Tycoon CMS Record Script 1.0.9 - SQL Injection (SQLi)",
+      "name": "Tycoon CMS Record Script 1.0.9 - 'game_id' SQL Injection (SQLi)",
+      "description": "Tycoon CMS Record Script 1.0.9 - 'game_id' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/14572.txt"
     }
   ],
@@ -12445,28 +12453,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11410.txt"
     }
   ],
+  "CVE-2010-4808": [
+    {
+      "source": "exploitdb",
+      "name": "Valarsoft Webmatic - 'index.php' SQL Injection (SQLi)",
+      "description": "Valarsoft Webmatic - 'index.php' SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15517.txt"
+    }
+  ],
   "CVE-2010-1077": [
     {
       "source": "exploitdb",
       "name": "vBSEO 3.1.0 - Local File Inclusion (LFI)",
       "description": "vBSEO 3.1.0 - Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11526.txt"
-    }
-  ],
-  "CVE-2010-2459": [
-    {
-      "source": "exploitdb",
-      "name": "Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "description": "Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13970.txt"
-    }
-  ],
-  "CVE-2010-2458": [
-    {
-      "source": "exploitdb",
-      "name": "Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "description": "Video Community portal - SQL Injection (SQLi) / Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13970.txt"
     }
   ],
   "CVE-2010-4971": [
@@ -12496,16 +12496,16 @@
   "CVE-2010-4867": [
     {
       "source": "exploitdb",
-      "name": "W-Agora 4.2.1 - 'search.php3?bn' Traversal Local File Inclusion (LFI)",
-      "description": "W-Agora 4.2.1 - 'search.php3?bn' Traversal Local File Inclusion (LFI)",
+      "name": "W-Agora <= 4.2.1 - 'search.php3?bn' Traversal Local File Inclusion (LFI)",
+      "description": "W-Agora <= 4.2.1 - 'search.php3?bn' Traversal Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34905.txt"
     }
   ],
   "CVE-2010-4868": [
     {
       "source": "exploitdb",
-      "name": "W-Agora 4.2.1 - 'search.php?bn' Cross-Site Scripting (XSS)",
-      "description": "W-Agora 4.2.1 - 'search.php?bn' Cross-Site Scripting (XSS)",
+      "name": "W-Agora <= 4.2.1 - 'search.php?bn' Cross-Site Scripting (XSS)",
+      "description": "W-Agora <= 4.2.1 - 'search.php?bn' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/34906.txt"
     }
   ],
@@ -12515,14 +12515,6 @@
       "name": "WAnewsletter 2.1.2 - SQL Injection (SQLi)",
       "description": "WAnewsletter 2.1.2 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15090.txt"
-    }
-  ],
-  "CVE-2010-1712": [
-    {
-      "source": "exploitdb",
-      "name": "wb news (webmobo) 2.3.3 - Stored Cross-Site Scripting (XSS)",
-      "description": "wb news (webmobo) 2.3.3 - Stored Cross-Site Scripting (XSS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12323.txt"
     }
   ],
   "CVE-2010-1923": [
@@ -12536,16 +12528,16 @@
   "CVE-2010-1114": [
     {
       "source": "exploitdb",
-      "name": "Web Server Creator Web Portal 0.1 - Multiple Vulnerabilities",
-      "description": "Web Server Creator Web Portal 0.1 - Multiple Vulnerabilities",
+      "name": "Web Server Creator Web Portal 0.1 - Directory Traversal / Cross-Site Scripting (XSS) / Remote File Inclusion (RFI)",
+      "description": "Web Server Creator Web Portal 0.1 - Directory Traversal / Cross-Site Scripting (XSS) / Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11569.txt"
     }
   ],
   "CVE-2010-1113": [
     {
       "source": "exploitdb",
-      "name": "Web Server Creator Web Portal 0.1 - Multiple Vulnerabilities",
-      "description": "Web Server Creator Web Portal 0.1 - Multiple Vulnerabilities",
+      "name": "Web Server Creator Web Portal 0.1 - Directory Traversal / Cross-Site Scripting (XSS) / Remote File Inclusion (RFI)",
+      "description": "Web Server Creator Web Portal 0.1 - Directory Traversal / Cross-Site Scripting (XSS) / Remote File Inclusion (RFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11569.txt"
     }
   ],
@@ -12581,12 +12573,12 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11831.txt"
     }
   ],
-  "CVE-2010-4808": [
+  "CVE-2010-1712": [
     {
       "source": "exploitdb",
-      "name": "Webmatic - 'index.php' SQL Injection (SQLi)",
-      "description": "Webmatic - 'index.php' SQL Injection (SQLi)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/15517.txt"
+      "name": "Webmobo wb news (webmobo) 2.3.3 - Stored Cross-Site Scripting (XSS)",
+      "description": "Webmobo wb news (webmobo) 2.3.3 - Stored Cross-Site Scripting (XSS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12323.txt"
     }
   ],
   "CVE-2010-4861": [
@@ -12734,8 +12726,8 @@
   "CVE-2010-4518": [
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin Safe Search - 'v1' Cross-Site Scripting (XSS)",
-      "description": "WordPress Plugin Safe Search - 'v1' Cross-Site Scripting (XSS)",
+      "name": "WordPress Plugin Safe Search 0.7 - 'v1' Cross-Site Scripting (XSS)",
+      "description": "WordPress Plugin Safe Search 0.7 - 'v1' Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/35067.txt"
     }
   ],
@@ -12812,8 +12804,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Yamamah 1.00 - Multiple Vulnerabilities",
-      "description": "Yamamah 1.00 - Multiple Vulnerabilities",
+      "name": "Yamamah 1.00 - Unprotected Installer Admin Reset / 'calbums' Blind SQL Injection (SQLi)",
+      "description": "Yamamah 1.00 - Unprotected Installer Admin Reset / 'calbums' Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11947.txt"
     }
   ],
@@ -12846,8 +12838,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Yamamah 1.00 - Multiple Vulnerabilities",
-      "description": "Yamamah 1.00 - Multiple Vulnerabilities",
+      "name": "Yamamah 1.00 - Unprotected Installer Admin Reset / 'calbums' Blind SQL Injection (SQLi)",
+      "description": "Yamamah 1.00 - Unprotected Installer Admin Reset / 'calbums' Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/11947.txt"
     },
     {
@@ -12855,6 +12847,14 @@
       "name": "Yamamah Photo Gallery 1.00 - 'calbums' SQL Injection (SQLi)",
       "description": "Yamamah Photo Gallery 1.00 - 'calbums' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13857.txt"
+    }
+  ],
+  "CVE-2010-4981": [
+    {
+      "source": "exploitdb",
+      "name": "YourFreeWorld Banner Management Script - SQL Injection (SQLi)",
+      "description": "YourFreeWorld Banner Management Script - SQL Injection (SQLi)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/13929.txt"
     }
   ],
   "CVE-2010-4972": [
@@ -12868,8 +12868,8 @@
   "CVE-2010-2144": [
     {
       "source": "exploitdb",
-      "name": "Zeeways Script - Multiple Vulnerabilities",
-      "description": "Zeeways Script - Multiple Vulnerabilities",
+      "name": "Zeeways Script - HTML Injection / Cross-Site Scripting (XSS)",
+      "description": "Zeeways Script - HTML Injection / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/12805.txt"
     }
   ],
@@ -12900,8 +12900,8 @@
   "CVE-2010-5322": [
     {
       "source": "exploitdb",
-      "name": "Zeuscart 4.0 - Multiple Vulnerabilities",
-      "description": "Zeuscart 4.0 - Multiple Vulnerabilities",
+      "name": "ZeusCart 4.0 - Reflected Cross-Site Scripting (XSS) / SQL Injection (SQLi) / Information Disclosure",
+      "description": "ZeusCart 4.0 - Reflected Cross-Site Scripting (XSS) / SQL Injection (SQLi) / Information Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/36159.txt"
     }
   ],
@@ -12955,14 +12955,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/28272.txt"
     }
   ],
-  "CVE-2010-0916": [
-    {
-      "source": "exploitdb",
-      "name": "Oracle Solaris - 'rdist' Privilege Escalation",
-      "description": "Oracle Solaris - 'rdist' Privilege Escalation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/dos/34309.txt"
-    }
-  ],
   "CVE-2010-3503": [
     {
       "source": "exploitdb",
@@ -12971,20 +12963,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/dos/15245.txt"
     }
   ],
+  "CVE-2010-0916": [
+    {
+      "source": "exploitdb",
+      "name": "Oracle Solaris 10 - 'rdist' Privilege Escalation",
+      "description": "Oracle Solaris 10 - 'rdist' Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/dos/34309.txt"
+    }
+  ],
   "CVE-2010-0453": [
     {
       "source": "exploitdb",
-      "name": "Solaris/Open Solaris UCODE_GET_VERSION IOCTL - Denial of Service (DoS)",
-      "description": "Solaris/Open Solaris UCODE_GET_VERSION IOCTL - Denial of Service (DoS)",
+      "name": "Oracle Solaris/Open Solaris UCODE_GET_VERSION IOCTL - Denial of Service (DoS)",
+      "description": "Oracle Solaris/Open Solaris UCODE_GET_VERSION IOCTL - Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/dos/11351.c"
-    }
-  ],
-  "CVE-2010-2383": [
-    {
-      "source": "exploitdb",
-      "name": "Oracle Solaris - 'nfslogd' Insecure Temporary File Creation",
-      "description": "Oracle Solaris - 'nfslogd' Insecure Temporary File Creation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34313.txt"
     }
   ],
   "CVE-2010-2382": [
@@ -12992,7 +12984,15 @@
       "source": "exploitdb",
       "name": "Oracle Solaris 8/9/10 - 'flar' Insecure Temporary File Creation",
       "description": "Oracle Solaris 8/9/10 - 'flar' Insecure Temporary File Creation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34311.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34311.txt"
+    }
+  ],
+  "CVE-2010-2383": [
+    {
+      "source": "exploitdb",
+      "name": "Oracle Solaris 8/9/10 - 'nfslogd' Insecure Temporary File Creation",
+      "description": "Oracle Solaris 8/9/10 - 'nfslogd' Insecure Temporary File Creation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34313.txt"
     }
   ],
   "CVE-2010-2384": [
@@ -13000,7 +13000,7 @@
       "source": "exploitdb",
       "name": "Oracle Solaris Management Console - WBEM Insecure Temporary File Creation",
       "description": "Oracle Solaris Management Console - WBEM Insecure Temporary File Creation",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34314.sh"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/solaris/local/34314.txt"
     }
   ],
   "CVE-2010-2089": [
@@ -13038,8 +13038,8 @@
   "CVE-2010-4091": [
     {
       "source": "exploitdb",
-      "name": "Acrobat Reader 9.4 - Memory Corruption",
-      "description": "Acrobat Reader 9.4 - Memory Corruption",
+      "name": "Adobe Acrobat Reader 9.4 - Memory Corruption",
+      "description": "Adobe Acrobat Reader 9.4 - Memory Corruption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/15419.txt"
     }
   ],
@@ -13125,6 +13125,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/11838.php"
     }
   ],
+  "CVE-2010-0050": [
+    {
+      "source": "exploitdb",
+      "name": "Apple Webkit (Apple Safari 4.0.5) - Blink Tag Stack Exhaustion Denial of Service (DoS)",
+      "description": "Apple Webkit (Apple Safari 4.0.5) - Blink Tag Stack Exhaustion Denial of Service (DoS)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/12425.html"
+    }
+  ],
+  "CVE-2010-1813": [
+    {
+      "source": "exploitdb",
+      "name": "Apple Webkit (Apple Safari < 4.1.2/5.0.2 / Google Chrome < 5.0.375.125) - Memory Corruption",
+      "description": "Apple Webkit (Apple Safari < 4.1.2/5.0.2 / Google Chrome < 5.0.375.125) - Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14967.txt"
+    }
+  ],
   "CVE-2010-4709": [
     {
       "source": "exploitdb",
@@ -13136,8 +13152,8 @@
   "CVE-2010-5075": [
     {
       "source": "exploitdb",
-      "name": "Avast! Internet Security 5.0 - 'aswFW.sys' Kernel Driver IOCTL Memory Pool Corruption",
-      "description": "Avast! Internet Security 5.0 - 'aswFW.sys' Kernel Driver IOCTL Memory Pool Corruption",
+      "name": "Avast Internet Security 5.0 - 'aswFW.sys' Kernel Driver IOCTL Memory Pool Corruption",
+      "description": "Avast Internet Security 5.0 - 'aswFW.sys' Kernel Driver IOCTL Memory Pool Corruption",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14533.txt"
     }
   ],
@@ -13206,7 +13222,7 @@
       "source": "exploitdb",
       "name": "IncrediMail 2.0 - Authenticated ActiveX Buffer Overflow (PoC)",
       "description": "IncrediMail 2.0 - Authenticated ActiveX Buffer Overflow (PoC)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/12030.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/12030.txt"
     }
   ],
   "CVE-2010-5300": [
@@ -13549,6 +13565,26 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/16191.pl"
     }
   ],
+  "CVE-2010-4371": [
+    {
+      "source": "exploitdb",
+      "name": "Nullsoft Winamp 5.5.8.2985 - Multiple Buffer Overflows",
+      "description": "Nullsoft Winamp 5.5.8.2985 - Multiple Buffer Overflows",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/15248.txt"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Nullsoft Winamp 5.5.8 (in_mod plugin) - Local Stack Overflow",
+      "description": "Nullsoft Winamp 5.5.8 (in_mod plugin) - Local Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/15287.py"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Nullsoft Winamp 5.5.8.2985 (in_mod plugin) - Local Stack Overflow",
+      "description": "Nullsoft Winamp 5.5.8.2985 (in_mod plugin) - Local Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/15312.py"
+    }
+  ],
   "CVE-2010-1349": [
     {
       "source": "exploitdb",
@@ -13576,8 +13612,8 @@
   "CVE-2010-3000": [
     {
       "source": "exploitdb",
-      "name": "RealPlayer - FLV Parsing Integer Overflow",
-      "description": "RealPlayer - FLV Parsing Integer Overflow",
+      "name": "RealNetworks RealPlayer - FLV Parsing Integer Overflow",
+      "description": "RealNetworks RealPlayer - FLV Parsing Integer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14992.py"
     }
   ],
@@ -13633,42 +13669,6 @@
       "name": "Webby WebServer - Overflow (SEH) (PoC)",
       "description": "Webby WebServer - Overflow (SEH) (PoC)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/12740.py"
-    }
-  ],
-  "CVE-2010-0050": [
-    {
-      "source": "exploitdb",
-      "name": "Webkit (Apple Safari 4.0.5) - Blink Tag Stack Exhaustion Denial of Service (DoS)",
-      "description": "Webkit (Apple Safari 4.0.5) - Blink Tag Stack Exhaustion Denial of Service (DoS)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/12425.html"
-    }
-  ],
-  "CVE-2010-1813": [
-    {
-      "source": "exploitdb",
-      "name": "Webkit (Apple Safari < 4.1.2/5.0.2 / Google Chrome < 5.0.375.125) - Memory Corruption",
-      "description": "Webkit (Apple Safari < 4.1.2/5.0.2 / Google Chrome < 5.0.375.125) - Memory Corruption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/14967.txt"
-    }
-  ],
-  "CVE-2010-4371": [
-    {
-      "source": "exploitdb",
-      "name": "Winamp 5.5.8.2985 - Multiple Buffer Overflows",
-      "description": "Winamp 5.5.8.2985 - Multiple Buffer Overflows",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/dos/15248.txt"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Winamp 5.5.8 (in_mod plugin) - Local Stack Overflow",
-      "description": "Winamp 5.5.8 (in_mod plugin) - Local Stack Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/15287.py"
-    },
-    {
-      "source": "exploitdb",
-      "name": "Winamp 5.5.8.2985 (in_mod plugin) - Local Stack Overflow",
-      "description": "Winamp 5.5.8.2985 (in_mod plugin) - Local Stack Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/15312.py"
     }
   ],
   "CVE-2010-2201": [
@@ -13776,8 +13776,8 @@
   "CVE-2010-0705": [
     {
       "source": "exploitdb",
-      "name": "Avast! 4.7 - 'aavmker4.sys' Local Privilege Escalation (LPE)",
-      "description": "Avast! 4.7 - 'aavmker4.sys' Local Privilege Escalation (LPE)",
+      "name": "Avast 4.7 - 'aavmker4.sys' Local Privilege Escalation (LPE)",
+      "description": "Avast 4.7 - 'aavmker4.sys' Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/12406.py"
     }
   ],
@@ -13847,22 +13847,6 @@
       "name": "Daemon Tools Lite - 'mfc80loc.dll' DLL Hijacking",
       "description": "Daemon Tools Lite - 'mfc80loc.dll' DLL Hijacking",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14791.c"
-    }
-  ],
-  "CVE-2010-1247": [
-    {
-      "source": "exploitdb",
-      "name": "Excel RTD - Memory Corruption",
-      "description": "Excel RTD - Memory Corruption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14966.py"
-    }
-  ],
-  "CVE-2010-1246": [
-    {
-      "source": "exploitdb",
-      "name": "Excel RTD - Memory Corruption",
-      "description": "Excel RTD - Memory Corruption",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14966.py"
     }
   ],
   "CVE-2010-3134": [
@@ -13935,6 +13919,22 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14733.c"
     }
   ],
+  "CVE-2010-1247": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Excel RTD - Memory Corruption",
+      "description": "Microsoft Excel RTD - Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14966.py"
+    }
+  ],
+  "CVE-2010-1246": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Excel RTD - Memory Corruption",
+      "description": "Microsoft Excel RTD - Memory Corruption",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14966.py"
+    }
+  ],
   "CVE-2010-3139": [
     {
       "source": "exploitdb",
@@ -13948,7 +13948,7 @@
       "source": "exploitdb",
       "name": "Microsoft Internet Connection Signup Wizard - 'smmscrpt.dll' DLL Hijacking",
       "description": "Microsoft Internet Connection Signup Wizard - 'smmscrpt.dll' DLL Hijacking",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14754.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14754.c"
     }
   ],
   "CVE-2010-3146": [
@@ -14000,7 +14000,7 @@
       "source": "exploitdb",
       "name": "Microsoft Vista - 'fveapi.dll' BitLocker Drive Encryption API Hijacking",
       "description": "Microsoft Vista - 'fveapi.dll' BitLocker Drive Encryption API Hijacking",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14751.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14751.c"
     }
   ],
   "CVE-2010-2739": [
@@ -14082,8 +14082,8 @@
   "CVE-2010-3137": [
     {
       "source": "exploitdb",
-      "name": "NullSoft Winamp 5.581 - 'wnaspi32.dll' DLL Hijacking",
-      "description": "NullSoft Winamp 5.581 - 'wnaspi32.dll' DLL Hijacking",
+      "name": "Nullsoft Winamp 5.581 - 'wnaspi32.dll' DLL Hijacking",
+      "description": "Nullsoft Winamp 5.581 - 'wnaspi32.dll' DLL Hijacking",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14789.c"
     }
   ],
@@ -14204,7 +14204,7 @@
       "source": "exploitdb",
       "name": "VideoLAN VLC Media Player 1.1.3 - 'wintab32.dll' DLL Hijacking",
       "description": "VideoLAN VLC Media Player 1.1.3 - 'wintab32.dll' DLL Hijacking",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14750.txt"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/14750.c"
     }
   ],
   "CVE-2010-1225": [
@@ -14228,7 +14228,7 @@
       "source": "exploitdb",
       "name": "ZipGenius 6.3.1.2552 - 'zgtips.dll' Local Stack Buffer Overflow",
       "description": "ZipGenius 6.3.1.2552 - 'zgtips.dll' Local Stack Buffer Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/12326.py"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/12326.pl"
     }
   ],
   "CVE-2010-1685": [
@@ -14272,7 +14272,21 @@
       "source": "exploitdb",
       "name": "Apple Safari 4.0.5 - 'parent.close()' Memory Corruption Code Execution",
       "description": "Apple Safari 4.0.5 - 'parent.close()' Memory Corruption Code Execution",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/12573.html"
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/12573.txt"
+    }
+  ],
+  "CVE-2010-3804": [
+    {
+      "source": "exploitdb",
+      "name": "Apple WebKit - Insufficient Entropy Random Number Generator (1)",
+      "description": "Apple WebKit - Insufficient Entropy Random Number Generator (1)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/35005.html"
+    },
+    {
+      "source": "exploitdb",
+      "name": "Apple WebKit - Insufficient Entropy Random Number Generator (2)",
+      "description": "Apple WebKit - Insufficient Entropy Random Number Generator (2)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/35006.html"
     }
   ],
   "CVE-2010-3460": [
@@ -14343,14 +14357,6 @@
       "name": "Google Chrome 4.1.249.1059 - Cross Origin Bypass in Google URL (GURL)",
       "description": "Google Chrome 4.1.249.1059 - Cross Origin Bypass in Google URL (GURL)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/12657.txt"
-    }
-  ],
-  "CVE-2010-0838": [
-    {
-      "source": "exploitdb",
-      "name": "Java 6.19 CMM readMabCurveData - Remote Stack Overflow",
-      "description": "Java 6.19 CMM readMabCurveData - Remote Stack Overflow",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15056.py"
     }
   ],
   "CVE-2010-5301": [
@@ -14471,6 +14477,14 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/16052.txt"
     }
   ],
+  "CVE-2010-0838": [
+    {
+      "source": "exploitdb",
+      "name": "Oracle Java 6.19 CMM readMabCurveData - Remote Stack Overflow",
+      "description": "Oracle Java 6.19 CMM readMabCurveData - Remote Stack Overflow",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15056.py"
+    }
+  ],
   "CVE-2010-3573": [
     {
       "source": "exploitdb",
@@ -14482,8 +14496,8 @@
   "CVE-2010-3749": [
     {
       "source": "exploitdb",
-      "name": "Real Networks RealPlayer SP - 'RecordClip' Method Remote Code Execution (RCE)",
-      "description": "Real Networks RealPlayer SP - 'RecordClip' Method Remote Code Execution (RCE)",
+      "name": "RealNetworks RealPlayer SP - 'RecordClip' Method Remote Code Execution (RCE)",
+      "description": "RealNetworks RealPlayer SP - 'RecordClip' Method Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/15991.html"
     }
   ],
@@ -14541,20 +14555,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/33662.txt"
     }
   ],
-  "CVE-2010-3804": [
-    {
-      "source": "exploitdb",
-      "name": "WebKit - Insufficient Entropy Random Number Generator (1)",
-      "description": "WebKit - Insufficient Entropy Random Number Generator (1)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/35005.html"
-    },
-    {
-      "source": "exploitdb",
-      "name": "WebKit - Insufficient Entropy Random Number Generator (2)",
-      "description": "WebKit - Insufficient Entropy Random Number Generator (2)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/35006.html"
-    }
-  ],
   "CVE-2010-1932": [
     {
       "source": "exploitdb",
@@ -14574,32 +14574,32 @@
   "CVE-2010-4915": [
     {
       "source": "exploitdb",
-      "name": "ColdBookmarks 1.22 - SQL Injection (SQLi)",
-      "description": "ColdBookmarks 1.22 - SQL Injection (SQLi)",
+      "name": "ColdGen ColdBookmarks 1.22 - SQL Injection (SQLi)",
+      "description": "ColdGen ColdBookmarks 1.22 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14933.txt"
     }
   ],
   "CVE-2010-4910": [
     {
       "source": "exploitdb",
-      "name": "ColdCalendar 2.06 - SQL Injection (SQLi)",
-      "description": "ColdCalendar 2.06 - SQL Injection (SQLi)",
+      "name": "ColdGen ColdCalendar 2.06 - SQL Injection (SQLi)",
+      "description": "ColdGen ColdCalendar 2.06 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14932.py"
     }
   ],
   "CVE-2010-4916": [
     {
       "source": "exploitdb",
-      "name": "ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
-      "description": "ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
+      "name": "ColdGen ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
+      "description": "ColdGen ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14935.py"
     }
   ],
   "CVE-2010-4913": [
     {
       "source": "exploitdb",
-      "name": "ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
-      "description": "ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
+      "name": "ColdGen ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
+      "description": "ColdGen ColdUserGroup 1.06 - Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14935.py"
     }
   ],
@@ -14643,20 +14643,20 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/12728.txt"
     }
   ],
+  "CVE-2010-3213": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Outlook Web Access 2007 - Cross-Site Request Forgery (CSRF)",
+      "description": "Microsoft Outlook Web Access 2007 - Cross-Site Request Forgery (CSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14285.txt"
+    }
+  ],
   "CVE-2010-0817": [
     {
       "source": "exploitdb",
       "name": "Microsoft SharePoint Server 2007 - Cross-Site Scripting (XSS)",
       "description": "Microsoft SharePoint Server 2007 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/12450.txt"
-    }
-  ],
-  "CVE-2010-3213": [
-    {
-      "source": "exploitdb",
-      "name": "Outlook Web Access 2007 - Cross-Site Request Forgery (CSRF)",
-      "description": "Outlook Web Access 2007 - Cross-Site Request Forgery (CSRF)",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/webapps/14285.txt"
     }
   ],
   "CVE-2010-3944": [
