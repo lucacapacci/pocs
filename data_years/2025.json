@@ -34,14 +34,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Fortinet FortiWeb v8.0.1 - Auth Bypass",
-      "description": "Fortinet FortiWeb v8.0.1 - Auth Bypass",
+      "name": "Fortinet FortiWeb 8.0.1 - Auth Bypass",
+      "description": "Fortinet FortiWeb 8.0.1 - Auth Bypass",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52495.txt"
     },
     {
       "source": "exploitdb",
-      "name": "FortiWeb 8.0.2 - Remote Code Execution",
-      "description": "FortiWeb 8.0.2 - Remote Code Execution",
+      "name": "FortiWeb 8.0.2 - Remote Code Execution (RCE)",
+      "description": "FortiWeb 8.0.2 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52502.py"
     },
     {
@@ -250,8 +250,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "WordPress Depicter Plugin 3.6.1 - SQL Injection",
-      "description": "WordPress Depicter Plugin 3.6.1 - SQL Injection",
+      "name": "WordPress Depicter Plugin 3.6.1 - SQL Injection (SQLi)",
+      "description": "WordPress Depicter Plugin 3.6.1 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52285.py"
     },
     {
@@ -450,8 +450,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "FreeBSD rtsold 15.x - Remote Code Execution via DNSSL",
-      "description": "FreeBSD rtsold 15.x - Remote Code Execution via DNSSL",
+      "name": "FreeBSD rtsold 15.x - Remote Code Execution (RCE) via DNSSL",
+      "description": "FreeBSD rtsold 15.x - Remote Code Execution (RCE) via DNSSL",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52463.py"
     }
   ],
@@ -518,8 +518,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Craft CMS 5.6.16 - RCE",
-      "description": "Craft CMS 5.6.16 - RCE",
+      "name": "Craft CMS 5.6.16 - Remote Code Execution (RCE)",
+      "description": "Craft CMS 5.6.16 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52525.py"
     },
     {
@@ -538,14 +538,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
-      "description": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "name": "Crypttech CryptoLog - Remote Code Execution (RCE) (Metasploit)",
+      "description": "Crypttech CryptoLog - Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/41980.rb"
     },
     {
       "source": "exploitdb",
-      "name": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
-      "description": "Crypttech CryptoLog - Remote Code Execution (Metasploit)",
+      "name": "Crypttech CryptoLog - Remote Code Execution (RCE) (Metasploit)",
+      "description": "Crypttech CryptoLog - Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/remote/41980.rb"
     }
   ],
@@ -629,6 +629,12 @@
       "name": "Ivanti Connect Secure Unauthenticated Remote Code Execution via Stack-based Buffer Overflow",
       "description": "This module exploits a Stack-based Buffer Overflow vulnerability in\n          Ivanti Connect Secure to achieve remote code execution\n          (CVE-2025-22457). Versions 22.7R2.5 and earlier are vulnerable. Note\n          that Ivanti Pulse Connect Secure, Ivanti Policy Secure and ZTA gateways\n          are also vulnerable but this module doesn't support this software. Heap\n          spray is used to place our payload in memory at a predetermined\n          location. Due to ASLR, the base address of `libdsplibs` is unknown.\n          This library is used by the exploit to build a ROP chain and get\n          command execution. As a result, the module will brute force this\n          address starting from  the address set by the `LIBDSPLIBS_ADDRESS`\n          option.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/http/ivanti_connect_secure_stack_overflow_rce_cve_2025_22457.rb"
+    },
+    {
+      "source": "nuclei",
+      "name": "Ivanti Connect Secure < 22.7R2.6 - Stack-based Buffer Overflow",
+      "description": "Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4,\nand Ivanti ZTA Gateways before version 22.8R2.2 contain a stack-based buffer overflow caused by\nimproper input handling, allowing remote attackers to execute arbitrary code without authentication.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-22457.yaml"
     }
   ],
   "CVE-2025-34037": [
@@ -640,8 +646,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Linksys E-series - Remote Code Execution",
-      "description": "Linksys E-series - Remote Code Execution",
+      "name": "Linksys E-series - Remote Code Execution (RCE)",
+      "description": "Linksys E-series - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/31683.php"
     }
   ],
@@ -654,8 +660,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "motionEye 0.43.1b4 - RCE",
-      "description": "motionEye 0.43.1b4 - RCE",
+      "name": "motionEye 0.43.1b4 - Remote Code Execution (RCE)",
+      "description": "motionEye 0.43.1b4 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52481.txt"
     }
   ],
@@ -692,8 +698,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Pandora FMS - Ping Authenticated Remote Code Execution (Metasploit)",
-      "description": "Pandora FMS - Ping Authenticated Remote Code Execution (Metasploit)",
+      "name": "Pandora FMS - 'Ping' Authenticated Remote Code Execution (RCE) (Metasploit)",
+      "description": "Pandora FMS - 'Ping' Authenticated Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/48334.rb"
     }
   ],
@@ -740,8 +746,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (Metasploit)",
-      "description": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (Metasploit)",
+      "name": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (RCE) (Metasploit)",
+      "description": "Riverbed SteelCentral NetProfiler/NetExpress - Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/40108.rb"
     }
   ],
@@ -754,8 +760,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Skyvern 0.1.85 - Remote Code Execution (RCE) via SSTI",
-      "description": "Skyvern 0.1.85 - Remote Code Execution (RCE) via SSTI",
+      "name": "Skyvern 0.1.85 - Remote Code Execution (RCE) via Server-Side Template Injection (SSTI)",
+      "description": "Skyvern 0.1.85 - Remote Code Execution (RCE) via Server-Side Template Injection (SSTI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52335.py"
     }
   ],
@@ -776,8 +782,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution",
-      "description": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution",
+      "name": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution (RCE)",
+      "description": "Tiki Wiki CMS Calendar 6.15/9.11 LTS/12.5 LTS/14.2 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/39965.txt"
     }
   ],
@@ -826,8 +832,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Sudo chroot 1.9.17 - Local Privilege Escalation",
-      "description": "Sudo chroot 1.9.17 - Local Privilege Escalation",
+      "name": "Sudo chroot 1.9.17 - Local Privilege Escalation (LPE)",
+      "description": "Sudo chroot 1.9.17 - Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52352.txt"
     }
   ],
@@ -848,8 +854,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Netcore / Netis Routers - UDP Backdoor Access",
-      "description": "Netcore / Netis Routers - UDP Backdoor Access",
+      "name": "Netcore/Netis Routers - UDP Backdoor Access",
+      "description": "Netcore/Netis Routers - UDP Backdoor Access",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/43387.py"
     }
   ],
@@ -1046,8 +1052,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Langflow 1.3.0 - Remote Code Execution (RCE)",
-      "description": "Langflow 1.3.0 - Remote Code Execution (RCE)",
+      "name": "Langflow 1.3.0 - Remote Code Execution (RCE) (1)",
+      "description": "Langflow 1.3.0 - Remote Code Execution (RCE) (1)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52262.txt"
     },
     {
@@ -1196,8 +1202,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "React Server 19.2.0 - Remote Code Execution",
-      "description": "React Server 19.2.0 - Remote Code Execution",
+      "name": "React Server 19.2.0 - Remote Code Execution (RCE)",
+      "description": "React Server 19.2.0 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52506.py"
     },
     {
@@ -1224,8 +1230,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Roundcube 1.6.10 - Remote Code Execution (RCE)",
-      "description": "Roundcube 1.6.10 - Remote Code Execution (RCE)",
+      "name": "Roundcube 1.6.10 - Remote Code Execution (RCE) (Metasploit)",
+      "description": "Roundcube 1.6.10 - Remote Code Execution (RCE) (Metasploit)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52324.NA"
     },
     {
@@ -1308,8 +1314,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Apache Tomcat 11.0.3 - Remote Code Execution",
-      "description": "Apache Tomcat 11.0.3 - Remote Code Execution",
+      "name": "Apache Tomcat 11.0.3 - Remote Code Execution (RCE)",
+      "description": "Apache Tomcat 11.0.3 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52134.txt"
     },
     {
@@ -1398,8 +1404,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Wing FTP Server 7.4.3 - Remote Code Execution (RCE) (Unauthenticated)",
-      "description": "Wing FTP Server 7.4.3 - Remote Code Execution (RCE) (Unauthenticated)",
+      "name": "Wing FTP Server 7.4.3 - Unauthenticated Remote Code Execution (RCE)",
+      "description": "Wing FTP Server 7.4.3 - Unauthenticated Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52347.py"
     },
     {
@@ -1501,6 +1507,12 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/multi/http/wp_user_registration_membership_escalation.rb"
     },
     {
+      "source": "exploitdb",
+      "name": "WordPress User Registration & Membership Plugin 4.1.1 - Unauthenticated Privilege Escalation",
+      "description": "WordPress User Registration & Membership Plugin 4.1.1 - Unauthenticated Privilege Escalation",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52137.txt"
+    },
+    {
       "source": "nuclei",
       "name": "User Registration & Membership <= 4.1.1 - Unauthenticated Privilege Escalation",
       "description": "The User Registration & Membership plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 4.1.1. This is due to insufficient restrictions on role type in the 'prepare_members_data()' function. This makes it possible for unauthenticated attackers to create newuser accounts with the 'administrator' role, allowing complete control over the affected WordPress site.\n",
@@ -1522,8 +1534,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "XWiki Platform 15.10.10 - Remote Code Execution",
-      "description": "XWiki Platform 15.10.10 - Remote Code Execution",
+      "name": "XWiki Platform 15.10.10 - Remote Code Execution (RCE)",
+      "description": "XWiki Platform 15.10.10 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52136.txt"
     },
     {
@@ -1628,8 +1640,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Bolt CMS 3.7.0 - Remote Code Execution (Authenticated)",
-      "description": "Bolt CMS 3.7.0 - Remote Code Execution (Authenticated)",
+      "name": "Bolt CMS 3.7.0 - Authenticated Remote Code Execution (RCE)",
+      "description": "Bolt CMS 3.7.0 - Authenticated Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/48296.py"
     }
   ],
@@ -1692,14 +1704,14 @@
     },
     {
       "source": "exploitdb",
-      "name": "Pie Register WordPress Plugin 3.7.1.4 - Authentication Bypass to RCE",
-      "description": "Pie Register WordPress Plugin 3.7.1.4 - Authentication Bypass to RCE",
+      "name": "Pie Register WordPress Plugin 3.7.1.4 - Authentication Bypass to Remote Code Execution (RCE)",
+      "description": "Pie Register WordPress Plugin 3.7.1.4 - Authentication Bypass to Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52370.py"
     },
     {
       "source": "exploitdb",
-      "name": "WordPress Plugin Pie Register 3.7.1.4 - Admin Privilege Escalation (Unauthenticated)",
-      "description": "WordPress Plugin Pie Register 3.7.1.4 - Admin Privilege Escalation (Unauthenticated)",
+      "name": "WordPress Plugin Pie Register 3.7.1.4 - Unauthenticated Admin Privilege Escalation",
+      "description": "WordPress Plugin Pie Register 3.7.1.4 - Unauthenticated Admin Privilege Escalation",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50395.txt"
     },
     {
@@ -1763,6 +1775,12 @@
       "name": "CVE-2025-33053 Exploit via Malicious .URL File and WebDAV",
       "description": "This module exploits CVE-2025-33053 by generating a malicious .URL file pointing\n          to a trusted LOLBAS binary with parameters designed to trigger unintended behavior.\n          Optionally, a payload is generated and hosted on a specified WebDAV directory.\n          When the victim opens the shortcut, it will attempt to access the WebDAV path,\n          potentially resulting in remote code execution via a trusted binary.",
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/windows/fileformat/unc_url_cve_2025_33053.rb"
+    },
+    {
+      "source": "exploitdb",
+      "name": "WebDAV Windows 10 - Remote Code Execution (RCE)",
+      "description": "WebDAV Windows 10 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52334.NA"
     }
   ],
   "CVE-2025-34123": [
@@ -2030,8 +2048,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Panda Security (Multiple Products) - Local Privilege Escalation",
-      "description": "Panda Security (Multiple Products) - Local Privilege Escalation",
+      "name": "Panda Security (Multiple Products) - Local Privilege Escalation (LPE)",
+      "description": "Panda Security (Multiple Products) - Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/40020.txt"
     }
   ],
@@ -2054,72 +2072,72 @@
   "CVE-2025-34050": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34053": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34054": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34055": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34056": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34065": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34066": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-34051": [
     {
       "source": "exploitdb",
-      "name": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
-      "description": "AVTECH IP Camera / NVR / DVR Devices - Multiple Vulnerabilities",
+      "name": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
+      "description": "AVTECH IP Camera/NVR/DVR Devices - Multiple Vulnerabilities",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/cgi/webapps/40500.py"
     }
   ],
   "CVE-2025-56241": [
     {
       "source": "exploitdb",
-      "name": "Aztech DSL5005EN Router - 'sysAccess.asp' Admin Password Change (Unauthenticated)",
-      "description": "Aztech DSL5005EN Router - 'sysAccess.asp' Admin Password Change (Unauthenticated)",
+      "name": "Aztech DSL5005EN Router - 'sysAccess.asp' Unauthenticated Admin Password Change",
+      "description": "Aztech DSL5005EN Router - 'sysAccess.asp' Unauthenticated Admin Password Change",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/52093.txt"
     }
   ],
@@ -2134,8 +2152,8 @@
   "CVE-2025-34036": [
     {
       "source": "exploitdb",
-      "name": "Multiple CCTV-DVR Vendors - Remote Code Execution",
-      "description": "Multiple CCTV-DVR Vendors - Remote Code Execution",
+      "name": "Multiple CCTV-DVR Vendors - Remote Code Execution (RCE)",
+      "description": "Multiple CCTV-DVR Vendors - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/remote/39596.py"
     }
   ],
@@ -2156,24 +2174,24 @@
   "CVE-2025-34024": [
     {
       "source": "exploitdb",
-      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
-      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution (RCE)",
+      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/48377.txt"
     }
   ],
   "CVE-2025-34029": [
     {
       "source": "exploitdb",
-      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
-      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution",
+      "name": "Edimax EW-7438RPn 1.13 - Remote Code Execution (RCE)",
+      "description": "Edimax EW-7438RPn 1.13 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/48377.txt"
     }
   ],
   "CVE-2025-34035": [
     {
       "source": "exploitdb",
-      "name": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution",
-      "description": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution",
+      "name": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution (RCE)",
+      "description": "EnGenius EnShare IoT Gigabit Cloud Service 1.4.11 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/42114.py"
     },
     {
@@ -2200,32 +2218,32 @@
   "CVE-2025-60689": [
     {
       "source": "exploitdb",
-      "name": "Linksys E1200_2.0.04 - OS Command Injection (Unauthenticated)",
-      "description": "Linksys E1200_2.0.04 - OS Command Injection (Unauthenticated)",
+      "name": "Linksys E1200_2.0.04 - Unauthenticated OS Command Injection",
+      "description": "Linksys E1200_2.0.04 - Unauthenticated OS Command Injection",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/52660.py"
     }
   ],
   "CVE-2025-34049": [
     {
       "source": "exploitdb",
-      "name": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Remote Code Execution (Authenticated)",
-      "description": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Remote Code Execution (Authenticated)",
+      "name": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Authenticated Remote Code Execution (RCE)",
+      "description": "OptiLink ONT1GEW GPON 2.1.11_X101 Build 1127.190306 - Authenticated Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49955.py"
     }
   ],
   "CVE-2025-34022": [
     {
       "source": "exploitdb",
-      "name": "Selea Targa IP OCR-ANPR Camera - Directory Traversal File Disclosure (Unauthenticated)",
-      "description": "Selea Targa IP OCR-ANPR Camera - Directory Traversal File Disclosure (Unauthenticated)",
+      "name": "Selea Targa IP OCR-ANPR Camera - Unauthenticated Directory Traversal File Disclosure",
+      "description": "Selea Targa IP OCR-ANPR Camera - Unauthenticated Directory Traversal File Disclosure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49456.txt"
     }
   ],
   "CVE-2025-34021": [
     {
       "source": "exploitdb",
-      "name": "Selea Targa IP OCR-ANPR Camera - Multiple SSRF (Unauthenticated)",
-      "description": "Selea Targa IP OCR-ANPR Camera - Multiple SSRF (Unauthenticated)",
+      "name": "Selea Targa IP OCR-ANPR Camera - Unauthenticated Multiple Server-Side Request Forgery (SSRF)",
+      "description": "Selea Targa IP OCR-ANPR Camera - Unauthenticated Multiple Server-Side Request Forgery (SSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/hardware/webapps/49457.txt"
     }
   ],
@@ -2254,24 +2272,24 @@
   "CVE-2025-12744": [
     {
       "source": "exploitdb",
-      "name": "Fedora - Local Privilege Escalation",
-      "description": "Fedora - Local Privilege Escalation",
+      "name": "Fedora - Local Privilege Escalation (LPE)",
+      "description": "Fedora - Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52515.py"
     }
   ],
   "CVE-2025-40271": [
     {
       "source": "exploitdb",
-      "name": "Linux Kernel proc_readdir_de() 6.18-rc5 - Local Privilege Escalation",
-      "description": "Linux Kernel proc_readdir_de() 6.18-rc5 - Local Privilege Escalation",
+      "name": "Linux Kernel proc_readdir_de() 6.18-rc5 - Local Privilege Escalation (LPE)",
+      "description": "Linux Kernel proc_readdir_de() 6.18-rc5 - Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52550.c"
     }
   ],
   "CVE-2025-6018": [
     {
       "source": "exploitdb",
-      "name": "Linux PAM Environment - Variable Injection Local Privilege Escalation",
-      "description": "Linux PAM Environment - Variable Injection Local Privilege Escalation",
+      "name": "Linux PAM Environment - Variable Injection Local Privilege Escalation (LPE)",
+      "description": "Linux PAM Environment - Variable Injection Local Privilege Escalation (LPE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/local/52386.py"
     }
   ],
@@ -2308,8 +2326,8 @@
   "CVE-2025-32023": [
     {
       "source": "exploitdb",
-      "name": "Redis 8.0.2 - RCE",
-      "description": "Redis 8.0.2 - RCE",
+      "name": "Redis 8.0.2 - Remote Code Execution (RCE)",
+      "description": "Redis 8.0.2 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/linux/remote/52477.py"
     }
   ],
@@ -2324,8 +2342,8 @@
   "CVE-2025-68137": [
     {
       "source": "exploitdb",
-      "name": "EVerest 2025.9.0 - DoS",
-      "description": "EVerest 2025.9.0 - DoS",
+      "name": "EVerest 2025.9.0 - Denial of Service (DoS)",
+      "description": "EVerest 2025.9.0 - Denial of Service (DoS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/dos/52679.py"
     }
   ],
@@ -2340,8 +2358,8 @@
   "CVE-2025-60690": [
     {
       "source": "exploitdb",
-      "name": "Linksys E1200 2.0.04 - Stack Buffer Overflow (RCE) (Authenticated)",
-      "description": "Linksys E1200 2.0.04 - Stack Buffer Overflow (RCE) (Authenticated)",
+      "name": "Linksys E1200 2.0.04 - Authenticated Stack Buffer Overflow (RCE)",
+      "description": "Linksys E1200 2.0.04 - Authenticated Stack Buffer Overflow (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/hardware/52548.py"
     }
   ],
@@ -2364,16 +2382,24 @@
   "CVE-2025-9074": [
     {
       "source": "exploitdb",
-      "name": "Docker Desktop 4.44.3 - API Exposure (Unauthenticated)",
-      "description": "Docker Desktop 4.44.3 - API Exposure (Unauthenticated)",
+      "name": "Docker Desktop 4.44.3 - Unauthenticated API Exposure",
+      "description": "Docker Desktop 4.44.3 - Unauthenticated API Exposure",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52472.txt"
+    }
+  ],
+  "CVE-2025-9960": [
+    {
+      "source": "exploitdb",
+      "name": "is-localhost-ip 2.0.0 - Server-Side Request Forgery (SSRF)",
+      "description": "is-localhost-ip 2.0.0 - Server-Side Request Forgery (SSRF)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52496.txt"
     }
   ],
   "CVE-2025-47917": [
     {
       "source": "exploitdb",
-      "name": "Mbed TLS 3.6.4 - Use-After-Free",
-      "description": "Mbed TLS 3.6.4 - Use-After-Free",
+      "name": "Mbed TLS 3.6.4 - Use-After-Free (UAF)",
+      "description": "Mbed TLS 3.6.4 - Use-After-Free (UAF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/local/52427.c"
     }
   ],
@@ -2412,8 +2438,8 @@
   "CVE-2025-27533": [
     {
       "source": "exploitdb",
-      "name": "Apache ActiveMQ 6.1.6 - Denial of Service (DOS)",
-      "description": "Apache ActiveMQ 6.1.6 - Denial of Service (DOS)",
+      "name": "Apache ActiveMQ 6.1.6 - Denial of Service (DoS) (DOS)",
+      "description": "Apache ActiveMQ 6.1.6 - Denial of Service (DoS) (DOS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52288.py"
     }
   ],
@@ -2518,8 +2544,8 @@
     },
     {
       "source": "exploitdb",
-      "name": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
+      "name": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
+      "description": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt"
     },
     {
@@ -2532,8 +2558,8 @@
   "CVE-2025-24514": [
     {
       "source": "exploitdb",
-      "name": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
+      "name": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
+      "description": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt"
     },
     {
@@ -2546,8 +2572,8 @@
   "CVE-2025-1098": [
     {
       "source": "exploitdb",
-      "name": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
+      "name": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
+      "description": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt"
     },
     {
@@ -2560,8 +2586,8 @@
   "CVE-2025-1097": [
     {
       "source": "exploitdb",
-      "name": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
-      "description": "Ingress-NGINX Admission Controller v1.11.1 - FD Injection to RCE",
+      "name": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
+      "description": "Ingress-NGINX Admission Controller 1.11.1 - 'IngressNightmare' File Descriptor Injection / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52475.txt"
     },
     {
@@ -2588,8 +2614,8 @@
   "CVE-2025-6563": [
     {
       "source": "exploitdb",
-      "name": "MikroTik RouterOS 7.19.1 - Reflected XSS",
-      "description": "MikroTik RouterOS 7.19.1 - Reflected XSS",
+      "name": "MikroTik RouterOS 7.19.1 - Reflected Cross-Site Scripting (XSS)",
+      "description": "MikroTik RouterOS 7.19.1 - Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/remote/52366.txt"
     }
   ],
@@ -2680,8 +2706,8 @@
   "CVE-2025-8550": [
     {
       "source": "exploitdb",
-      "name": "atjiu pybbs 6.0.0 - Cross Site Scripting (XSS)",
-      "description": "atjiu pybbs 6.0.0 - Cross Site Scripting (XSS)",
+      "name": "atjiu pybbs 6.0.0 - Cross-Site Scripting (XSS)",
+      "description": "atjiu pybbs 6.0.0 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52400.c"
     }
   ],
@@ -2696,24 +2722,24 @@
   "CVE-2025-5298": [
     {
       "source": "exploitdb",
-      "name": "Campcodes Online Hospital Management System 1.0 - SQL Injection",
-      "description": "Campcodes Online Hospital Management System 1.0 - SQL Injection",
+      "name": "Campcodes Online Hospital Management System 1.0 - SQL Injection (SQLi)",
+      "description": "Campcodes Online Hospital Management System 1.0 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52312.txt"
     }
   ],
   "CVE-2025-10493": [
     {
       "source": "exploitdb",
-      "name": "Chained Quiz 1.3.5 - Insecure Direct Object Reference via Cookie (Unauthenticated)",
-      "description": "Chained Quiz 1.3.5 - Insecure Direct Object Reference via Cookie (Unauthenticated)",
+      "name": "Chained Quiz 1.3.5 - Unauthenticated Insecure Direct Object Reference (IDOR) via Cookie",
+      "description": "Chained Quiz 1.3.5 - Unauthenticated Insecure Direct Object Reference (IDOR) via Cookie",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52464.txt"
     }
   ],
   "CVE-2025-8573": [
     {
       "source": "exploitdb",
-      "name": "Concrete CMS 9.4.3 - Stored XSS",
-      "description": "Concrete CMS 9.4.3 - Stored XSS",
+      "name": "Concrete CMS 9.4.3 - Stored Cross-Site Scripting (XSS)",
+      "description": "Concrete CMS 9.4.3 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52428.txt"
     }
   ],
@@ -2734,32 +2760,32 @@
   "CVE-2025-64459": [
     {
       "source": "exploitdb",
-      "name": "Django 5.1.13 - SQL Injection",
-      "description": "Django 5.1.13 - SQL Injection",
+      "name": "Django 5.1.13 - SQL Injection (SQLi)",
+      "description": "Django 5.1.13 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52456.py"
     }
   ],
   "CVE-2025-8311": [
     {
       "source": "exploitdb",
-      "name": "dotCMS 25.07.02-1 - Blind SQL Injection (Authenticated)",
-      "description": "dotCMS 25.07.02-1 - Blind SQL Injection (Authenticated)",
+      "name": "dotCMS 25.07.02-1 - Authenticated Blind SQL Injection (SQLi)",
+      "description": "dotCMS 25.07.02-1 - Authenticated Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52431.py"
     }
   ],
   "CVE-2025-50455": [
     {
       "source": "exploitdb",
-      "name": "EasyAppointments 1.5.1 - Blind SQL Injection",
-      "description": "EasyAppointments 1.5.1 - Blind SQL Injection",
+      "name": "EasyAppointments 1.5.1 - Blind SQL Injection (SQLi)",
+      "description": "EasyAppointments 1.5.1 - Blind SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52667.py"
     }
   ],
   "CVE-2025-10046": [
     {
       "source": "exploitdb",
-      "name": "ELEX WooCommerce WordPress Plugin 1.4.3 - SQL Injection",
-      "description": "ELEX WooCommerce WordPress Plugin 1.4.3 - SQL Injection",
+      "name": "ELEX WooCommerce WordPress Plugin 1.4.3 - SQL Injection (SQLi)",
+      "description": "ELEX WooCommerce WordPress Plugin 1.4.3 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52430.c"
     }
   ],
@@ -2780,16 +2806,16 @@
   "CVE-2025-69210": [
     {
       "source": "exploitdb",
-      "name": "FacturaScripts 2025.43 - XSS",
-      "description": "FacturaScripts 2025.43 - XSS",
+      "name": "FacturaScripts 2025.43 - Cross-Site Scripting (XSS)",
+      "description": "FacturaScripts 2025.43 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52517.txt"
     }
   ],
   "CVE-2025-25257": [
     {
       "source": "exploitdb",
-      "name": "FortiWeb Fabric Connector 7.6.x - SQL Injection to Remote Code Execution",
-      "description": "FortiWeb Fabric Connector 7.6.x - SQL Injection to Remote Code Execution",
+      "name": "FortiWeb Fabric Connector 7.6.x - SQL Injection (SQLi) to Remote Code Execution (RCE)",
+      "description": "FortiWeb Fabric Connector 7.6.x - SQL Injection (SQLi) to Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52473.txt"
     },
     {
@@ -2816,8 +2842,8 @@
   "CVE-2025-69985": [
     {
       "source": "exploitdb",
-      "name": "FUXA 1.2.8 - Authentication Bypass + RCE Exploit",
-      "description": "FUXA 1.2.8 - Authentication Bypass + RCE Exploit",
+      "name": "FUXA 1.2.8 - Authentication Bypass / Remote Code Execution (RCE) Exploit",
+      "description": "FUXA 1.2.8 - Authentication Bypass / Remote Code Execution (RCE) Exploit",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52544.py"
     },
     {
@@ -2830,24 +2856,24 @@
   "CVE-2025-41373": [
     {
       "source": "exploitdb",
-      "name": "Gandia Integra Total 4.4.2236.1 - SQL Injection",
-      "description": "Gandia Integra Total 4.4.2236.1 - SQL Injection",
+      "name": "Gandia Integra Total 4.4.2236.1 - SQL Injection (SQLi)",
+      "description": "Gandia Integra Total 4.4.2236.1 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52388.c"
     }
   ],
   "CVE-2025-60751": [
     {
       "source": "exploitdb",
-      "name": "GeographicLib v2.5.1 - Stack Buffer Overflow",
-      "description": "GeographicLib v2.5.1 - Stack Buffer Overflow",
+      "name": "GeographicLib 2.5.1 - Stack Buffer Overflow",
+      "description": "GeographicLib 2.5.1 - Stack Buffer Overflow",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52522.py"
     }
   ],
   "CVE-2025-4123": [
     {
       "source": "exploitdb",
-      "name": "Grafana 11.6.0 - SSRF",
-      "description": "Grafana 11.6.0 - SSRF",
+      "name": "Grafana 11.6.0 - Server-Side Request Forgery (SSRF)",
+      "description": "Grafana 11.6.0 - Server-Side Request Forgery (SSRF)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52491.txt"
     },
     {
@@ -2860,24 +2886,24 @@
   "CVE-2025-48868": [
     {
       "source": "exploitdb",
-      "name": "Horilla v1.3 - RCE",
-      "description": "Horilla v1.3 - RCE",
+      "name": "Horilla 1.3 - Remote Code Execution (RCE)",
+      "description": "Horilla 1.3 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52497.py"
     }
   ],
   "CVE-2025-48932": [
     {
       "source": "exploitdb",
-      "name": "Invision Community 4.7.20 - (calendar/view.php) SQL Injection",
-      "description": "Invision Community 4.7.20 - (calendar/view.php) SQL Injection",
+      "name": "Invision Community 4.7.20 - (calendar/view.php) SQL Injection (SQLi)",
+      "description": "Invision Community 4.7.20 - (calendar/view.php) SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52383.txt"
     }
   ],
   "CVE-2025-32370": [
     {
       "source": "exploitdb",
-      "name": "Kentico Xperience 13.0.178 - Cross Site Scripting (XSS)",
-      "description": "Kentico Xperience 13.0.178 - Cross Site Scripting (XSS)",
+      "name": "Kentico Xperience 13.0.178 - Cross-Site Scripting (XSS)",
+      "description": "Kentico Xperience 13.0.178 - Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52290.py"
     }
   ],
@@ -2906,16 +2932,16 @@
   "CVE-2025-7766": [
     {
       "source": "exploitdb",
-      "name": "Lantronix Provisioning Manager 7.10.3 - XML External Entity Injection (XXE)",
-      "description": "Lantronix Provisioning Manager 7.10.3 - XML External Entity Injection (XXE)",
+      "name": "Lantronix Provisioning Manager 7.10.3 - XML External Entity (XXE)",
+      "description": "Lantronix Provisioning Manager 7.10.3 - XML External Entity (XXE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52417.c"
     }
   ],
   "CVE-2025-9140": [
     {
       "source": "exploitdb",
-      "name": "Lingdang CRM 8.6.4.7 - SQL Injection",
-      "description": "Lingdang CRM 8.6.4.7 - SQL Injection",
+      "name": "Lingdang CRM 8.6.4.7 - SQL Injection (SQLi)",
+      "description": "Lingdang CRM 8.6.4.7 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52420.txt"
     }
   ],
@@ -2938,8 +2964,8 @@
   "CVE-2025-50481": [
     {
       "source": "exploitdb",
-      "name": "Mezzanine CMS 6.1.0 - Stored Cross Site Scripting (XSS)",
-      "description": "Mezzanine CMS 6.1.0 - Stored Cross Site Scripting (XSS)",
+      "name": "Mezzanine CMS 6.1.0 - Stored Cross-Site Scripting (XSS)",
+      "description": "Mezzanine CMS 6.1.0 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52385.txt"
     }
   ],
@@ -2954,8 +2980,8 @@
   "CVE-2025-29471": [
     {
       "source": "exploitdb",
-      "name": "Nagios Log Server 2024R1.3.1 - Stored XSS",
-      "description": "Nagios Log Server 2024R1.3.1 - Stored XSS",
+      "name": "Nagios Log Server 2024R1.3.1 - Stored Cross-Site Scripting (XSS)",
+      "description": "Nagios Log Server 2024R1.3.1 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52117.md"
     }
   ],
@@ -2970,16 +2996,16 @@
   "CVE-2025-70336": [
     {
       "source": "exploitdb",
-      "name": "PodcastGenerator 3.2.9 - Stored XSS",
-      "description": "PodcastGenerator 3.2.9 - Stored XSS",
+      "name": "PodcastGenerator 3.2.9 - Stored Cross-Site Scripting (XSS)",
+      "description": "PodcastGenerator 3.2.9 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52677.txt"
     }
   ],
   "CVE-2025-8471": [
     {
       "source": "exploitdb",
-      "name": "projectworlds Online Admission System 1.0 - SQL Injection",
-      "description": "projectworlds Online Admission System 1.0 - SQL Injection",
+      "name": "projectworlds Online Admission System 1.0 - SQL Injection (SQLi)",
+      "description": "projectworlds Online Admission System 1.0 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52398.c"
     }
   ],
@@ -3034,8 +3060,8 @@
   "CVE-2025-40677": [
     {
       "source": "exploitdb",
-      "name": "Summar Employee Portal 3.98.0 - SQL Injection (Authenticated)",
-      "description": "Summar Employee Portal 3.98.0 - SQL Injection (Authenticated)",
+      "name": "Summar Employee Portal 3.98.0 - Authenticated SQL Injection (SQLi)",
+      "description": "Summar Employee Portal 3.98.0 - Authenticated SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52462.txt"
     }
   ],
@@ -3071,14 +3097,6 @@
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52545.py"
     }
   ],
-  "CVE-2025-66571": [
-    {
-      "source": "exploitdb",
-      "name": "UNA CMS 14.0.0-RC - PHP Object Injection",
-      "description": "UNA CMS 14.0.0-RC - PHP Object Injection",
-      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52139.txt"
-    }
-  ],
   "CVE-2025-41228": [
     {
       "source": "exploitdb",
@@ -3090,8 +3108,8 @@
   "CVE-2025-34506": [
     {
       "source": "exploitdb",
-      "name": "WBCE CMS 1.6.3 - Remote Code Execution (RCE) (Authenticated)",
-      "description": "WBCE CMS 1.6.3 - Remote Code Execution (RCE) (Authenticated)",
+      "name": "WBCE CMS 1.6.3 - Authenticated Remote Code Execution (RCE)",
+      "description": "WBCE CMS 1.6.3 - Authenticated Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52132.sh"
     }
   ],
@@ -3134,8 +3152,8 @@
   "CVE-2025-4524": [
     {
       "source": "exploitdb",
-      "name": "WordPress Madara - Local File Inclusion",
-      "description": "WordPress Madara - Local File Inclusion",
+      "name": "WordPress Madara - Local File Inclusion (LFI)",
+      "description": "WordPress Madara - Local File Inclusion (LFI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52487.txt"
     },
     {
@@ -3170,8 +3188,8 @@
   "CVE-2025-10042": [
     {
       "source": "exploitdb",
-      "name": "WordPress Quiz Maker 6.7.0.56 - SQL Injection",
-      "description": "WordPress Quiz Maker 6.7.0.56 - SQL Injection",
+      "name": "WordPress Quiz Maker 6.7.0.56 - SQL Injection (SQLi)",
+      "description": "WordPress Quiz Maker 6.7.0.56 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52465.py"
     }
   ],
@@ -3186,16 +3204,16 @@
   "CVE-2025-62639": [
     {
       "source": "exploitdb",
-      "name": "Xibo CMS 4.3.0 - RCE via SSTI",
-      "description": "Xibo CMS 4.3.0 - RCE via SSTI",
+      "name": "Xibo CMS 4.3.0 - Remote Code Execution (RCE) via Server-Side Template Injection (SSTI)",
+      "description": "Xibo CMS 4.3.0 - Remote Code Execution (RCE) via Server-Side Template Injection (SSTI)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52516.py"
     }
   ],
   "CVE-2025-32429": [
     {
       "source": "exploitdb",
-      "name": "XWiki 14 - SQL Injection via getdeleteddocuments.vm",
-      "description": "XWiki 14 - SQL Injection via getdeleteddocuments.vm",
+      "name": "XWiki 14 - SQL Injection (SQLi) via getdeleteddocuments.vm",
+      "description": "XWiki 14 - SQL Injection (SQLi) via getdeleteddocuments.vm",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52384.c"
     },
     {
@@ -3208,8 +3226,8 @@
   "CVE-2025-31131": [
     {
       "source": "exploitdb",
-      "name": "YesWiki 4.5.1 - Path Traversal (Unauthenticated)",
-      "description": "YesWiki 4.5.1 - Path Traversal (Unauthenticated)",
+      "name": "YesWiki 4.5.1 - Unauthenticated Path Traversal",
+      "description": "YesWiki 4.5.1 - Unauthenticated Path Traversal",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/multiple/webapps/52135.txt"
     },
     {
@@ -3252,32 +3270,32 @@
   "CVE-2025-71179": [
     {
       "source": "exploitdb",
-      "name": "Academy LMS 6.0 - Reflected XSS",
-      "description": "Academy LMS 6.0 - Reflected XSS",
+      "name": "Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
+      "description": "Academy LMS 6.0 - Reflected Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51654.txt"
     }
   ],
   "CVE-2025-46041": [
     {
       "source": "exploitdb",
-      "name": "Anchor CMS 0.12.7 - Stored Cross Site Scripting (XSS)",
-      "description": "Anchor CMS 0.12.7 - Stored Cross Site Scripting (XSS)",
+      "name": "Anchor CMS 0.12.7 - Stored Cross-Site Scripting (XSS)",
+      "description": "Anchor CMS 0.12.7 - Stored Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52327.txt"
     }
   ],
   "CVE-2025-3146": [
     {
       "source": "exploitdb",
-      "name": "Bus Pass Management System 1.0 - 'viewid' SQL Injection",
-      "description": "Bus Pass Management System 1.0 - 'viewid' SQL Injection",
+      "name": "Bus Pass Management System 1.0 - 'viewid' SQL Injection (SQLi)",
+      "description": "Bus Pass Management System 1.0 - 'viewid' SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/50235.txt"
     }
   ],
   "CVE-2025-45542": [
     {
       "source": "exploitdb",
-      "name": "CloudClassroom PHP Project 1.0 - SQL Injection",
-      "description": "CloudClassroom PHP Project 1.0 - SQL Injection",
+      "name": "CloudClassroom PHP Project 1.0 - SQL Injection (SQLi)",
+      "description": "CloudClassroom PHP Project 1.0 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52314.txt"
     }
   ],
@@ -3292,64 +3310,64 @@
   "CVE-2025-49484": [
     {
       "source": "exploitdb",
-      "name": "Joomla JS Jobs plugin 1.4.2 - SQL Injection",
-      "description": "Joomla JS Jobs plugin 1.4.2 - SQL Injection",
+      "name": "Joomla JS Jobs plugin 1.4.2 - SQL Injection (SQLi)",
+      "description": "Joomla JS Jobs plugin 1.4.2 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52373.txt"
     }
   ],
   "CVE-2025-2126": [
     {
       "source": "exploitdb",
-      "name": "JUX Real Estate 3.4.0 - SQL Injection",
-      "description": "JUX Real Estate 3.4.0 - SQL Injection",
+      "name": "JUX Real Estate 3.4.0 - SQL Injection (SQLi)",
+      "description": "JUX Real Estate 3.4.0 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52089.txt"
     }
   ],
   "CVE-2025-51403": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Department Assignment Alias Nick Field",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Department Assignment Alias Nick Field",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Department Assignment Alias Nick Field",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Department Assignment Alias Nick Field",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52381.txt"
     }
   ],
   "CVE-2025-51398": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Facebook Integration Page Name Field",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Facebook Integration Page Name Field",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Facebook Integration Page Name Field",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Facebook Integration Page Name Field",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52378.txt"
     }
   ],
   "CVE-2025-51397": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Operator Surname",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Operator Surname",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Operator Surname",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Operator Surname",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52377.txt"
     }
   ],
   "CVE-2025-51400": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Personal Canned Messages",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Personal Canned Messages",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Personal Canned Messages",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Personal Canned Messages",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52379.txt"
     }
   ],
   "CVE-2025-51396": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Telegram Bot Username",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via Telegram Bot Username",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Telegram Bot Username",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via Telegram Bot Username",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52376.txt"
     }
   ],
   "CVE-2025-51401": [
     {
       "source": "exploitdb",
-      "name": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via the Chat Transfer Function",
-      "description": "LiveHelperChat 4.61 - Stored Cross Site Scripting (XSS) via the Chat Transfer Function",
+      "name": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via the Chat Transfer Function",
+      "description": "LiveHelperChat 4.61 - Stored Cross-Site Scripting (XSS) via the Chat Transfer Function",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52380.txt"
     }
   ],
@@ -3364,14 +3382,14 @@
   "CVE-2025-34031": [
     {
       "source": "exploitdb",
-      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
-      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
-      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
     },
     {
@@ -3384,14 +3402,14 @@
   "CVE-2025-34032": [
     {
       "source": "exploitdb",
-      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
-      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
     },
     {
       "source": "exploitdb",
-      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
-      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting",
+      "name": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
+      "description": "Moodle Jmol Filter 6.1 - Directory Traversal / Cross-Site Scripting (XSS)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/46881.txt"
     },
     {
@@ -3404,16 +3422,24 @@
   "CVE-2025-5553": [
     {
       "source": "exploitdb",
-      "name": "Rail Pass Management System 1.0 - Time-Based SQL Injection",
-      "description": "Rail Pass Management System 1.0 - Time-Based SQL Injection",
+      "name": "Rail Pass Management System 1.0 - Time-Based SQL Injection (SQLi)",
+      "description": "Rail Pass Management System 1.0 - Time-Based SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/51790.txt"
+    }
+  ],
+  "CVE-2025-66571": [
+    {
+      "source": "exploitdb",
+      "name": "UNA CMS 14.0.0-RC - PHP Object Injection",
+      "description": "UNA CMS 14.0.0-RC - PHP Object Injection",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52139.txt"
     }
   ],
   "CVE-2025-62360": [
     {
       "source": "exploitdb",
-      "name": "WeGIA 3.5.0 - SQL Injection",
-      "description": "WeGIA 3.5.0 - SQL Injection",
+      "name": "WeGIA 3.5.0 - SQL Injection (SQLi)",
+      "description": "WeGIA 3.5.0 - SQL Injection (SQLi)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/php/webapps/52483.sh"
     }
   ],
@@ -3428,8 +3454,8 @@
   "CVE-2025-0868": [
     {
       "source": "exploitdb",
-      "name": "DocsGPT 0.12.0 - Remote Code Execution",
-      "description": "DocsGPT 0.12.0 - Remote Code Execution",
+      "name": "DocsGPT 0.12.0 - Remote Code Execution (RCE)",
+      "description": "DocsGPT 0.12.0 - Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/python/webapps/52145.py"
     },
     {
@@ -3516,6 +3542,12 @@
     }
   ],
   "CVE-2025-27751": [
+    {
+      "source": "exploitdb",
+      "name": "Microsoft Excel LTSC 2024 - Remote Code Execution (RCE)",
+      "description": "Microsoft Excel LTSC 2024 - Remote Code Execution (RCE)",
+      "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/local/52337.py"
+    },
     {
       "source": "exploitdb",
       "name": "Microsoft Excel Use After Free - Local Code Execution",
@@ -3702,16 +3734,16 @@
   "CVE-2025-33073": [
     {
       "source": "exploitdb",
-      "name": "Windows 11 SMB Client - Privilege Escalation & Remote Code Execution (RCE)",
-      "description": "Windows 11 SMB Client - Privilege Escalation & Remote Code Execution (RCE)",
+      "name": "Windows 11 SMB Client - Privilege Escalation / Remote Code Execution (RCE)",
+      "description": "Windows 11 SMB Client - Privilege Escalation / Remote Code Execution (RCE)",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52330.py"
     }
   ],
   "CVE-2025-24071": [
     {
       "source": "exploitdb",
-      "name": "Windows File Explorer Windows 10 Pro x64 - TAR Extraction",
-      "description": "Windows File Explorer Windows 10 Pro x64 - TAR Extraction",
+      "name": "Windows File Explorer Windows 10 Pro (x64) - TAR Extraction",
+      "description": "Windows File Explorer Windows 10 Pro (x64) - TAR Extraction",
       "file": "https://gitlab.com/exploit-database/exploitdb/-/raw/main/exploits/windows/remote/52325.py"
     },
     {
@@ -6121,6 +6153,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-64095.yaml"
     }
   ],
+  "CVE-2025-64179": [
+    {
+      "source": "nuclei",
+      "name": "lakeFS < 1.71.0 - Unauthenticated Usage Report Disclosure",
+      "description": "lakeFS before 1.71.0 does not require authentication on the /api/v1/usage-report/summary endpoint. The API auth middleware forwards requests without credentials to the handler, and the handler returns the installation ID and monthly API usage counts without checking for a user. Usage reporting is enabled by default.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-64179.yaml"
+    }
+  ],
   "CVE-2025-64500": [
     {
       "source": "nuclei",
@@ -6183,6 +6223,14 @@
       "name": "Signal K Server <= 2.18.0 - Information Disclosure",
       "description": "Signal K Server versions up to and including 2.18.0 expose the /skServer/serialports, /skServer/availablePaths, and /skServer/hasAnalyzer endpoints without authentication. These routes were missing from the authentication middleware configuration, letting any unauthenticated user retrieve the full Signal K data schema, the list of connected serial devices, and whether traffic analyzer tools are installed. This template fingerprints the server via the public /signalk discovery endpoint and flags builds older than the fixed 2.19.0 release.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-68273.yaml"
+    }
+  ],
+  "CVE-2025-68461": [
+    {
+      "source": "nuclei",
+      "name": "Roundcube Webmail < 1.5.12 / 1.6.x < 1.6.12 - Cross-Site Scripting",
+      "description": "Roundcube Webmail before 1.5.12 and 1.6.x before 1.6.12 is prone to a stored Cross-Site Scripting (XSS) vulnerability via the animate tag in an SVG document. The rcube_washtml sanitizer blocks animate elements targeting href but fails to normalize namespace-prefixed attribute names such as xlink:href, allowing a javascript: payload in an HTML email to reach the victim's browser.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2025/CVE-2025-68461.yaml"
     }
   ],
   "CVE-2025-68493": [
