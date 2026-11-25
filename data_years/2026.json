@@ -131,6 +131,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/gather/zimbra_ews_mailbox_access.rb"
     }
   ],
+  "CVE-2026-119618": [
+    {
+      "source": "metasploit",
+      "name": "Apache HTTP Server mod_http2 CVE-2026-119618 Version Scanner",
+      "description": "Detection-only scanner for CVE-2026-119618, a race condition in Apache\n          httpd mod_http2 (versions 2.4.55 through 2.4.70) that leads to\n          unauthenticated remote code execution on servers with HTTP/2 enabled\n          (fixed in 2.4.71). This module reads the Server banner, checks whether the\n          reported Apache version falls in the affected range, and reports whether\n          HTTP/2 is advertised. It performs NO exploitation and sends only a benign\n          GET request.\n\n          Caveat: Linux distributions backport the fix WITHOUT changing the version\n          string, so a banner in range is a LEAD TO VERIFY, not proof of exposure.\n          mod_http2 can also be enabled without advertising h2 on a plaintext\n          response; confirm HTTP/2 on TLS via ALPN.",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/auxiliary/scanner/http/apache_mod_http2_cve_2026_119618.rb"
+    }
+  ],
   "CVE-2026-3055": [
     {
       "source": "metasploit",
@@ -2625,6 +2633,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-109991.yaml"
     }
   ],
+  "CVE-2026-110016": [
+    {
+      "source": "nuclei",
+      "name": "Data Tables Generator by Supsystic < 1.15.8 - Unauthenticated Table Content Disclosure",
+      "description": "Data Tables Generator by Supsystic before 1.15.8 lets unauthenticated visitors use a nonce published on every front-end page to call getPageRows for any table ID, including tables that were never published on the site; the action lacks a table-specific authorization check.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-110016.yaml"
+    }
+  ],
   "CVE-2026-110355": [
     {
       "source": "nuclei",
@@ -2849,6 +2865,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116817.yaml"
     }
   ],
+  "CVE-2026-117566": [
+    {
+      "source": "nuclei",
+      "name": "EasyImages2.0 <= 2.8.6 - Unauthenticated Path Traversal in app/down.php",
+      "description": "EasyImages2.0 through 2.8.6 joins the unauthenticated dw or history parameter in app/down.php to a relative path without checking that it remains inside the configured image storage directory, allowing files with permitted image extensions to be downloaded through path traversal.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-117566.yaml"
+    }
+  ],
   "CVE-2026-11801": [
     {
       "source": "nuclei",
@@ -2945,6 +2969,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120409.yaml"
     }
   ],
+  "CVE-2026-120413": [
+    {
+      "source": "nuclei",
+      "name": "Yoast SEO < 28.9 - Unauthenticated Private Content Disclosure via Headless REST Head Endpoint",
+      "description": "Yoast SEO < 28.9 contains an information disclosure caused by the headless REST get_head endpoint not checking whether the static front page is publicly viewable, letting unauthenticated attackers read the title, excerpt, timestamps and schema data of a private, draft or scheduled front page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120413.yaml"
+    }
+  ],
   "CVE-2026-120442": [
     {
       "source": "nuclei",
@@ -3017,6 +3049,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123655.yaml"
     }
   ],
+  "CVE-2026-123698": [
+    {
+      "source": "nuclei",
+      "name": "Security For WooCommerce <= 1.0.16 - Unauthenticated Settings Disclosure",
+      "description": "Security For WooCommerce through 1.0.16 registers its options REST route without an authorization check, allowing unauthenticated clients to retrieve the plugin's stored settings, including configured secret keys and the hidden login URL.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-123698.yaml"
+    }
+  ],
   "CVE-2026-123751": [
     {
       "source": "nuclei",
@@ -3055,6 +3095,14 @@
       "name": "ChatWiki < 2.10.0 - Cross-Tenant Document Page Disclosure",
       "description": "ChatWiki before 2.10.0 exposes /manage/getLibRawFileOnePage without authentication and trusts a caller-supplied admin_user_id, allowing document-page access across tenants.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124027.yaml"
+    }
+  ],
+  "CVE-2026-124426": [
+    {
+      "source": "nuclei",
+      "name": "Craft CMS 5.0.0 - 5.11.1 - Unauthenticated GraphQL Sites-Scope Bypass via Localized Field Eager-Loading",
+      "description": "Craft CMS 5.0.0 through 5.11.1 contains a missing authorization caused by GraphQL eager-loading\nplans not being restricted to the schema's Sites scope, letting unauthenticated attackers read\ncontent of out-of-scope sites through the localized field, exploit requires a multi-site install\nwith a public GraphQL schema.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-124426.yaml"
     }
   ],
   "CVE-2026-124450": [
@@ -3145,6 +3193,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-129131.yaml"
     }
   ],
+  "CVE-2026-129243": [
+    {
+      "source": "nuclei",
+      "name": "GeoServer Service Security Bypass via Prefixed Service Name (x/WFS)",
+      "description": "A mismatch exists between service dispatch and service-security rule matching in GeoServer. When a request uses a specially prefixed service name (such as x/WFS), the dispatcher strips the prefix (x/) and routes the operation, while service security continues matching rules against the unstripped x/WFS string. This allows an attacker to invoke restricted operations while evading service-level security rules intended for the standard service name. Under default rules, anonymous users can reach WFS stored-query creation and deletion operations, though layer and data-security rules remain enforced.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-129243.yaml"
+    }
+  ],
   "CVE-2026-129448": [
     {
       "source": "nuclei",
@@ -3233,12 +3289,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-131720.yaml"
     }
   ],
+  "CVE-2026-133469": [
+    {
+      "source": "nuclei",
+      "name": "XO (Xen Orchestra) - Authentication Bypass",
+      "description": "Xen Orchestra versions before 6.9.2 and 6.10.1 have an authentication bypass. The REST API parses the authenticationToken cookie improperly, so a crafted cookie lets an attacker authenticate as the first token owner.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-133469.yaml"
+    }
+  ],
   "CVE-2026-133968": [
     {
       "source": "nuclei",
       "name": "monailabel - Directory Traversal",
       "description": "MONAI Label (MONAILabel) versions up to and including 0.8.5 have a directory traversal flaw. The image parameter of the PUT /datastore/image endpoint is not validated properly, so a remote attacker can craft a request to execute arbitrary code.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-133968.yaml"
+    }
+  ],
+  "CVE-2026-134748": [
+    {
+      "source": "nuclei",
+      "name": "Members <= 3.3.1 - Unauthenticated Private Site Bypass via Login-Path Exemption Query-Var Override",
+      "description": "Members plugin <= 3.3.1 contains an authentication bypass caused by the Private Site login-page\nexemption matching only the request path, letting unauthenticated attackers read content of a\nprivate site via query-var overrides on the front-end login URL, exploit requires Private Site\nmode and a front-end login page.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-134748.yaml"
     }
   ],
   "CVE-2026-1357": [
@@ -3913,6 +3985,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25231.yaml"
     }
   ],
+  "CVE-2026-25242": [
+    {
+      "source": "nuclei",
+      "name": "Gogs <= 0.13.3 - Unauthenticated Attachment Upload",
+      "description": "Gogs is an open source self-hosted Git service. Versions 0.13.4 and below expose unauthenticated file upload endpoints by default. When the global RequireSigninView setting is disabled (default), any remote user can upload arbitrary files to the server via /releases/attachments and /issues/attachments. This enables the instance to be abused as a public file host, potentially leading to disk exhaustion, content hosting, or delivery of malware. CSRF tokens do not mitigate this attack due to same-origin cookie issuance.\nRemote unauthenticated users can reach the attachment upload handler and store arbitrary files.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25242.yaml"
+    }
+  ],
   "CVE-2026-25512": [
     {
       "source": "nuclei",
@@ -4063,6 +4143,14 @@
       "name": "Discourse <=2026.2.0 - Hidden Post Revision Disclosure via revert_to Authorization Bypass",
       "description": "Discourse versions before 2026.1.2, 2026.2.1, and 2026.3.0-latest.1 contain an authorization bypass in PostsController#display_post. The controller calls post.revert_to(params[:version]) directly whenever a version query parameter is present, without checking whether the corresponding PostRevision is hidden or whether the caller has permission to view edit history. By requesting a post at its publicly known version number via GET /posts/:id.json?version=<public_version>, the next PostRevision's stored modifications are applied unconditionally. If staff have hidden that revision, its pre-edit content is returned to an unauthenticated caller. On patched installs the same request is rejected with 403 because guardian.ensure_can_see!(post_revision) is evaluated first.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27454.yaml"
+    }
+  ],
+  "CVE-2026-27493": [
+    {
+      "source": "nuclei",
+      "name": "n8n < 1.123.22 - Unauthenticated Expression Injection via Form Node",
+      "description": "n8n before 1.123.22 (and 2.x before 2.9.3 / 2.10.1) contains a second-order expression injection in Form nodes. When a Form node HTML field interpolates a submitted value, the already-resolved value is scanned for expressions again and evaluated, so a submitted value such as {{1337*7}} is evaluated by the server. Point the scan target at a published form URL (for example http://host/form/<id>).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-27493.yaml"
     }
   ],
   "CVE-2026-27542": [
@@ -4353,6 +4441,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30965.yaml"
     }
   ],
+  "CVE-2026-30975": [
+    {
+      "source": "nuclei",
+      "name": "Sonarr < 4.0.16.2942 - X-Forwarded-For Authentication Bypass",
+      "description": "Sonarr before 4.0.16.2942 clears the trusted proxy lists of the ASP.NET forwarded headers middleware, so the client address is taken from any X-Forwarded-For header. When Authentication Required is set to Disabled for Local Addresses, the UI authorization handler treats a spoofed loopback or private address as a local client and serves the protected web interface without login. Version 4.0.16.2942 trusts forwarded headers only from loopback and private networks.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-30975.yaml"
+    }
+  ],
   "CVE-2026-31807": [
     {
       "source": "nuclei",
@@ -4401,12 +4497,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32230.yaml"
     }
   ],
+  "CVE-2026-32248": [
+    {
+      "source": "nuclei",
+      "name": "Parse Server < 8.6.38 - Unauthenticated AuthData Non-String Id Bypass",
+      "description": "Parse Server before 8.6.38 and 9.6.0-alpha.12 fails to enforce that the authentication data identifier is a string before using it in a database query. An unauthenticated attacker can send a signup request to /parse/users with a non-string authData identifier for a provider that does not validate the identifier format, such as the default anonymous provider, causing the server to accept the request and return a valid session token. The Parse Application Id is required to reach the signup endpoint and defaults to the common value myAppId.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32248.yaml"
+    }
+  ],
   "CVE-2026-32255": [
     {
       "source": "nuclei",
       "name": "Kan <= 0.5.4 - Server-Side Request Forgery",
       "description": "Kan, an open-source project management tool (Trello alternative), versions 0.5.4 and below are vulnerable to an unauthenticated Server-Side Request Forgery in the /api/download/attatchment endpoint. The endpoint passes the attacker-controlled `url` query parameter straight to a server-side fetch() without validating the destination host, allowing an unauthenticated attacker to make the server issue arbitrary outbound HTTP requests and read back the full response body.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32255.yaml"
+    }
+  ],
+  "CVE-2026-32275": [
+    {
+      "source": "nuclei",
+      "name": "Tautulli <= 2.16.1 - Cross-Site Scripting via JSONP Callback",
+      "description": "Tautulli through 2.16.1 contains an unauthenticated reflected cross-site scripting vulnerability in its API v2 endpoint. The callback parameter of JSONP-enabled commands such as docs is reflected without validation into an application/javascript response and does not require an API key. Fixed releases validate the callback name and reject non-identifier values.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32275.yaml"
     }
   ],
   "CVE-2026-32475": [
@@ -4439,6 +4551,22 @@
       "name": "Glances < 4.5.2 - Information Disclosure",
       "description": "Glances before 4.5.2 exposes the full command line arguments namespace through the unauthenticated /api/4/args REST API endpoint when it runs without --password, which is the default. The response includes the SNMP community string, SNMP v3 user and authentication key, the Glances username, the password hash when one is configured, and the configuration file path.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32609.yaml"
+    }
+  ],
+  "CVE-2026-32760": [
+    {
+      "source": "nuclei",
+      "name": "File Browser <= 2.61.2 - Self-Registration Privilege Escalation to Administrator",
+      "description": "File Browser through 2.61.2 is affected by an improper privilege management vulnerability in its signup handler. When self-registration is enabled and the default user permissions include the admin flag, the signup handler applies the default permissions without stripping admin, so any unauthenticated user who registers via /api/signup is granted full administrator access.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32760.yaml"
+    }
+  ],
+  "CVE-2026-32767": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan <= 3.6.0 - Reader Role Raw SQL via fullTextSearchBlock",
+      "description": "SiYuan 3.6.0 and below pass the query to /api/search/fullTextSearchBlock as a raw SQL statement when method=2, without the administrator checks enforced on /api/query/sql. Any Reader-role session, including anonymous visitors of a publish service with no access authentication, can run arbitrary SQL. Fixed in 3.6.1.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-32767.yaml"
     }
   ],
   "CVE-2026-3296": [
@@ -4559,6 +4687,22 @@
       "name": "Ech0 < 4.2.0 - Unauthenticated User List Disclosure",
       "description": "Ech0 before 4.2.0 registers GET /api/allusers in the public router group, so the user list handler runs without authentication. Unauthenticated remote attackers can enumerate every non-owner account and read its username, email address, admin flag, avatar and locale.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33638.yaml"
+    }
+  ],
+  "CVE-2026-33669": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan < 3.6.2 - Publishing Service Unauthenticated Document Reading",
+      "description": "SiYuan before 3.6.2 exposes /api/file/readDir and /api/block/getChildBlocks on the publishing service without authorization. Document IDs are enumerated with readDir and then document content is read with getChildBlocks. Fixed releases reject the requests with 403. Point the template at the publishing service port (default 6808).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33669.yaml"
+    }
+  ],
+  "CVE-2026-33670": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan < 3.6.2 - Publishing Service Unauthenticated Directory Listing",
+      "description": "SiYuan before 3.6.2 exposes /api/file/readDir on the publishing service without authorization, so any visitor can list the workspace data directory and notebook contents. Fixed releases reject the request with 403. Point the template at the publishing service port (default 6808).\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-33670.yaml"
     }
   ],
   "CVE-2026-33868": [
@@ -4831,6 +4975,14 @@
       "name": "Fortinet FortiSandbox - Path Traversal Authentication Bypass",
       "description": "A path traversal vulnerability (CWE-24) in the FortiSandbox JRPC API is_valid_session() function allows an unauthenticated attacker to bypass authentication. The user-supplied session value is passed to os.path.join() without validation. A session of \"../../tmp/\" resolves to /tmp/, which always exists and has a recent mtime, so the session check succeeds. This grants unauthenticated access to read-only JRPC methods such as sys/status (version, hostname, serial number, and resource usage). Affects FortiSandbox 4.4.0 through 4.4.8 and 5.0.0 through 5.0.5. Fixed in 4.4.9 and 5.0.6 (FG-IR-26-112). The patched is_valid_session() accepts only 32-character hexadecimal session IDs.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39813.yaml"
+    }
+  ],
+  "CVE-2026-39938": [
+    {
+      "source": "nuclei",
+      "name": "Cacti <= 1.2.30 - Unauthenticated Local File Inclusion via graph_theme",
+      "description": "Cacti through 1.2.30 builds the rrdtheme.php include path in lib/rrd.php directly from the graph_theme request parameter without validating it against the installed themes. graph_image.php (reachable with guest access) therefore includes include/themes/<graph_theme>/rrdtheme.php with attacker-controlled path segments. The non-default midwinter theme is requested with a trailing path segment (midwinter/.) so that only an unpatched install, which concatenates the value verbatim, resolves and includes it. Fixed in 1.2.31 by cacti_validate_theme(), which applies basename() and an allowlist of installed themes.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-39938.yaml"
     }
   ],
   "CVE-2026-40105": [
@@ -5649,6 +5801,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53753.yaml"
     }
   ],
+  "CVE-2026-53754": [
+    {
+      "source": "nuclei",
+      "name": "Crawl4AI - Server Side Request Forgery",
+      "description": "Crawl4AI < 0.8.8 contains a server-side request forgery caused by incomplete CIDR blocklist validation in Docker API server, letting unauthenticated attackers access internal services and cloud metadata endpoints, exploit requires no credentials.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-53754.yaml"
+    }
+  ],
   "CVE-2026-53755": [
     {
       "source": "nuclei",
@@ -5855,6 +6015,14 @@
       "name": "VvvebJs <= 2.0.5 - Cross-Site Scripting",
       "description": "Givanz Vvvebjs <= 2.0.5 contains a stored XSS caused by manipulation of the \"uploadAllowExtensions\" argument in upload.php File Upload Endpoint, letting remote attackers execute scripts, exploit requires crafted input.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-5615.yaml"
+    }
+  ],
+  "CVE-2026-56164": [
+    {
+      "source": "nuclei",
+      "name": "Microsoft Office SharePoint - Broken Access Control",
+      "description": "Microsoft Office SharePoint contains a broken access control caused by missing authentication for a critical function, letting unauthorized attackers elevate privileges over a network, exploit requires no special privileges.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-56164.yaml"
     }
   ],
   "CVE-2026-56265": [
@@ -6071,6 +6239,14 @@
       "name": "AstrBot <= 4.22.1 - Command Injection",
       "description": "AstrBot versions up to and including 4.22.1 contain a command injection vulnerability in the MCP server configuration endpoint. The /api/tools/mcp/add endpoint accepts arbitrary command and args fields that are passed directly to subprocess execution during the connection test, without any validation or allowlist enforcement. An attacker with dashboard access can execute arbitrary system commands with AstrBot process privileges.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6118.yaml"
+    }
+  ],
+  "CVE-2026-61426": [
+    {
+      "source": "nuclei",
+      "name": "PraisonAI AgentOS < 1.7.3 - Missing Authentication",
+      "description": "The AgentOS server in the PraisonAI TypeScript package (npm praisonai) before 1.7.3 binds to 0.0.0.0 with an empty API key by default, and the API key middleware is only registered when a key is configured. A server started with the documented quickstart exposes GET /api/agents, which discloses agent names, roles and instructions (system prompts), and POST /api/chat, which invokes agents, to any unauthenticated network client.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-61426.yaml"
     }
   ],
   "CVE-2026-61511": [
@@ -6329,6 +6505,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-6875.yaml"
     }
   ],
+  "CVE-2026-69083": [
+    {
+      "source": "nuclei",
+      "name": "SiYuan <= 3.7.2 - Asset Content Search SQL Injection",
+      "description": "SiYuan before 3.7.3 contains a SQL injection in the /api/search/fullTextSearchAssetContent endpoint. The handler is guarded by CheckAuth only, so the anonymous publish account and publish RoleReader tokens can reach it. With method 3 (regular expression search) the expression is concatenated into a REGEXP clause without quote escaping and runs on the read-write asset-content database, and method 2 (SQL search) runs client-supplied SQL without an administrator check. Exploitation requires the publish service with publish authentication disabled or a publish RoleReader token.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-69083.yaml"
+    }
+  ],
   "CVE-2026-69084": [
     {
       "source": "nuclei",
@@ -6473,12 +6657,28 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-76904.yaml"
     }
   ],
+  "CVE-2026-77244": [
+    {
+      "source": "nuclei",
+      "name": "mcp-atlassian - Unauthenticated Global Credential Fallback",
+      "description": "mcp-atlassian before 0.22.0 permits requests without an Authorization header on its streamable HTTP transport when OAuth proxy authentication is not configured, and tool handlers can fall back to the operator's global Jira or Confluence credentials. Version 0.22.0 disables this fallback by default, but setting ALLOW_GLOBAL_CRED_FALLBACK=true retains the same unauthenticated exposure.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77244.yaml"
+    }
+  ],
   "CVE-2026-77318": [
     {
       "source": "nuclei",
       "name": "Jupyter MCP Server <= 1.0.2 - Unauthenticated Management Routes",
       "description": "The standalone `streamable-http` mode of datalayer/jupyter-mcp-server requires `MCP_TOKEN` for the `/mcp` endpoint, but the custom management routes mounted on the same application (`/api/connect`, `/api/stop`, `/api/healthz`) do not enforce that token. An unauthenticated network caller can invoke `PUT /api/connect` to point the MCP server at an attacker-controlled Jupyter backend and reset the server context, or `DELETE /api/stop` to disrupt it, without any credentials.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77318.yaml"
+    }
+  ],
+  "CVE-2026-77606": [
+    {
+      "source": "nuclei",
+      "name": "Semantic MediaWiki <= 7.1.0 - Cross-Site Scripting",
+      "description": "Semantic MediaWiki 7.1.0 and earlier contains a reflected cross-site scripting vulnerability in Special:Ask. With format=table and headers=plain, TableResultPrinter takes the column label as raw wikitext and HtmlTable writes it into the th element without escaping, so an unauthenticated attacker can inject arbitrary HTML and script through the mainlabel parameter.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77606.yaml"
     }
   ],
   "CVE-2026-77608": [
@@ -6495,6 +6695,14 @@
       "name": "Semantic MediaWiki <= 7.1.0 - Reflected Cross-Site Scripting via Query Debug Output",
       "description": "Semantic MediaWiki 7.1.0 and earlier contains a reflected cross-site scripting vulnerability in the query debug output. With the debug request parameter on Special:Ask, DebugFormatter echoes the ASK query string and the generated SQL as raw HTML, escaping only the opening square bracket, so an unauthenticated attacker can inject arbitrary HTML and script through a query value.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77610.yaml"
+    }
+  ],
+  "CVE-2026-77616": [
+    {
+      "source": "nuclei",
+      "name": "Semantic MediaWiki 7.0.0-7.1.0 - Cross-Site Scripting",
+      "description": "Semantic MediaWiki 7.0.0 through 7.1.0 contains a reflected cross-site scripting vulnerability in Special:Ask. The cursor pagination token is an unsigned base64url JSON blob. When its sort_prop value does not match the requested sort, QueryCreator writes that value into a raw query error string, and ErrorWidget prints it with Html::errorBox without escaping, so an unauthenticated attacker can inject arbitrary HTML and script.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-77616.yaml"
     }
   ],
   "CVE-2026-77806": [
@@ -7055,6 +7263,14 @@
       "name": "WP Ticket <= 6.0.4 - SQL Injection",
       "description": "WP Ticket (wp-ticket) for WordPress through 6.0.4 allows unauthenticated SQL injection via front-end search due to unsanitized use of the \"s\" parameter in emd_author_search_results(). Exploitation requires at least one guest ticket. Fixed in 6.0.5.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-9848.yaml"
+    }
+  ],
+  "CVE-2026-114713": [
+    {
+      "source": "nuclei",
+      "name": "UnrealIRCd - Command Injection",
+      "description": "UnrealIRCd < 6.2.7.1 contains a command injection caused by improper escaping of IRCv3 \"label\" message tag in labeled-response module, letting any user on linked servers execute server-to-server commands with server authority, exploit requires network with two or more linked servers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/network/cves/2026/CVE-2026-114713.yaml"
     }
   ],
   "CVE-2026-23829": [
