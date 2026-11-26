@@ -3025,6 +3025,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120735.yaml"
     }
   ],
+  "CVE-2026-12122": [
+    {
+      "source": "nuclei",
+      "name": "Kirki - Unauthenticated Symbol Metadata Disclosure",
+      "description": "Vulnerable Kirki releases let unauthenticated visitors call get-single-symbol without an Editor-Preview-Token because the header check runs only when that header is present. The handler returns builder metadata and rendered HTML for a supplied kirki_symbol post ID, including unpublished drafts. Official Kirki 6.0.11 source requires a valid token, although the vulnerability advisory lists versions through 6.0.11 as affected.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12122.yaml"
+    }
+  ],
   "CVE-2026-121853": [
     {
       "source": "nuclei",
