@@ -812,8 +812,8 @@
     },
     {
       "source": "nuclei",
-      "name": "GitLab CE/EE < 19.2.8 / 19.3.5 / 19.4.2 - Unauthenticated RCE via Onigmo Integer Overflow",
-      "description": "GitLab CE/EE 19.2.0\u201319.2.7, 19.3.0\u201319.3.4, and 19.4.0\u201319.4.1 contain a remote code execution caused by insufficient regular expression validation in CI/CD configuration, letting unauthenticated users execute arbitrary code remotely, exploit requires crafted regex in CI/CD config\n",
+      "name": "GitLab CE/EE 19.2, 19.3, and 19.4 - CI/CD Regex Integer Overflow (Version Detection)",
+      "description": "GitLab CE/EE 19.2.0 through 19.2.7, 19.3.0 through 19.3.4, and 19.4.0 through 19.4.1 contain an integer overflow in the Onigmo regular expression compiler used by CI/CD configuration validation. A specially crafted expression in an attacker-controlled project branch can lead to remote code execution when the public project lint endpoint processes it. This authenticated template identifies affected GitLab versions through /api/v4/version and does not execute the exploit.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-97229.yaml"
     }
   ],
@@ -2585,6 +2585,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-10768.yaml"
     }
   ],
+  "CVE-2026-107844": [
+    {
+      "source": "nuclei",
+      "name": "Contao - Path Traversal via ImagesController",
+      "description": "Contao 5.0.0 through 5.3.49 and 5.4.0 through 5.7.11 allows unauthenticated path traversal through the /assets/images/{path} route because ImagesController does not verify that a normalized path remains within the image directory. A crafted URL can retrieve project files with an allowed image extension from outside the public document root.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-107844.yaml"
+    }
+  ],
   "CVE-2026-108123": [
     {
       "source": "nuclei",
@@ -3009,6 +3017,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-1207.yaml"
     }
   ],
+  "CVE-2026-120735": [
+    {
+      "source": "nuclei",
+      "name": "LatePoint <= 5.7.7 - Unauthenticated Invoice Disclosure via Access-Key Condition Injection",
+      "description": "LatePoint through 5.7.7 treats the unauthenticated invoices__view_by_key key value \"IS NOT NULL\" as a SQL condition rather than an access key, causing the public route to render the first invoice with a non-null access key; version 5.7.8 binds the string as a literal value.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-120735.yaml"
+    }
+  ],
   "CVE-2026-121853": [
     {
       "source": "nuclei",
@@ -3183,6 +3199,14 @@
       "name": "All-in-One WP Migration and Backup < 7.106 - Arbitrary Log File Write",
       "description": "The All-in-One WP Migration and Backup WordPress plugin before 7.106 does not properly sanitise a user-supplied value before using it to build a file path. This makes it possible for unauthenticated attackers to create or append a log file in arbitrary locations outside the intended storage directory.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-12898.yaml"
+    }
+  ],
+  "CVE-2026-129014": [
+    {
+      "source": "nuclei",
+      "name": "Frontend Admin by DynamiApps <= 3.30.2 - Unauthenticated Arbitrary Object Pointer via change_form AJAX",
+      "description": "Frontend Admin by DynamiApps through 3.30.2 lets an unauthenticated caller with a public form nonce supply the object ID used by the change_form AJAX handler without checking permission to access that object. The handler renders the form bound to the chosen post, user, or term; version 3.30.4 adds an authorization check before doing so.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-129014.yaml"
     }
   ],
   "CVE-2026-129131": [
@@ -3911,6 +3935,14 @@
       "name": "SmarterTools SmarterMail - Admin Password Reset",
       "description": "Detected a SmartMail admin password reset vulnerability by sending a POST request to the `/api/v1/auth/force-reset-password` endpoint, indicating that administrative password resets could potentially be triggered without proper authorization.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-23760.yaml"
+    }
+  ],
+  "CVE-2026-24124": [
+    {
+      "source": "nuclei",
+      "name": "Dragonfly Manager < 2.4.1 - Missing Authentication on Jobs API",
+      "description": "Dragonfly Manager before 2.4.1 registers the /api/v1/jobs REST route group without the JWT middleware and RBAC checks that protect the other manager API groups. Unauthenticated users can list, read, create, update and delete preheat and other jobs.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-24124.yaml"
     }
   ],
   "CVE-2026-24128": [
@@ -4849,6 +4881,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-35037.yaml"
     }
   ],
+  "CVE-2026-3514": [
+    {
+      "source": "nuclei",
+      "name": "Prefect Server < 3.6.22 - Authentication Bypass via Health Check Path Suffix",
+      "description": "Prefect Server before 3.6.22 contains an authentication bypass caused by the API authentication middleware exempting every GET request whose URL path ends with \"health\" or \"ready\". When PREFECT_SERVER_API_AUTH_STRING is set, unauthenticated attackers can read variables, flows, work pools, work queues and deployments whose names end with those suffixes.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-3514.yaml"
+    }
+  ],
   "CVE-2026-35273": [
     {
       "source": "nuclei",
@@ -5321,6 +5361,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-42897.yaml"
     }
   ],
+  "CVE-2026-43644": [
+    {
+      "source": "nuclei",
+      "name": "podinfo <= 6.11.2 - Cross-Site Scripting",
+      "description": "podinfo through 6.11.2 contains a reflected XSS in the /echo and /api/echo endpoints. The echo handler writes the request body back with status 202 and sets no Content-Type or X-Content-Type-Options header, so Go's content sniffing serves a body that starts with HTML or script markup as text/html.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-43644.yaml"
+    }
+  ],
   "CVE-2026-44177": [
     {
       "source": "nuclei",
@@ -5351,6 +5399,14 @@
       "name": "MISP < 2.5.37 - SQL Injection",
       "description": "MISP before 2.5.37 is vulnerable to SQL injection via the order parameter in EventsController. The POST body order value is passed directly into ORDER BY clauses without validation.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44381.yaml"
+    }
+  ],
+  "CVE-2026-44478": [
+    {
+      "source": "nuclei",
+      "name": "Hoppscotch < 2026.4.0 - Onboarding Config Disclosure via Empty Recovery Token",
+      "description": "Hoppscotch self-hosted backend versions 2025.7.0 through 2026.3.x can expose onboarding configuration when the stored recovery token is empty, as occurs after some environment-based setups. The unauthenticated GET /v1/onboarding/config?token= request then passes the empty-token comparison and returns configured authentication and mail settings.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-44478.yaml"
     }
   ],
   "CVE-2026-44551": [
@@ -5711,6 +5767,14 @@
       "name": "GEO my WP <= 4.5.5 - Unauthenticated SQL Injection",
       "description": "The GEO my WP plugin for WordPress up to and including 4.5.5 does not sanitise the swlatlng and nelatlng map boundary parameters of its locator search form. The values are split on a comma and concatenated directly into the SQL query, allowing unauthenticated attackers to run blind SQL queries and extract arbitrary database contents.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52715.yaml"
+    }
+  ],
+  "CVE-2026-52769": [
+    {
+      "source": "nuclei",
+      "name": "YesWiki 4.6.2 - 4.6.5 - Unauthenticated Server-Side Request Forgery",
+      "description": "YesWiki versions 4.6.2 through 4.6.5 contain an unauthenticated server-side request forgery in the ActivityPub inbox of Bazar forms. The public POST /api/forms/{formId}/actor/inbox route passes the Signature header to HttpSignatureService::verifySignature(), which sends a GET request to the attacker-controlled keyId URL before any signature or URL validation. Exploitation requires ActivityPub to be enabled on at least one Bazar form.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-52769.yaml"
     }
   ],
   "CVE-2026-52773": [
@@ -6193,6 +6257,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59309.yaml"
     }
   ],
+  "CVE-2026-59310": [
+    {
+      "source": "nuclei",
+      "name": "VMware vCenter Server - Remote Code Execution",
+      "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code. Unsanitized syslog HOSTNAME / APP-NAME values are interpolated into rsyslog dynafile paths, allowing arbitrary file writes as root. The same fixed builds also remediate CVE-2026-59309. This template identifies vulnerable builds from the unauthenticated vSphere SOAP API version information. All 7.0 builds are reported because no public fixed 7.0 build exists, so hosts with a private extended-support patch may still match.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-59310.yaml"
+    }
+  ],
   "CVE-2026-59509": [
     {
       "source": "nuclei",
@@ -6377,6 +6449,22 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63445.yaml"
     }
   ],
+  "CVE-2026-63520": [
+    {
+      "source": "nuclei",
+      "name": "Microsoft Office SharePoint - Remote Code Execution",
+      "description": "Microsoft Office SharePoint contains a remote code execution caused by improper input validation, letting unauthorized attackers execute code over a network, exploit requires no special conditions.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63520.yaml"
+    }
+  ],
+  "CVE-2026-63644": [
+    {
+      "source": "nuclei",
+      "name": "bird-lgproxy <= 1.4.6 - Arbitrary File Read",
+      "description": "bird-lgproxy <= 1.4.6 contains an argument injection caused by the /traceroute query parameter being passed verbatim to the traceroute command, letting unauthenticated attackers inject command-line options and read arbitrary files on mtr-based deployments.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-63644.yaml"
+    }
+  ],
   "CVE-2026-63645": [
     {
       "source": "nuclei",
@@ -6551,6 +6639,14 @@
       "name": "Adobe Commerce/Magento - Customer Session Identity Switch",
       "description": "Adobe Commerce contains an incorrect authorization vulnerability caused by improper access control, letting attackers escalate privileges to access sensitive resources, exploit requires no user interaction.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-71362.yaml"
+    }
+  ],
+  "CVE-2026-71427": [
+    {
+      "source": "nuclei",
+      "name": "WPGraphQL Content Blocks < 4.8.6 - Password-Protected Post Block Disclosure",
+      "description": "WPGraphQL Content Blocks before 4.8.6 resolves editorBlocks from the underlying WordPress post without checking whether the viewer has supplied its post password. An unauthenticated GraphQL query can therefore access blocks from password-protected published posts even when the standard content field is null.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-71427.yaml"
     }
   ],
   "CVE-2026-72788": [
