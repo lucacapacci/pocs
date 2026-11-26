@@ -695,6 +695,14 @@
       "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/misc/poly_unauth_rce_cve_2026_0826.rb"
     }
   ],
+  "CVE-2026-123158": [
+    {
+      "source": "metasploit",
+      "name": "OpenSSH musl-libc crypt() Authentication Bypass",
+      "description": "On musl-libc based systems (Alpine Linux, OpenWrt, Buildroot, etc.),\n          OpenSSH password authentication can be bypassed for accounts whose\n          /etc/shadow password field is \"*\" (locked).\n\n          musl's crypt() implementation returns \"*\" when given a password longer\n          than 256 bytes. sshd compares this return value directly against the\n          shadow field, which is also \"*\", so authentication succeeds.\n\n          The exploit requires two password attempts on the same SSH connection:\n          the first (any short password) primes sshd's internal fake-salt cache\n          with a real $5$/$6$ hash from another account on the system, and the\n          second (>256 byte) password triggers the musl crypt() bypass.\n\n          All five conditions must be true:\n          1. OpenSSH built against musl (not glibc)\n          2. sshd built without PAM, or UsePAM no (Alpine default)\n          3. PasswordAuthentication yes (OpenSSH default)\n          4. Target account has \"*\" in /etc/shadow password field\n          5. At least one other account has a real $5$ or $6$ hash\n\n          musl has returned \"*\" on overlength passwords since 2012. sshd started\n          borrowing other accounts' salts in 2016. The bug is exploitable on\n          OpenSSH as far back as 7.5p1 (musl 1.1.16, 2017).\n\n          Fixed in OpenSSH 10.6p2 (2026-11-05).",
+      "file": "https://raw.githubusercontent.com/rapid7/metasploit-framework/refs/heads/master/modules/exploits/linux/ssh/openssh_musl_crypt_bypass.rb"
+    }
+  ],
   "CVE-2026-24061": [
     {
       "source": "metasploit",
