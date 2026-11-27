@@ -2809,6 +2809,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116205.yaml"
     }
   ],
+  "CVE-2026-116207": [
+    {
+      "source": "nuclei",
+      "name": "YesWiki - SQL Injection",
+      "description": "YesWiki 4.6.0 before 4.7.0 and 5.0.0-alpha1 before 5.0.0-alpha4 places field names from the public `searchfields`/`query` parameters of the Bazar entries search API inside backtick-quoted SQL identifiers escaped only with mysqli_real_escape_string, which does not escape backticks. An unauthenticated attacker can break out of the identifier and inject subqueries to read arbitrary data such as user password hashes. The template injects a backtick OR-TRUE fragment as a field name: on vulnerable builds the WHERE clause becomes always-true and the API returns entries, while patched builds (which double the backtick) treat it as a missing column and return an error.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-116207.yaml"
+    }
+  ],
   "CVE-2026-116366": [
     {
       "source": "nuclei",
@@ -3327,6 +3335,14 @@
       "name": "BookIt <= 2.6.0.8 - Unauthenticated Payment Settings (incl. Stripe Secret Key) Disclosure via Calendar Vue Prop",
       "description": "BookIt plugin <= 2.6.0.8 contains a sensitive information disclosure caused by the full bookit_settings option being printed into the public booking calendar, letting unauthenticated attackers retrieve stored payment credentials such as the Stripe secret key and PayPal client secret.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-131720.yaml"
+    }
+  ],
+  "CVE-2026-133335": [
+    {
+      "source": "nuclei",
+      "name": "VirtueMart 4.0.0 - 4.8.7 - Unauthenticated Local File Inclusion",
+      "description": "VirtueMart 4.0.0 through 4.8.7 accepts path separators in the storefront view parameter and includes the resulting PHP file outside its controller directory when that file exists.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-133335.yaml"
     }
   ],
   "CVE-2026-133469": [
@@ -4039,6 +4055,14 @@
       "name": "Gogs <= 0.13.3 - Unauthenticated Attachment Upload",
       "description": "Gogs is an open source self-hosted Git service. Versions 0.13.4 and below expose unauthenticated file upload endpoints by default. When the global RequireSigninView setting is disabled (default), any remote user can upload arbitrary files to the server via /releases/attachments and /issues/attachments. This enables the instance to be abused as a public file host, potentially leading to disk exhaustion, content hosting, or delivery of malware. CSRF tokens do not mitigate this attack due to same-origin cookie issuance.\nRemote unauthenticated users can reach the attachment upload handler and store arbitrary files.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25242.yaml"
+    }
+  ],
+  "CVE-2026-25505": [
+    {
+      "source": "nuclei",
+      "name": "Bambuddy < 0.1.7 - Missing Authentication on API Routes",
+      "description": "Bambuddy before 0.1.7 signs JWTs with the hardcoded secret key \"bambuddy-secret-key-change-in-production\" and leaves most /api/v1 routes without an authentication check. When authentication is enabled, unauthenticated attackers can still read and change printers, archives, settings, API keys and system information, and can forge valid tokens for any known user.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-25505.yaml"
     }
   ],
   "CVE-2026-25512": [
@@ -5585,6 +5609,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48048.yaml"
     }
   ],
+  "CVE-2026-48053": [
+    {
+      "source": "nuclei",
+      "name": "Kolibri <= 0.19.3 - Unauthenticated Server-Side Request Forgery",
+      "description": "Kolibri 0.19.3 and earlier exposes GET /api/auth/remotefacilityuser without authentication. The baseurl parameter is only checked for an http or https scheme and is passed to NetworkClient.build_for_address(), which makes the server send requests to any host chosen by the caller and reflect the remote JSON response back.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-48053.yaml"
+    }
+  ],
   "CVE-2026-4810": [
     {
       "source": "nuclei",
@@ -6409,6 +6441,14 @@
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62253.yaml"
     }
   ],
+  "CVE-2026-62314": [
+    {
+      "source": "nuclei",
+      "name": "Anubis 1.22.0 - 1.25.0 - Bot Protection Bypass via X-Original-URI",
+      "description": "Anubis 1.22.0 through 1.25.0 contains an improper access control vulnerability caused by the path policy checker trusting the client-supplied X-Original-URI header in the default reverse proxy mode, letting unauthenticated remote attackers skip the proof-of-work challenge by sending a path that matches a default ALLOW rule such as /.well-known/.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-62314.yaml"
+    }
+  ],
   "CVE-2026-62382": [
     {
       "source": "nuclei",
@@ -6695,6 +6735,14 @@
       "name": "DB-GPT <= 0.8.1 - Arbitrary File Write",
       "description": "DB-GPT through 0.8.1 allows unauthenticated arbitrary file writes via a path traversal in the user_id HTTP header of the POST /api/v1/python/file/upload endpoint, letting attackers escape the intended upload directory and write files anywhere, as confirmed by the reflected upload path in the JSON response.\n",
       "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-73034.yaml"
+    }
+  ],
+  "CVE-2026-73245": [
+    {
+      "source": "nuclei",
+      "name": "Kestra < 2.0.0 - Unauthenticated Management Endpoint Exposure",
+      "description": "Kestra before 2.0.0 serves the Micronaut management endpoints on port 8081 with all endpoints enabled and marked as non-sensitive. The basic-auth filter only protects the main API on port 8080, so an unauthenticated attacker who can reach the management port can read the resolved application configuration through /env and change runtime log levels through /loggers.\n",
+      "file": "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/refs/heads/main/http/cves/2026/CVE-2026-73245.yaml"
     }
   ],
   "CVE-2026-73969": [
